@@ -38,19 +38,19 @@ But being complicated is (in itself) not a mark of quality. [If you can't explai
 
 Imagine it's late in the night, the lights are off, and you are trying to find your smartphone. You cannot turn on the lights, and you are having a bit of trouble seeing properly[2](https://universalprior.substack.com/p/elementary-infra-bayesianism#footnote-2-53997824). You have a vague sense about where your smartphone should be (your prior, panel **a** ). Then you see a red blinking light from your smartphone (sensory evidence, panel **b** ). Since your brain is [really good at this type of thing](https://www.sciencedirect.com/science/article/abs/pii/S0928425704000841), you integrate the sensory evidence with your prior optimally[3](https://universalprior.substack.com/p/elementary-infra-bayesianism#footnote-3-53997824) to obtain an improved sense of where your smartphone might be (posterior, panel **c** ).
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F44d0aa47-0ba6-4a32-8d92-72c7720a16ac_2677x659.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F44d0aa47-0ba6-4a32-8d92-72c7720a16ac_2677x659.png)That's boring old Bayes, nothing to see here; move along.
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_201.png)That's boring old Bayes, nothing to see here; move along.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F08c6c560-5828-4bb9-8252-63e307b47b24_450x240.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F08c6c560-5828-4bb9-8252-63e307b47b24_450x240.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_202.png)
 
 Now let's say you are even more uncertain about where you put your smartphone.[4](https://universalprior.substack.com/p/elementary-infra-bayesianism#footnote-4-53997824) It might be one end of the room or the other (bimodal prior, panel **a** ). You see a blinking light further to the right (sensory evidence, panel **b** ), so your overall belief shifts to the right (bimodal posterior, panel **c** ). Importantly, by conserving probability mass, your belief that the phone might be on the left end of the room is reduced. [The absence of evidence is evidence of absence](https://www.alignmentforum.org/posts/mnS2WYLCGJP2kQkRn/absence-of-evidence-is-evidence-of-absence).
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7fcb60df-dc59-4831-8911-155c6349d3a4_3413x659.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7fcb60df-dc59-4831-8911-155c6349d3a4_3413x659.png)This is _still_ only boring old Bayes. To go Infra, we have to go weird.
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_203.png)This is _still_ only boring old Bayes. To go Infra, we have to go weird.
 
 ##  **Fundamentally uncertain updates**
 
 Let's say you are _really, fundamentally_ unsure about where you put your phone. If someone were to ~~put a gun to your head~~ threaten to [sign you up for sweaters for kittens](https://universalprior.substack.com/p/the-tale-of-gandhi-and-the-devil?s=w#:~:text=sweaters%20for%20kittens) unless you give them your best guess, you could not[5](https://universalprior.substack.com/p/elementary-infra-bayesianism#footnote-5-53997824). 
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F0544e483-60e3-435a-acf3-f6a36d62ee9c_1072x659.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F0544e483-60e3-435a-acf3-f6a36d62ee9c_1072x659.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_204.png)
 
 This is the situation Vanessa Kosoy finds herself in[6](https://universalprior.substack.com/p/elementary-infra-bayesianism#footnote-6-53997824)[7](https://universalprior.substack.com/p/elementary-infra-bayesianism#footnote-7-53997824). With Infra-Bayesianism, she proposes a theoretical framework for thinking in situations where you can't (or don't want to) specify a prior over your hypotheses. 
 
@@ -69,11 +69,11 @@ g tells you how much you care about stuff that happens in regions that become ve
 
 When g=0, the updating equation for our two priors, P1 and P2, becomes very familiar indeed:
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F6992aeaa-d768-491f-b569-5d3805a5c28c_978x236.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F6992aeaa-d768-491f-b569-5d3805a5c28c_978x236.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_205.png)
 
 This is basically Bayes' theorem applied to each prior separately. Still, the evidence term (the denominator) is computed in a wonky way[8](https://universalprior.substack.com/p/elementary-infra-bayesianism#footnote-8-53997824), but this doesn't make much difference since it's a shared scaling factor. Consistently, things also look very normal when using this updating rule to integrate sensory information. We shift our two priors towards the evidence and scale them proportional to how unlikely they said the evidence is.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F38488f90-80ce-427e-b8f9-7ada74e15836_3413x659.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F38488f90-80ce-427e-b8f9-7ada74e15836_3413x659.png)While this picture looks almost identical to the previous section, notice that the posterior is still split in two! Thus, we can still tell which one of our initial guesses turned out to be "more accurate".
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_206.png)While this picture looks almost identical to the previous section, notice that the posterior is still split in two! Thus, we can still tell which one of our initial guesses turned out to be "more accurate".
 
 ##  **Fundamentally** _ **dangerous**_ **updates**
 
@@ -81,17 +81,17 @@ Alright, you know where this is going. We will have to start caring about things
 
 Instead, I will motivate why you might care about things that seem very unlikely given your evidence by revealing more information about the thought experiment:
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F08d787c9-83f9-498e-8138-076b5d870433_1072x659.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F08d787c9-83f9-498e-8138-076b5d870433_1072x659.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_207.png)
 
 It's not so much that you _can't_ give your best guess estimate about where you put your smartphone. Rather, you _dare_ not. Getting this wrong would be, like, _really bad_. You might be unsure whether it's even your phone that's blinking or if it's the phone of the other person sleeping in the room[11](https://universalprior.substack.com/p/elementary-infra-bayesianism#footnote-11-53997824). Or perhaps the bright red light you see is the [bulbous red nose](https://astralcodexten.substack.com/p/deceptively-aligned-mesa-optimizers?s=r#:~:text=prime%20minister.-,So,-%3A%20suppose%20we%20train) of somebody else sleeping in the room. Getting the location of your smartphone wrong would be messy. Better not risk it. We'll set g=1.
 
 The update rule doesn't change too much at first glance[12](https://universalprior.substack.com/p/elementary-infra-bayesianism#footnote-12-53997824):
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F6852a5d0-006d-4697-a0fb-c158d28059be_1168x238.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F6852a5d0-006d-4697-a0fb-c158d28059be_1168x238.png)Again, the denominator changes from one wonky thing (P+) to another (P−); but that still doesn't matter since it's the same for both equations. 
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_208.png)Again, the denominator changes from one wonky thing (P+) to another (P−); but that still doesn't matter since it's the same for both equations. 
 
 But there is a ϰ that showed up out of nowhere! ϰ is a variable that tells us how good our distribution is at _explaining things we did not get any evidence for_[13](https://universalprior.substack.com/p/elementary-infra-bayesianism#footnote-13-53997824). Intuitively, you can tell that this will favor the prior distribution that was previously punished for not explaining the observation. And indeed, when we run the simulation:
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F6eae1bd1-b8aa-444e-accb-5ae2a197ff9d_3413x659.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F6eae1bd1-b8aa-444e-accb-5ae2a197ff9d_3413x659.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_209.png)
 
 One of the two "distributions"[14](https://universalprior.substack.com/p/elementary-infra-bayesianism#footnote-14-53997824) is taking off! Even though the corresponding prior was bad at explaining the observation, the updating still _strongly_ increases the mass associated with that hypothesis.
 
@@ -137,11 +137,11 @@ A proper infradistribution would have to be a convex set of distributions and up
 
 [8](https://universalprior.substack.com/p/elementary-infra-bayesianism#footnote-anchor-8-53997824)
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Faa5158c4-bd53-465a-b7fb-a024441377be_1668x154.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Faa5158c4-bd53-465a-b7fb-a024441377be_1668x154.png)caption...
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_210.png)caption...
 
 rather than
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fd84f2bf7-9c6a-4cba-b0c0-202dba016b54_742x182.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fd84f2bf7-9c6a-4cba-b0c0-202dba016b54_742x182.png)caption...
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_211.png)caption...
 
 for an uninformative prior.
 
@@ -161,9 +161,9 @@ The story is coming together. This is why you can't turn on the light, btw.
 
 Actually, in this particular example, it turns out that
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fd134e827-2b05-4b06-8a63-52b891c6ba5f_360x114.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fd134e827-2b05-4b06-8a63-52b891c6ba5f_360x114.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_212.png)
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fec7e573f-e150-490d-913a-a9b84220b97b_2294x634.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fec7e573f-e150-490d-913a-a9b84220b97b_2294x634.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_213.png)
 
 , since we've got two normalized probability distributions.
 
@@ -171,7 +171,7 @@ Actually, in this particular example, it turns out that
 
 You can't find any ϰ in Vanessa Kosoy's paper because she is thinking more generally about Banach spaces and a situation where there is no [Radon-Nikodyn derivative](https://en.wikipedia.org/wiki/Radon%E2%80%93Nikodym_theorem#Radon%E2%80%93Nikodym_derivative). But if we have a density for our measures, we can write ϰ as 
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7faa9e4d-8e67-479c-91de-e37c49c57b97_410x132.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7faa9e4d-8e67-479c-91de-e37c49c57b97_410x132.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_214.png)
 
 for an inframeasure (m,b).
 

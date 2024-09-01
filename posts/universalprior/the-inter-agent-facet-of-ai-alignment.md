@@ -11,7 +11,7 @@ _Meta: I know you miss me, I miss you all too! I’ll be back! In the meantime, 
 
 We argue that [intent alignment and capability robustness](https://www.alignmentforum.org/posts/SzecSPYxqRa5GCaSF/clarifying-inner-alignment-terminology) do not capture the full “chain of command” (i.e., “alignment” without any qualifier) from the programmer's intentions to an AI agent’s real-world impact, but stops at the stage where the agent performs its actions. We argue that, especially in complex [Multi-Agent Systems](https://en.wikipedia.org/wiki/Multi-agent_system) (MAS), this is not sufficient to actually achieve aligned outcomes[1](https://universalprior.substack.com/p/the-inter-agent-facet-of-ai-alignment#footnote-1-73850726). Therefore, we introduce another facet of AI Alignment, which deals with the connection between an agent’s intention and its actual impact, due to multi-agent interactions (as opposed to capability robustness).
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F122353f4-7fa8-45c4-9f02-783b17a8c2c6_1024x1024.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F122353f4-7fa8-45c4-9f02-783b17a8c2c6_1024x1024.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_125.png)
 
 ## Motivation
 
@@ -25,17 +25,17 @@ This, in turn, leads to the conclusion that it is not sufficient to build an AGI
 
 In Evan Hubinger’s [alignment terminology](https://www.alignmentforum.org/posts/SzecSPYxqRa5GCaSF/clarifying-inner-alignment-terminology), alignment is the result of intent alignment (which is, in turn, composed of the well-known concepts of inner and outer alignment, among others) and capability robustness. The implicit assumption is that the AGI's model is equivalent to how its actions will affect the world.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F73a3aeb7-b738-4cdc-97f1-cf6d7afc336c_402x242.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F73a3aeb7-b738-4cdc-97f1-cf6d7afc336c_402x242.png)caption...
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_126.png)caption...
 
 ### Inter-Agent Alignment
 
 >  **Inter-Agent Alignment is aligning the (aligned and robust) intentions of an AGI agent with the actual outcome within the multi-agent system of which the agent is a part. Since the impact of the agent’s actions depends on what everyone else in this system is doing (and not just its own actions), inter-agent alignment is a non-trivial task.**
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F861a63b4-8f1f-40b4-ba58-38356ebef039_642x242.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F861a63b4-8f1f-40b4-ba58-38356ebef039_642x242.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_127.png)
 
 Our central argument is that multi-agent interactions add a sufficient amount of complexity to an AI agent’s action policy to justify its own type of alignment, separated from the existing alignment model. Adding inter-agent alignment to the alignment tree, we see that it complements intent alignment and capability robustness, resulting in full alignment (i.e., impact alignment)[2](https://universalprior.substack.com/p/the-inter-agent-facet-of-ai-alignment#footnote-2-73850726). 
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F899355b4-3aec-47b3-9ef2-a78ca07ad89b_1920x2048.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F899355b4-3aec-47b3-9ef2-a78ca07ad89b_1920x2048.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_128.png)
 
 ## Challenging Questions
 

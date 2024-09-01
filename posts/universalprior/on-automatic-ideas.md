@@ -7,7 +7,7 @@ date: 2021-12-09
 ---
 
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2b9f91e8-ef19-49fb-b934-70af62c41324_520x228.gif)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2b9f91e8-ef19-49fb-b934-70af62c41324_520x228.gif)A prototype for automatic idea generation.
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_9.gif)A prototype for automatic idea generation.
 
 #### Code first, ask questions later
 
@@ -72,7 +72,7 @@ The second insight is that distinguishing nonsense from ideas is _easy_. I can t
 
 This video shows the interface after I've trained it for a few hundred examples, and the "predicted usefulness" (0=nonsense, 1=idea) has already converged pretty well. In fact, when I map the proto-ideas [into a low-dimensional space](https://lvdmaaten.github.io/tsne/), we can see a bit of organization emerge.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F636dac22-5787-44da-9d2e-6d49c82a3261_1600x1370.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F636dac22-5787-44da-9d2e-6d49c82a3261_1600x1370.png)tSNE projection of semantic embedding of proto-ideas. Color indicates usefulness of proto-ideas as predicted by logistic regression model.
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_178.png)tSNE projection of semantic embedding of proto-ideas. Color indicates usefulness of proto-ideas as predicted by logistic regression model.
 
 As you can see, the regression has learned that ideas from the neuroscience peninsula tend to be the most useful for me[6](https://universalprior.substack.com/p/on-automatic-ideas#footnote-6-45230438).
 
@@ -168,7 +168,7 @@ I believe there is substantial confusion about where ideas come from. [WikiHow](
 
 
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7c8cb3f9-308a-4695-8efc-b838f80e3c40_1600x435.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7c8cb3f9-308a-4695-8efc-b838f80e3c40_1600x435.png)I have a hard time putting my feelings about these illustrations into words.
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_179.png)I have a hard time putting my feelings about these illustrations into words.
 
 Step two, the "gestation period" _appears_ magical. Mathematicians [have perfected the art of gestation](https://books.google.de/books?id=QdHBDwAAQBAJ&pg=PA236&lpg=PA236&dq=mathematics+creativity+take+a+walk&source=bl&ots=nxwB03USj1&sig=ACfU3U1cA9HiA6XmJ4551esBlD8qdpbuZQ&hl=en&sa=X&ved=2ahUKEwjp0uHuzL70AhWHC-wKHYOdBYgQ6AF6BAgUEAM#v=onepage&q=mathematics%20creativity%20take%20a%20walk&f=false):
 
@@ -182,7 +182,7 @@ I see the value of a healthy balance as much as the next person, [pain is not th
 
 Instead of postulating [something magical that occurs through the interaction between the subconscious and the conscious](https://duncanwardle.com/how-to-open-the-door-to-your-creative-genius/)[17](https://universalprior.substack.com/p/on-automatic-ideas#footnote-17-45230438), I believe there is a much more parsimonious explanation: What if (as argued above) coming up with good ideas is simply a [search problem](https://universalprior.substack.com/p/soldiers-scouts-and-albatrosses) where possible ideas are proposed, evaluated and (most of the time) rejected? If each proposed idea only has a small probability of being a "hit", then the distribution of arrival times of ideas is a [Poisson process](https://en.wikipedia.org/wiki/Poisson_point_process), and the [distribution of waiting times in between ideas is an exponential distribution](https://gtribello.github.io/mathNET/resources/jim-chap20.pdf). As a consequence, finding a good idea simply takes a lot of time sometimes, especially when the probability of a hit is small. Having a "dry spell" of good ideas is just what we would (sometimes) expect under this model.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ffd3a7204-c9f3-45da-af5c-6535248a4113_1600x632.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ffd3a7204-c9f3-45da-af5c-6535248a4113_1600x632.png) **a** Example of a Poisson point process, blue circles indicate generated ideas as a function of time. Red bar highlights time period at beginning of simulation where no ideas were generated. **b** Distribution of waiting time lengths (red bar in **a** ) pooled across simulations. Notice the long tail.
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_180.png) **a** Example of a Poisson point process, blue circles indicate generated ideas as a function of time. Red bar highlights time period at beginning of simulation where no ideas were generated. **b** Distribution of waiting time lengths (red bar in **a** ) pooled across simulations. Notice the long tail.
 
 Disengaging from the problem then is nothing else than pressing the "fast forward" button. The process of searching for a good idea continues to "[run in the background](https://en.wikipedia.org/wiki/Global_workspace_theory)", perhaps with reduced resources[18](https://universalprior.substack.com/p/on-automatic-ideas#footnote-18-45230438), and only rises to attention when a "hit" (or something looking a lot like a hit) was found. I suspect we can [explain away](https://martin-thoma.com/explaining-away/) the apparent "magical" component of the creative process this way. But doing that is a lot less exciting than "coding away" the confusion, so I’ll stick to that instead.
 

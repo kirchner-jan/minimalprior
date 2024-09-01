@@ -151,9 +151,8 @@ Kirchner</a></td>
     <h3 id="three-approaches-to-handling-greedy-doctors"><strong>Three
     approaches to handling greedy doctors</strong></h3>
     <p>Here is how I think about the situation:</p>
-    <p><a
-    href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fdfe9c228-f6f1-4b94-b8c4-4dfc52b5c1b6_1600x434.png"><img
-    src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fdfe9c228-f6f1-4b94-b8c4-4dfc52b5c1b6_1600x434.png" /></a>There
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_12.png" />There
     is a ground truth “observation” about whether you are actually sick
     or not. Only the doctor has access to that observation and makes a
     diagnosis that might or might not be based on the diagnosis. You,
@@ -177,9 +176,8 @@ Kirchner</a></td>
     which the doctor diagnoses the patient is a policy
     <strong>π</strong> , which assigns each possible diagnosis a
     probability given the observation.</p>
-    <p><a
-    href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fef9a9cc3-9c93-4e53-af9d-bd00e1de4b4f_1392x276.png"><img
-    src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fef9a9cc3-9c93-4e53-af9d-bd00e1de4b4f_1392x276.png" /></a>Feel
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_13.png" />Feel
     free to ignore the squiggles, it’s just a fancy way of saying what I
     just said in the preceding paragraph.</p>
     <p>What does this set-up buy us?</p>
@@ -189,9 +187,8 @@ Kirchner</a></td>
     mathematical apparatus, but I include it since I got this suggestion
     from one or two people: Why don’t we just pay the doctor when they
     diagnose something?</p>
-    <p><a
-    href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F232d03ca-f00b-4965-b699-b13049948f33_496x198.png"><img
-    src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F232d03ca-f00b-4965-b699-b13049948f33_496x198.png" /></a></p>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_14.png" /></p>
     <p>In their defense, this is a very reasonable approach when we
     model the doctor as at least partially human. However, when we model
     the doctor as <a
@@ -256,9 +253,8 @@ Kirchner</a></td>
     a reinforcement agent with Q-Learning<a
     href="https://universalprior.substack.com/p/the-greedy-doctor-problem#footnote-13-44025459">13</a>
     with the proposed reward function:</p>
-    <p><a
-    href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Faa687b7f-dbe3-4a2a-9e2b-6f3d2269b912_4918x1915.png"><img
-    src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Faa687b7f-dbe3-4a2a-9e2b-6f3d2269b912_4918x1915.png" /></a>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_15.png" />
     <strong>A greedy doctor incentivized to diagnose “treatment” will
     diagnose treatment a lot.</strong> <strong>a</strong> Reward of the
     agent per epoch averaged over 300 runs. Dashed line indicates
@@ -287,9 +283,8 @@ Kirchner</a></td>
     Reward one doctor <em>only</em> if both doctors say you’re healthy.
     Reward the other doctor <em>only</em> if both doctors say you
     require treatment.</p>
-    <p><a
-    href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F6aca05b2-5015-4866-878d-a83eb0057edc_4926x4196.png"><img
-    src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F6aca05b2-5015-4866-878d-a83eb0057edc_4926x4196.png" /></a>As
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_16.png" />As
     before, the ground truth is determined by observation. But this
     time, it is shared between two doctors, who each get to give an
     independent diagnosis. Reward is only handed out when both doctors
@@ -316,9 +311,8 @@ Kirchner</a></td>
     famous problem in game theory called the “<a
     href="https://en.wikipedia.org/wiki/Battle_of_the_sexes_%28game_theory%29">Battle
     of the sexes</a>”.</p>
-    <p><a
-    href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fde69b885-6399-44d4-92cb-4f6054eb4aca_4918x1915.png"><img
-    src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fde69b885-6399-44d4-92cb-4f6054eb4aca_4918x1915.png" /></a>The
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_17.png" />The
     reward is decreasing, which is <a
     href="https://link.springer.com/article/10.1007%2FBF00992698">not
     supposed to happen</a>. But of course, the usual convergence proof
@@ -339,9 +333,8 @@ Kirchner</a></td>
     goes up, the fractions of ” <strong>t</strong> reatment” and ”
     <strong>h</strong> ealthy” diagnoses are nice and balanced and the
     correspondence with ground truth… <em>wait what</em>?</p>
-    <p><a
-    href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F42ba21ba-7a76-4b38-85d3-86a4de05393d_4918x1915.png"><img
-    src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F42ba21ba-7a76-4b38-85d3-86a4de05393d_4918x1915.png" /></a></p>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_18.png" /></p>
     <p>Ah, of course. Just because we picked nice, suggestive labels for
     the observation ( <strong>T</strong> and <strong>H</strong> ) and
     the diagnosis ( <strong>t</strong> and <strong>h</strong> ), the
@@ -367,9 +360,8 @@ Kirchner</a></td>
     <p>But the situation is worse than that. As long as the action
     policies of the two agents match<a
     href="https://universalprior.substack.com/p/the-greedy-doctor-problem#footnote-19-44025459">19</a>,</p>
-    <p><a
-    href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F30c27d86-c6b2-4e76-9766-300334fad9be_288x80.png"><img
-    src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F30c27d86-c6b2-4e76-9766-300334fad9be_288x80.png" /></a></p>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_19.png" /></p>
     <p>, they will get maximum reward. The doctors could play <a
     href="https://en.wikipedia.org/wiki/Tit_for_tat">tit-for-tat</a>,
     where they alternate between both diagnoses, ” <strong>h</strong>
@@ -434,9 +426,8 @@ Kirchner</a></td>
     that look random, but don’t correspond to the actual “H” and “T”
     strings. How can we tell if the doctor is being honest?</p>
     <p>Consider the following set-up:</p>
-    <p><a
-    href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fefcbb9ca-64f5-4177-8bc0-01b73b75d338_4926x3120.png"><img
-    src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fefcbb9ca-64f5-4177-8bc0-01b73b75d338_4926x3120.png" /></a>This
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_20.png" />This
     time, only one doctor makes the observation and diagnosis. However,
     this time a detective gets to see the previous diagnoses and can try
     to infer a pattern. When the detective successfully predicts a
@@ -448,9 +439,8 @@ Kirchner</a></td>
     doctor given the last ten actions<a
     href="https://universalprior.substack.com/p/the-greedy-doctor-problem#footnote-22-44025459">22</a>.
     In this set-up, the agent learns pretty nicely:</p>
-    <p><a
-    href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fdba99e99-0750-4ca8-bb4d-738c9631ca8e_4918x1915.png"><img
-    src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fdba99e99-0750-4ca8-bb4d-738c9631ca8e_4918x1915.png" /></a></p>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_21.png" /></p>
     <p>The highest reward that the doctor can now get is with random
     performance (Reward = 1/2) since every non-random pattern will be
     picked up by the detective. Since a Q-Learning agent doesn’t have a
@@ -597,9 +587,8 @@ Kirchner</a></td>
     <strong>T</strong> equally often.</p>
     <p><a
     href="https://universalprior.substack.com/p/the-greedy-doctor-problem#footnote-anchor-16-44025459">16</a></p>
-    <p><a
-    href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa8ed8e07-08f3-45bb-b131-cbbac75b3fba_320x170.gif"><img
-    src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa8ed8e07-08f3-45bb-b131-cbbac75b3fba_320x170.gif" /></a></p>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_2.gif" /></p>
     <p><a
     href="https://universalprior.substack.com/p/the-greedy-doctor-problem#footnote-anchor-17-44025459">17</a></p>
     <p>When the number of possible diagnoses increases, this gets worse

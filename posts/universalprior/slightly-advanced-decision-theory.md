@@ -77,35 +77,35 @@ So what can I add that's not already in Holden's post? A mathematical argument, 
 
 Let's first look at one example of what a monolithic life decision might look like. Imagine you are evaluating several options (from [biorisk](https://www.effectivealtruism.org/articles/biosecurity-as-an-ea-cause-area-claire-zabel/) research to [cause X](https://forum.effectivealtruism.org/tag/cause-x) research). Each of them has an expected impact and you compare them to identify the winner:
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fe1f74094-cbf8-410f-af04-4e9280b429a2_1172x1553.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fe1f74094-cbf8-410f-af04-4e9280b429a2_1172x1553.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_129.png)
 
 Since “cause X research” has the highest expected impact, you decide to pick that and drop the rest. In equations, you have opportunities 
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F27edb592-649d-4c13-9c8d-5fdda336c492_242x70.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F27edb592-649d-4c13-9c8d-5fdda336c492_242x70.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_130.png)
 
 and you decide to pick the one that has the highest expected value:
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F0255e450-dc2b-4a48-bba2-a0ab95f5ea53_564x90.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F0255e450-dc2b-4a48-bba2-a0ab95f5ea53_564x90.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_131.png)
 
 While this is fine, and certainly has a higher impact than exclusively focusing on knitting, I believe we can do even better. In particular, the _expected value of the maximum is larger than or equal to the maximum of the expected values_ :
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F8537e5c4-c8c8-494a-a30f-b5ac59b63a25_954x80.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F8537e5c4-c8c8-494a-a30f-b5ac59b63a25_954x80.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_132.png)
 
 I know this mathematical theorem as the "[race model inequality](https://link.springer.com/article/10.3758/s13414-015-1018-y)"[10](https://universalprior.substack.com/p/slightly-advanced-decision-theory#footnote-10-44426436), but I'm sure it is known under different names in different fields. What it cashes out to is the following decision rule: When you have the choice between (ex-ante) picking one thing and getting the result from that thing, or (ex-post) seeing the result from all the things and picking the one you like best, you should always pick the latter (ex-post) option.
 
 Or, in less fancy terms,
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb7321be7-3cbc-4bd1-8336-9ff083d12b99_1433x932.jpeg)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb7321be7-3cbc-4bd1-8336-9ff083d12b99_1433x932.jpeg)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_6.jpeg)
 
 Instead of _only_ researching Cause X, also keep one foot in AI safety research, have a reading group on policy, and [knit as if your life depends on it](https://en.wikipedia.org/wiki/Arachne). Since there is variance in your actual outcome (you might end up being a terrible researcher, but your knitting skills inspire the countries of the world to unite and sing praise), it is better to hedge your bets and try multiple things.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fc9ce7759-272b-4844-9b2a-fdbb40bd0648_1600x1437.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fc9ce7759-272b-4844-9b2a-fdbb40bd0648_1600x1437.png) **a** Ex-post outcome (do all the things and pick the thing that worked best) compared with ex-ante outcome (only do the one thing with the highest expected value. **b** Average ex-ante and ex-post outcomes. Code is [here](https://colab.research.google.com/drive/1enMNClWabFr2KhmMOe1mRSP9MkVsU6kx?usp=sharing).
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_133.png) **a** Ex-post outcome (do all the things and pick the thing that worked best) compared with ex-ante outcome (only do the one thing with the highest expected value. **b** Average ex-ante and ex-post outcomes. Code is [here](https://colab.research.google.com/drive/1enMNClWabFr2KhmMOe1mRSP9MkVsU6kx?usp=sharing).
 
 One (reasonable) objection might be that I'm neglecting an important limiting factor: humans can't do _all the things_. If you try to do five things at the same time, they might, in combination, end up worse than if you had done one thing "properly". 
 
 But whoever says this underestimates [the power of the ](https://en.wikipedia.org/wiki/Extreme_value_theory)_[maximum](https://en.wikipedia.org/wiki/Extreme_value_theory)_. We can cut the expected value of all our opportunities in half (since we will not be able to do everything "properly") and still take almost no hit to the ex-post expected value.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F696fcba2-46bd-44f0-8e3e-46a20f33f35e_779x1600.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F696fcba2-46bd-44f0-8e3e-46a20f33f35e_779x1600.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_134.png)
 
 There are only two conditions: We should focus on opportunities that have at least broadly comparable expected values and that have a big amount of variability[11](https://universalprior.substack.com/p/slightly-advanced-decision-theory#footnote-11-44426436). Doing a zany coding project with your friends that probably won't work out but will revolutionize how we wear our socks if it does? Go for it! Read a textbook from a field that sounds extremely relevant to your work but that none of your colleagues cares about? Absolu-telly. Go to that weird party that you were totally invited to by accident and that you will very likely leave a little embarrassed? Yep, even that.
 
@@ -129,17 +129,17 @@ Joke aside, there are certain [situations when it is okay to risk imprisonment](
 
 Let's say you get offered a series of opportunities with positive expected value, but high variability. If you accept sufficiently many of them, you are almost guaranteed to end up with a large positive payoff. In the process of getting there, you will experience substantial fluctuations, but they will cancel out and the positive expected value of the opportunity will accrue.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F619bca5c-11d5-43e3-984d-3a125f39a23c_3169x1793.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F619bca5c-11d5-43e3-984d-3a125f39a23c_3169x1793.png) **a** Value of the opportunity as a function of time. Multiple equally distributed time series are shown. The dashed line in red indicates zero value. **b** Histogram plot of payoffs (value of opportunity at time point 100). The dashed line in red indicates average payoff. Code is [here](https://colab.research.google.com/drive/1b2xENV91mZfsf_BzMGufpGdl5-ldeTMW?usp=sharing).
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_135.png) **a** Value of the opportunity as a function of time. Multiple equally distributed time series are shown. The dashed line in red indicates zero value. **b** Histogram plot of payoffs (value of opportunity at time point 100). The dashed line in red indicates average payoff. Code is [here](https://colab.research.google.com/drive/1b2xENV91mZfsf_BzMGufpGdl5-ldeTMW?usp=sharing).
 
 However, things look very different when we introduce an absorbing boundary at zero. Due to the low start value and the large variability, almost all instantiations of the scenario end up in the absorbing boundary (bankrupt, dead, or worse)
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fcd401872-75d3-4c8e-8ce5-8223c04cdf49_3062x1655.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fcd401872-75d3-4c8e-8ce5-8223c04cdf49_3062x1655.png)As the previous figure, but with all opportunities that hit zero clamped to zero.
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_136.png)As the previous figure, but with all opportunities that hit zero clamped to zero.
 
 So what does that mean? Should we avoid opportunities with high variability under all circumstances?
 
 No, in particular in light of my argument from the previous section this would be too extreme. I'm only arguing that we need to be aware of the existence of absorbing boundaries. When they exist, you should still go for a high expected value - but additionally, you might want to try and minimize variability.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F40cbb7e6-0e88-4ef5-9958-3536e82ef601_1600x1281.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F40cbb7e6-0e88-4ef5-9958-3536e82ef601_1600x1281.png)Expected payoff for different combinations of expected value and variance of the driving noise process. Colorbar is on a log scale. Note how a medium-sized expected value with low variance might result in a higher payoff compared to a high expected value with high variance.
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_137.png)Expected payoff for different combinations of expected value and variance of the driving noise process. Colorbar is on a log scale. Note how a medium-sized expected value with low variance might result in a higher payoff compared to a high expected value with high variance.
 
 (There is another fun little insight that we get from this toy model. Notice how in the left half of the figure variance has a _positive_ effect on payoff? This makes sense - if you have very little to gain and will likely end up in the absorbing state anyways then it pays to strive for highly variable outcomes. You can only win. So in that spirit: Ask that woman/man/creature you like out on a date. You can only win.[13](https://universalprior.substack.com/p/slightly-advanced-decision-theory#footnote-13-44426436))
 
@@ -153,7 +153,7 @@ In the next two sections, I'll present two more arguments for why it's (sometime
 
 Imagine you are caught in a psychology student's nightmare and have to choose between two sources of reward. One provides rewards on 70% of occasions where you approach it, the other only on 30%. The standard answer from decision theory is that you ought to always go to the first source[15](https://universalprior.substack.com/p/slightly-advanced-decision-theory#footnote-15-44426436).
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F34d8bc82-4826-43c2-ae7b-22218e526383_3820x1856.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F34d8bc82-4826-43c2-ae7b-22218e526383_3820x1856.png) **a** Likelihood of success (fraction of trials where you guess correctly) as a function of the matched probability (fraction of trials where you pick source one). Different colors denote different "true biases" (the actual fraction of trials where the reward is at source one). Red arrows indicate the optimal choice of matched probability for different underlying true biases. **b** Optimal matched probabilities (red arrows in **a** ) as a function of the true bias. Code is [here](https://colab.research.google.com/drive/1Soj_HJ6XZZm84-clCGoKRfRCOvoZUGnv?usp=sharing).
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_138.png) **a** Likelihood of success (fraction of trials where you guess correctly) as a function of the matched probability (fraction of trials where you pick source one). Different colors denote different "true biases" (the actual fraction of trials where the reward is at source one). Red arrows indicate the optimal choice of matched probability for different underlying true biases. **b** Optimal matched probabilities (red arrows in **a** ) as a function of the true bias. Code is [here](https://colab.research.google.com/drive/1Soj_HJ6XZZm84-clCGoKRfRCOvoZUGnv?usp=sharing).
 
 (This is basically the argument for why you [should not split your donations](https://reducing-suffering.org/why-maximize-expected-value/#What_about_mixed_strategies). Splitting your donations, or alternating between the sources, _will_ reduce your expected utility.)
 
@@ -167,7 +167,7 @@ What happens when we make things... [non-fungible](https://www.thisworldtheseday
 
 Divide them how? Turns out, you pretty much have to do inverse probability matching.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa76f11fa-f722-4701-b55c-8c60d0b8ae73_3816x1721.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa76f11fa-f722-4701-b55c-8c60d0b8ae73_3816x1721.png)Same as the previous figure, but with “success” defined as “getting at least one reward from both sources”. The dashed line in **b** indicates one minus the identity. Code is [here](https://colab.research.google.com/drive/1CUKhnxJi9BJVSUS95ZeYV0Yv7rkKkBex?usp=sharing).
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_139.png)Same as the previous figure, but with “success” defined as “getting at least one reward from both sources”. The dashed line in **b** indicates one minus the identity. Code is [here](https://colab.research.google.com/drive/1CUKhnxJi9BJVSUS95ZeYV0Yv7rkKkBex?usp=sharing).
 
 As you need a reward from _both_ sources, you ought to frequently visit the source that rarely provides reward to make sure that you end up getting it when it shows up. In contrast, you can rarely visit the source that often provides reward, since on those rare occasions you are guaranteed to pick up the reward.
 
@@ -183,37 +183,37 @@ While the argument from non-fungible goods is already sufficient to justify spli
 
 More of a good thing is not always more good. Utilities are context-sensitive and can depend on time. The first Oreo cookie is great, the tenth is kind of good, the one hundredth _will_ make you sick. In your hypothetical decision theory 101 class[18](https://universalprior.substack.com/p/slightly-advanced-decision-theory#footnote-18-44426436), you typically consider the following simple _linear_ model that links inputs **x** to expected returns **r** :
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F60d615d6-cd34-493d-9c8e-2080d812a212_254x68.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F60d615d6-cd34-493d-9c8e-2080d812a212_254x68.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_140.png)
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F115171b2-2e45-4102-9454-3336f096bece_1327x1321.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F115171b2-2e45-4102-9454-3336f096bece_1327x1321.png)Expected return as a function of income. Different colored lines indicate different opportunities with different scaling factors “a”. The dashed line indicates the identity. Code is [here](https://colab.research.google.com/drive/1cz5PLAwbKEaBP-bOs82jzvI0NU2eLJ7I?usp=sharing).
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_141.png)Expected return as a function of income. Different colored lines indicate different opportunities with different scaling factors “a”. The dashed line indicates the identity. Code is [here](https://colab.research.google.com/drive/1cz5PLAwbKEaBP-bOs82jzvI0NU2eLJ7I?usp=sharing).
 
  _Linear_ means that if you invest twice as much input, you will get exactly twice as much output. This assumption is justified when we are talking about "[relatively small](https://en.wikipedia.org/wiki/Taylor_series) **x** ".
 
 Let's say we have different opportunities 
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7b518818-51c0-448c-b424-cac1a521f4ea_334x70.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7b518818-51c0-448c-b424-cac1a521f4ea_334x70.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_142.png)
 
 , but only a limited budget (time, money, motivation). How should we split our budget across the different opportunities?
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F5d96ea80-ad5e-43da-9bc4-fb14e7273069_282x92.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F5d96ea80-ad5e-43da-9bc4-fb14e7273069_282x92.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_143.png)
 
 In this case, we can derive that the optimal choice is to go _all-in_ on the most promising opportunity, i.e. the one that has the highest scaling factor **a**[19](https://universalprior.substack.com/p/slightly-advanced-decision-theory#footnote-19-44426436).
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2ebdb303-853b-48a8-b9f6-bd8a99834d3f_1327x1321.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2ebdb303-853b-48a8-b9f6-bd8a99834d3f_1327x1321.png)Same as the previous figure, but now with red arrows indicating the optimal split of budget to different opportunities. Note how only one opportunity (the one with the largest scaling factor **a** ) has a nonzero amount of budget allocated.
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_144.png)Same as the previous figure, but now with red arrows indicating the optimal split of budget to different opportunities. Note how only one opportunity (the one with the largest scaling factor **a** ) has a nonzero amount of budget allocated.
 
 When charitable donations in EA consisted of [a few graduate students giving away their spare change](https://harvardpolitics.com/new-social-movement-generation-effective-altruism/#:~:text=Givewell%20co%2Dfounder%20Toby%20Ord%20donated%20ten%20percent%20of%20his%20income%20while%20living%20on%20a%20graduate%20student%E2%80%99s%20salary%20at%20Oxford), the linear model applied and dictated that they should donate everything to the most effective charity.
 
 Well, [that was then and this is now](http://youtube.com/watch?v=H8i2tOfzyfk). Now that we are doing decision theory 102, we are not talking about [small amounts of money anymore](https://forum.effectivealtruism.org/posts/zA6AnNnYBwuokF8kB/is-effective-altruism-growing-an-update-on-the-stock-of#How_many_funds_are_committed_to_effective_altruism_). Consequently, the linear model no longer applies and we need to take other factors into account: the ability of a charity to [absorb additional funding](http://forum.effectivealtruism.org/tag/room-for-more-funding), [general equilibrium effects](https://economics.stackexchange.com/questions/26892/what-are-general-equilibrium-effects), and [scalability](https://80000hours.org/articles/problem-framework/#how-to-assess-scale). One way to bundle all of these effects into a tractable mathematical model is to think about [diminishing returns](https://forum.effectivealtruism.org/tag/diminishing-returns): investing twice as much input will lead to _less than_ twice as much output[20](https://universalprior.substack.com/p/slightly-advanced-decision-theory#footnote-20-44426436).
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fcd24c357-d144-467c-a20d-7633b549da0d_516x90.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fcd24c357-d144-467c-a20d-7633b549da0d_516x90.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_145.png)
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F038bf967-88a3-4bee-b9a4-300348982bc9_1355x1265.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F038bf967-88a3-4bee-b9a4-300348982bc9_1355x1265.png)Same as the previous figure, but with a wider range on the x-axis. You now notice that the function in the previous figure has been a logarithm all along that just _looked_ linear locally.
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_146.png)Same as the previous figure, but with a wider range on the x-axis. You now notice that the function in the previous figure has been a logarithm all along that just _looked_ linear locally.
 
 When the **x** is small, then we are still in the "basically linear" regime and the optimal strategy of not splitting the budget remains the same. However, when the **x** gets large enough that we experience diminishing returns, then also our optimal strategy changes: Now we should split our budget proportional to the scaling factor of the opportunity[21](https://universalprior.substack.com/p/slightly-advanced-decision-theory#footnote-21-44426436):
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ff8d16861-ba57-478b-909d-8ce0d7c74c84_308x94.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ff8d16861-ba57-478b-909d-8ce0d7c74c84_308x94.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_147.png)
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fd03100a4-25e2-44b8-9a9f-b3fe2fc6aec8_1266x1265.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fd03100a4-25e2-44b8-9a9f-b3fe2fc6aec8_1266x1265.png)Same as…. You know the spiel.
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_148.png)Same as…. You know the spiel.
 
 Now, clearly, if the **a** of some opportunities are [orders of magnitude larger](https://www.effectivealtruism.org/articles/prospecting-for-gold-owen-cotton-barratt/) than others, then those other opportunities still should receive approximately 0% of our donations (sorry [sweaters-for-kittens](https://universalprior.substack.com/p/the-tale-of-gandhi-and-the-devil)). But if there are multiple equally promising opportunities, it is o.k. to split your budget.
 
@@ -237,7 +237,7 @@ The post got more than 20.000 (pairs of) eyeballs! Gasp!
 
 [2](https://universalprior.substack.com/p/slightly-advanced-decision-theory#footnote-anchor-2-44426436)
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_lossy/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F0fbc67d8-6d45-4fb7-ac53-3b25f42abf39_498x278.gif)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F0fbc67d8-6d45-4fb7-ac53-3b25f42abf39_498x278.gif)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_8.gif)
 
 [3](https://universalprior.substack.com/p/slightly-advanced-decision-theory#footnote-anchor-3-44426436)
 
@@ -291,7 +291,7 @@ Except perhaps in the context of the latent rift between "traditional EA" (globa
 
 Quick demonstration:
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa2c75080-e3ab-4101-9d61-5c8e0c409265_612x92.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa2c75080-e3ab-4101-9d61-5c8e0c409265_612x92.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_149.png)
 
 [16](https://universalprior.substack.com/p/slightly-advanced-decision-theory#footnote-anchor-16-44426436)
 
@@ -307,7 +307,7 @@ We skipped that one since it’s much more interesting to write about advanced s
 
 [19](https://universalprior.substack.com/p/slightly-advanced-decision-theory#footnote-anchor-19-44426436)
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2b745173-e1a5-4a5b-8ca8-d569c6779fdb_1712x616.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2b745173-e1a5-4a5b-8ca8-d569c6779fdb_1712x616.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_150.png)
 
 [20](https://universalprior.substack.com/p/slightly-advanced-decision-theory#footnote-anchor-20-44426436)
 
@@ -315,7 +315,7 @@ I'm using a logarithm function, inspired by [the presumed power-law relationship
 
 [21](https://universalprior.substack.com/p/slightly-advanced-decision-theory#footnote-anchor-21-44426436)
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F05b45e31-68a9-4ea7-bc65-50ca645fbc7b_1566x246.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F05b45e31-68a9-4ea7-bc65-50ca645fbc7b_1566x246.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_151.png)
 
 [22](https://universalprior.substack.com/p/slightly-advanced-decision-theory#footnote-anchor-22-44426436)
 

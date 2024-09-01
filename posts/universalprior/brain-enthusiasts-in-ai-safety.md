@@ -32,7 +32,7 @@ When you hear terms like "AI Alignment", "AI Safety," or "AGI", you probably thi
 
 Using a [previously published dataset](https://www.lesswrong.com/posts/FgjcHiWvADgsocE34/a-descriptive-not-prescriptive-overview-of-current-ai), we determined the number of Alignment Forum posts per researcher and sorted the resulting table. We then added a "Background" column, where we noted the field in which the researcher obtained their most recent degree[2](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-2-59586443). As observed [previously](https://www.lesswrong.com/posts/FgjcHiWvADgsocE34/a-descriptive-not-prescriptive-overview-of-current-ai), the number of published posts is a long-tailed distribution[3](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-3-59586443), with Stuart Armstrong dominating over everyone.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fff328cb9-4518-4881-83f6-93682209a2f6_1100x1420.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fff328cb9-4518-4881-83f6-93682209a2f6_1100x1420.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_186.png)
 
 Almost everyone on the list has a computer science, physics, or mathematics background. Notable exceptions are three researchers with an "officially different" formal education (Abram Demski, Richard Ngo, and Daniel Kokotajlo) and those researchers who now work on brain-enthusiasm topics:
 
@@ -70,13 +70,13 @@ Between these two poles, there is an entire spectrum of what "solving” AI Safe
 
 The poles of this spectrum appear highly unlikely - pure theory without implementation is as useless as pure observation without foresight[5](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-5-59586443). But the intermediate scenarios appear plausible, and we'll dive into them more in the next two sections.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ffe32e865-7b95-4ceb-b959-77b1d563da4a_1903x627.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ffe32e865-7b95-4ceb-b959-77b1d563da4a_1903x627.png)On the spectrum from empirical to logical, brain enthusiasts tend more to the empirical pole than the typical AI Safety researcher. The bull & bear case describe two plausible ranges in which researchers could be able work productively on AI Safety.
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_187.png)On the spectrum from empirical to logical, brain enthusiasts tend more to the empirical pole than the typical AI Safety researcher. The bull & bear case describe two plausible ranges in which researchers could be able work productively on AI Safety.
 
 ### Recommendations: the bear case
 
  _AI Safety **mostly** requires theoretical research but also **some** empirical research._
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F3b5f34d6-835a-4ea2-9201-be1c132d6761_1024x1024.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F3b5f34d6-835a-4ea2-9201-be1c132d6761_1024x1024.png) _A bear furiously writing computer code while drinking coffee in a room crammed full of books and papers stacked to the ceiling._ [#dalle](https://labs.openai.com/s/5vFdz3KmxaLOwQ0YhJv9R3JK)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_188.png) _A bear furiously writing computer code while drinking coffee in a room crammed full of books and papers stacked to the ceiling._ [#dalle](https://labs.openai.com/s/5vFdz3KmxaLOwQ0YhJv9R3JK)
 
 In this scenario, AI Safety is mostly a technical problem, and the current distribution of backgrounds is near-optimal. To contribute, you want to have **solid** coding and at least rudimentary math skills. You might start by applying for the [AI Safety camp](https://aisafety.camp/) and then for the [ML for Alignment Bootcamp](https://forum.effectivealtruism.org/posts/iwTr8S8QkutyYroGy/apply-to-the-ml-for-alignment-bootcamp-mlab-in-berkeley-jan). Do some [Coursera courses](https://www.coursera.org/specializations/deep-learning) on Deep Learning, and maybe study some [good old-fashioned AI](https://ocw.mit.edu/courses/6-034-artificial-intelligence-fall-2010/). Follow the steps outlined by CharlieRS [here](https://forum.effectivealtruism.org/posts/7WXPkpqKGKewAymJf/how-to-pursue-a-career-in-technical-ai-alignment). Don't feel like you have to figure everything out before you can "get started properly" (you'll pick up things along the way), but realize that technical skills are crucial to contribute to the problem meaningfully.
 
@@ -86,7 +86,7 @@ However, your brain enthusiasm background is not something to be ashamed of eith
 
 ### Recommendations: the bull case
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fd2969176-fd38-4f58-8be3-a1740dd3f997_1024x1024.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fd2969176-fd38-4f58-8be3-a1740dd3f997_1024x1024.png) _A bull furiously writing computer code while drinking coffee in a room crammed full of books and papers stacked to the ceiling._[#dalle](https://labs.openai.com/s/rsrRDoqZo2oXqYuapVan8MoC)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_189.png) _A bull furiously writing computer code while drinking coffee in a room crammed full of books and papers stacked to the ceiling._[#dalle](https://labs.openai.com/s/rsrRDoqZo2oXqYuapVan8MoC)
 
  _AI Safety requires **some** theoretical research and **some** empirical research._
 

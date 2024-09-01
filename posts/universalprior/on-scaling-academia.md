@@ -42,7 +42,7 @@ I still want to hedge my bets. If I’ll be an academic, I want to be an effecti
 
 There are some pretty large research institutes: the Chinese Academy of Sciences employs 60.000 researchers, the French Centre National de la Recherche Scientifique employs 15.000 researchers and the German Max Planck Society employs around 7.500 researchers ([source](https://www.natureindex.com/news-blog/ten-global-institutions-universities-twenty-nineteen-annual-tables)). Those are not-small numbers, but they pale in comparison to employee numbers of Fortune 500 companies:
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F94792373-7c02-4cb5-8e2a-358f25483253_5548x4705.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F94792373-7c02-4cb5-8e2a-358f25483253_5548x4705.png)Leading 500 Fortune companies based on number of employees in 2019 ([source](https://www.statista.com/statistics/264671/top-50-companies-based-on-number-of-employees/)). I did _not_ expect the Deutsche Post on this list.
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_247.png)Leading 500 Fortune companies based on number of employees in 2019 ([source](https://www.statista.com/statistics/264671/top-50-companies-based-on-number-of-employees/)). I did _not_ expect the Deutsche Post on this list.
 
 And the numbers from academia are also misleading: from experience, I can attest that the 7500 researchers of the Max Planck Society are, _at most_ , connected by some vague set of standards and values. In actuality, the society consists of a few hundred independent research groups, each with 5 to 100 researchers. And "independence" is really important here - anything like central coordination of research would be perceived as limiting scientific freedom[3](https://universalprior.substack.com/p/on-scaling-academia#footnote-3-41525488) and therefore bad. Why are 10-30 researchers the de-facto limit to how large a research group can grow? Why not thousands or tens of thousands?
 
@@ -72,7 +72,7 @@ Might we conclude that we are already at some efficient frontier most of the tim
 
 Let's go by the numbers first. The typical academic chain of command is very straightforward: 
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7507f32a-d8c0-49ac-af9f-ecb43df0649b_4458x3674.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7507f32a-d8c0-49ac-af9f-ecb43df0649b_4458x3674.png)The academic pecking order.
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_248.png)The academic pecking order.
 
 When we assume that (like in the schematic) at each level the supervision ratio is 1:2, we can [easily](https://jarednielsen.com/sum-consecutive-powers-2/) derive the average group size:
     
@@ -81,7 +81,7 @@ When we assume that (like in the schematic) at each level the supervision ratio 
 
 Successful labs manage to scale this up by increasing the number of PostDocs or by introducing senior PostDocs/Group Leaders into the mix and by pushing how many students are supervised at each level:
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F5ff04f7d-7e7e-41e6-a722-4ef9c045e2e1_6567x4642.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F5ff04f7d-7e7e-41e6-a722-4ef9c045e2e1_6567x4642.png)#images-with-slightly-threatening-aura
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_249.png)#images-with-slightly-threatening-aura
     
     
     Group size = 3^4 - 1 = 80
@@ -129,7 +129,7 @@ I'm not satisfied with that answer. Systematizing has worked well for me in my r
 
 >  _#[[IAN says:]] Here is a classic proverb about low-hanging fruit:_ Eat the seeds you planted, not the fruit that ripened.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb9fbd5a2-a707-4448-accb-ce0acdfbbe09_2753x2298.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb9fbd5a2-a707-4448-accb-ce0acdfbbe09_2753x2298.png)He _can_ fly, he just _decides_ not to.
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_250.png)He _can_ fly, he just _decides_ not to.
 
 What would it mean for academia to be "efficient"? I like [this definition from economics](https://www.etf.com/sections/features/123.html) illustrated by the joke about the economist who won’t pick up the 20$ bill lying on a busy street because " _if it was real, somebody else would have already picked it up_ ". In academia, this translates to the statement "there is no low-hanging fruit": If you think you made an exciting new discovery after investing only little effort, you should be wary. Most likely, you are either wrong or somebody else already made this discovery and published it in the 1960s.
 
@@ -147,7 +147,7 @@ Once objective metrics are adopted ([like in protein folding](https://www.nature
 
 > The prediction market is a market where people can trade contracts that pay based on the outcomes of unknown future events. The market prices generated from these contracts can be understood as a kind of collective prediction among market participants. These prices are based on the individual expectations and willingness of investors to put their money on the line for those expectations.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F95a88134-f06a-45ef-9136-a67ff7a237f0_2393x1496.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F95a88134-f06a-45ef-9136-a67ff7a237f0_2393x1496.png)Am I taking this too far? No? Okay, then I’ll just keep going.
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_251.png)Am I taking this too far? No? Okay, then I’ll just keep going.
 
 In my ideal world, we would establish prediction markets for _everything_. This would solve so many problems:
 
@@ -181,11 +181,11 @@ Please don’t think that I was intentionally burying the lede. I do believe tha
 
 would be genuinely awesome things for academia at large. If I ever get to have my own lab, those two components will be high on my list of priorities. But it also turns out that those two components would go a long way towards automating research. I’m thinking a lot about how I could replace my students with Robo Researchers[12](https://universalprior.substack.com/p/on-scaling-academia#footnote-12-41525488):
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F3a4a5612-c4ea-4a71-a1fe-1194553e3c2c_5801x3190.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F3a4a5612-c4ea-4a71-a1fe-1194553e3c2c_5801x3190.png)#images-with-explicitly-threatening-aura
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_252.png)#images-with-explicitly-threatening-aura
 
 … Okay, that came out wrong. What I actually mean is that I’m thinking a lot about how I could augment my research with Robo Researchers:
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F1e50c7cb-9b60-4dee-a2ea-920acbe6cb68_6084x3184.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F1e50c7cb-9b60-4dee-a2ea-920acbe6cb68_6084x3184.png)🎶 We learn to live, when we learn to give, Each other what we need to survive, together alive 🎶
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_253.png)🎶 We learn to live, when we learn to give, Each other what we need to survive, together alive 🎶
 
 My motivation for thinking about Robo Researchers is exactly the same as the motivation for accepting to supervise students in the first place: A day only has 24 hours and there is so much to do and it’s awesome to have someone help you. And let’s face it: a lot of the “stuff-that-needs-doing” is just grunt work. A typical task for a student of mine is “Can you run those simulations again but with different values of θ and put the results on slides?” or “Can you read up on the effect of the Fragile X mutation on SST interneurons in early development and write me a brief summary?“. If we could get a Robo Researcher to assist with that, that would be a big win for everyone involved. And with a software suite composed of something like [Codex](https://openai.com/blog/openai-codex/), a [fine-tuned language model](https://universalprior.substack.com/p/making-of-ian), and [Ought’s Elicit](https://elicit.org/) I think I am not too far away from making that a reality.
 
@@ -195,7 +195,7 @@ While systematizing and introducing better metrics promise marginal improvements
 
 Different point. [Grace et al.](https://arxiv.org/pdf/1705.08807.pdf) performed an influential survey among machine learning experts about their timelines for when certain tasks can be accomplished by AI at the same level as humans:
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F766479ae-876e-488e-8651-ba01bfd4c75e_1349x561.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F766479ae-876e-488e-8651-ba01bfd4c75e_1349x561.png)Timeline of Median Estimates (with 50% intervals) for AI Achieving Human Performance.
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_254.png)Timeline of Median Estimates (with 50% intervals) for AI Achieving Human Performance.
 
 But I think this provides a false sense of job security for researchers. Here are some reasons why it might take a lot less than 45 years before (f.e.) a [math researcher starts feeling the impact of AI](https://www.nature.com/articles/d41586-021-01627-2): 
 

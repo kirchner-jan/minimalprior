@@ -44,7 +44,7 @@ There are several factors determining the sum of trust over time (fig. 1), for e
 
 
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F88fe5789-0459-4843-a489-1703715207da_1600x759.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F88fe5789-0459-4843-a489-1703715207da_1600x759.png)Fig. 1: Trust gained by deception and honesty over time
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_181.png)Fig. 1: Trust gained by deception and honesty over time
 
 A strategy of honesty may take longer to gain trust, but might be more stable in the long term. Once deception is uncovered, trust decreases drastically. However, even people who have deceived others can, over time, sometimes regain some of the trust they lost when the deception was uncovered. Also, there may be a long-term limit to the trust you can get by being honest, which in principle could be lower than the short-term limit accessible through deception. And it is possible for a rival to reduce or even destroy trust in someone who is always honest, for instance through false accusations. There is also usually an initial level of trust people are willing to give to things or people they don’t know, but expect to be beneficial to them, which may be based on personality, culture, and prior experience.
 

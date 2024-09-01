@@ -11,7 +11,7 @@ Over the Christmas holiday, I became slightly obsessed with the Netflix show "[N
 
 Buckle up, this will be a weird one.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa2de3801-ecac-41ee-8f8c-d654f2066bce_1152x1024.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa2de3801-ecac-41ee-8f8c-d654f2066bce_1152x1024.png)
+![](../../images/https3A2F2Fsubstack-post-medias3amazonawscom2Fpubl.png)
 
 Before I get into the nitty-gritty of my newfound interest in fashion, let me first address the elephant in the room - why care about fashion in the first place[2](https://universalprior.substack.com/p/this-week-in-fashion#footnote-2-97157004)?
 
@@ -21,15 +21,15 @@ There are three different schools[3](https://universalprior.substack.com/p/this-
 
  _School of the devil_ : The philosophy of "[The Devil Wears Prada](https://en.wikipedia.org/wiki/The_Devil_Wears_Prada_\(film\))[4](https://universalprior.substack.com/p/this-week-in-fashion#footnote-4-97157004)" is centered around the idea that fashion is a form of power and influence. The film explores the idea that the fashion industry is a demanding and competitive field that requires a high level of expertise and commitment, and that subverting the rigid hierarchy of fashion can have unintended or unexpected consequences.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3e3e8591-ecd7-48b8-8ed7-15a39b79a5fc_1422x1433.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3e3e8591-ecd7-48b8-8ed7-15a39b79a5fc_1422x1433.png)
+![](../../images/https3A2F2Fsubstack-post-medias3amazonawscom2Fpubl_1.png)
 
  _School of the barber pole_ : Scott Alexander's [barber pole model](https://slatestarcodex.com/2014/04/22/right-is-the-new-left/) posits that fashion trends move in a predictable cycle, with each new trend allowing elites to distinguish themselves from runner-ups (who take a while to catch up). An important prediction of this model is that fashion worn by the “upper” class can end up looking a lot like fashion worn by the “lower” class, who tend to pick up on trends at a time delay. As such, fashion is primarily a vehicle for signaling social status and group membership.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7413bc67-6164-4df2-95de-89e4700393dd_1537x1433.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7413bc67-6164-4df2-95de-89e4700393dd_1537x1433.png)
+![](../../images/https3A2F2Fsubstack-post-medias3amazonawscom2Fpubl_2.png)
 
  _School of reality TV_ : While never spelled out explicitly, in “Next in Fashion” fashion is a form of creative expression and a way to appreciate art. The show centers around the skill and talent required to create unique and innovative designs, and the importance of supporting and nurturing new talent in the industry. In this interpretation, fashion can also help us better understand ourselves, each other, and the world we live in.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F435c1e15-ae89-41be-b0f8-b62c9ec83c07_1585x1433.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F435c1e15-ae89-41be-b0f8-b62c9ec83c07_1585x1433.png)
+![](../../images/https3A2F2Fsubstack-post-medias3amazonawscom2Fpubl_3.png)
 
 ## Why I'm not buying it
 
@@ -54,7 +54,7 @@ Fashion moves money, more so today than yesterday. Classic economic theory is no
 
 Unfortunately, this "truth by definition" also makes the insight vacuous. My question is exactly _why_ luxury clothing is desirable. [Fashion implies power, not the other way around](https://www.statisticshowto.com/reverse-causality/). What _makes_ a luxury item luxurious?
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f8a79bc-3c06-4c02-a2e5-2155d2ca6dfb_1422x1433.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f8a79bc-3c06-4c02-a2e5-2155d2ca6dfb_1422x1433.png)
+![](../../images/https3A2F2Fsubstack-post-medias3amazonawscom2Fpubl_4.png)
 
 ##### Is fashion all about _signaling_ and the _slow, cyclical propagation of status markers through society's ranks_?
 
@@ -64,11 +64,11 @@ However - attributing the cyclical features of fashion to [signaling games](http
 
 Beyond the objection that [signaling games are kind of lame](https://astralcodexten.substack.com/p/book-review-fussell-on-class)[9](https://universalprior.substack.com/p/this-week-in-fashion#footnote-9-97157004), saying "fashion is cyclic" doesn't explain everything there is to explain. Importantly, fashion doesn't _exactly_ repeat, each time around.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb36ebdba-49a3-4d72-8e57-bfb69ba1cf68_1854x706.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb36ebdba-49a3-4d72-8e57-bfb69ba1cf68_1854x706.png)From pure function, via tight and then baggy fits, all the way to men-sitting-on-appliances. Superficially similar, but higher-order terms _do_ matter.
+![](../../images/https3A2F2Fsubstack-post-medias3amazonawscom2Fpubl_5.png)From pure function, via tight and then baggy fits, all the way to men-sitting-on-appliances. Superficially similar, but higher-order terms _do_ matter.
 
 While the general cuts of fashion tend to return in some form or other, the details matter a lot! In the words of Balaji, [all progress is along the z-axis](https://twitter.com/balajis/status/1438138118440321032). Bell bottoms keep returning, but _something_ evolves. What is that something? Why do (some) people care?
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fba7d9a51-1322-4231-83cb-825355a7e5aa_1537x1433.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fba7d9a51-1322-4231-83cb-825355a7e5aa_1537x1433.png)
+![](../../images/https3A2F2Fsubstack-post-medias3amazonawscom2Fpubl_6.png)
 
 ##### Is fashion about creative self-expression and art appreciation?
 
@@ -78,7 +78,7 @@ I acknowledge that position is not obviously true without further argument. “N
 
 But it falls short of its potential[11](https://universalprior.substack.com/p/this-week-in-fashion#footnote-11-97157004). Don’t get me wrong, the show is entertaining, jam-packed with drama and emotion, and a lot of pretty designs to look at for ~5 seconds each. But the show does not manage to penetrate the core of what draws us to pretty things. It only shows us that some people very clearly _are_ drawn to it.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdd11fff4-808e-4315-bc91-097023901502_1024x1024.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdd11fff4-808e-4315-bc91-097023901502_1024x1024.png)I give it 3/5 Jans.
+![](../../images/https3A2F2Fsubstack-post-medias3amazonawscom2Fpubl_7.png)I give it 3/5 Jans.
 
 ## What I did about it
 
@@ -92,13 +92,13 @@ Text within this block will maintain its original spacing when published
 There is [more](https://iep.utm.edu/empirical-aesthetics/) [than](https://en.wikipedia.org/wiki/Aesthetics) [one](https://en.wikipedia.org/wiki/Cosmetology) field of academic research that is concerned with that question, but I feel like this type of question must be approached through experiment, not theory. So I aimed to fully submerge myself in the subject matter.
 
   1. First, I read and watched everything that sparked my interest. The [McQueen documentary](https://www.imdb.com/title/tt6510332/) was revelatory, [Bliss Foster](https://www.youtube.com/@BlissFoster/videos) on YouTube makes insightful short video essays, and [The September Issue](https://www.imdb.com/title/tt1331025/) gives a more nuanced picture of the fashion industry than “The Devil Wears Prada”.
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc09eb6a6-d0b4-4a60-bdbb-f876087544f8_1024x1024.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc09eb6a6-d0b4-4a60-bdbb-f876087544f8_1024x1024.png)Why is there a chicken in this image you ask? [Oh, you poor imbecile](https://universalprior.substack.com/p/soldiers-scouts-and-albatrosses).
+![](../../images/https3A2F2Fsubstack-post-medias3amazonawscom2Fpubl_8.png)Why is there a chicken in this image you ask? [Oh, you poor imbecile](https://universalprior.substack.com/p/soldiers-scouts-and-albatrosses).
 
   1. Second, I studied as I’d study for a test. I’m a big fan of [spaced repetition](https://www.gwern.net/Spaced-repetition) [in Roam Research](https://thinkstack.club/an-introduction-to-roams-delta-function-spaced-repetition/) and create new cards for my system at a whim. A single repetition can improve recall [dramatically](https://www.gwern.net/Spaced-repetition#:~:text=is%20much%20superior%3A-,Wired,-\(original%2C%20Wozniak%3F\)%3B%20massed), and - check that out! - it turns out language models are really good at creating spaced repetition cards for you. In my experience, [learning about the people and movements](https://universalprior.substack.com/p/on-context-and-people) in a field can explain a ton of variability.
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb43fd51a-6749-4e5e-bc9e-ae76f11cd982_1600x940.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb43fd51a-6749-4e5e-bc9e-ae76f11cd982_1600x940.png)
+![](../../images/https3A2F2Fsubstack-post-medias3amazonawscom2Fpubl_9.png)
 
   1. I had someone quiz me. Language models are very good at that too, but if push comes to shove a fellow human also does the trick. You can even quiz them back.
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F39688452-48f2-4056-9883-70c7d28a6844_1024x1024.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F39688452-48f2-4056-9883-70c7d28a6844_1024x1024.png)I apologize for calling you an imbecile just a moment ago, dear reader. [I apologize](https://xkcd.com/1053/). It’s just - it’s an albatross, not a chicken. Kind of a sore spot for me.
+![](../../images/https3A2F2Fsubstack-post-medias3amazonawscom2Fpubl_10.png)I apologize for calling you an imbecile just a moment ago, dear reader. [I apologize](https://xkcd.com/1053/). It’s just - it’s an albatross, not a chicken. Kind of a sore spot for me.
 
 
 
@@ -107,15 +107,15 @@ There is [more](https://iep.utm.edu/empirical-aesthetics/) [than](https://en.wik
 
 Despite laboring away for multiple **days** I still felt insecure about my ability to distinguish good from bad fashion. I _do_ however feel rather secure about my ability to [train a neural network to learn human preferences](https://universalprior.substack.com/p/inferring-utility-functions?utm_source=substack&utm_campaign=post_embed&utm_medium=web). So I threw the experiment strategy out the window, obtained a full scrape of the [Vogue Archive](https://archive.vogue.com/), performed object detection to get cutouts of all the outfits, and embedded the cutouts in a semantic vector space with [CLIP](https://huggingface.co/docs/transformers/model_doc/clip).
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F18f4cf8c-d825-445d-924a-22227d91ff95_1024x1024.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F18f4cf8c-d825-445d-924a-22227d91ff95_1024x1024.png)Some kids cut out their favorite outfits from magazines they bought with their lunch money, other kids scrape the vogue archive to get cutouts of all outfits since 1892. You say potato, I say tomato. (I stole that joke from a student of mine).
+![](../../images/https3A2F2Fsubstack-post-medias3amazonawscom2Fpubl_11.png)Some kids cut out their favorite outfits from magazines they bought with their lunch money, other kids scrape the vogue archive to get cutouts of all outfits since 1892. You say potato, I say tomato. (I stole that joke from a student of mine).
 
 I then recycled code from [an old project](https://universalprior.substack.com/p/inferring-utility-functions?utm_source=substack&utm_campaign=post_embed&utm_medium=web) and set up a small interface for making judgment calls and storing them in a [database](https://redis.io/).
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd3045625-7cb6-4a1a-8c12-e1fe460a5df0_2988x1570.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd3045625-7cb6-4a1a-8c12-e1fe460a5df0_2988x1570.png)
+![](../../images/https3A2F2Fsubstack-post-medias3amazonawscom2Fpubl_12.png)
 
 After ~~forcing~~ kindly asking[12](https://universalprior.substack.com/p/this-week-in-fashion#footnote-12-97157004) my significant other to make a measly 1000 comparisons[13](https://universalprior.substack.com/p/this-week-in-fashion#footnote-13-97157004), I threw the comparisons into a neural network and trained a reward model. I then ranked the entire dataset and create a montage of the top 15 images.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F33cae49b-a95d-4946-ae4e-69e90822ce94_1485x1784.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F33cae49b-a95d-4946-ae4e-69e90822ce94_1485x1784.png)The reward model clearly learned _something_.
+![](../../images/https3A2F2Fsubstack-post-medias3amazonawscom2Fpubl_13.png)The reward model clearly learned _something_.
 
 I am happy to report that she thinks the resulting montage captured her taste pretty well[14](https://universalprior.substack.com/p/this-week-in-fashion#footnote-14-97157004). So I tried to get her to rate 20k additional images, but somehow her enthusiasm for that project diminished quite quickly.
 

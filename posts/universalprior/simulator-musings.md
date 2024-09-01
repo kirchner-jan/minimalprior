@@ -9,7 +9,7 @@ date: 2023-01-03
 
 ## Nerding out with the OG cyborgs
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb622ed84-247b-4e9c-a998-6aa364c481e8_2048x1628.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb622ed84-247b-4e9c-a998-6aa364c481e8_2048x1628.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_197.png)
 
 A few months ago, the [enigmatic](https://twitter.com/repligate/status/1609712964705157123?s=20&t=nd8IRj_AuWyqZ4NsToSQTQ) [janus](https://generative.ink/prophecies/) published a write-up on what they call "[simulator theory](https://www.alignmentforum.org/posts/vJFdjigzmcXMhNTsx/simulators)" on the Alignment Forum. The post spurred a lot of discussions and changed a bunch of minds. This outcome was not completely clear from the onset - janus has been a fixture in the alignment community and [on Discord](https://www.eleuther.ai/), and their thought has been [in the water](https://astralcodexten.substack.com/p/janus-gpt-wrangling) for a while. And the message of the simulator post is comparatively simple - “large language models can/should be viewed as simulators”. But the post ended up being a big success; it turns out that having janus’ philosophy laid out in writing enabled a lot more structured discussion than what would have been possible otherwise.
 
@@ -40,7 +40,7 @@ This description makes it sound very high-strung, so let me illustrate with a to
 
 We can then look at the probability of the event E that the sequence of coin flips ends in tails (` 0`) or heads (` 1`) as a function of the sequence length.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fe2c00bcc-bcb0-4586-9892-a61efb05857b_3027x2695.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fe2c00bcc-bcb0-4586-9892-a61efb05857b_3027x2695.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_198.png)
 
 We note two key differences between the semiotic coin flip and a fair coin:
 
@@ -53,7 +53,7 @@ We note two key differences between the semiotic coin flip and a fair coin:
 
 To better understand the types of sequences that end in either tails or heads, we next investigate the probability of the most likely sequence ending in ` 0` or ` 1`. As we can see in the graph below, the probability of the most likely sequence ending in ` 1` does not decrease for the GPT coin as rapidly as it does for a fair coin.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F1e56ee73-72eb-4e65-8768-3dc4c4802507_2829x2695.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F1e56ee73-72eb-4e65-8768-3dc4c4802507_2829x2695.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_199.png)
 
 Again, we observe a notable difference between the semiotic coin and the fair coin:
 
@@ -70,7 +70,7 @@ This difference is due to the fact that the most likely sequence of semiotic coi
 
 Avid readers of this blog will recognize the set-up we are preparing here as the [set-up for a large deviation principle](https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control). And indeed, it turns out that we can indeed predict the probability of a sequence of coin flips ending in 0 by determining the probability of the _most likely_ sequence of coin flips ending in 0.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fed6a5168-6c76-4be4-a62f-e2c0c77d3f24_3028x2695.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fed6a5168-6c76-4be4-a62f-e2c0c77d3f24_3028x2695.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_200.png)
 
 Here we see that, indeed, the negative probability of the most likely sequence from E scales as
 

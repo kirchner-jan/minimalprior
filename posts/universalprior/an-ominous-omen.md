@@ -15,4 +15,4 @@ There isn’t a lot of technical novelty beyond what I already did with [IAN](ht
 
 Also, what a visual firework!
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F737ec551-a583-406d-80c2-845cf9be8f74_320x180.gif)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F737ec551-a583-406d-80c2-845cf9be8f74_320x180.gif)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_3.gif)

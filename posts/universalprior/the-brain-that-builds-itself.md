@@ -27,7 +27,7 @@ Since those innocent days, I have come to appreciate that building a biological 
 
 In contrast, the solution for AI appears to be (for now) "just stack more layers":
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fe70f49fe-eeaf-41f7-b27f-1e3e96722d19_787x943.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fe70f49fe-eeaf-41f7-b27f-1e3e96722d19_787x943.png)[source](https://www.gwern.net/Scaling-hypothesis#scaling-hypothesis)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_230.png)[source](https://www.gwern.net/Scaling-hypothesis#scaling-hypothesis)
 
 In AI, "the thing being built" and "the thing that's doing the building" is cleanly separated into "model" and "optimizer". Global information like the learning rate is readily available to all units. And even _after_ training, there are no predators that punish lack of robustness[2](https://universalprior.substack.com/p/the-brain-that-builds-itself#footnote-2-57181673). 
 
@@ -47,25 +47,25 @@ What does it mean for the brain to be building itself?
 
 As the brain is growing, it is _dynamically_ responding to cues. Removing input to one eye and the visual cortex balances the loss by [upregulating input from the other](https://www.pnas.org/doi/abs/10.1073/pnas.1918368117). _Adding_ an additional eye results in... well, this:
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F9310899d-948d-4864-8fe8-93fe8df7a4d6_191x220.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F9310899d-948d-4864-8fe8-93fe8df7a4d6_191x220.png)The Science editors couldn't resist and tagged this as "[Cultivating the Third Eye](https://www.science.org/doi/10.1126/science.308.5724.948a)"
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_231.png)The Science editors couldn't resist and tagged this as "[Cultivating the Third Eye](https://www.science.org/doi/10.1126/science.308.5724.948a)"
 
 When the brain does this type of rearranging, it is both the thing that "notices" that something is wrong, and it's also the thing that "is being modified".
 
 Third-eye shenanigans are only one (illustrative) example of the dynamic nature of development. Throughout development, immature neural **circuits** produce **activity** that induces activity-dependent formation/removal of synapses, which changes the **circuit** , which leads to changed **activity** , ... **The circuit is "the thing you're building," and its activity is "the thing that is doing the building"**.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa4ebdea5-faa8-41d0-abd1-ec1d3c9dd827_1456x761.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa4ebdea5-faa8-41d0-abd1-ec1d3c9dd827_1456x761.png)[source](https://universalprior.substack.com/p/how-to-build-a-mind-neuroscience?s=w)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_232.png)[source](https://universalprior.substack.com/p/how-to-build-a-mind-neuroscience?s=w)
 
 I've briefly [written about this dynamic](https://universalprior.substack.com/p/how-to-build-a-mind-neuroscience?s=w) before, but now I want to take a deeper dive because a thing I've been working on with colleagues for a while is [finally out as a preprint](https://www.biorxiv.org/content/10.1101/2022.05.24.493217v1).
 
 Let's start by building some intuition by looking at pretty pictures. We start with one of my favorite recordings of the optic tectum of a zebrafish developing over 16 hours:
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F8f7fae16-1320-48d4-a777-071a83fc9d57_512x367.gif)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F8f7fae16-1320-48d4-a777-071a83fc9d57_512x367.gif)[source](https://www.nikonsmallworld.com/news/developing-sensory-nervous-system-of-a-zebrafish-wins-2018-nikon-small-world-in-motion-competition)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_10.gif)[source](https://www.nikonsmallworld.com/news/developing-sensory-nervous-system-of-a-zebrafish-wins-2018-nikon-small-world-in-motion-competition)
 
 After soaking in this beauty for a bit, I would like to ask you to look closely at some of the tiny protrusions. You'll notice that the smaller protrusions tend to probe the environment a bit before settling for a direction to grow in.
 
 [Niell and colleagues](https://www.nature.com/articles/nn1191) made that observation eight years earlier, but their camera wasn't as nice.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_lossy/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F6a467dc3-6403-4251-be6d-1e8017de693e_512x433.gif)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F6a467dc3-6403-4251-be6d-1e8017de693e_512x433.gif)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_11.gif)
 
 On the plus side, they got a very close look at an individual dendritic tree of a neuron in the optic tectum. And importantly, they genetically manipulated the fish so that its synapses glow green. So they were able to look closely at the interactions between dendrite growth and synapse formation.
 
@@ -73,7 +73,7 @@ Now, this is where the plot thickens. Synapses are the site of transmission of e
 
 And that's indeed the conclusion that Niell and colleagues arrive at. They look very closely at a developing branch, and they notice that once a synapse (a green blob) forms, the developing dendrite tends to _anchor_ to that synapse. So it seems that during early development, the initial synapses a dendrite makes can act as a type of _scaffold_.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa5fd8847-512f-4125-9f32-e828254bf978_600x558.jpeg)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa5fd8847-512f-4125-9f32-e828254bf978_600x558.jpeg)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_10.jpeg)
 
 ##  **Probably prunable**
 
@@ -81,28 +81,28 @@ But not all development is about growth! Rather, it's about growth plus **select
 
 Right out the gate - even though there can be a lot of pruning, this typically doesn't mean that the dendrite gets _shorter_ in total[3](https://universalprior.substack.com/p/the-brain-that-builds-itself#footnote-3-57181673). Typically, retractions of branches are balanced by the addition of new branches. Here are pictures from a timelapse from a Xenopus tadpole neuron:
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa0af0cd7-5d2c-4671-8b1e-fee96eb5b87c_678x414.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa0af0cd7-5d2c-4671-8b1e-fee96eb5b87c_678x414.png)The bottom row shows branches that will be lost by the end of the recording in red, branches that appear and disappear throughout the recording in green, and branches that emerge and are stable until the end of the recording in yellow. Importantly, despite all the local changes, the overall length of the dendrite remains approximately the same.
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_233.png)The bottom row shows branches that will be lost by the end of the recording in red, branches that appear and disappear throughout the recording in green, and branches that emerge and are stable until the end of the recording in yellow. Importantly, despite all the local changes, the overall length of the dendrite remains approximately the same.
 
 What determines if a branch stabilizes or gets pruned? It's kind of unclear - but let's collect the evidence.
 
   1. First, here's a sequence of pictures from the retina of a baby chicken. The pictures show a dendrite in the baseline (left), when activity is blocked (middle), and when activity is allowed again.  
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F08693e62-c1ae-499a-a9d9-d7823f86cb08_605x188.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F08693e62-c1ae-499a-a9d9-d7823f86cb08_605x188.png)[source](https://www.nature.com/articles/nature00850#Fig3)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_234.png)[source](https://www.nature.com/articles/nature00850#Fig3)
 
 The dendrite retracts rapidly when the activity stops and then extends again when the activity resumes. So **dendrite retraction can be triggered by activity-dependent mechanisms**.
 
   1. Second, here's a dendrite in the optic tectum of the Xenopus tadpole. The tadpole is trained with a visual stimulus, and the dendrite shows new protrusions that form in response to the training. Importantly, these protrusions are responsive to the stimulus that the tadpole was trained with.
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa993119c-0e6d-4542-a94a-eea344e1d160_1600x833.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa993119c-0e6d-4542-a94a-eea344e1d160_1600x833.png)[source](https://www.biorxiv.org/content/10.1101/2021.02.11.430646v1.full)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_235.png)[source](https://www.biorxiv.org/content/10.1101/2021.02.11.430646v1.full)
 
 So **specific activity can trigger the growth of dendrites**.
 
   1. Third, the "[Sherlock and Moriarty of molecular neuroscience](https://universalprior.substack.com/p/a-brief-excursion-into-molecular?s=w)" also get a starring role in this story. [In this study](https://molecularbrain.biomedcentral.com/articles/10.1186/1756-6606-2-27#Sec11), researchers incubate rat brain neurons in either BDNF (matBDNF) or proBDNF (CR-proBDNF) and find that the signaling molecules dramatically affect neuronal morphology.
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7fb999c3-c842-4159-81a0-4889a4f8c524_1372x868.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7fb999c3-c842-4159-81a0-4889a4f8c524_1372x868.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_236.png)
 
 ([As perhaps expected](https://universalprior.substack.com/p/a-brief-excursion-into-molecular?s=w),) **BDNF increases dendrite length and complexity, while proBDNF leads to almost complete dendrite removal**.
 
   1. Finally, we had pretty strong intuitions about how synapses ought to interact with each other [from previous work](https://universalprior.substack.com/p/a-brief-excursion-into-molecular?s=w). In particular, there's a [bunch](https://www.cell.com/neuron/fulltext/S0896-6273%2815%2900572-3) of [neat](https://www.cell.com/article/S2211-1247%2814%2901045-6/fulltext) experimental [evidence](https://www.science.org/doi/10.1126/science.aao0862) that synapses that fire "out-of-sync" tend to "lose their link". Or, in less poetic terms, **nearby synapses tend to compete**.
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F30c0fae7-b83e-49f6-aef1-d558576b1887_1078x368.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F30c0fae7-b83e-49f6-aef1-d558576b1887_1078x368.png)Strongly driving the synapses marked in yellow via glutamate uncaging results in shrinkage of the unstimulated synapses marked with the red arrow.
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_237.png)Strongly driving the synapses marked in yellow via glutamate uncaging results in shrinkage of the unstimulated synapses marked with the red arrow.
 
 
 
@@ -113,27 +113,27 @@ Those were the puzzle pieces we knew about (or [guessed](https://universalprior.
 
 [When we put these ideas into a model](https://www.biorxiv.org/content/10.1101/2022.05.24.493217v1.full), we get something like the following video:
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_lossy/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F03cb97a4-1a6e-4db7-b771-473b13bf7476_512x404.gif)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F03cb97a4-1a6e-4db7-b771-473b13bf7476_512x404.gif)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_12.gif)
 
 Initially, the dendrites shoot outwards and search for synaptic connections (synapses not shown in the video). Initially, the dendrite is not picky at all - it just connects with any potential partner it finds. This results in a rapid increase in total length that nicely mirrors the increase in length observed in biology (again from a [Xenopus tadpole](https://oxford.universitypressscholarship.com/view/10.1093/acprof:oso/9780198745273.001.0001/acprof-9780198745273-chapter-3)).
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F52c13702-5a0c-4663-a78f-6d9e6c25fb12_922x534.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F52c13702-5a0c-4663-a78f-6d9e6c25fb12_922x534.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_238.png)
 
 However, now something interesting happens both in the model and in biology; dendrite growth tapers off and stabilizes!
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F6e036dc4-09d7-4186-ba30-3d6a9dd7358d_938x556.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F6e036dc4-09d7-4186-ba30-3d6a9dd7358d_938x556.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_239.png)
 
 As I've shown you before, this stability in total length does not mean that there is no change in the dendrite structure anymore; rather, the addition and removal of branches are balanced in a **fixed point** /steady state. This is also something we observe in the model:
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fda185735-0b9f-491d-91cf-37579ff16f02_490x464.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fda185735-0b9f-491d-91cf-37579ff16f02_490x464.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_240.png)
 
 But why is it that the dendrite "suddenly" stops growing? The answer is unclear from the biological data, but our model gives a neat explanation: Dendrite growth stops because competition between synapses is starting!
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fda615d37-c9a9-416c-ade5-2ef92d143fee_426x394.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fda615d37-c9a9-416c-ade5-2ef92d143fee_426x394.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_241.png)
 
 Due to the dynamics of the competition, it took a while for synapses to "get to know their neighbors" and decide whether they were well-synchronized. But once they figured it out, synaptic pruning starts, and the dendrite cannot simply add new synapses at random anymore. Thus, growth slows down, and many poorly synchronized synapses get removed. What remains are only well-synchronized synapses:
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ff615c226-4779-456c-9d0c-113e730b322f_744x1438.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ff615c226-4779-456c-9d0c-113e730b322f_744x1438.png)Color of a synapse here indicates the type of activity that the synapse receives. Same color means that the synapses fire in synchrony, different color means they fire out of sync.
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_242.png)Color of a synapse here indicates the type of activity that the synapse receives. Same color means that the synapses fire in synchrony, different color means they fire out of sync.
 
 This way, our model can link the development of dendrites and the emergence of synaptic organization in one framework.
 
@@ -145,7 +145,7 @@ I feel the strong urge to do a bunch of epistemic hedging, "theory is theory and
 
 Instead of doing more hedging, I’ll stick my neck out even further and talk about “[the delta](https://universalprior.substack.com/p/on-not-reading-papers?s=w#:~:text=a%20paper%20adds.-,Schematic,-of%20%E2%80%9Cthe%20delta)”:
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2ae67949-e2a8-4d78-830d-b680d2f61125_6894x4485.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2ae67949-e2a8-4d78-830d-b680d2f61125_6894x4485.png) **Schematic** **of “the delta” added by a (typical) academic paper.** Papers you have read before are shown in the background with an orange background. Relationships between papers are indicated with double-sided arrows. The size and shape of the orange background represent the statements you believe are likely to be true. The newly added paper is shown in the foreground on a blue background. The portion that the new paper makes likely to be true (or, sometimes, demonstrates to be true) is “the delta”.
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_243.png) **Schematic** **of “the delta” added by a (typical) academic paper.** Papers you have read before are shown in the background with an orange background. Relationships between papers are indicated with double-sided arrows. The size and shape of the orange background represent the statements you believe are likely to be true. The newly added paper is shown in the foreground on a blue background. The portion that the new paper makes likely to be true (or, sometimes, demonstrates to be true) is “the delta”.
 
 What do I believe now about “the brain that builds itself”?
 
@@ -172,11 +172,11 @@ Unless you count the folks at [Redwood Research](https://www.redwoodresearch.org
 
 This image floating around the internet gets used _all over the place_ to argue that there is something special happening in the brain of humans around the age of 5-6. The image comes originally from [Seeman, 1999](https://ajp.psychiatryonline.org/doi/10.1176/ajp.156.2.168):
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F0352b490-bf1d-41e6-9670-bb81e3f235d4_500x275.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F0352b490-bf1d-41e6-9670-bb81e3f235d4_500x275.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_244.png)
 
 It might well be that something special happens at that age, but I cannot find a single other study that replicates the image on the left. In fact, a pretty [credible Nature Review shows](https://www.nature.com/articles/nrn.2018.1#Abs1) an increasing complexity up to age 24.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F61ee3f66-11d0-47c2-8c9c-0c7162b07b67_1600x718.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F61ee3f66-11d0-47c2-8c9c-0c7162b07b67_1600x718.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_245.png)
 
 Also, note that the caption of the Seeman figure talks about a decline in synaptic connections, which are not even visible on the left. And the right shows a decline in dopamine receptors, but with a very suspicious x-axis and very few data points in the most critical period.
 

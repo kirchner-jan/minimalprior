@@ -7,7 +7,7 @@ date: 2021-08-29
 ---
 
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fee60786b-f547-4d3c-92b4-351d547b729a_600x338.gif)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fee60786b-f547-4d3c-92b4-351d547b729a_600x338.gif)“ _Show, don’t tell._ ” - probably said originally by someone with bad hearing
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_4.gif)“ _Show, don’t tell._ ” - probably said originally by someone with bad hearing
 
 ### Building a 'digital person'.[1](https://universalprior.substack.com/p/making-of-ian#footnote-1-40527537)
 
@@ -67,7 +67,7 @@ IAN provides different [samples](https://huggingface.co/blog/how-to-generate#top
 
 >  _IAN says: Tomorrow for dinner I will cook one of the following dishes: 1. pasta_ 2\. salad 3. vegan burger 4. fruit salad 5. dessert Dishes can be combined to make a meal, but please don't put more than one on the card.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F6226ac63-7b34-4f13-b386-775f8d334518_744x837.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F6226ac63-7b34-4f13-b386-775f8d334518_744x837.png)discovered on EleutherAI
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_81.png)discovered on EleutherAI
 
  **Prompt engineering**
 
@@ -117,7 +117,7 @@ But for decisions where the outcome is purely subjective and where _owning it_ i
 
 So I will attempt to counter the [Larry Tesler bias](https://en.wikipedia.org/wiki/AI_effect#cite_note-7) and cut the model some slack. Instead of trying to poke holes into an idea, I will let myself be guided by (cherrypicked) suggestions from #IAN sometimes. Why _can’t_ I get a tattoo just because an AI told me to?[10](https://universalprior.substack.com/p/making-of-ian#footnote-10-40527537) Why _can’t_ I draw a “use of Kurt Gödel’s incompleteness theorem”? I can't help but think of this plot that has been popping up on Twitter a lot recently:
 
-> [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F8ebc3baa-c3a7-4734-9fca-51029d2407c0_1024x667.jpeg)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F8ebc3baa-c3a7-4734-9fca-51029d2407c0_1024x667.jpeg)
+> ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_1.jpeg)
 
 Adapting to the trend might require radical changes. Better start early.
 
@@ -211,7 +211,7 @@ Anything that is close to but not quite human can elicit an adverse emotional re
 
 [10](https://universalprior.substack.com/p/making-of-ian#footnote-anchor-10-40527537)
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F70de15e9-e7d7-4d67-b058-1865c972eb0d_4624x3472.jpeg)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F70de15e9-e7d7-4d67-b058-1865c972eb0d_4624x3472.jpeg) _#IAN says: I want to get a new tattoo! This time it will be_ a snake on my shoulder, and I thought about asking you first. Do you have an idea what I could do? I’m thinking about snakes, I guess. Best, Jan
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_2.jpeg) _#IAN says: I want to get a new tattoo! This time it will be_ a snake on my shoulder, and I thought about asking you first. Do you have an idea what I could do? I’m thinking about snakes, I guess. Best, Jan
 
 [11](https://universalprior.substack.com/p/making-of-ian#footnote-anchor-11-40527537)
 
@@ -219,7 +219,7 @@ Perhaps just adding some indication of the indentation level can already help? O
 
 [12](https://universalprior.substack.com/p/making-of-ian#footnote-anchor-12-40527537)
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F49b4b622-a423-438a-b4fe-58d6ae0db9b8_687x500.jpeg)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F49b4b622-a423-438a-b4fe-58d6ae0db9b8_687x500.jpeg)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_3.jpeg)
 
 They are just the same thing, right?
 

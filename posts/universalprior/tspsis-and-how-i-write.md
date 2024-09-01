@@ -26,7 +26,7 @@ Subscribe
 
 First off, I’m not a fan of belaboring a process. [XKCD said all that needs to be said](https://xkcd.com/1827/), reality is not a nice linear sequence of events where cause and effect are visible on the surface but rather a [weird mess of causally entangled stuff](https://www.alignmentforum.org/s/kxs3eeEti9ouwWFzr).
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa958ab3f-d666-4e5e-99a2-15448822d733_2135x1331.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa958ab3f-d666-4e5e-99a2-15448822d733_2135x1331.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_86.png)
 
 A better strategy than [behaviorally cloning](https://ml.berkeley.edu/blog/posts/bc/) the process of someone who claims to have it figured out is to identify the [underlying](https://en.wikipedia.org/wiki/Hidden_Markov_model) [generators](https://www.alignmentforum.org/posts/pdaGN6pQyQarFHXF4/reward-is-not-the-optimization-target) that produce their success. That’s easier said than done, though, and I have no reliable method for finding generators (yet).
 
@@ -51,35 +51,35 @@ The idea is to think of writing as a report of “travel through [treacherous te
 
 
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F971fbf28-5b95-441c-a868-dfd50497cd91_1024x1024.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F971fbf28-5b95-441c-a868-dfd50497cd91_1024x1024.png)hot take: prompt engineering for language models will not be a thing anymore soon, but will be much stickier for image generation
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_87.png)hot take: prompt engineering for language models will not be a thing anymore soon, but will be much stickier for image generation
 
 With these points in mind, here are the five stations you want to visit in everything you write.
 
-[![Calligraphy Generator](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fd5f4baa1-60d1-45e7-9b6a-d85f2912cffd_510x283.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fd5f4baa1-60d1-45e7-9b6a-d85f2912cffd_510x283.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_88.png)
 
 What are you writing about? Where in the territory are we? Why should the reader care?
 
 This section is the easiest to write and the easiest to neglect. The more familiar you are with the territory, the more you’ll forget about how non-obvious it is to get there.
 
-[![Calligraphy Generator](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F1aae9885-4786-4974-807c-68f38890b337_1424x263.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F1aae9885-4786-4974-807c-68f38890b337_1424x263.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_89.png)
 
 What have other people (or you) said previously about the territory? What does the surrounding territory look like?
 
 This section can quickly grow out of control if you attempt a complete description of the surrounding territory. A full report is not necessary or desirable. Compress and remove.
 
-[![Calligraphy Generator](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fd40763a4-6cc6-465e-9197-159e006772db_2931x269.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fd40763a4-6cc6-465e-9197-159e006772db_2931x269.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_90.png)
 
 What are the wrinkles in the landscape? Where is the terrain foggy/uncharted?
 
 This section puts the reader into your shoes at the onset of your travel. Describe what sparked your interest and what you [knew you didn’t know](https://en.wikipedia.org/wiki/There_are_unknown_unknowns#:~:text=Known%20unknowns%20refers%20to%20%22risks,they%20would%20not%20be%20considered.).
 
-[![Calligraphy Generator](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F3350c963-5f3d-4491-9ad1-66ee71dfe1b5_4102x263.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F3350c963-5f3d-4491-9ad1-66ee71dfe1b5_4102x263.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_91.png)
 
 How did your travel go? What did you see?
 
 Here is what the landscape looks like (I went out and looked)/Here is what I think it should look like (I thought about it very hard)/here is how I feel the wrinkles can be reconciled (I paid attention to these details that have been neglected before)/...
 
-[![Calligraphy Generator](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F85a11ea8-b0ed-4612-8f3a-ad65fb1a5d9b_5223x284.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F85a11ea8-b0ed-4612-8f3a-ad65fb1a5d9b_5223x284.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_92.png)
 
 What’s next?
 

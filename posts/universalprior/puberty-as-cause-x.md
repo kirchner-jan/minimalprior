@@ -65,21 +65,21 @@ There is a more [informal](https://80000hours.org/career-guide/most-pressing-pro
 
 One way to measure WELLBYs is via "life satisfaction point years" (LSP), where 1 LSP is equivalent to increasing life satisfaction for one person by one point on a 10 point scale for a year. To illustrate, here is an excerpt from a table from [Clark et al. (2018)](https://press.princeton.edu/books/hardcover/9780691177892/the-origins-of-happiness):
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa937da45-89fe-42d7-ada7-c70129a6dce3_1004x988.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa937da45-89fe-42d7-ada7-c70129a6dce3_1004x988.png)Life satisfaction is typically computed on a Likert scale from 0 to 10, which also comes with [a bunch of caveats](https://colourware.org/2014/02/18/the-dangers-of-likert-scale-data/)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_65.png)Life satisfaction is typically computed on a Likert scale from 0 to 10, which also comes with [a bunch of caveats](https://colourware.org/2014/02/18/the-dangers-of-likert-scale-data/)
 
 Conveniently, there is a ton of life satisfaction data for high school time. Here is[ Goldbeck et al. (2007)](https://pubmed.ncbi.nlm.nih.gov/17440827/):
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fff1c191b-631a-4566-8ead-786657fe5189_1582x874.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fff1c191b-631a-4566-8ead-786657fe5189_1582x874.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_66.png)
 
 I like them because they have a great sample size (n=1,274 German adolescents), they are from Germany, and they were among the first to rigorously show this effect. I don't like them because they use a [weighted satisfaction score](https://www.sogosurvey.com/blog/when-why-and-how-to-use-weighted-scores-in-survey-rating-questions/), and I have difficulty figuring out how they computed it. I think it should be between 0 and 100 and then the decrease would be -0.5 per year. But I'm not sure that's actually it; in other Figures from that paper, the points go above 100.
 
 [Herke et al. (2019)](https://academic.oup.com/eurpub/article/29/5/960/5422987?login=true) is 12 years later but has a _fantastic_ sample size (n=12 564 German adolescents) and explicitly says that they scale the score between 0 and 100:
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fdc8b9deb-7460-42ac-9361-133de0a8017f_868x804.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fdc8b9deb-7460-42ac-9361-133de0a8017f_868x804.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_67.png)
 
 [González-Carrasco et al. (2017)](https://link.springer.com/content/pdf/10.1007/s10902-016-9717-1.pdf) have a slightly smaller sample (n=940 Spanish adolescents), but their statistic is easier to interpret:
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F43c4f91c-c526-426e-8901-1ad605f23a95_872x876.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F43c4f91c-c526-426e-8901-1ad605f23a95_872x876.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_68.png)
 
 This looks equally damning, again with a -0.5 change in life satisfaction per year. [Aymerich et al. (2021)](https://link.springer.com/article/10.1007/s12187-021-09846-9) also find this effect (n=600 Spanish adolescents)[6](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-6-47550671). [Willroth et al. (2021)](https://psycnet.apa.org/record/2020-24000-001) find no changes from age 14 to age 17 (n=674 Mexica-origin adolescents). This is consistent with the previous studies, where most of the drop occurs before age 14. [Uusitalo-Malmivaara (2014)](https://www.scirp.org/html/7-6901064_45333.htm) also finds a drop in life satisfaction between ages 12 and 15 (n=339 Finnish adolescents). Still, the effect size looks a lot less impressive (AFAICT only a total change of -0.4 in three years). [Proctor et al. (2008)](https://www.pprc.gg/wp-content/uploads/2014/05/JHS.LS-Review.pdf) do a meta-study and find that:
 
@@ -89,7 +89,7 @@ Okay, I'm convinced something is going on here. But could it be that children be
 
  _Could_ be, but these roughly 600 Finnish adolescents about to graduate from school and surveyed by [Salmela-Aro et al. (2010)](https://link.springer.com/article/10.1007%2Fs10902-009-9156-3#Fig1) beg to differ:
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fd6e5dbdc-e5cf-4e9d-a4b2-da21e6d7ec43_784x754.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fd6e5dbdc-e5cf-4e9d-a4b2-da21e6d7ec43_784x754.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_69.png)
 
 [Steinmayr et al. (2019)](https://www.mdpi.com/1660-4601/16/19/3690) find the same thing for 476 German adolescents, but their layout for data presentation is basically criminal. [Petito et al. (2012)](https://www.cambridge.org/core/journals/behaviour-change/article/abs/quality-of-life-in-adolescence-the-role-of-perceived-control-parenting-style-and-social-support/FDAE9F75B883507114E8782B6FAE0C31) claim that 279 adolescents have lower life satisfaction than adults, but I can't access their study. When I line all these studies up like this, the story appears relatively straightforward: Life satisfaction drops by one or two points between the age of 11 and 16. Then there is a rebound from 16 to 19.
 
@@ -105,7 +105,7 @@ Despite the considerable uncertainty around these numbers, I'd conservatively es
 
 [Dolan and Metcalfe (2012)](https://sci-hub.se/https://journals.sagepub.com/doi/abs/10.1177/0272989X11435173) show us the impact of different impairments on life satisfaction.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F4f2d8e10-8c62-4110-9cf7-6145ec698d49_1600x510.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F4f2d8e10-8c62-4110-9cf7-6145ec698d49_1600x510.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_70.png)
 
 Here life satisfaction is scaled to the range between 0 and 1, so we have to multiply them by 10 to compare these values with the decrease in LSP during adolescence. This would put adolescence in the ballpark of "some problem washing or dressing", "moderate pain or discomfort", and "unable to perform usual activities". Consistently, Clark et al. (2018) from the beginning of this section, adolescence falls somewhere between one physical illness per year (-0.22) and being widowed (-0.48). This describes my experience during adolescence almost perfectly, actually.
 
@@ -149,7 +149,7 @@ These recent studies suggest indeed what one might intuitively suppose: bullying
 
 And they appear to be doing _something_! According to data by[ Due et al. (2019)](https://www.journaljesbs.com/index.php/JESBS/article/view/30160), there was a large drop in the percentage of Danish adolescents exposed to bullying in the late 90s (the authors don't know why this is, but believe it's due to raised awareness[11](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-11-47550671)), and a more moderate decline afterward.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F02329124-f2c6-4aa6-8c9d-30d53025e70d_1070x1008.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F02329124-f2c6-4aa6-8c9d-30d53025e70d_1070x1008.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_71.png)
 
 The slow decline since the early 2000s is also mirrored in [data from the U.S.](https://nces.ed.gov/blogs/nces/post/bullying-down-from-a-decade-ago-but-unchanged-since-2013), although the baseline is higher, around 30%. I like to believe that this is because the Danish are just friendlier by nature, but, realistically, it's probably due to differences in definition[12](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-12-47550671). A slow but steady decline might make us hopeful that the problem will dissolve itself in 50 years. Unfortunately, [statistics on cyberbullying](https://www.statista.com/statistics/509349/student-cyber-bullying-offending-rate-usa/) look a bit less promising[13](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-13-47550671).
 
@@ -159,13 +159,13 @@ Assuming that bullying will level off at a nonzero, constant rate, we might need
 
 While the previous interventions attempt to tackle the problem at the societal level, not all of the factors leading to suffering during puberty are due to external factors. In particular, I've already alluded to the fact that the brain of adolescents has to go through a lot during puberty. [Conventional](https://www.khanacademy.org/test-prep/mcat/behavior/human-development/v/brain-changes-during-adolescence)[ wisdom](https://www.ted.com/talks/sarah_jayne_blakemore_the_mysterious_workings_of_the_adolescent_brain/transcript?language=en#t-262099) backed up by [evidence](https://www.nature.com/articles/nn1099_861) is that the grey matter of the frontal cortex (containing cell bodies of neurons) grows more prominent and then shrinks again during puberty.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F44f929c8-d925-4012-a6ca-7cd88db1b9b2_1538x1026.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F44f929c8-d925-4012-a6ca-7cd88db1b9b2_1538x1026.png)[source](https://www.ted.com/talks/sarah_jayne_blakemore_the_mysterious_workings_of_the_adolescent_brain/transcript?language=en#t-162298)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_72.png)[source](https://www.ted.com/talks/sarah_jayne_blakemore_the_mysterious_workings_of_the_adolescent_brain/transcript?language=en#t-162298)
 
 This might explain why teenagers are _weird_ and make bad decisions, but not necessarily why they might be _unhappy_.
 
 The other conventional wisdom is that the amygdala, a region of the brain primarily associated with emotional processes, is also strongly affected by puberty. This is [the case in rats](https://www.nature.com/articles/nn.2178), [hamsters](https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2826.2010.02075.x), and, thanks to [Sorrells et al. (2019)](https://www.nature.com/articles/s41467-019-10765-1#Fig4), we know that this is the case in humans.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F8fb9fbfd-d523-4e5b-af92-9c94e6d0ed0b_1443x1294.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F8fb9fbfd-d523-4e5b-af92-9c94e6d0ed0b_1443x1294.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_73.png)
 
 Changes in the amygdala could _totally_ explain why teenagers are unhappy. We also [suspect](https://pubmed.ncbi.nlm.nih.gov/33067167/) differences between the left and the right amygdala. We [suspect](https://www.sciencedirect.com/science/article/pii/S1053811919310328?dgcid=api_sd_search-api-endpoint) there might be differences between males and females. Beyond this, it is still exceedingly unclear how the amygdala (and the limbic system in general) and we don't know a lot more beyond this.
 
@@ -235,7 +235,7 @@ Imagine being transported back into an age where burning witches at the stake is
 
 This has got to be my favorite illustration _ever_. I mean, apart from depicting horrors beyond comprehension.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ffc3164fc-450d-495a-a372-9cf80934fd17_1600x938.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ffc3164fc-450d-495a-a372-9cf80934fd17_1600x938.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_74.png)
 
 [4](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-anchor-4-47550671)
 
@@ -273,7 +273,7 @@ Or, as a friend charmingly called it: Averse behavior in small person environmen
 
 Here's the relevant passage:
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F8b2737bf-fd12-4e35-817d-16678f29b9f9_846x440.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F8b2737bf-fd12-4e35-817d-16678f29b9f9_846x440.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_75.png)
 
 [12](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-anchor-12-47550671)
 

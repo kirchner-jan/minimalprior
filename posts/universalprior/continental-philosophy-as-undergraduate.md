@@ -33,7 +33,7 @@ That is a harsh assessment, but it comes from someone I have previously [praised
 
 One cynical explanation (that I will take way too seriously in this essay) for the convoluted writing style of continental philosophers is that they do not have the mental machinery to express their ideas in a formal language like mathematics. **Perhaps many of the things continental philosophers are trying to express are only ideas from undergraduate-level maths.**
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F12fde8ba-077e-48ee-90ba-e0dfb6c3a560_1356x1398.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F12fde8ba-077e-48ee-90ba-e0dfb6c3a560_1356x1398.png)[source](https://twitter.com/jessi_cata/status/1473385739308175365)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_119.png)[source](https://twitter.com/jessi_cata/status/1473385739308175365)
 
 Evidence for this hypothesis comes in many shapes:
 
@@ -64,7 +64,7 @@ I asked GPT-3 to [give me a summary of that summary](https://medium.com/@SteveMo
 
 Still, total gibberish, but at least very compact gibberish. But what I'm getting is that Hegel's dialectic is a process for finding the truth that occurs in three steps, where the third step is a combination of the first two steps. This intuition is corroborated by what Google Image Search produces:
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ff3fb5ae2-33f3-450d-9a0f-2234d73a023e_513x385.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ff3fb5ae2-33f3-450d-9a0f-2234d73a023e_513x385.png)[source](https://steemit.com/dialectical-method/@juvyjabian/hegel-s-dialectical-method)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_120.png)[source](https://steemit.com/dialectical-method/@juvyjabian/hegel-s-dialectical-method)
 
  **Given a thesis ("The sky is blue"), someone comes up with an antithesis ("But sometimes the sky is black") which is merged into a synthesis ("At day the sky is blue and at night the sky is black").** Then the process starts again, with the antithesis being f.e. "Sometimes there are clouds in the sky".
 
@@ -78,7 +78,7 @@ I'm assuming that my audience is much more familiar with PCA than with continent
 
 
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb789c7fc-8ab5-4d08-b3ab-8df9b5d90302_1024x1024.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb789c7fc-8ab5-4d08-b3ab-8df9b5d90302_1024x1024.png)A painting of Hegel wrestling a vector space. [Generated with DALL-E.](https://labs.openai.com/s/jQWzEvHfIDcwUZVzNejLHmVC)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_121.png)A painting of Hegel wrestling a vector space. [Generated with DALL-E.](https://labs.openai.com/s/jQWzEvHfIDcwUZVzNejLHmVC)
 
  **Framed like this,** **PCA maps naturally onto Hegel's dialectic**! Each principal component corresponds to a thesis (and/or) and antithesis, and the combination of principal components corresponds to the synthesis. Indeed, in the limit, the dialectic process results in truth (all the principal components explain all the variability).
 
@@ -108,7 +108,7 @@ Nowadays, Kant’s moral philosophy is usually introduced in contrast with utili
 
 Could there ever be [common ground between the two](https://www.jstor.org/stable/pdf/2175975.pdf) or do they represent incommensurable fragments of absolute truth?
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F145026fd-8dea-4d31-81fd-5a551f0e011c_1024x1024.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F145026fd-8dea-4d31-81fd-5a551f0e011c_1024x1024.png)A painting of Immanuel Kant and John Stuart Mill solving a difficult math problem together. [Generated with DALL-E.](https://labs.openai.com/s/P545mL6pXXPPU9PIuxfFAyms)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_122.png)A painting of Immanuel Kant and John Stuart Mill solving a difficult math problem together. [Generated with DALL-E.](https://labs.openai.com/s/P545mL6pXXPPU9PIuxfFAyms)
 
 Well, for one, the two never talked to each other (Kant died in 1804, Mill was born in 1806). Second, it was [proven recently](https://href.li/?http://alturl.com/p749b) that utilitarianism is the “correct” moral philosophy. **Third, neither of them ever met[John von Neumann](https://universalprior.substack.com/p/inferring-utility-functions?s=w) (born in 1903), so he couldn’t tell them about his [utility theorem](https://en.wikipedia.org/wiki/Von_Neumann%E2%80%93Morgenstern_utility_theorem).**
 
@@ -120,7 +120,7 @@ Kant now rightfully points out that this is not a perfect strategy in general. I
 
 So, how do we account for global constraints? Well, a constraint is just another word for a mathematical function. Let’s say that our constraint is that everyone should eat the same amount of ice cream. We can write that as a function, `f(x) = c`, where `x` is our amount of ice cream consumed and `c` is the amount of ice cream consumed by everyone else. 
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fc6411d26-08fd-4a2a-822f-af93a40c7d09_1024x1024.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fc6411d26-08fd-4a2a-822f-af93a40c7d09_1024x1024.png)A painting of Kant and Mill eating ice cream. [Generated with DALL-E.](https://labs.openai.com/s/n7p0C8vfYRRrm9zNtOGizC7f)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_123.png)A painting of Kant and Mill eating ice cream. [Generated with DALL-E.](https://labs.openai.com/s/n7p0C8vfYRRrm9zNtOGizC7f)
 
 To include a constraint into Von Neumann’s utility theorem, we employ another tool from the undergraduate toolkit: [Langrange multipliers](https://en.wikipedia.org/wiki/Lagrange_multiplier). Lagrange even was a contemporary of Kant and Mill, so there is little excuse for why they didn’t come up with this themselves. Instead of natively maximizing utilities, `u(m) + v(m)`, we now optimize for the maximum of `u(m) + v(m) - λ*(f(x)-c)`. Here, `λ` is the Lagrange multiplier, a mathematical way for us to express that we should balance the combined utility with the amount of ice cream consumed by everyone else. When the constraint is satisfied (`f(x)=c`) the Lagrange multiplier drops out of the equation and we can just maximize utility as before.
 
@@ -136,7 +136,7 @@ First, it is important to understand that Heidegger’s “being” is neither a
 
 So far, so easy.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F5bc22e5b-d8e2-4225-a649-44fb95829f61_1024x1024.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F5bc22e5b-d8e2-4225-a649-44fb95829f61_1024x1024.png)An abstract painting of Heidegger's Being and Nothingness. [Generated with DALL-E.](https://labs.openai.com/s/EDazjWAo9Mg12jqN3bWXj7lp)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_124.png)An abstract painting of Heidegger's Being and Nothingness. [Generated with DALL-E.](https://labs.openai.com/s/EDazjWAo9Mg12jqN3bWXj7lp)
 
 [Category theory](https://en.wikipedia.org/wiki/Category_theory) can help us to understand the dynamic of Being and Nothingness more deeply. A category is a set of things (called “objects”) and the relationships between them (called “morphisms”). For example, the set of all beings is a category, with beings as objects and the relationships between them as morphisms. Importantly, in category theory, there is a notion of an “[opposite category](https://en.wikipedia.org/wiki/Opposite_category)”. 
 
