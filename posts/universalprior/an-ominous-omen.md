@@ -3,7 +3,7 @@ title: minimalprior
 subtitle: a spinoff
 author: Jan Kirchner
 author-url: "https://universalprior.substack.com/"
-date: YYYY-MM-DD
+date: 2024-08-31
 ---
 date: 2022-01-22
 ---

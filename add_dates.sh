@@ -19,7 +19,7 @@ for file in "$dir"/*.md; do
         
         # If date conversion fails, use a placeholder
         if [ $? -ne 0 ]; then
-            date="YYYY-MM-DD"
+            date="2024-08-31"
             echo "Warning: Couldn't parse date in $file. Using placeholder."
         fi
 

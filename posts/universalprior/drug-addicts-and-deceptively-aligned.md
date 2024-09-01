@@ -3,7 +3,7 @@ title: minimalprior
 subtitle: a spinoff
 author: Jan Kirchner
 author-url: "https://universalprior.substack.com/"
-date: YYYY-MM-DD
+date: 2024-08-31
 ---
 
 Edit: The nice folks at the [Nonlinear Library](https://forum.effectivealtruism.org/posts/JTZTBienqWEAjGDRv/listen-to-more-ea-content-with-the-nonlinear-library) turned this post into an audio version [here](https://podcasts.google.com/feed/aHR0cHM6Ly9zcGt0LmlvL2YvODY5Mi83ODg4L3JlYWRfODYxN2QzYWVlNTNmM2FiODQ0YTMwOWQzNzg5NWMxNDM/episode/cEZYRUc5QzVtMlg1aDJ5aXE?sa=X&ved=0CAgQuIEEahgKEwi4yLOmrfj0AhUAAAAAHQAAAAAQngM).

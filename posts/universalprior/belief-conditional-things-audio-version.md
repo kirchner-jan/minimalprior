@@ -3,9 +3,9 @@ title: minimalprior
 subtitle: a spinoff
 author: Jan Kirchner
 author-url: "https://universalprior.substack.com/"
-date: YYYY-MM-DD
+date: 2024-08-31
 ---
-date: YYYY-MM-DD
+date: 2024-08-31
 ---
 
 You can get notifications for audio releases on [Spotify](https://open.spotify.com/show/6vHVA4oHPEnt3AqJF6WB64) or [Apple Music](https://podcasts.apple.com/us/podcast/on-brains-minds-and-their-possible-uses/id1617525316).
