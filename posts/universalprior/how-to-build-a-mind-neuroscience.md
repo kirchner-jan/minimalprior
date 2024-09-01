@@ -21,7 +21,7 @@ After building a digital person, writing love letters to albatrosses, philosophi
 
 The biology info in this post is focused on small mammals (mouse pups), which might feel like a limitation3. But then again, mice can do a lot more than you’d think. Exhibit 1 - skateboard mouse!
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Faf9941e1-9664-4fdf-b15a-8afe3896fa24_640x360.gif)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32.gif)
 
 This is a _lot_ better than I do on a skateboard. I guess it helps to have all four limbs so close to the floor. source
 
@@ -31,7 +31,7 @@ I would not call myself a biologist by any stretch of the imagination - but I ca
 
 **Embryonic Day 1**: Here is a recording of a mouse embryo at the "two-cell stage".
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F9b3d19b9-9557-4797-b68d-d23ec504aad2_213x213.gif)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_1.gif)
 
 The cell surface marker in green was only imaged for the final division from 32 to ~64 cells. It doesn’t just pop into existence. Strnad et al Nature Methods 2016
 
@@ -39,7 +39,7 @@ The cell surface marker in green was only imaged for the final division from 32 
 
 It's not super easy to see, but inside that ball of cells is a sheet of cells that folds into a tube (appropriately named the neural tube) that will eventually develop into the central nervous system (i.e. brain and spinal cord).
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F15c53960-a7c9-436b-a180-35bf02de2df0_320x219.gif)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_2.gif)
 
 This clip is supposed to show the folding of the neural tube, but it's still kind of hard to see.
 
@@ -47,19 +47,19 @@ This clip is supposed to show the folding of the neural tube, but it's still kin
 
 **Embryonic day 20/Postnatal day 1**: The mouse pup is born! But at that point, the pup is still “extremely-not-ready” for the world. "Day 1" here is the first day after birth.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_lossy/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ff2a617cb-5faf-47f6-b0f0-ca8435b1647a_1280x720.gif)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_3.gif)
 
 Check out the full video on YouTube, it's worth it!
 
 **Postnatal day 10**: While there is a lot happening "on the inside", not so much is showing on the outside. We still only have a pile of adorable mouse pups.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_lossy/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F370a412d-600c-47c4-bf24-f79a184d30a8_1280x720.gif)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_4.gif)
 
 (The big hairy ones are actually female adult mothers, called "dams").
 
 **Postnatal day 25**: But fast-forward 15 more days and it's like day and night - the mice (not pups anymore) are basically ready to go! Around postnatal day 14, they open their eyes, grow hair, and start running around.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_lossy/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F48152843-673c-4bb1-a730-4c9edfac1695_1280x720.gif)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_5.gif)
 
 There is still a lot more that happens after this stage (the brain keeps changing throughout the entire lifetime), but these first 2-3 weeks set up a _lot_ of the central nervous system.
 
@@ -71,7 +71,7 @@ Okay, that’s what development looks like. How does it work? Let's zoom in a bi
 
 Well, take **this** as an answer:
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F74810b5a-ad9d-40d6-ad5b-104a6a30ef21_850x529.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32.png)
 
 The caption of this image contains the encouraging phrase "Interactions among these pathways are multiple and complex." This is also just the first example taken from Google, there are many many more diagrams like this and they all draw a lot of arrows in a lot of different directions. source
 
@@ -97,7 +97,7 @@ How exactly does that make it better? Doesn't that just make it... even more com
 
 How do you get robustness? There is a standard answer from control theory that generalizes: Tightly coupled feedback loops. And indeed there is a very natural candidate for implementing such a loop: the reciprocal interaction of developing brain circuits and the activity they produce.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F401db3b2-c23e-4822-b933-e503c4697679_3505x1831.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_1.png)
 
 The little red triangles and the blue dots are neurons, of course.
 
@@ -105,23 +105,23 @@ The circuit is the network of neurons that emerges over development. And these n
 
 Here is what the activity looks like in the developing retina, with cells that express a specific marker that produces light when the neurons are active:
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb121e516-541c-4c9b-9898-e8905075a44b_112x128.gif)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_6.gif)
 
 The red color indicates "activity", i.e. those are cells in the retina that are firing. In this clip, you cannot actually see individual cell bodies, only the simultaneous activity of many hundreds/thousands of neurons. source
 
 These patterns of activity are called "retinal waves" and they propagate from the retina to a central relay station and then finally into the visual cortex10:
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ff7e445f2-17d3-484f-8f26-6316e2ec7329_300x225.gif)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_7.gif)
 
 The red color again indicates activity. Here the experimentalists managed to record activity from a central relay (SC = superior colliculus) and the visual cortex (V1 = primary visual cortex) simultaneously, so you can actually see how some of the activity in the bottom right translates into activity in the top left. Note that while most of the activity in the top left appears to be driven by the bottom right, there is also some “additional” activity (the very large event at the end) that doesn’t appear to come from the SC. source
 
 But spontaneous activity is only half of the story:
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F3271fd27-f082-45fe-8761-dbbbbee7ef84_3505x1831.png)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_2.png)
 
 The other half comes from the fact that the circuit organizes itself depending on the activity it experiences. In machine learning, this is the "gradient descent" that wiggles the parameters of the network to improve performance. In neuroscience, it might also be gradient descent, but it can also mean the formation or removal of connections.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fee91a8f1-b8a6-4c9e-a282-622e06176aa4_236x236.gif)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_8.gif)
 
 The yellow dot marks where they are shooting a laser at the neuron to stimulate it. A few seconds later the neuron reaches out to form a new connection.
 

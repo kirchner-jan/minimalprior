@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="" >
 
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="Jan Kirchner" />
-  <meta name="dcterms.date" content="2021-12-09" />
-  <title>minimalprior</title>
-  <link rel="stylesheet" href="../../reset.css" />
-  <link rel="stylesheet" href="../../index.css" />
-</head>
+    <meta name="author" content="Jan Kirchner" />
+      <meta name="dcterms.date" content="2021-12-09" />
+        <title>minimalprior</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../index.css" />
+      </head>
 
 <body>
-  <table class="header">
+    <table class="header">
     <tr>
       <td colspan="2" rowspan="2" class="width-auto">
         <h1 class="title"><a href="https://kirchner-jan.github.io/minimalprior/"
@@ -26,368 +26,386 @@
     <tr>
       <th class="width-min">Author</th>
       <td class="width-auto"><a href="https://universalprior.substack.com/">Jan
-          Kirchner</a></td>
+Kirchner</a></td>
     </tr>
   </table>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_9.gif" />A
-    prototype for automatic idea generation.</p>
-  <h4 id="code-first-ask-questions-later">Code first, ask questions
-    later</h4>
-  <p>In <a href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-scaling-academia">On
+      <p><img
+      src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_9.gif" />A
+      prototype for automatic idea generation.</p>
+      <h4 id="code-first-ask-questions-later">Code first, ask questions
+      later</h4>
+      <p>In <a
+      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-scaling-academia">On
       Scaling Academia</a> I made the case that <em>automatic
       research</em> , i.e. AI-supported &amp; scalable application of
-    the <a
+      the <a
       href="https://www.hpmor.com/chapter/8#:~:text=science%20investigation%20project%3A-,Step,-1%3A%20Form%20a">scientific
       method</a>, might be great. My argument went like this,</p>
-  <ol class="incremental" type="1">
-    <li>automatic research is beneficial for academia (systematization
+      <ol class="incremental" type="1">
+      <li>automatic research is beneficial for academia (systematization
       and <a href="http://mason.gmu.edu/~rhanson/gamble.html">objective
-        metrics of progress</a> are woefully lacking in current
+      metrics of progress</a> are woefully lacking in current
       academia),</li>
-    <li>some degree of automation might be strictly necessary for
+      <li>some degree of automation might be strictly necessary for
       continued scientific progress (note the ever-increasing <a
-        href="https://web.stanford.edu/~chadj/IdeaPF.pdf">unwieldiness of
-        humanity’s collected knowledge</a>).</li>
-  </ol>
-  <p>However, many things “might be great”<sup>[1]</sup>, but most
-    aren’t <a href="https://forum.effectivealtruism.org/tag/itn-framework-1">tractable</a>.
-    Does <em>automatic research</em> fall into that category? It’s
-    tempting to <a href="https://www.nature.com/articles/s41599-020-0494-4">tackle
+      href="https://web.stanford.edu/~chadj/IdeaPF.pdf">unwieldiness of
+      humanity’s collected knowledge</a>).</li>
+      </ol>
+      <p>However, many things “might be great”<sup>[1]</sup>, but most
+      aren’t <a
+      href="https://forum.effectivealtruism.org/tag/itn-framework-1">tractable</a>.
+      Does <em>automatic research</em> fall into that category? It’s
+      tempting to <a
+      href="https://www.nature.com/articles/s41599-020-0494-4">tackle
       that question from the metaphorical ivory tower</a> and to get
-    lost in definitions and speculation. That’s not my comparative
-    advantage<sup>[2]</sup>, I prefer getting excited and building
-    things. In this spirit, I’ll “code first, ask questions later”.
-    Instead of doing all of research at once, I focus on a central
-    aspect of research, <em>idea generation</em> , and present some of
-    my initial experiments and experiences with automating idea
-    generation.</p>
-  <div class="sidenote">
-    <p>[2] </p>
-    <p>A previous, much more wordy version of this post was stuck in
+      lost in definitions and speculation. That’s not my comparative
+      advantage<sup>[2]</sup>, I prefer getting excited and building
+      things. In this spirit, I’ll “code first, ask questions later”.
+      Instead of doing all of research at once, I focus on a central
+      aspect of research, <em>idea generation</em> , and present some of
+      my initial experiments and experiences with automating idea
+      generation.</p>
+      <div class="sidenote">
+      <p>[2] </p>
+      <p>A previous, much more wordy version of this post was stuck in
       “draft” mode for a very long time.</p>
-  </div>
-  <div class="sidenote">
-    <p>[1] </p>
-    <p>World peace, ending hunger, total equality (you pick which
+      </div>
+      <div class="sidenote">
+      <p>[1] </p>
+      <p>World peace, ending hunger, total equality (you pick which
       kind), infinite animal-suffering-free on-demand-ice cream, and all
       the wishes from the “<a
-        href="https://web.archive.org/web/20080212074646/http://www.homeonthestrange.com/phpBB2/viewforum.php?f=4&amp;sid=c33eee736cd053c05b21aede801f31a6">Open-Source
-        Wish Project</a>”</p>
-  </div>
-  <h4 id="using-ian-to-generate-all-the-proto-ideas"><strong>Using
+      href="https://web.archive.org/web/20080212074646/http://www.homeonthestrange.com/phpBB2/viewforum.php?f=4&amp;sid=c33eee736cd053c05b21aede801f31a6">Open-Source
+      Wish Project</a>”</p>
+      </div>
+      <h4 id="using-ian-to-generate-all-the-proto-ideas"><strong>Using
       IAN to generate all the (proto-)ideas</strong></h4>
-  <p>The first insight is that having ideas is <em>really easy</em>.
-    The problem is having <em>good</em> ideas<sup>[3]</sup>. When you
-    feel like you can’t come up with any ideas, you probably can’t see
-    the forest for the trees. Generating ideas is a combinatoric
-    process: take two things (or more), combine them, and, voilà, <a
+      <p>The first insight is that having ideas is <em>really easy</em>.
+      The problem is having <em>good</em> ideas<sup>[3]</sup>. When you
+      feel like you can’t come up with any ideas, you probably can’t see
+      the forest for the trees. Generating ideas is a combinatoric
+      process: take two things (or more), combine them, and, voilà, <a
       href="https://screenrant.com/bojack-horseman-todd-popular-dumb-ideas-reddit/">Clown
       Dentists, West Dakota, and Halloween in January</a><sup>[4]</sup>.
-    People working on computational creativity <a
+      People working on computational creativity <a
       href="https://www.creativitypost.com/article/systematizing-creativity-a-computational-view">call
       this “pastiche”</a> and distinguish it from “real creativity”. But
-    let us not be deterred by that, we’ll start philosophizing once
-    we’re done coding. Perhaps we will see a path forward once we know
-    how to generate pastiche at scale.</p>
-  <div class="sidenote">
-    <p>[4] </p>
-    <p>Taking a list of ideas from some of the funniest writers is
+      let us not be deterred by that, we’ll start philosophizing once
+      we’re done coding. Perhaps we will see a path forward once we know
+      how to generate pastiche at scale.</p>
+      <div class="sidenote">
+      <p>[4] </p>
+      <p>Taking a list of ideas from some of the funniest writers is
       probably not the best way to make this point. However, the ideas
       that I come up with (combined keyboard &amp; mouse, banana
       telephone, microphone shoes) are so lame, they are making my point
-      <em>too</em> well.
-    </p>
-  </div>
-  <div class="sidenote">
-    <p>[3] </p>
-    <p>I think this distinction is the easiest way to resolve the
+      <em>too</em> well.</p>
+      </div>
+      <div class="sidenote">
+      <p>[3] </p>
+      <p>I think this distinction is the easiest way to resolve the
       tension between Stephen Malina et al. <a
-        href="https://guzey.com/ideas-not-mattering-is-a-psyop/#:~:text=don%E2%80%99t%20buy%20it.-,Empirically%2C%20all%20our%20aspiring%20founder%20friends%20are%20desperate%20for%20startup%20ideas%2C%20with%20few%20managing%20to%20land%20on%20something%20worthwhile%2C%20and%20all%20our%20scientist%20friends%20are%20desperate%20for%20research%20ideas.,-Good%20ideas%20are">writing<br />
+      href="https://guzey.com/ideas-not-mattering-is-a-psyop/#:~:text=don%E2%80%99t%20buy%20it.-,Empirically%2C%20all%20our%20aspiring%20founder%20friends%20are%20desperate%20for%20startup%20ideas%2C%20with%20few%20managing%20to%20land%20on%20something%20worthwhile%2C%20and%20all%20our%20scientist%20friends%20are%20desperate%20for%20research%20ideas.,-Good%20ideas%20are">writing<br />
       </a>” <em>Empirically, all our aspiring founder friends are
-        desperate for startup ideas, with few managing to land on
-        something worthwhile, and all our scientist friends are desperate
-        for research ideas.</em> ”<br />
+      desperate for startup ideas, with few managing to land on
+      something worthwhile, and all our scientist friends are desperate
+      for research ideas.</em> ”<br />
       and me <a
-        href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-scaling-academia#:~:text=I%20could%20come%20up%20with%20a%20research%20program%20that%20keeps%201000s%20of%20people%20busy">writing<br />
+      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-scaling-academia#:~:text=I%20could%20come%20up%20with%20a%20research%20program%20that%20keeps%201000s%20of%20people%20busy">writing<br />
       </a>” <em>I could come up with a research program that keeps 1000s
-        of people busy.</em> ”<br />
+      of people busy.</em> ”<br />
       I totally could keep them <em>busy</em>. I’m much less certain if
       I could get them to do anything <em>useful</em>.</p>
-  </div>
-  <p>“Pastiche at scale” happens to be one of the many nicknames of
-    <a href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/making-of-ian">IAN</a>,
-    a large language model fine-tuned of my personal notes and the
-    papers that I read. Given a prompt, IAN will produce multiple
-    possible continuations, kind of like the “autocomplete” feature on
-    smartphones only more so. Prompting IAN with
-  </p>
-  <blockquote>
-    <p>Text within this block will maintain its original spacing when
+      </div>
+      <p>“Pastiche at scale” happens to be one of the many nicknames of
+      <a
+      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/making-of-ian">IAN</a>,
+      a large language model fine-tuned of my personal notes and the
+      papers that I read. Given a prompt, IAN will produce multiple
+      possible continuations, kind of like the “autocomplete” feature on
+      smartphones only more so. Prompting IAN with</p>
+      <blockquote>
+      <p>Text within this block will maintain its original spacing when
       published</p>
-    <pre><code> _Here is a list of interesting project ideas:
+      <pre><code> _Here is a list of interesting project ideas:
 1._</code></pre>
-  </blockquote>
-  <p>produces pastiche gems like</p>
-  <blockquote>
-    <p>Text within this block will maintain its original spacing when
+      </blockquote>
+      <p>produces pastiche gems like</p>
+      <blockquote>
+      <p>Text within this block will maintain its original spacing when
       published</p>
-    <pre><code> _I want to go to medical school_</code></pre>
-    <p>Text within this block will maintain its original spacing when
+      <pre><code> _I want to go to medical school_</code></pre>
+      <p>Text within this block will maintain its original spacing when
       published</p>
-    <pre><code> _Are there any ways in which the planning fallacy can be helpful?_</code></pre>
-    <p>Text within this block will maintain its original spacing when
+      <pre><code> _Are there any ways in which the planning fallacy can be helpful?_</code></pre>
+      <p>Text within this block will maintain its original spacing when
       published</p>
-    <pre><code> _Build a service that delivers toilet paper to your home._</code></pre>
-    <p>Text within this block will maintain its original spacing when
+      <pre><code> _Build a service that delivers toilet paper to your home._</code></pre>
+      <p>Text within this block will maintain its original spacing when
       published</p>
-    <pre><code> _Investigate how neuromodulators affect the formation and function of dendritic spines._</code></pre>
-    <p>Text within this block will maintain its original spacing when
+      <pre><code> _Investigate how neuromodulators affect the formation and function of dendritic spines._</code></pre>
+      <p>Text within this block will maintain its original spacing when
       published</p>
-    <pre><code> _Build a band name for your friends and make T-shirts._</code></pre>
-    <p>Text within this block will maintain its original spacing when
+      <pre><code> _Build a band name for your friends and make T-shirts._</code></pre>
+      <p>Text within this block will maintain its original spacing when
       published</p>
-    <pre><code> _A camera that takes a picture whenever it detects that someone is yawning._</code></pre>
-  </blockquote>
-  <p>And a <em>lot</em> more. Making IAN generate pastiche for 24
-    hours results in ~10,000 “proto-ideas”. I call them proto-ideas
-    because quality varies a lot<sup>[5]</sup>; sifting through all of
-    them is more work than coming up with proper ideas myself. This
-    leads us directly to the next step.</p>
-  <div class="sidenote">
-    <p>[5] </p>
-    <p>f.e. <em>“On Being Prepared” - by Impossible Things, Do a
-        workout, Draw a picture of a religious situation from
-        scratch.</em></p>
-  </div>
-  <h4 id="turning-proto-ideas-into-ideas"><strong>Turning
+      <pre><code> _A camera that takes a picture whenever it detects that someone is yawning._</code></pre>
+      </blockquote>
+      <p>And a <em>lot</em> more. Making IAN generate pastiche for 24
+      hours results in ~10,000 “proto-ideas”. I call them proto-ideas
+      because quality varies a lot<sup>[5]</sup>; sifting through all of
+      them is more work than coming up with proper ideas myself. This
+      leads us directly to the next step.</p>
+      <div class="sidenote">
+      <p>[5] </p>
+      <p>f.e. <em>“On Being Prepared” - by Impossible Things, Do a
+      workout, Draw a picture of a religious situation from
+      scratch.</em></p>
+      </div>
+      <h4 id="turning-proto-ideas-into-ideas"><strong>Turning
       proto-ideas into ideas</strong></h4>
-  <p>The second insight is that distinguishing nonsense from ideas
-    is <em>easy</em>. I can tell if a proto-idea is nonsense in less
-    than a second, which is <a href="https://second.wiki/wiki/100-schritt-regel">usually a good
+      <p>The second insight is that distinguishing nonsense from ideas
+      is <em>easy</em>. I can tell if a proto-idea is nonsense in less
+      than a second, which is <a
+      href="https://second.wiki/wiki/100-schritt-regel">usually a good
       indicator</a> that the process can be automated. The solution that
-    I came up with is a logistic regression model on a <a href="https://www.sbert.net/">semantic embedding</a> of the
-    proto-idea, that is trained <a href="https://github.com/online-ml/river">online</a> through an
-    interface I <a href="https://streamlit.io/">threw
+      I came up with is a logistic regression model on a <a
+      href="https://www.sbert.net/">semantic embedding</a> of the
+      proto-idea, that is trained <a
+      href="https://github.com/online-ml/river">online</a> through an
+      interface I <a href="https://streamlit.io/">threw
       together</a>:</p>
-  <p>This video shows the interface after I’ve trained it for a few
-    hundred examples, and the “predicted usefulness” (0=nonsense,
-    1=idea) has already converged pretty well. In fact, when I map the
-    proto-ideas <a href="https://lvdmaaten.github.io/tsne/">into a
+      <p>This video shows the interface after I’ve trained it for a few
+      hundred examples, and the “predicted usefulness” (0=nonsense,
+      1=idea) has already converged pretty well. In fact, when I map the
+      proto-ideas <a href="https://lvdmaaten.github.io/tsne/">into a
       low-dimensional space</a>, we can see a bit of organization
-    emerge.</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_178.png" />tSNE
-    projection of semantic embedding of proto-ideas. Color indicates
-    usefulness of proto-ideas as predicted by logistic regression
-    model.</p>
-  <p>As you can see, the regression has learned that ideas from the
-    neuroscience peninsula tend to be the most useful for
-    me<sup>[6]</sup>.</p>
-  <div class="sidenote">
-    <p>[6] </p>
-    <p>Learning this is not too hard, a fuzzy keyword would probably
+      emerge.</p>
+      <p><img
+      src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_178.png" />tSNE
+      projection of semantic embedding of proto-ideas. Color indicates
+      usefulness of proto-ideas as predicted by logistic regression
+      model.</p>
+      <p>As you can see, the regression has learned that ideas from the
+      neuroscience peninsula tend to be the most useful for
+      me<sup>[6]</sup>.</p>
+      <div class="sidenote">
+      <p>[6] </p>
+      <p>Learning this is not too hard, a fuzzy keyword would probably
       also work.</p>
-  </div>
-  <blockquote>
-    <p>Text within this block will maintain its original spacing when
+      </div>
+      <blockquote>
+      <p>Text within this block will maintain its original spacing when
       published</p>
-    <pre><code> _A project on how the brain makes use of prior knowledge to guide decision-making._</code></pre>
-    <p>Text within this block will maintain its original spacing when
+      <pre><code> _A project on how the brain makes use of prior knowledge to guide decision-making._</code></pre>
+      <p>Text within this block will maintain its original spacing when
       published</p>
-    <pre><code> _Development of a new theory of cortical computation that incorporates topographic organization, feedback control and multi-sensory integration._</code></pre>
-    <p>Text within this block will maintain its original spacing when
+      <pre><code> _Development of a new theory of cortical computation that incorporates topographic organization, feedback control and multi-sensory integration._</code></pre>
+      <p>Text within this block will maintain its original spacing when
       published</p>
-    <pre><code> _To understand how the brain stores ideas hierarchically, we could study how it works when it can&#39;t find an idea and how it works when it can._</code></pre>
-  </blockquote>
-  <p>But also in other regions of semantic space, there are ideas
-    with high predicted usefulness. Here is a selection:</p>
-  <blockquote>
-    <p>Text within this block will maintain its original spacing when
+      <pre><code> _To understand how the brain stores ideas hierarchically, we could study how it works when it can&#39;t find an idea and how it works when it can._</code></pre>
+      </blockquote>
+      <p>But also in other regions of semantic space, there are ideas
+      with high predicted usefulness. Here is a selection:</p>
+      <blockquote>
+      <p>Text within this block will maintain its original spacing when
       published</p>
-    <pre><code> _Write a book in which each chapter is a different type of cinema, For example, the first chapter might be in the style of a documentary, the second chapter mainstream cinema, and the third chapter experimental cinema._</code></pre>
-    <p>Text within this block will maintain its original spacing when
+      <pre><code> _Write a book in which each chapter is a different type of cinema, For example, the first chapter might be in the style of a documentary, the second chapter mainstream cinema, and the third chapter experimental cinema._</code></pre>
+      <p>Text within this block will maintain its original spacing when
       published</p>
-    <pre><code> _Have an online game night - This could be a game night that you host on Zoom and that people can join - You could do it every week and rotate hosts_</code></pre>
-    <p>Text within this block will maintain its original spacing when
+      <pre><code> _Have an online game night - This could be a game night that you host on Zoom and that people can join - You could do it every week and rotate hosts_</code></pre>
+      <p>Text within this block will maintain its original spacing when
       published</p>
-    <pre><code> _An AI system that plays the role of a creative director for an orchestra._</code></pre>
-    <p>Text within this block will maintain its original spacing when
+      <pre><code> _An AI system that plays the role of a creative director for an orchestra._</code></pre>
+      <p>Text within this block will maintain its original spacing when
       published</p>
-    <pre><code> _To make a game where you have to help a scientist find a cure for a disease._</code></pre>
-    <p>Text within this block will maintain its original spacing when
+      <pre><code> _To make a game where you have to help a scientist find a cure for a disease._</code></pre>
+      <p>Text within this block will maintain its original spacing when
       published</p>
-    <pre><code> _[The Tale Of Gandhi](https://kirchner-jan.github.io/minimalprior/posts/universalprior/the-tale-of-gandhi-and-the-devil) And The Old Witch, The Tale Of Gandhi And The Two Giants, The Tale Of Gandhi And The Flying Mountain, The Tale Of Gandhi And The One Who Would Not Speak, The Tale Of Gandhi And The Loveless Kingdom, The Tale Of Gandhi And The Three Ghosts, The Tale Of Gandhi And The Two Dragons Who Were Best Friends_</code></pre>
-    <p><sup>[7]</sup> <em>, …</em></p>
-    <div class="sidenote">
+      <pre><code> _[The Tale Of Gandhi](https://kirchner-jan.github.io/minimalprior/posts/universalprior/the-tale-of-gandhi-and-the-devil) And The Old Witch, The Tale Of Gandhi And The Two Giants, The Tale Of Gandhi And The Flying Mountain, The Tale Of Gandhi And The One Who Would Not Speak, The Tale Of Gandhi And The Loveless Kingdom, The Tale Of Gandhi And The Three Ghosts, The Tale Of Gandhi And The Two Dragons Who Were Best Friends_</code></pre>
+      <p><sup>[7]</sup> <em>, …</em></p>
+      <div class="sidenote">
       <p>[7] </p>
       <p>The Tale Of Gandhi was <em>always</em> supposed to be a
-        series.</p>
-    </div>
-  </blockquote>
-  <h4 id="ideas-and-great-ideas"><strong>Ideas and “great”
+      series.</p>
+      </div>
+      </blockquote>
+      <h4 id="ideas-and-great-ideas"><strong>Ideas and “great”
       ideas</strong></h4>
-  <p>The third insight is that the quality of an idea is not an
-    <em>intrinsic</em> , but an <em>extrinsic</em> property. The
-    quality does not sit within the idea, it is determined by us from
-    the outside. And these judgments are subjective<sup>[8]</sup>, so
-    there is no universal way to generate <em>great</em> ideas.
-  </p>
-  <div class="sidenote">
-    <p>[8] </p>
-    <p>“Getting a tattoo”, “Becoming an actor”, “Starting a stamp
+      <p>The third insight is that the quality of an idea is not an
+      <em>intrinsic</em> , but an <em>extrinsic</em> property. The
+      quality does not sit within the idea, it is determined by us from
+      the outside. And these judgments are subjective<sup>[8]</sup>, so
+      there is no universal way to generate <em>great</em> ideas.</p>
+      <div class="sidenote">
+      <p>[8] </p>
+      <p>“Getting a tattoo”, “Becoming an actor”, “Starting a stamp
       collection”, “Investing in cryptocurrency”, are all either great
       or terrible ideas depending on what you value.</p>
-  </div>
-  <p>However, once you <em>do</em> know which criteria you care for,
-    identifying a <em>great</em> idea reduces to a <a
+      </div>
+      <p>However, once you <em>do</em> know which criteria you care for,
+      identifying a <em>great</em> idea reduces to a <a
       href="https://en.wikipedia.org/wiki/Constraint_satisfaction_problem">constraint
-      satisfaction problem</a>; and we have <a href="https://en.wikipedia.org/wiki/Lagrange_multiplier">great</a>
-    <a href="https://en.wikipedia.org/wiki/Pontryagin%27s_maximum_principle">tools</a>
-    for solving those. In the simplest form<sup>[9]</sup> we don’t
-    even have to resort to anything fancier than <a
+      satisfaction problem</a>; and we have <a
+      href="https://en.wikipedia.org/wiki/Lagrange_multiplier">great</a>
+      <a
+      href="https://en.wikipedia.org/wiki/Pontryagin%27s_maximum_principle">tools</a>
+      for solving those. In the simplest form<sup>[9]</sup> we don’t
+      even have to resort to anything fancier than <a
       href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/soldiers-scouts-and-albatrosses">search</a>.
-    The algorithm looks something like this:
-  </p>
-  <div class="sidenote">
-    <p>[9] </p>
-    <p>If all the constraints are just binary “satisfied” or “not
+      The algorithm looks something like this:</p>
+      <div class="sidenote">
+      <p>[9] </p>
+      <p>If all the constraints are just binary “satisfied” or “not
       satisfied” constraint.</p>
-  </div>
-  <pre><code>while not found:
+      </div>
+      <pre><code>while not found:
   idea = next_idea()
   if constraints(idea):
     return idea</code></pre>
-  <p>I’ve implemented this with a <a
+      <p>I’ve implemented this with a <a
       href="https://www.sbert.net/examples/applications/semantic-search/README.html">semantic
       search</a>, followed by a ranking according to usefulness
-    predicted by the regression<sup>[10]</sup>.</p>
-  <div class="sidenote">
-    <p>[10] </p>
-    <p>I can imagine straightforward extensions of this where I layer
-      <a href="https://www.webopedia.com/definitions/boolean-search/">Boolean
-        search</a> on top of the output of multiple semantic search
+      predicted by the regression<sup>[10]</sup>.</p>
+      <div class="sidenote">
+      <p>[10] </p>
+      <p>I can imagine straightforward extensions of this where I layer
+      <a
+      href="https://www.webopedia.com/definitions/boolean-search/">Boolean
+      search</a> on top of the output of multiple semantic search
       queries, but probably there is a more elegant way to implement
-      this directly on the semantic embedding.
-    </p>
-  </div>
-  <p>The <em>actual</em> constraints arising in a research project
-    are substantially more complicated than just semantic
-    similarity<sup>[11]</sup>, but the central logic of this approach
-    remains unchanged: generate a <em>lot</em> of ideas and filter.
-    The comparative advantage of computers is that they can do a
-    simple thing much faster and much longer than a human can;
-    generating a ginormous dataset of proto-ideas is not feasible for
-    humans, but “easy”<sup>[12]</sup> for computers. This is
-    essentially the same strategy that led to <a
+      this directly on the semantic embedding.</p>
+      </div>
+      <p>The <em>actual</em> constraints arising in a research project
+      are substantially more complicated than just semantic
+      similarity<sup>[11]</sup>, but the central logic of this approach
+      remains unchanged: generate a <em>lot</em> of ideas and filter.
+      The comparative advantage of computers is that they can do a
+      simple thing much faster and much longer than a human can;
+      generating a ginormous dataset of proto-ideas is not feasible for
+      humans, but “easy”<sup>[12]</sup> for computers. This is
+      essentially the same strategy that led to <a
       href="https://en.wikipedia.org/wiki/Deep_Blue_%28chess_computer%29">superhuman
       chess performance</a> and that only now, after decades, is
-    supplanted by <a href="https://www.youtube.com/watch?v=NJCLUzkn-sA&amp;ab_channel=YannicKilcher">more
+      supplanted by <a
+      href="https://www.youtube.com/watch?v=NJCLUzkn-sA&amp;ab_channel=YannicKilcher">more
       data-efficient methods</a>.</p>
-  <div class="sidenote">
-    <p>[12] </p>
-    <p>Given a <a href="https://sites.research.google/trc/about/">TPU
-        machine</a> from Google &lt;3</p>
-  </div>
-  <div class="sidenote">
-    <p>[11] </p>
-    <p>You want your idea to be <a href="https://www.lesswrong.com/posts/KfMNFB3G7XNviHBPN/joy-in-discovery">novel</a>,
-      fit into your <a href="https://plato.stanford.edu/entries/lakatos/">paradigm</a>,
-      appeal to a <a href="https://www.nature.com/articles/d41586-020-02875-4">certain
-        audience</a>, be <a href="https://forum.effectivealtruism.org/tag/itn-framework-1">tractable,
-        neglected, have a high impact-to-effort ratio</a>, etc.</p>
-  </div>
-  <h4 id="going-from-great-ideas-to-implementations"><strong>Going
+      <div class="sidenote">
+      <p>[12] </p>
+      <p>Given a <a href="https://sites.research.google/trc/about/">TPU
+      machine</a> from Google &lt;3</p>
+      </div>
+      <div class="sidenote">
+      <p>[11] </p>
+      <p>You want your idea to be <a
+      href="https://www.lesswrong.com/posts/KfMNFB3G7XNviHBPN/joy-in-discovery">novel</a>,
+      fit into your <a
+      href="https://plato.stanford.edu/entries/lakatos/">paradigm</a>,
+      appeal to a <a
+      href="https://www.nature.com/articles/d41586-020-02875-4">certain
+      audience</a>, be <a
+      href="https://forum.effectivealtruism.org/tag/itn-framework-1">tractable,
+      neglected, have a high impact-to-effort ratio</a>, etc.</p>
+      </div>
+      <h4 id="going-from-great-ideas-to-implementations"><strong>Going
       from great ideas to implementations</strong></h4>
-  <p>The fourth insight is that while the greatness of ideas is
-    subjective, the greatness of <em>implementations</em> is more
-    objective. You can argue whether some of the “great” ideas I
-    listed above are actually great, but once there is an
-    implementation the nature of an argument changes qualitatively.
-    Once implemented, reality enters the discussion and
-    adjudicates.</p>
-  <p>I want to write an entire post on how to automate going from
-    idea to implementation, but here is the minimalist workflow that
-    I’m using for now:</p>
-  <ol class="incremental" type="1">
-    <li>Set a time frame based on previous experience from similar
-      projects, <a href="https://www.lesswrong.com/posts/CPm5LTwHrvBJCa9h5/planning-fallacy">not
-        based on particulars of the current project</a>.</li>
-    <li>Divide the time <strong>evenly</strong><sup>[13]</sup> into an
+      <p>The fourth insight is that while the greatness of ideas is
+      subjective, the greatness of <em>implementations</em> is more
+      objective. You can argue whether some of the “great” ideas I
+      listed above are actually great, but once there is an
+      implementation the nature of an argument changes qualitatively.
+      Once implemented, reality enters the discussion and
+      adjudicates.</p>
+      <p>I want to write an entire post on how to automate going from
+      idea to implementation, but here is the minimalist workflow that
+      I’m using for now:</p>
+      <ol class="incremental" type="1">
+      <li>Set a time frame based on previous experience from similar
+      projects, <a
+      href="https://www.lesswrong.com/posts/CPm5LTwHrvBJCa9h5/planning-fallacy">not
+      based on particulars of the current project</a>.</li>
+      <li>Divide the time <strong>evenly</strong><sup>[13]</sup> into an
       “expansion” and a “contraction” phase<sup>[14]</sup>.
       <ol class="incremental" type="1">
-        <li>In the expansion phase, iterate the following steps: Collect
-          information (reading reviews and using <a href="https://roamresearch.com/elicit.org">Elicit</a>), <a
-            href="https://roamresearch.com/">chart</a> people and beliefs (in
-          my experience, authorship explains most variability), <a
-            href="https://openai.com/blog/openai-codex/">implement
-            prototypes</a> (<a href="https://threadreaderapp.com/thread/1441027241870118913.html">build
-            the smallest toy example that would invalidate an idea</a>),
-          explore implications and reject dead ends (<a
-            href="https://en.wikipedia.org/wiki/Reductio_ad_absurdum">reductio
-            ad absurdum</a>).</li>
-        <li>In the contraction phase, do the following: Don’t implement
-          anything new (<a href="https://en.wikipedia.org/wiki/Freeze_%28software_engineering%29">feature
-            freeze</a>), identify the “solid core” (throw away
-          <em>everything</em> that is not fully cooked <sup>[15]</sup>),
-          start writing early (writing forces you to put things in order),
-          make illustrations (drawing things reveals how you
-          <em>actually</em> think about something), and collect feedback (<a
-            href="https://app.grammarly.com/">Grammarly</a> improves text
-          beyond just fixing typos).
-        </li>
+      <li>In the expansion phase, iterate the following steps: Collect
+      information (reading reviews and using <a
+      href="https://roamresearch.com/elicit.org">Elicit</a>), <a
+      href="https://roamresearch.com/">chart</a> people and beliefs (in
+      my experience, authorship explains most variability), <a
+      href="https://openai.com/blog/openai-codex/">implement
+      prototypes</a> (<a
+      href="https://threadreaderapp.com/thread/1441027241870118913.html">build
+      the smallest toy example that would invalidate an idea</a>),
+      explore implications and reject dead ends (<a
+      href="https://en.wikipedia.org/wiki/Reductio_ad_absurdum">reductio
+      ad absurdum</a>).</li>
+      <li>In the contraction phase, do the following: Don’t implement
+      anything new (<a
+      href="https://en.wikipedia.org/wiki/Freeze_%28software_engineering%29">feature
+      freeze</a>), identify the “solid core” (throw away
+      <em>everything</em> that is not fully cooked <sup>[15]</sup>),
+      start writing early (writing forces you to put things in order),
+      make illustrations (drawing things reveals how you
+      <em>actually</em> think about something), and collect feedback (<a
+      href="https://app.grammarly.com/">Grammarly</a> improves text
+      beyond just fixing typos).</li>
+      </ol></li>
+      <li>Publish whatever you have at the end of your time frame.</li>
       </ol>
-    </li>
-    <li>Publish whatever you have at the end of your time frame.</li>
-  </ol>
-  <p>There are <a href="https://roamresearch.com/">fantastic
+      <p>There are <a href="https://roamresearch.com/">fantastic
       tools</a> for some of these steps, and for the rest, I have ideas
-    for how to build the necessary tools. I’ll keep you posted on how
-    this goes.</p>
-  <h4 id="closing-thoughts"><strong>Closing thoughts</strong></h4>
-  <p>According to “code first, think later” we’ve now reached the
-    “think” part. You can probably tell that I am skeptical of people
-    who <a href="https://www.fastcompany.com/90339590/3-reasons-why-ai-will-never-match-human-creativity">declare</a>
-    that <a
+      for how to build the necessary tools. I’ll keep you posted on how
+      this goes.</p>
+      <h4 id="closing-thoughts"><strong>Closing thoughts</strong></h4>
+      <p>According to “code first, think later” we’ve now reached the
+      “think” part. You can probably tell that I am skeptical of people
+      who <a
+      href="https://www.fastcompany.com/90339590/3-reasons-why-ai-will-never-match-human-creativity">declare</a>
+      that <a
       href="https://thenextweb.com/news/ai-is-incredibly-smart-but-it-will-never-match-human-creativity">creativity</a>
-    is <a href="https://www.aceyus.com/blog/why-ai-will-never-match-human-creativity/">uniquely</a>
-    human. These voices are less numerous now that AI-generated <a href="https://www.gwern.net/GPT-3">poetry</a>, <a
-      href="https://www.wombo.art/">art-on-demand</a>, and <a href="https://www.aisongcontest.com/">music</a> are
-    actually
-    enjoyable<sup>[16]</sup>. Perhaps there is still a way of <a
+      is <a
+      href="https://www.aceyus.com/blog/why-ai-will-never-match-human-creativity/">uniquely</a>
+      human. These voices are less numerous now that AI-generated <a
+      href="https://www.gwern.net/GPT-3">poetry</a>, <a
+      href="https://www.wombo.art/">art-on-demand</a>, and <a
+      href="https://www.aisongcontest.com/">music</a> are actually
+      enjoyable<sup>[16]</sup>. Perhaps there is still a way of <a
       href="https://www.lesswrong.com/s/SGB7Y5WERh4skwtnb/p/7X2j8HAkWdmMoS8PE">drawing
       concept boundaries</a> that make creativity uniquely human, but
-    I’m skeptical that those concepts will end up being very
-    useful.</p>
-  <div class="sidenote">
-    <p>[16] </p>
-    <p>With rather primitive technology, compared to what is
+      I’m skeptical that those concepts will end up being very
+      useful.</p>
+      <div class="sidenote">
+      <p>[16] </p>
+      <p>With rather primitive technology, compared to what is
       possible.</p>
-  </div>
-  <p>I believe there is substantial confusion about where ideas come
-    from. <a href="https://www.wikihow.com/Main-Page">WikiHow</a>
-    provides a representative answer to the question “<a href="https://www.wikihow.com/Come-Up-With-Ideas">How to Come
-      Up
+      </div>
+      <p>I believe there is substantial confusion about where ideas come
+      from. <a href="https://www.wikihow.com/Main-Page">WikiHow</a>
+      provides a representative answer to the question “<a
+      href="https://www.wikihow.com/Come-Up-With-Ideas">How to Come Up
       With Ideas</a>”. They recommend the following three-step
-    process:</p>
-  <ol class="incremental" type="1">
-    <li><em>Getting Your Brain Moving</em> , i.e. engage with the
+      process:</p>
+      <ol class="incremental" type="1">
+      <li><em>Getting Your Brain Moving</em> , i.e. engage with the
       topic.</li>
-    <li><em>Disengaging from Work</em> , i.e. allow for gestation
+      <li><em>Disengaging from Work</em> , i.e. allow for gestation
       until an idea appears.</li>
-    <li><em>Testing Your Ideas</em> , i.e. reject bad ideas.</li>
-  </ol>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_179.png" />I
-    have a hard time putting my feelings about these illustrations
-    into words.</p>
-  <p>Step two, the “gestation period” <em>appears</em> magical.
-    Mathematicians <a
+      <li><em>Testing Your Ideas</em> , i.e. reject bad ideas.</li>
+      </ol>
+      <p><img
+      src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_179.png" />I
+      have a hard time putting my feelings about these illustrations
+      into words.</p>
+      <p>Step two, the “gestation period” <em>appears</em> magical.
+      Mathematicians <a
       href="https://books.google.de/books?id=QdHBDwAAQBAJ&amp;pg=PA236&amp;lpg=PA236&amp;dq=mathematics+creativity+take+a+walk&amp;source=bl&amp;ots=nxwB03USj1&amp;sig=ACfU3U1cA9HiA6XmJ4551esBlD8qdpbuZQ&amp;hl=en&amp;sa=X&amp;ved=2ahUKEwjp0uHuzL70AhWHC-wKHYOdBYgQ6AF6BAgUEAM#v=onepage&amp;q=mathematics%20creativity%20take%20a%20walk&amp;f=false">have
       perfected the art of gestation</a>:</p>
-  <blockquote>
-    <p>_How does mathematical creativity take place? Where do good
+      <blockquote>
+      <p>_How does mathematical creativity take place? Where do good
       ideas come from? Of course there is no single answer, and as we
       all get older we wonder more and more why we don’t have all the
       great ideas that we had thirty years ago.</p>
-    <p>There is general agreement, however, that one of the best ways
+      <p>There is general agreement, however, that one of the best ways
       to think about a problem is not to think about it. That is to say,
       you work hard and concentrate all your effort on the task for a
       protracted period of time; but then you let it go. Do something
@@ -395,104 +413,108 @@
       The mind still percolates away, trying some things, discarding
       others. Often it happens that the solution to the problem will
       then just pop up unexpectedly.</p>
-    <p>Ron Graham, late of Bell Labs and now a Distinguished Professor
+      <p>Ron Graham, late of Bell Labs and now a Distinguished Professor
       at U.C. San Diego, gets some of his best ideas while juggling or
       performing gymnastics. Persi Diaconis (1945- ) of Stanford lets
       his ideas gestate while he is creating and performing new magic
       tricks. Henri Poincare used to go on trips to the seashore. Isaac
       Newton worked in his garden. […]_</p>
-  </blockquote>
-  <p>I see the value of a healthy balance as much as the next
-    person, <a href="https://www.lesswrong.com/posts/bx3gkHJehRCYZAF3r/pain-is-not-the-unit-of-effort">pain
+      </blockquote>
+      <p>I see the value of a healthy balance as much as the next
+      person, <a
+      href="https://www.lesswrong.com/posts/bx3gkHJehRCYZAF3r/pain-is-not-the-unit-of-effort">pain
       is not the unit of effort</a>. In fact, I believe that maintaining
-    some balance between intense work and leisure is critical for
-    sustained high research output. I still have a hard time believing
-    that we will have to teach computers how to juggle as a
-    <em>necessary</em> component of the creative process. And also in
-    humans, creativity does not <em>always</em> require a gestation
-    period. A good brainstorming session, or just thinking for <a
+      some balance between intense work and leisure is critical for
+      sustained high research output. I still have a hard time believing
+      that we will have to teach computers how to juggle as a
+      <em>necessary</em> component of the creative process. And also in
+      humans, creativity does not <em>always</em> require a gestation
+      period. A good brainstorming session, or just thinking for <a
       href="https://www.lesswrong.com/posts/FHiM34PmrN224pqTz/on-creativity-the-joys-of-5-minute-timers">five
       minutes by the clock about a problem</a>, can solve a substantial
-    portion of problems.
-  </p>
-  <p>Instead of postulating <a href="https://duncanwardle.com/how-to-open-the-door-to-your-creative-genius/">something
+      portion of problems.</p>
+      <p>Instead of postulating <a
+      href="https://duncanwardle.com/how-to-open-the-door-to-your-creative-genius/">something
       magical that occurs through the interaction between the
       subconscious and the conscious</a><sup>[17]</sup>, I believe there
-    is a much more parsimonious explanation: What if (as argued above)
-    coming up with good ideas is simply a <a
+      is a much more parsimonious explanation: What if (as argued above)
+      coming up with good ideas is simply a <a
       href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/soldiers-scouts-and-albatrosses">search
       problem</a> where possible ideas are proposed, evaluated and (most
-    of the time) rejected? If each proposed idea only has a small
-    probability of being a “hit”, then the distribution of arrival
-    times of ideas is a <a href="https://en.wikipedia.org/wiki/Poisson_point_process">Poisson
-      process</a>, and the <a href="https://gtribello.github.io/mathNET/resources/jim-chap20.pdf">distribution
+      of the time) rejected? If each proposed idea only has a small
+      probability of being a “hit”, then the distribution of arrival
+      times of ideas is a <a
+      href="https://en.wikipedia.org/wiki/Poisson_point_process">Poisson
+      process</a>, and the <a
+      href="https://gtribello.github.io/mathNET/resources/jim-chap20.pdf">distribution
       of waiting times in between ideas is an exponential
       distribution</a>. As a consequence, finding a good idea simply
-    takes a lot of time sometimes, especially when the probability of
-    a hit is small. Having a “dry spell” of good ideas is just what we
-    would (sometimes) expect under this model.</p>
-  <div class="sidenote">
-    <p>[17] </p>
-    <p>Quote: <em>For most of any given day we only use our conscious
-        brain, representing only a surprising 13% of the brain’s capacity.
-        The other 87%, our subconscious brain goes unused because when we
-        are stressed and hear ourselves say “I don’t have time to think,”
-        the door between our conscious and subconscious brain closes
-        completely. When this door is closed, access to all of that
-        experiential and creative stimulus in the subconscious brain is
-        denied, therefore, no big ideas. Every meal you’ve ever eaten,
-        place you’ve ever visited, person you’ve ever met, book you’ve
-        read, movie you’ve seen–they’re all back there in your
-        subconscious brain waiting to make unrelated connections back to
-        the challenge at hand and to support the creation of that big
-        innovation.</em></p>
-  </div>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_180.png" />
-    <strong>a</strong> Example of a Poisson point process, blue
-    circles indicate generated ideas as a function of time. Red bar
-    highlights time period at beginning of simulation where no ideas
-    were generated. <strong>b</strong> Distribution of waiting time
-    lengths (red bar in <strong>a</strong> ) pooled across
-    simulations. Notice the long tail.
-  </p>
-  <p>Disengaging from the problem then is nothing else than pressing
-    the “fast forward” button. The process of searching for a good
-    idea continues to “<a href="https://en.wikipedia.org/wiki/Global_workspace_theory">run
+      takes a lot of time sometimes, especially when the probability of
+      a hit is small. Having a “dry spell” of good ideas is just what we
+      would (sometimes) expect under this model.</p>
+      <div class="sidenote">
+      <p>[17] </p>
+      <p>Quote: <em>For most of any given day we only use our conscious
+      brain, representing only a surprising 13% of the brain’s capacity.
+      The other 87%, our subconscious brain goes unused because when we
+      are stressed and hear ourselves say “I don’t have time to think,”
+      the door between our conscious and subconscious brain closes
+      completely. When this door is closed, access to all of that
+      experiential and creative stimulus in the subconscious brain is
+      denied, therefore, no big ideas. Every meal you’ve ever eaten,
+      place you’ve ever visited, person you’ve ever met, book you’ve
+      read, movie you’ve seen–they’re all back there in your
+      subconscious brain waiting to make unrelated connections back to
+      the challenge at hand and to support the creation of that big
+      innovation.</em></p>
+      </div>
+      <p><img
+      src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_180.png" />
+      <strong>a</strong> Example of a Poisson point process, blue
+      circles indicate generated ideas as a function of time. Red bar
+      highlights time period at beginning of simulation where no ideas
+      were generated. <strong>b</strong> Distribution of waiting time
+      lengths (red bar in <strong>a</strong> ) pooled across
+      simulations. Notice the long tail.</p>
+      <p>Disengaging from the problem then is nothing else than pressing
+      the “fast forward” button. The process of searching for a good
+      idea continues to “<a
+      href="https://en.wikipedia.org/wiki/Global_workspace_theory">run
       in the background</a>”, perhaps with reduced
-    resources<sup>[18]</sup>, and only rises to attention when a “hit”
-    (or something looking a lot like a hit) was found. I suspect we
-    can <a href="https://martin-thoma.com/explaining-away/">explain
+      resources<sup>[18]</sup>, and only rises to attention when a “hit”
+      (or something looking a lot like a hit) was found. I suspect we
+      can <a href="https://martin-thoma.com/explaining-away/">explain
       away</a> the apparent “magical” component of the creative process
-    this way. But doing that is a lot less exciting than “coding away”
-    the confusion, so I’ll stick to that instead.</p>
-  <div class="sidenote">
-    <p>[18] </p>
-    <p>As long as the time spent disengaged is much longer than the
+      this way. But doing that is a lot less exciting than “coding away”
+      the confusion, so I’ll stick to that instead.</p>
+      <div class="sidenote">
+      <p>[18] </p>
+      <p>As long as the time spent disengaged is much longer than the
       time actively working on the problem, reduced resources do not
       matter so much.</p>
-  </div>
-  <div class="sidenote">
-    <p>[13] </p>
-    <p>This is super important. There will be a very strong pull to
+      </div>
+      <div class="sidenote">
+      <p>[13] </p>
+      <p>This is super important. There will be a very strong pull to
       extend the expansion phase. Don’t give in. This is the point where
       it’s decided whether you hit your deadline or not.</p>
-  </div>
-  <div class="sidenote">
-    <p>[14] </p>
-    <p>These two phases are the ones I tried to characterize in “<a
-        href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/soldiers-scouts-and-albatrosses">Soldiers,
-        Scouts, and Albatrosses</a>”, although I’m not sure if I hit the
+      </div>
+      <div class="sidenote">
+      <p>[14] </p>
+      <p>These two phases are the ones I tried to characterize in “<a
+      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/soldiers-scouts-and-albatrosses">Soldiers,
+      Scouts, and Albatrosses</a>”, although I’m not sure if I hit the
       nail on the head there.</p>
-  </div>
-  <div class="sidenote">
-    <p>[15] </p>
-    <p>Be honest with yourself here. Again, the temptation is big to
+      </div>
+      <div class="sidenote">
+      <p>[15] </p>
+      <p>Be honest with yourself here. Again, the temptation is big to
       carry along that beautiful aspect of the project that you have
       sunken a ton of time into, but which simply doesn’t mash with
       anything else. Throw it away. (Into your drawer of “future project
       ideas” that you will never open again).</p>
-  </div>
-  <div class="debug-grid"></div>
+      </div>
+    <div class="debug-grid"></div>
   <script src="index.js"></script>
 </body>
 
