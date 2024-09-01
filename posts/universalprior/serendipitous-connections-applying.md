@@ -24,15 +24,10 @@ There is this idea floating around since at least [Hubel and Wiesel](https://bra
 The ventral stream is concerned with extracting properties of objects from the "raw input" from the retina. The NHBT suggests that 
 
   1. after starting from roundish, simple representations in the lateral geniculate nucleus (LGN), 
-
   1. we get raw edges at the level of the primary visual cortex (V1), 
-
   1. we move to flat shapes in the secondary visual cortex (V2), 
-
   1. we skip V3[2](https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-2-46595289), 
-
   1. and finally on to the quaternary visual cortex (V4) for three-dimensional objects. 
-
 
 
 
@@ -142,15 +137,12 @@ If you've read the previous two sections back-to-back you can probably already p
  **Model[postdictions](https://en.wikipedia.org/wiki/Postdiction).** Under this model,
 
   1. the original input ought to be added to the computed output, consistent with what we know about the direct thalamocortical input onto layer 5 of the cortex ([Constantinople and Bruno, 2013](https://www.science.org/doi/abs/10.1126/science.1236425)). This also happens to be one of the hallmark features of the "Dendritic Gated Networks" recently proposed by [Sezener et al. (2020)](https://www.biorxiv.org/content/10.1101/2021.03.10.434756v1.full).
-
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F37d0f407-3f9a-4b57-93db-30e934cf0199_2073x2778.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F37d0f407-3f9a-4b57-93db-30e934cf0199_2073x2778.png)As schematic before, but with input and output merged into a residual stream.
 
   1. representations would still _look_ somewhat hierarchical: as later processing steps of the stream receive the output of earlier steps as input, complexity[17](https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-17-46595289) of the representation will increase at later stages in the stream. However, the hierarchy is a lot more flexible, and can dynamically route intermediate outputs from all levels to the end of the stream.
-
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F8fa5d644-ca81-4490-878f-a336569d59e7_1625x1334.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F8fa5d644-ca81-4490-878f-a336569d59e7_1625x1334.png)Schematic illustrating that later stations in the stream might still have access to all previously computed intermediate results.
 
   1. computation is highly flexible. Depending on the input statistics, the same cell might be recruited in a wide range of roles.
-
 
 
 
@@ -180,11 +172,8 @@ These shouldn’t even be too difficult to test ([compared to, like, calcium ima
 But at least there are some interesting hints for how to continue:
 
   1. Which principles govern the computations within layer 2/3? I don't believe that the cortical microcircuit implements the transformer architecture. But it also doesn't have to - a "traditional" recurrent neural network should be able to do the same things as the transformer. It just cannot be trained as efficiently.
-
   1. How do we train the network to do "useful" computations? The specter of the "missing teaching signal" in the biological brain has prompted a lot of creative proposals from the neuroscience community over the decades[20](https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-20-46595289). But the recent astonishing progress with "[self-supervised](https://en.wikipedia.org/wiki/Self-supervised_learning)" (i.e. autoregressive) learning shows that very capable networks can emerge without an external teaching signal. Instead of the backpropagation algorithm (which is not well-suited for biological networks), the brain might implement the next best approximation ([Sezener et al. 2020](https://www.biorxiv.org/content/10.1101/2021.03.10.434756v1.full); [Sacramento et al., 2018](https://proceedings.neurips.cc/paper/2018/hash/1dc3a89d0d440ba31729b0ba74b93a33-Abstract.html))
-
   1. What about inhibition? [Sezener et al. (2020)](https://www.biorxiv.org/content/10.1101/2021.03.10.434756v1.full) again have an answer[21](https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-21-46595289): Inhibition might be responsible for gating on or off certain branches of the dendrites, effectively modulating the projection of the residual stream.
-
 
 
 

@@ -79,11 +79,8 @@ We can do a particularly fun thing with this setup: We can explore multiple poss
 You can tell that I am very excited about my new toy. It certainly fits well into a people-centric view of research, but is it useful? Well, there are still a few problems.
 
   1. The model tends to [hallucinate](https://ehudreiter.com/2018/11/12/hallucination-in-neural-nlg/), i.e. say wrong things very confidently.
-
   1. The amount of text grows exponentially with the length of the conversation, making it hard to find interesting paths.
-
   1. The conversation lacks focus, and the models do not engage deeply with their interlocutor.
-
 
 
 

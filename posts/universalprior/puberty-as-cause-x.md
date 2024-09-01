@@ -52,11 +52,8 @@ Let us take the possibility seriously that we find out in 50 years that high sch
 The [80000 hours](https://80000hours.org/) project has a framework for tackling this type of question: the [ITN framework](https://forum.effectivealtruism.org/tag/itn-framework-1). When thinking about which vital problem to work on, we might evaluate
 
   1.  **I** mpact. If we solved the problem, how good would it be?
-
   1.  **T** ractability. If we doubled the resources dedicated to solving this problem, what fraction of the problem would we expect to solve?
-
   1.  **N** eglectedness. How many resources are already going towards solving this problem?
-
 
 
 
@@ -283,9 +280,7 @@ Here's the relevant passage:
 I think this data would suggest at least two tests for the hypothesis that "bullying drives lowered life satisfaction".
 
   1. We might expect adolescents’ life satisfaction in Denmark to have been much lower in the 90sthano today. As using life satisfaction as a metric has only come _in vogue_ recently, I have little hope to find the perfect data. However, perhaps there is still something that can be said from other metrics.
-
   1. Taking the much higher baseline in the U.S. compared to Denmark seriously: might adolescent's life satisfaction be higher in Denmark compared to the U.S.?
-
 
 
 

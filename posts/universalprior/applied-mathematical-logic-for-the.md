@@ -66,11 +66,8 @@ To make this useful, we have to further define the used terms.
 What is a _theory_? It's a set of sentences. What is a _sentence_? Well, it's pretty much what you would expect - it's a string of symbols constructed from an alphabet according to some fixed rules. A famous example of a theory is [Peano arithmetic](https://en.wikipedia.org/wiki/Peano_axioms#First-order_theory_of_arithmetic), but really the definition is much more general:
 
   1. A dynamical system, given as a set of differential equations[3](https://universalprior.substack.com/p/applied-mathematical-logic-for-the#footnote-3-42721010), is a theory.
-
   1. A cellular automaton, given as a set of transition rules, is a theory.
-
   1. Any recursively enumerable set of sentences of a formal language, given as a set of production rules, is a theory.
-
 
 
 
@@ -79,11 +76,8 @@ What is a _theory_? It's a set of sentences. What is a _sentence_? Well, it's pr
 Now to the other part of the definition. What is a mathematical object? _Phew_ , you are opening a [can of worms](https://en.wikipedia.org/wiki/Philosophy_of_mathematics#Contemporary_schools_of_thought)... But I'm pretty sure you'll recognize a mathematical object when you see it. **[R](https://www.dcode.fr/number-sets)**[, ](https://www.dcode.fr/number-sets)**[Q](https://www.dcode.fr/number-sets)**[, ](https://www.dcode.fr/number-sets)**[Z,](https://www.dcode.fr/number-sets)**[ ](https://www.dcode.fr/number-sets)**[N](https://www.dcode.fr/number-sets)** , and all the cool stuff you can build from those sets, those are mathematical objects. **N** satisfies the theory of (and is, therefore, a model of) Peano arithmetic. For the three theories mentioned above, the mathematical objects that satisfy them are:
 
   1. A particular trajectory through state space, f.e. specified through initial conditions.
-
   1. A particular evolution of the cellular automaton, again specified through the initial conditions.
-
   1. A particular Turing machine that implements the production rules, specified through... (you get the idea).
-
 
 
 

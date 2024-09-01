@@ -45,13 +45,9 @@ So far, so vague - what does this buy us? It turns out that it is pretty hard to
 Despite these caveats, a handful of recommendations have emerged for the aspiring effective altruist that have a chance to maximize expected utility:
 
   1. Donate. You are [very likely among the richest five percent of people](https://howrichami.givingwhatwecan.org/how-rich-am-i) living on the planet right now. Your donation can improve someone else's life tremendously.
-
   1. Donate to an _effective_ charity. Some charities are [up to 100x more cost-effective](https://www.givingwhatwecan.org/charity-comparisons/) than other charities. The same amount of money donated might therefore produce up to 100x the expected utility.
-
   1. Choose an effective career. If you work on a problem that is '[important, neglected, and tractable](https://80000hours.org/articles/your-choice-of-problem-is-crucial/)', you have a chance of working on something with high expected utility (important) that not enough people are working on (neglected) and that you might _actually_ solve (tractability).
-
   1. Consider being risk-neutral rather than risk-averse. Our natural instinct is to be [risk-averse](https://en.wikipedia.org/wiki/Allais_paradox) and not to take options that are good in expected value but have a high chance of failure. [Correcting this bias might unlock a lot of additional expected utility](https://80000hours.org/articles/risk/).
-
 
 
 
@@ -60,11 +56,8 @@ Despite these caveats, a handful of recommendations have emerged for the aspirin
 Are you convinced? I hope not. Here are three points that give me pause:
 
   1.  **Career choice**. I [often meet effective altruists](https://80000hours.org/speak-with-us/?int_campaign=2021-08__primary-navigation#:~:text=We%E2%80%99ve%20helped%20over%201%2C000%20people) who struggle hard to make "the most important decision of their life" regarding which field to study. The intersection between personal fit, uncertain future, and (de facto) incommensurability of different cause areas makes this a devilishly hard question. But - from personal experience - this question also mostly turns out to be a [false dilemma](https://en.wikipedia.org/wiki/False_dilemma). You _can_ have your cake and eat it too. Sometimes, at least.
-
   1.  **Risk-neutrality**. The point about risk-neutrality doesn't sit well with me at all. Call me risk-averse, but I can't argue myself into dropping my Ph.D. and starting a start-up[8](https://universalprior.substack.com/p/slightly-advanced-decision-theory#footnote-8-44426436). I'm all for [skin in the game](https://en.wikipedia.org/wiki/Skin_in_the_Game_%28book%29) and I can hear Taleb calling me an [IYI](https://medium.com/incerto/the-intellectual-yet-idiot-13211e2d0577), but something about the logic doesn't sit well with me. Almost as if there is a hidden risk that doesn't go into the expected value calculation…
-
   1.  **Donation splitting**. Expected utility reasoning implies that some cause areas are more impactful than others. Perhaps we can't figure out which ones they are, but if we _could_ , then, according to naive expected value reasoning, we should [completely discard](https://funds.effectivealtruism.org/help/20ApN8qGQIW8OS02KOA0WA) the others. This is clearly nonsense to me - and to the majority of effective altruists, I believe. If we found out that [insect suffering](https://reducing-suffering.org/the-importance-of-insect-suffering/) turns out to be really important, would we just drop everything else and focus on insects?
-
 
 
 
@@ -229,11 +222,8 @@ Now, clearly, if the **a** of some opportunities are [orders of magnitude larger
 In this post, I have re-derived some of the community maxims that have naturally emerged over the years. In particular, I argued that
 
   1. the [race model inequality](https://link.springer.com/article/10.3758/s13414-015-1018-y) can be used to argue that it is good to _do multiple things that have a potentially large positive impact,_ rather than to channel all your energy into just one thing.
-
   1. in situations where [absorbing states](http://ce.sharif.edu/courses/90-91/1/ce695-1/resources/root/Notes/Lec-8b.pdf) are relevant (almost always), it can be better to optimize for high mean **and** low variance, rather than just for a high mean.
-
   1. when there are [diminishing returns](https://forum.effectivealtruism.org/tag/diminishing-returns) or when the types of reward from different opportunities are not fungible (like different [existential risk scenarios](https://www.existential-risk.org/concept.pdf)), then it is admissible to split donations.
-
 
 
 

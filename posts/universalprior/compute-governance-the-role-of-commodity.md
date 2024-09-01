@@ -16,9 +16,7 @@ There are two complementary avenues for ensuring that humanity successfully navi
  **Compute Governance** is the subfield of AI Governance concerned with controlling and governing access to computational resources ([Heim 2021](https://forum.effectivealtruism.org/posts/g6cwjcKMZba4RimJk/compute-governance-and-conclusions-transformative-ai-and); [Anderljung and Carlier 2021](https://forum.effectivealtruism.org/posts/kvkv6779jk6edygug/some-ai-governance-research-ideas)). Among different candidates for effective AI governance, Compute Governance stands out as particularly promising due to two factors:
 
   1. We can monitor possession and usage of large-scale computing resources comparatively well. Large-scale computing requires physical space for the computing hardware and substantial supporting infrastructure.
-
   1. Access to large-scale computing resources can be monitored and governed as the supply chain for advanced semiconductor production is concentrated on a few key producers.
-
 
 
 

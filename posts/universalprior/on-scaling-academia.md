@@ -175,9 +175,7 @@ Setting up an academic prediction market that is technically well-done and fun t
 Please don’t think that I was intentionally burying the lede. I do believe that 
 
   1. systematizing scientific work (collecting and refining explicit workflows)
-
   1. improving metrics of scientific progress (through f.e. prediction markets)
-
 
 
 

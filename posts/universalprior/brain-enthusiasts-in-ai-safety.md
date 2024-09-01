@@ -36,10 +36,9 @@ Using a [previously published dataset](https://www.lesswrong.com/posts/FgjcHiWvA
 
 Almost everyone on the list has a computer science, physics, or mathematics background. Notable exceptions are three researchers with an "officially different" formal education (Abram Demski, Richard Ngo, and Daniel Kokotajlo) and those researchers who now work on brain-enthusiasm topics:
 
-  1. [Steven Byrnes](http://sjbyrnes.com/) [Intro to Brain-like AGI Safety](https://www.alignmentforum.org/s/HzcM2dkCq7fwXBej8) post series
+  1. [Steven Byrnes](http://sjbyrnes.com/) [Intro to Brain-like AGI Safety](https://www.alignmentforum.org/s/HzcM2dkCq7fwXBej8) post series  
   1. [John Wentworth and his background in molecular and cellular biology](https://axrp.net/episode/2022/05/23/episode-15-natural-abstractions-john-wentworth.html#e-coli-agency)
   1. People not included in the list above, like [Lee Sharkey](https://leesharkey.github.io/about/) or [Carla Zoe Cremer](https://www.fhi.ox.ac.uk/team/carla-zoe-cremer/), have a computational neuroscience background.
-
 
 
 

@@ -34,9 +34,7 @@ _Meta: As this post is all about summarization (and since I value your time!), I
  **`Summarization is idempotent and books are highly structured.`** Well, of course there are caveats. As alluded to above, summarising books lends itself well to decomposition[7](https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-7-47977244). This is due to two factors:
 
   1. The summarization operator is [idempotent](https://en.wikipedia.org/wiki/Idempotence): the summary of summaries is again a summary.
-
   1. Books have ([almost always](https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure)) a neat linear and hierarchical structure.
-
 
 
 

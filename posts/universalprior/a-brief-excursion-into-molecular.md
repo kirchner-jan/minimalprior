@@ -163,11 +163,8 @@ But this level of abstraction still has severe limitations: Unless we have some 
 To simplify the tangle of arrows and boxes from the picture in the previous section, we can do: 1. **clustering** , 2. **summarizing** , and 3. **unrolling in time**. 
 
   1. **[Clustering](https://en.wikipedia.org/wiki/Cluster_analysis)** requires identifying components that are similar to each other and different from all the other things. For example, we might decide to lump together voltage-gated calcium channels and NMDA channels because they both lead to an influx of calcium[26](https://universalprior.substack.com/p/a-brief-excursion-into-molecular#footnote-26-51607370).
-
   1.  **[Summarizing](https://en.wikipedia.org/wiki/Dimensionality_reduction) **requires lowering the system's dimensionality by [reducing](https://en.wikipedia.org/wiki/Summary_statistics) multiple items into a single item or identifying a [prototypical](https://en.wikipedia.org/wiki/Prototype_theory) stand-in for the cluster.
-
   1.  **[Unrolling in time](https://en.wikipedia.org/wiki/Backpropagation_through_time)** is a kind of clustering & reducing in _time_. Which processes happen (mostly) simultaneously and before/after others? How much temporal overlap can we ignore before the picture gets misleading[27](https://universalprior.substack.com/p/a-brief-excursion-into-molecular#footnote-27-51607370)?
-
 
 
 
@@ -176,31 +173,23 @@ To simplify the tangle of arrows and boxes from the picture in the previous sect
 While the story we can tell about the picture (see the caption) gets a lot more concise, abstraction also means losing information. If I’d only shown you this version of the picture, you wouldn’t know that PLC-γ is involved[28](https://universalprior.substack.com/p/a-brief-excursion-into-molecular#footnote-28-51607370). But abstracting to this level of resolution gives us two powerful new actions:
 
   1. We can start to think about **[purpose](https://en.wiktionary.org/wiki/ulterior)**. When we follow the progression of steps, we realize that they culminate into more presynaptic glutamate and more postsynaptic receptors. Both of those things enable [more reliable signaling and stronger activation of the postsynapse](https://en.wikipedia.org/wiki/Long-term_potentiation). The BDNF signaling cascade depicted above leads to the [strengthening of a synapse](https://www.pnas.org/doi/10.1073/pnas.0711863105).
-
   1. We can start **[charting negative idea space](http://www.hpmor.com/chapter/8)**. The degrees of freedom in the picture are sufficiently reduced that we can look at the flow of information and wonder about “how things could be different”. And we can start to be [confused without being overwhelmed](https://www.lesswrong.com/posts/5JDkW4MYXit2CquLs/your-strength-as-a-rationalist).
-
 
 
 
 Here are three examples of what I mean by “charting negative idea space”: 
 
   1. When I saw (a variation) of this picture for the first time, it made sense that there should be BDNF receptors in the _pre_ synapse. Diffusion of BDNF from the _post_ synapse back to the _pre_ synapse could be a kind of “read receipt”, indicating that signal transmission went fine[29](https://universalprior.substack.com/p/a-brief-excursion-into-molecular#footnote-29-51607370). But why would there also be BDNF receptors in the _post_ synapse? The postsynapse already “ _knows_ ” that it just released BDNF. Why would you _build_ something like this?
-
   1. And, if BDNF is just overall awesome and stops your neurons from dying, why doesn’t your brain push the “more BDNF” button _all the time_? There must be trade-offs. Perhaps you don’t want _way_ _too_ _much_ BDNF. Still, if BDNF has all the magical abilities from the introduction (better hair, fantastic baritone voice, the ability to jump 3 meters high), then evolution ought to have figured out a way to crank up the natural production of BDNF.
-
   1. And finally: how does this relate to _everything else_? What about the [A̷͈̐̈́̆̍̋̃͑͘ṛ̸̨̨̻̹̖̙͖̺̱̋̇̈̈́̈́͆̈́̈̒̆̀̾̕͜c̴̢̢̢̜̪͖͇̥̲̟̱̪͓͚͊̅̈́̓́̒̑̑̌͐͂͗̚͘͠-signaling](https://www.science.org/doi/10.1126/science.aao0862#:~:text=OPEN%20IN%20VIEWER-,Arc,-%2C%20the%20protein%20encoded), [c̵̫̦̙̤͓̞̮̥͈̱̻͈̖͙̥̾͋͗́͛͆̇̏̏͘͝a̶̳̱̜̻̝̙̭̽̍͋̿̊̅͋͋̾̕͜͠ḷ̸̢̨̛̭̜͓̜͈̈̈́̋̏̀͑̅̇̈́̄̂̕͜ͅç̴̨̡̪͈͉̜̋̓̈́͌͘͝ͅḯ̶̫̬̝͑͐̌͑̓͐̓̋̈̓͆͘͠͝ͅn̸̥̬͉̯̙̻͍͙̪̲͚̭̮̎͌͝e̴̜̼̦̯̓̏̈́̾̐̃̄̇͝ù̶̮̹̺̤̫̰̰̝͕̣̘͉̜͌̾͜͝ȑ̶̪̣̙͇̣̻͔̪̘̙̎̉̂́̄̈́͌̋͑̽̈́̑̂͝í̵̫͆̇͋͑͘͝n̷̹̰͓̤̗̱̲̗͖̩̑̌-signaling,](https://www.cell.com/article/S2211-1247\(14\)01045-6/fulltext#:~:text=requires%20activation%20of-,calcineurin,-%2C%20IP3Rs%2C%20and%20mGluRs) [P̶̧̡͔̞͉̜̜̼̩͕̘̙̰͍͊̎̾̏̆͗́̕̕ͅR̶̛̛̯̍́̊̈̅̐̔̍͋̌͘P̸͖̗̹̩͂̂͌̌͒̃̎͆̉̓͊̈́̕͠͝-signaling,](https://www.nature.com/articles/nrn2963#:~:text=term%20memory%20if-,PRPs,-are%20made%20available) and of course [C̴͉͙̘̞̏͂̌́̅͊̇̄͌̂̿͐́ȁ̸̡̧̛̞͍̟̖̗͖̜͓͚̃́̑́͆̅̚͠M̴̡̩̙͛̈́̇̄̉̏͑̈̓̾̍̍̚̕͠K̷̢͔͇̭̘͈̼͚͉̭̦̖̥̩̅͌Į̶̼̼̫̀̐̂̅̊̇̈̈́̍̽͊̀̎̔͘I̴̡̼̠͍̹̭̦̓̆̈̅͊̄̓̊͆-signaling](https://pubmed.ncbi.nlm.nih.gov/24484698/#:~:text=the%20activation%20of-,CaMKII,-in%20dendritic%20spines)? Are all of those signaling cascades just _wrong_ or _irrelevant_?
-
 
 
 
 Resolving this type of confusion is not straightforward. Here are some possible non-answers:
 
   1. Sometimes the error is in the map - perhaps the experiments that indicate BDNF receptors in the postsynapse are just bad[30](https://universalprior.substack.com/p/a-brief-excursion-into-molecular#footnote-30-51607370)?
-
   1. Sometimes you don’t look at the map carefully enough, and the confusion comes from poor understanding.
-
   1. Sometimes there is no answer. Evolution is just [not always great at planning](https://en.wikipedia.org/wiki/Retina#Inverted_versus_non-inverted_retina). Things are complicated.
-
 
 
 
@@ -228,11 +217,8 @@ MMP9 here is just a type of cleaving enzyme (represented by a scissor in the ill
 This particular [framing of neurotrophin interaction](http://www.bio.brandeis.edu/classes/nbio143/Papers/Neurotrophins/Lu05.pdf) is fascinating to me, and I’ve spent some portion of my doctoral research thinking about how far we can push this interplay of activity and molecular balance to [establish structure in the developing brain](https://www.nature.com/articles/s41467-021-23557-3#Fig1)[34](https://universalprior.substack.com/p/a-brief-excursion-into-molecular#footnote-34-51607370). In particular, this framing provides several elegant answers to the questions I have raised throughout this essay:
 
   1.  **Q** : Why would there also be BDNF receptors in the postsynapse? **A** : Because sending out proBDNF and BDNF into the synaptic cleft is not a “read receipt”, it’s a probe supposed to gather information about the status of the presynapse! Depending on how active the presynapse has been, the [more cleaving enzyme will be around](https://pubmed.ncbi.nlm.nih.gov/23019376/).
-
   1.  **Q** : If BDNF is overall awesome and makes your brain better, why doesn’t your brain push the “more BDNF” button _all the time_? **A** : Because what you want is not more BDNF _everywhere_ equally (unless you just had a [seizure](https://www.science.org/doi/10.1126/science.2549634) or have a neurodegenerative disease). The brain’s ability to process information comes from the _selective_ connectivity of different neurons. You want BDNF and proBDNF in an appropriate balance.
-
   1.  **Q** : And finally: how does this relate to _all the other signaling pathways_ we know? **A** : The interplay of proBDNF and BDNF is responsible for setting up the groundwork - making sure that the appropriate neurons and synapses survive. But once the groundwork is established, the pair fades into the background and leaves the stage for fancier actors to refine and tune. Indeed, expression of BDNF and proBDNF peaks in the second postnatal week and shifts into a BDNF dominated regime afterward.
-
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fbc323ae3-091c-4dc4-840a-bde2ca935de2_274x302.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fbc323ae3-091c-4dc4-840a-bde2ca935de2_274x302.png)Hippocampal lysates from mice of the indicated genotype and ages were subjected to immunoprecipitation/western blot analysis for BDNF isoforms. [source](https://www.nature.com/articles/nn.2244/figures/2)
 
 
@@ -251,11 +237,8 @@ We’ve learned a bit about the beautiful language I call p̴͓̂͘á̴̻͌s̶�
 We could inject ourselves into a debate that has raged in the LessWrong comment section for [the last few weeks](https://www.lesswrong.com/posts/sbcmACvB6DqYXYidL/counter-theses-on-sleep?commentId=Ehcng2LgeDuWmgQS3) about whether sleep deprivation might increase ([Alexey’s position](https://www.lesswrong.com/posts/HvcZmKS43SLCbJvRb/theses-on-sleep#:~:text=Sleep%20deprivation%20appears%20to%20increase%20BDNF)) or decrease ([Natália’s position](https://www.lesswrong.com/posts/sbcmACvB6DqYXYidL/counter-theses-on-sleep#:~:text=is%20not%20linear.-,Chronic%20sleep%20deprivation%20might%20be%20associated%20with%20*decreased*%20BDNF%20expression,-%2C%20as%20shown%20by)) the amount of BDNF in your brain. The two have been pushing back and forth on this point and are now stuck drawing causal arrows between depression ←→ more sleep ←→ more/less BDNF. What can we contribute to this?
 
   1. According to the “neurotrophin balance is all you need” perspective, the point is moot. Unless you have some reason to believe that you have too little BDNF by default, you probably don’t even _want_ more BDNF. Sleeping more or less doesn’t matter if you don’t know if either affects the balance in the right way.
-
   1. The papers that Alexey lists ([[1]](https://pubmed.ncbi.nlm.nih.gov/31782101/), [[2]](https://www.sciencedirect.com/science/article/abs/pii/S0924933817324033), [[3]](https://www.nature.com/articles/mp201310), [[4]](https://academic.oup.com/sleep/article/42/Supplement_1/A356/5451256)) are all kind of… “meh”. After reading them semi-carefully, I come out mostly confused. [[3]](https://www.nature.com/articles/mp201310) finds lower BDNF serum levels in people who are tired and fatigued, but they split their sample post-hoc between smokers and non-smokers. In the discussion, they hypothesize that acute sleep deprivation might _increase_ BDNF (they cite [this paper](https://www.nature.com/articles/4001897) which looks a bit more trustworthy) and that prolonged sleep deprivation _decreases_ it. So depending on how much BDNF you want in your brain, you might want to …
-
   1. … no, but really, those papers are all kind of “meh”. I don’t want to slight any of my fellow researchers (I’m sure they’ve worked hard on this), but the results are not solid enough to conclusively arbitrate _any_ high-level debate. Let’s wait five to ten years and [see if we can get a meta-analysis](https://slatestarcodex.com/2014/12/12/beware-the-man-of-one-study/). And then we can get back to the discussion.
-
 
 
 

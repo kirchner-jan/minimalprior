@@ -34,11 +34,8 @@ In this post, I want to propose an analogy with the type of AI architecture that
 Which tool in our belt is best suited to understand complicated cognitive phenomena? [David Marr](https://en.wikipedia.org/wiki/David_Marr_%28neuroscientist%29)'s three[5](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-5-46914010) levels of analysis appear like a good match[6](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-6-46914010):
 
   1.  **computational level** : a formal description of what the system does.
-
   1.  **algorithmic level** : a step-by-step description of how a formal system can construct a solution.
-
   1.  **implementational level** : identification of a neural circuit that can implement the step-by-step description.
-
 
 
 
@@ -81,11 +78,8 @@ Paul Christiano [argues](https://ai-alignment.com/alphago-zero-and-capability-am
 Conceptually, IAD requires three components:
 
   1. a prior distribution **p** over moves in a given position,
-
   1. an **amplification** procedure **A(p)** that can boost the performance of **p** (usually at the cost of runtime or storage),
-
   1. and a **distillation** procedure **p* = D(A(p))** that takes the boosted distribution **A(p)** as input and condenses it down to an updated prior distribution **p** * (usually at the cost of a bit of performance in exchange for a large speedup in runtime).
-
 
 
 

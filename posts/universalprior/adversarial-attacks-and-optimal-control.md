@@ -14,11 +14,8 @@ _Meta: After a fun little motivating section, this post goes pretty deep into th
 ###  **TL;DR:**
 
   1. When we invest the appropriate effort, the probability of random catastrophic events tends to decrease exponentially with a rate given by the[1](https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-1-56106015) rate function.
-
   1. One way of estimating the rate function is to solve an optimal control problem, where we have to determine the "least surprising" way that the catastrophic event comes about. The rate function then equals the catastrophic event's surprise (in [nats](https://en.wikipedia.org/wiki/Nat_\(unit\))).
-
   1. Thus, intuitively, as we invest the effort to decrease the probability of random catastrophic events, the "difficulty" of performing an adversarial attack only increases linearly.
-
 
 
 
@@ -43,9 +40,7 @@ This post works towards achieving a mathematical understanding of what distingui
 I'll go over the basics quickly: When you (i.e. Zillow) think of your environment as random, each house you buy is essentially a coin flip with a biased coin. If you make sure that 
 
   1. the expected value of a deal is positive and 
-
   1. that all the deals are ([mostly)](https://en.wikipedia.org/wiki/Martingale_central_limit_theorem) independent of each other, 
-
 
 
 
@@ -130,11 +125,8 @@ as it should be.
 Quick recap: 
 
   1. When we find ourselves in a random environment, we can leverage the law of large numbers to push the probability of failure close to zero by trying sufficiently many times[11](https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-11-56106015), N.
-
   1. If we want to determine _how fast_ the probability of failure goes to zero, we can find that out by solving an optimal control problem where we need to determine the least surprising way failure might come about, J(ξ). 
-
   1. The probability of failure goes to zero exponentially fast, proportional to how surprised we would be and the number of tries, exp(−NJ(ξ)).
-
 
 
 
@@ -147,17 +139,13 @@ As general as the theorems mentioned above are in terms of the underlying distri
 While the **probability of complete failure,** exp(−NJ(ξ)), **falls exponentially** , the **amount of surprise required to bring it about** , NJ(ξ), **scales linearly!** A few things of note:
 
   1. The unit of "surprise" is [nats](https://en.wikipedia.org/wiki/Nat_\(unit\)), a measure of information. This interpretation maps only weakly onto the house buying example (where one [bit](https://rdrr.io/cran/infotheo/man/natstobits.html#:~:text=Details,log2\(e\)%20%3D%201.442695.) of information might indicate whether a given deal is bad for Zillow). Still, it has a much more straightforward interpretation when we think about set-ups where [information passes through a single channel and can be arbitrarily constrained](https://en.wikipedia.org/wiki/AI_box).
-
   1. Similarly, we can interpret the expected excess surprise, 
-
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fcafc3e71-9dac-4cb5-93a3-4fe801bb5949_1136x122.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fcafc3e71-9dac-4cb5-93a3-4fe801bb5949_1136x122.png)
 
 , as a functional on a state space spanned by [x₁,…,xₙ]. The fact that we compute the infimum over this functional turns the problem into an instance of [Hamilton's principle](https://en.wikipedia.org/wiki/Hamilton%27s_principle) \- the "true" evolution of the sequence of states is stationary w.r.t. the "action" given by the excess surprise. Through this lens, we're close to "[intelligence as optimization power](https://www.alignmentforum.org/tag/really-powerful-optimization-process)", which characterizes intelligence as the ability to steer reality into a small subset of possible states. But I can't quite put the pieces in the right place to make the connection click.
 
   1. Since we compute NJ(ξ) as the solution to an optimal control problem that minimizes excess surprise, **it is the lower bound on the amount of surprise required**. Catastrophe can also come about in more surprising ways, but [highly improbable events tend to happen in the least improbable way](https://www.stat.cmu.edu/~cshalizi/754/2006/notes/lecture-30.pdf). On the plus side, catastrophe _cannot_ come about with less surprise, which might have applications for the [set-ups with constrained communication](https://en.wikipedia.org/wiki/AI_box) mentioned in point 1.
-
   1. The team at Redwood Research recently [released their report on their research on high-stakes alignment](https://www.alignmentforum.org/posts/A9tJFJY7DsGTFKKkh/high-stakes-alignment-via-adversarial-training-redwood#:~:text=With%20a%20conservative,rate%20of%20injuriousness\).), where they trained a filter to reduce the probability of harmful output from 2.5% in the training set to 0.003% after applying the filter to 0.002% after adversarial training. While OOM reduction in failure probability _feels_ comforting, this only helps when the adversary is not actively trying to trick the filter (from 3.6 nats to 10.8 nats of information). This is consistent with their finding that their tool-assisted search for adversarial examples was 1000x more effective than naive sampling.
-
 
 
 

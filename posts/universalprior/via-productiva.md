@@ -18,17 +18,14 @@ Yeah, I’m not a huge fan of advice.
 I think there are many good side effects of giving and receiving advice. The act of giving advice is essentially an [expression of trust](https://universalprior.substack.com/p/trust-maximizing-agi?s=w), "asking for help" is a [social superpower](https://torch.io/blog/leadership-the-power-of-asking-for-help/), and the downsides of being exposed to information are _usually_ rather low[1](https://universalprior.substack.com/p/via-productiva#footnote-1-49610622). But those are just side effects; the actual core purpose of advice (exchanging relevant and helpful information) is surprisingly hard to get right:
 
   1. Causality is [complicated](https://arxiv.org/pdf/2109.11513.pdf). [Figuring out why you succeeded](http://www.scholarpedia.org/article/Reinforcement_learning#.28Temporal.29_Credit_Assignment_Problem) is hard, and the story you tell yourself about it is probably wrong.
-
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fff5b56ac-367b-4878-8f96-a5677b5b57fd_635x945.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fff5b56ac-367b-4878-8f96-a5677b5b57fd_635x945.png)[source](https://xkcd.com/1827/)
 
   1. For almost any piece of advice out there, you can find [reverse advice](https://slatestarcodex.com/2014/03/24/should-you-reverse-any-advice-you-hear/), i.e.
-
 > “You need to stop being so hard on yourself, remember you are your own worst critic” versus “Stop making excuses for yourself, you will never be able to change until you admit you’ve hit bottom.” [SSC](https://slatestarcodex.com/2014/03/24/should-you-reverse-any-advice-you-hear/)
 
 and because of your [social bubble](https://slatestarcodex.com/2017/10/02/different-worlds/), you might be exposed to advice with exactly the wrong polarity[2](https://universalprior.substack.com/p/via-productiva#footnote-2-49610622).
 
   1. The people with the most relevant insight are probably busy _doing_ stuff, leaving the people with a lot of free time on their hands to dominate the advice-giving market. So most people who want to give (or sell) advice do not have the relevant insight to give _good_ advice. This effect corroborates the [importance of having mentors](https://marginalrevolution.com/marginalrevolution/2021/12/two-all-purpose-pieces-of-advice-small-groups-and-mentors.html); even busy people want to give advice but are more selective about whom they give it to.
-
 
 
 

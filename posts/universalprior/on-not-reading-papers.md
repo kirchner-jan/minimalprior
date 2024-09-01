@@ -12,13 +12,9 @@ date: 2021-12-20
 In a recent [lunch conversation](https://universalprior.substack.com/p/applied-mathematical-logic-for-the)[1](https://universalprior.substack.com/p/on-not-reading-papers#footnote-1-45773700), a colleague of mine explained her system for reading scientific papers. She calls the system tongue-in-cheek " _not_ reading the paper". It goes as follows:
 
   1. Read the title and predict what the abstract will say. If you are correct, stop reading the paper.
-
   1. Otherwise, read the abstract and predict what the main results will be. If you are correct, stop reading the paper.
-
   1. Read the last paragraph of the introduction or the first paragraph of the discussion and predict the details of the results. If you are correct, stop reading the paper.
-
   1. etc.
-
 
 
 

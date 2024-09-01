@@ -69,33 +69,35 @@ Kirchner</a></td>
     <p>Since those innocent days, I have come to appreciate that
     building a biological brain is a ridiculously <a
     href="https://en.wikipedia.org/wiki/Constraint_satisfaction_problem">overconstrained
-    problem</a>. 1. First off - <strong>even before you’re done
-    building, the brain must make itself useful</strong>. And it’s not
-    just “occasionally helping with an arithmetic problem” - I’m talking
-    about “breathing”, “eating”, “coordinating limbs”… If the
-    environment is dangerous, then also “running away” or “fighting” is
-    on the menu. And you need to do these things <em>reliably</em> -
-    lapsing means death. 1. Second - <strong>every neuron only has
-    access to</strong> _ <strong>local</strong>_
-    <strong>information</strong>. In particular, every neuron only
-    receives input from a limited number of other neurons (usually &lt;
-    10,000 out of ~80 billion). From that information, a neuron needs to
-    infer what its role in the developing brain ought to be.
-    Consequently, every solution you come up with must be “symmetric” in
-    the sense that you can swap two neurons, and the end result must
-    still work. (<a
+    problem</a>.</p>
+    <ol class="incremental" type="1">
+    <li>First off - <strong>even before you’re done building, the brain
+    must make itself useful</strong>. And it’s not just “occasionally
+    helping with an arithmetic problem” - I’m talking about “breathing”,
+    “eating”, “coordinating limbs”… If the environment is dangerous,
+    then also “running away” or “fighting” is on the menu. And you need
+    to do these things <em>reliably</em> - lapsing means death.</li>
+    <li>Second - <strong>every neuron only has access to</strong> _
+    <strong>local</strong>_ <strong>information</strong>. In particular,
+    every neuron only receives input from a limited number of other
+    neurons (usually &lt; 10,000 out of ~80 billion). From that
+    information, a neuron needs to infer what its role in the developing
+    brain ought to be. Consequently, every solution you come up with
+    must be “symmetric” in the sense that you can swap two neurons, and
+    the end result must still work. (<a
     href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6899440/">It
     turns out the two neurons don’t even have to be from the same
-    species</a>). 1. Third - <strong>there is no clear separation
-    between “the thing you’re building” and “the thing that is doing the
-    building”<a
+    species</a>).</li>
+    <li>Third - <strong>there is no clear separation between “the thing
+    you’re building” and “the thing that is doing the building”<a
     href="https://universalprior.substack.com/p/the-brain-that-builds-itself#footnote-1-57181673">1</a></strong>.
     <a
     href="https://generative.ink/prophecies/#:~:text=The%20message%20had%20become%20the%20medium">The
     brain is making itself</a> with only rough guidance from genes and
     the environment (see <a
     href="https://universalprior.substack.com/p/how-to-build-a-mind-neuroscience?s=w">this
-    post</a> I wrote on the topic a while ago).</p>
+    post</a> I wrote on the topic a while ago).</li>
+    </ol>
     <p>In contrast, the solution for AI appears to be (for now) “just
     stack more layers”:</p>
     <p><a
@@ -111,26 +113,29 @@ Kirchner</a></td>
     <p>But <a
     href="https://www.youtube.com/watch?v=v5FL9VTBZzQ&amp;ab_channel=TED-Ed">constraints
     make creative</a>, and it seems like the aforementioned constraints
-    turn out to have their benefits: 1. First - An adversarial
-    environment forces the brain to be robust against perturbations.
-    Both <a href="https://arxiv.org/abs/1005.2243">theory</a> and <a
+    turn out to have their benefits:</p>
+    <ol class="incremental" type="1">
+    <li>First - An adversarial environment forces the brain to be robust
+    against perturbations. Both <a
+    href="https://arxiv.org/abs/1005.2243">theory</a> and <a
     href="https://www.deepmind.com/blog/generally-capable-agents-emerge-from-open-ended-play">practice</a>
     tell us that with robustness comes the ability to generalize to
     novel domains. (<a
     href="https://www.pnas.org/doi/10.1073/pnas.0601428103">Intense
     adversarial dynamics</a> might, in fact, explain the <a
     href="https://arbital.com/p/agi/#:~:text=that%20distinguishes%20humans%20from%20our%20nearest%20chimpanzee%20relatives">huge
-    gap between monkeys and humans in terms of generality</a>.) 1.
-    Second - A neat consequence of locality is <em>modularity</em>. When
-    you try to use as little “wire” as possible to connect your neurons,
-    <a
+    gap between monkeys and humans in terms of generality</a>.)</li>
+    <li>Second - A neat consequence of locality is <em>modularity</em>.
+    When you try to use as little “wire” as possible to connect your
+    neurons, <a
     href="https://royalsocietypublishing.org/doi/10.1098/rspb.2012.2863">locally
     interconnected modules tend to emerge</a>. Beyond making things <a
     href="https://academic.oup.com/brain/article-abstract/107/1/328/358592?redirectedFrom=PDF">slightly
     more interpretable</a>, <a
     href="https://www.cambridge.org/core/journals/proceedings-of-the-design-society-design-conference/article/modularity-robustness-and-change-propagation-a-multifaceted-relation/C9650B03547EF5DBA2009910352F3F9F">modularity
-    can also increase some types of robustness</a>. 1. Third - … This
-    one beats me.</p>
+    can also increase some types of robustness</a>.</li>
+    <li>Third - … This one beats me.</li>
+    </ol>
     <p>What is the benefit of having to build yourself? I’m not sure.
     Let’s zoom in on that.</p>
     <h1 id="bootstrapping-brains"><strong>Bootstrapping
@@ -231,10 +236,13 @@ Kirchner</a></td>
     local changes, the overall length of the dendrite remains
     approximately the same.</p>
     <p>What determines if a branch stabilizes or gets pruned? It’s kind
-    of unclear - but let’s collect the evidence. 1. First, here’s a
-    sequence of pictures from the retina of a baby chicken. The pictures
-    show a dendrite in the baseline (left), when activity is blocked
-    (middle), and when activity is allowed again.</p>
+    of unclear - but let’s collect the evidence.</p>
+    <ol class="incremental" type="1">
+    <li>First, here’s a sequence of pictures from the retina of a baby
+    chicken. The pictures show a dendrite in the baseline (left), when
+    activity is blocked (middle), and when activity is allowed
+    again.</li>
+    </ol>
     <p><a
     href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F08693e62-c1ae-499a-a9d9-d7823f86cb08_605x188.png"><img
     src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F08693e62-c1ae-499a-a9d9-d7823f86cb08_605x188.png" /></a><a
@@ -242,33 +250,39 @@ Kirchner</a></td>
     <p>The dendrite retracts rapidly when the activity stops and then
     extends again when the activity resumes. So <strong>dendrite
     retraction can be triggered by activity-dependent
-    mechanisms</strong>. 1. Second, here’s a dendrite in the optic
-    tectum of the Xenopus tadpole. The tadpole is trained with a visual
-    stimulus, and the dendrite shows new protrusions that form in
-    response to the training. Importantly, these protrusions are
-    responsive to the stimulus that the tadpole was trained with.</p>
-    <p><a
+    mechanisms</strong>.</p>
+    <ol class="incremental" type="1">
+    <li>Second, here’s a dendrite in the optic tectum of the Xenopus
+    tadpole. The tadpole is trained with a visual stimulus, and the
+    dendrite shows new protrusions that form in response to the
+    training. Importantly, these protrusions are responsive to the
+    stimulus that the tadpole was trained with. <a
     href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa993119c-0e6d-4542-a94a-eea344e1d160_1600x833.png"><img
     src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa993119c-0e6d-4542-a94a-eea344e1d160_1600x833.png" /></a><a
-    href="https://www.biorxiv.org/content/10.1101/2021.02.11.430646v1.full">source</a></p>
+    href="https://www.biorxiv.org/content/10.1101/2021.02.11.430646v1.full">source</a></li>
+    </ol>
     <p>So <strong>specific activity can trigger the growth of
-    dendrites</strong>. 1. Third, the “<a
+    dendrites</strong>.</p>
+    <ol class="incremental" type="1">
+    <li>Third, the “<a
     href="https://universalprior.substack.com/p/a-brief-excursion-into-molecular?s=w">Sherlock
     and Moriarty of molecular neuroscience</a>” also get a starring role
     in this story. <a
     href="https://molecularbrain.biomedcentral.com/articles/10.1186/1756-6606-2-27#Sec11">In
     this study</a>, researchers incubate rat brain neurons in either
     BDNF (matBDNF) or proBDNF (CR-proBDNF) and find that the signaling
-    molecules dramatically affect neuronal morphology.</p>
-    <p><a
+    molecules dramatically affect neuronal morphology. <a
     href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7fb999c3-c842-4159-81a0-4889a4f8c524_1372x868.png"><img
-    src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7fb999c3-c842-4159-81a0-4889a4f8c524_1372x868.png" /></a></p>
+    src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7fb999c3-c842-4159-81a0-4889a4f8c524_1372x868.png" /></a></li>
+    </ol>
     <p>(<a
     href="https://universalprior.substack.com/p/a-brief-excursion-into-molecular?s=w">As
     perhaps expected</a>,) <strong>BDNF increases dendrite length and
     complexity, while proBDNF leads to almost complete dendrite
-    removal</strong>. 1. Finally, we had pretty strong intuitions about
-    how synapses ought to interact with each other <a
+    removal</strong>.</p>
+    <ol class="incremental" type="1">
+    <li>Finally, we had pretty strong intuitions about how synapses
+    ought to interact with each other <a
     href="https://universalprior.substack.com/p/a-brief-excursion-into-molecular?s=w">from
     previous work</a>. In particular, there’s a <a
     href="https://www.cell.com/neuron/fulltext/S0896-6273%2815%2900572-3">bunch</a>
@@ -278,13 +292,13 @@ Kirchner</a></td>
     href="https://www.science.org/doi/10.1126/science.aao0862">evidence</a>
     that synapses that fire “out-of-sync” tend to “lose their link”. Or,
     in less poetic terms, <strong>nearby synapses tend to
-    compete</strong>.</p>
-    <p><a
+    compete</strong>. <a
     href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F30c0fae7-b83e-49f6-aef1-d558576b1887_1078x368.png"><img
     src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F30c0fae7-b83e-49f6-aef1-d558576b1887_1078x368.png" /></a>Strongly
     driving the synapses marked in yellow via glutamate uncaging results
     in shrinkage of the unstimulated synapses marked with the red
-    arrow.</p>
+    arrow.</li>
+    </ol>
     <h1 id="computerization"><strong>Computerization</strong></h1>
     <p>Those were the puzzle pieces we knew about (or <a
     href="https://universalprior.substack.com/p/on-not-reading-papers?s=w#:~:text=a%20paper%20adds.-,Schematic,-of%20%E2%80%9Cthe%20delta">guessed</a>)
@@ -379,19 +393,22 @@ Kirchner</a></td>
     foreground on a blue background. The portion that the new paper
     makes likely to be true (or, sometimes, demonstrates to be true) is
     “the delta”.</p>
-    <p>What do I believe now about “the brain that builds itself”? 1. A
-    straightforward way to obtain structured connectivity in a neural
-    circuit is to start with a <em><a
+    <p>What do I believe now about “the brain that builds itself”?</p>
+    <ol class="incremental" type="1">
+    <li>A straightforward way to obtain structured connectivity in a
+    neural circuit is to start with a <em><a
     href="https://en.wikipedia.org/wiki/Greedy_algorithm">greedy</a></em><a
     href="https://en.wikipedia.org/wiki/Greedy_algorithm">strategy</a>
     (connect as many things as possible), followed by an
     <strong>autoregressive<a
     href="https://universalprior.substack.com/p/the-brain-that-builds-itself#footnote-4-57181673">4</a>
     learning rule that amplifies structure and prunes away the
-    noise</strong>. 1. Through successive amplification of structure and
-    pruning of noise, <strong>the developmental process converges to a
-    fixed point</strong> , defined as the point where the learning rule
-    produces no more competition.</p>
+    noise</strong>.</li>
+    <li>Through successive amplification of structure and pruning of
+    noise, <strong>the developmental process converges to a fixed
+    point</strong> , defined as the point where the learning rule
+    produces no more competition.</li>
+    </ol>
     <p>The “benefit” of this dynamical systems solution is (again)
     “robustness”. As long as you make sure your learning rule keeps on
     doing its thing it doesn’t matter if you get small perturbations.

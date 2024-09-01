@@ -132,11 +132,8 @@ It is also just a [question of time](https://www.eleuther.ai/faq/#:~:text=Are%20
 One thing that I'd be curious to test is some version of [Iterated Distillation and Amplification](https://ai-alignment.com/iterated-distillation-and-amplification-157debfd1616)[13](https://universalprior.substack.com/p/making-of-ian#footnote-13-40527537) to boost performance. I imagine a routine as follows:
 
   1. when querying #IAN from Roam Research, amplify performance by generating multiple samples (/listicles) and only keeping the best.
-
   1. consistently prepend these with the #[[IAN says:]] tag.
-
   1. distill by fine-tuning from scratch with the amplified Roam graph.
-
 
 
 

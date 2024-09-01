@@ -14,9 +14,7 @@ date: 2021-12-09
 In [On Scaling Academia](https://universalprior.substack.com/p/on-scaling-academia) I made the case that _automatic research_ , i.e. AI-supported & scalable application of the [scientific method](https://www.hpmor.com/chapter/8#:~:text=science%20investigation%20project%3A-,Step,-1%3A%20Form%20a), might be great. My argument went like this,
 
   1. automatic research is beneficial for academia (systematization and [objective metrics of progress](http://mason.gmu.edu/~rhanson/gamble.html) are woefully lacking in current academia),
-
   1. some degree of automation might be strictly necessary for continued scientific progress (note the ever-increasing [unwieldiness of humanity's collected knowledge](https://web.stanford.edu/~chadj/IdeaPF.pdf)).
-
 
 
 
@@ -145,15 +143,12 @@ The fourth insight is that while the greatness of ideas is subjective, the great
 I want to write an entire post on how to automate going from idea to implementation, but here is the minimalist workflow that I'm using for now:
 
   1. Set a time frame based on previous experience from similar projects, [not based on particulars of the current project](https://www.lesswrong.com/posts/CPm5LTwHrvBJCa9h5/planning-fallacy).
-
   1. Divide the time **evenly**[13](https://universalprior.substack.com/p/on-automatic-ideas#footnote-13-45230438) into an "expansion" and a "contraction" phase[14](https://universalprior.substack.com/p/on-automatic-ideas#footnote-14-45230438).
-
     * In the expansion phase, iterate the following steps: Collect information (reading reviews and using [Elicit](https://roamresearch.com/elicit.org)), [chart](https://roamresearch.com/) people and beliefs (in my experience, authorship explains most variability), [implement prototypes](https://openai.com/blog/openai-codex/) ([build the smallest toy example that would invalidate an idea](https://threadreaderapp.com/thread/1441027241870118913.html)), explore implications and reject dead ends ([reductio ad absurdum](https://en.wikipedia.org/wiki/Reductio_ad_absurdum)).
 
     * In the contraction phase, do the following: Don't implement anything new ([feature freeze](https://en.wikipedia.org/wiki/Freeze_%28software_engineering%29)), identify the "solid core" (throw away _everything_ that is not fully cooked[15](https://universalprior.substack.com/p/on-automatic-ideas#footnote-15-45230438)), start writing early (writing forces you to put things in order), make illustrations (drawing things reveals how you _actually_ think about something), and collect feedback ([Grammarly](https://app.grammarly.com/) improves text beyond just fixing typos).
 
   1. Publish whatever you have at the end of your time frame.
-
 
 
 
@@ -168,11 +163,8 @@ According to "code first, think later" we've now reached the "think" part. You c
 I believe there is substantial confusion about where ideas come from. [WikiHow](https://www.wikihow.com/Main-Page) provides a representative answer to the question "[How to Come Up With Ideas](https://www.wikihow.com/Come-Up-With-Ideas)". They recommend the following three-step process:
 
   1.  _Getting Your Brain Moving_ , i.e. engage with the topic.
-
   1.  _Disengaging from Work_ , i.e. allow for gestation until an idea appears.
-
   1.  _Testing Your Ideas_ , i.e. reject bad ideas.
-
 
 
 

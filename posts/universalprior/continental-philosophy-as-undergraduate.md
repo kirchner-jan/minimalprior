@@ -73,11 +73,8 @@ I don't think that's an accurate summary of Hegel's dialectic. If it was, why do
 I'm assuming that my audience is much more familiar with PCA than with continental philosophy, so I will keep the introduction brief: Principal Component Analysis (PCA) is a method for decomposing a dataset into constituents, s.t. some components have disproportionately large explanatory power. While the most practical way of computing PCA involves [iterated matrix juggling](https://en.wikipedia.org/wiki/Power_iteration), the [conceptual explanation](https://en.wikipedia.org/wiki/Principal_component_analysis#:~:text=to%20reduce%20dimensionality%29.-,First,-component%5Bedit%5D) of how to get a set of principal components is very instructive:
 
   1. Given your dataset ("the sky"), look for a single vector that explains the largest amount of variability ("the sky is blue") while neglecting all the remaining variability ("the sky" - "the sky is blue"). This vector ("the sky is blue") is your first principal component.
-
   1. After subtracting out the first principal component ("the sky" - "the sky is blue"), look again for a single vector that explains the largest amount of variability ("the sky is black") while neglecting all the remaining variability ("the sky" - "the sky is blue" - "the sky is black"). This vector ("the sky is black") is your second principal component.
-
   1. Repeat.
-
 
 
 
