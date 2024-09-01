@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <meta name="author" content="Jan Kirchner" />
+      <meta name="dcterms.date" content="2022-02-10" />
+        <title>minimalprior</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../index.css" />
+      </head>
+
+<body>
+    <table class="header">
+    <tr>
+      <td colspan="2" rowspan="2" class="width-auto">
+        <h1 class="title">minimalprior</h1>
+        <span class="subtitle">a spinoff</span>
+      </td>
+      <th>Updated</th>
+      <td class="width-min"><time style="white-space: pre;">2022-02-10</time></td>
+    </tr>
+    <tr>
+      <th class="width-min">Author</th>
+      <td class="width-auto"><a href="https://universalprior.substack.com/">Jan
+Kirchner</a></td>
+    </tr>
+  </table>
+      <nav id="TOC" role="doc-toc">
+        <ul class="incremental">
+        <li><a href="#johnny-did-it."
+        id="toc-johnny-did-it."><strong>Johnny did it.</strong></a></li>
+        <li><a href="#the-futility-of-computing-utility."
+        id="toc-the-futility-of-computing-utility."><strong>The futility
+        of computing utility.</strong></a></li>
+        <li><a href="#human-fallibility-and-reward-modeling."
+        id="toc-human-fallibility-and-reward-modeling."><strong>Human
+        fallibility and reward modeling.</strong></a></li>
+        <li><a href="#a-natural-representation-of-utility-functions."
+        id="toc-a-natural-representation-of-utility-functions.">A
+        natural representation of utility functions.</a></li>
+        <li><a href="#concluding-thoughts-and-whats-next"
+        id="toc-concluding-thoughts-and-whats-next">Concluding thoughts
+        and what’s next?</a></li>
+        </ul>
+  </nav>
+    <p><strong>Likes:</strong> 2</p>
+    <h1 id="johnny-did-it."><strong>Johnny did it.</strong></h1>
+    <p><a
+    href="https://universalprior.substack.com/p/task-decomposition-and-scientific">Last
+    week</a> I offhandedly mentioned the unlikely possibility that my
+    coworkers are <a
+    href="https://fantasticanachronism.com/2021/03/23/two-paths-to-the-future/">clones
+    of John von Neumann</a>. I need to explain that a bit more ——— It
+    was a compliment, I swear! John von Neumann was… a “<a
+    href="https://unherd.com/2021/11/the-genius-of-john-von-neumann/">genius</a>”
+    doesn’t quite do it justice. The “<a
+    href="https://www.sothebys.com/en/articles/john-von-neumann-the-last-great-polymath">Last
+    Great Polymath</a>”? The “<a
+    href="https://www.amazon.co.uk/dp/B08X6QLFSC/ref=dp-kindle-redirect?_encoding=UTF8&amp;btkr=1">Man
+    from the Future</a>”? The <a
+    href="https://cs.stanford.edu/people/eroberts/courses/soco/projects/1998-99/game-theory/neumann.html">“life
+    of the party,” “an occasional heavy drinker,” and “reckless
+    driver”</a><a
+    href="https://universalprior.substack.com/p/inferring-utility-functions#footnote-1-48484774">1</a>?
+    Okay, that last one again isn’t very flattering. I’m trying to say
+    that von Neumann was an interesting person who did many interesting
+    things.</p>
+    <p><a
+    href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F6061293a-ebf0-48b2-9514-16cdc8e5c8b7_960x658.png"><img
+    src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F6061293a-ebf0-48b2-9514-16cdc8e5c8b7_960x658.png" /></a>John
+    von Neumann, a young Richard Feynman, and Stanislaw Ulam. I’m as <a
+    href="https://twitter.com/stevenstrogatz/status/1446760034302562315">grossed
+    out by the flaws of the people of the past</a> as the next person,
+    but I still wouldn’t say no to listening to those three talking.</p>
+    <p>Remember when <a
+    href="https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#:~:text=Claude%20Shannon%20at%20Bell%20Labs">I
+    claimed</a> that Claude Shannon came up with the minimax decision
+    rule? I was wrong; Johnny<a
+    href="https://en.wikipedia.org/wiki/Minimax_theorem">did it</a> 20
+    years earlier. The architecture of modern computers? <a
+    href="https://en.wikipedia.org/wiki/Von_Neumann_architecture">Johnny
+    did it</a>. A mathematical foundation of utilitarian ethics? Johnny
+    did… what?</p>
+    <p>Well, <a
+    href="http://fmwww.bc.edu/repec/esNASM04/up.25774.1075494883.pdf">it’s
+    a bit complicated</a>. Here’s my reasoning:</p>
+    <p><strong>Preference utilitarianism and the Von-Neumann-Morgenstern
+    theorem.</strong> Ethics is the part of philosophy concerned with
+    the question, “How should I act?” One possible answer to that
+    question is <a
+    href="https://www.utilitarianism.net/">utilitarianism</a>,
+    prescribing that we should maximize happiness and well-being for all
+    affected individuals. Achieving “happiness and well-being” is
+    undoubtedly desirable (<a
+    href="https://www.lesswrong.com/tag/wireheading">or?</a>), but <a
+    href="https://universalprior.substack.com/p/puberty-as-cause-x">kind
+    of hard to operationalize</a>. Instead of asking people about what
+    they want, we might also <em>observe</em> what <a
+    href="https://en.wikipedia.org/wiki/Revealed_preference">people
+    prefer</a> when given a choice. <a
+    href="https://www.utilitarianism.net/theories-of-wellbeing#:~:text=these%20rival%20accounts.-,Desire%20Theories,-We%20saw%20that">Preference
+    utilitarianism</a> is a form of utilitarianism that focuses on
+    satisfying everyone’s <em>preferences</em>. And it <a
+    href="https://en.wikipedia.org/wiki/Von_Neumann%E2%80%93Morgenstern_utility_theorem">turns
+    out that</a>, if you are being reasonable about your preferences, we
+    can represent your preferences succinctly in a “utility function,”
+    <strong>u(A)</strong>. This utility function has the neat property
+    that for two possible options, <strong>L</strong> and
+    <strong>M</strong> , you <em>prefer</em> option <strong>M</strong>
+    over option <strong>L</strong> iff<a
+    href="https://universalprior.substack.com/p/inferring-utility-functions#footnote-2-48484774">2</a>
+    <strong>u(M) &gt; u(L)</strong>.</p>
+    <p>This is one way to arrive at the “<a
+    href="https://en.wikipedia.org/wiki/Von_Neumann%E2%80%93Morgenstern_utility_theorem">von-Neumann-Morgenstern
+    theorem</a>,” but it’s probably not the path von Neumann took when
+    deriving it<a
+    href="https://universalprior.substack.com/p/inferring-utility-functions#footnote-3-48484774">3</a>.</p>
+    <p><a
+    href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F918b0cdc-2f56-426e-bf59-effc0260e1d8_991x1469.png"><img
+    src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F918b0cdc-2f56-426e-bf59-effc0260e1d8_991x1469.png" /></a><a
+    href="https://www.historyofinformation.com/detail.php?id=1803">Oskar
+    Morgenstern and John von Neumann</a></p>
+    <p>But I think it’s an interesting perspective. There is a seemingly
+    straightforward way to use the theorem to solve some nasty technical
+    problems related to “<a
+    href="https://ai-alignment.com/clarifying-ai-alignment-cec47cd69dd6">making
+    machines try to do what humans want them to do</a>.” Get everyone’s
+    utility functions, combine them, and then pick the actions that
+    increase them the most. While you and I probably can’t do that,
+    perhaps a computer can help - they are very good at making numbers
+    go up! And perhaps there is a case to be made that utility is
+    effectively the best single number we can hope for.</p>
+    <p>Sounds good. Where is the catch?</p>
+    <h1 id="the-futility-of-computing-utility."><strong>The futility of
+    computing utility.</strong></h1>
+    <p>Let’s start by trying to write down a utility function.
+    <strong>The proof of the von-Neumann-Morgenstern is</strong> _
+    <strong>constructive</strong>_ , i.e., it doesn’t only guarantee the
+    existence of a utility function, it also shows us the way to get
+    there. Here is a step-by-step guide:</p>
+    <p>_ <strong>1. Write down all the possible elementary outcomes that
+    we might want to know the utility of.</strong>_</p>
+    <p>Ah. Yeah. That’s going to be a problem.</p>
+    <p><strong>“All the things” is a lot of things.</strong> We might
+    (and will, in this post) limit ourselves to a toy domain to make
+    some progress, but that will be a poor substitute for the thing we
+    want: all the possible outcomes affecting all existing humans. We
+    might not even think of some outcomes because they appear too good
+    to be true. (Or too weird to be thinkable.) We might even want to
+    include those outcomes <em>in particular,</em> as they might be the
+    best option that nobody realized was on the table. But if we can’t
+    think of them, we can’t write them down.</p>
+    <p>(Perhaps there is a way out. An essential nuance in the first
+    step is writing down “all the possible <em>elementary</em>
+    outcomes.” We don’t need to consider all the outcomes immediately.
+    We only need to consider a set from which we can construct the more
+    complicated outcomes. We need a <a
+    href="https://en.wikipedia.org/wiki/Basis_%28linear_algebra%29">basis</a>
+    of the space of possibilities. That’s already infinitely easier, and
+    we’re <em>always guaranteed</em> to find a basis (if we’re willing
+    to <a href="https://www.youtube.com/watch?v=ec2-GZRYGd8">embrace
+    chaos</a>). The hope here might now be that we can find a basis of a
+    system that is rich enough to describe all relevant outcomes and
+    simple enough to allow for linear interpolation. Of course, a <a
+    href="https://lena-voita.github.io/nlp_course/word_embeddings.html">semantic
+    embedding of natural language</a> comes to mind, but the imprecision
+    of language is probably a deal-breaker. Perhaps the semantic
+    embedding of a formal language/programming language is more
+    appropriate<a
+    href="https://universalprior.substack.com/p/inferring-utility-functions#footnote-4-48484774">4</a>?)</p>
+    <p><a
+    href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fab44e0f3-9397-45b7-bb1c-3ff566dfdc3e_9922x3438.png"><img
+    src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fab44e0f3-9397-45b7-bb1c-3ff566dfdc3e_9922x3438.png" /></a>A
+    toy domain containing all the possible elementary outcomes one can
+    think about.</p>
+    <p>Let’s use a toy domain, call this an open problem, and move
+    on.</p>
+    <p>_ <strong>2. Order all the elementary outcomes from worst to
+    best.</strong>_</p>
+    <p>For some inexplicable reason, my intro to computer science course
+    at uni has prepared me for <a
+    href="https://en.wikipedia.org/wiki/Sorting_algorithm">this exact
+    task, and this task alone</a>. We have a bunch of great algorithms
+    for sorting the elements of a list by comparing them with each
+    other. If we’re not incredibly unlucky, <strong>we can hope to sort
+    N-many outcomes with</strong></p>
+    <p><a
+    href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ff653c372-ffd6-4514-b42f-088a950f46e5_131x46.png"><img
+    src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ff653c372-ffd6-4514-b42f-088a950f46e5_131x46.png" /></a></p>
+    <p><strong>comparisons</strong>. After sorting thousands of
+    elementary outcomes, we pick the worst (bumping your toe against a
+    chair<a
+    href="https://universalprior.substack.com/p/inferring-utility-functions#footnote-5-48484774">5</a>)
+    and the best (ice cream sandwich) and assign them utility 0 and 1.
+    For 1000 elementary outcomes, we could do with as little as 3000
+    comparisons which you could knock out in an afternoon. For 100000
+    elementary outcomes, we’re talking 500000 comparisons which will
+    keep you busy for a while. But it’s for a good cause!</p>
+    <p>Unless… somebody screws up. Those 3000 comparisons have to be
+    <em>spot on</em>. <strong>If you accidentally mess up one
+    comparison, the sorting algorithm might not be able to recover<a
+    href="https://universalprior.substack.com/p/inferring-utility-functions#footnote-6-48484774">6</a>.</strong>
+    And since we’re working with humans, some errors are guaranteed. Can
+    you confidently say that you prefer a mushroom risotto over a new
+    pair of shoes? Thought so.</p>
+    <p><a
+    href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F8523b1f1-38f2-4a18-9535-21f9e3140876_1600x230.png"><img
+    src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F8523b1f1-38f2-4a18-9535-21f9e3140876_1600x230.png" /></a><a
+    href="https://www.youtube.com/watch?v=LaecIn0iLfU">New shoes</a>
+    sound fantastic, but that mushroom risotto!</p>
+    <p>But now comes the real killer.</p>
+    <p>_ <strong>3. Do a sequence of psychophysics experiments where
+    humans indicate where the exact probabilistic combination of the
+    worst- and the best possible outcome is equivalent to an
+    intermediate outcome.</strong>_</p>
+    <p>After sorting all outcomes from worst to best, we offer you a
+    sequence of lotteries for each intermediate outcome (mushroom
+    risotto): “Would you rather accept a 10% chance of stubbing your toe
+    and a 90% chance of an ice cream sandwich, or a guaranteed mushroom
+    risotto?” At some point (45% stubbing your toe), your answer will
+    change from “Yes” to “No,” and then we know we are very close to
+    finding your utility for mushroom risotto (in this case, a utility
+    of ~0.45).</p>
+    <p><a
+    href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb963c330-81f7-4da0-b76c-3fb659faaa6b_1600x157.png"><img
+    src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb963c330-81f7-4da0-b76c-3fb659faaa6b_1600x157.png" /></a></p>
+    <p>I was halfway through setting up <a
+    href="https://www.mturk.com/">MTurk</a>, but let’s be realistic -
+    this will not work. <a
+    href="https://en.wikipedia.org/wiki/Allais_paradox">Allais
+    paradox</a> aside, I don’t have the patience to set this up, so who
+    will have the patience to go through this? Of course, we should have
+    seen this coming. <strong>Just because a proof is “constructive”
+    doesn’t mean that we can apply it in the messy real world.</strong>
+    Getting a utility function out of a human will require some elbow
+    grease.</p>
+    <h1 id="human-fallibility-and-reward-modeling."><strong>Human
+    fallibility and reward modeling.</strong></h1>
+    <p>Let’s shuffle some symbols. How do we account for all the human
+    messiness and the tendency to make mistakes? A standard trick is to
+    call it “noise”<a
+    href="https://universalprior.substack.com/p/inferring-utility-functions#footnote-7-48484774">7</a>.
+    Given a <em>true</em> estimate of utility, ū(A), we might write the
+    perceived utility at any given time as a random variable, u(A),
+    distributed around the true value,</p>
+    <p><a
+    href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F4324cff1-d791-4e2c-86d9-d2407249fed2_310x46.png"><img
+    src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F4324cff1-d791-4e2c-86d9-d2407249fed2_310x46.png" /></a></p>
+    <p>Given two outcomes, O₁ and O₂, the probability of assessing the
+    utility of O₂ higher than the utility of O₁ is distributed as the
+    difference of two Gaussians, which is again a Gaussian:</p>
+    <p><a
+    href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fae4d1721-f40d-47bd-9e6d-b0987e203887_605x60.png"><img
+    src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fae4d1721-f40d-47bd-9e6d-b0987e203887_605x60.png" /></a></p>
+    <p>(assuming independence of O₂ and O₁). The <a
+    href="https://en.wikipedia.org/wiki/Error_function">error
+    function</a> (lovingly called <strong>erf</strong> ) is nasty
+    because it doesn’t have a closed-form solution. But it <em>does</em>
+    have a close relative that looks almost the same and is a lot nicer
+    mathematically, and that has a much more pleasant-sounding name than
+    ” <strong>erf</strong> “…</p>
+    <p>I’ll replace the <strong>erf</strong> with a stereotypical <a
+    href="https://en.wikipedia.org/wiki/Sigmoid_function">logistic
+    function</a>, <strong>S,</strong></p>
+    <p><a
+    href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F02a39185-e966-4096-9499-b68f349efe23_958x53.png"><img
+    src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F02a39185-e966-4096-9499-b68f349efe23_958x53.png" /></a></p>
+    <p>Much nicer. Even though the logistic function has largely <a
+    href="http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf">fallen
+    out of favor as an activation function in machine learning</a>, its
+    <a href="https://en.wikipedia.org/wiki/Psychometric_function">grip
+    on psychophysics is unbroken</a>.</p>
+    <p>Now that we have the mathematical machinery in place, we need to
+    calibrate it to reality. A natural choice is to take the
+    cross-entropy between our machinery, <strong>P(u(O₂) &gt;
+    u(O₁))</strong>, and the <em>actual</em> comparisons provided by
+    humans, (O₂ &gt; O₁) or (O₁ &gt; O₂),</p>
+    <p><a
+    href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fc0553e38-3581-4da6-80d5-c1a6a8212a61_1196x52.png"><img
+    src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fc0553e38-3581-4da6-80d5-c1a6a8212a61_1196x52.png" /></a></p>
+    <p><a
+    href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa2b09352-8766-49ee-8c27-9ad53b13c99c_385x61.png"><img
+    src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa2b09352-8766-49ee-8c27-9ad53b13c99c_385x61.png" /></a></p>
+    <p>Surprise<a
+    href="https://universalprior.substack.com/p/inferring-utility-functions#footnote-8-48484774">8</a>!
+    The resulting loss function is also used for the <a
+    href="https://arxiv.org/pdf/2112.00861.pdf">reward modeling</a> that
+    I <a
+    href="https://universalprior.substack.com/p/task-decomposition-and-scientific">briefly
+    touched on in last week’s post</a><a
+    href="https://universalprior.substack.com/p/inferring-utility-functions#footnote-9-48484774">9</a>.
+    The researchers who originally proposed this technique for learning
+    human preferences say that it is similar to the <a
+    href="https://en.wikipedia.org/wiki/Elo_rating_system">Elo rating
+    system from chess</a> and the <a
+    href="https://en.wikipedia.org/wiki/Bradley%E2%80%93Terry_model">“Bradley
+    &amp; Terry model.”</a> I find the motivation of reward modeling as
+    an approximation of the von-Neumann-Morgenstern theorem a lot more
+    <a
+    href="https://medium.com/age-of-awareness/how-to-be-a-romantic-with-a-capital-r-358566d6156b">Romantic</a>,
+    though.</p>
+    <p>Having uncovered this connection, a natural strategy for
+    inferring a utility function through training a neural network with
+    comparisons of pairs of elements from the domain presents
+    itself.</p>
+    <p><a
+    href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Feb6d641e-6acc-41a0-81f8-762c0bd63876_1600x323.png"><img
+    src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Feb6d641e-6acc-41a0-81f8-762c0bd63876_1600x323.png" /></a>Unordered
+    elements from the domain of “things we might care about” (
+    <strong>a</strong> ) are translated into an orthonormal basis of a
+    high dimensional vector space ( <strong>b</strong> ) and transformed
+    into a scalar output through a multilayer perception (
+    <strong>c</strong> ).</p>
+    <p>Can this work? It doesn’t involve MTurk for now, so I am happy to
+    try!</p>
+    <h1 id="a-natural-representation-of-utility-functions.">A natural
+    representation of utility functions.</h1>
+    <p>I found that the neural network achieves near-zero loss on the
+    comparisons after 20k steps (panel <strong>a</strong> ). Runtime
+    appears to increase linearly with the number of elements<a
+    href="https://universalprior.substack.com/p/inferring-utility-functions#footnote-10-48484774">10</a>.
+    The resulting utility functions are monotonic and increase by an
+    (approximately) equal amount from one item to another (panel
+    <strong>b</strong> ). This demonstrates that given enough time, a
+    multilayer perceptron can sort a list.</p>
+    <p><a
+    href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F1bb66e3e-ed8c-4ad3-9756-9885d9205b02_9922x2940.png"><img
+    src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F1bb66e3e-ed8c-4ad3-9756-9885d9205b02_9922x2940.png" /></a>
+    <strong>a.</strong> Cross-entropy loss as a function of iterations
+    for different sizes of the toy domain (indicated by color).
+    <strong>b.</strong> Predicted utility of different items after 250k
+    iterations of a “rational” (i.e., a total order) teaching signal.
+    <strong>c.</strong> Predicted utility of items after 250k iterations
+    of a “noisy rational” (i.e., 90% chance of total order, 10% chance
+    of inverting preference) teaching signal. <strong>d.</strong>
+    Predicted utility of items after 250k iterations of a “loopy
+    rational” (i.e., total order, except for elements 3 and 4, or 3 and
+    7, which are connected in a loop) teaching signal. In
+    <strong>b</strong> to <strong>c</strong> , the predicted utility is
+    normalized between 0 and 1.</p>
+    <p>Some might say that I used several hours of compute time on a <a
+    href="https://research.google.com/colaboratory/">Google Colab</a>
+    GPU <em>just</em> to sort lists, but that would be rather
+    uncharitable. My primary motivation for this approach (human
+    tendency to make mistakes) bears fruits in the following experiment.
+    When I add noise to the choice procedure (resulting in 10% “random”
+    choices), the network is still able to recover the appropriate
+    ordering (panel <strong>c</strong> ). And, even more remarkable,
+    <strong>when I make the choice procedure loopy (i.e.,<a
+    href="https://link.springer.com/article/10.1007/BF00056121">nontransitive</a>),
+    the network can still recover a reasonable approximation of what the
+    utility function looks like</strong> (panel <strong>d</strong>
+    )!</p>
+    <p>This last set of experiments is exciting because introducing
+    loops leads to nonlinear utility functions that are squashed
+    together in the vicinity of the loop. Intuitively, if outcomes #3
+    and #4 are impossible to distinguish reliably, this might indicate
+    that their utility is indeed very similar. The exciting possibility
+    is that step 3 of the procedure above (psychometric calibration of
+    utilities) could automatically be satisfied when options are
+    sufficiently similar and sometimes confused<a
+    href="https://universalprior.substack.com/p/inferring-utility-functions#footnote-11-48484774">11</a>.</p>
+    <h1 id="concluding-thoughts-and-whats-next">Concluding thoughts and
+    what’s next?</h1>
+    <p>There are a lot more experiments I want to run on this toy domain
+    to probe the limits to which preference orderings can be turned into
+    utility functions:</p>
+    <ul class="incremental">
+    <li><p>What is the largest number of elements we can sort with a
+    given architecture? How does training time change as a function of
+    the number of elements?</p></li>
+    <li><p>How does the network architecture affect the resulting
+    utility function? How do the maximum and minimum of the unnormalized
+    utility function change?</p></li>
+    <li><p>Which portion of possible comparisons needs to be presented
+    (on average) to infer the utility function?</p></li>
+    </ul>
+    <p>But independent of those experiments, there are some fascinating
+    directions that I plan to explore in a future post. Now that I have
+    a natural way to induce utility functions, I think I can further
+    explore the <a
+    href="https://en.wikipedia.org/wiki/Utility_monster">utility
+    monster</a> and some of the classic literature on <a
+    href="https://www.lesswrong.com/posts/cYsGrWEzjb324Zpjx/comparing-utilities">(un-)comparability
+    of utility functions</a>. I also really want to write a proper
+    treatment of <a
+    href="https://www.lesswrong.com/tag/values-handshakes">value
+    handshakes</a>, which is a topic in <a
+    href="https://www.lesswrong.com/posts/WuLxYmAQCigdR4spw/what-posts-do-you-want-written?commentId=HxG7aaaQKtCoRhHrY">dire
+    need of exploration</a>.</p>
+    <p>To stay up to date for when I write those, consider signing up
+    for the newsletter. It’s free (and will stay free)!</p>
+    <p>Subscribe</p>
+    <p><a
+    href="https://universalprior.substack.com/p/inferring-utility-functions#footnote-anchor-1-48484774">1</a></p>
+    <p>What is it with intelligent people and self-medication? Also,<a
+    href="https://qualiacomputing.com/2018/06/21/john-von-neumann/">He
+    loved to eat, especially rich sauces and desserts, and in later
+    years was forced to diet rigidly. To him exercise was
+    “nonsense.</a>” A good reminder not to fall for the<a
+    href="https://en.wikipedia.org/wiki/Halo_effect">Halo
+    effect</a>.</p>
+    <p><a
+    href="https://universalprior.substack.com/p/inferring-utility-functions#footnote-anchor-2-48484774">2</a></p>
+    <p>If and only if.</p>
+    <p><a
+    href="https://universalprior.substack.com/p/inferring-utility-functions#footnote-anchor-3-48484774">3</a></p>
+    <p>although - <a
+    href="http://idiomzero.blogspot.com/2010/07/8-anecdotes-about-john-von-neumann.html#:~:text=I%20did%20it!%22-,An,-MIT%20student%20cornered">who
+    knows</a>.</p>
+    <p><a
+    href="https://universalprior.substack.com/p/inferring-utility-functions#footnote-anchor-4-48484774">4</a></p>
+    <p>Has anybody ever looked at that? What happens when I subtract
+    Fizzbuzz from the Fibonacci sequence?</p>
+    <p><a
+    href="https://universalprior.substack.com/p/inferring-utility-functions#footnote-anchor-5-48484774">5</a></p>
+    <p>A very close “win” over <a
+    href="https://longtermrisk.org/s-risks-talk-eag-boston-2017/">S-risk
+    scenarios</a>.</p>
+    <p><a
+    href="https://universalprior.substack.com/p/inferring-utility-functions#footnote-anchor-6-48484774">6</a></p>
+    <p>And the worst-case runtime shoots up to ∞ as soon as you have the
+    probability of errors). In this situation, <a
+    href="https://en.wikipedia.org/wiki/Bogosort">Bogosort</a> might
+    just be the most reliable solution - at least it won’t terminate
+    until it’s done.</p>
+    <p><a
+    href="https://universalprior.substack.com/p/inferring-utility-functions#footnote-anchor-7-48484774">7</a></p>
+    <p>Joke aside, it’s an interesting question which factors need to
+    come together to make something “noise.” I guess the central limit
+    theorem can help if there are many independent factors, but that’s
+    never really the case. The more general question is under which
+    circumstances the <a
+    href="https://twitter.com/0xdoug/status/1456032851477028870">residual
+    factors are random and when they are adversarial.</a></p>
+    <p><a
+    href="https://universalprior.substack.com/p/inferring-utility-functions#footnote-anchor-8-48484774">8</a></p>
+    <p>Please ignore that it’s already written in the section title.</p>
+    <p><a
+    href="https://universalprior.substack.com/p/inferring-utility-functions#footnote-anchor-9-48484774">9</a></p>
+    <p>The original <a href="https://arxiv.org/pdf/1706.03741.pdf">Leike
+    paper</a> has an equivalent expression that does not write out the
+    logarithm applied to the sigmoid.</p>
+    <p><a
+    href="https://universalprior.substack.com/p/inferring-utility-functions#footnote-anchor-10-48484774">10</a></p>
+    <p>My money would be on O(n log n) or worse, of course.</p>
+    <p><a
+    href="https://universalprior.substack.com/p/inferring-utility-functions#footnote-anchor-11-48484774">11</a></p>
+    <p>I’d expect that the difference in utility, |ū(O₁) - ū(O₂)|, will
+    be proportional to the probability of confusing the order, P(u(O₁)
+    &gt; u(O₂)).</p>
+    <div class="debug-grid"></div>
+  <script src="index.js"></script>
+</body>
+
+</html>
