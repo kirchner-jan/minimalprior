@@ -26,6 +26,8 @@ Jan 3, 2023 • Jan Hendrik Kirchner
 
 #### December 2022
 
+<hr>
+
 [TSPSIs and How I Write](./posts/universalprior/tspsis-and-how-i-write.html)
 
 TL;DR: Writing about writing and having written, and self-referentiality. Complementary musings on AI.
@@ -56,7 +58,11 @@ TL;DR: Guest post by Michael Oesterle on coordination problems (and more) betwee
 
 Sep 19, 2022 • Jan Hendrik Kirchner and Michael Oesterle
 
+<hr>
+
 #### July 2022
+
+<hr>
 
 [Hello DALL-E!](./posts/universalprior/hello-dall-e.html)
 
@@ -204,6 +210,8 @@ Mar 6, 2022 • Jan Hendrik Kirchner
 
 #### February 2022
 
+<hr>
+
 [Trust-maximizing AGI](./posts/universalprior/trust-maximizing-agi.html)
 
 TL;DR: In the context of the AI Safety camp, Karl and I developed the idea of the "trust-maximizer". This write-up makes the case for "trust" as a…
@@ -221,6 +229,8 @@ Feb 9, 2022 • Jan Hendrik Kirchner
 <hr>
 
 #### January 2022
+
+<hr>
 
 [Task Decomposition And Scientific Inquiry](./posts/universalprior/task-decomposition-and-scientific.html)
 
@@ -291,6 +301,8 @@ Dec 9, 2021 • Jan Hendrik Kirchner
 <hr>
 
 #### November 2021
+
+<hr>
 
 [Slightly advanced decision theory 102: Four reasons not to be a (naive) utility maximizer](./posts/universalprior/slightly-advanced-decision-theory.html)
 
@@ -370,6 +382,8 @@ Oct 3, 2021 • Jan Hendrik Kirchner
 
 #### September 2021
 
+<hr>
+
 [Cognitive Biases in Large Language Models](./posts/universalprior/cognitive-biases-in-large-language-edc.html)
 
 TL;DR: LMs exhibit some cognitive biases. Additionally, explain how cognitive biases can come about in humans. Raising questions about how universal…
@@ -403,6 +417,8 @@ Sep 4, 2021 • Jan Hendrik Kirchner
 <hr>
 
 #### August 2021
+
+<hr>
 
 [Making of #IAN](./posts/universalprior/making-of-ian.html)
 
