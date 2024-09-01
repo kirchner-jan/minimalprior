@@ -6,7 +6,6 @@ author-url: "https://universalprior.substack.com/"
 date: 2021-12-20
 ---
 
-**Likes:** 3
 
 # **The emperor's new paper.**
 
@@ -14,11 +13,11 @@ In a recent [lunch conversation](https://universalprior.substack.com/p/applied-m
 
   1. Read the title and predict what the abstract will say. If you are correct, stop reading the paper.
 
-  2. Otherwise, read the abstract and predict what the main results will be. If you are correct, stop reading the paper.
+  1. Otherwise, read the abstract and predict what the main results will be. If you are correct, stop reading the paper.
 
-  3. Read the last paragraph of the introduction or the first paragraph of the discussion and predict the details of the results. If you are correct, stop reading the paper.
+  1. Read the last paragraph of the introduction or the first paragraph of the discussion and predict the details of the results. If you are correct, stop reading the paper.
 
-  4. etc.
+  1. etc.
 
 
 

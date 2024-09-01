@@ -6,7 +6,6 @@ author-url: "https://universalprior.substack.com/"
 date: 2021-10-24
 ---
 
-**Likes:** 1
 
 Subscribe
 

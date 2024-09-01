@@ -6,7 +6,6 @@ author-url: "https://universalprior.substack.com/"
 date: 2022-05-08
 ---
 
-**Likes:** 5
 
 **Short summary** : I apply the updating equation from Infra-Bayesianism to a concrete example of an Infradistribution and illustrate the process. When we "care" a lot for things that are unlikely given what we've observed before, we get updates that are extremely sensitive to outliers.
 

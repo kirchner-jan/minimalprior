@@ -6,7 +6,6 @@ author-url: "https://universalprior.substack.com/"
 date: 2022-09-19
 ---
 
-**Likes:** 3
 
 _Meta: I know you miss me, I miss you all too! I’ll be back! In the meantime, here is a little something the fantastic[Michael Oesterle](https://www.linkedin.com/in/michael-oesterle/?originalSubdomain=de) came up with and that might be interesting food for thought!_
 

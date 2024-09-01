@@ -6,7 +6,6 @@ author-url: "https://universalprior.substack.com/"
 date: 2023-01-03
 ---
 
-**Likes:** 4
 
 # Nerding out with the OG cyborgs
 

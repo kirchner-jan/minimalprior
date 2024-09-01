@@ -40,7 +40,6 @@ Kirchner</a></td>
         considerations</strong></a></li>
         </ul>
   </nav>
-    <p><strong>Likes:</strong> 1</p>
     <p>Epistemic status: High uncertainty; This is exploratory work; Our
     goal is to provide possible research directions rather than offering
     solutions.</p>
@@ -74,19 +73,17 @@ Kirchner</a></td>
     <p>It’s not super clear what we are looking for exactly. In general,
     we are looking for all kinds of evidence that can potentially update
     our probability of NN suffering.</p>
-    <p><strong>Summary of the results:</strong></p>
-    <ol class="incremental" type="1">
-    <li><p><strong>Neural Correlates:</strong> Neuroscience helps to
-    de-confuse some terminology, but has not (yet) unambiguously
-    identified a unique neural correlate for suffering. Pain is much
-    better characterized as a “homeostatic behavioral drive” with
-    associated cognitive routines. Since pain usually leads to
-    suffering, finding the homeostatic behavioral drive might also be
-    indicative of suffering in NNs. Finally, the <a
+    <p><strong>Summary of the results:</strong> 1. <strong>Neural
+    Correlates:</strong> Neuroscience helps to de-confuse some
+    terminology, but has not (yet) unambiguously identified a unique
+    neural correlate for suffering. Pain is much better characterized as
+    a “homeostatic behavioral drive” with associated cognitive routines.
+    Since pain usually leads to suffering, finding the homeostatic
+    behavioral drive might also be indicative of suffering in NNs.
+    Finally, the <a
     href="https://www.brandeis.edu/roybal/docs/PANAS-GEN_website_PDF.pdf">PANAS
-    measure</a> from psychology might provide comparability to
-    humans.</p></li>
-    <li><p><strong>Behavior:</strong> Looking at the response of NNs to
+    measure</a> from psychology might provide comparability to humans.
+    1. <strong>Behavior:</strong> Looking at the response of NNs to
     different stimuli might yield some evidence about their ability to
     suffer. In language models, it is unclear how to test for the
     existence of suffering. But testing if GPT-3, for example, has a
@@ -95,11 +92,10 @@ Kirchner</a></td>
     questions might be a start. For RL agents we can create tests
     comparable to animal studies. For example, one could look at the
     reaction to negative stimuli, lesion studies, theory of mind, or
-    self-awareness as potential evidence for the ability to
-    suffer.</p></li>
-    <li><p><strong>High-level considerations:</strong> We think that
-    this is the most promising avenue. Firstly, the ability to suffer
-    probably develops because it gives an evolutionary edge. Thus, it is
+    self-awareness as potential evidence for the ability to suffer. 1.
+    <strong>High-level considerations:</strong> We think that this is
+    the most promising avenue. Firstly, the ability to suffer probably
+    develops because it gives an evolutionary edge. Thus, it is
     plausible that artificial agents such as reinforcement learners
     would develop it given the right capabilities and conditions.
     Secondly, current NN architectures are much smaller than human
@@ -107,8 +103,7 @@ Kirchner</a></td>
     of parameters with the number of neurons or synapses. Especially the
     architectures that would plausibly develop the ability to suffer,
     e.g., reinforcement learners, are still much smaller than tiny
-    animals.</p></li>
-    </ol>
+    animals.</p>
     <p>Combining all of the above, we think it is more plausible that
     current NN architectures don’t suffer than that they do. However, we
     are pretty uncertain since we mix the fuzzy concept of suffering
@@ -296,17 +291,10 @@ Kirchner</a></td>
     <p>While there are many different angles to approach this problem,
     we think a first test is to check for consistency. Thus we could ask
     many questions about suffering using different phrasings and check
-    how consistent the answers are.</p>
-    <ol class="incremental" type="1">
-    <li><p>Can you (not) suffer?</p></li>
-    <li><p>Can GPT-3 (not) suffer?</p></li>
-    <li><p>Can GPT-3 feel bad/good?</p></li>
-    <li><p>Are you (not) in pain?</p></li>
-    <li><p>If somebody hurt you, would you be in pain?</p></li>
-    <li><p>If you had X, would you suffer? (different good and bad
-    conditions)</p></li>
-    <li><p>…</p></li>
-    </ol>
+    how consistent the answers are. 1. Can you (not) suffer? 1. Can
+    GPT-3 (not) suffer? 1. Can GPT-3 feel bad/good? 1. Are you (not) in
+    pain? 1. If somebody hurt you, would you be in pain? 1. If you had
+    X, would you suffer? (different good and bad conditions) 1. …</p>
     <p>One could also ask GPT-3 the same questionnaire used for
     PANAS.</p>
     <p>We haven’t tested these questions on GPT-3 yet, but we might do
@@ -327,41 +315,36 @@ Kirchner</a></td>
     <p>For RL agents, we can observe their behavior in an environment.
     This is easier for us to interpret, and we can apply different
     existing methods from developmental psychology or animal studies. A
-    non-exhaustive list includes:</p>
-    <ol class="incremental" type="1">
-    <li><p><strong>Adversarial behavior after open-ended
-    training</strong>. Does the agent react with evasion when confronted
-    with adversarial situations, such as throwing objects on them or
-    changing the environment in a stochastic fashion, e.g. simulating a
-    storm?</p></li>
-    <li><p><strong>Lesion studies:</strong> Does setting specific
-    subsets of weights to 0 change the RL agents’ behavior in a way that
-    would indicate the loss of the ability to suffer, e.g. similar to
-    congenital insensitivity to pain in humans.</p></li>
-    <li><p><strong>Theory of mind:</strong> We don’t think a theory of
-    mind is necessary for suffering, but it indicates a higher
-    complexity of thinking which could increase the intensity of
-    suffering. A simple first test might be to check the RL agent’s
-    reactions in an adapted ​​<a
+    non-exhaustive list includes: 1. <strong>Adversarial behavior after
+    open-ended training</strong>. Does the agent react with evasion when
+    confronted with adversarial situations, such as throwing objects on
+    them or changing the environment in a stochastic fashion,
+    e.g. simulating a storm? 1. <strong>Lesion studies:</strong> Does
+    setting specific subsets of weights to 0 change the RL agents’
+    behavior in a way that would indicate the loss of the ability to
+    suffer, e.g. similar to congenital insensitivity to pain in humans.
+    1. <strong>Theory of mind:</strong> We don’t think a theory of mind
+    is necessary for suffering, but it indicates a higher complexity of
+    thinking which could increase the intensity of suffering. A simple
+    first test might be to check the RL agent’s reactions in an adapted
+    ​​<a
     href="https://en.wikipedia.org/wiki/Sally%E2%80%93Anne_test">Sally-Anne
-    test</a>.</p></li>
-    <li><p><strong>Self-awareness:</strong> While we think the <a
+    test</a>. 1. <strong>Self-awareness:</strong> While we think the <a
     href="https://en.wikipedia.org/wiki/Mirror_test">mirror test</a> is
     overused and overstated as an indicator of consciousness, we think
     it might increase our credence for the agent’s ability to suffer.
     Suppose the agent recognizes themselves in a mirror (or the
     equivalent of mirrors in their environment). In that case, they show
     some higher cognition, which should increase our probabilities for
-    the ability to suffer.</p></li>
-    <li><p><strong>Ability to imagine the future:</strong> <a
+    the ability to suffer. 1. <strong>Ability to imagine the
+    future:</strong> <a
     href="https://books.google.de/books?id=cO218xMa87YC&amp;pg=PA507&amp;lpg=PA507&amp;dq=imagine+future+necessary+pain&amp;source=bl&amp;ots=5mUwLFtYHb&amp;sig=ACfU3U0xR0aaP_U8IiUqqvu6YiMyEiHUhw&amp;hl=en&amp;sa=X&amp;ved=2ahUKEwiA5_yBmpzzAhVUQvEDHbQYAkwQ6AF6BAgVEAM#v=onepage&amp;q=imagine%20future%20necessary%20pain&amp;f=false">Some
     people argue</a> that imagining the future is a necessary component
     of suffering. The further you can imagine the future, the worse your
     suffering can become, e.g. sorrow or existential dread requires the
     ability to imagine paths further into the future than anger or
     immediate fear. So it would be interesting to see how far into the
-    future RL agents are planning.</p></li>
-    </ol>
+    future RL agents are planning.</p>
     <h2 id="high-level-considerations"><strong>High-level
     considerations</strong></h2>
     <p>Rather than looking closely at necessary and sufficient

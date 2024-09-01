@@ -6,7 +6,6 @@ author-url: "https://universalprior.substack.com/"
 date: 2022-01-04
 ---
 
-**Likes:** 2
 
 I recently read the new [Transformers Circuit](https://transformer-circuits.pub/) work by [Elhage et al.](https://transformer-circuits.pub/2021/framework/index.html) at [Anthropic](https://www.anthropic.com/). While I am in no position to judge the importance of the paper for AI, (not that this has ever stopped me from sharing my opinion before) the paper made me connect some ideas from neuroscience that I couldn't connect before. This post is capturing those connections. I’m not sure if all of this is novel[1](https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-1-46595289), but it was novel to me! 
 
@@ -26,13 +25,13 @@ The ventral stream is concerned with extracting properties of objects from the "
 
   1. after starting from roundish, simple representations in the lateral geniculate nucleus (LGN), 
 
-  2. we get raw edges at the level of the primary visual cortex (V1), 
+  1. we get raw edges at the level of the primary visual cortex (V1), 
 
-  3. we move to flat shapes in the secondary visual cortex (V2), 
+  1. we move to flat shapes in the secondary visual cortex (V2), 
 
-  4. we skip V3[2](https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-2-46595289), 
+  1. we skip V3[2](https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-2-46595289), 
 
-  5. and finally on to the quaternary visual cortex (V4) for three-dimensional objects. 
+  1. and finally on to the quaternary visual cortex (V4) for three-dimensional objects. 
 
 
 
@@ -146,11 +145,11 @@ If you've read the previous two sections back-to-back you can probably already p
 
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F37d0f407-3f9a-4b57-93db-30e934cf0199_2073x2778.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F37d0f407-3f9a-4b57-93db-30e934cf0199_2073x2778.png)As schematic before, but with input and output merged into a residual stream.
 
-  2. representations would still _look_ somewhat hierarchical: as later processing steps of the stream receive the output of earlier steps as input, complexity[17](https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-17-46595289) of the representation will increase at later stages in the stream. However, the hierarchy is a lot more flexible, and can dynamically route intermediate outputs from all levels to the end of the stream.
+  1. representations would still _look_ somewhat hierarchical: as later processing steps of the stream receive the output of earlier steps as input, complexity[17](https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-17-46595289) of the representation will increase at later stages in the stream. However, the hierarchy is a lot more flexible, and can dynamically route intermediate outputs from all levels to the end of the stream.
 
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F8fa5d644-ca81-4490-878f-a336569d59e7_1625x1334.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F8fa5d644-ca81-4490-878f-a336569d59e7_1625x1334.png)Schematic illustrating that later stations in the stream might still have access to all previously computed intermediate results.
 
-  3. computation is highly flexible. Depending on the input statistics, the same cell might be recruited in a wide range of roles.
+  1. computation is highly flexible. Depending on the input statistics, the same cell might be recruited in a wide range of roles.
 
 
 
@@ -182,9 +181,9 @@ But at least there are some interesting hints for how to continue:
 
   1. Which principles govern the computations within layer 2/3? I don't believe that the cortical microcircuit implements the transformer architecture. But it also doesn't have to - a "traditional" recurrent neural network should be able to do the same things as the transformer. It just cannot be trained as efficiently.
 
-  2. How do we train the network to do "useful" computations? The specter of the "missing teaching signal" in the biological brain has prompted a lot of creative proposals from the neuroscience community over the decades[20](https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-20-46595289). But the recent astonishing progress with "[self-supervised](https://en.wikipedia.org/wiki/Self-supervised_learning)" (i.e. autoregressive) learning shows that very capable networks can emerge without an external teaching signal. Instead of the backpropagation algorithm (which is not well-suited for biological networks), the brain might implement the next best approximation ([Sezener et al. 2020](https://www.biorxiv.org/content/10.1101/2021.03.10.434756v1.full); [Sacramento et al., 2018](https://proceedings.neurips.cc/paper/2018/hash/1dc3a89d0d440ba31729b0ba74b93a33-Abstract.html))
+  1. How do we train the network to do "useful" computations? The specter of the "missing teaching signal" in the biological brain has prompted a lot of creative proposals from the neuroscience community over the decades[20](https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-20-46595289). But the recent astonishing progress with "[self-supervised](https://en.wikipedia.org/wiki/Self-supervised_learning)" (i.e. autoregressive) learning shows that very capable networks can emerge without an external teaching signal. Instead of the backpropagation algorithm (which is not well-suited for biological networks), the brain might implement the next best approximation ([Sezener et al. 2020](https://www.biorxiv.org/content/10.1101/2021.03.10.434756v1.full); [Sacramento et al., 2018](https://proceedings.neurips.cc/paper/2018/hash/1dc3a89d0d440ba31729b0ba74b93a33-Abstract.html))
 
-  3. What about inhibition? [Sezener et al. (2020)](https://www.biorxiv.org/content/10.1101/2021.03.10.434756v1.full) again have an answer[21](https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-21-46595289): Inhibition might be responsible for gating on or off certain branches of the dendrites, effectively modulating the projection of the residual stream.
+  1. What about inhibition? [Sezener et al. (2020)](https://www.biorxiv.org/content/10.1101/2021.03.10.434756v1.full) again have an answer[21](https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-21-46595289): Inhibition might be responsible for gating on or off certain branches of the dendrites, effectively modulating the projection of the residual stream.
 
 
 

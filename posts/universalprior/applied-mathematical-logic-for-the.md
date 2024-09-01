@@ -8,7 +8,6 @@ date: YYYY-MM-DD
 date: 2021-10-17
 ---
 
-**Likes:** 0
 
 Asking for a friend[1](https://universalprior.substack.com/p/applied-mathematical-logic-for-the#footnote-1-42721010): what happened to Richard Hamming's social status after he started asking [those pointed questions](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html) about the importance of research questions and individual career decisions? Was he, like, _actually_ banished from the lunch table?
 
@@ -68,9 +67,9 @@ What is a _theory_? It's a set of sentences. What is a _sentence_? Well, it's pr
 
   1. A dynamical system, given as a set of differential equations[3](https://universalprior.substack.com/p/applied-mathematical-logic-for-the#footnote-3-42721010), is a theory.
 
-  2. A cellular automaton, given as a set of transition rules, is a theory.
+  1. A cellular automaton, given as a set of transition rules, is a theory.
 
-  3. Any recursively enumerable set of sentences of a formal language, given as a set of production rules, is a theory.
+  1. Any recursively enumerable set of sentences of a formal language, given as a set of production rules, is a theory.
 
 
 
@@ -81,9 +80,9 @@ Now to the other part of the definition. What is a mathematical object? _Phew_ ,
 
   1. A particular trajectory through state space, f.e. specified through initial conditions.
 
-  2. A particular evolution of the cellular automaton, again specified through the initial conditions.
+  1. A particular evolution of the cellular automaton, again specified through the initial conditions.
 
-  3. A particular Turing machine that implements the production rules, specified through... (you get the idea).
+  1. A particular Turing machine that implements the production rules, specified through... (you get the idea).
 
 
 

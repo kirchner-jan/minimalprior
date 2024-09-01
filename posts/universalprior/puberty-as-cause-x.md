@@ -6,7 +6,6 @@ author-url: "https://universalprior.substack.com/"
 date: 2022-01-23
 ---
 
-**Likes:** 1
 
 **Epistemic status** _: I wrote this to understand how a GiveWell-type analysis feels from the inside[1](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-1-47550671). I expect this would require a couple hundred hours of additional research to get to the point where I'd be confident in the conclusions. But I still think the resulting analysis is interesting, so read it like you'd read the Feuilleton. Any feedback is highly appreciated._
 
@@ -54,9 +53,9 @@ The [80000 hours](https://80000hours.org/) project has a framework for tackling 
 
   1.  **I** mpact. If we solved the problem, how good would it be?
 
-  2.  **T** ractability. If we doubled the resources dedicated to solving this problem, what fraction of the problem would we expect to solve?
+  1.  **T** ractability. If we doubled the resources dedicated to solving this problem, what fraction of the problem would we expect to solve?
 
-  3.  **N** eglectedness. How many resources are already going towards solving this problem?
+  1.  **N** eglectedness. How many resources are already going towards solving this problem?
 
 
 
@@ -285,7 +284,7 @@ I think this data would suggest at least two tests for the hypothesis that "bull
 
   1. We might expect adolescents’ life satisfaction in Denmark to have been much lower in the 90sthano today. As using life satisfaction as a metric has only come _in vogue_ recently, I have little hope to find the perfect data. However, perhaps there is still something that can be said from other metrics.
 
-  2. Taking the much higher baseline in the U.S. compared to Denmark seriously: might adolescent's life satisfaction be higher in Denmark compared to the U.S.?
+  1. Taking the much higher baseline in the U.S. compared to Denmark seriously: might adolescent's life satisfaction be higher in Denmark compared to the U.S.?
 
 
 

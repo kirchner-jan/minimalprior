@@ -6,7 +6,6 @@ author-url: "https://universalprior.substack.com/"
 date: 2022-02-25
 ---
 
-**Likes:** 4
 
 Possibly [deceptive behavior](https://www.alignmentforum.org/posts/Y76durQHrfqwgwM5o/lcdt-a-myopic-decision-theory) of an advanced AI is a core problem in AI safety. But what if we gave an AGI the goal of maximizing human trust in it? Would this change the relative attractiveness of deception compared to honesty from the point of view of the AGI? While we are aware of several technical difficulties and limitations, we hope this essay will offer some insights into the interesting properties of trust as a goal.
 

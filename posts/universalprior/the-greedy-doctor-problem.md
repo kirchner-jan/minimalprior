@@ -6,7 +6,6 @@ author-url: "https://universalprior.substack.com/"
 date: 2021-11-15
 ---
 
-**Likes:** 8
 
 ## **What is the Greedy Doctor Problem?**
 

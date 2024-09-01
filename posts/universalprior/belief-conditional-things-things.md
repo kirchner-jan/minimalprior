@@ -8,7 +8,6 @@ date: YYYY-MM-DD
 date: 2021-12-25
 ---
 
-**Likes:** 0
 
 # **🎵 Do you believe... 🎵**
 

@@ -6,7 +6,6 @@ author-url: "https://universalprior.substack.com/"
 date: 2022-01-31
 ---
 
-**Likes:** 2
 
 _Meta: As this post is all about summarization (and since I value your time!), I’m experimenting with putting a_ **`one sentence`** **`summary`** _ **``** at the beginning of each paragraph. Let me know if you hate this in the comments._
 
@@ -36,7 +35,7 @@ _Meta: As this post is all about summarization (and since I value your time!), I
 
   1. The summarization operator is [idempotent](https://en.wikipedia.org/wiki/Idempotence): the summary of summaries is again a summary.
 
-  2. Books have ([almost always](https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure)) a neat linear and hierarchical structure.
+  1. Books have ([almost always](https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure)) a neat linear and hierarchical structure.
 
 
 

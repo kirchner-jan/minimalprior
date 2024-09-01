@@ -6,7 +6,6 @@ author-url: "https://universalprior.substack.com/"
 date: 2022-03-26
 ---
 
-**Likes:** 3
 
 _Meta: As long-term readers know,[sometimes](https://universalprior.substack.com/p/cognitive-biases-in-large-language?s=w) [I](https://universalprior.substack.com/p/drug-addicts-and-deceptively-aligned?s=w) [switch](https://universalprior.substack.com/p/puberty-as-cause-x?s=w) into my academic mode and write semi-formal posts analyzing a topic. This is such a post, summarizing some of the things I learned after doing a deep dive into a subfield of AI Safety._
 
@@ -18,7 +17,7 @@ There are two complementary avenues for ensuring that humanity successfully navi
 
   1. We can monitor possession and usage of large-scale computing resources comparatively well. Large-scale computing requires physical space for the computing hardware and substantial supporting infrastructure.
 
-  2. Access to large-scale computing resources can be monitored and governed as the supply chain for advanced semiconductor production is concentrated on a few key producers.
+  1. Access to large-scale computing resources can be monitored and governed as the supply chain for advanced semiconductor production is concentrated on a few key producers.
 
 
 

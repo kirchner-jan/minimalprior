@@ -8,7 +8,6 @@ date: YYYY-MM-DD
 date: 2022-01-22
 ---
 
-**Likes:** 0
 
 My good friend Mathieu has this YouTube channel where he makes science communication videos about (mostly) Marine biology. I admire the care he puts into each and every video of his, so when he asked if I wanted to collaborate on one I didn’t hesitate.
 

@@ -6,7 +6,6 @@ author-url: "https://universalprior.substack.com/"
 date: 2022-04-16
 ---
 
-**Likes:** 1
 
 _Previously in this series:[Cognitive Biases in Large Language Models](https://universalprior.substack.com/p/cognitive-biases-in-large-language?s=w), [Drug addicts and deceptively aligned agents - a comparative analysis](https://universalprior.substack.com/p/drug-addicts-and-deceptively-aligned?s=w), [Inferring utility functions from locally non-transitive preferences](https://universalprior.substack.com/p/inferring-utility-functions?s=w)._
 

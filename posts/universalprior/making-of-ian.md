@@ -6,7 +6,6 @@ author-url: "https://universalprior.substack.com/"
 date: 2021-08-29
 ---
 
-**Likes:** 7
 
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fee60786b-f547-4d3c-92b4-351d547b729a_600x338.gif)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fee60786b-f547-4d3c-92b4-351d547b729a_600x338.gif)“ _Show, don’t tell._ ” - probably said originally by someone with bad hearing
 
@@ -134,9 +133,9 @@ One thing that I'd be curious to test is some version of [Iterated Distillation 
 
   1. when querying #IAN from Roam Research, amplify performance by generating multiple samples (/listicles) and only keeping the best.
 
-  2. consistently prepend these with the #[[IAN says:]] tag.
+  1. consistently prepend these with the #[[IAN says:]] tag.
 
-  3. distill by fine-tuning from scratch with the amplified Roam graph.
+  1. distill by fine-tuning from scratch with the amplified Roam graph.
 
 
 

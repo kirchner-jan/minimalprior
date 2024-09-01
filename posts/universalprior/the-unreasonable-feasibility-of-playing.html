@@ -44,7 +44,6 @@ Kirchner</a></td>
         thoughts</strong></a></li>
         </ul>
   </nav>
-    <p><strong>Likes:</strong> 3</p>
     <h1 id="a-proud-history-of-drinking-and-playing-chess"><strong>A
     proud history of drinking and playing chess</strong></h1>
     <p>Please enjoy this clip of the reigning chess world champion
@@ -157,17 +156,13 @@ Kirchner</a></td>
     Marr</a>’s three<a
     href="https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-5-46914010">5</a>
     levels of analysis appear like a good match<a
-    href="https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-6-46914010">6</a>:</p>
-    <ol class="incremental" type="1">
-    <li><p><strong>computational level</strong> : a formal description
-    of what the system does.</p></li>
-    <li><p><strong>algorithmic level</strong> : a step-by-step
-    description of how a formal system can construct a
-    solution.</p></li>
-    <li><p><strong>implementational level</strong> : identification of a
-    neural circuit that can implement the step-by-step
-    description.</p></li>
-    </ol>
+    href="https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-6-46914010">6</a>:
+    1. <strong>computational level</strong> : a formal description of
+    what the system does. 1. <strong>algorithmic level</strong> : a
+    step-by-step description of how a formal system can construct a
+    solution. 1. <strong>implementational level</strong> :
+    identification of a neural circuit that can implement the
+    step-by-step description.</p>
     <h4 id="chess-the-computational-level."><strong>Chess: the
     computational level.</strong></h4>
     <p>I find it very instructive to look back at the very early days of
@@ -309,21 +304,16 @@ Kirchner</a></td>
     instance of <strong>Iterated Amplification and Distillation</strong>
     (IAD)<a
     href="https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-9-46914010">9</a>.</p>
-    <p>Conceptually, IAD requires three components:</p>
-    <ol class="incremental" type="1">
-    <li><p>a prior distribution <strong>p</strong> over moves in a given
-    position,</p></li>
-    <li><p>an <strong>amplification</strong> procedure
-    <strong>A(p)</strong> that can boost the performance of
-    <strong>p</strong> (usually at the cost of runtime or
-    storage),</p></li>
-    <li><p>and a <strong>distillation</strong> procedure <strong>p* =
-    D(A(p))</strong> that takes the boosted distribution
-    <strong>A(p)</strong> as input and condenses it down to an updated
-    prior distribution <strong>p</strong> * (usually at the cost of a
-    bit of performance in exchange for a large speedup in
-    runtime).</p></li>
-    </ol>
+    <p>Conceptually, IAD requires three components: 1. a prior
+    distribution <strong>p</strong> over moves in a given position, 1.
+    an <strong>amplification</strong> procedure <strong>A(p)</strong>
+    that can boost the performance of <strong>p</strong> (usually at the
+    cost of runtime or storage), 1. and a <strong>distillation</strong>
+    procedure <strong>p* = D(A(p))</strong> that takes the boosted
+    distribution <strong>A(p)</strong> as input and condenses it down to
+    an updated prior distribution <strong>p</strong> * (usually at the
+    cost of a bit of performance in exchange for a large speedup in
+    runtime).</p>
     <p>We can then <strong>iterate</strong> this procedure, and compute
     <strong>p* =D(A(D(A(….D(A(p))))))</strong>. If everything goes well,
     our prior <strong>p</strong> * will be getting better at every

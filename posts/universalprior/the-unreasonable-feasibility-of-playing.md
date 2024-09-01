@@ -6,7 +6,6 @@ author-url: "https://universalprior.substack.com/"
 date: 2022-01-12
 ---
 
-**Likes:** 3
 
 # **A proud history of drinking and playing chess**
 
@@ -36,9 +35,9 @@ Which tool in our belt is best suited to understand complicated cognitive phenom
 
   1.  **computational level** : a formal description of what the system does.
 
-  2.  **algorithmic level** : a step-by-step description of how a formal system can construct a solution.
+  1.  **algorithmic level** : a step-by-step description of how a formal system can construct a solution.
 
-  3.  **implementational level** : identification of a neural circuit that can implement the step-by-step description.
+  1.  **implementational level** : identification of a neural circuit that can implement the step-by-step description.
 
 
 
@@ -83,9 +82,9 @@ Conceptually, IAD requires three components:
 
   1. a prior distribution **p** over moves in a given position,
 
-  2. an **amplification** procedure **A(p)** that can boost the performance of **p** (usually at the cost of runtime or storage),
+  1. an **amplification** procedure **A(p)** that can boost the performance of **p** (usually at the cost of runtime or storage),
 
-  3. and a **distillation** procedure **p* = D(A(p))** that takes the boosted distribution **A(p)** as input and condenses it down to an updated prior distribution **p** * (usually at the cost of a bit of performance in exchange for a large speedup in runtime).
+  1. and a **distillation** procedure **p* = D(A(p))** that takes the boosted distribution **A(p)** as input and condenses it down to an updated prior distribution **p** * (usually at the cost of a bit of performance in exchange for a large speedup in runtime).
 
 
 

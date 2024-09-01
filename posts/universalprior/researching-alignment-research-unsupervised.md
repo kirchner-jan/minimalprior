@@ -6,7 +6,6 @@ author-url: "https://universalprior.substack.com/"
 date: 2022-06-06
 ---
 
-**Likes:** 0
 
 _Meta-meta: You can also find this[here](https://www.alignmentforum.org/posts/FgjcHiWvADgsocE34/a-descriptive-not-prescriptive-overview-of-current-ai) on the Alignment Forum._
 
@@ -42,13 +41,13 @@ By skimming articles in each cluster and given the typical research published by
 
   1.  **cluster one** : _Agent alignment_ is concerned with the problem of aligning agentic systems, i.e. those where an AI performs actions in an environment and is typically trained via reinforcement learning.
 
-  2.  **cluster two** : _Alignment foundations_ research is concerned with _deconfusion_ research, i.e. the task of establishing formal and robust conceptual foundations for current and future AI Alignment research.
+  1.  **cluster two** : _Alignment foundations_ research is concerned with _deconfusion_ research, i.e. the task of establishing formal and robust conceptual foundations for current and future AI Alignment research.
 
-  3.  **cluster three** : _Tool alignment_ is concerned with the problem of aligning non-agentic (tool) systems, i.e. those where an AI transforms a given input into an output. The current, prototypical example of tool AIs is the "large language model".
+  1.  **cluster three** : _Tool alignment_ is concerned with the problem of aligning non-agentic (tool) systems, i.e. those where an AI transforms a given input into an output. The current, prototypical example of tool AIs is the "large language model".
 
-  4.  **cluster four** : _AI governance_ is concerned with how humanity can best navigate the transition to advanced AI systems. This includes focusing on the political, economic, military, governance, and ethical dimensions.
+  1.  **cluster four** : _AI governance_ is concerned with how humanity can best navigate the transition to advanced AI systems. This includes focusing on the political, economic, military, governance, and ethical dimensions.
 
-  5.  **cluster five** : _Value alignment_ is concerned with understanding and extracting human preferences and designing methods that stop AI systems from acting against these preferences.
+  1.  **cluster five** : _Value alignment_ is concerned with understanding and extracting human preferences and designing methods that stop AI systems from acting against these preferences.
 
 
 

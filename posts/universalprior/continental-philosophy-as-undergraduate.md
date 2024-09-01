@@ -6,7 +6,6 @@ author-url: "https://universalprior.substack.com/"
 date: 2022-04-25
 ---
 
-**Likes:** 3
 
 _Previously in this series:[Frankfurt Declaration on the Cambridge Declaration on Consciousness](https://universalprior.substack.com/p/frankfurt-declaration-on-the-cambridge?s=w), [Belief-conditional things - things that only exist when you believe in them](https://universalprior.substack.com/p/belief-conditional-things-things?s=w)_
 
@@ -75,9 +74,9 @@ I'm assuming that my audience is much more familiar with PCA than with continent
 
   1. Given your dataset ("the sky"), look for a single vector that explains the largest amount of variability ("the sky is blue") while neglecting all the remaining variability ("the sky" - "the sky is blue"). This vector ("the sky is blue") is your first principal component.
 
-  2. After subtracting out the first principal component ("the sky" - "the sky is blue"), look again for a single vector that explains the largest amount of variability ("the sky is black") while neglecting all the remaining variability ("the sky" - "the sky is blue" - "the sky is black"). This vector ("the sky is black") is your second principal component.
+  1. After subtracting out the first principal component ("the sky" - "the sky is blue"), look again for a single vector that explains the largest amount of variability ("the sky is black") while neglecting all the remaining variability ("the sky" - "the sky is blue" - "the sky is black"). This vector ("the sky is black") is your second principal component.
 
-  3. Repeat.
+  1. Repeat.
 
 
 

@@ -6,7 +6,6 @@ author-url: "https://universalprior.substack.com/"
 date: 2021-12-09
 ---
 
-**Likes:** 3
 
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2b9f91e8-ef19-49fb-b934-70af62c41324_520x228.gif)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2b9f91e8-ef19-49fb-b934-70af62c41324_520x228.gif)A prototype for automatic idea generation.
 
@@ -16,7 +15,7 @@ In [On Scaling Academia](https://universalprior.substack.com/p/on-scaling-academ
 
   1. automatic research is beneficial for academia (systematization and [objective metrics of progress](http://mason.gmu.edu/~rhanson/gamble.html) are woefully lacking in current academia),
 
-  2. some degree of automation might be strictly necessary for continued scientific progress (note the ever-increasing [unwieldiness of humanity's collected knowledge](https://web.stanford.edu/~chadj/IdeaPF.pdf)).
+  1. some degree of automation might be strictly necessary for continued scientific progress (note the ever-increasing [unwieldiness of humanity's collected knowledge](https://web.stanford.edu/~chadj/IdeaPF.pdf)).
 
 
 
@@ -147,13 +146,13 @@ I want to write an entire post on how to automate going from idea to implementat
 
   1. Set a time frame based on previous experience from similar projects, [not based on particulars of the current project](https://www.lesswrong.com/posts/CPm5LTwHrvBJCa9h5/planning-fallacy).
 
-  2. Divide the time **evenly**[13](https://universalprior.substack.com/p/on-automatic-ideas#footnote-13-45230438) into an "expansion" and a "contraction" phase[14](https://universalprior.substack.com/p/on-automatic-ideas#footnote-14-45230438).
+  1. Divide the time **evenly**[13](https://universalprior.substack.com/p/on-automatic-ideas#footnote-13-45230438) into an "expansion" and a "contraction" phase[14](https://universalprior.substack.com/p/on-automatic-ideas#footnote-14-45230438).
 
     * In the expansion phase, iterate the following steps: Collect information (reading reviews and using [Elicit](https://roamresearch.com/elicit.org)), [chart](https://roamresearch.com/) people and beliefs (in my experience, authorship explains most variability), [implement prototypes](https://openai.com/blog/openai-codex/) ([build the smallest toy example that would invalidate an idea](https://threadreaderapp.com/thread/1441027241870118913.html)), explore implications and reject dead ends ([reductio ad absurdum](https://en.wikipedia.org/wiki/Reductio_ad_absurdum)).
 
     * In the contraction phase, do the following: Don't implement anything new ([feature freeze](https://en.wikipedia.org/wiki/Freeze_%28software_engineering%29)), identify the "solid core" (throw away _everything_ that is not fully cooked[15](https://universalprior.substack.com/p/on-automatic-ideas#footnote-15-45230438)), start writing early (writing forces you to put things in order), make illustrations (drawing things reveals how you _actually_ think about something), and collect feedback ([Grammarly](https://app.grammarly.com/) improves text beyond just fixing typos).
 
-  3. Publish whatever you have at the end of your time frame.
+  1. Publish whatever you have at the end of your time frame.
 
 
 
@@ -170,9 +169,9 @@ I believe there is substantial confusion about where ideas come from. [WikiHow](
 
   1.  _Getting Your Brain Moving_ , i.e. engage with the topic.
 
-  2.  _Disengaging from Work_ , i.e. allow for gestation until an idea appears.
+  1.  _Disengaging from Work_ , i.e. allow for gestation until an idea appears.
 
-  3.  _Testing Your Ideas_ , i.e. reject bad ideas.
+  1.  _Testing Your Ideas_ , i.e. reject bad ideas.
 
 
 

@@ -8,7 +8,6 @@ date: YYYY-MM-DD
 date: 2021-11-08
 ---
 
-**Likes:** 0
 
 It was a delight talking to Anna! Check out her [webpage](https://www.riedlanna.com/) and keep your eyes open for future videos. Here’s an excerpt from our conversation on different scientific mindsets:
 

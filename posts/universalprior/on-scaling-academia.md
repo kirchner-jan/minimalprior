@@ -6,7 +6,6 @@ author-url: "https://universalprior.substack.com/"
 date: 2021-09-20
 ---
 
-**Likes:** 2
 
 * * *
 
@@ -177,7 +176,7 @@ Please don’t think that I was intentionally burying the lede. I do believe tha
 
   1. systematizing scientific work (collecting and refining explicit workflows)
 
-  2. improving metrics of scientific progress (through f.e. prediction markets)
+  1. improving metrics of scientific progress (through f.e. prediction markets)
 
 
 

@@ -6,7 +6,6 @@ author-url: "https://universalprior.substack.com/"
 date: 2022-12-28
 ---
 
-**Likes:** 6
 
 > Text within this block will maintain its original spacing when published
 >     

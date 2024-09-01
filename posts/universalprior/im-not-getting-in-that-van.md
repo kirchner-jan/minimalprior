@@ -6,7 +6,6 @@ author-url: "https://universalprior.substack.com/"
 date: 2022-05-01
 ---
 
-**Likes:** 7
 
 _I’ve been thinking a lot about the past and the future lately. And in particular about my values. In this… thing, I try to articulate something hard to articulate; my admiration for the great big everything and my strong desire to keep it going. I hope it’s not too confusing and I don’t blame you for skipping this one._
 

@@ -6,7 +6,6 @@ author-url: "https://universalprior.substack.com/"
 date: 2022-07-18
 ---
 
-**Likes:** 2
 
 Meta: guest post by [Ava Kiai](https://avakiai.com/), a very awesome individual who [works with bats](https://avakiai.com/posts/bat_talk/) in her PhD and who knows a thing or two about art! Lots of pretty pictures in this one!
 

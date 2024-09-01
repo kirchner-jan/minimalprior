@@ -6,7 +6,6 @@ author-url: "https://universalprior.substack.com/"
 date: 2022-04-06
 ---
 
-**Likes:** 0
 
 Some of you might remember “[On Scaling Academia](https://universalprior.substack.com/p/on-scaling-academia?s=w)”, one of the first things I published here and that kicked off [an](https://universalprior.substack.com/p/on-automatic-ideas?s=w) [ongoing](https://universalprior.substack.com/p/on-not-reading-papers?s=w) [series](https://universalprior.substack.com/p/on-context-and-people?s=w) on Metascience. That post has now grown up and got published with [Seeds Of Science](https://www.theseedsofscience.org/). I’ve edited the text a lot to flesh out the argument, and the peer-review comments (with some fantastic points) are published alongside the article. You can find the article [here](https://files.theseedsofscience.org/2022/On_Scaling_Academia.pdf).
 

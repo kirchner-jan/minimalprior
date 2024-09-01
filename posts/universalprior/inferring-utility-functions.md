@@ -6,7 +6,6 @@ author-url: "https://universalprior.substack.com/"
 date: 2022-02-10
 ---
 
-**Likes:** 2
 
 # **Johnny did it.**
 

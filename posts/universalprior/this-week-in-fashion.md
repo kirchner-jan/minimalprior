@@ -6,7 +6,6 @@ author-url: "https://universalprior.substack.com/"
 date: 2023-01-23
 ---
 
-**Likes:** 5
 
 Over the Christmas holiday, I became slightly obsessed with the Netflix show "[Next in Fashion](https://www.netflix.com/title/81026300)." It's (probably) only a temporary obsession, nothing to worry about. But before I move on to the next obsession, I wanted to take a moment to write up what I learned[1](https://universalprior.substack.com/p/this-week-in-fashion#footnote-1-97157004). 
 
@@ -96,11 +95,11 @@ There is [more](https://iep.utm.edu/empirical-aesthetics/) [than](https://en.wik
 
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc09eb6a6-d0b4-4a60-bdbb-f876087544f8_1024x1024.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc09eb6a6-d0b4-4a60-bdbb-f876087544f8_1024x1024.png)Why is there a chicken in this image you ask? [Oh, you poor imbecile](https://universalprior.substack.com/p/soldiers-scouts-and-albatrosses).
 
-  2. Second, I studied as I’d study for a test. I’m a big fan of [spaced repetition](https://www.gwern.net/Spaced-repetition) [in Roam Research](https://thinkstack.club/an-introduction-to-roams-delta-function-spaced-repetition/) and create new cards for my system at a whim. A single repetition can improve recall [dramatically](https://www.gwern.net/Spaced-repetition#:~:text=is%20much%20superior%3A-,Wired,-\(original%2C%20Wozniak%3F\)%3B%20massed), and - check that out! - it turns out language models are really good at creating spaced repetition cards for you. In my experience, [learning about the people and movements](https://universalprior.substack.com/p/on-context-and-people) in a field can explain a ton of variability.
+  1. Second, I studied as I’d study for a test. I’m a big fan of [spaced repetition](https://www.gwern.net/Spaced-repetition) [in Roam Research](https://thinkstack.club/an-introduction-to-roams-delta-function-spaced-repetition/) and create new cards for my system at a whim. A single repetition can improve recall [dramatically](https://www.gwern.net/Spaced-repetition#:~:text=is%20much%20superior%3A-,Wired,-\(original%2C%20Wozniak%3F\)%3B%20massed), and - check that out! - it turns out language models are really good at creating spaced repetition cards for you. In my experience, [learning about the people and movements](https://universalprior.substack.com/p/on-context-and-people) in a field can explain a ton of variability.
 
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb43fd51a-6749-4e5e-bc9e-ae76f11cd982_1600x940.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb43fd51a-6749-4e5e-bc9e-ae76f11cd982_1600x940.png)
 
-  3. I had someone quiz me. Language models are very good at that too, but if push comes to shove a fellow human also does the trick. You can even quiz them back.
+  1. I had someone quiz me. Language models are very good at that too, but if push comes to shove a fellow human also does the trick. You can even quiz them back.
 
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F39688452-48f2-4056-9883-70c7d28a6844_1024x1024.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F39688452-48f2-4056-9883-70c7d28a6844_1024x1024.png)I apologize for calling you an imbecile just a moment ago, dear reader. [I apologize](https://xkcd.com/1053/). It’s just - it’s an albatross, not a chicken. Kind of a sore spot for me.
 

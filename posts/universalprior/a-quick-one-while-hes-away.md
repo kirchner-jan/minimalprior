@@ -8,7 +8,6 @@ date: YYYY-MM-DD
 date: 2022-07-03
 ---
 
-**Likes:** 9
 
 # [A quick update](https://www.youtube.com/watch?v=RJv2-_--EY4&ab_channel=TheWhoVEVO)
 

@@ -50,7 +50,6 @@ Kirchner</a></td>
         </ul>
   </nav>
     <h2 id="date-2022-05-22">date: 2022-05-22</h2>
-    <p><strong>Likes:</strong> 1</p>
     <p><em>Meta: After a fun little motivating section, this post goes
     pretty deep into the mathematical weeds - you might prefer to read
     it on<a
@@ -59,19 +58,19 @@ Kirchner</a></td>
     Unicode.</em></p>
     <h3 id="tldr"><strong>TL;DR:</strong></h3>
     <ol class="incremental" type="1">
-    <li><p>When we invest the appropriate effort, the probability of
-    random catastrophic events tends to decrease exponentially with a
-    rate given by the<a
+    <li>When we invest the appropriate effort, the probability of random
+    catastrophic events tends to decrease exponentially with a rate
+    given by the<a
     href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-1-56106015">1</a>
-    rate function.</p></li>
-    <li><p>One way of estimating the rate function is to solve an
-    optimal control problem, where we have to determine the “least
-    surprising” way that the catastrophic event comes about. The rate
-    function then equals the catastrophic event’s surprise (in <a
-    href="https://en.wikipedia.org/wiki/Nat_(unit)">nats</a>).</p></li>
-    <li><p>Thus, intuitively, as we invest the effort to decrease the
+    rate function.</li>
+    <li>One way of estimating the rate function is to solve an optimal
+    control problem, where we have to determine the “least surprising”
+    way that the catastrophic event comes about. The rate function then
+    equals the catastrophic event’s surprise (in <a
+    href="https://en.wikipedia.org/wiki/Nat_(unit)">nats</a>).</li>
+    <li>Thus, intuitively, as we invest the effort to decrease the
     probability of random catastrophic events, the “difficulty” of
-    performing an adversarial attack only increases linearly.</p></li>
+    performing an adversarial attack only increases linearly.</li>
     </ol>
     <h1 id="real-talk-and-real-estate"><strong>Real talk and real
     estate</strong></h1>
@@ -140,13 +139,10 @@ Kirchner</a></td>
     environment</strong></h1>
     <p>I’ll go over the basics quickly: When you (i.e. Zillow) think of
     your environment as random, each house you buy is essentially a coin
-    flip with a biased coin. If you make sure that</p>
-    <ol class="incremental" type="1">
-    <li><p>the expected value of a deal is positive and</p></li>
-    <li><p>that all the deals are (<a
+    flip with a biased coin. If you make sure that 1. the expected value
+    of a deal is positive and 1. that all the deals are (<a
     href="https://en.wikipedia.org/wiki/Martingale_central_limit_theorem">mostly)</a>
-    independent of each other,</p></li>
-    </ol>
+    independent of each other,</p>
     <p>then you’re guaranteed to accrue profits <em>eventually</em>.</p>
     <p><a
     href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fdfa49339-63ec-44b4-853e-93f7582f5522_3749x998.png"><img
@@ -301,21 +297,16 @@ Kirchner</a></td>
     <p>as it should be.</p>
     <h1 id="an-adversarial-environment"><strong>An adversarial
     environment</strong></h1>
-    <p>Quick recap:</p>
-    <ol class="incremental" type="1">
-    <li><p>When we find ourselves in a random environment, we can
-    leverage the law of large numbers to push the probability of failure
-    close to zero by trying sufficiently many times<a
+    <p>Quick recap: 1. When we find ourselves in a random environment,
+    we can leverage the law of large numbers to push the probability of
+    failure close to zero by trying sufficiently many times<a
     href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-11-56106015">11</a>,
-    N.</p></li>
-    <li><p>If we want to determine <em>how fast</em> the probability of
+    N. 1. If we want to determine <em>how fast</em> the probability of
     failure goes to zero, we can find that out by solving an optimal
     control problem where we need to determine the least surprising way
-    failure might come about, J(ξ).</p></li>
-    <li><p>The probability of failure goes to zero exponentially fast,
-    proportional to how surprised we would be and the number of tries,
-    exp(−NJ(ξ)).</p></li>
-    </ol>
+    failure might come about, J(ξ). 1. The probability of failure goes
+    to zero exponentially fast, proportional to how surprised we would
+    be and the number of tries, exp(−NJ(ξ)).</p>
     <p>So far, so good, but… what is that sound in the distance<a
     href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-12-56106015">12</a>?</p>
     <p>As general as the theorems mentioned above are in terms of the
@@ -335,9 +326,8 @@ Kirchner</a></td>
     <p>While the <strong>probability of complete failure,</strong>
     exp(−NJ(ξ)), <strong>falls exponentially</strong> , the
     <strong>amount of surprise required to bring it about</strong> ,
-    NJ(ξ), <strong>scales linearly!</strong> A few things of note:</p>
-    <ol class="incremental" type="1">
-    <li><p>The unit of “surprise” is <a
+    NJ(ξ), <strong>scales linearly!</strong> A few things of note: 1.
+    The unit of “surprise” is <a
     href="https://en.wikipedia.org/wiki/Nat_(unit)">nats</a>, a measure
     of information. This interpretation maps only weakly onto the house
     buying example (where one <a
@@ -346,11 +336,8 @@ Kirchner</a></td>
     Zillow). Still, it has a much more straightforward interpretation
     when we think about set-ups where <a
     href="https://en.wikipedia.org/wiki/AI_box">information passes
-    through a single channel and can be arbitrarily
-    constrained</a>.</p></li>
-    <li><p>Similarly, we can interpret the expected excess
-    surprise,</p></li>
-    </ol>
+    through a single channel and can be arbitrarily constrained</a>. 1.
+    Similarly, we can interpret the expected excess surprise,</p>
     <p><a
     href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fcafc3e71-9dac-4cb5-93a3-4fe801bb5949_1136x122.png"><img
     src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fcafc3e71-9dac-4cb5-93a3-4fe801bb5949_1136x122.png" /></a></p>
@@ -365,19 +352,17 @@ Kirchner</a></td>
     as optimization power</a>”, which characterizes intelligence as the
     ability to steer reality into a small subset of possible states. But
     I can’t quite put the pieces in the right place to make the
-    connection click.</p>
-    <ol class="incremental" start="3" type="1">
-    <li><p>Since we compute NJ(ξ) as the solution to an optimal control
-    problem that minimizes excess surprise, <strong>it is the lower
-    bound on the amount of surprise required</strong>. Catastrophe can
-    also come about in more surprising ways, but <a
+    connection click. 1. Since we compute NJ(ξ) as the solution to an
+    optimal control problem that minimizes excess surprise, <strong>it
+    is the lower bound on the amount of surprise required</strong>.
+    Catastrophe can also come about in more surprising ways, but <a
     href="https://www.stat.cmu.edu/~cshalizi/754/2006/notes/lecture-30.pdf">highly
     improbable events tend to happen in the least improbable way</a>. On
     the plus side, catastrophe <em>cannot</em> come about with less
     surprise, which might have applications for the <a
     href="https://en.wikipedia.org/wiki/AI_box">set-ups with constrained
-    communication</a> mentioned in point 1.</p></li>
-    <li><p>The team at Redwood Research recently <a
+    communication</a> mentioned in point 1. 1. The team at Redwood
+    Research recently <a
     href="https://www.alignmentforum.org/posts/A9tJFJY7DsGTFKKkh/high-stakes-alignment-via-adversarial-training-redwood#:~:text=With%20a%20conservative,rate%20of%20injuriousness).">released
     their report on their research on high-stakes alignment</a>, where
     they trained a filter to reduce the probability of harmful output
@@ -387,8 +372,7 @@ Kirchner</a></td>
     adversary is not actively trying to trick the filter (from 3.6 nats
     to 10.8 nats of information). This is consistent with their finding
     that their tool-assisted search for adversarial examples was 1000x
-    more effective than naive sampling.</p></li>
-    </ol>
+    more effective than naive sampling.</p>
     <p>These factors combined make me excited about exploring this
     direction further to find reliable estimates of the lower bound of
     input required to bring about catastrophe<a
