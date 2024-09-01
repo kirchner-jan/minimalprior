@@ -27,11 +27,11 @@ I have a great story to tell about how this new job came about, involving me tea
 
 * * *
 
-My new job is also why I've been uncharacteristically quiet for the last two weeks on this Substack. The problem is not that I am "too busy to write". I have [previously professed my belief](https://universalprior.substack.com/p/slightly-advanced-decision-theory?s=w) that I want to do _**all the things**_ to maximize positive impact[^5]. I haven’t changed my mind about that; the problem is that there is currently a lot of "renovation" going on in my head. I'm moving a lot of neuroscience knowledge from working memory to my cerebral basement, and I'm doing a _lot_ of updates on all kinds of beliefs. I _am_ working on some more posts, and I have more collaborations in the pipeline, but I'm running out of swap space very fast[^6].
+My new job is also why I've been uncharacteristically quiet for the last two weeks on this Substack. The problem is not that I am "too busy to write". I have [previously professed my belief](https://kirchner-jan.github.io/minimalprior/posts/universalprior/slightly-advanced-decision-theory?s=w) that I want to do _**all the things**_ to maximize positive impact[^5]. I haven’t changed my mind about that; the problem is that there is currently a lot of "renovation" going on in my head. I'm moving a lot of neuroscience knowledge from working memory to my cerebral basement, and I'm doing a _lot_ of updates on all kinds of beliefs. I _am_ working on some more posts, and I have more collaborations in the pipeline, but I'm running out of swap space very fast[^6].
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_229.png)me rn, source [DALLE](https://labs.openai.com/s/GZfpZiK2E21Wn0b6QvQnteyx)
 
-So, _I’ll be back,_ etc etc[^7]! The [IAN](https://universalprior.substack.com/p/making-of-ian)niversary is coming up, I want to write some retrospective on my PhD, and there is a post on Hebbian learning and the covariance rule that feels relevant for [modularity](https://www.lesswrong.com/posts/JzTfKrgC7Lfz3zcwM/theories-of-modularity-in-the-biological-literature). I’m [not ready to stop](https://www.youtube.com/watch?v=j6IBDpYr8aw&ab_channel=GildasSaynac).
+So, _I’ll be back,_ etc etc[^7]! The [IAN](https://kirchner-jan.github.io/minimalprior/posts/universalprior/making-of-ian)niversary is coming up, I want to write some retrospective on my PhD, and there is a post on Hebbian learning and the covariance rule that feels relevant for [modularity](https://www.lesswrong.com/posts/JzTfKrgC7Lfz3zcwM/theories-of-modularity-in-the-biological-literature). I’m [not ready to stop](https://www.youtube.com/watch?v=j6IBDpYr8aw&ab_channel=GildasSaynac).
 
 * * *
 
@@ -41,7 +41,7 @@ Oh, and I've always wanted to say this, but it never made sense before. But now 
 
 [^2]:The stories we tell ourselves about why we do what we do are probably largely just that - stories.
 
-[^3]:or, less Romantically, [nerd-sniped](https://universalprior.substack.com/p/elementary-infra-bayesianism?s=w)
+[^3]:or, less Romantically, [nerd-sniped](https://kirchner-jan.github.io/minimalprior/posts/universalprior/elementary-infra-bayesianism?s=w)
 
 [^4]:and (possibly/maybe?) important
 

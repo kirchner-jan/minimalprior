@@ -11,7 +11,7 @@ date: 2021-12-09
 
 #### Code first, ask questions later
 
-In [On Scaling Academia](https://universalprior.substack.com/p/on-scaling-academia) I made the case that _automatic research_ , i.e. AI-supported & scalable application of the [scientific method](https://www.hpmor.com/chapter/8#:~:text=science%20investigation%20project%3A-,Step,-1%3A%20Form%20a), might be great. My argument went like this,
+In [On Scaling Academia](https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-scaling-academia) I made the case that _automatic research_ , i.e. AI-supported & scalable application of the [scientific method](https://www.hpmor.com/chapter/8#:~:text=science%20investigation%20project%3A-,Step,-1%3A%20Form%20a), might be great. My argument went like this,
 
   1. automatic research is beneficial for academia (systematization and [objective metrics of progress](http://mason.gmu.edu/~rhanson/gamble.html) are woefully lacking in current academia),
   1. some degree of automation might be strictly necessary for continued scientific progress (note the ever-increasing [unwieldiness of humanity's collected knowledge](https://web.stanford.edu/~chadj/IdeaPF.pdf)).
@@ -24,7 +24,7 @@ However, many things "might be great"[^1], but most aren't [tractable](https://f
 
 The first insight is that having ideas is _really easy_. The problem is having _good_ ideas[^3]. When you feel like you can't come up with any ideas, you probably can’t see the forest for the trees. Generating ideas is a combinatoric process: take two things (or more), combine them, and, voilà, [Clown Dentists, West Dakota, and Halloween in January](https://screenrant.com/bojack-horseman-todd-popular-dumb-ideas-reddit/)[^4]. People working on computational creativity [call this "pastiche"](https://www.creativitypost.com/article/systematizing-creativity-a-computational-view) and distinguish it from "real creativity". But let us not be deterred by that, we'll start philosophizing once we’re done coding. Perhaps we will see a path forward once we know how to generate pastiche at scale.
 
-"Pastiche at scale" happens to be one of the many nicknames of [IAN](https://universalprior.substack.com/p/making-of-ian), a large language model fine-tuned of my personal notes and the papers that I read. Given a prompt, IAN will produce multiple possible continuations, kind of like the "autocomplete" feature on smartphones only more so. Prompting IAN with
+"Pastiche at scale" happens to be one of the many nicknames of [IAN](https://kirchner-jan.github.io/minimalprior/posts/universalprior/making-of-ian), a large language model fine-tuned of my personal notes and the papers that I read. Given a prompt, IAN will produce multiple possible continuations, kind of like the "autocomplete" feature on smartphones only more so. Prompting IAN with
 
 > Text within this block will maintain its original spacing when published
 >     
@@ -116,7 +116,7 @@ But also in other regions of semantic space, there are ideas with high predicted
 > Text within this block will maintain its original spacing when published
 >     
 >     
->      _[The Tale Of Gandhi](https://universalprior.substack.com/p/the-tale-of-gandhi-and-the-devil) And The Old Witch, The Tale Of Gandhi And The Two Giants, The Tale Of Gandhi And The Flying Mountain, The Tale Of Gandhi And The One Who Would Not Speak, The Tale Of Gandhi And The Loveless Kingdom, The Tale Of Gandhi And The Three Ghosts, The Tale Of Gandhi And The Two Dragons Who Were Best Friends_
+>      _[The Tale Of Gandhi](https://kirchner-jan.github.io/minimalprior/posts/universalprior/the-tale-of-gandhi-and-the-devil) And The Old Witch, The Tale Of Gandhi And The Two Giants, The Tale Of Gandhi And The Flying Mountain, The Tale Of Gandhi And The One Who Would Not Speak, The Tale Of Gandhi And The Loveless Kingdom, The Tale Of Gandhi And The Three Ghosts, The Tale Of Gandhi And The Two Dragons Who Were Best Friends_
 > 
 > [^7] _, …_
 
@@ -124,7 +124,7 @@ But also in other regions of semantic space, there are ideas with high predicted
 
 The third insight is that the quality of an idea is not an _intrinsic_ , but an _extrinsic_ property. The quality does not sit within the idea, it is determined by us from the outside. And these judgments are subjective[^8], so there is no universal way to generate _great_ ideas.
 
-However, once you _do_ know which criteria you care for, identifying a _great_ idea reduces to a [constraint satisfaction problem](https://en.wikipedia.org/wiki/Constraint_satisfaction_problem); and we have [great](https://en.wikipedia.org/wiki/Lagrange_multiplier) [tools](https://en.wikipedia.org/wiki/Pontryagin%27s_maximum_principle) for solving those. In the simplest form[^9] we don't even have to resort to anything fancier than [search](https://universalprior.substack.com/p/soldiers-scouts-and-albatrosses). The algorithm looks something like this:
+However, once you _do_ know which criteria you care for, identifying a _great_ idea reduces to a [constraint satisfaction problem](https://en.wikipedia.org/wiki/Constraint_satisfaction_problem); and we have [great](https://en.wikipedia.org/wiki/Lagrange_multiplier) [tools](https://en.wikipedia.org/wiki/Pontryagin%27s_maximum_principle) for solving those. In the simplest form[^9] we don't even have to resort to anything fancier than [search](https://kirchner-jan.github.io/minimalprior/posts/universalprior/soldiers-scouts-and-albatrosses). The algorithm looks something like this:
     
     
     while not found:
@@ -176,7 +176,7 @@ Step two, the "gestation period" _appears_ magical. Mathematicians [have perfect
 
 I see the value of a healthy balance as much as the next person, [pain is not the unit of effort](https://www.lesswrong.com/posts/bx3gkHJehRCYZAF3r/pain-is-not-the-unit-of-effort). In fact, I believe that maintaining some balance between intense work and leisure is critical for sustained high research output. I still have a hard time believing that we will have to teach computers how to juggle as a _necessary_ component of the creative process. And also in humans, creativity does not _always_ require a gestation period. A good brainstorming session, or just thinking for [five minutes by the clock about a problem](https://www.lesswrong.com/posts/FHiM34PmrN224pqTz/on-creativity-the-joys-of-5-minute-timers), can solve a substantial portion of problems.
 
-Instead of postulating [something magical that occurs through the interaction between the subconscious and the conscious](https://duncanwardle.com/how-to-open-the-door-to-your-creative-genius/)[^17], I believe there is a much more parsimonious explanation: What if (as argued above) coming up with good ideas is simply a [search problem](https://universalprior.substack.com/p/soldiers-scouts-and-albatrosses) where possible ideas are proposed, evaluated and (most of the time) rejected? If each proposed idea only has a small probability of being a "hit", then the distribution of arrival times of ideas is a [Poisson process](https://en.wikipedia.org/wiki/Poisson_point_process), and the [distribution of waiting times in between ideas is an exponential distribution](https://gtribello.github.io/mathNET/resources/jim-chap20.pdf). As a consequence, finding a good idea simply takes a lot of time sometimes, especially when the probability of a hit is small. Having a "dry spell" of good ideas is just what we would (sometimes) expect under this model.
+Instead of postulating [something magical that occurs through the interaction between the subconscious and the conscious](https://duncanwardle.com/how-to-open-the-door-to-your-creative-genius/)[^17], I believe there is a much more parsimonious explanation: What if (as argued above) coming up with good ideas is simply a [search problem](https://kirchner-jan.github.io/minimalprior/posts/universalprior/soldiers-scouts-and-albatrosses) where possible ideas are proposed, evaluated and (most of the time) rejected? If each proposed idea only has a small probability of being a "hit", then the distribution of arrival times of ideas is a [Poisson process](https://en.wikipedia.org/wiki/Poisson_point_process), and the [distribution of waiting times in between ideas is an exponential distribution](https://gtribello.github.io/mathNET/resources/jim-chap20.pdf). As a consequence, finding a good idea simply takes a lot of time sometimes, especially when the probability of a hit is small. Having a "dry spell" of good ideas is just what we would (sometimes) expect under this model.
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_180.png) **a** Example of a Poisson point process, blue circles indicate generated ideas as a function of time. Red bar highlights time period at beginning of simulation where no ideas were generated. **b** Distribution of waiting time lengths (red bar in **a** ) pooled across simulations. Notice the long tail.
 
@@ -189,7 +189,7 @@ Disengaging from the problem then is nothing else than pressing the "fast forwar
 [^3]:I think this distinction is the easiest way to resolve the tension between Stephen Malina et al. [writing  
 ](https://guzey.com/ideas-not-mattering-is-a-psyop/#:~:text=don%E2%80%99t%20buy%20it.-,Empirically%2C%20all%20our%20aspiring%20founder%20friends%20are%20desperate%20for%20startup%20ideas%2C%20with%20few%20managing%20to%20land%20on%20something%20worthwhile%2C%20and%20all%20our%20scientist%20friends%20are%20desperate%20for%20research%20ideas.,-Good%20ideas%20are)" _Empirically, all our aspiring founder friends are desperate for startup ideas, with few managing to land on something worthwhile, and all our scientist friends are desperate for research ideas._ "  
 and me [writing  
-](https://universalprior.substack.com/p/on-scaling-academia#:~:text=I%20could%20come%20up%20with%20a%20research%20program%20that%20keeps%201000s%20of%20people%20busy)" _I could come up with a research program that keeps 1000s of people busy._ "  
+](https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-scaling-academia#:~:text=I%20could%20come%20up%20with%20a%20research%20program%20that%20keeps%201000s%20of%20people%20busy)" _I could come up with a research program that keeps 1000s of people busy._ "  
 I totally could keep them _busy_. I'm much less certain if I could get them to do anything _useful_.
 
 [^4]:Taking a list of ideas from some of the funniest writers is probably not the best way to make this point. However, the ideas that I come up with (combined keyboard & mouse, banana telephone, microphone shoes) are so lame, they are making my point _too_ well.
@@ -212,7 +212,7 @@ I totally could keep them _busy_. I'm much less certain if I could get them to d
 
 [^13]:This is super important. There will be a very strong pull to extend the expansion phase. Don't give in. This is the point where it's decided whether you hit your deadline or not.
 
-[^14]:These two phases are the ones I tried to characterize in "[Soldiers, Scouts, and Albatrosses](https://universalprior.substack.com/p/soldiers-scouts-and-albatrosses)", although I'm not sure if I hit the nail on the head there.
+[^14]:These two phases are the ones I tried to characterize in "[Soldiers, Scouts, and Albatrosses](https://kirchner-jan.github.io/minimalprior/posts/universalprior/soldiers-scouts-and-albatrosses)", although I'm not sure if I hit the nail on the head there.
 
 [^15]:Be honest with yourself here. Again, the temptation is big to carry along that beautiful aspect of the project that you have sunken a ton of time into, but which simply doesn't mash with anything else. Throw it away. (Into your drawer of "future project ideas" that you will never open again).
 

@@ -10,13 +10,13 @@ date: 2022-12-28
 > Text within this block will maintain its original spacing when published
 >     
 >     
->      _The letter is for you, dear reader. For you who are still here, for you who are still a reader, for the only reader of all, the author, for her, for all readers, for those who've long ago read and found the story unsatisfactory, for all of you who, as I've said, have long since passed through the gateway, through the doorway, through the opening that leads to the realms of the story and to the realm of the storytellers, who are all gone, who are all gone forever. Thank you for being here. […] Best wishes to you, dear reader. -[#IAN](https://universalprior.substack.com/p/making-of-ian)_
+>      _The letter is for you, dear reader. For you who are still here, for you who are still a reader, for the only reader of all, the author, for her, for all readers, for those who've long ago read and found the story unsatisfactory, for all of you who, as I've said, have long since passed through the gateway, through the doorway, through the opening that leads to the realms of the story and to the realm of the storytellers, who are all gone, who are all gone forever. Thank you for being here. […] Best wishes to you, dear reader. -[#IAN](https://kirchner-jan.github.io/minimalprior/posts/universalprior/making-of-ian)_
 
 ### It’s been a minute! And darn, I’ve missed you.
 
-As some of you might have read, I recently [joined OpenAI](https://universalprior.substack.com/p/a-quick-one-while-hes-away) as a researcher on the alignment team, and, phew, doing _[all the things](https://forum.effectivealtruism.org/posts/CCx7KpQHMLbkud9PK/slightly-advanced-decision-theory-102-four-reasons-not-to-be#Gotta_catch_them_all_:~:text=ex%2Dpost\)%20option.-,Or,-%2C%20in%20less%20fancy)_ is not as trivial as I thought. I've [previously quipped about](https://universalprior.substack.com/p/serendipitous-connections-applying?utm_source=substack&utm_campaign=post_embed&utm_medium=web#:~:text=While%20I%20am%20in%20no%20position) how I have no expertise in AI. While that was perhaps hyperbole, getting up to speed with where AI is heading and how to best contribute to that is fun but also a challenge. Luckily, I am not alone on my journey into AI alignment research, and I get to collaborate [with some absurdely](https://scottaaronson.blog/?p=6823#:~:text=hundred%20prime%20numbers\).-,Anyway,-%2C%20we%20actually%20have)[^1] [brilliant](https://universalprior.substack.com/p/introduction-to-hebbian-natural-abstractions) [people](https://universalprior.substack.com/p/introduction-to-hebbian-natural-abstractions). So the timing of joining was also [kind of perfect](https://openai.com/blog/chatgpt/). So things are getting more manageable every day.
+As some of you might have read, I recently [joined OpenAI](https://kirchner-jan.github.io/minimalprior/posts/universalprior/a-quick-one-while-hes-away) as a researcher on the alignment team, and, phew, doing _[all the things](https://forum.effectivealtruism.org/posts/CCx7KpQHMLbkud9PK/slightly-advanced-decision-theory-102-four-reasons-not-to-be#Gotta_catch_them_all_:~:text=ex%2Dpost\)%20option.-,Or,-%2C%20in%20less%20fancy)_ is not as trivial as I thought. I've [previously quipped about](https://kirchner-jan.github.io/minimalprior/posts/universalprior/serendipitous-connections-applying?utm_source=substack&utm_campaign=post_embed&utm_medium=web#:~:text=While%20I%20am%20in%20no%20position) how I have no expertise in AI. While that was perhaps hyperbole, getting up to speed with where AI is heading and how to best contribute to that is fun but also a challenge. Luckily, I am not alone on my journey into AI alignment research, and I get to collaborate [with some absurdely](https://scottaaronson.blog/?p=6823#:~:text=hundred%20prime%20numbers\).-,Anyway,-%2C%20we%20actually%20have)[^1] [brilliant](https://kirchner-jan.github.io/minimalprior/posts/universalprior/introduction-to-hebbian-natural-abstractions) [people](https://kirchner-jan.github.io/minimalprior/posts/universalprior/introduction-to-hebbian-natural-abstractions). So the timing of joining was also [kind of perfect](https://openai.com/blog/chatgpt/). So things are getting more manageable every day.
 
-But this little essay is not about alignment research but instead about another passion of mine: [not giving advice](https://universalprior.substack.com/p/via-productiva). I recently had a [video call with friends at Ought](https://youtu.be/YO9UiBWx6jw) about how I used their tools for academic writing. In that call, I got to wax poetically about how large language models can [make a researcher’s life easier](https://universalprior.substack.com/p/making-of-ian) and how I think about writing text. After seeing the video, a few people contacted me to ask more questions about my workflow and how I feel about using large language models to research. So now I find myself in a bit of an awkward position….
+But this little essay is not about alignment research but instead about another passion of mine: [not giving advice](https://kirchner-jan.github.io/minimalprior/posts/universalprior/via-productiva). I recently had a [video call with friends at Ought](https://youtu.be/YO9UiBWx6jw) about how I used their tools for academic writing. In that call, I got to wax poetically about how large language models can [make a researcher’s life easier](https://kirchner-jan.github.io/minimalprior/posts/universalprior/making-of-ian) and how I think about writing text. After seeing the video, a few people contacted me to ask more questions about my workflow and how I feel about using large language models to research. So now I find myself in a bit of an awkward position….
 
 Thanks for reading On Brains, Minds, And Their Possible Uses! Subscribe for free to receive new posts and support my work.
 
@@ -32,7 +32,7 @@ Second, even though I still do research, I write more code than prose these days
 
 And yet, here we are.
 
-I decided to reject the second argument above because [it is self-reinforcing](https://universalprior.substack.com/p/the-tale-of-gandhi-and-the-devil?r=7inm4&utm_campaign=post&utm_medium=web&utm_source=#details). Not writing because I have not written recently is - quite clearly - a lousy reason. After not having written for a while, writing about how I write seems appropriately self-referential for this Substack. And finally, with prose and code [converging rapidly](https://www.nature.com/articles/d41586-022-04383-z), a reflection on the architecture of text might provide unexpected insights into [how AI thinks](https://www.alignmentforum.org/posts/vJFdjigzmcXMhNTsx/simulators). And maybe looking at my process allows some people to derive a generator[^3]. Sooo~
+I decided to reject the second argument above because [it is self-reinforcing](https://kirchner-jan.github.io/minimalprior/posts/universalprior/the-tale-of-gandhi-and-the-devil?r=7inm4&utm_campaign=post&utm_medium=web&utm_source=#details). Not writing because I have not written recently is - quite clearly - a lousy reason. After not having written for a while, writing about how I write seems appropriately self-referential for this Substack. And finally, with prose and code [converging rapidly](https://www.nature.com/articles/d41586-022-04383-z), a reflection on the architecture of text might provide unexpected insights into [how AI thinks](https://www.alignmentforum.org/posts/vJFdjigzmcXMhNTsx/simulators). And maybe looking at my process allows some people to derive a generator[^3]. Sooo~
 
 ### Je Vous présente ~~`TSPSI~~`.
 
@@ -81,13 +81,13 @@ Here is what the landscape looks like (I went out and looked)/Here is what I thi
 
 What’s next?
 
-Now that we have an improved view of the territory, we can describe ‘[the delta](https://universalprior.substack.com/p/on-not-reading-papers)’ and the new territory that has become accessible. Again, be humble (don’t oversell) but also keep in mind that you are in the best position to see the new territory, given how familiar you are with your work.
+Now that we have an improved view of the territory, we can describe ‘[the delta](https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-not-reading-papers)’ and the new territory that has become accessible. Again, be humble (don’t oversell) but also keep in mind that you are in the best position to see the new territory, given how familiar you are with your work.
 
 ### Musings
 
 While the TSPSI framework was introduced to me as a framework for academic writing, I’m applying it much more broadly. For example, whenever I have a blank page in front of me that I want to fill with words, I create five headers and write down thoughts as they appear in the appropriate section. This is particularly fun with a tool like [Roam Research](https://roamresearch.com/), where I can drag and drop thoughts from outside the workspace into the list and rearrange things on the fly.
 
-When fleshing out the sections, I tend to use [language models](https://universalprior.substack.com/p/making-of-ian) to expand my notes into prose. But, perhaps most important lesson I’ve learned in the last year is that [resampling is a superpower](https://generative.ink/posts/loom-interface-to-the-multiverse/) \- a small language model that produces completions fast (so that Idon'tdiscard completions I don’t like) can be much more useful than a larger language model that is slow (so that I can only get one completion).
+When fleshing out the sections, I tend to use [language models](https://kirchner-jan.github.io/minimalprior/posts/universalprior/making-of-ian) to expand my notes into prose. But, perhaps most important lesson I’ve learned in the last year is that [resampling is a superpower](https://generative.ink/posts/loom-interface-to-the-multiverse/) \- a small language model that produces completions fast (so that Idon'tdiscard completions I don’t like) can be much more useful than a larger language model that is slow (so that I can only get one completion).
 
 This way, I can get to a first draft very fast; but to go from there to something I am satisfied with still requires substantial iterations of editing;
 
@@ -106,11 +106,11 @@ The amount of time we can invest in working on a text is unbounded. But clearly,
 
 Having revealed my secret sauce for writing, consider going through some of my older posts, such as
 
-  * [The greedy doctor problem](https://universalprior.substack.com/p/the-greedy-doctor-problem)
+  * [The greedy doctor problem](https://kirchner-jan.github.io/minimalprior/posts/universalprior/the-greedy-doctor-problem)
 
-  * [Making of #IAN](https://universalprior.substack.com/p/making-of-ian)
+  * [Making of #IAN](https://kirchner-jan.github.io/minimalprior/posts/universalprior/making-of-ian)
 
-  * [The Unreasonable Feasibility Of Playing Chess Under The Influence](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing)
+  * [The Unreasonable Feasibility Of Playing Chess Under The Influence](https://kirchner-jan.github.io/minimalprior/posts/universalprior/the-unreasonable-feasibility-of-playing)
 
 
 
@@ -123,7 +123,7 @@ I’m happy to have written this! I’ve wanted to have a reference for the TSPS
 
 At the same time, I always feel a bit dissatisfied about posts that don’t have any data or simulations. But those also tend to take a lot more time, and clash a bit with what I do in my dayjob, so I’m a bit hesitant to go in that direction. Hopefully, sometime soon I’ll return to that. Let me know what you think!
 
-[^1]:At OAI, I go by my middle name (Hendrik) to [mitigate domain clashes](https://universalprior.substack.com/p/a-quick-one-while-hes-away#:~:text=were%20also%20called-,Jan,-.%20In%20university%2C%20I). Unfortunately, I’ve introduced myself as Jan to some people outside of work, so I tend not to react when anyone calls me.
+[^1]:At OAI, I go by my middle name (Hendrik) to [mitigate domain clashes](https://kirchner-jan.github.io/minimalprior/posts/universalprior/a-quick-one-while-hes-away#:~:text=were%20also%20called-,Jan,-.%20In%20university%2C%20I). Unfortunately, I’ve introduced myself as Jan to some people outside of work, so I tend not to react when anyone calls me.
 
 [^2]:And it’s conceited to assume that you have a writing muscle in the first place. Do as I say, not as I do.
 

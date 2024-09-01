@@ -168,7 +168,7 @@ In conclusion, we have demonstrated a number of parallels between addicts and mi
 
 [^10]:The [linked article](https://www.alignmentforum.org/s/r9tYkB2a8Fp4DN8yB/p/zthDPAjh9w6Ytbeks) provides a list of requirements for deceptive alignment to arise and one of the requirements is “ _The mesa-optimizer must expect the threat of modification to eventually go away, either due to training ending or because of actions taken by the mesa-optimizer._ ” We don’t see a clean way for mapping this onto the addiction model.
 
-[^11]:[Seagulls do it](https://www.washingtonpost.com/archive/opinions/1987/09/13/they-lie-cheat-and-maybe-think/032e22d2-5412-4e5d-b328-2ce55a3dc951/), so we must assume that [albatrosses do, too](https://universalprior.substack.com/p/soldiers-scouts-and-albatrosses).
+[^11]:[Seagulls do it](https://www.washingtonpost.com/archive/opinions/1987/09/13/they-lie-cheat-and-maybe-think/032e22d2-5412-4e5d-b328-2ce55a3dc951/), so we must assume that [albatrosses do, too](https://kirchner-jan.github.io/minimalprior/posts/universalprior/soldiers-scouts-and-albatrosses).
 
 [^12]:Certainly a less extreme intervention than “[just pulling the plug](https://medium.com/swlh/can-we-just-turn-off-dangerous-ai-6cf3ca6d83ba)”.
 

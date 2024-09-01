@@ -27,7 +27,7 @@ This story is not very interesting[^2] for anyone who's not directly involved. T
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_158.png)
 
-The thread lays out how Zillow relied too much on their [automatic estimates](https://en.wikipedia.org/wiki/Zillow#Zestimate), which ([ex-ante](https://universalprior.substack.com/p/slightly-advanced-decision-theory?s=w#:~:text=is%20coming%20from.-,Diverse%20detours.,-On%20the%20topic)) looked good on average, but (ex-post) manifested in the worst possible way[^3]. Or, in the words of the OP:
+The thread lays out how Zillow relied too much on their [automatic estimates](https://en.wikipedia.org/wiki/Zillow#Zestimate), which ([ex-ante](https://kirchner-jan.github.io/minimalprior/posts/universalprior/slightly-advanced-decision-theory?s=w#:~:text=is%20coming%20from.-,Diverse%20detours.,-On%20the%20topic)) looked good on average, but (ex-post) manifested in the worst possible way[^3]. Or, in the words of the OP:
 
 > "[They mistook] an adversarial environment for a random one."
 
@@ -155,7 +155,7 @@ These factors combined make me excited about exploring this direction further to
 
 [^2]:How much is $420 million again? My gut feeling is that this type of snafu happens somewhere in the world every other week.
 
-[^3]:In the same way that the maximum of a set of random variables [can be overwhelmingly good in expectation](https://universalprior.substack.com/p/slightly-advanced-decision-theory?s=w#:~:text=is%20coming%20from.-,Diverse%20detours.,-On%20the%20topic), the minimum of the same set is terrible (in expectation). That's the power of choice.
+[^3]:In the same way that the maximum of a set of random variables [can be overwhelmingly good in expectation](https://kirchner-jan.github.io/minimalprior/posts/universalprior/slightly-advanced-decision-theory?s=w#:~:text=is%20coming%20from.-,Diverse%20detours.,-On%20the%20topic), the minimum of the same set is terrible (in expectation). That's the power of choice.
 
 [^4]:Well, not always. That's the point of this post.
 

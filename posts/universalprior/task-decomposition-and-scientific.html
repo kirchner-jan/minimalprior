@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="" >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-    <meta name="author" content="Jan Kirchner" />
-      <meta name="dcterms.date" content="2022-01-31" />
-        <title>minimalprior</title>
-    <link rel="stylesheet" href="../../reset.css" />
-    <link rel="stylesheet" href="../../index.css" />
-      </head>
+  <meta name="author" content="Jan Kirchner" />
+  <meta name="dcterms.date" content="2022-01-31" />
+  <title>minimalprior</title>
+  <link rel="stylesheet" href="../../reset.css" />
+  <link rel="stylesheet" href="../../index.css" />
+</head>
 
 <body>
-    <table class="header">
+  <table class="header">
     <tr>
       <td colspan="2" rowspan="2" class="width-auto">
         <h1 class="title"><a href="https://kirchner-jan.github.io/minimalprior/"
@@ -26,114 +26,107 @@
     <tr>
       <th class="width-min">Author</th>
       <td class="width-auto"><a href="https://universalprior.substack.com/">Jan
-Kirchner</a></td>
+          Kirchner</a></td>
     </tr>
   </table>
-      <nav id="TOC" role="doc-toc">
-        <ul class="incremental">
-        <li><a href="#astonishing-asymmetries"
-        id="toc-astonishing-asymmetries"><strong>Astonishing
-        Asymmetries</strong></a></li>
-        <li><a href="#recursive-raillery"
-        id="toc-recursive-raillery"><strong>Recursive
-        Raillery</strong></a></li>
-        <li><a href="#frenzied-factorization"
-        id="toc-frenzied-factorization"><strong>Frenzied
-        Factorization</strong></a></li>
-        <li><a href="#dense-discoveries"
-        id="toc-dense-discoveries"><strong>Dense
-        Discoveries</strong></a></li>
-        </ul>
+  <nav id="TOC" role="doc-toc">
+    <ul class="incremental">
+      <li><a href="#astonishing-asymmetries" id="toc-astonishing-asymmetries"><strong>Astonishing
+            Asymmetries</strong></a></li>
+      <li><a href="#recursive-raillery" id="toc-recursive-raillery"><strong>Recursive
+            Raillery</strong></a></li>
+      <li><a href="#frenzied-factorization" id="toc-frenzied-factorization"><strong>Frenzied
+            Factorization</strong></a></li>
+      <li><a href="#dense-discoveries" id="toc-dense-discoveries"><strong>Dense
+            Discoveries</strong></a></li>
+    </ul>
   </nav>
-    <p><em>Meta: As this post is all about summarization (and since I
-    value your time!), I’m experimenting with putting a</em>
+  <p><em>Meta: As this post is all about summarization (and since I
+      value your time!), I’m experimenting with putting a</em>
     <strong><code>one sentence</code></strong>
     <strong><code>summary</code></strong> _ <strong>``</strong> at the
     beginning of each paragraph. Let me know if you hate this in the
-    comments._</p>
-    <h2 id="astonishing-asymmetries"><strong>Astonishing
-    Asymmetries</strong></h2>
-    <p><strong><code>There is a curious asymmetry in how difficult it is to make something versus how easy it is to evaluate it.</code></strong>
+    comments._
+  </p>
+  <h2 id="astonishing-asymmetries"><strong>Astonishing
+      Asymmetries</strong></h2>
+  <p>
+    <strong><code>There is a curious asymmetry in how difficult it is to make something versus how easy it is to evaluate it.</code></strong>
     After working on an idea for a couple of days, I usually run my work
     by a friend or<sup>[1]</sup> colleague once I <em>think</em> I have
     found a solution. More often than not, said colleagues manage to
     find a flaw in my argument in 5 minutes. While I can’t deny that
     some of them are smarter than me, they are <em>not</em> smart enough
     to do the same amount of mental work in 5 minutes that took me
-    several days. They are no <a
-    href="https://fantasticanachronism.com/2021/03/23/two-paths-to-the-future/">clones
-    of John von Neumann</a><sup>[2]</sup>.</p>
-    <div class="sidenote">
+    several days. They are no <a href="https://fantasticanachronism.com/2021/03/23/two-paths-to-the-future/">clones
+      of John von Neumann</a><sup>[2]</sup>.
+  </p>
+  <div class="sidenote">
     <p>[2] </p>
     <p>Or, if they are, I would be shocked that the topic never came up
-    during lunch before.</p>
-    </div>
-    <div class="sidenote">
+      during lunch before.</p>
+  </div>
+  <div class="sidenote">
     <p>[1] </p>
     <p>Not an XOR!</p>
-    </div>
-    <p><strong><code>We might leverage that asymmetry for AI Alignment.</code></strong>
+  </div>
+  <p><strong><code>We might leverage that asymmetry for AI Alignment.</code></strong>
     This asymmetry pops up all over the place, sometimes making life <a
-    href="https://www.ijert.org/pvs-np-problem-and-its-application-in-public-key-cryptography">better</a>,
-    sometimes making it <a
-    href="https://slatestarcodex.com/2017/03/24/guided-by-the-beauty-of-our-weapons/">worse</a>,
-    and sometimes <a
-    href="https://blog.codinghorror.com/the-girl-who-proved-p-np/">driving
-    computer scientists into madness</a>. Nassim Taleb has written <a
-    href="https://en.wikipedia.org/wiki/Antifragile_%28book%29">several</a><a
-    href="https://en.wikipedia.org/wiki/Skin_in_the_Game_%28book%29">books</a>
-    about it. And it also sits at the heart of a specific <a
-    href="https://openai.com/blog/debate/">family</a> of <a
-    href="https://ai-alignment.com/iterated-distillation-and-amplification-157debfd1616">proposals</a>
+      href="https://www.ijert.org/pvs-np-problem-and-its-application-in-public-key-cryptography">better</a>,
+    sometimes making it <a href="https://slatestarcodex.com/2017/03/24/guided-by-the-beauty-of-our-weapons/">worse</a>,
+    and sometimes <a href="https://blog.codinghorror.com/the-girl-who-proved-p-np/">driving
+      computer scientists into madness</a>. Nassim Taleb has written <a
+      href="https://en.wikipedia.org/wiki/Antifragile_%28book%29">several</a><a
+      href="https://en.wikipedia.org/wiki/Skin_in_the_Game_%28book%29">books</a>
+    about it. And it also sits at the heart of a specific <a href="https://openai.com/blog/debate/">family</a> of <a
+      href="https://ai-alignment.com/iterated-distillation-and-amplification-157debfd1616">proposals</a>
     for how we might control an artificial intelligence that is <a
-    href="https://arbital.greaterwrong.com/p/Vinge_principle?l=1c0">smarter
-    than us</a>: Perhaps we can set the AI up in a way that we have the
+      href="https://arbital.greaterwrong.com/p/Vinge_principle?l=1c0">smarter
+      than us</a>: Perhaps we can set the AI up in a way that we have the
     asymmetry on our side? Then we might be able to steer the AI (even
     though it is a lot smarter than us) and use its smarts to achieve a
     positive outcome for all of humanity. That would be great.</p>
-    <p><strong><code>For this strategy to work we need to</code></strong>
+  <p><strong><code>For this strategy to work we need to</code></strong>
     _ <strong><code>decompose</code></strong>_
     <strong><code>complex tasks.</code></strong> <a
-    href="https://www.lesswrong.com/s/xezt7HYfpWR6nwp7Z/p/vhfATmAoJcN8RqGg6">But
-    it turns out that</a> a critical property for these proposals to
+      href="https://www.lesswrong.com/s/xezt7HYfpWR6nwp7Z/p/vhfATmAoJcN8RqGg6">But
+      it turns out that</a> a critical property for these proposals to
     work out is that we can <em>decompose</em> tasks into simpler
     subtasks. It is an empirical question whether this is possible in
-    general, and some <a
-    href="https://ought.org/updates/2020-01-11-arguments">initial
-    results</a> looked a bit discouraging<sup>[3]</sup>. But there is
-    also more recent research on “<a
-    href="https://arxiv.org/abs/2109.10862">Recursively Summarizing
-    Books with Human Feedback</a>” that looks more
+    general, and some <a href="https://ought.org/updates/2020-01-11-arguments">initial
+      results</a> looked a bit discouraging<sup>[3]</sup>. But there is
+    also more recent research on “<a href="https://arxiv.org/abs/2109.10862">Recursively Summarizing
+      Books with Human Feedback</a>” that looks more
     encouraging<sup>[4]</sup>. What is this proposal, and why is it
-    encouraging? I’m glad you ask.</p>
-    <div class="sidenote">
+    encouraging? I’m glad you ask.
+  </p>
+  <div class="sidenote">
     <p>[4] </p>
     <p>Yey humanity!</p>
-    </div>
-    <div class="sidenote">
+  </div>
+  <div class="sidenote">
     <p>[3] </p>
     <p>Some people also argue that we have to be even more thoughtful in
-    leveraging the asymmetry because it’s not enough to control the AI -
-    we also have to control it <a
-    href="https://www.alignmentforum.org/tag/inner-alignment">robustly</a>.</p>
-    </div>
-    <h2 id="recursive-raillery"><strong>Recursive Raillery</strong></h2>
-    <p><strong><code>Summarizing books is an instructive test case.</code></strong>
+      leveraging the asymmetry because it’s not enough to control the AI -
+      we also have to control it <a href="https://www.alignmentforum.org/tag/inner-alignment">robustly</a>.</p>
+  </div>
+  <h2 id="recursive-raillery"><strong>Recursive Raillery</strong></h2>
+  <p><strong><code>Summarizing books is an instructive test case.</code></strong>
     Reading an entire book and summarizing its content is <a
-    href="https://www.cold-takes.com/reading-books-vs-engaging-with-them/">hard
-    work and costs time</a>, so it would be fantastic if we could get
+      href="https://www.cold-takes.com/reading-books-vs-engaging-with-them/">hard
+      work and costs time</a>, so it would be fantastic if we could get
     someone else to do it for us. But how can we trust someone to do a
     good job at the summary? How do we know they are not leaving out
     important things or that the resulting summary is completely
     decoupled from the original text<sup>[5]</sup>?</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[5] </p>
     <p>A while ago, I experimented with recursively summarizing a
-    research paper of mine, and the resulting top-level summary was
-    talking a <em>lot</em> about owls. There is no mention of owls in my
-    paper, except in one sentence towards the end.</p>
-    </div>
-    <p><strong><code>There is a natural, recursive strategy for summarization.</code></strong>
+      research paper of mine, and the resulting top-level summary was
+      talking a <em>lot</em> about owls. There is no mention of owls in my
+      paper, except in one sentence towards the end.</p>
+  </div>
+  <p><strong><code>There is a natural, recursive strategy for summarization.</code></strong>
     Fortunately, summarizing text can be broken down into simpler
     subtasks. To generate a summary of a book, generate a summary of all
     the chapters and then combine those. To generate a summary of a
@@ -141,22 +134,22 @@ Kirchner</a></td>
     those. To generate a summary of a paragraph, take all the sentences
     and smush them together hard until they look
     summary-y<sup>[6]</sup>.</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[6] </p>
     <p>I apologize for this abuse of language, but I could not
-    resist.</p>
-    </div>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_26.png" />
+      resist.</p>
+  </div>
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_26.png" />
     <strong>Figure 1.</strong> <strong>(a)</strong> The story “Alice in
     Wonderland” is split into six parts. The orange dots represent
     passages of approximately equal length from the source text.
     Illustration in the background from <a
-    href="https://en.wikipedia.org/wiki/Illustrators_of_Alice%27s_Adventures_in_Wonderland#:~:text=The%20illustrator%20for%20the%20original,best%20known%20illustrations%20ever%20published.">John
-    Tenniel</a>. <strong>(b)</strong><a
-    href="https://openaipublic.blob.core.windows.net/recursive-book-summ/website/index.html?data_id=175b%2F4&amp;dataset=gutenberg#/gutenberg">Recursive
-    summarization of Alice in Wonderland from OpenAI</a>.</p>
-    <p><strong><code>Once decomposed, each subtask is easier to verify.</code></strong>
+      href="https://en.wikipedia.org/wiki/Illustrators_of_Alice%27s_Adventures_in_Wonderland#:~:text=The%20illustrator%20for%20the%20original,best%20known%20illustrations%20ever%20published.">John
+      Tenniel</a>. <strong>(b)</strong><a
+      href="https://openaipublic.blob.core.windows.net/recursive-book-summ/website/index.html?data_id=175b%2F4&amp;dataset=gutenberg#/gutenberg">Recursive
+      summarization of Alice in Wonderland from OpenAI</a>.
+  </p>
+  <p><strong><code>Once decomposed, each subtask is easier to verify.</code></strong>
     The aforementioned asymmetry shows up at each summarization step,
     which is cumbersome to do but relatively easy to <em>verify</em> :
     it’s not too much work to read a few sentences and to see if the
@@ -166,226 +159,213 @@ Kirchner</a></td>
     steer) the steps at scale, then every sub-task will be solved
     accurately, and also the summary of the entire book ends up being
     accurate.</p>
-    <p><strong><code>Reward modeling is a scalable technique for verification.</code></strong>
+  <p><strong><code>Reward modeling is a scalable technique for verification.</code></strong>
     “<a href="https://arxiv.org/abs/2109.10862">Recursively Summarizing
-    Books with Human Feedback</a>” demonstrates that “<a
-    href="https://arxiv.org/abs/1811.07871">reward modeling</a>” can do
+      Books with Human Feedback</a>” demonstrates that “<a href="https://arxiv.org/abs/1811.07871">reward modeling</a>”
+    can do
     the trick. We can capture human preferences for one summary over
     another in a reward model, serving as a target for the summarization
     process. The result is a collection of pretty good summaries of <a
-    href="https://openaipublic.blob.core.windows.net/recursive-book-summ/website/index.html?data_id=175b%2F4&amp;dataset=gutenberg#/gutenberg">hundreds
-    of books</a>, produced by repeatedly breaking down the summarization
+      href="https://openaipublic.blob.core.windows.net/recursive-book-summ/website/index.html?data_id=175b%2F4&amp;dataset=gutenberg#/gutenberg">hundreds
+      of books</a>, produced by repeatedly breaking down the summarization
     task into simpler subtasks. Pretty nifty, right?</p>
-    <h2 id="frenzied-factorization"><strong>Frenzied
-    Factorization</strong></h2>
-    <p><strong><code>Summarization is idempotent and books are highly structured.</code></strong>
+  <h2 id="frenzied-factorization"><strong>Frenzied
+      Factorization</strong></h2>
+  <p><strong><code>Summarization is idempotent and books are highly structured.</code></strong>
     Well, of course there are caveats. As alluded to above, summarising
     books lends itself well to decomposition<sup>[7]</sup>. This is due
     to two factors:</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[7] </p>
     <p>I’m not sure if it is only evident in hindsight that
-    summarization <em>should</em> work well.</p>
-    </div>
-    <ol class="incremental" type="1">
-    <li>The summarization operator is <a
-    href="https://en.wikipedia.org/wiki/Idempotence">idempotent</a>: the
-    summary of summaries is again a summary.</li>
-    <li>Books have (<a
-    href="https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure">almost
-    always</a>) a neat linear and hierarchical structure.</li>
-    </ol>
-    <p>As a consequence, we can solve each step of the process with the
+      summarization <em>should</em> work well.</p>
+  </div>
+  <ol class="incremental" type="1">
+    <li>The summarization operator is <a href="https://en.wikipedia.org/wiki/Idempotence">idempotent</a>: the
+      summary of summaries is again a summary.</li>
+    <li>Books have (<a href="https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure">almost
+        always</a>) a neat linear and hierarchical structure.</li>
+  </ol>
+  <p>As a consequence, we can solve each step of the process with the
     same operation, <code>summarize()</code>, and there is a
     <em>natural</em> order in which we can decompose the book
-    (<code>book -&gt; chapters -&gt; paragraphs -&gt; sentences</code>).</p>
-    <p><strong><code>Decomposition might be difficult in general.</code></strong>
+    (<code>book -&gt; chapters -&gt; paragraphs -&gt; sentences</code>).
+  </p>
+  <p><strong><code>Decomposition might be difficult in general.</code></strong>
     Can we hope to find a decomposition in general? There is a <a
-    href="https://www.lesswrong.com/posts/tPqQdLCuxanjhoaNs/reductionism">strong
-    case</a> that <em>nothing fundamentally complex exists</em>.
-    Complexity is in the <a
-    href="https://en.wikipedia.org/wiki/Map%E2%80%93territory_relation">map,
-    not the territory</a>. Everything <em>can</em> be neatly decomposed
+      href="https://www.lesswrong.com/posts/tPqQdLCuxanjhoaNs/reductionism">strong
+      case</a> that <em>nothing fundamentally complex exists</em>.
+    Complexity is in the <a href="https://en.wikipedia.org/wiki/Map%E2%80%93territory_relation">map,
+      not the territory</a>. Everything <em>can</em> be neatly decomposed
     into disjoint pieces or dissolved whenever the <a
-    href="https://www.lesswrong.com/posts/Mc6QcrsbH5NRXbCRX/dissolving-the-question">original
-    thing is confused</a>. However, before we <em>know</em> how to
+      href="https://www.lesswrong.com/posts/Mc6QcrsbH5NRXbCRX/dissolving-the-question">original
+      thing is confused</a>. However, before we <em>know</em> how to
     decompose something into its constituents correctly, we can get <a
-    href="https://en.wikipedia.org/wiki/Phlogiston_theory">very
-    confused</a> about how it works<sup>[8]</sup>.</p>
-    <div class="sidenote">
+      href="https://en.wikipedia.org/wiki/Phlogiston_theory">very
+      confused</a> about how it works<sup>[8]</sup>.</p>
+  <div class="sidenote">
     <p>[8] </p>
     <p>I am ~60% sure that Scott Garrabrant’s work on <a
-    href="https://www.lesswrong.com/posts/N5Jm6Nj4HkNKySA5Z/finite-factored-sets">finite
-    factored sets</a> is relevant here, but I am confused about how
-    exactly. Okay, actually, make that ~30%.</p>
-    </div>
-    <p><strong><code>Debate as one proposal for automatic decomposition.</code></strong>
-    Consequently, finding the correct lens for <a
-    href="https://distill.pub/2020/circuits/zoom-in/">zooming in</a>,
+        href="https://www.lesswrong.com/posts/N5Jm6Nj4HkNKySA5Z/finite-factored-sets">finite
+        factored sets</a> is relevant here, but I am confused about how
+      exactly. Okay, actually, make that ~30%.</p>
+  </div>
+  <p><strong><code>Debate as one proposal for automatic decomposition.</code></strong>
+    Consequently, finding the correct lens for <a href="https://distill.pub/2020/circuits/zoom-in/">zooming in</a>,
     and uncovering the <em>correct</em> way to decompose a problem, is
     non-trivial. One proposal for producing <em>correct</em> problem
-    decompositions is <a
-    href="https://openai.com/blog/debate/">debate</a>, where the
+    decompositions is <a href="https://openai.com/blog/debate/">debate</a>, where the
     components of an argument are exposed through adversarial probing.
     It seems, however, that some <a
-    href="https://www.alignmentforum.org/posts/PJLABqQ962hZEqhdB/debate-update-obfuscated-arguments-problem">rather
-    sticky issues</a> persist. Also, people <a
-    href="https://ought.org/updates/2020-01-11-arguments">tend to be
-    kind of bad</a> at evaluating arguments. Decomposition through
+      href="https://www.alignmentforum.org/posts/PJLABqQ962hZEqhdB/debate-update-obfuscated-arguments-problem">rather
+      sticky issues</a> persist. Also, people <a href="https://ought.org/updates/2020-01-11-arguments">tend to be
+      kind of bad</a> at evaluating arguments. Decomposition through
     debate is not looking too promising right now.</p>
-    <p><strong><code>Debate in real-life cannot robustly decompose problems.</code></strong>
+  <p><strong><code>Debate in real-life cannot robustly decompose problems.</code></strong>
     In retrospect, perhaps we shouldn’t be surprised. <a
-    href="https://www.youtube.com/watch?v=VcHPmVxtFw8&amp;ab_channel=SarahZ">Real
-    debates kind of suck</a>. Something akin to debate led the ancient
-    Greeks to believe that <a
-    href="https://en.wikipedia.org/wiki/Thales_of_Miletus">everything is
-    water</a> and medieval scholars to think that fire is made from <a
-    href="https://en.wikipedia.org/wiki/Phlogiston_theory">phlogiston</a>
-    and to ponder the <a
-    href="https://en.wikipedia.org/wiki/How_many_angels_can_dance_on_the_head_of_a_pin%3F">number
-    of angels on the tip of a needle</a>. A debate doesn’t correctly
+      href="https://www.youtube.com/watch?v=VcHPmVxtFw8&amp;ab_channel=SarahZ">Real
+      debates kind of suck</a>. Something akin to debate led the ancient
+    Greeks to believe that <a href="https://en.wikipedia.org/wiki/Thales_of_Miletus">everything is
+      water</a> and medieval scholars to think that fire is made from <a
+      href="https://en.wikipedia.org/wiki/Phlogiston_theory">phlogiston</a>
+    and to ponder the <a href="https://en.wikipedia.org/wiki/How_many_angels_can_dance_on_the_head_of_a_pin%3F">number
+      of angels on the tip of a needle</a>. A debate doesn’t correctly
     leverage the asymmetry between building and criticizing. In
     particular, a <a
-    href="https://www.alignmentforum.org/posts/PJLABqQ962hZEqhdB/debate-update-obfuscated-arguments-problem">particularly
-    convoluted argument</a> is too hard to disprove.</p>
-    <p><strong><code>Scientific inquiry as a robust technique for decomposition.</code></strong>
+      href="https://www.alignmentforum.org/posts/PJLABqQ962hZEqhdB/debate-update-obfuscated-arguments-problem">particularly
+      convoluted argument</a> is too hard to disprove.</p>
+  <p><strong><code>Scientific inquiry as a robust technique for decomposition.</code></strong>
     <a href="https://youtu.be/1bSPNboKCzM?t=966">There is, of course,
-    another way of looking at this.</a> We <em>do</em> have a much more
+      another way of looking at this.</a> We <em>do</em> have a much more
     robust method for decomposing problems: scientific inquiry. Half of
     the research process is about <a
-    href="https://www.quora.com/How-long-does-it-take-for-a-PhD-scholar-to-decide-on-a-research-topic">finding
-    the question</a>. Similarly, the hard part of proving a complicated
+      href="https://www.quora.com/How-long-does-it-take-for-a-PhD-scholar-to-decide-on-a-research-topic">finding
+      the question</a>. Similarly, the hard part of proving a complicated
     mathematical theorem is <em>seeing</em> why it has to be true;
     often, writing the proof can be almost mechanic. If we could
     automate scientific inquiry, we might get to a point where we can
     <em>reliably</em> discover appropriate decompositions of
-    problems.</p>
-    <h2 id="dense-discoveries"><strong>Dense Discoveries</strong></h2>
-    <p><strong><code>Automating scientific inquiry is hard.</code></strong>
-    Just saying “science!” is easy, of course. While we have <a
-    href="https://openai.com/blog/openai-api/">great tools</a> for
-    automating debates, we <a
-    href="https://en.wikipedia.org/wiki/Philosophy_of_science">do not
-    even have a clear idea</a> of what the scientific method
+    problems.
+  </p>
+  <h2 id="dense-discoveries"><strong>Dense Discoveries</strong></h2>
+  <p><strong><code>Automating scientific inquiry is hard.</code></strong>
+    Just saying “science!” is easy, of course. While we have <a href="https://openai.com/blog/openai-api/">great
+      tools</a> for
+    automating debates, we <a href="https://en.wikipedia.org/wiki/Philosophy_of_science">do not
+      even have a clear idea</a> of what the scientific method
     <em>actually looks like</em>. Most knowledge about science is
     implicit, and an <a
-    href="http://philsci-archive.pitt.edu/14127/1/On%20Serendipity%20in%20Science%20FINAL_preprint.pdf">unhealthy
-    admiration of serendipity</a> pervades academia. <a
-    href="https://universalprior.substack.com/p/making-of-ian">I</a> <a
-    href="https://universalprior.substack.com/p/on-scaling-academia">have</a>
-    <a
-    href="https://universalprior.substack.com/p/on-not-reading-papers">some</a>
-    <a
-    href="https://universalprior.substack.com/p/on-automatic-ideas">ideas</a>
+      href="http://philsci-archive.pitt.edu/14127/1/On%20Serendipity%20in%20Science%20FINAL_preprint.pdf">unhealthy
+      admiration of serendipity</a> pervades academia. <a
+      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/making-of-ian">I</a> <a
+      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-scaling-academia">have</a>
+    <a href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-not-reading-papers">some</a>
+    <a href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-automatic-ideas">ideas</a>
     for automating parts of the research process, but the core of the
-    problem eludes me<sup>[9]</sup>.</p>
-    <div class="sidenote">
+    problem eludes me<sup>[9]</sup>.
+  </p>
+  <div class="sidenote">
     <p>[9] </p>
     <p>It’s a hard problem.</p>
-    </div>
-    <p><strong><code>A decomposition has semantics and syntax.</code></strong>
+  </div>
+  <p><strong><code>A decomposition has semantics and syntax.</code></strong>
     But I <em>do</em> have a trace of an idea. The first observation is
     that there is something like <a
-    href="https://universalprior.substack.com/p/applied-mathematical-logic-for-the">semantics
-    and syntax</a> of a decomposition. The semantics is the content of
+      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/applied-mathematical-logic-for-the">semantics
+      and syntax</a> of a decomposition. The semantics is the content of
     the decomposition, and the syntax is the structure that ties the
     content together. The second observation is that <strong>for a
-    successfully decomposed task, the semantic interplay of the
-    individual components mirrors the structure in which they are
-    arranged.</strong></p>
-    <p>Okay, I realize that probably makes almost no sense. Let’s look
+      successfully decomposed task, the semantic interplay of the
+      individual components mirrors the structure in which they are
+      arranged.</strong></p>
+  <p>Okay, I realize that probably makes almost no sense. Let’s look
     at an example.</p>
-    <p><strong><code>Semantic component of a decomposition.</code></strong>
+  <p><strong><code>Semantic component of a decomposition.</code></strong>
     We take the decomposed story of Alice in Wonderland as a starting
     point. We want to ignore the decomposition structure for a second
     and just focus on the resulting text. In this Figure, I illustrate
     how I took the separate pieces of the source text and the summaries,
     embedded them in a high-dimensional vector space, and computed the
     similarity between all the components.</p>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_27.png" />
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_27.png" />
     <strong>Figure 2: (a)</strong> Passing the paragraphs of the
     original text and the intermediate and final summaries (left)
     through a sentence embedding model (middle; <a
-    href="https://www.sbert.net/docs/pretrained_models.html">all-mpnet-base-v2</a>)
+      href="https://www.sbert.net/docs/pretrained_models.html">all-mpnet-base-v2</a>)
     to obtain high-dimensional vector representations (right; 768
     dimensions). <strong>(b)</strong> Correlation matrix of sentence
     embeddings of different parts of the recursive summarization
-    process.</p>
-    <p>The resulting correlation matrix is clearly not random. For one,
+    process.
+  </p>
+  <p>The resulting correlation matrix is clearly not random. For one,
     there are blocks of high correlation along the diagonal, which stem
     from the fact that paragraphs nearby in the text tend to share
     semantic features<sup>[10]</sup>.</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[10] </p>
     <p>I’m arranging the rows and columns of the correlation matrix to
-    follow the story’s sequential ordering.</p>
-    </div>
-    <p>Another observation is that there are two highly correlated
+      follow the story’s sequential ordering.</p>
+  </div>
+  <p>Another observation is that there are two highly correlated
     off-diagonals indicating the similarity of the depth two summary and
     the source text. There is also a much fainter set of four additional
     diagonals indicating the similarity between the depth one summary
     and multiple portions of the depth two summaries. The depth zero
     summaries should correlate with <em>everything</em> , but it’s tough
     to see because it is just a single row and column.</p>
-    <p><strong><code>Syntactic component of the decomposition.</code></strong>
+  <p><strong><code>Syntactic component of the decomposition.</code></strong>
     Now comes the kicker. Instead of focusing on the resulting text, we
     might also exclusively focus on the resulting <em>structure</em> of
     the decomposition. In this Figure, I illustrate how I took the tree
     decoupled from the text, embedded the nodes in a high-dimensional
     vector space, and computed the similarity between all the
     components.</p>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_28.png" />
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_28.png" />
     <strong>Figure 3: (a)</strong> Passing the graph structure of the
     summarization process (left) through a graph embedding model
-    (middle; <a
-    href="https://github.com/VHRanger/nodevectors">GGVec</a>) to obtain
+    (middle; <a href="https://github.com/VHRanger/nodevectors">GGVec</a>) to obtain
     high-dimensional vector representations of the nodes (right; 30
     dimensions). <strong>(b)</strong> Correlation matrix of node
     embeddings of different parts of the recursive summarization
-    process.</p>
-    <p>I won’t have to repeat the spiel of the previous paragraph. You
+    process.
+  </p>
+  <p>I won’t have to repeat the spiel of the previous paragraph. You
     can see that there is again clearly a pattern and that <strong>this
-    pattern looks a lot like the pattern from the previous
-    figure</strong>. This is what I mean when I say that semantic and
+      pattern looks a lot like the pattern from the previous
+      figure</strong>. This is what I mean when I say that semantic and
     syntactic structure match: The way that the tree’s nodes relate to
     each other resembles how the different pieces of text relate to each
     other. This observation might be trivially true, but (I hope) it’s
-    trivially true <a
-    href="https://en.wikipedia.org/wiki/Semantic_theory_of_truth">in an
-    interesting way</a><sup>[11]</sup>.</p>
-    <div class="sidenote">
+    trivially true <a href="https://en.wikipedia.org/wiki/Semantic_theory_of_truth">in an
+      interesting way</a><sup>[11]</sup>.</p>
+  <div class="sidenote">
     <p>[11] </p>
     <p>I had a whole section on Wittgenstein’s <a
-    href="https://en.wikipedia.org/wiki/Picture_theory_of_language">picture
-    theory of language</a> and on the relationship between <a
-    href="https://universalprior.substack.com/p/applied-mathematical-logic-for-the">syntax
-    and semantics in mathematical logic</a> sketched out, but it’s late,
-    and who am I kidding.</p>
-    </div>
-    <p><strong><code>And then, a cliffhanger…</code></strong> What does
+        href="https://en.wikipedia.org/wiki/Picture_theory_of_language">picture
+        theory of language</a> and on the relationship between <a
+        href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/applied-mathematical-logic-for-the">syntax
+        and semantics in mathematical logic</a> sketched out, but it’s late,
+      and who am I kidding.</p>
+  </div>
+  <p><strong><code>And then, a cliffhanger…</code></strong> What does
     this buy us? I don’t have a great answer to that question
     yet<sup>[12]</sup>. I’m running a bunch of experiments on this idea
     to see what it can do, but it’ll take a bit more time to process.
     But since my posts have been getting pretty long recently, and in
-    the spirit of “<a
-    href="https://publiclab.co/building-in-public">building in
-    public</a>,” I’m putting this out there anyway. I’ll update you when
+    the spirit of “<a href="https://publiclab.co/building-in-public">building in
+      public</a>,” I’m putting this out there anyway. I’ll update you when
     I learn more!</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[12] </p>
     <p>Ideally, the distinction between semantics and syntax of
-    decompositions will allow us to automate the process of decomposing.
-    I’m thinking of a type of <a
-    href="https://en.wikipedia.org/wiki/Expectation%E2%80%93maximization_algorithm">EM
-    algorithm</a> that iteratively proposes a hierarchical clustering of
-    elements, attempts a decomposition, compares semantics and syntax,
-    and proposes a new hierarchical clustering. But I’m pretty sure this
-    is not how it’ll work.</p>
-    </div>
-    <p>Subscribe</p>
-    <div class="debug-grid"></div>
+      decompositions will allow us to automate the process of decomposing.
+      I’m thinking of a type of <a href="https://en.wikipedia.org/wiki/Expectation%E2%80%93maximization_algorithm">EM
+        algorithm</a> that iteratively proposes a hierarchical clustering of
+      elements, attempts a decomposition, compares semantics and syntax,
+      and proposes a new hierarchical clustering. But I’m pretty sure this
+      is not how it’ll work.</p>
+  </div>
+  <div class="debug-grid"></div>
   <script src="index.js"></script>
 </body>
 

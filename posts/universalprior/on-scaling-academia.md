@@ -9,7 +9,7 @@ date: 2021-09-20
 
 * * *
 
-> _#[[[IAN says](https://universalprior.substack.com/p/making-of-ian):]] Here is a list of ideas for how to scale up academia:_
+> _#[[[IAN says](https://kirchner-jan.github.io/minimalprior/posts/universalprior/making-of-ian):]] Here is a list of ideas for how to scale up academia:_
 > 
 >   1. Hire more people (who will be able to help you with your research if you have a good idea).
 > 
@@ -121,7 +121,7 @@ Getting a secretary, lab manager, or just someone who can help with illustration
 
  **How to get there?** Perhaps the solution is not as easy as "[just start using agile](https://www.nature.com/articles/d41586-019-01184-9)". [This](https://brainbaking.com/post/2020/02/agile-academia/) post highlights the roadblocks the author ran into when trying to implement the agile framework in a traditional academic context. But the reasons for his failure can be summarized as: “traditional academia is not flexible enough to give project management frameworks a fair shot. It just doesn't compute with the academic mindset.”
 
-I'm not satisfied with that answer. Systematizing has worked well for me in my research and I've been able to increase the number of projects I'm managing by maintaining explicit timelines (and torching projects that consistently run behind schedule). It is called the scientific _method_ for a reason. There are great workflows and frameworks that can be applied in almost arbitrary contexts. And the tools that support researchers are becoming better and more numerous every month (see [IAN](https://universalprior.substack.com/p/making-of-ian) and the like). The time is ripe for truly ambitious scaling of research and new institutions like [New Science](https://newscience.org/) have the potential to be the catalyzer for much of this progress.
+I'm not satisfied with that answer. Systematizing has worked well for me in my research and I've been able to increase the number of projects I'm managing by maintaining explicit timelines (and torching projects that consistently run behind schedule). It is called the scientific _method_ for a reason. There are great workflows and frameworks that can be applied in almost arbitrary contexts. And the tools that support researchers are becoming better and more numerous every month (see [IAN](https://kirchner-jan.github.io/minimalprior/posts/universalprior/making-of-ian) and the like). The time is ripe for truly ambitious scaling of research and new institutions like [New Science](https://newscience.org/) have the potential to be the catalyzer for much of this progress.
 
 * * *
 
@@ -187,7 +187,7 @@ would be genuinely awesome things for academia at large. If I ever get to have m
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_253.png)🎶 We learn to live, when we learn to give, Each other what we need to survive, together alive 🎶
 
-My motivation for thinking about Robo Researchers is exactly the same as the motivation for accepting to supervise students in the first place: A day only has 24 hours and there is so much to do and it’s awesome to have someone help you. And let’s face it: a lot of the “stuff-that-needs-doing” is just grunt work. A typical task for a student of mine is “Can you run those simulations again but with different values of θ and put the results on slides?” or “Can you read up on the effect of the Fragile X mutation on SST interneurons in early development and write me a brief summary?“. If we could get a Robo Researcher to assist with that, that would be a big win for everyone involved. And with a software suite composed of something like [Codex](https://openai.com/blog/openai-codex/), a [fine-tuned language model](https://universalprior.substack.com/p/making-of-ian), and [Ought’s Elicit](https://elicit.org/) I think I am not too far away from making that a reality.
+My motivation for thinking about Robo Researchers is exactly the same as the motivation for accepting to supervise students in the first place: A day only has 24 hours and there is so much to do and it’s awesome to have someone help you. And let’s face it: a lot of the “stuff-that-needs-doing” is just grunt work. A typical task for a student of mine is “Can you run those simulations again but with different values of θ and put the results on slides?” or “Can you read up on the effect of the Fragile X mutation on SST interneurons in early development and write me a brief summary?“. If we could get a Robo Researcher to assist with that, that would be a big win for everyone involved. And with a software suite composed of something like [Codex](https://openai.com/blog/openai-codex/), a [fine-tuned language model](https://kirchner-jan.github.io/minimalprior/posts/universalprior/making-of-ian), and [Ought’s Elicit](https://elicit.org/) I think I am not too far away from making that a reality.
 
 ## Conclusion
 

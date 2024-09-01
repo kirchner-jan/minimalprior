@@ -19,7 +19,7 @@ There is an interesting trope in the movie that's used as a story device: the ma
 
 ##  **🎵 ... in love after love 🎵**
 
-What is the relationship between belief and reality? Some like to think in terms of "territory and map": the territory is everything _out there_. The map is a lossy _mental_ representation of the territory. We know that the [map is not the territory](https://www.lesswrong.com/posts/KJ9MFBPwXGwNpadf2/skill-the-map-is-not-the-territory); sometimes, we are [confused about how things work](https://universalprior.substack.com/p/frankfurt-declaration-on-the-cambridge), sometimes we [treat complex systems as black boxes](https://www.lesswrong.com/posts/tPqQdLCuxanjhoaNs/reductionism), and some things are [not represented in our map](https://xkcd.com/1053/).
+What is the relationship between belief and reality? Some like to think in terms of "territory and map": the territory is everything _out there_. The map is a lossy _mental_ representation of the territory. We know that the [map is not the territory](https://www.lesswrong.com/posts/KJ9MFBPwXGwNpadf2/skill-the-map-is-not-the-territory); sometimes, we are [confused about how things work](https://kirchner-jan.github.io/minimalprior/posts/universalprior/frankfurt-declaration-on-the-cambridge), sometimes we [treat complex systems as black boxes](https://www.lesswrong.com/posts/tPqQdLCuxanjhoaNs/reductionism), and some things are [not represented in our map](https://xkcd.com/1053/).
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_55.png)On the left there’s a map, on the right there’s… Middle earth?
 

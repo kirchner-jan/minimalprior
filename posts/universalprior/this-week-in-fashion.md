@@ -37,7 +37,7 @@ But none of these explanations are quite satisfying (or even mutually exclusive)
 
 ##### Is fashion a form of _power and influence_? 
 
-Let's start with numbers: Global revenue from luxury apparel [comes in at US$82.30bn](https://www.statista.com/outlook/cmo/luxury-goods/luxury-fashion/luxury-apparel/worldwide), which is a so-called [not-insignificant-number](https://universalprior.substack.com/p/on-scaling-academia#:~:text=\).%20Those%20are-,not%2Dsmall%20numbers,-%2C%20but%20they%20pale). [Thanks to the bird app](https://fortune.com/2022/12/13/elo-musk-no-longer-world-richest-person-net-worth-drop/), the richest person on earth is now the CEO of the world's largest luxury goods company[^5].
+Let's start with numbers: Global revenue from luxury apparel [comes in at US$82.30bn](https://www.statista.com/outlook/cmo/luxury-goods/luxury-fashion/luxury-apparel/worldwide), which is a so-called [not-insignificant-number](https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-scaling-academia#:~:text=\).%20Those%20are-,not%2Dsmall%20numbers,-%2C%20but%20they%20pale). [Thanks to the bird app](https://fortune.com/2022/12/13/elo-musk-no-longer-world-richest-person-net-worth-drop/), the richest person on earth is now the CEO of the world's largest luxury goods company[^5].
 
 Is that actually a big deal? Whenever I see large numbers, I do my best to put them into perspective:
 
@@ -92,9 +92,9 @@ Text within this block will maintain its original spacing when published
 There is [more](https://iep.utm.edu/empirical-aesthetics/) [than](https://en.wikipedia.org/wiki/Aesthetics) [one](https://en.wikipedia.org/wiki/Cosmetology) field of academic research that is concerned with that question, but I feel like this type of question must be approached through experiment, not theory. So I aimed to fully submerge myself in the subject matter.
 
   1. First, I read and watched everything that sparked my interest. The [McQueen documentary](https://www.imdb.com/title/tt6510332/) was revelatory, [Bliss Foster](https://www.youtube.com/@BlissFoster/videos) on YouTube makes insightful short video essays, and [The September Issue](https://www.imdb.com/title/tt1331025/) gives a more nuanced picture of the fashion industry than “The Devil Wears Prada”.
-![](../../images/https3A2F2Fsubstack-post-medias3amazonawscom2Fpubl_8.png)Why is there a chicken in this image you ask? [Oh, you poor imbecile](https://universalprior.substack.com/p/soldiers-scouts-and-albatrosses).
+![](../../images/https3A2F2Fsubstack-post-medias3amazonawscom2Fpubl_8.png)Why is there a chicken in this image you ask? [Oh, you poor imbecile](https://kirchner-jan.github.io/minimalprior/posts/universalprior/soldiers-scouts-and-albatrosses).
 
-  1. Second, I studied as I’d study for a test. I’m a big fan of [spaced repetition](https://www.gwern.net/Spaced-repetition) [in Roam Research](https://thinkstack.club/an-introduction-to-roams-delta-function-spaced-repetition/) and create new cards for my system at a whim. A single repetition can improve recall [dramatically](https://www.gwern.net/Spaced-repetition#:~:text=is%20much%20superior%3A-,Wired,-\(original%2C%20Wozniak%3F\)%3B%20massed), and - check that out! - it turns out language models are really good at creating spaced repetition cards for you. In my experience, [learning about the people and movements](https://universalprior.substack.com/p/on-context-and-people) in a field can explain a ton of variability.
+  1. Second, I studied as I’d study for a test. I’m a big fan of [spaced repetition](https://www.gwern.net/Spaced-repetition) [in Roam Research](https://thinkstack.club/an-introduction-to-roams-delta-function-spaced-repetition/) and create new cards for my system at a whim. A single repetition can improve recall [dramatically](https://www.gwern.net/Spaced-repetition#:~:text=is%20much%20superior%3A-,Wired,-\(original%2C%20Wozniak%3F\)%3B%20massed), and - check that out! - it turns out language models are really good at creating spaced repetition cards for you. In my experience, [learning about the people and movements](https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-context-and-people) in a field can explain a ton of variability.
 ![](../../images/https3A2F2Fsubstack-post-medias3amazonawscom2Fpubl_9.png)
 
   1. I had someone quiz me. Language models are very good at that too, but if push comes to shove a fellow human also does the trick. You can even quiz them back.
@@ -105,11 +105,11 @@ There is [more](https://iep.utm.edu/empirical-aesthetics/) [than](https://en.wik
 
 ## The Mechanical Anna Wintour
 
-Despite laboring away for multiple **days** I still felt insecure about my ability to distinguish good from bad fashion. I _do_ however feel rather secure about my ability to [train a neural network to learn human preferences](https://universalprior.substack.com/p/inferring-utility-functions?utm_source=substack&utm_campaign=post_embed&utm_medium=web). So I threw the experiment strategy out the window, obtained a full scrape of the [Vogue Archive](https://archive.vogue.com/), performed object detection to get cutouts of all the outfits, and embedded the cutouts in a semantic vector space with [CLIP](https://huggingface.co/docs/transformers/model_doc/clip).
+Despite laboring away for multiple **days** I still felt insecure about my ability to distinguish good from bad fashion. I _do_ however feel rather secure about my ability to [train a neural network to learn human preferences](https://kirchner-jan.github.io/minimalprior/posts/universalprior/inferring-utility-functions?utm_source=substack&utm_campaign=post_embed&utm_medium=web). So I threw the experiment strategy out the window, obtained a full scrape of the [Vogue Archive](https://archive.vogue.com/), performed object detection to get cutouts of all the outfits, and embedded the cutouts in a semantic vector space with [CLIP](https://huggingface.co/docs/transformers/model_doc/clip).
 
 ![](../../images/https3A2F2Fsubstack-post-medias3amazonawscom2Fpubl_11.png)Some kids cut out their favorite outfits from magazines they bought with their lunch money, other kids scrape the vogue archive to get cutouts of all outfits since 1892. You say potato, I say tomato. (I stole that joke from a student of mine).
 
-I then recycled code from [an old project](https://universalprior.substack.com/p/inferring-utility-functions?utm_source=substack&utm_campaign=post_embed&utm_medium=web) and set up a small interface for making judgment calls and storing them in a [database](https://redis.io/).
+I then recycled code from [an old project](https://kirchner-jan.github.io/minimalprior/posts/universalprior/inferring-utility-functions?utm_source=substack&utm_campaign=post_embed&utm_medium=web) and set up a small interface for making judgment calls and storing them in a [database](https://redis.io/).
 
 ![](../../images/https3A2F2Fsubstack-post-medias3amazonawscom2Fpubl_12.png)
 
@@ -119,7 +119,7 @@ After ~~forcing~~ kindly asking[^12] my significant other to make a measly 1000 
 
 I am happy to report that she thinks the resulting montage captured her taste pretty well[^14]. So I tried to get her to rate 20k additional images, but somehow her enthusiasm for that project diminished quite quickly.
 
-I, however, am not done with this project! The small toy example above demonstrates that fashion sense is not something [unquantifiable](https://putanumonit.com/), but we are still only barely scratching the surface. What is the [shape of the fashion landscape](https://universalprior.substack.com/p/a-brief-excursion-into-molecular#:~:text=published%20on%20biorxiv%3A-,Zoom,-in%20on%20the)? Can we predict fashion trends? How variable is fashion taste across people, and how much of that variability can we [explain away](https://en.wikipedia.org/wiki/Conditional_dependence)?
+I, however, am not done with this project! The small toy example above demonstrates that fashion sense is not something [unquantifiable](https://putanumonit.com/), but we are still only barely scratching the surface. What is the [shape of the fashion landscape](https://kirchner-jan.github.io/minimalprior/posts/universalprior/a-brief-excursion-into-molecular#:~:text=published%20on%20biorxiv%3A-,Zoom,-in%20on%20the)? Can we predict fashion trends? How variable is fashion taste across people, and how much of that variability can we [explain away](https://en.wikipedia.org/wiki/Conditional_dependence)?
 
 So I made the website public for you all to try:
 
@@ -146,13 +146,13 @@ On a more serious note, though, my excursion has not only uncovered wonders and 
 
 I maintain that power and signaling are _downstream_ of what makes fashion desirable[^15], but that doesn’t make those [ugly inadequacies](https://equilibriabook.com/) not exist. Fashion is entangled with power, money, and fame; and thus inaccessible to anyone who doesn’t spend [unreasonable](https://www.givewell.org/cost-to-save-a-life#:~:text=save%20a%20life%E2%80%94-,about,-%244%2C500%20on%20average) amounts of time and money.
 
-There is a [possible future](https://futureoflife.org/project/worldbuilding-competition/) where [everything](https://universalprior.substack.com/p/a-quick-one-while-hes-away) goes well. In that world, we might need to think about what humans really _want_. The thing at the core of fashion, stripped from power-play and signaling games, feels like it could be part of that[^16]. Getting a bit closer to that _thing_ made the entire excursion more than worth it for me.
+There is a [possible future](https://futureoflife.org/project/worldbuilding-competition/) where [everything](https://kirchner-jan.github.io/minimalprior/posts/universalprior/a-quick-one-while-hes-away) goes well. In that world, we might need to think about what humans really _want_. The thing at the core of fashion, stripped from power-play and signaling games, feels like it could be part of that[^16]. Getting a bit closer to that _thing_ made the entire excursion more than worth it for me.
 
 * * *
 
 I hope you enjoyed this excursion! I’ll probably return to writing about AI Alignment for the next post - or [whatever else captures my attention](https://slatestarcodex.com/2014/05/25/apologia-pro-vita-sua/). If you want to follow along and haven’t yet, consider subscribing!
 
-[^1]:in the blogging space as writing about [Infrabayesianism](https://universalprior.substack.com/p/elementary-infra-bayesianism).
+[^1]:in the blogging space as writing about [Infrabayesianism](https://kirchner-jan.github.io/minimalprior/posts/universalprior/elementary-infra-bayesianism).
 
 [^2]:Isn't the whole point of moving to the Bay so that you _don't_ have to care about what you are wearing?
 
@@ -166,7 +166,7 @@ I hope you enjoyed this excursion! I’ll probably return to writing about AI Al
 
 [^7]:Scott probably wouldn’t object. His B-plot with the [cellular automata](https://slatestarcodex.com/2014/04/22/right-is-the-new-left/) and the fashion is just a set-up for writing about politics - something I will never do! So there’s no territorial dispute here.
 
-[^8]:I’m not even sure what [consciousness is supposed to mean](https://universalprior.substack.com/p/frankfurt-declaration-on-the-cambridge?utm_source=substack&utm_campaign=post_embed&utm_medium=web), the [unconscious](https://en.wikipedia.org/wiki/Unconscious_mind) is certainly above my paygrade.
+[^8]:I’m not even sure what [consciousness is supposed to mean](https://kirchner-jan.github.io/minimalprior/posts/universalprior/frankfurt-declaration-on-the-cambridge?utm_source=substack&utm_campaign=post_embed&utm_medium=web), the [unconscious](https://en.wikipedia.org/wiki/Unconscious_mind) is certainly above my paygrade.
 
 [^9]:See, Scott is not above poking fun at the intrinsic cringiness of signaling games.
 

@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="" >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-    <meta name="author" content="Jan Kirchner" />
-      <meta name="dcterms.date" content="2022-12-28" />
-        <title>minimalprior</title>
-    <link rel="stylesheet" href="../../reset.css" />
-    <link rel="stylesheet" href="../../index.css" />
-      </head>
+  <meta name="author" content="Jan Kirchner" />
+  <meta name="dcterms.date" content="2022-12-28" />
+  <title>minimalprior</title>
+  <link rel="stylesheet" href="../../reset.css" />
+  <link rel="stylesheet" href="../../index.css" />
+</head>
 
 <body>
-    <table class="header">
+  <table class="header">
     <tr>
       <td colspan="2" rowspan="2" class="width-auto">
         <h1 class="title"><a href="https://kirchner-jan.github.io/minimalprior/"
@@ -26,200 +26,188 @@
     <tr>
       <th class="width-min">Author</th>
       <td class="width-auto"><a href="https://universalprior.substack.com/">Jan
-Kirchner</a></td>
+          Kirchner</a></td>
     </tr>
   </table>
-      <nav id="TOC" role="doc-toc">
-        <ul class="incremental">
-        <li><a href="#its-been-a-minute-and-darn-ive-missed-you."
-        id="toc-its-been-a-minute-and-darn-ive-missed-you.">It’s been a
-        minute! And darn, I’ve missed you.</a></li>
-        <li><a href="#why-i-shouldnt-write-this"
-        id="toc-why-i-shouldnt-write-this">Why I shouldn’t write
-        this</a></li>
-        <li><a href="#je-vous-présente-tspsi."
-        id="toc-je-vous-présente-tspsi.">Je Vous présente
-        ~~<code>TSPSI~~</code>.</a></li>
-        <li><a href="#musings" id="toc-musings">Musings</a></li>
-        <li><a href="#closing-thoughts"
-        id="toc-closing-thoughts">Closing thoughts</a></li>
-        </ul>
+  <nav id="TOC" role="doc-toc">
+    <ul class="incremental">
+      <li><a href="#its-been-a-minute-and-darn-ive-missed-you." id="toc-its-been-a-minute-and-darn-ive-missed-you.">It’s
+          been a
+          minute! And darn, I’ve missed you.</a></li>
+      <li><a href="#why-i-shouldnt-write-this" id="toc-why-i-shouldnt-write-this">Why I shouldn’t write
+          this</a></li>
+      <li><a href="#je-vous-présente-tspsi." id="toc-je-vous-présente-tspsi.">Je Vous présente
+          ~~<code>TSPSI~~</code>.</a></li>
+      <li><a href="#musings" id="toc-musings">Musings</a></li>
+      <li><a href="#closing-thoughts" id="toc-closing-thoughts">Closing thoughts</a></li>
+    </ul>
   </nav>
-    <blockquote>
+  <blockquote>
     <p>Text within this block will maintain its original spacing when
-    published</p>
-    <pre><code> _The letter is for you, dear reader. For you who are still here, for you who are still a reader, for the only reader of all, the author, for her, for all readers, for those who&#39;ve long ago read and found the story unsatisfactory, for all of you who, as I&#39;ve said, have long since passed through the gateway, through the doorway, through the opening that leads to the realms of the story and to the realm of the storytellers, who are all gone, who are all gone forever. Thank you for being here. […] Best wishes to you, dear reader. -[#IAN](https://universalprior.substack.com/p/making-of-ian)_</code></pre>
-    </blockquote>
-    <h3 id="its-been-a-minute-and-darn-ive-missed-you.">It’s been a
+      published</p>
+    <pre><code> _The letter is for you, dear reader. For you who are still here, for you who are still a reader, for the only reader of all, the author, for her, for all readers, for those who&#39;ve long ago read and found the story unsatisfactory, for all of you who, as I&#39;ve said, have long since passed through the gateway, through the doorway, through the opening that leads to the realms of the story and to the realm of the storytellers, who are all gone, who are all gone forever. Thank you for being here. […] Best wishes to you, dear reader. -[#IAN](https://kirchner-jan.github.io/minimalprior/posts/universalprior/making-of-ian)_</code></pre>
+  </blockquote>
+  <h3 id="its-been-a-minute-and-darn-ive-missed-you.">It’s been a
     minute! And darn, I’ve missed you.</h3>
-    <p>As some of you might have read, I recently <a
-    href="https://universalprior.substack.com/p/a-quick-one-while-hes-away">joined
-    OpenAI</a> as a researcher on the alignment team, and, phew, doing
+  <p>As some of you might have read, I recently <a
+      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/a-quick-one-while-hes-away">joined
+      OpenAI</a> as a researcher on the alignment team, and, phew, doing
     <em><a
-    href="https://forum.effectivealtruism.org/posts/CCx7KpQHMLbkud9PK/slightly-advanced-decision-theory-102-four-reasons-not-to-be#Gotta_catch_them_all_:~:text=ex%2Dpost)%20option.-,Or,-%2C%20in%20less%20fancy">all
-    the things</a></em> is not as trivial as I thought. I’ve <a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying?utm_source=substack&amp;utm_campaign=post_embed&amp;utm_medium=web#:~:text=While%20I%20am%20in%20no%20position">previously
-    quipped about</a> how I have no expertise in AI. While that was
+        href="https://forum.effectivealtruism.org/posts/CCx7KpQHMLbkud9PK/slightly-advanced-decision-theory-102-four-reasons-not-to-be#Gotta_catch_them_all_:~:text=ex%2Dpost)%20option.-,Or,-%2C%20in%20less%20fancy">all
+        the things</a></em> is not as trivial as I thought. I’ve <a
+      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/serendipitous-connections-applying?utm_source=substack&amp;utm_campaign=post_embed&amp;utm_medium=web#:~:text=While%20I%20am%20in%20no%20position">previously
+      quipped about</a> how I have no expertise in AI. While that was
     perhaps hyperbole, getting up to speed with where AI is heading and
     how to best contribute to that is fun but also a challenge. Luckily,
     I am not alone on my journey into AI alignment research, and I get
     to collaborate <a
-    href="https://scottaaronson.blog/?p=6823#:~:text=hundred%20prime%20numbers).-,Anyway,-%2C%20we%20actually%20have">with
-    some absurdely</a><sup>[1]</sup> <a
-    href="https://universalprior.substack.com/p/introduction-to-hebbian-natural-abstractions">brilliant</a>
+      href="https://scottaaronson.blog/?p=6823#:~:text=hundred%20prime%20numbers).-,Anyway,-%2C%20we%20actually%20have">with
+      some absurdely</a><sup>[1]</sup> <a
+      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/introduction-to-hebbian-natural-abstractions">brilliant</a>
     <a
-    href="https://universalprior.substack.com/p/introduction-to-hebbian-natural-abstractions">people</a>.
-    So the timing of joining was also <a
-    href="https://openai.com/blog/chatgpt/">kind of perfect</a>. So
-    things are getting more manageable every day.</p>
-    <div class="sidenote">
+      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/introduction-to-hebbian-natural-abstractions">people</a>.
+    So the timing of joining was also <a href="https://openai.com/blog/chatgpt/">kind of perfect</a>. So
+    things are getting more manageable every day.
+  </p>
+  <div class="sidenote">
     <p>[1] </p>
     <p>At OAI, I go by my middle name (Hendrik) to <a
-    href="https://universalprior.substack.com/p/a-quick-one-while-hes-away#:~:text=were%20also%20called-,Jan,-.%20In%20university%2C%20I">mitigate
-    domain clashes</a>. Unfortunately, I’ve introduced myself as Jan to
-    some people outside of work, so I tend not to react when anyone
-    calls me.</p>
-    </div>
-    <p>But this little essay is not about alignment research but instead
+        href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/a-quick-one-while-hes-away#:~:text=were%20also%20called-,Jan,-.%20In%20university%2C%20I">mitigate
+        domain clashes</a>. Unfortunately, I’ve introduced myself as Jan to
+      some people outside of work, so I tend not to react when anyone
+      calls me.</p>
+  </div>
+  <p>But this little essay is not about alignment research but instead
     about another passion of mine: <a
-    href="https://universalprior.substack.com/p/via-productiva">not
-    giving advice</a>. I recently had a <a
-    href="https://youtu.be/YO9UiBWx6jw">video call with friends at
-    Ought</a> about how I used their tools for academic writing. In that
+      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/via-productiva">not
+      giving advice</a>. I recently had a <a href="https://youtu.be/YO9UiBWx6jw">video call with friends at
+      Ought</a> about how I used their tools for academic writing. In that
     call, I got to wax poetically about how large language models can <a
-    href="https://universalprior.substack.com/p/making-of-ian">make a
-    researcher’s life easier</a> and how I think about writing text.
+      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/making-of-ian">make a
+      researcher’s life easier</a> and how I think about writing text.
     After seeing the video, a few people contacted me to ask more
     questions about my workflow and how I feel about using large
     language models to research. So now I find myself in a bit of an
     awkward position….</p>
-    <p>Thanks for reading On Brains, Minds, And Their Possible Uses!
+  <p>Thanks for reading On Brains, Minds, And Their Possible Uses!
     Subscribe for free to receive new posts and support my work.</p>
-    <p>Subscribe</p>
-    <h3 id="why-i-shouldnt-write-this">Why I shouldn’t write this</h3>
-    <p>First off, I’m not a fan of belaboring a process. <a
-    href="https://xkcd.com/1827/">XKCD said all that needs to be
-    said</a>, reality is not a nice linear sequence of events where
+  <h3 id="why-i-shouldnt-write-this">Why I shouldn’t write this</h3>
+  <p>First off, I’m not a fan of belaboring a process. <a href="https://xkcd.com/1827/">XKCD said all that needs to be
+      said</a>, reality is not a nice linear sequence of events where
     cause and effect are visible on the surface but rather a <a
-    href="https://www.alignmentforum.org/s/kxs3eeEti9ouwWFzr">weird mess
-    of causally entangled stuff</a>.</p>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_86.png" /></p>
-    <p>A better strategy than <a
-    href="https://ml.berkeley.edu/blog/posts/bc/">behaviorally
-    cloning</a> the process of someone who claims to have it figured out
-    is to identify the <a
-    href="https://en.wikipedia.org/wiki/Hidden_Markov_model">underlying</a>
+      href="https://www.alignmentforum.org/s/kxs3eeEti9ouwWFzr">weird mess
+      of causally entangled stuff</a>.</p>
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_86.png" /></p>
+  <p>A better strategy than <a href="https://ml.berkeley.edu/blog/posts/bc/">behaviorally
+      cloning</a> the process of someone who claims to have it figured out
+    is to identify the <a href="https://en.wikipedia.org/wiki/Hidden_Markov_model">underlying</a>
     <a
-    href="https://www.alignmentforum.org/posts/pdaGN6pQyQarFHXF4/reward-is-not-the-optimization-target">generators</a>
+      href="https://www.alignmentforum.org/posts/pdaGN6pQyQarFHXF4/reward-is-not-the-optimization-target">generators</a>
     that produce their success. That’s easier said than done, though,
-    and I have no reliable method for finding generators (yet).</p>
-    <p>Second, even though I still do research, I write more code than
+    and I have no reliable method for finding generators (yet).
+  </p>
+  <p>Second, even though I still do research, I write more code than
     prose these days. So my writing muscle has atrophied a little
     bit<sup>[2]</sup>. It would be silly to restart with a post on how I
     write.</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[2] </p>
     <p>And it’s conceited to assume that you have a writing muscle in
-    the first place. Do as I say, not as I do.</p>
-    </div>
-    <p>And yet, here we are.</p>
-    <p>I decided to reject the second argument above because <a
-    href="https://universalprior.substack.com/p/the-tale-of-gandhi-and-the-devil?r=7inm4&amp;utm_campaign=post&amp;utm_medium=web&amp;utm_source=#details">it
-    is self-reinforcing</a>. Not writing because I have not written
+      the first place. Do as I say, not as I do.</p>
+  </div>
+  <p>And yet, here we are.</p>
+  <p>I decided to reject the second argument above because <a
+      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/the-tale-of-gandhi-and-the-devil?r=7inm4&amp;utm_campaign=post&amp;utm_medium=web&amp;utm_source=#details">it
+      is self-reinforcing</a>. Not writing because I have not written
     recently is - quite clearly - a lousy reason. After not having
     written for a while, writing about how I write seems appropriately
     self-referential for this Substack. And finally, with prose and code
-    <a
-    href="https://www.nature.com/articles/d41586-022-04383-z">converging
-    rapidly</a>, a reflection on the architecture of text might provide
-    unexpected insights into <a
-    href="https://www.alignmentforum.org/posts/vJFdjigzmcXMhNTsx/simulators">how
-    AI thinks</a>. And maybe looking at my process allows some people to
-    derive a generator<sup>[3]</sup>. Sooo~</p>
-    <div class="sidenote">
+    <a href="https://www.nature.com/articles/d41586-022-04383-z">converging
+      rapidly</a>, a reflection on the architecture of text might provide
+    unexpected insights into <a href="https://www.alignmentforum.org/posts/vJFdjigzmcXMhNTsx/simulators">how
+      AI thinks</a>. And maybe looking at my process allows some people to
+    derive a generator<sup>[3]</sup>. Sooo~
+  </p>
+  <div class="sidenote">
     <p>[3] </p>
     <p>Let me know if you do, would be curious to hear!</p>
-    </div>
-    <h3 id="je-vous-présente-tspsi.">Je Vous présente
+  </div>
+  <h3 id="je-vous-présente-tspsi.">Je Vous présente
     ~~<code>TSPSI~~</code>.</h3>
-    <p>My writing framework is called the ‘TSPSI’<sup>[4]</sup>
+  <p>My writing framework is called the ‘TSPSI’<sup>[4]</sup>
     framework. I picked it up at some point during my Ph.D. and can’t
     find a reference for it online, but I’m almost sure it’s <a
-    href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LCqKL89KNzcxYPQSTS1LLaosycjMS1fILFZIVChKzc2sAADuNQzM&amp;q=everything+is+a+remix&amp;oq=Everything+is+a+rem&amp;aqs=chrome.1.0i355i512j46i512j69i57j0i512l2j46i512j0i512l4.3545j0j7&amp;sourceid=chrome&amp;ie=UTF-8#:~:text=with%20Site%20Links-,Everything%20is%20a%20Remix,https%3A//www.everythingisaremix.info,-The%20site%20about">not
-    original</a>.</p>
-    <div class="sidenote">
+      href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LCqKL89KNzcxYPQSTS1LLaosycjMS1fILFZIVChKzc2sAADuNQzM&amp;q=everything+is+a+remix&amp;oq=Everything+is+a+rem&amp;aqs=chrome.1.0i355i512j46i512j69i57j0i512l2j46i512j0i512l4.3545j0j7&amp;sourceid=chrome&amp;ie=UTF-8#:~:text=with%20Site%20Links-,Everything%20is%20a%20Remix,https%3A//www.everythingisaremix.info,-The%20site%20about">not
+      original</a>.</p>
+  <div class="sidenote">
     <p>[4] </p>
     <p>Just rolls off the tongue, doesn’t it?</p>
-    </div>
-    <p>The idea is to think of writing as a report of “travel through <a
-    href="https://www.lesswrong.com/tag/map-and-territory-sequence">treacherous
-    territory</a>.” In particular,</p>
-    <ul class="incremental">
-    <li><p>you are <a
-    href="https://www.youtube.com/watch?v=vtIzMaLkCaM&amp;t=900s&amp;ab_channel=UChicagoSocialSciences">writing</a><em><a
-    href="https://www.youtube.com/watch?v=vtIzMaLkCaM&amp;t=900s&amp;ab_channel=UChicagoSocialSciences">for
-    a reader</a></em>. If you care about your reader, try to make things
-    pleasant for them. Realize that they know different things than you,
-    and try to keep <a
-    href="https://www.lesswrong.com/tag/inferential-distance">inferential
-    distances</a> small.</p></li>
-    <li><p>Aspire to be objective but realize that the product will be
-    subjective. Describe your travel as accurately as possible (no
-    embellishments!), but be <a
-    href="https://www.lesswrong.com/tag/calibration">aware of the
-    limitations</a> of your perceptions.</p></li>
-    <li><p>realize that your writing mirrors a journey. There will be a
-    start and an end, and you are moving through the territory step by
-    step. Keep in mind where you want to end up.</p></li>
-    </ul>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_87.png" />hot
+  </div>
+  <p>The idea is to think of writing as a report of “travel through <a
+      href="https://www.lesswrong.com/tag/map-and-territory-sequence">treacherous
+      territory</a>.” In particular,</p>
+  <ul class="incremental">
+    <li>
+      <p>you are <a
+          href="https://www.youtube.com/watch?v=vtIzMaLkCaM&amp;t=900s&amp;ab_channel=UChicagoSocialSciences">writing</a><em><a
+            href="https://www.youtube.com/watch?v=vtIzMaLkCaM&amp;t=900s&amp;ab_channel=UChicagoSocialSciences">for
+            a reader</a></em>. If you care about your reader, try to make things
+        pleasant for them. Realize that they know different things than you,
+        and try to keep <a href="https://www.lesswrong.com/tag/inferential-distance">inferential
+          distances</a> small.</p>
+    </li>
+    <li>
+      <p>Aspire to be objective but realize that the product will be
+        subjective. Describe your travel as accurately as possible (no
+        embellishments!), but be <a href="https://www.lesswrong.com/tag/calibration">aware of the
+          limitations</a> of your perceptions.</p>
+    </li>
+    <li>
+      <p>realize that your writing mirrors a journey. There will be a
+        start and an end, and you are moving through the territory step by
+        step. Keep in mind where you want to end up.</p>
+    </li>
+  </ul>
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_87.png" />hot
     take: prompt engineering for language models will not be a thing
     anymore soon, but will be much stickier for image generation</p>
-    <p>With these points in mind, here are the five stations you want to
+  <p>With these points in mind, here are the five stations you want to
     visit in everything you write.</p>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_88.png" /></p>
-    <p>What are you writing about? Where in the territory are we? Why
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_88.png" /></p>
+  <p>What are you writing about? Where in the territory are we? Why
     should the reader care?</p>
-    <p>This section is the easiest to write and the easiest to neglect.
+  <p>This section is the easiest to write and the easiest to neglect.
     The more familiar you are with the territory, the more you’ll forget
     about how non-obvious it is to get there.</p>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_89.png" /></p>
-    <p>What have other people (or you) said previously about the
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_89.png" /></p>
+  <p>What have other people (or you) said previously about the
     territory? What does the surrounding territory look like?</p>
-    <p>This section can quickly grow out of control if you attempt a
+  <p>This section can quickly grow out of control if you attempt a
     complete description of the surrounding territory. A full report is
     not necessary or desirable. Compress and remove.</p>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_90.png" /></p>
-    <p>What are the wrinkles in the landscape? Where is the terrain
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_90.png" /></p>
+  <p>What are the wrinkles in the landscape? Where is the terrain
     foggy/uncharted?</p>
-    <p>This section puts the reader into your shoes at the onset of your
+  <p>This section puts the reader into your shoes at the onset of your
     travel. Describe what sparked your interest and what you <a
-    href="https://en.wikipedia.org/wiki/There_are_unknown_unknowns#:~:text=Known%20unknowns%20refers%20to%20%22risks,they%20would%20not%20be%20considered.">knew
-    you didn’t know</a>.</p>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_91.png" /></p>
-    <p>How did your travel go? What did you see?</p>
-    <p>Here is what the landscape looks like (I went out and
+      href="https://en.wikipedia.org/wiki/There_are_unknown_unknowns#:~:text=Known%20unknowns%20refers%20to%20%22risks,they%20would%20not%20be%20considered.">knew
+      you didn’t know</a>.</p>
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_91.png" /></p>
+  <p>How did your travel go? What did you see?</p>
+  <p>Here is what the landscape looks like (I went out and
     looked)/Here is what I think it should look like (I thought about it
     very hard)/here is how I feel the wrinkles can be reconciled (I paid
     attention to these details that have been neglected before)/…</p>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_92.png" /></p>
-    <p>What’s next?</p>
-    <p>Now that we have an improved view of the territory, we can
-    describe ‘<a
-    href="https://universalprior.substack.com/p/on-not-reading-papers">the
-    delta</a>’ and the new territory that has become accessible. Again,
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_92.png" /></p>
+  <p>What’s next?</p>
+  <p>Now that we have an improved view of the territory, we can
+    describe ‘<a href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-not-reading-papers">the
+      delta</a>’ and the new territory that has become accessible. Again,
     be humble (don’t oversell) but also keep in mind that you are in the
     best position to see the new territory, given how familiar you are
     with your work.</p>
-    <h3 id="musings">Musings</h3>
-    <p>While the TSPSI framework was introduced to me as a framework for
+  <h3 id="musings">Musings</h3>
+  <p>While the TSPSI framework was introduced to me as a framework for
     academic writing, I’m applying it much more broadly. For example,
     whenever I have a blank page in front of me that I want to fill with
     words, I create five headers and write down thoughts as they appear
@@ -227,66 +215,79 @@ Kirchner</a></td>
     like <a href="https://roamresearch.com/">Roam Research</a>, where I
     can drag and drop thoughts from outside the workspace into the list
     and rearrange things on the fly.</p>
-    <p>When fleshing out the sections, I tend to use <a
-    href="https://universalprior.substack.com/p/making-of-ian">language
-    models</a> to expand my notes into prose. But, perhaps most
+  <p>When fleshing out the sections, I tend to use <a
+      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/making-of-ian">language
+      models</a> to expand my notes into prose. But, perhaps most
     important lesson I’ve learned in the last year is that <a
-    href="https://generative.ink/posts/loom-interface-to-the-multiverse/">resampling
-    is a superpower</a> - a small language model that produces
+      href="https://generative.ink/posts/loom-interface-to-the-multiverse/">resampling
+      is a superpower</a> - a small language model that produces
     completions fast (so that Idon’tdiscard completions I don’t like)
     can be much more useful than a larger language model that is slow
     (so that I can only get one completion).</p>
-    <p>This way, I can get to a first draft very fast; but to go from
+  <p>This way, I can get to a first draft very fast; but to go from
     there to something I am satisfied with still requires substantial
     iterations of editing;</p>
-    <ul class="incremental">
-    <li><p>from fanciful renaming (‘Solution to the state of the art’ →
-    ‘Je vous présente <del>TSPSI</del>’)</p></li>
-    <li><p>and merging sections (‘state of the art’ &amp; ‘problem with
-    the state of the art’ → ‘Why I shouldn’t write this’)</p></li>
-    <li><p>to liberally reinterpreting the function of sections (‘It’s
-    been a minute and darn, I’ve missed you.’)</p></li>
-    <li><p>and layering in a second theme (self-reference, this very
-    sentence).</p></li>
-    </ul>
-    <p>The amount of time we can invest in working on a text is
+  <ul class="incremental">
+    <li>
+      <p>from fanciful renaming (‘Solution to the state of the art’ →
+        ‘Je vous présente <del>TSPSI</del>’)</p>
+    </li>
+    <li>
+      <p>and merging sections (‘state of the art’ &amp; ‘problem with
+        the state of the art’ → ‘Why I shouldn’t write this’)</p>
+    </li>
+    <li>
+      <p>to liberally reinterpreting the function of sections (‘It’s
+        been a minute and darn, I’ve missed you.’)</p>
+    </li>
+    <li>
+      <p>and layering in a second theme (self-reference, this very
+        sentence).</p>
+    </li>
+  </ul>
+  <p>The amount of time we can invest in working on a text is
     unbounded. But clearly, quality of writing increases asymptotically
     at best. Formalizing the gradient that people follow when improving
     a text is an important open problem, with possible solutions being
     <a href="https://openai.com/blog/critiques/">critiques</a> or <a
-    href="https://arxiv.org/abs/2205.14217">diffusion</a>. I’ve
+      href="https://arxiv.org/abs/2205.14217">diffusion</a>. I’ve
     experimented with AI-powered versions of these things, but none of
     the existing solutions are quite as good as getting human feedback
     or going through the pain of editing the text myself again and
     again. So, for now, editing is still the slowest part of the writing
-    process for me.</p>
-    <p>Having revealed my secret sauce for writing, consider going
+    process for me.
+  </p>
+  <p>Having revealed my secret sauce for writing, consider going
     through some of my older posts, such as</p>
-    <ul class="incremental">
-    <li><p><a
-    href="https://universalprior.substack.com/p/the-greedy-doctor-problem">The
-    greedy doctor problem</a></p></li>
-    <li><p><a
-    href="https://universalprior.substack.com/p/making-of-ian">Making of
-    #IAN</a></p></li>
-    <li><p><a
-    href="https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing">The
-    Unreasonable Feasibility Of Playing Chess Under The
-    Influence</a></p></li>
-    </ul>
-    <p>and see if you can recover the TSPSI framework ;)</p>
-    <h3 id="closing-thoughts">Closing thoughts</h3>
-    <p>I’m happy to have written this! I’ve wanted to have a reference
+  <ul class="incremental">
+    <li>
+      <p><a href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/the-greedy-doctor-problem">The
+          greedy doctor problem</a></p>
+    </li>
+    <li>
+      <p><a href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/making-of-ian">Making of
+          #IAN</a></p>
+    </li>
+    <li>
+      <p><a
+          href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/the-unreasonable-feasibility-of-playing">The
+          Unreasonable Feasibility Of Playing Chess Under The
+          Influence</a></p>
+    </li>
+  </ul>
+  <p>and see if you can recover the TSPSI framework ;)</p>
+  <h3 id="closing-thoughts">Closing thoughts</h3>
+  <p>I’m happy to have written this! I’ve wanted to have a reference
     for the TSPSI framework for a while, and I also enjoy being able to
     click the “publish” button once again. I hope that, despite my
     general skepticism of advice, the ideas in this post can be useful
     for other people.</p>
-    <p>At the same time, I always feel a bit dissatisfied about posts
+  <p>At the same time, I always feel a bit dissatisfied about posts
     that don’t have any data or simulations. But those also tend to take
     a lot more time, and clash a bit with what I do in my dayjob, so I’m
     a bit hesitant to go in that direction. Hopefully, sometime soon
     I’ll return to that. Let me know what you think!</p>
-    <div class="debug-grid"></div>
+  <div class="debug-grid"></div>
   <script src="index.js"></script>
 </body>
 

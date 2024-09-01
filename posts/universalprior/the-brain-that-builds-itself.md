@@ -7,7 +7,7 @@ date: 2022-05-30
 ---
 
 
-Previously in this series: _[How to build a mind - neuroscience edition](https://universalprior.substack.com/p/how-to-build-a-mind-neuroscience?s=w)_ , _[Serendipitous connections: applying explanations from AI to the brain](https://universalprior.substack.com/p/serendipitous-connections-applying?s=w)_, _[The Unreasonable Feasibility Of Playing Chess Under The Influence](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing?s=w)_ , _[A Brief Excursion Into Molecular Neuroscience](https://universalprior.substack.com/p/a-brief-excursion-into-molecular?s=w)_.
+Previously in this series: _[How to build a mind - neuroscience edition](https://kirchner-jan.github.io/minimalprior/posts/universalprior/how-to-build-a-mind-neuroscience?s=w)_ , _[Serendipitous connections: applying explanations from AI to the brain](https://kirchner-jan.github.io/minimalprior/posts/universalprior/serendipitous-connections-applying?s=w)_, _[The Unreasonable Feasibility Of Playing Chess Under The Influence](https://kirchner-jan.github.io/minimalprior/posts/universalprior/the-unreasonable-feasibility-of-playing?s=w)_ , _[A Brief Excursion Into Molecular Neuroscience](https://kirchner-jan.github.io/minimalprior/posts/universalprior/a-brief-excursion-into-molecular?s=w)_.
 
 * * *
 
@@ -21,7 +21,7 @@ Since those innocent days, I have come to appreciate that building a biological 
 
   1. First off - **even before you're done building, the brain must make itself useful**. And it's not just "occasionally helping with an arithmetic problem" - I'm talking about "breathing", "eating", "coordinating limbs"... If the environment is dangerous, then also "running away" or "fighting" is on the menu. And you need to do these things _reliably_ \- lapsing means death.
   1. Second - **every neuron only has access to** _ **local**_ **information**. In particular, every neuron only receives input from a limited number of other neurons (usually < 10,000 out of ~80 billion). From that information, a neuron needs to infer what its role in the developing brain ought to be. Consequently, every solution you come up with must be "symmetric" in the sense that you can swap two neurons, and the end result must still work. ([It turns out the two neurons don't even have to be from the same species](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6899440/)).
-  1. Third - **there is no clear separation between "the thing you're building" and "the thing that is doing the building"[^1]**. [The brain is making itself](https://generative.ink/prophecies/#:~:text=The%20message%20had%20become%20the%20medium) with only rough guidance from genes and the environment (see [this post](https://universalprior.substack.com/p/how-to-build-a-mind-neuroscience?s=w) I wrote on the topic a while ago).
+  1. Third - **there is no clear separation between "the thing you're building" and "the thing that is doing the building"[^1]**. [The brain is making itself](https://generative.ink/prophecies/#:~:text=The%20message%20had%20become%20the%20medium) with only rough guidance from genes and the environment (see [this post](https://kirchner-jan.github.io/minimalprior/posts/universalprior/how-to-build-a-mind-neuroscience?s=w) I wrote on the topic a while ago).
 
 
 
@@ -53,9 +53,9 @@ When the brain does this type of rearranging, it is both the thing that "notices
 
 Third-eye shenanigans are only one (illustrative) example of the dynamic nature of development. Throughout development, immature neural **circuits** produce **activity** that induces activity-dependent formation/removal of synapses, which changes the **circuit** , which leads to changed **activity** , ... **The circuit is "the thing you're building," and its activity is "the thing that is doing the building"**.
 
-![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_232.png)[source](https://universalprior.substack.com/p/how-to-build-a-mind-neuroscience?s=w)
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_232.png)[source](https://kirchner-jan.github.io/minimalprior/posts/universalprior/how-to-build-a-mind-neuroscience?s=w)
 
-I've briefly [written about this dynamic](https://universalprior.substack.com/p/how-to-build-a-mind-neuroscience?s=w) before, but now I want to take a deeper dive because a thing I've been working on with colleagues for a while is [finally out as a preprint](https://www.biorxiv.org/content/10.1101/2022.05.24.493217v1).
+I've briefly [written about this dynamic](https://kirchner-jan.github.io/minimalprior/posts/universalprior/how-to-build-a-mind-neuroscience?s=w) before, but now I want to take a deeper dive because a thing I've been working on with colleagues for a while is [finally out as a preprint](https://www.biorxiv.org/content/10.1101/2022.05.24.493217v1).
 
 Let's start by building some intuition by looking at pretty pictures. We start with one of my favorite recordings of the optic tectum of a zebrafish developing over 16 hours:
 
@@ -77,7 +77,7 @@ And that's indeed the conclusion that Niell and colleagues arrive at. They look 
 
 ##  **Probably prunable**
 
-But not all development is about growth! Rather, it's about growth plus **selective pruning**. I've [written](https://universalprior.substack.com/p/a-brief-excursion-into-molecular?s=w) about a potential molecular mechanism underlying this dynamic before, and now we'll see it in action.
+But not all development is about growth! Rather, it's about growth plus **selective pruning**. I've [written](https://kirchner-jan.github.io/minimalprior/posts/universalprior/a-brief-excursion-into-molecular?s=w) about a potential molecular mechanism underlying this dynamic before, and now we'll see it in action.
 
 Right out the gate - even though there can be a lot of pruning, this typically doesn't mean that the dendrite gets _shorter_ in total[^3]. Typically, retractions of branches are balanced by the addition of new branches. Here are pictures from a timelapse from a Xenopus tadpole neuron:
 
@@ -96,12 +96,12 @@ The dendrite retracts rapidly when the activity stops and then extends again whe
 
 So **specific activity can trigger the growth of dendrites**.
 
-  1. Third, the "[Sherlock and Moriarty of molecular neuroscience](https://universalprior.substack.com/p/a-brief-excursion-into-molecular?s=w)" also get a starring role in this story. [In this study](https://molecularbrain.biomedcentral.com/articles/10.1186/1756-6606-2-27#Sec11), researchers incubate rat brain neurons in either BDNF (matBDNF) or proBDNF (CR-proBDNF) and find that the signaling molecules dramatically affect neuronal morphology.
+  1. Third, the "[Sherlock and Moriarty of molecular neuroscience](https://kirchner-jan.github.io/minimalprior/posts/universalprior/a-brief-excursion-into-molecular?s=w)" also get a starring role in this story. [In this study](https://molecularbrain.biomedcentral.com/articles/10.1186/1756-6606-2-27#Sec11), researchers incubate rat brain neurons in either BDNF (matBDNF) or proBDNF (CR-proBDNF) and find that the signaling molecules dramatically affect neuronal morphology.
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_236.png)
 
-([As perhaps expected](https://universalprior.substack.com/p/a-brief-excursion-into-molecular?s=w),) **BDNF increases dendrite length and complexity, while proBDNF leads to almost complete dendrite removal**.
+([As perhaps expected](https://kirchner-jan.github.io/minimalprior/posts/universalprior/a-brief-excursion-into-molecular?s=w),) **BDNF increases dendrite length and complexity, while proBDNF leads to almost complete dendrite removal**.
 
-  1. Finally, we had pretty strong intuitions about how synapses ought to interact with each other [from previous work](https://universalprior.substack.com/p/a-brief-excursion-into-molecular?s=w). In particular, there's a [bunch](https://www.cell.com/neuron/fulltext/S0896-6273%2815%2900572-3) of [neat](https://www.cell.com/article/S2211-1247%2814%2901045-6/fulltext) experimental [evidence](https://www.science.org/doi/10.1126/science.aao0862) that synapses that fire "out-of-sync" tend to "lose their link". Or, in less poetic terms, **nearby synapses tend to compete**.
+  1. Finally, we had pretty strong intuitions about how synapses ought to interact with each other [from previous work](https://kirchner-jan.github.io/minimalprior/posts/universalprior/a-brief-excursion-into-molecular?s=w). In particular, there's a [bunch](https://www.cell.com/neuron/fulltext/S0896-6273%2815%2900572-3) of [neat](https://www.cell.com/article/S2211-1247%2814%2901045-6/fulltext) experimental [evidence](https://www.science.org/doi/10.1126/science.aao0862) that synapses that fire "out-of-sync" tend to "lose their link". Or, in less poetic terms, **nearby synapses tend to compete**.
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_237.png)Strongly driving the synapses marked in yellow via glutamate uncaging results in shrinkage of the unstimulated synapses marked with the red arrow.
 
 
@@ -109,7 +109,7 @@ So **specific activity can trigger the growth of dendrites**.
 
 ##  **Computerization**
 
-Those were the puzzle pieces we knew about (or [guessed](https://universalprior.substack.com/p/on-not-reading-papers?s=w#:~:text=a%20paper%20adds.-,Schematic,-of%20%E2%80%9Cthe%20delta)) when we started the project. It seemed plausible that synapse formation and removal might have a pretty big impact on what the dendrite looks like. And in particular, whether a synapse stabilizes or not might be determined by whether it fires in synchrony with its neighbors.
+Those were the puzzle pieces we knew about (or [guessed](https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-not-reading-papers?s=w#:~:text=a%20paper%20adds.-,Schematic,-of%20%E2%80%9Cthe%20delta)) when we started the project. It seemed plausible that synapse formation and removal might have a pretty big impact on what the dendrite looks like. And in particular, whether a synapse stabilizes or not might be determined by whether it fires in synchrony with its neighbors.
 
 [When we put these ideas into a model](https://www.biorxiv.org/content/10.1101/2022.05.24.493217v1.full), we get something like the following video:
 
@@ -143,7 +143,7 @@ This way, our model can link the development of dendrites and the emergence of s
 
 I feel the strong urge to do a bunch of epistemic hedging, "theory is theory and experiment is experiment," and "I could be totally wrong about this", but I think that's [pretty bad style](https://nassimtaleb.org/2016/09/intellectual-yet-idiot/). Instead, I’ll say that this is my current best guess, and if I’m wrong I’ll be appropriately surprised and embarrassed.
 
-Instead of doing more hedging, I’ll stick my neck out even further and talk about “[the delta](https://universalprior.substack.com/p/on-not-reading-papers?s=w#:~:text=a%20paper%20adds.-,Schematic,-of%20%E2%80%9Cthe%20delta)”:
+Instead of doing more hedging, I’ll stick my neck out even further and talk about “[the delta](https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-not-reading-papers?s=w#:~:text=a%20paper%20adds.-,Schematic,-of%20%E2%80%9Cthe%20delta)”:
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_243.png) **Schematic** **of “the delta” added by a (typical) academic paper.** Papers you have read before are shown in the background with an orange background. Relationships between papers are indicated with double-sided arrows. The size and shape of the orange background represent the statements you believe are likely to be true. The newly added paper is shown in the foreground on a blue background. The portion that the new paper makes likely to be true (or, sometimes, demonstrates to be true) is “the delta”.
 
@@ -174,6 +174,6 @@ It might well be that something special happens at that age, but I cannot find a
 
 Also, note that the caption of the Seeman figure talks about a decline in synaptic connections, which are not even visible on the left. And the right shows a decline in dopamine receptors, but with a very suspicious x-axis and very few data points in the most critical period.
 
-[^4]:I think there is a very elegant way in which [Hebbian learning](https://en.wikipedia.org/wiki/Hebbian_theory) can be interpreted as simply doing autoregressive learning. [Sezener et al](https://www.biorxiv.org/content/10.1101/2021.03.10.434756v1.full) are pointing in this direction, and interpreting the [ventral stream as a residual stream](https://universalprior.substack.com/p/serendipitous-connections-applying?s=w) fills in some of the blanks.
+[^4]:I think there is a very elegant way in which [Hebbian learning](https://en.wikipedia.org/wiki/Hebbian_theory) can be interpreted as simply doing autoregressive learning. [Sezener et al](https://www.biorxiv.org/content/10.1101/2021.03.10.434756v1.full) are pointing in this direction, and interpreting the [ventral stream as a residual stream](https://kirchner-jan.github.io/minimalprior/posts/universalprior/serendipitous-connections-applying?s=w) fills in some of the blanks.
 
-[^5]:[Or synthetic input shaped by eons of evolution to look like plausible sensory input](https://universalprior.substack.com/p/how-to-build-a-mind-neuroscience?s=w).
+[^5]:[Or synthetic input shaped by eons of evolution to look like plausible sensory input](https://kirchner-jan.github.io/minimalprior/posts/universalprior/how-to-build-a-mind-neuroscience?s=w).

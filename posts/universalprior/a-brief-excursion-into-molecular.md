@@ -9,7 +9,7 @@ date: 2022-04-10
 ---
 
 
-_Previously in this series:[How to build a mind - neuroscience edition,](https://universalprior.substack.com/p/how-to-build-a-mind-neuroscience?s=w) [Serendipitous connections: applying explanations from AI to the brain](https://universalprior.substack.com/p/serendipitous-connections-applying?s=w)_, [The Unreasonable Feasibility Of Playing Chess Under The Influence.](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing?s=w)
+_Previously in this series:[How to build a mind - neuroscience edition,](https://kirchner-jan.github.io/minimalprior/posts/universalprior/how-to-build-a-mind-neuroscience?s=w) [Serendipitous connections: applying explanations from AI to the brain](https://kirchner-jan.github.io/minimalprior/posts/universalprior/serendipitous-connections-applying?s=w)_, [The Unreasonable Feasibility Of Playing Chess Under The Influence.](https://kirchner-jan.github.io/minimalprior/posts/universalprior/the-unreasonable-feasibility-of-playing?s=w)
 
 ##  **The Emperor's New Ǫ̵͎͊G̶̦̉̇l̶͉͇̝̽͆̚i̷͔̓̏͌c̷̱̙̍̂͜k̷̠͍͌l̷̢̍͗̃n̷̖͇̏̆å̴̤c̵̲̼̫͑̎̆**
 
@@ -64,7 +64,7 @@ What about YouTube?
 
 More boosting brainpower, fighting anxiety, naturally increasing BDNF through workout…
 
-Hopefully, all of your [alarm bells](https://universalprior.substack.com/p/via-productiva?s=w#:~:text=Don%27t%20listen%20to%20Cassandra.) are going off right now. This pattern-matches with scams and [irreplicability](https://slatestarcodex.com/2019/05/07/5-httlpr-a-pointed-review/). Cognitive enhancement would be a [huge deal](https://www.gwern.net/Nootropics), but it’s also super [difficult,](https://www.gwern.net/docs/algernon/2011-lynch.pdf) and apart from maybe coffee and modafinil, there don’t appear to be any easy hacks.
+Hopefully, all of your [alarm bells](https://kirchner-jan.github.io/minimalprior/posts/universalprior/via-productiva?s=w#:~:text=Don%27t%20listen%20to%20Cassandra.) are going off right now. This pattern-matches with scams and [irreplicability](https://slatestarcodex.com/2019/05/07/5-httlpr-a-pointed-review/). Cognitive enhancement would be a [huge deal](https://www.gwern.net/Nootropics), but it’s also super [difficult,](https://www.gwern.net/docs/algernon/2011-lynch.pdf) and apart from maybe coffee and modafinil, there don’t appear to be any easy hacks.
 
 But why do (some) people _believe_ BDNF can do all these things? There are so many words in p̴͓̂͘á̴̻͌s̶̻̗͋͑ṯ̸̹̈́̌à̶̳; why pick BDNF in particular? Why are there no playlists about Ǫ̵͎͊G̶̦̉̇l̶͉͇̝̽͆̚i̷͔̓̏͌c̷̱̙̍̂͜k̷̠͍͌l̷̢̍͗̃n̷̖͇̏̆å̴̤c̵̲̼̫͑̎̆ improving your mental faculties?
 
@@ -89,13 +89,13 @@ Other signaling molecules pale in comparison:
 
 Calling BDNF a "big deal" in neuroscience would be an understatement. In the literature, it’s called “[A convergence point for many signaling pathways](https://www.nature.com/articles/nrn1078)“, “[A Key Molecule for Memory in the Healthy and the Pathological Brain](https://www.frontiersin.org/articles/10.3389/fncel.2019.00363/full)“, and “[A Key Factor with Multipotent Impact on Brain Signaling and Synaptic Plasticity](https://link.springer.com/article/10.1007/s10571-017-0510-4)”. 
 
-The fact that there is so much research on BDNF also hints at why there should be so much questionable content on Spotify and YouTube. We should expect the [noise to scale with the signal](https://universalprior.substack.com/p/via-productiva?s=w#:~:text=Don%27t%20listen%20to%20Cassandra.) \- the more research there is, the easier it is to pick out individual pieces and spin an arbitrary narrative. But this should not _a priori_ mean that the underlying science is bad! [Quantum healing](https://en.wikipedia.org/wiki/Quantum_healing) does not invalidate quantum physics.
+The fact that there is so much research on BDNF also hints at why there should be so much questionable content on Spotify and YouTube. We should expect the [noise to scale with the signal](https://kirchner-jan.github.io/minimalprior/posts/universalprior/via-productiva?s=w#:~:text=Don%27t%20listen%20to%20Cassandra.) \- the more research there is, the easier it is to pick out individual pieces and spin an arbitrary narrative. But this should not _a priori_ mean that the underlying science is bad! [Quantum healing](https://en.wikipedia.org/wiki/Quantum_healing) does not invalidate quantum physics.
 
 Then again, [citations are not a good proxy for quality,](https://journals.sagepub.com/doi/10.1177/2158244019829575) and especially articles in [medicine-adjacent fields suffer from citation inflation](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0020885). And as a lot of literature on BDNF comes from those fields, they might have [replicability issues](https://slatestarcodex.com/2019/05/07/5-httlpr-a-pointed-review/). So, just because there are many highly-cited papers, we can’t necessarily conclude that the underlying research is solid.
 
  **Argument from ubiquity.**
 
-So let us zoom out instead and (try to) take an unbiased look. From a [previous project,](https://universalprior.substack.com/p/on-context-and-people?s=w) I happen to have a 2D embedding of all the neuroscience papers published on biorxiv:
+So let us zoom out instead and (try to) take an unbiased look. From a [previous project,](https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-context-and-people?s=w) I happen to have a 2D embedding of all the neuroscience papers published on biorxiv:
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_106.png)Zoom in on the neuroscience section of biorxiv (red) from a tSNE embedding of all papers on biorxiv. Superimposed are the projected embeddings of three famous neuroscientists and yours truly.
 
@@ -224,7 +224,7 @@ This particular [framing of neurotrophin interaction](http://www.bio.brandeis.ed
 
 
 
-I’m pretty satisfied with these answers, but I want to stress again that a lot of stuff in this section is [conjecture](https://universalprior.substack.com/p/on-not-reading-papers?s=w#:~:text=a%20paper%20adds.-,Schematic,-of%20%E2%80%9Cthe%20delta). “Neurotrophin balance is all you need” has explanatory power and meshes well with [known themes in biology,](https://en.wikipedia.org/wiki/Homeostasis) but it’s important to keep in mind that:
+I’m pretty satisfied with these answers, but I want to stress again that a lot of stuff in this section is [conjecture](https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-not-reading-papers?s=w#:~:text=a%20paper%20adds.-,Schematic,-of%20%E2%80%9Cthe%20delta). “Neurotrophin balance is all you need” has explanatory power and meshes well with [known themes in biology,](https://en.wikipedia.org/wiki/Homeostasis) but it’s important to keep in mind that:
 
 > The ultimate arbiter of truth is experiment, not the comfort one derives from one's a priori beliefs, nor the beauty or elegance one ascribes to one's theoretical models. [Lawrence M. Krauss](https://www.azquotes.com/quote/702191)
 
@@ -278,7 +278,7 @@ Well, that’s awkward. I forgot about cognitive neuroscience, and it turns out 
 
 [^14]:Soon rebranded as the “Max-Planck Institute of Neurobiology” in 1998.
 
-[^15]:They wrote the [bottom line first](https://universalprior.substack.com/p/soldiers-scouts-and-albatrosses?s=w).
+[^15]:They wrote the [bottom line first](https://kirchner-jan.github.io/minimalprior/posts/universalprior/soldiers-scouts-and-albatrosses?s=w).
 
 [^16]:> “[BDNF was initially purified from pig brain (1), and was found to be expressed at low concentrations; 1.5 kg of starting material was required to purify 1 μg of BDNF.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4530710/#:~:text=BDNF%20was%20initially%20purified%20from%20pig%20brain%20\(1\)%2C%20and%20was%20found%20to%20be%20expressed%20at%20low%20concentrations%3B%201.5%20kg%20of%20starting%20material%20was%20required%20to%20purify%201%20%CE%BCg%20of%20BDNF.)”
 

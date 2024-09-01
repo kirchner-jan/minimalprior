@@ -45,7 +45,7 @@ No! I'm not satisfied. What do you mean it's a _sociological_ term? What do you 
 
 I hope you can tell from my extensive use of italicized words that this is a topic I am rather passionate about. If the question of a good model is a sociological question then it's subject to trends and fads[^2]. And if the term "model" is broad enough to fit "[detailed biophysical models](https://neuron.yale.edu/neuron/)", "[abstract phenomenological models](https://www.nature.com/articles/s43586-020-00001-2)", "[linear regression](https://www.biorxiv.org/content/10.1101/2021.04.02.438248v1.full)" and "[a cartoon in Figure 8](https://www.jneurosci.org/content/37/21/5250#F8)" under its umbrella, then it's inevitable that our intuitive understanding of what constitutes a good model deviates. Heck, the term is so broad, technically even this should qualify:
 
-![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_83.png)An abstract painting of a very attractive [albatross](https://universalprior.substack.com/p/soldiers-scouts-and-albatrosses) that could totally be a fashion model. [CGD generated](https://huggingface.co/spaces/akhaliq/clip-guided-diffusion).
+![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_83.png)An abstract painting of a very attractive [albatross](https://kirchner-jan.github.io/minimalprior/posts/universalprior/soldiers-scouts-and-albatrosses) that could totally be a fashion model. [CGD generated](https://huggingface.co/spaces/akhaliq/clip-guided-diffusion).
 
 So in the spirit of [conceptual engineering](https://www.lesswrong.com/posts/9iA87EfNKnREgdTJN/conceptual-engineering-the-revolution-in-philosophy-you-ve) and [dissolving questions](https://www.lesswrong.com/posts/Mc6QcrsbH5NRXbCRX/dissolving-the-question), here goes my attempt of laying out what I think of when I think of models. This is obviously not authoritative and it's far from rigorous. This is just my "working definition" which I wrote down to force myself to tighten my terminology.
 
@@ -126,7 +126,7 @@ Finally, this definition formalizes the "all models are wrong, but some are usef
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_85.png)An abstract drawing of the solar system. [CGD generated](https://huggingface.co/spaces/akhaliq/clip-guided-diffusion).
 
-Thus, to determine whether a model is good or bad, you have to figure out which phenomenon it is trying to explain and then determine if the model allows you to predict the time-evolution of the phenomenon better than chance level. This is a relatively low bar, but in my experience, it's still not easy to clear. Actually demonstrating that your performance is different from chance requires explicit performance metrics, which are not usually adapted. But that's [a different story](https://universalprior.substack.com/p/on-scaling-academia).
+Thus, to determine whether a model is good or bad, you have to figure out which phenomenon it is trying to explain and then determine if the model allows you to predict the time-evolution of the phenomenon better than chance level. This is a relatively low bar, but in my experience, it's still not easy to clear. Actually demonstrating that your performance is different from chance requires explicit performance metrics, which are not usually adapted. But that's [a different story](https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-scaling-academia).
 
 * * *
 

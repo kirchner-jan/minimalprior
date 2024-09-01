@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="" >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-    <meta name="author" content="Jan Kirchner" />
-      <meta name="dcterms.date" content="2022-03-19" />
-        <title>minimalprior</title>
-    <link rel="stylesheet" href="../../reset.css" />
-    <link rel="stylesheet" href="../../index.css" />
-      </head>
+  <meta name="author" content="Jan Kirchner" />
+  <meta name="dcterms.date" content="2022-03-19" />
+  <title>minimalprior</title>
+  <link rel="stylesheet" href="../../reset.css" />
+  <link rel="stylesheet" href="../../index.css" />
+</head>
 
 <body>
-    <table class="header">
+  <table class="header">
     <tr>
       <td colspan="2" rowspan="2" class="width-auto">
         <h1 class="title"><a href="https://kirchner-jan.github.io/minimalprior/"
@@ -26,380 +26,365 @@
     <tr>
       <th class="width-min">Author</th>
       <td class="width-auto"><a href="https://universalprior.substack.com/">Jan
-Kirchner</a></td>
+          Kirchner</a></td>
     </tr>
   </table>
-      <nav id="TOC" role="doc-toc">
-        <ul class="incremental">
-        <li><a href="#bottlenecks-and-context"
-        id="toc-bottlenecks-and-context"><strong>Bottlenecks and
-        Context</strong></a></li>
-        <li><a href="#statement-centric-view"
-        id="toc-statement-centric-view"><strong>Statement-centric
-        view</strong></a></li>
-        <li><a href="#people-centric-view"
-        id="toc-people-centric-view"><strong>People-centric
-        view</strong></a></li>
-        <li><a href="#i-trawl-the-neuroverse"
-        id="toc-i-trawl-the-neuroverse"><strong>I trawl the
-        neuroverse</strong></a></li>
-        <li><a href="#people-and-groups"
-        id="toc-people-and-groups"><strong>People and
-        Groups</strong></a></li>
-        <li><a href="#appendix"
-        id="toc-appendix"><strong>Appendix</strong></a></li>
-        </ul>
+  <nav id="TOC" role="doc-toc">
+    <ul class="incremental">
+      <li><a href="#bottlenecks-and-context" id="toc-bottlenecks-and-context"><strong>Bottlenecks and
+            Context</strong></a></li>
+      <li><a href="#statement-centric-view" id="toc-statement-centric-view"><strong>Statement-centric
+            view</strong></a></li>
+      <li><a href="#people-centric-view" id="toc-people-centric-view"><strong>People-centric
+            view</strong></a></li>
+      <li><a href="#i-trawl-the-neuroverse" id="toc-i-trawl-the-neuroverse"><strong>I trawl the
+            neuroverse</strong></a></li>
+      <li><a href="#people-and-groups" id="toc-people-and-groups"><strong>People and
+            Groups</strong></a></li>
+      <li><a href="#appendix" id="toc-appendix"><strong>Appendix</strong></a></li>
+    </ul>
   </nav>
-    <p><em>Disclaimer: This is coming from a rather neuroscience-centric
-    perspective. I’d be curious if the patterns I describe here apply to
-    other fields.</em></p>
-    <p><em>Previously in this series:<a
-    href="https://universalprior.substack.com/p/on-scaling-academia">On
-    Scaling Academia</a>, <a
-    href="https://universalprior.substack.com/p/on-automatic-ideas?s=w">On
-    Automatic Ideas</a>, and <a
-    href="https://universalprior.substack.com/p/on-not-reading-papers?s=w">On
-    (Not) Reading Papers</a>.</em></p>
-    <h2 id="bottlenecks-and-context"><strong>Bottlenecks and
-    Context</strong></h2>
-    <p>I’m <em>still</em> hung up on that question of how we might make
+  <p><em>Disclaimer: This is coming from a rather neuroscience-centric
+      perspective. I’d be curious if the patterns I describe here apply to
+      other fields.</em></p>
+  <p><em>Previously in this series:<a
+        href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-scaling-academia">On
+        Scaling Academia</a>, <a
+        href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-automatic-ideas?s=w">On
+        Automatic Ideas</a>, and <a
+        href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-not-reading-papers?s=w">On
+        (Not) Reading Papers</a>.</em></p>
+  <h2 id="bottlenecks-and-context"><strong>Bottlenecks and
+      Context</strong></h2>
+  <p>I’m <em>still</em> hung up on that question of how we might make
     research “scalable”<sup>[1]</sup>. Answering this question involves
     identifying bottlenecks and finding efficient ways to circumvent
     them. “Generating ideas” <a
-    href="https://universalprior.substack.com/p/on-automatic-ideas?s=w">appeared
-    to be one such bottleneck</a>. But, as language models like GPT-3
+      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-automatic-ideas?s=w">appeared
+      to be one such bottleneck</a>. But, as language models like GPT-3
     shine when it comes to systematically generating ideas, the
     bottleneck effectively reduces to a search problem. And while the
     hacky prototype I threw together in <a
-    href="https://universalprior.substack.com/p/on-automatic-ideas?s=w">a
-    previous post</a> probably does not quite qualify as a
+      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-automatic-ideas?s=w">a
+      previous post</a> probably does not quite qualify as a
     <em>solution</em> to “generating ideas”, I feel pretty optimistic
     that we can crack this with a larger language model and some elbow
-    grease.</p>
-    <div class="sidenote">
+    grease.
+  </p>
+  <div class="sidenote">
     <p>[1] </p>
     <p>It appears more and more important to me to figure this out! In
-    particular, we might want to be able to accelerate AI Safety
-    research because <a
-    href="https://www.greaterwrong.com/posts/CpvyhFy9WvCNsifkY/discussion-with-eliezer-yudkowsky-on-agi-interventions#:~:text=Anonymous-,How,-do%20you%20feel">some
-    people argue</a> progress is dangerously slow.</p>
-    </div>
-    <p>A great idea, however, is not enough to scale research.
+      particular, we might want to be able to accelerate AI Safety
+      research because <a
+        href="https://www.greaterwrong.com/posts/CpvyhFy9WvCNsifkY/discussion-with-eliezer-yudkowsky-on-agi-interventions#:~:text=Anonymous-,How,-do%20you%20feel">some
+        people argue</a> progress is dangerously slow.</p>
+  </div>
+  <p>A great idea, however, is not enough to scale research.
     <strong>Ideas need to be</strong> _ <strong>contextualized</strong>_
     <strong><sup>[2]</sup>.</strong> Did somebody work on the idea
     before? What do we know about the topic already? What are
-    disagreements, confusions, and holes in the research landscape?</p>
-    <p>Finding those answers is a severe bottleneck to scaling; the
+    disagreements, confusions, and holes in the research landscape?
+  </p>
+  <p>Finding those answers is a severe bottleneck to scaling; the
     problem gets harder as the number of established insights increases.
     I’ve argued before that <a
-    href="https://universalprior.substack.com/p/on-not-reading-papers?s=w">the
-    situation is</a><em><a
-    href="https://universalprior.substack.com/p/on-not-reading-papers?s=w">already</a></em><a
-    href="https://universalprior.substack.com/p/on-not-reading-papers?s=w">pretty
-    bad</a> and that researchers tend to be overwhelmed by the available
+      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-not-reading-papers?s=w">the
+      situation is</a><em><a
+        href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-not-reading-papers?s=w">already</a></em><a
+      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-not-reading-papers?s=w">pretty
+      bad</a> and that researchers tend to be overwhelmed by the available
     literature. Current solutions (like “not reading papers”) are only
     band-aids that will not hold when we try to scale research.
     Therefore, <strong>we will need to change how we manage our
-    established knowledge to make research scalable</strong>. This post
+      established knowledge to make research scalable</strong>. This post
     is an exploration of what that might look like.</p>
-    <h2 id="statement-centric-view"><strong>Statement-centric
-    view</strong></h2>
-    <p>What <em>does</em> the research landscape look like? When I
-    started out in research, my mental <a
-    href="https://en.wikipedia.org/wiki/Picture_theory_of_language">picture
-    of the scientific landscape</a> looked like this:</p>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_182.png" />This
+  <h2 id="statement-centric-view"><strong>Statement-centric
+      view</strong></h2>
+  <p>What <em>does</em> the research landscape look like? When I
+    started out in research, my mental <a href="https://en.wikipedia.org/wiki/Picture_theory_of_language">picture
+      of the scientific landscape</a> looked like this:</p>
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_182.png" />This
     graph demonstrates how we can transform several formulations of the
     same statement (p) into each other by applying “simple”
     transformation rules.</p>
-    <p>i.e. a graph of (hopefully) true statements connected with each
+  <p>i.e. a graph of (hopefully) true statements connected with each
     other. Think “The brain is made of neurons” or “<a
-    href="https://knowyourmeme.com/memes/mitochondria-is-the-powerhouse-of-the-cell">The
-    mitochondria is the powerhouse of the cell</a>” and how you can
+      href="https://knowyourmeme.com/memes/mitochondria-is-the-powerhouse-of-the-cell">The
+      mitochondria is the powerhouse of the cell</a>” and how you can
     connect these statements across layers of abstraction. In this view,
     a new scientific insight is a new entry in this big graph of truth.
     And the goal of the scientific endeavor is to discover all the true
     statements. I call this the “statement-centric” view of
     research.</p>
-    <p>I might have picked up the statement-centric view because I’m a
-    <a
-    href="https://universalprior.substack.com/p/applied-mathematical-logic-for-the">nerd
-    in love with formal logic</a><sup>[3]</sup>, but I don’t think I’m
+  <p>I might have picked up the statement-centric view because I’m a
+    <a href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/applied-mathematical-logic-for-the">nerd
+      in love with formal logic</a><sup>[3]</sup>, but I don’t think I’m
     the only one. Cataloging all the knowledge of a scientific field is
-    the goal of <a
-    href="https://markusstrasser.org/companies-knowledge-discovery/">several</a>
+    the goal of <a href="https://markusstrasser.org/companies-knowledge-discovery/">several</a>
     <a href="https://derivationmap.net/other_projects">ambitious</a> <a
-    href="https://ebrains.eu/service/find-data/">projects</a> in
+      href="https://ebrains.eu/service/find-data/">projects</a> in
     different subfields of science, most of which are now
     defunct<sup>[4]</sup>. Admittedly, there are also some people <a
-    href="https://blog.wolframalpha.com/2010/09/24/stephen-wolfram-on-making-the-worlds-data-computable/#:~:text=The%20idea%20is%3A%20take%20all%20the%20systematic%20knowledge%E2%80%94and%20data%E2%80%94that%20our%20civilization%20has%20accumulated%2C%20and%20somehow%20make%20it%20computable.">trying
-    to catalog all of human knowledge</a> that can report <a
-    href="https://www.wolframalpha.com/">undeniable</a><a
-    href="https://en.wikipedia.org/wiki/Google_Knowledge_Graph">successes</a>.
+      href="https://blog.wolframalpha.com/2010/09/24/stephen-wolfram-on-making-the-worlds-data-computable/#:~:text=The%20idea%20is%3A%20take%20all%20the%20systematic%20knowledge%E2%80%94and%20data%E2%80%94that%20our%20civilization%20has%20accumulated%2C%20and%20somehow%20make%20it%20computable.">trying
+      to catalog all of human knowledge</a> that can report <a href="https://www.wolframalpha.com/">undeniable</a><a
+      href="https://en.wikipedia.org/wiki/Google_Knowledge_Graph">successes</a>.
     But I want to argue that these successes will be bounded: <a
-    href="https://markusstrasser.org/extracting-knowledge-from-literature/">constructing
-    a knowledge graph is a huge kludge</a><sup>[5]</sup>. Attempts to
+      href="https://markusstrasser.org/extracting-knowledge-from-literature/">constructing
+      a knowledge graph is a huge kludge</a><sup>[5]</sup>. Attempts to
     catalog all knowledge are stereotypical <a
-    href="https://universalprior.substack.com/p/via-productiva?s=w#:~:text=Don%27t%20fight%20the%20Hydra.">Hydra
-    problems</a>, things that grow in complexity as you fight them. The
+      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/via-productiva?s=w#:~:text=Don%27t%20fight%20the%20Hydra.">Hydra
+      problems</a>, things that grow in complexity as you fight them. The
     more statements you add, the more possible connections you need to
     consider. <strong>Thus, organizing research according to the
-    statement-centric view results in poor scaling properties and
-    introduces a key bottleneck</strong>.</p>
-    <div class="sidenote">
+      statement-centric view results in poor scaling properties and
+      introduces a key bottleneck</strong>.
+  </p>
+  <div class="sidenote">
     <p>[5] </p>
     <p>I don’t endorse the following statement, but it’s too snappy not
-    to include: “<a
-    href="https://news.ycombinator.com/item?id=29445715#:~:text=Those%20who%20can%27t%20do%20teach%2C%20and%20those%20who%20can%27t%20teach%20decorate%20data%20with%20semantic%20features.">Those
-    who can’t do teach, and those who can’t teach decorate data with
-    semantic features.</a>”</p>
-    </div>
-    <div class="sidenote">
+      to include: “<a
+        href="https://news.ycombinator.com/item?id=29445715#:~:text=Those%20who%20can%27t%20do%20teach%2C%20and%20those%20who%20can%27t%20teach%20decorate%20data%20with%20semantic%20features.">Those
+        who can’t do teach, and those who can’t teach decorate data with
+        semantic features.</a>”</p>
+  </div>
+  <div class="sidenote">
     <p>[4] </p>
     <p>(The projects, not the subfields. It’s not <em>that</em>
-    bad.)</p>
-    </div>
-    <div class="sidenote">
+      bad.)</p>
+  </div>
+  <div class="sidenote">
     <p>[3] </p>
     <p>Rude!</p>
-    </div>
-    <h2 id="people-centric-view"><strong>People-centric
-    view</strong></h2>
-    <p>As always, <a
-    href="https://www.youtube.com/watch?t=966&amp;v=1bSPNboKCzM&amp;feature=youtu.be">there
-    is another way of looking at this</a>. When I started out in
+  </div>
+  <h2 id="people-centric-view"><strong>People-centric
+      view</strong></h2>
+  <p>As always, <a href="https://www.youtube.com/watch?t=966&amp;v=1bSPNboKCzM&amp;feature=youtu.be">there
+      is another way of looking at this</a>. When I started out in
     research, I did not find a big graph of (hopefully) true statements,
     densely interconnected and easily accessible. Instead, I found a
     great, disjoint, overwhelming <em>everything</em>.</p>
-    <p>The feeling of overwhelmedness diminished over time, but not
+  <p>The feeling of overwhelmedness diminished over time, but not
     because I successfully constructed a mental map of science’s true
     statements; Instead, I started to model research as something
     <em>done by people</em>. Instead of collecting true statements that
-    float in a <a
-    href="https://en.wikipedia.org/wiki/Platonic_realism">platonic
-    realm</a>, <strong>I started collecting models of the mindsets of
-    the influential researchers in the field</strong>. Evan Hubinger <a
-    href="https://www.alignmentforum.org/posts/X2i9dQQK3gETCyqh2/chris-olah-s-views-on-agi-safety">has
-    a similar strategy</a>:</p>
-    <blockquote>
+    float in a <a href="https://en.wikipedia.org/wiki/Platonic_realism">platonic
+      realm</a>, <strong>I started collecting models of the mindsets of
+      the influential researchers in the field</strong>. Evan Hubinger <a
+      href="https://www.alignmentforum.org/posts/X2i9dQQK3gETCyqh2/chris-olah-s-views-on-agi-safety">has
+      a similar strategy</a>:
+  </p>
+  <blockquote>
     <p>In thinking about AGI safety—and really any complex topic on
-    which many smart people disagree—I’ve often found it very useful to
-    build a collection of different viewpoints from people that I
-    respect that I feel like I understand well enough to be able to
-    think from their perspective. For example, I will often try to
-    compare what an idea feels like when I put on my Paul Christiano hat
-    to what it feels like when I put on my Scott Garrabrant hat.</p>
-    </blockquote>
-    <p>There are a ton of reasons why this people-centric view of the
+      which many smart people disagree—I’ve often found it very useful to
+      build a collection of different viewpoints from people that I
+      respect that I feel like I understand well enough to be able to
+      think from their perspective. For example, I will often try to
+      compare what an idea feels like when I put on my Paul Christiano hat
+      to what it feels like when I put on my Scott Garrabrant hat.</p>
+  </blockquote>
+  <p>There are a ton of reasons why this people-centric view of the
     research landscape might be more appropriate than the
     statement-centric view:</p>
-    <ul class="incremental">
-    <li><p>The <em>(hopefully) true</em> research statements sometimes
-    turn out to be <em><a
-    href="https://slatestarcodex.com/2019/05/07/5-httlpr-a-pointed-review/">not</a></em><a
-    href="https://slatestarcodex.com/2019/05/07/5-httlpr-a-pointed-review/">true</a>
-    at all. Or, more commonly, they tend to be <em><a
-    href="https://en.wikipedia.org/wiki/Classical_mechanics">kind
-    of</a></em><a
-    href="https://en.wikipedia.org/wiki/Classical_mechanics">true</a>,
-    but with a long list of caveats. And even if they are
-    <em>actually</em> true, they often only apply in an idealized
-    setting. The statement-centric view does not handle uncertainty
-    well.</p></li>
-    <li><p>In contrast, the people-centric view handles uncertainty
-    <em>very</em> well. Beliefs have a natural probabilistic
-    interpretation (<a
-    href="https://en.wikipedia.org/wiki/Cox%27s_theorem">Cox’s
-    theorem</a>) and Bayes’ rule is a powerful tool for operating in
-    epistemically fraught territory.</p></li>
-    <li><p>Our neural circuitry is <a
-    href="https://yourlogicalfallacyis.com/">not made for formal
-    logic</a>. Even scientists are <em>really</em><a
-    href="https://www.jstor.org/stable/284626">bad at propositional
-    logic</a>. (With “ <em>really</em> <em>bad</em> ” I mean <a
-    href="https://dialnet.unirioja.es/descarga/articulo/8223759.pdf">as
-    bad as everyone</a>, to the point where we might want to
-    re-calibrate what we mean with “bad at logic”.) But the
-    statement-centric view presupposes that researchers have a
-    sophisticated understanding of logic, otherwise they cannot navigate
-    the graph of true statements.</p></li>
-    <li><p>In contrast, our neural circuitry <em>is</em> (at least in
-    part) <a
-    href="https://en.wikipedia.org/wiki/Machiavellian_intelligence">made
-    for understanding people</a>. We have a very natural understanding
-    of <a href="https://en.wikipedia.org/wiki/Theory_of_mind">states of
-    mind</a> and can (with a little effort) <a
-    href="https://www.econlib.org/archives/2011/06/the_ideological.html">simulate
-    multiple contradictory worldviews</a> and (sometimes) resolve
-    them.</p></li>
-    <li><p>A bit polemic, but not strictly untrue: “<a
-    href="https://markusstrasser.org/extracting-knowledge-from-literature/">Close
-    to nothing of what makes science actually work is published as text
-    on the web</a>”. Knowing what certain researchers believe and what
-    they are <em>trying</em> to show can explain a <strong>lot</strong>
-    about the variability in the literature (see the Appendix).
-    Reconstructing a line of research is a lot easier when you are
-    familiar with what the involved researchers usually tend to look
-    for/focus on.</p></li>
-    </ul>
-    <p>The statement-centric view is implicitly underlying the <a
-    href="https://markusstrasser.org/companies-knowledge-discovery/">many</a>
+  <ul class="incremental">
+    <li>
+      <p>The <em>(hopefully) true</em> research statements sometimes
+        turn out to be <em><a href="https://slatestarcodex.com/2019/05/07/5-httlpr-a-pointed-review/">not</a></em><a
+          href="https://slatestarcodex.com/2019/05/07/5-httlpr-a-pointed-review/">true</a>
+        at all. Or, more commonly, they tend to be <em><a href="https://en.wikipedia.org/wiki/Classical_mechanics">kind
+            of</a></em><a href="https://en.wikipedia.org/wiki/Classical_mechanics">true</a>,
+        but with a long list of caveats. And even if they are
+        <em>actually</em> true, they often only apply in an idealized
+        setting. The statement-centric view does not handle uncertainty
+        well.
+      </p>
+    </li>
+    <li>
+      <p>In contrast, the people-centric view handles uncertainty
+        <em>very</em> well. Beliefs have a natural probabilistic
+        interpretation (<a href="https://en.wikipedia.org/wiki/Cox%27s_theorem">Cox’s
+          theorem</a>) and Bayes’ rule is a powerful tool for operating in
+        epistemically fraught territory.
+      </p>
+    </li>
+    <li>
+      <p>Our neural circuitry is <a href="https://yourlogicalfallacyis.com/">not made for formal
+          logic</a>. Even scientists are <em>really</em><a href="https://www.jstor.org/stable/284626">bad at
+          propositional
+          logic</a>. (With “ <em>really</em> <em>bad</em> ” I mean <a
+          href="https://dialnet.unirioja.es/descarga/articulo/8223759.pdf">as
+          bad as everyone</a>, to the point where we might want to
+        re-calibrate what we mean with “bad at logic”.) But the
+        statement-centric view presupposes that researchers have a
+        sophisticated understanding of logic, otherwise they cannot navigate
+        the graph of true statements.</p>
+    </li>
+    <li>
+      <p>In contrast, our neural circuitry <em>is</em> (at least in
+        part) <a href="https://en.wikipedia.org/wiki/Machiavellian_intelligence">made
+          for understanding people</a>. We have a very natural understanding
+        of <a href="https://en.wikipedia.org/wiki/Theory_of_mind">states of
+          mind</a> and can (with a little effort) <a
+          href="https://www.econlib.org/archives/2011/06/the_ideological.html">simulate
+          multiple contradictory worldviews</a> and (sometimes) resolve
+        them.</p>
+    </li>
+    <li>
+      <p>A bit polemic, but not strictly untrue: “<a
+          href="https://markusstrasser.org/extracting-knowledge-from-literature/">Close
+          to nothing of what makes science actually work is published as text
+          on the web</a>”. Knowing what certain researchers believe and what
+        they are <em>trying</em> to show can explain a <strong>lot</strong>
+        about the variability in the literature (see the Appendix).
+        Reconstructing a line of research is a lot easier when you are
+        familiar with what the involved researchers usually tend to look
+        for/focus on.</p>
+    </li>
+  </ul>
+  <p>The statement-centric view is implicitly underlying the <a
+      href="https://markusstrasser.org/companies-knowledge-discovery/">many</a>
     <a href="https://derivationmap.net/other_projects">previous</a> <a
-    href="https://ebrains.eu/service/find-data/">approaches</a> to
+      href="https://ebrains.eu/service/find-data/">approaches</a> to
     organizing research knowledge; none of the projects I’ve seen focus
     on the people who do the research. What would an approach that
     embraces the people-centric view look like? Would it be scalable?
-    I’m glad you ask!</p>
-    <h2 id="i-trawl-the-neuroverse"><strong>I trawl the
-    neuroverse</strong></h2>
-    <p>I’ve been having a ton of fun with <a
-    href="https://universalprior.substack.com/p/making-of-ian">finetuning
-    language models</a> on various types of text. For example, I
+    I’m glad you ask!
+  </p>
+  <h2 id="i-trawl-the-neuroverse"><strong>I trawl the
+      neuroverse</strong></h2>
+  <p>I’ve been having a ton of fun with <a
+      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/making-of-ian">finetuning
+      language models</a> on various types of text. For example, I
     finetuned a model on <a href="https://www.kialo.com/">Kialo</a>
     debates (a platform with extremely structured debates about complex
     questions)<sup>[6]</sup>. The resulting model is great at LARPing a
     serious debate about <em>any</em> topic you provide as a prompt.
     Here is a debate about “Is it morally permissible to wear
     socks?”:</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[6] </p>
-    <p>I got a scrape from the authors of <a
-    href="https://arxiv.org/pdf/2006.04562.pdf">this</a> paper; very
-    clean dataset! &lt;3</p>
-    </div>
-    <p>(That debate about socks is irrelevant to scaling research, but
+    <p>I got a scrape from the authors of <a href="https://arxiv.org/pdf/2006.04562.pdf">this</a> paper; very
+      clean dataset! &lt;3</p>
+  </div>
+  <p>(That debate about socks is irrelevant to scaling research, but
     I’ve been dying to share it, and the moment seemed opportune.)</p>
-    <p>More <em>useful</em> models<sup>[7]</sup> are my “<a
-    href="https://en.wikipedia.org/wiki/Gy%C3%B6rgy_Buzs%C3%A1ki">Buzsáki</a>”
-    and my “<a
-    href="https://en.wikipedia.org/wiki/Eve_Marder">Marder</a>” models.
+  <p>More <em>useful</em> models<sup>[7]</sup> are my “<a
+      href="https://en.wikipedia.org/wiki/Gy%C3%B6rgy_Buzs%C3%A1ki">Buzsáki</a>”
+    and my “<a href="https://en.wikipedia.org/wiki/Eve_Marder">Marder</a>” models.
     Both Eve Marder and György Buzsáki are famous neuroscientists who
     write extensively and have well-defined world views. I collected a
     lot of their writing (as well as interviews given, articles written
     about them, articles written by their students, …) and finetuned two
     separate models on that data.</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[7] </p>
     <p>albeit less funny</p>
-    </div>
-    <p>The resulting models have picked up many peculiarities of their
+  </div>
+  <p>The resulting models have picked up many peculiarities of their
     flesh-and-blood counterparts. Buzsáki talks a lot about oscillations
     and rhythms, Marder talks about the <a
-    href="https://en.wikipedia.org/wiki/Stomatogastric_nervous_system">stomatogastric
-    ganglion</a> in the crab<sup>[8]</sup>. Just having these models
+      href="https://en.wikipedia.org/wiki/Stomatogastric_nervous_system">stomatogastric
+      ganglion</a> in the crab<sup>[8]</sup>. Just having these models
     fantasize open-ended text is an interesting experience! Here is
     Buzsáki fantasizing about the brain:</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[8] </p>
     <p>They are also terribly shallow and inconsistent, and I have mixed
-    feelings about<a href="https://qntm.org/mmacevedo">going down this
-    road</a>. Perhaps it would be nicer to separate the person from the
-    “school of thought”, which is the thing we <em>actually</em> care
-    about. But the person-proxy was easier to implement. And I do think
-    scaling research might be very important.</p>
-    </div>
-    <blockquote>
+      feelings about<a href="https://qntm.org/mmacevedo">going down this
+        road</a>. Perhaps it would be nicer to separate the person from the
+      “school of thought”, which is the thing we <em>actually</em> care
+      about. But the person-proxy was easier to implement. And I do think
+      scaling research might be very important.</p>
+  </div>
+  <blockquote>
     <p>The purpose of the brain is to help in an organism’s survival.
-    However, survival requires not only an optimal physiological
-    function but also a dynamic adaptation to changing environmental
-    conditions, which is why we have two brains in our skull. There is a
-    slow and a fast one. The slow brain handles tasks of perception,
-    emotion, motor activation, and general purpose computation, whereas
-    the fast brain (or limbic system) deals with tasks of action
-    selection, impulse generation, and goal-directed behavior.</p>
-    </blockquote>
-    <p>This is not how Kahnemann <a
-    href="https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow">defines</a>
+      However, survival requires not only an optimal physiological
+      function but also a dynamic adaptation to changing environmental
+      conditions, which is why we have two brains in our skull. There is a
+      slow and a fast one. The slow brain handles tasks of perception,
+      emotion, motor activation, and general purpose computation, whereas
+      the fast brain (or limbic system) deals with tasks of action
+      selection, impulse generation, and goal-directed behavior.</p>
+  </blockquote>
+  <p>This is not how Kahnemann <a href="https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow">defines</a>
     “thinking fast and slow”, but (for me) it’s useful to take the
     “false” definition as a starting point to think about <em>why</em>
     this is false.</p>
-    <p>And it gets even cooler when the two models talk to each other! I
+  <p>And it gets even cooler when the two models talk to each other! I
     took a page out of <a href="https://generative.ink/">moire’s
-    notebook</a> and set up a “<a
-    href="https://neuro-verse.herokuapp.com/">neuroverse</a>”.</p>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_183.png" /><a
-    href="https://www.youtube.com/watch?v=J-P7yVqJ9Wk">I trawl the
-    neuroverse.</a></p>
-    <p>I provide a context (see above, “The following transcript…”) to
+      notebook</a> and set up a “<a href="https://neuro-verse.herokuapp.com/">neuroverse</a>”.</p>
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_183.png" /><a
+      href="https://www.youtube.com/watch?v=J-P7yVqJ9Wk">I trawl the
+      neuroverse.</a></p>
+  <p>I provide a context (see above, “The following transcript…”) to
     the two models which makes them “believe” that they are having a
     public scientific debate. Then the models take turns at “speaking”,
-    i.e. generating text conditional on the preceding text. <a
-    href="https://neuro-verse.herokuapp.com/">The resulting
-    conversations</a> are sometimes nonsense, sometimes end or change
+    i.e. generating text conditional on the preceding text. <a href="https://neuro-verse.herokuapp.com/">The resulting
+      conversations</a> are sometimes nonsense, sometimes end or change
     topic very abruptly, but also are (occasionally) very
     insightful.</p>
-    <p>We can do a particularly fun thing with this setup: We can
+  <p>We can do a particularly fun thing with this setup: We can
     explore multiple possible continuations of a conversation. That’s
     why every page lists several options for what Buzsáki or Marder
     might say at that point in the conversation - and we are free to
     explore the counterfactuals by clicking on the arrows next to the
     text.</p>
-    <p>You can tell that I am very excited about my new toy. It
+  <p>You can tell that I am very excited about my new toy. It
     certainly fits well into a people-centric view of research, but is
     it useful? Well, there are still a few problems.</p>
-    <ol class="incremental" type="1">
-    <li>The model tends to <a
-    href="https://ehudreiter.com/2018/11/12/hallucination-in-neural-nlg/">hallucinate</a>,
-    i.e. say wrong things very confidently.</li>
+  <ol class="incremental" type="1">
+    <li>The model tends to <a href="https://ehudreiter.com/2018/11/12/hallucination-in-neural-nlg/">hallucinate</a>,
+      i.e. say wrong things very confidently.</li>
     <li>The amount of text grows exponentially with the length of the
-    conversation, making it hard to find interesting paths.</li>
+      conversation, making it hard to find interesting paths.</li>
     <li>The conversation lacks focus, and the models do not engage
-    deeply with their interlocutor.</li>
-    </ol>
-    <p>The solution to hallucinations will likely be some combination of
-    <a
-    href="https://openai.com/blog/instruction-following/">InstructGPT</a>
+      deeply with their interlocutor.</li>
+  </ol>
+  <p>The solution to hallucinations will likely be some combination of
+    <a href="https://openai.com/blog/instruction-following/">InstructGPT</a>
     and <a
-    href="https://deepmind.com/research/publications/2022/GopherCite-Teaching-Language-Models-To-Support-Answers-With-Verified-Quotes">GopherCite</a>.
+      href="https://deepmind.com/research/publications/2022/GopherCite-Teaching-Language-Models-To-Support-Answers-With-Verified-Quotes">GopherCite</a>.
     The solution for taming exponential growth will be some variant of
-    <a
-    href="https://universalprior.substack.com/p/on-automatic-ideas">automatic
-    ranking and filtering</a>. The solution for the lack of focus will
+    <a href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-automatic-ideas">automatic
+      ranking and filtering</a>. The solution for the lack of focus will
     be… more capable models? Maybe? I haven’t tried finetuning two
-    really large models like <a
-    href="https://beta.openai.com/docs/engines">DaVinci</a>, but I could
+    really large models like <a href="https://beta.openai.com/docs/engines">DaVinci</a>, but I could
     imagine this goes a good distance towards getting more focused
-    debates.</p>
-    <p><strong>In the “limit of awesomeness” (i.e. imagining everything
-    works well), we could get a language-model version of influential
-    people in the field, have them hash out disagreements, and identify
-    “holes” in the state-of-the-art.</strong> We would update these
+    debates.
+  </p>
+  <p><strong>In the “limit of awesomeness” (i.e. imagining everything
+      works well), we could get a language-model version of influential
+      people in the field, have them hash out disagreements, and identify
+      “holes” in the state-of-the-art.</strong> We would update these
     models regularly to always be up-to-date and make them available to
     any researcher who would like to use them. (The researchers whose
     work is being used could be rewarded with a “super-citation”, or
     some type of “sub-coauthorship”). Using language models is highly
-    scalable; <a
-    href="https://universalprior.substack.com/p/on-automatic-ideas?s=w">given
-    a research question</a>, we ask our team of experts about their
+    scalable; <a href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-automatic-ideas?s=w">given
+      a research question</a>, we ask our team of experts about their
     thoughts on the matter and summarize the conclusions they derive.
     Ideally, this will leave us with <em>only</em> the relevant
     literature information for the question at hand, removing all the <a
-    href="https://universalprior.substack.com/p/on-not-reading-papers?s=w#:~:text=The%20scientific%20paper%2C%20as%20it%20exists%2C%20has%20one%20central%20shortcoming%3A%20The%20author">extra
-    information we currently have to sift through</a>. <strong>Shifting
-    from a statement-centric to a people-centric view might remove the
-    bottleneck of contextualizing ideas in the existing
-    literature.</strong></p>
-    <h2 id="people-and-groups"><strong>People and Groups</strong></h2>
-    <p>All of the above smells like the “<a
-    href="https://nintil.com/newton-hypothesis">Newton hypothesis</a>”,
+      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-not-reading-papers?s=w#:~:text=The%20scientific%20paper%2C%20as%20it%20exists%2C%20has%20one%20central%20shortcoming%3A%20The%20author">extra
+      information we currently have to sift through</a>. <strong>Shifting
+      from a statement-centric to a people-centric view might remove the
+      bottleneck of contextualizing ideas in the existing
+      literature.</strong></p>
+  <h2 id="people-and-groups"><strong>People and Groups</strong></h2>
+  <p>All of the above smells like the “<a href="https://nintil.com/newton-hypothesis">Newton hypothesis</a>”,
     the idea that science is advanced only by a few exceptional
     individuals. We might create language models of the big fish and
     have them hash out the difficult questions, but aren’t we neglecting
     the contributions of the majority of all researchers?</p>
-    <p>One (distasteful, but supported by <a
-    href="https://nintil.com/newton-hypothesis">some evidence</a>)
+  <p>One (distasteful, but supported by <a href="https://nintil.com/newton-hypothesis">some evidence</a>)
     answer is, “yep, looking at the big fish is enough. If you focus on
     the critical 5%, you’ll get all the signal and none of the noise.”
     As a starving grad student™, this answer makes me sad. Sure, most
-    people will associate the <a
-    href="https://en.wikipedia.org/wiki/Stomatogastric_nervous_system">stomatogastric
-    ganglion</a> with Eve Marder, but what about the grad students and
+    people will associate the <a href="https://en.wikipedia.org/wiki/Stomatogastric_nervous_system">stomatogastric
+      ganglion</a> with Eve Marder, but what about the grad students and
     postdocs that contribute data and ideas? And the colleagues who
     challenge and improve the research through peer review and their
     work?</p>
-    <p>Perhaps calling it the “person-centric” view is a bit of a
+  <p>Perhaps calling it the “person-centric” view is a bit of a
     misnomer<sup>[9]</sup>. When we feed the language model with papers
     from Eve Marder, the model learns not from Eve Marder the person,
     but Eve Marder the <del>egregore</del> collection of ideas and
@@ -407,70 +392,64 @@ Kirchner</a></td>
     many people and contain references to the works of even more people.
     And they are shaped by how the entire field thinks about certain
     questions at a given time.</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[9] </p>
     <p>But I’m not just going to rewrite the previous sections because
-    of that! Who am I? George R. R. Martin?</p>
-    </div>
-    <p>In that sense, the person-centric view represents a very neat
-    compromise between the Newton hypothesis and the <a
-    href="https://en.wikipedia.org/wiki/Ortega_hypothesis">Ortega
-    hypothesis</a> (which holds that average or mediocre scientists
+      of that! Who am I? George R. R. Martin?</p>
+  </div>
+  <p>In that sense, the person-centric view represents a very neat
+    compromise between the Newton hypothesis and the <a href="https://en.wikipedia.org/wiki/Ortega_hypothesis">Ortega
+      hypothesis</a> (which holds that average or mediocre scientists
     contribute substantially to the advancement of science). In this
     setup, it is impossible to disentangle the individual from the
-    community they work in. Instead, the <a
-    href="https://plato.stanford.edu/entries/thomas-kuhn/">paradigm</a>
+    community they work in. Instead, the <a href="https://plato.stanford.edu/entries/thomas-kuhn/">paradigm</a>
     and the supporting ideas are central.</p>
-    <p>Still - having found a solution<sup>[10]</sup> to the bottleneck
+  <p>Still - having found a solution<sup>[10]</sup> to the bottleneck
     of contextualizing scientific questions, the next bottleneck becomes
     apparent. Assuming we have a neat way of coming up with interesting
     questions and contextualizing them - how do we find answers in a
     scalable way? More on that next time.</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[10] </p>
     <p>A solution that satisfies <em>me</em> ; not sure about you, dear
-    reader. Also, it’s not so much a solution as a solution strategy.
-    Maybe.</p>
-    </div>
-    <p>Subscribe</p>
-    <h2 id="appendix"><strong>Appendix</strong></h2>
-    <p>When I talk about the topic of this post to friends and
+      reader. Also, it’s not so much a solution as a solution strategy.
+      Maybe.</p>
+  </div>
+  <h2 id="appendix"><strong>Appendix</strong></h2>
+  <p>When I talk about the topic of this post to friends and
     colleagues, at some point I usually say something like “researcher
     identity explains the highest amount of variability”. This is met
     with some confusion. Variability in <em>what</em>? And how do you
     even encode researcher identity? Which space are you talking
     about?</p>
-    <p>Those are 100% reasonable objections and the phrase in isolation
+  <p>Those are 100% reasonable objections and the phrase in isolation
     creates more confusion than illumination. So here is an elaboration
     of what I mean when I talk about “researcher identity explains
     variability”.</p>
-    <p>First, a tSNE projection of the semantic embedding of all the
+  <p>First, a tSNE projection of the semantic embedding of all the
     preprints on biorxiv<sup>[11]</sup>:</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[11] </p>
     <p>Actually not <em>all</em> the papers, only from ~ half of the
-    categories. But those are the largest categories.</p>
-    </div>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_184.png" />I
+      categories. But those are the largest categories.</p>
+  </div>
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_184.png" />I
     use the <a href="http://rxivist.org/">rxivist</a> API to download
-    the titles, abstracts, and metadata of the preprints available on <a
-    href="https://www.biorxiv.org/">biorxiv</a>. Then I used the <a
-    href="https://github.com/allenai/specter">Allen AI SPECTER</a> model
+    the titles, abstracts, and metadata of the preprints available on <a href="https://www.biorxiv.org/">biorxiv</a>.
+    Then I used the <a href="https://github.com/allenai/specter">Allen AI SPECTER</a> model
     in huggingface to compute embeddings (768 dimensions) for all the
     preprints. With tSNE I project those embeddings down to two
     dimensions where I can plot them and color them according to their
     category on biorxiv.</p>
-    <p>We see that mostly the categories occupy different regions of the
+  <p>We see that mostly the categories occupy different regions of the
     space, except for “genomics” and “bioinformatics”<sup>[12]</sup>.
     Let’s focus on neuroscience since it’s the largest category on
     biorxiv and since I know the people in that field the best.</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[12] </p>
     <p>It also looks a bit like a cauliflower head from the top.</p>
-    </div>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_185.png" />
+  </div>
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_185.png" />
     <strong>a</strong> Zoom in on neuroscience from the tSNE plot above.
     Superimposed are the projected embeddings of three famous
     neuroscientists as well as yours truly. <strong>b</strong> Schematic
@@ -478,42 +457,40 @@ Kirchner</a></td>
     <strong>c</strong> Coefficient of determination (r^2) as a function
     of the percentage of authors included in the regression between the
     authorship matrix and the semantic embedding. Authors are ordered
-    from “most to least occurrences on papers”.</p>
-    <p>When we highlight the papers of only a few select researchers in
+    from “most to least occurrences on papers”.
+  </p>
+  <p>When we highlight the papers of only a few select researchers in
     the projection plot, we see that researchers tend to occupy
     different regions of the space. <a
-    href="https://www.med.upenn.edu/bbl/faculty-tsatterthwaithe.html">Satterthwaite</a>
-    is a professor for psychiatry, <a
-    href="https://pni.princeton.edu/faculty/uri-hasson">Hasson</a> a
-    professor for psychology, <a
-    href="https://www.carandinilab.net/">Carandini</a> a professor of
+      href="https://www.med.upenn.edu/bbl/faculty-tsatterthwaithe.html">Satterthwaite</a>
+    is a professor for psychiatry, <a href="https://pni.princeton.edu/faculty/uri-hasson">Hasson</a> a
+    professor for psychology, <a href="https://www.carandinilab.net/">Carandini</a> a professor of
     visual neuroscience, and I write blogposts on the internet.</p>
-    <p>“Knowing” these people and the relationship between them can be
+  <p>“Knowing” these people and the relationship between them can be
     interpreted as having an “authorship matrix”, where for each paper
     we have a vector of 1s and 0s to indicate which researchers
     contributed and which didn’t. When we use this authorship matrix as
     the regressor in a linear model, we find that the top 6% most
     productive researchers (everyone with more than 3 papers) can
     explain around 30% of variability of the semantic embedding.</p>
-    <p>This is what I mean when I say “researcher identity explains the
+  <p>This is what I mean when I say “researcher identity explains the
     highest amount of variability”. Note that this analysis does not
     show that it’s <em>true</em> when I say that - I haven’t even
     investigated other possible regressors like “more granular research
     topic” or “citation count”. Also, the Allen AI SPECTER model was
     trained with the citation graph, potentially biasing the analysis
     towards the people-centric view.</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[2] </p>
     <p>Strictly speaking, they don’t <em>need</em> to be contextualized.
-    There is value in <a
-    href="https://www.lesswrong.com/s/6BFkmEgre7uwhDxDR/p/KfMNFB3G7XNviHBPN">rediscovering
-    things that are already know</a>n. And there certainly is a failure
-    mode where researchers try to cater to an audience and optimize for
-    the virality of their projects. But those points aside, scalable
-    science needs to be context-aware (if only for the shared
-    vocabulary).</p>
-    </div>
-    <div class="debug-grid"></div>
+      There is value in <a href="https://www.lesswrong.com/s/6BFkmEgre7uwhDxDR/p/KfMNFB3G7XNviHBPN">rediscovering
+        things that are already know</a>n. And there certainly is a failure
+      mode where researchers try to cater to an audience and optimize for
+      the virality of their projects. But those points aside, scalable
+      science needs to be context-aware (if only for the shared
+      vocabulary).</p>
+  </div>
+  <div class="debug-grid"></div>
   <script src="index.js"></script>
 </body>
 

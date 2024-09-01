@@ -104,4 +104,4 @@ A big thank you to Eleanor, Yagmur, Zhuoshi, Fergus, Leonidas, and all the peopl
 
 [^2]:Jeffrey Sachs, as one of the world’s leading experts on economic development and the fight against poverty, stated that the cost to end poverty is $175 billion per year for 20 years." [source](https://borgenproject.org/how-much-does-it-cost-to-end-poverty/) [↩︎](https://forum.effectivealtruism.org/posts/FDDm6p5qs32GK9vnx/the-tale-of-gandhi-and-the-devil#fnref-t3Q2KsuNCJLioJc3d-2)
 
-[^3]:One paragraph of the story was completely written by [a “digital person” called #IAN](https://universalprior.substack.com/p/making-of-ian). Can you guess which one?
+[^3]:One paragraph of the story was completely written by [a “digital person” called #IAN](https://kirchner-jan.github.io/minimalprior/posts/universalprior/making-of-ian). Can you guess which one?

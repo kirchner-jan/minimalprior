@@ -11,7 +11,7 @@ date: 2022-05-08
 
 * * *
 
-I've [written previously](https://universalprior.substack.com/p/the-greedy-doctor-problem?s=w) on how to act when confronted with something smarter than yourself. When in such a precarious situation, it is difficult to trust “the other”; they might dispense their wisdom in a way that steers you to their benefit. [In general](https://arbital.com/p/Vinge_principle), we're screwed.
+I've [written previously](https://kirchner-jan.github.io/minimalprior/posts/universalprior/the-greedy-doctor-problem?s=w) on how to act when confronted with something smarter than yourself. When in such a precarious situation, it is difficult to trust “the other”; they might dispense their wisdom in a way that steers you to their benefit. [In general](https://arbital.com/p/Vinge_principle), we're screwed.
 
 But there are ideas for a constrained set-up that [forces “the other” to explain itself and point out potential flaws in its arguments](https://openai.com/blog/debate/). We might thus leverage “the other”'s ingenuity against itself by slowing down its reasoning to our pace. “The other” would no longer be an oracle with [prophecies that might or might not kill us](https://en.wikipedia.org/wiki/Pythia) but instead a teacher who lets us see things we otherwise couldn't.
 
@@ -23,9 +23,9 @@ Why am I bringing this up? No reason in particular.
 
 Engaging with the work of Vanessa Kosoy is a [rite](https://www.alignmentforum.org/posts/SzrmsbkqydpZyPuEh/my-take-on-vanessa-kosoy-s-take-on-agi-safety) [of](https://www.alignmentforum.org/posts/Zi7nmuSmBFbQWgFBa/infra-bayesianism-unwrapped) [passage](https://www.alignmentforum.org/posts/beLgLr6edbZw4koh2/an-143-how-to-make-embedded-agents-that-reason) in the AI Safety space. Why is that?
 
-  * The [pessimist](https://universalprior.substack.com/p/pop-culture-alignment-research-and?s=w#:~:text=going%20on%20here%3F-,When,-I%20put%20my) answer is that alignment is really, really difficult, and if you can't understand complicated math, you can't contribute.
+  * The [pessimist](https://kirchner-jan.github.io/minimalprior/posts/universalprior/pop-culture-alignment-research-and?s=w#:~:text=going%20on%20here%3F-,When,-I%20put%20my) answer is that alignment is really, really difficult, and if you can't understand complicated math, you can't contribute.
 
-  * The [optimist](https://universalprior.substack.com/p/im-not-getting-in-that-van?s=w#:~:text=It%27s%20driving%20a%20fire%20engine%20through%20the%20desert%20and%20rejoicing) take is that math is fun, and (a certain type of) person gets nerd sniped by this kind of thing.
+  * The [optimist](https://kirchner-jan.github.io/minimalprior/posts/universalprior/im-not-getting-in-that-van?s=w#:~:text=It%27s%20driving%20a%20fire%20engine%20through%20the%20desert%20and%20rejoicing) take is that math is fun, and (a certain type of) person gets nerd sniped by this kind of thing.
 
   * The realist take naturally falls somewhere in between. Complicated math can be important _and_ enjoyable. It's okay to have fun with it.
 
@@ -48,7 +48,7 @@ Now let's say you are even more uncertain about where you put your smartphone.[^
 
 ##  **Fundamentally uncertain updates**
 
-Let's say you are _really, fundamentally_ unsure about where you put your phone. If someone were to ~~put a gun to your head~~ threaten to [sign you up for sweaters for kittens](https://universalprior.substack.com/p/the-tale-of-gandhi-and-the-devil?s=w#:~:text=sweaters%20for%20kittens) unless you give them your best guess, you could not[^5]. 
+Let's say you are _really, fundamentally_ unsure about where you put your phone. If someone were to ~~put a gun to your head~~ threaten to [sign you up for sweaters for kittens](https://kirchner-jan.github.io/minimalprior/posts/universalprior/the-tale-of-gandhi-and-the-devil?s=w#:~:text=sweaters%20for%20kittens) unless you give them your best guess, you could not[^5]. 
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_204.png)
 
@@ -103,7 +103,7 @@ This is a _very_ cautious strategy, and it might be appropriate when you're in d
 
 ##  **Closing thoughts**
 
-This concludes the introduction to Elementary Infrabayesianism. I realize that I have only scratched the surface of what's in [the sequence](https://www.lesswrong.com/s/CmrW8fCmSLK7E25sa), and there is [more](https://www.alignmentforum.org/posts/gHgs2e2J5azvGFatb/infra-bayesian-physicalism-a-formal-theory-of-naturalized) coming [out](https://www.alignmentforum.org/posts/PrYbdKcj89f8swCkr/infra-topology) every other month, but letting yourself get nerd-sniped is just about as important as being able to [stop working on something and publish](https://universalprior.substack.com/p/via-productiva?s=w#:~:text=Don%27t%20fight%20the%20Hydra.). I hope what I wrote here is helpful to some, particularly in conjunction with the other explanations on the topic ([^1](https://www.alignmentforum.org/posts/SzrmsbkqydpZyPuEh/my-take-on-vanessa-kosoy-s-take-on-agi-safety) [^2](https://www.alignmentforum.org/posts/Zi7nmuSmBFbQWgFBa/infra-bayesianism-unwrapped) [^3](https://www.alignmentforum.org/posts/beLgLr6edbZw4koh2/an-143-how-to-make-embedded-agents-that-reason)), which also go beyond the introduction.
+This concludes the introduction to Elementary Infrabayesianism. I realize that I have only scratched the surface of what's in [the sequence](https://www.lesswrong.com/s/CmrW8fCmSLK7E25sa), and there is [more](https://www.alignmentforum.org/posts/gHgs2e2J5azvGFatb/infra-bayesian-physicalism-a-formal-theory-of-naturalized) coming [out](https://www.alignmentforum.org/posts/PrYbdKcj89f8swCkr/infra-topology) every other month, but letting yourself get nerd-sniped is just about as important as being able to [stop working on something and publish](https://kirchner-jan.github.io/minimalprior/posts/universalprior/via-productiva?s=w#:~:text=Don%27t%20fight%20the%20Hydra.). I hope what I wrote here is helpful to some, particularly in conjunction with the other explanations on the topic ([^1](https://www.alignmentforum.org/posts/SzrmsbkqydpZyPuEh/my-take-on-vanessa-kosoy-s-take-on-agi-safety) [^2](https://www.alignmentforum.org/posts/Zi7nmuSmBFbQWgFBa/infra-bayesianism-unwrapped) [^3](https://www.alignmentforum.org/posts/beLgLr6edbZw4koh2/an-143-how-to-make-embedded-agents-that-reason)), which also go beyond the introduction.
 
 I'm afraid at this point I'm obliged to add a hot take on what all of this means for AI Safety. I'm not sure. I can tell myself a story about how being _very careful_ about how quickly you discard alternative hypotheses/narrow down the hypothesis space is important. I can also see the outline of how this framework ties in with [fancy decision theory](https://www.lesswrong.com/tag/updateless-decision-theory). But I still feel like I only scratched the surface of what's there. I'd really like to get a better grasp of that [Nirvana trick](https://www.lesswrong.com/s/CmrW8fCmSLK7E25sa/p/zB4f7QqKhBHa5b37a#:~:text=to%20formalize%20the%20%22-,Nirvana,-trick%22%20\(elaborated%20below), but timelines are short and there is a lot out there to explore.
 

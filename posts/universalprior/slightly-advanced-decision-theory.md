@@ -215,7 +215,7 @@ When the **x** is small, then we are still in the "basically linear" regime and 
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_148.png)Same as…. You know the spiel.
 
-Now, clearly, if the **a** of some opportunities are [orders of magnitude larger](https://www.effectivealtruism.org/articles/prospecting-for-gold-owen-cotton-barratt/) than others, then those other opportunities still should receive approximately 0% of our donations (sorry [sweaters-for-kittens](https://universalprior.substack.com/p/the-tale-of-gandhi-and-the-devil)). But if there are multiple equally promising opportunities, it is o.k. to split your budget.
+Now, clearly, if the **a** of some opportunities are [orders of magnitude larger](https://www.effectivealtruism.org/articles/prospecting-for-gold-owen-cotton-barratt/) than others, then those other opportunities still should receive approximately 0% of our donations (sorry [sweaters-for-kittens](https://kirchner-jan.github.io/minimalprior/posts/universalprior/the-tale-of-gandhi-and-the-devil)). But if there are multiple equally promising opportunities, it is o.k. to split your budget.
 
 ####  **Concluding thoughts**
 
@@ -237,9 +237,9 @@ This is in part because the competition is very weak. Even if you _naively_ impl
 
 [^3]:Note how "[postrats](https://threadreaderapp.com/thread/1206339190352437255.html)" are focused on questions three and four instead.
 
-[^4]:Or "[scoutish](https://universalprior.substack.com/p/soldiers-scouts-and-albatrosses)".
+[^4]:Or "[scoutish](https://kirchner-jan.github.io/minimalprior/posts/universalprior/soldiers-scouts-and-albatrosses)".
 
-[^5]:I guess that is the appropriate opposite of cerebral. Less charitable, they can also be called[ soldiers](https://universalprior.substack.com/p/soldiers-scouts-and-albatrosses).
+[^5]:I guess that is the appropriate opposite of cerebral. Less charitable, they can also be called[ soldiers](https://kirchner-jan.github.io/minimalprior/posts/universalprior/soldiers-scouts-and-albatrosses).
 
 [^6]:This is a tough problem in philosophy. David Hume says it’s impossible, see [Hume’s Guillotine](https://en.wikipedia.org/wiki/Is%E2%80%93ought_problem).
 

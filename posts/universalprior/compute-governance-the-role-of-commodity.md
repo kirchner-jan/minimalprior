@@ -7,7 +7,7 @@ date: 2022-03-26
 ---
 
 
-_Meta: As long-term readers know,[sometimes](https://universalprior.substack.com/p/cognitive-biases-in-large-language?s=w) [I](https://universalprior.substack.com/p/drug-addicts-and-deceptively-aligned?s=w) [switch](https://universalprior.substack.com/p/puberty-as-cause-x?s=w) into my academic mode and write semi-formal posts analyzing a topic. This is such a post, summarizing some of the things I learned after doing a deep dive into a subfield of AI Safety._
+_Meta: As long-term readers know,[sometimes](https://kirchner-jan.github.io/minimalprior/posts/universalprior/cognitive-biases-in-large-language?s=w) [I](https://kirchner-jan.github.io/minimalprior/posts/universalprior/drug-addicts-and-deceptively-aligned?s=w) [switch](https://kirchner-jan.github.io/minimalprior/posts/universalprior/puberty-as-cause-x?s=w) into my academic mode and write semi-formal posts analyzing a topic. This is such a post, summarizing some of the things I learned after doing a deep dive into a subfield of AI Safety._
 
 Over the coming decades, [we might see](https://www.lesswrong.com/posts/KrJfoZzpSDpnrv9va/draft-report-on-ai-timelines) machines that are as smart or smarter than humans. It is possible that these smarter-than-human machines will be built to work on our behalf and to greatly increase human welfare, such as by curing diseases and expanding economic opportunity. But simultaneously there are high risks if we build these machines with goals that are too narrow and that don't represent our broader values. The field concerned with working towards positively shaping artificial intelligence (AI) is called AI Safety ([Wiblin, 2017](https://80000hours.org/problem-profiles/positively-shaping-artificial-intelligence/)).
 

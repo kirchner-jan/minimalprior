@@ -9,7 +9,7 @@ date: 2021-10-24
 
 ## A fateful conference dinner…
 
->  _#[IAN](https://universalprior.substack.com/p/making-of-ian) says: The problem with being a "good person" is that you never have enough energy left over for doing really evil things._
+>  _#[IAN](https://kirchner-jan.github.io/minimalprior/posts/universalprior/making-of-ian) says: The problem with being a "good person" is that you never have enough energy left over for doing really evil things._
 
 Imagine the following: It is the year 2012 and you have been invited to a fancy conference dinner in Cambridge. There is champagne and you are feeling great. Stephen Hawking is here, good grief! You feel like you have made some real progress today, with so many interesting talks and discussions. You even managed to plug your latest paper to one of the conference chairs. All is well. Suddenly a sheet of paper drifts into your field of view. A declaration on the topic of the conference - animal consciousness. You eagerly sign (eleven other people already did). It's probably alright, you think. Science is about discourse. We are just stating our position...
 
