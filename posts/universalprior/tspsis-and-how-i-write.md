@@ -14,13 +14,11 @@ date: 2022-12-28
 
 ### It’s been a minute! And darn, I’ve missed you.
 
-As some of you might have read, I recently [joined OpenAI](https://universalprior.substack.com/p/a-quick-one-while-hes-away) as a researcher on the alignment team, and, phew, doing _[all the things](https://forum.effectivealtruism.org/posts/CCx7KpQHMLbkud9PK/slightly-advanced-decision-theory-102-four-reasons-not-to-be#Gotta_catch_them_all_:~:text=ex%2Dpost\)%20option.-,Or,-%2C%20in%20less%20fancy)_ is not as trivial as I thought. I've [previously quipped about](https://universalprior.substack.com/p/serendipitous-connections-applying?utm_source=substack&utm_campaign=post_embed&utm_medium=web#:~:text=While%20I%20am%20in%20no%20position) how I have no expertise in AI. While that was perhaps hyperbole, getting up to speed with where AI is heading and how to best contribute to that is fun but also a challenge. Luckily, I am not alone on my journey into AI alignment research, and I get to collaborate [with some absurdely](https://scottaaronson.blog/?p=6823#:~:text=hundred%20prime%20numbers\).-,Anyway,-%2C%20we%20actually%20have)[1](https://universalprior.substack.com/p/tspsis-and-how-i-write#footnote-1-92912194) [brilliant](https://universalprior.substack.com/p/introduction-to-hebbian-natural-abstractions) [people](https://universalprior.substack.com/p/introduction-to-hebbian-natural-abstractions). So the timing of joining was also [kind of perfect](https://openai.com/blog/chatgpt/). So things are getting more manageable every day.
+As some of you might have read, I recently [joined OpenAI](https://universalprior.substack.com/p/a-quick-one-while-hes-away) as a researcher on the alignment team, and, phew, doing _[all the things](https://forum.effectivealtruism.org/posts/CCx7KpQHMLbkud9PK/slightly-advanced-decision-theory-102-four-reasons-not-to-be#Gotta_catch_them_all_:~:text=ex%2Dpost\)%20option.-,Or,-%2C%20in%20less%20fancy)_ is not as trivial as I thought. I've [previously quipped about](https://universalprior.substack.com/p/serendipitous-connections-applying?utm_source=substack&utm_campaign=post_embed&utm_medium=web#:~:text=While%20I%20am%20in%20no%20position) how I have no expertise in AI. While that was perhaps hyperbole, getting up to speed with where AI is heading and how to best contribute to that is fun but also a challenge. Luckily, I am not alone on my journey into AI alignment research, and I get to collaborate [with some absurdely](https://scottaaronson.blog/?p=6823#:~:text=hundred%20prime%20numbers\).-,Anyway,-%2C%20we%20actually%20have)[^1] [brilliant](https://universalprior.substack.com/p/introduction-to-hebbian-natural-abstractions) [people](https://universalprior.substack.com/p/introduction-to-hebbian-natural-abstractions). So the timing of joining was also [kind of perfect](https://openai.com/blog/chatgpt/). So things are getting more manageable every day.
 
 But this little essay is not about alignment research but instead about another passion of mine: [not giving advice](https://universalprior.substack.com/p/via-productiva). I recently had a [video call with friends at Ought](https://youtu.be/YO9UiBWx6jw) about how I used their tools for academic writing. In that call, I got to wax poetically about how large language models can [make a researcher’s life easier](https://universalprior.substack.com/p/making-of-ian) and how I think about writing text. After seeing the video, a few people contacted me to ask more questions about my workflow and how I feel about using large language models to research. So now I find myself in a bit of an awkward position….
 
 Thanks for reading On Brains, Minds, And Their Possible Uses! Subscribe for free to receive new posts and support my work.
-
-Subscribe
 
 ### Why I shouldn’t write this
 
@@ -30,15 +28,15 @@ First off, I’m not a fan of belaboring a process. [XKCD said all that needs to
 
 A better strategy than [behaviorally cloning](https://ml.berkeley.edu/blog/posts/bc/) the process of someone who claims to have it figured out is to identify the [underlying](https://en.wikipedia.org/wiki/Hidden_Markov_model) [generators](https://www.alignmentforum.org/posts/pdaGN6pQyQarFHXF4/reward-is-not-the-optimization-target) that produce their success. That’s easier said than done, though, and I have no reliable method for finding generators (yet).
 
-Second, even though I still do research, I write more code than prose these days. So my writing muscle has atrophied a little bit[2](https://universalprior.substack.com/p/tspsis-and-how-i-write#footnote-2-92912194). It would be silly to restart with a post on how I write.
+Second, even though I still do research, I write more code than prose these days. So my writing muscle has atrophied a little bit[^2]. It would be silly to restart with a post on how I write.
 
 And yet, here we are.
 
-I decided to reject the second argument above because [it is self-reinforcing](https://universalprior.substack.com/p/the-tale-of-gandhi-and-the-devil?r=7inm4&utm_campaign=post&utm_medium=web&utm_source=#details). Not writing because I have not written recently is - quite clearly - a lousy reason. After not having written for a while, writing about how I write seems appropriately self-referential for this Substack. And finally, with prose and code [converging rapidly](https://www.nature.com/articles/d41586-022-04383-z), a reflection on the architecture of text might provide unexpected insights into [how AI thinks](https://www.alignmentforum.org/posts/vJFdjigzmcXMhNTsx/simulators). And maybe looking at my process allows some people to derive a generator[3](https://universalprior.substack.com/p/tspsis-and-how-i-write#footnote-3-92912194). Sooo~
+I decided to reject the second argument above because [it is self-reinforcing](https://universalprior.substack.com/p/the-tale-of-gandhi-and-the-devil?r=7inm4&utm_campaign=post&utm_medium=web&utm_source=#details). Not writing because I have not written recently is - quite clearly - a lousy reason. After not having written for a while, writing about how I write seems appropriately self-referential for this Substack. And finally, with prose and code [converging rapidly](https://www.nature.com/articles/d41586-022-04383-z), a reflection on the architecture of text might provide unexpected insights into [how AI thinks](https://www.alignmentforum.org/posts/vJFdjigzmcXMhNTsx/simulators). And maybe looking at my process allows some people to derive a generator[^3]. Sooo~
 
 ### Je Vous présente ~~`TSPSI~~`.
 
-My writing framework is called the ‘TSPSI’[4](https://universalprior.substack.com/p/tspsis-and-how-i-write#footnote-4-92912194) framework. I picked it up at some point during my Ph.D. and can't find a reference for it online, but I'm almost sure it's [not original](https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LCqKL89KNzcxYPQSTS1LLaosycjMS1fILFZIVChKzc2sAADuNQzM&q=everything+is+a+remix&oq=Everything+is+a+rem&aqs=chrome.1.0i355i512j46i512j69i57j0i512l2j46i512j0i512l4.3545j0j7&sourceid=chrome&ie=UTF-8#:~:text=with%20Site%20Links-,Everything%20is%20a%20Remix,https%3A//www.everythingisaremix.info,-The%20site%20about).
+My writing framework is called the ‘TSPSI’[^4] framework. I picked it up at some point during my Ph.D. and can't find a reference for it online, but I'm almost sure it's [not original](https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LCqKL89KNzcxYPQSTS1LLaosycjMS1fILFZIVChKzc2sAADuNQzM&q=everything+is+a+remix&oq=Everything+is+a+rem&aqs=chrome.1.0i355i512j46i512j69i57j0i512l2j46i512j0i512l4.3545j0j7&sourceid=chrome&ie=UTF-8#:~:text=with%20Site%20Links-,Everything%20is%20a%20Remix,https%3A//www.everythingisaremix.info,-The%20site%20about).
 
 The idea is to think of writing as a report of “travel through [treacherous territory](https://www.lesswrong.com/tag/map-and-territory-sequence).” In particular,
 
@@ -125,18 +123,10 @@ I’m happy to have written this! I’ve wanted to have a reference for the TSPS
 
 At the same time, I always feel a bit dissatisfied about posts that don’t have any data or simulations. But those also tend to take a lot more time, and clash a bit with what I do in my dayjob, so I’m a bit hesitant to go in that direction. Hopefully, sometime soon I’ll return to that. Let me know what you think!
 
-[1](https://universalprior.substack.com/p/tspsis-and-how-i-write#footnote-anchor-1-92912194)
+[^1]:At OAI, I go by my middle name (Hendrik) to [mitigate domain clashes](https://universalprior.substack.com/p/a-quick-one-while-hes-away#:~:text=were%20also%20called-,Jan,-.%20In%20university%2C%20I). Unfortunately, I’ve introduced myself as Jan to some people outside of work, so I tend not to react when anyone calls me.
 
-At OAI, I go by my middle name (Hendrik) to [mitigate domain clashes](https://universalprior.substack.com/p/a-quick-one-while-hes-away#:~:text=were%20also%20called-,Jan,-.%20In%20university%2C%20I). Unfortunately, I’ve introduced myself as Jan to some people outside of work, so I tend not to react when anyone calls me.
+[^2]:And it’s conceited to assume that you have a writing muscle in the first place. Do as I say, not as I do.
 
-[2](https://universalprior.substack.com/p/tspsis-and-how-i-write#footnote-anchor-2-92912194)
+[^3]:Let me know if you do, would be curious to hear!
 
-And it’s conceited to assume that you have a writing muscle in the first place. Do as I say, not as I do.
-
-[3](https://universalprior.substack.com/p/tspsis-and-how-i-write#footnote-anchor-3-92912194)
-
-Let me know if you do, would be curious to hear!
-
-[4](https://universalprior.substack.com/p/tspsis-and-how-i-write#footnote-anchor-4-92912194)
-
-Just rolls off the tongue, doesn’t it?
+[^4]:Just rolls off the tongue, doesn’t it?

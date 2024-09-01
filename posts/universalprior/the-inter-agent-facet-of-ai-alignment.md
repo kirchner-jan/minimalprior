@@ -9,7 +9,7 @@ date: 2022-09-19
 
 _Meta: I know you miss me, I miss you all too! I’ll be back! In the meantime, here is a little something the fantastic[Michael Oesterle](https://www.linkedin.com/in/michael-oesterle/?originalSubdomain=de) came up with and that might be interesting food for thought!_
 
-We argue that [intent alignment and capability robustness](https://www.alignmentforum.org/posts/SzecSPYxqRa5GCaSF/clarifying-inner-alignment-terminology) do not capture the full “chain of command” (i.e., “alignment” without any qualifier) from the programmer's intentions to an AI agent’s real-world impact, but stops at the stage where the agent performs its actions. We argue that, especially in complex [Multi-Agent Systems](https://en.wikipedia.org/wiki/Multi-agent_system) (MAS), this is not sufficient to actually achieve aligned outcomes[1](https://universalprior.substack.com/p/the-inter-agent-facet-of-ai-alignment#footnote-1-73850726). Therefore, we introduce another facet of AI Alignment, which deals with the connection between an agent’s intention and its actual impact, due to multi-agent interactions (as opposed to capability robustness).
+We argue that [intent alignment and capability robustness](https://www.alignmentforum.org/posts/SzecSPYxqRa5GCaSF/clarifying-inner-alignment-terminology) do not capture the full “chain of command” (i.e., “alignment” without any qualifier) from the programmer's intentions to an AI agent’s real-world impact, but stops at the stage where the agent performs its actions. We argue that, especially in complex [Multi-Agent Systems](https://en.wikipedia.org/wiki/Multi-agent_system) (MAS), this is not sufficient to actually achieve aligned outcomes[^1]. Therefore, we introduce another facet of AI Alignment, which deals with the connection between an agent’s intention and its actual impact, due to multi-agent interactions (as opposed to capability robustness).
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_125.png)
 
@@ -33,7 +33,7 @@ In Evan Hubinger’s [alignment terminology](https://www.alignmentforum.org/post
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_127.png)
 
-Our central argument is that multi-agent interactions add a sufficient amount of complexity to an AI agent’s action policy to justify its own type of alignment, separated from the existing alignment model. Adding inter-agent alignment to the alignment tree, we see that it complements intent alignment and capability robustness, resulting in full alignment (i.e., impact alignment)[2](https://universalprior.substack.com/p/the-inter-agent-facet-of-ai-alignment#footnote-2-73850726). 
+Our central argument is that multi-agent interactions add a sufficient amount of complexity to an AI agent’s action policy to justify its own type of alignment, separated from the existing alignment model. Adding inter-agent alignment to the alignment tree, we see that it complements intent alignment and capability robustness, resulting in full alignment (i.e., impact alignment)[^2]. 
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_128.png)
 
@@ -43,7 +43,7 @@ Our central argument is that multi-agent interactions add a sufficient amount of
 
 Intent alignment is a part of a single AGI without any reference to multi-agent systems. Of course, we could expand its meaning, but since the steps between the programmer's intentions and the AGI's impact can be neatly broken down, we argue that it makes sense to introduce a new term for this additional dimension.
 
-Naturally, one can always argue that _a sufficiently advanced AGI will be able to see through this dilemma and resolve it_[3](https://universalprior.substack.com/p/the-inter-agent-facet-of-ai-alignment#footnote-3-73850726), but this seems to be a variant of the No-True-Scotsman fallacy: As long as we can imagine an AGI which is advanced enough to interact with other agents, but not able to successfully coordinate their actions and therefore avoid unintended outcomes, inter-agent alignment is a problem that needs to be addressed. Independent learners using state-of-the-art RL algorithms like DQN or PPO provide evidence that these “medium-level” agents do, in fact, exist.
+Naturally, one can always argue that _a sufficiently advanced AGI will be able to see through this dilemma and resolve it_[^3], but this seems to be a variant of the No-True-Scotsman fallacy: As long as we can imagine an AGI which is advanced enough to interact with other agents, but not able to successfully coordinate their actions and therefore avoid unintended outcomes, inter-agent alignment is a problem that needs to be addressed. Independent learners using state-of-the-art RL algorithms like DQN or PPO provide evidence that these “medium-level” agents do, in fact, exist.
 
 ### What does it look like if an AGI is intent aligned and capability robust, but not inter-agent aligned? 
 
@@ -88,14 +88,8 @@ In our opinion, inter-agent alignment is highly neglected, compared to intent al
 
  _Thanks to Jan Kirchner, Erik Jenner and Logan Smith for providing helpful feedback and shaping some of the ideas in this post._
 
-[1](https://universalprior.substack.com/p/the-inter-agent-facet-of-ai-alignment#footnote-anchor-1-73850726)
+[^1]:Optimizing an objective in the real world can also be hard if there's only a single agent, such that intent alignment isn't sufficient for impact alignment. Nevertheless, multi-agent settings, especially with multiple superhuman AIs, seem like the most challenging case.
 
-Optimizing an objective in the real world can also be hard if there's only a single agent, such that intent alignment isn't sufficient for impact alignment. Nevertheless, multi-agent settings, especially with multiple superhuman AIs, seem like the most challenging case.
+[^2]:I fact, we suspect there might be other requirements for full alignment (unless we just use one of the existing terms as an umbrella).
 
-[2](https://universalprior.substack.com/p/the-inter-agent-facet-of-ai-alignment#footnote-anchor-2-73850726)
-
-I fact, we suspect there might be other requirements for full alignment (unless we just use one of the existing terms as an umbrella).
-
-[3](https://universalprior.substack.com/p/the-inter-agent-facet-of-ai-alignment#footnote-anchor-3-73850726)
-
-A stronger version of this argument (due to Erik Jenner) would be: _Assuming that humans can solve this problem, so could a (super-)human-level AI agent. If the agent is not able to solve this problem, it should hopefully at least figure out that it could ask humans for help. An agent that does so badly in multi-agent settings that it leads to a big catastrophe, and doesn't check in with humans before acting, is either not intent-aligned, or has some very peculiar capabilities blindspots._
+[^3]:A stronger version of this argument (due to Erik Jenner) would be: _Assuming that humans can solve this problem, so could a (super-)human-level AI agent. If the agent is not able to solve this problem, it should hopefully at least figure out that it could ask humans for help. An agent that does so badly in multi-agent settings that it leads to a big catastrophe, and doesn't check in with humans before acting, is either not intent-aligned, or has some very peculiar capabilities blindspots._

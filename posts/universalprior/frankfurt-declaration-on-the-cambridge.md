@@ -7,8 +7,6 @@ date: 2021-10-24
 ---
 
 
-Subscribe
-
 ## A fateful conference dinner…
 
 >  _#[IAN](https://universalprior.substack.com/p/making-of-ian) says: The problem with being a "good person" is that you never have enough energy left over for doing really evil things._
@@ -71,13 +69,13 @@ In contrast, [eliminative materialism](https://plato.stanford.edu/entries/materi
 
 > " _radical claim that our ordinary, common-sense understanding of the mind is deeply wrong and that some or all of the mental states posited by common-sense do not actually exist and have no role to play in a mature science of the mind_ "
 
-, does not actually sound very radical to me.[1](https://universalprior.substack.com/p/frankfurt-declaration-on-the-cambridge#footnote-1-43003534) This position appears to be (based on my observations) the position implicitly adopted by many of my colleagues in the field. Our (non-technical) intuitions about how the mind _[ought to work](https://en.wikipedia.org/wiki/Folk_psychology)_ consistently lead us astray and are not useful guides when trying to understand complex systems[2](https://universalprior.substack.com/p/frankfurt-declaration-on-the-cambridge#footnote-2-43003534). There is no principled reason why an overloaded concept like consciousness _should_ have a distinct neural correlate. It appears much more likely that (as we understand more and more of the brain) the questions about consciousness will simply [dissolve](https://www.lesswrong.com/posts/Mc6QcrsbH5NRXbCRX/dissolving-the-question) and be replaced by more tractable questions.
+, does not actually sound very radical to me.[^1] This position appears to be (based on my observations) the position implicitly adopted by many of my colleagues in the field. Our (non-technical) intuitions about how the mind _[ought to work](https://en.wikipedia.org/wiki/Folk_psychology)_ consistently lead us astray and are not useful guides when trying to understand complex systems[^2]. There is no principled reason why an overloaded concept like consciousness _should_ have a distinct neural correlate. It appears much more likely that (as we understand more and more of the brain) the questions about consciousness will simply [dissolve](https://www.lesswrong.com/posts/Mc6QcrsbH5NRXbCRX/dissolving-the-question) and be replaced by more tractable questions.
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_24.png)An abstract painting of a Braitenberg vehicle. [CLIP Guided Diffusion](https://huggingface.co/spaces/akhaliq/clip-guided-diffusion).
 
-The question implicit in all the news articles and reports cited in the first section is: _How should we treat animals?_ This question can be instantiated without reference to consciousness[3](https://universalprior.substack.com/p/frankfurt-declaration-on-the-cambridge#footnote-3-43003534) and the process of doing so will force us to confront our implicit assumptions and conceptual confusions. This is an important and worthwhile project, but not the topic of this post[4](https://universalprior.substack.com/p/frankfurt-declaration-on-the-cambridge#footnote-4-43003534). Here I only want to declare that the Cambridge Declaration On Consciousness should not be used for a “[proof by authority](http://jwilson.coe.uga.edu/EMT668/EMAT6680.F99/Challen/proof/proof.html#:~:text=Proof%20by%20authority%3A%20%22Well%2C%20Don%20Knuth%20says%20it%27s%20true%2C%20so%20it%20must%20be!%22)”. The term "scientists agree" must be reserved for cases where it actually applies (evolution, vaccines, climate change), otherwise it will lose its punch.
+The question implicit in all the news articles and reports cited in the first section is: _How should we treat animals?_ This question can be instantiated without reference to consciousness[^3] and the process of doing so will force us to confront our implicit assumptions and conceptual confusions. This is an important and worthwhile project, but not the topic of this post[^4]. Here I only want to declare that the Cambridge Declaration On Consciousness should not be used for a “[proof by authority](http://jwilson.coe.uga.edu/EMT668/EMAT6680.F99/Challen/proof/proof.html#:~:text=Proof%20by%20authority%3A%20%22Well%2C%20Don%20Knuth%20says%20it%27s%20true%2C%20so%20it%20must%20be!%22)”. The term "scientists agree" must be reserved for cases where it actually applies (evolution, vaccines, climate change), otherwise it will lose its punch.
 
-So in this post, I propose the "Frankfurt Declaration on the Cambridge Declaration on Consciousness"[5](https://universalprior.substack.com/p/frankfurt-declaration-on-the-cambridge#footnote-5-43003534). It is even shorter than the original and just reads:
+So in this post, I propose the "Frankfurt Declaration on the Cambridge Declaration on Consciousness"[^5]. It is even shorter than the original and just reads:
 
 > I, a published neuroscientist, don't understand the neuroscientific literature on consciousness. I do not know whether animals (including humans) are conscious or not or whether that question even makes sense. I could not have signed the Declaration On Consciousness in good conscience.
 
@@ -89,24 +87,12 @@ I hope this statement serves as a ["The Emperor's New Clothes"-type declaration]
 
 For more essays and guided strolls through mind space, consider signing up to the mailing list so that you are notified whenever a new post is published (currently every weekend):
 
-Subscribe
+[^1]:My intuition largely comes from reading "[Vehicles](https://en.wikipedia.org/wiki/Braitenberg_vehicle)" by Valentino Braitenberg, which does a tremendous job at demonstrating how an automaton programmed with very simple instructions performs complex behavior that deludes us into attributing higher cognition to the simplest automaton. This is a bit ironic since Braitenberg is the Ph.D. advisor of Christof Koch, one of the famous editors and signatories of the Cambridge Declaration. Or perhaps it's not ironic but just appropriate.
 
-[1](https://universalprior.substack.com/p/frankfurt-declaration-on-the-cambridge#footnote-anchor-1-43003534)
+[^2]:There is an exciting [new approach](https://link.springer.com/article/10.3758%2Fs13414-019-01760-1) that rejects a characterization of cortical areas “based on definitions of putative functions inherited from psychological traditions” in favor of a more principled phylogenetic approach. I am very excited about this stuff.
 
-My intuition largely comes from reading "[Vehicles](https://en.wikipedia.org/wiki/Braitenberg_vehicle)" by Valentino Braitenberg, which does a tremendous job at demonstrating how an automaton programmed with very simple instructions performs complex behavior that deludes us into attributing higher cognition to the simplest automaton. This is a bit ironic since Braitenberg is the Ph.D. advisor of Christof Koch, one of the famous editors and signatories of the Cambridge Declaration. Or perhaps it's not ironic but just appropriate.
+[^3]:I subscribe to the action items proposed by people working on animal welfare - mass farming is an abomination, eating animal products is gross and [donating to animal welfare charities](https://animalcharityevaluators.org/) is (probably) a good idea.
 
-[2](https://universalprior.substack.com/p/frankfurt-declaration-on-the-cambridge#footnote-anchor-2-43003534)
+[^4]:A post on that topic is in the pipeline, however :)
 
-There is an exciting [new approach](https://link.springer.com/article/10.3758%2Fs13414-019-01760-1) that rejects a characterization of cortical areas “based on definitions of putative functions inherited from psychological traditions” in favor of a more principled phylogenetic approach. I am very excited about this stuff.
-
-[3](https://universalprior.substack.com/p/frankfurt-declaration-on-the-cambridge#footnote-anchor-3-43003534)
-
-I subscribe to the action items proposed by people working on animal welfare - mass farming is an abomination, eating animal products is gross and [donating to animal welfare charities](https://animalcharityevaluators.org/) is (probably) a good idea.
-
-[4](https://universalprior.substack.com/p/frankfurt-declaration-on-the-cambridge#footnote-anchor-4-43003534)
-
-A post on that topic is in the pipeline, however :)
-
-[5](https://universalprior.substack.com/p/frankfurt-declaration-on-the-cambridge#footnote-anchor-5-43003534)
-
-I am acutely aware of the irony that a declaration _in favor of_ consciousness would come out of Cambridge (the cradle of analytic philosophy) and that I'm writing my declaration from Frankfurt (that German town known for... [not being the cradle of analytic philosophy](https://en.wikipedia.org/wiki/Frankfurt_School)). Or perhaps it's not ironic but just appropriate.
+[^5]:I am acutely aware of the irony that a declaration _in favor of_ consciousness would come out of Cambridge (the cradle of analytic philosophy) and that I'm writing my declaration from Frankfurt (that German town known for... [not being the cradle of analytic philosophy](https://en.wikipedia.org/wiki/Frankfurt_School)). Or perhaps it's not ironic but just appropriate.

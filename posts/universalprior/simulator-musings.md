@@ -36,7 +36,7 @@ Today we published the [first](https://www.alignmentforum.org/posts/nmMorGE4MS4t
 
 The first session of the seminar was concerned with what janus calls “semiotic physics”. Semiotics is the study of signs and symbols and their use or interpretation. Physics is physics. But the type of physics we were discussing at the seminar is the type that tries to [explain everything in the universe with simple rules](https://www.lesswrong.com/tag/reductionism-sequence). Semiotic physics, then, is the _study of the fundamental forces and laws that govern the behavior of signs and symbols_.
 
-This description makes it sound very high-strung, so let me illustrate with a toy model that we are familiar with from regular physics: coin flips. In this setup, we draw a sequence of coin flips from a large language mode[1](https://universalprior.substack.com/p/simulator-musings#footnote-1-94327725). We encode the coin flips as a sequence of the strings ` 1` and ` 0` (since they are tokenized as a single token) and zero out all probabilities of other tokens. 
+This description makes it sound very high-strung, so let me illustrate with a toy model that we are familiar with from regular physics: coin flips. In this setup, we draw a sequence of coin flips from a large language mode[^1]. We encode the coin flips as a sequence of the strings ` 1` and ` 0` (since they are tokenized as a single token) and zero out all probabilities of other tokens. 
 
 We can then look at the probability of the event E that the sequence of coin flips ends in tails (` 0`) or heads (` 1`) as a function of the sequence length.
 
@@ -82,6 +82,4 @@ just as we would expect from a large deviation principle. The full mathematical 
 
 Attending this seminar was one of my clear highlights of the past months. Discussing the shape and function of simulators with a group of people who share a lot of interests, but also contribute their diverse backgrounds, was a constant string of revelations. I am still confused about a lot of things, and there are a bunch of experiments I can’t wait to run, but even if none of the wild ideas we churned through end up being correct, I’m still bullish on the overall format of the seminar.
 
-[1](https://universalprior.substack.com/p/simulator-musings#footnote-anchor-1-94327725)
-
-The figures are generated with data from OpenAI's ada model, but the same principle applies to other models as well.
+[^1]:The figures are generated with data from OpenAI's ada model, but the same principle applies to other models as well.

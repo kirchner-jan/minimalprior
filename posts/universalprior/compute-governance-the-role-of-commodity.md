@@ -61,7 +61,7 @@ Indeed, their proposed implementation on commodity hardware, called "Sub-LInear 
 
 Before analyzing some of the caveats and weaknesses of the proposed approach, I want to take the published results at face value and mention implications. If broadly adopted, a shift away from AI-specialized hardware to commodity hardware would have significant implications for AI Safety in general and Compute Governance in particular.
 
- **Timeline speedup.** A speedup of training by a factor of 7 (as suggested by [Daghaghi et al. 2021](https://arxiv.org/abs/2103.10891)) would translate into a shortening of AI timelines by at least 6-7 years ([Cotra 2020](https://www.alignmentforum.org/posts/KrJfoZzpSDpnrv9va/draft-report-on-ai-timelines)). While commodity hardware is somewhat less affected by the current chip shortage, the proposed hardware configuration by [Chen et al. (2019)](https://arxiv.org/abs/1903.03129) is (surprisingly) not cheaper[1](https://universalprior.substack.com/p/compute-governance-the-role-of-commodity#footnote-1-50757471). Beyond the training speedup, we should not expect sustained additional speedup of timelines due to price and availability.
+ **Timeline speedup.** A speedup of training by a factor of 7 (as suggested by [Daghaghi et al. 2021](https://arxiv.org/abs/2103.10891)) would translate into a shortening of AI timelines by at least 6-7 years ([Cotra 2020](https://www.alignmentforum.org/posts/KrJfoZzpSDpnrv9va/draft-report-on-ai-timelines)). While commodity hardware is somewhat less affected by the current chip shortage, the proposed hardware configuration by [Chen et al. (2019)](https://arxiv.org/abs/1903.03129) is (surprisingly) not cheaper[^1]. Beyond the training speedup, we should not expect sustained additional speedup of timelines due to price and availability.
 
  **Leveraging existing hardware.**[Existing supercomputers](https://en.wikipedia.org/wiki/Fugaku_\(supercomputer\)) run on "commodity hardware that we might leverage for AI applications. Making the strong assumption that the software architecture carries over without a problem, the Fugaku supercomputer could replicate [AlphaGo Zero](https://openai.com/blog/ai-and-compute/) in under a week.
 
@@ -89,6 +89,4 @@ Despite the limitations of the approach highlighted in the previous section, thi
 
  **Importance of commodity hardware.** Even though leading AI research usually requires AI-specialized hardware, commodity hardware still plays a central supporting role ([Mittal et al., 2021](https://ieeexplore.ieee.org/document/9410437)). Commodity hardware thus represents a potentially powerful additional lever for executing Compute Governance policies.
 
-[1](https://universalprior.substack.com/p/compute-governance-the-role-of-commodity#footnote-anchor-1-50757471)
-
-They use a top-of-the-range CPU machine and compare it with a mid-range GPU machine.
+[^1]:They use a top-of-the-range CPU machine and compare it with a mid-range GPU machine.

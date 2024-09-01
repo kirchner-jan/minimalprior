@@ -130,11 +130,15 @@ Kirchner</a></td>
     <p>This description makes it sound very high-strung, so let me
     illustrate with a toy model that we are familiar with from regular
     physics: coin flips. In this setup, we draw a sequence of coin flips
-    from a large language mode<a
-    href="https://universalprior.substack.com/p/simulator-musings#footnote-1-94327725">1</a>.
-    We encode the coin flips as a sequence of the strings <code>1</code>
-    and <code>0</code> (since they are tokenized as a single token) and
-    zero out all probabilities of other tokens.</p>
+    from a large language mode<sup>[1]</sup>. We encode the coin flips
+    as a sequence of the strings <code>1</code> and <code>0</code>
+    (since they are tokenized as a single token) and zero out all
+    probabilities of other tokens.</p>
+    <div class="sidenote">
+    <p>[1] </p>
+    <p>The figures are generated with data from OpenAI’s ada model, but
+    the same principle applies to other models as well.</p>
+    </div>
     <p>We can then look at the probability of the event E that the
     sequence of coin flips ends in tails (<code>0</code>) or heads
     (<code>1</code>) as a function of the sequence length.</p>
@@ -205,10 +209,6 @@ Kirchner</a></td>
     experiments I can’t wait to run, but even if none of the wild ideas
     we churned through end up being correct, I’m still bullish on the
     overall format of the seminar.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/simulator-musings#footnote-anchor-1-94327725">1</a></p>
-    <p>The figures are generated with data from OpenAI’s ada model, but
-    the same principle applies to other models as well.</p>
     <div class="debug-grid"></div>
   <script src="index.js"></script>
 </body>

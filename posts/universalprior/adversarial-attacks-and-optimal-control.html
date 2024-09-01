@@ -58,9 +58,7 @@ Kirchner</a></td>
     <ol class="incremental" type="1">
     <li>When we invest the appropriate effort, the probability of random
     catastrophic events tends to decrease exponentially with a rate
-    given by the<a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-1-56106015">1</a>
-    rate function.</li>
+    given by the<sup>[1]</sup> rate function.</li>
     <li>One way of estimating the rate function is to solve an optimal
     control problem, where we have to determine the “least surprising”
     way that the catastrophic event comes about. The rate function then
@@ -82,12 +80,16 @@ Kirchner</a></td>
     expensive and had to sell at a loss, <a
     href="https://www.nytimes.com/2021/11/02/business/zillow-q3-earnings-home-flipping-ibuying.html">costing
     the company $420 million and leading to large lay-offs</a>.</p>
-    <p>This story is not very interesting<a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-2-56106015">2</a>
-    for anyone who’s not directly involved. The reason I remember the
-    whole affair is a <a
+    <p>This story is not very interesting<sup>[2]</sup> for anyone who’s
+    not directly involved. The reason I remember the whole affair is a
+    <a
     href="https://twitter.com/ESYudkowsky/status/1456279486840721414?s=20&amp;t=kqTdW87iwMg3f9zhqYKQ_w">Twitter
     thread</a> that also caught the attention of Eliezer:</p>
+    <div class="sidenote">
+    <p>[2] </p>
+    <p>How much is $420 million again? My gut feeling is that this type
+    of snafu happens somewhere in the world every other week.</p>
+    </div>
     <p><img
     src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_158.png" /></p>
     <p>The thread lays out how Zillow relied too much on their <a
@@ -95,9 +97,14 @@ Kirchner</a></td>
     estimates</a>, which (<a
     href="https://universalprior.substack.com/p/slightly-advanced-decision-theory?s=w#:~:text=is%20coming%20from.-,Diverse%20detours.,-On%20the%20topic">ex-ante</a>)
     looked good on average, but (ex-post) manifested in the worst
-    possible way<a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-3-56106015">3</a>.
-    Or, in the words of the OP:</p>
+    possible way<sup>[3]</sup>. Or, in the words of the OP:</p>
+    <div class="sidenote">
+    <p>[3] </p>
+    <p>In the same way that the maximum of a set of random variables <a
+    href="https://universalprior.substack.com/p/slightly-advanced-decision-theory?s=w#:~:text=is%20coming%20from.-,Diverse%20detours.,-On%20the%20topic">can
+    be overwhelmingly good in expectation</a>, the minimum of the same
+    set is terrible (in expectation). That’s the power of choice.</p>
+    </div>
     <blockquote>
     <p>“[They mistook] an adversarial environment for a random one.”</p>
     </blockquote>
@@ -169,25 +176,46 @@ Kirchner</a></td>
     href="https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_theorem_%28large_deviations%29">generalizes
     a lot</a>, and the probability that the sum of independent random
     variables Xᵢ is less than some fraction ξ times N
-    <del>always</del><a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-4-56106015">4</a>
-    goes down exponentially fast in N:</p>
+    <del>always</del><sup>[4]</sup> goes down exponentially fast in
+    N:</p>
+    <div class="sidenote">
+    <p>[4] </p>
+    <p>Well, not always. That’s the point of this post.</p>
+    </div>
     <p><img
     src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_161.png" /></p>
     <p>The function J(ξ) is called the “<a
     href="https://en.wikipedia.org/wiki/Rate_function">rate
     function,</a>” and it determines the speed with which extreme events
     get unlikely.</p>
-    <p>How to compute the rate function<a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-5-56106015">5</a>?
-    That is what we’ll explore in the next section. There is a “<a
+    <p>How to compute the rate function<sup>[5]</sup>? That is what
+    we’ll explore in the next section. There is a “<a
     href="https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_theorem_(large_deviations)">standard</a>”
-    way of calculating J(ξ), which is a bit involved and opaque<a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-6-56106015">6</a>
-    for my taste; I prefer a slightly non-standard derivation<a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-7-56106015">7</a>
-    of arriving at the rate function, which gives deeper insight into
-    how adversarial attacks and extreme events relate.</p>
+    way of calculating J(ξ), which is a bit involved and
+    opaque<sup>[6]</sup> for my taste; I prefer a slightly non-standard
+    derivation<sup>[7]</sup> of arriving at the rate function, which
+    gives deeper insight into how adversarial attacks and extreme events
+    relate.</p>
+    <div class="sidenote">
+    <p>[7] </p>
+    <p>I don’t have a reference that follows the same path I choose, but
+    I enjoy the texts by <a
+    href="https://arxiv.org/abs/1106.4146">Touchette 2011</a> and <a
+    href="https://www.google.com/search?q=paninski+large+deviation+optimal+control+leaky+integrate&amp;oq=paninski+large+deviation+optimal+control+leaky+integrate&amp;aqs=chrome..69i57j0i512l2j46i512j0i10i30j0i30j0i5i30l4.11018j0j4&amp;sourceid=chrome&amp;ie=UTF-8#:~:text=The%20most%20likely%20voltage%20path%20and%20large%20deviations,stat.columbia.edu%20%E2%80%BA%20pubs%20%E2%80%BA%20ml%2Dpath%2Djcns">Paninski
+    2006</a>.</p>
+    </div>
+    <div class="sidenote">
+    <p>[6] </p>
+    <p>(you need the logarithm of the <a
+    href="https://en.wikipedia.org/wiki/Moment-generating_function">moment
+    generating function</a> of your random variable, λ(θ)=lnE(exp(θXi)),
+    and then you need to compute the Legendre-Fenchel transformation,
+    J(ξ)=supθ&gt;0[θξ−λ(θ)].)</p>
+    </div>
+    <div class="sidenote">
+    <p>[5] </p>
+    <p>you ask, presumably on the edge of your seat.</p>
+    </div>
     <h2 id="average-surprise-and-optimal-control"><strong>Average
     surprise and optimal control</strong></h2>
     <p>As I like to say: <a
@@ -214,8 +242,12 @@ Kirchner</a></td>
     of a random Bernoulli event is the distance from the dashed line,
     Pₚ(ξ)=|ξ−(1−p)|. Consequently, the information content is
     Iₚ(ξ)=−ln|ξ−(1−p)|, and the average information content of the
-    sequence is<a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-8-56106015">8</a></p>
+    sequence is<sup>[8]</sup></p>
+    <div class="sidenote">
+    <p>[8] </p>
+    <p>Absolute values are a bit icky, but we can be sneaky since we
+    have the logarithm and write</p>
+    </div>
     <p><img
     src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_165.png" /></p>
     <p>Why am I bringing this up? <a
@@ -223,8 +255,11 @@ Kirchner</a></td>
     out</a> that the rate function J(ξ) is the solution to <a
     href="https://en.wikipedia.org/wiki/Freidlin%E2%80%93Wentzell_theorem">an
     optimal control problem</a> that involves the <strong>average excess
-    surprise</strong>. In particular<a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-9-56106015">9</a>,</p>
+    surprise</strong>. In particular<sup>[9]</sup>,</p>
+    <div class="sidenote">
+    <p>[9] </p>
+    <p>(I recommend staring at that for a while.)</p>
+    </div>
     <p><img
     src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_166.png" /></p>
     <p>The intuition behind this equation is: If we want to know the
@@ -255,14 +290,21 @@ Kirchner</a></td>
     remaining ξN deals go fine. This satisfies the constraint that</p>
     <p><img
     src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_171.png" /></p>
-    <p>and (thanks to commutativity<a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-10-56106015">10</a>)
-    the average excess surprise of this configuration is identical to
-    all possible permutations. Therefore, this configuration’s average
-    excess surprise is already the infimum of all possible
-    configurations that satisfy the constraint. Given the expression we
-    wrote above for the average information content of a Bernoulli
-    sequence, we can write the average excess surprise as</p>
+    <p>and (thanks to commutativity<sup>[10]</sup>) the average excess
+    surprise of this configuration is identical to all possible
+    permutations. Therefore, this configuration’s average excess
+    surprise is already the infimum of all possible configurations that
+    satisfy the constraint. Given the expression we wrote above for the
+    average information content of a Bernoulli sequence, we can write
+    the average excess surprise as</p>
+    <div class="sidenote">
+    <p>[10] </p>
+    <p>When the control problem gets more involved and the individual
+    time points are not interchangeable, this step gets a bit trickier,
+    and we have to recruit some <a
+    href="https://en.wikipedia.org/wiki/Euler%E2%80%93Lagrange_equation">mathematical
+    machinery</a>.</p>
+    </div>
     <p><img
     src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_172.png" /></p>
     <p>Since we know that the first ξN many xᵢ are equal to 1 and that
@@ -285,9 +327,7 @@ Kirchner</a></td>
     <ol class="incremental" type="1">
     <li>When we find ourselves in a random environment, we can leverage
     the law of large numbers to push the probability of failure close to
-    zero by trying sufficiently many times<a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-11-56106015">11</a>,
-    N.</li>
+    zero by trying sufficiently many times<sup>[11]</sup>, N.</li>
     <li>If we want to determine <em>how fast</em> the probability of
     failure goes to zero, we can find that out by solving an optimal
     control problem where we need to determine the least surprising way
@@ -296,19 +336,28 @@ Kirchner</a></td>
     proportional to how surprised we would be and the number of tries,
     exp(−NJ(ξ)).</li>
     </ol>
-    <p>So far, so good, but… what is that sound in the distance<a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-12-56106015">12</a>?</p>
+    <p>So far, so good, but… what is that sound in the
+    distance<sup>[12]</sup>?</p>
+    <div class="sidenote">
+    <p>[12] </p>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_7.jpeg" /><a
+    href="http://www.blackswanman.com/#lg=1&amp;slide=0">source</a></p>
+    </div>
     <p>As general as the theorems mentioned above are in terms of the
-    underlying distributions<a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-13-56106015">13</a>,
-    they <strong>centrally rely on the assumption that the environment
-    is</strong> _ <strong>random</strong>_. This was not the case for
-    Zillow, where homeowners and real estate agencies selling houses had
-    <a href="https://en.wikipedia.org/wiki/Caveat_emptor">additional
+    underlying distributions<sup>[13]</sup>, they <strong>centrally rely
+    on the assumption that the environment is</strong> _
+    <strong>random</strong>_. This was not the case for Zillow, where
+    homeowners and real estate agencies selling houses had <a
+    href="https://en.wikipedia.org/wiki/Caveat_emptor">additional
     information</a> to systematically select bad deals for Zillow.
     Instead of pushing the risk of total failure strongly toward zero,
     Zillow only increasingly exposed itself to an adversary with more
     insight into the situation.</p>
+    <div class="sidenote">
+    <p>[13] </p>
+    <p>and any additional structure you might want to slap on</p>
+    </div>
     <p><img
     src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_175.png" /></p>
     <p>While the <strong>probability of complete failure,</strong>
@@ -367,79 +416,29 @@ Kirchner</a></td>
     </ol>
     <p>These factors combined make me excited about exploring this
     direction further to find reliable estimates of the lower bound of
-    input required to bring about catastrophe<a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-14-56106015">14</a>.
-    I’m also curious if there is more structure to the similarity
-    between the information content of an adversarial attack and the
+    input required to bring about catastrophe<sup>[14]</sup>. I’m also
+    curious if there is more structure to the similarity between the
+    information content of an adversarial attack and the
     characterization of intelligence in terms of optimization processes.
     If you know more about this or can point me to some literature on
     the topic, please let me know!</p>
-    <p><a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-anchor-1-56106015">1</a></p>
-    <p>(appropriately named)</p>
-    <p><a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-anchor-2-56106015">2</a></p>
-    <p>How much is $420 million again? My gut feeling is that this type
-    of snafu happens somewhere in the world every other week.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-anchor-3-56106015">3</a></p>
-    <p>In the same way that the maximum of a set of random variables <a
-    href="https://universalprior.substack.com/p/slightly-advanced-decision-theory?s=w#:~:text=is%20coming%20from.-,Diverse%20detours.,-On%20the%20topic">can
-    be overwhelmingly good in expectation</a>, the minimum of the same
-    set is terrible (in expectation). That’s the power of choice.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-anchor-4-56106015">4</a></p>
-    <p>Well, not always. That’s the point of this post.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-anchor-5-56106015">5</a></p>
-    <p>you ask, presumably on the edge of your seat.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-anchor-6-56106015">6</a></p>
-    <p>(you need the logarithm of the <a
-    href="https://en.wikipedia.org/wiki/Moment-generating_function">moment
-    generating function</a> of your random variable, λ(θ)=lnE(exp(θXi)),
-    and then you need to compute the Legendre-Fenchel transformation,
-    J(ξ)=supθ&gt;0[θξ−λ(θ)].)</p>
-    <p><a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-anchor-7-56106015">7</a></p>
-    <p>I don’t have a reference that follows the same path I choose, but
-    I enjoy the texts by <a
-    href="https://arxiv.org/abs/1106.4146">Touchette 2011</a> and <a
-    href="https://www.google.com/search?q=paninski+large+deviation+optimal+control+leaky+integrate&amp;oq=paninski+large+deviation+optimal+control+leaky+integrate&amp;aqs=chrome..69i57j0i512l2j46i512j0i10i30j0i30j0i5i30l4.11018j0j4&amp;sourceid=chrome&amp;ie=UTF-8#:~:text=The%20most%20likely%20voltage%20path%20and%20large%20deviations,stat.columbia.edu%20%E2%80%BA%20pubs%20%E2%80%BA%20ml%2Dpath%2Djcns">Paninski
-    2006</a>.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-anchor-8-56106015">8</a></p>
-    <p>Absolute values are a bit icky, but we can be sneaky since we
-    have the logarithm and write</p>
+    <div class="sidenote">
+    <p>[14] </p>
+    <p>Perhaps we can manage to stay below that bound reliably?</p>
+    </div>
     <p><img
     src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_177.png" /></p>
     <p>instead. This expression now has an uncanny similarity to the <a
     href="https://en.wikipedia.org/wiki/Freidlin%E2%80%93Wentzell_theorem">Freidlin-Wentzell</a>
     rate function, which can’t be a coincidence.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-anchor-9-56106015">9</a></p>
-    <p>(I recommend staring at that for a while.)</p>
-    <p><a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-anchor-10-56106015">10</a></p>
-    <p>When the control problem gets more involved and the individual
-    time points are not interchangeable, this step gets a bit trickier,
-    and we have to recruit some <a
-    href="https://en.wikipedia.org/wiki/Euler%E2%80%93Lagrange_equation">mathematical
-    machinery</a>.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-anchor-11-56106015">11</a></p>
+    <div class="sidenote">
+    <p>[1] </p>
+    <p>(appropriately named)</p>
+    </div>
+    <div class="sidenote">
+    <p>[11] </p>
     <p>Given that the expected value is positive, ofc.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-anchor-12-56106015">12</a></p>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_7.jpeg" /><a
-    href="http://www.blackswanman.com/#lg=1&amp;slide=0">source</a></p>
-    <p><a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-anchor-13-56106015">13</a></p>
-    <p>and any additional structure you might want to slap on</p>
-    <p><a
-    href="https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-anchor-14-56106015">14</a></p>
-    <p>Perhaps we can manage to stay below that bound reliably?</p>
+    </div>
     <div class="debug-grid"></div>
   <script src="index.js"></script>
 </body>

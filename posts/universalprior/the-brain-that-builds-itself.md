@@ -21,7 +21,7 @@ Since those innocent days, I have come to appreciate that building a biological 
 
   1. First off - **even before you're done building, the brain must make itself useful**. And it's not just "occasionally helping with an arithmetic problem" - I'm talking about "breathing", "eating", "coordinating limbs"... If the environment is dangerous, then also "running away" or "fighting" is on the menu. And you need to do these things _reliably_ \- lapsing means death.
   1. Second - **every neuron only has access to** _ **local**_ **information**. In particular, every neuron only receives input from a limited number of other neurons (usually < 10,000 out of ~80 billion). From that information, a neuron needs to infer what its role in the developing brain ought to be. Consequently, every solution you come up with must be "symmetric" in the sense that you can swap two neurons, and the end result must still work. ([It turns out the two neurons don't even have to be from the same species](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6899440/)).
-  1. Third - **there is no clear separation between "the thing you're building" and "the thing that is doing the building"[1](https://universalprior.substack.com/p/the-brain-that-builds-itself#footnote-1-57181673)**. [The brain is making itself](https://generative.ink/prophecies/#:~:text=The%20message%20had%20become%20the%20medium) with only rough guidance from genes and the environment (see [this post](https://universalprior.substack.com/p/how-to-build-a-mind-neuroscience?s=w) I wrote on the topic a while ago).
+  1. Third - **there is no clear separation between "the thing you're building" and "the thing that is doing the building"[^1]**. [The brain is making itself](https://generative.ink/prophecies/#:~:text=The%20message%20had%20become%20the%20medium) with only rough guidance from genes and the environment (see [this post](https://universalprior.substack.com/p/how-to-build-a-mind-neuroscience?s=w) I wrote on the topic a while ago).
 
 
 
@@ -29,7 +29,7 @@ In contrast, the solution for AI appears to be (for now) "just stack more layers
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_230.png)[source](https://www.gwern.net/Scaling-hypothesis#scaling-hypothesis)
 
-In AI, "the thing being built" and "the thing that's doing the building" is cleanly separated into "model" and "optimizer". Global information like the learning rate is readily available to all units. And even _after_ training, there are no predators that punish lack of robustness[2](https://universalprior.substack.com/p/the-brain-that-builds-itself#footnote-2-57181673). 
+In AI, "the thing being built" and "the thing that's doing the building" is cleanly separated into "model" and "optimizer". Global information like the learning rate is readily available to all units. And even _after_ training, there are no predators that punish lack of robustness[^2]. 
 
 But [constraints make creative](https://www.youtube.com/watch?v=v5FL9VTBZzQ&ab_channel=TED-Ed), and it seems like the aforementioned constraints turn out to have their benefits:
 
@@ -79,7 +79,7 @@ And that's indeed the conclusion that Niell and colleagues arrive at. They look 
 
 But not all development is about growth! Rather, it's about growth plus **selective pruning**. I've [written](https://universalprior.substack.com/p/a-brief-excursion-into-molecular?s=w) about a potential molecular mechanism underlying this dynamic before, and now we'll see it in action.
 
-Right out the gate - even though there can be a lot of pruning, this typically doesn't mean that the dendrite gets _shorter_ in total[3](https://universalprior.substack.com/p/the-brain-that-builds-itself#footnote-3-57181673). Typically, retractions of branches are balanced by the addition of new branches. Here are pictures from a timelapse from a Xenopus tadpole neuron:
+Right out the gate - even though there can be a lot of pruning, this typically doesn't mean that the dendrite gets _shorter_ in total[^3]. Typically, retractions of branches are balanced by the addition of new branches. Here are pictures from a timelapse from a Xenopus tadpole neuron:
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_233.png)The bottom row shows branches that will be lost by the end of the recording in red, branches that appear and disappear throughout the recording in green, and branches that emerge and are stable until the end of the recording in yellow. Importantly, despite all the local changes, the overall length of the dendrite remains approximately the same.
 
@@ -149,28 +149,22 @@ Instead of doing more hedging, I’ll stick my neck out even further and talk ab
 
 What do I believe now about “the brain that builds itself”?
 
-  1. A straightforward way to obtain structured connectivity in a neural circuit is to start with a _[greedy](https://en.wikipedia.org/wiki/Greedy_algorithm)_[ strategy](https://en.wikipedia.org/wiki/Greedy_algorithm) (connect as many things as possible), followed by an **autoregressive[4](https://universalprior.substack.com/p/the-brain-that-builds-itself#footnote-4-57181673) learning rule that amplifies structure and prunes away the noise**.
+  1. A straightforward way to obtain structured connectivity in a neural circuit is to start with a _[greedy](https://en.wikipedia.org/wiki/Greedy_algorithm)_[ strategy](https://en.wikipedia.org/wiki/Greedy_algorithm) (connect as many things as possible), followed by an **autoregressive[^4] learning rule that amplifies structure and prunes away the noise**.
   1. Through successive amplification of structure and pruning of noise, **the developmental process converges to a fixed point** , defined as the point where the learning rule produces no more competition.
 
 
 
 The “benefit” of this dynamical systems solution is (again) “robustness”. As long as you make sure your learning rule keeps on doing its thing it doesn’t matter if you get small perturbations. You’ll keep rolling towards the valley of attraction anyways.
 
-Sticking my neck out even further, I can’t help but think of the [natural abstraction hypothesis](https://www.lesswrong.com/posts/cy3BhHrGinZCp3LXE/testing-the-natural-abstraction-hypothesis-project-intro) here. Perhaps a lot of the cognitive structure that humans have does _not_ actually require a lot of specification during development. Perhaps the fixed point of the developmental process is “natural” in the sense that any autoregressive learner with sensory input from the world[5](https://universalprior.substack.com/p/the-brain-that-builds-itself#footnote-5-57181673) (and with approximately similar computational capacity) will end up with approximately the same cognitive structure.
+Sticking my neck out even further, I can’t help but think of the [natural abstraction hypothesis](https://www.lesswrong.com/posts/cy3BhHrGinZCp3LXE/testing-the-natural-abstraction-hypothesis-project-intro) here. Perhaps a lot of the cognitive structure that humans have does _not_ actually require a lot of specification during development. Perhaps the fixed point of the developmental process is “natural” in the sense that any autoregressive learner with sensory input from the world[^5] (and with approximately similar computational capacity) will end up with approximately the same cognitive structure.
 
 This moves the question from the world of neuroscience into the world of… the world? What is the world out there like, and why does it have so much structure? I’ll think about it a bit and update you on my progress ;)
 
-[1](https://universalprior.substack.com/p/the-brain-that-builds-itself#footnote-anchor-1-57181673)
+[^1]:This is certainly true _after_ birth, but even in the womb[,](https://nassimtaleb.org/2016/09/intellectual-yet-idiot/) it's not like there is a lot of micro-managing going on.
 
-This is certainly true _after_ birth, but even in the womb[,](https://nassimtaleb.org/2016/09/intellectual-yet-idiot/) it's not like there is a lot of micro-managing going on.
+[^2]:Unless you count the folks at [Redwood Research](https://www.redwoodresearch.org/), of course.
 
-[2](https://universalprior.substack.com/p/the-brain-that-builds-itself#footnote-anchor-2-57181673)
-
-Unless you count the folks at [Redwood Research](https://www.redwoodresearch.org/), of course.
-
-[3](https://universalprior.substack.com/p/the-brain-that-builds-itself#footnote-anchor-3-57181673)
-
-This image floating around the internet gets used _all over the place_ to argue that there is something special happening in the brain of humans around the age of 5-6. The image comes originally from [Seeman, 1999](https://ajp.psychiatryonline.org/doi/10.1176/ajp.156.2.168):
+[^3]:This image floating around the internet gets used _all over the place_ to argue that there is something special happening in the brain of humans around the age of 5-6. The image comes originally from [Seeman, 1999](https://ajp.psychiatryonline.org/doi/10.1176/ajp.156.2.168):
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_244.png)
 
@@ -180,10 +174,6 @@ It might well be that something special happens at that age, but I cannot find a
 
 Also, note that the caption of the Seeman figure talks about a decline in synaptic connections, which are not even visible on the left. And the right shows a decline in dopamine receptors, but with a very suspicious x-axis and very few data points in the most critical period.
 
-[4](https://universalprior.substack.com/p/the-brain-that-builds-itself#footnote-anchor-4-57181673)
+[^4]:I think there is a very elegant way in which [Hebbian learning](https://en.wikipedia.org/wiki/Hebbian_theory) can be interpreted as simply doing autoregressive learning. [Sezener et al](https://www.biorxiv.org/content/10.1101/2021.03.10.434756v1.full) are pointing in this direction, and interpreting the [ventral stream as a residual stream](https://universalprior.substack.com/p/serendipitous-connections-applying?s=w) fills in some of the blanks.
 
-I think there is a very elegant way in which [Hebbian learning](https://en.wikipedia.org/wiki/Hebbian_theory) can be interpreted as simply doing autoregressive learning. [Sezener et al](https://www.biorxiv.org/content/10.1101/2021.03.10.434756v1.full) are pointing in this direction, and interpreting the [ventral stream as a residual stream](https://universalprior.substack.com/p/serendipitous-connections-applying?s=w) fills in some of the blanks.
-
-[5](https://universalprior.substack.com/p/the-brain-that-builds-itself#footnote-anchor-5-57181673)
-
-[Or synthetic input shaped by eons of evolution to look like plausible sensory input](https://universalprior.substack.com/p/how-to-build-a-mind-neuroscience?s=w).
+[^5]:[Or synthetic input shaped by eons of evolution to look like plausible sensory input](https://universalprior.substack.com/p/how-to-build-a-mind-neuroscience?s=w).

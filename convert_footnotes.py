@@ -1,32 +1,25 @@
 import os
 import re
 
+# \(https://universalprior\.substack\.com/p/[^#\)]+#footnote[^)]+\)
+# find ./posts/universalprior -name "*.md" | while read -r file; do     echo "Processing $file"
+#     sed -i -E ':a;N;$!ba;s/\n\n\[([0-9]+)\]\n\n/\n\n[^\1]:/g' "$file"; done
+
+# find ./posts/universalprior -name "*.md" | xargs sed -i -E 's/\[([0-9]+)\]/[^\1]/g'
+
 
 def convert_footnotes(content):
-    # Find all footnote references in the text
-    reference_pattern = r"\[(\d+)\]\(.*?#footnote-\d+-\d+\)"
-    references = re.findall(reference_pattern, content)
+    # Find all footnote references and definitions
+    pattern = r"\[(\d+)\]\((.*?#footnote-\d+-\d+)\).*?\n\[(\d+)\]\((.*?#footnote-anchor-\d+-\d+)\)\n(.*?)(?=\n\n|\[|$)"
+    matches = list(re.finditer(pattern, content, re.DOTALL))
 
-    # Find all footnote definitions
-    definition_pattern = r"\[(\d+)\]\(.*?#footnote-anchor-\d+-\d+\)\n(.*?)(?=\n\n|\[|$)"
-    definitions = re.findall(definition_pattern, content, re.DOTALL)
-
-    # Create a dictionary to store footnote content
-    footnotes = {num: text.strip() for num, text in definitions}
-
-    # Replace footnote references
-    for num in references:
-        old_ref = f"[{num}](https://universalprior.substack.com/p/this-week-in-fashion#footnote-{num}-\d+)"
-        new_ref = f"[^{num}]"
-        content = re.sub(old_ref, new_ref, content)
-
-    # Remove old footnote definitions
-    content = re.sub(definition_pattern, "", content, flags=re.DOTALL)
-
-    # Add new footnote definitions at the end of the content
-    content += "\n\n"
-    for num, text in footnotes.items():
-        content += f"[^{num}]: {text}\n"
+    # Process matches in reverse order to avoid messing up indices
+    for match in reversed(matches):
+        ref_num, ref_url, def_num, def_url, footnote_text = match.groups()
+        if ref_num == def_num:
+            # Replace the entire match with the new format
+            new_footnote = f"[^{ref_num}]\n\n[^{ref_num}]: {footnote_text.strip()}\n\n"
+            content = content[: match.start()] + new_footnote + content[match.end() :]
 
     return content
 
@@ -47,5 +40,8 @@ def process_directory(directory):
 
 
 # Usage
-directory = "./posts/universalprior"  # Current directory
-process_directory(directory)
+directory = "./posts/universalprior"
+if os.path.exists(directory):
+    process_directory(directory)
+else:
+    print(f"Error: The directory {directory} does not exist.")

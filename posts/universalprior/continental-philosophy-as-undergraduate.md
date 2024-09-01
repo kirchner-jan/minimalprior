@@ -11,7 +11,7 @@ _Previously in this series:[Frankfurt Declaration on the Cambridge Declaration o
 
 ##  **Not another declaration.**
 
-Looking back, I feel bad about how I wrote the [Frankfurt declaration](https://universalprior.substack.com/p/frankfurt-declaration-on-the-cambridge?s=w). I'm not sure I managed to convey that I am against _both_ animal suffering _and_ the Cambridge Declaration[1](https://universalprior.substack.com/p/continental-philosophy-as-undergraduate#footnote-1-52772253). Also, mixing in that fictional narrative of intoxicated neuroscientists partying and signing something they don't understand might have taken things too far[2](https://universalprior.substack.com/p/continental-philosophy-as-undergraduate#footnote-2-52772253). But, oh well, [live and learn](https://www.youtube.com/watch?v=3gPBmDptqlQ&ab_channel=blackblur7).
+Looking back, I feel bad about how I wrote the [Frankfurt declaration](https://universalprior.substack.com/p/frankfurt-declaration-on-the-cambridge?s=w). I'm not sure I managed to convey that I am against _both_ animal suffering _and_ the Cambridge Declaration[^1]. Also, mixing in that fictional narrative of intoxicated neuroscientists partying and signing something they don't understand might have taken things too far[^2]. But, oh well, [live and learn](https://www.youtube.com/watch?v=3gPBmDptqlQ&ab_channel=blackblur7).
 
 How can I avoid that failure mode? How can I clearly state that when I'm writing about consciousness, continental philosophy, and/or [ghosts](https://twitter.com/ESYudkowsky/status/1515674934302986245?s=20&t=mDR0m_ZJbVm-JdQ36eb5tw), I'm poking fun at something [I don't understand](https://www.lesswrong.com/posts/iCh7xpF8pcepDdXTK/epistemic-trust-clarification#:~:text=to%20explain%20this%3A-,Intellectual,-honesty%3A%C2%A0being%20up)? I _am_ tempted to write another declaration but that would be a bit too on the nose. Instead, I'll just put a clear "[epistemic status](https://www.lesswrong.com/posts/Hrm59GdN2yDPWbtrd/feature-idea-epistemic-status)" warning at the top of each post in this series. Cool? Cool.
 
@@ -19,7 +19,7 @@ How can I avoid that failure mode? How can I clearly state that when I'm writing
 
 ##  **Words, not numbers**
 
- _Does anyone remember[wordcels vs. shape rotators](https://roonscape.substack.com/p/a-song-of-shapes-and-words?s=r)?_[3](https://universalprior.substack.com/p/continental-philosophy-as-undergraduate#footnote-3-52772253) _No? Okay, good for you._
+ _Does anyone remember[wordcels vs. shape rotators](https://roonscape.substack.com/p/a-song-of-shapes-and-words?s=r)?_[^3] _No? Okay, good for you._
 
 A rift divides philosophy, with analytic philosophy ([a broad and still ramifying movement in which various conceptions of analysis compete and pull in different directions](https://plato.stanford.edu/entries/analysis/s6.html)) on one side and continental philosophy (a term used by analytic philosophers to describe what they are not) on the other. Analytic philosophy gave us evergreen tautologies like [1+1=2](https://blog.plover.com/math/PM.html), ['snow is white' is true if and only if snow is white](https://en.wikipedia.org/wiki/Semantic_theory_of_truth), and ["Whereof one cannot speak, thereof one must be silent."](http://www.philosophypages.com/hy/6s.htm#:~:text=%22Whereof%20one%20cannot%20speak%2C%20thereof%20one%20must%20be%20silent.%22) Continental philosophy, in contrast, provides rich head-scratchers to ponder, like [Transcendence constitutes selfhood](https://www.brainyquote.com/quotes/martin_heidegger_363019), [God is, as it were, the sewer into which all contradictions flow](https://www.azquotes.com/quote/1040416), and "[It is hard enough to remember my opinions, without also remembering my reasons for them!](https://www.goodreads.com/quotes/2121-it-is-hard-enough-to-remember-my-opinions-without-also)"
 
@@ -41,7 +41,7 @@ Evidence for this hypothesis comes in many shapes:
 
   * StackExchange asserts, "[You need to know absolutely no logic, philosophy of language or mathematics to understand Heidegger, Derrida, Foucault, or most of the other "famous" continental philosophers.](https://philosophy.stackexchange.com/questions/17783/how-much-formal-logic-and-mathematics-would-i-have-to-study-if-i-focused-on-cont)"
 
-  * Marx (a continental philosopher, [according to Wikipedia](https://en.wikipedia.org/wiki/Karl_Marx#:~:text=Continental%20philosophy)) is having a very hard time with differential calculus and writes [pages and pages](https://twitter.com/atroyn/status/1469790189161648128) arguing why it doesn't make sense[4](https://universalprior.substack.com/p/continental-philosophy-as-undergraduate#footnote-4-52772253).
+  * Marx (a continental philosopher, [according to Wikipedia](https://en.wikipedia.org/wiki/Karl_Marx#:~:text=Continental%20philosophy)) is having a very hard time with differential calculus and writes [pages and pages](https://twitter.com/atroyn/status/1469790189161648128) arguing why it doesn't make sense[^4].
 
 
 
@@ -56,11 +56,11 @@ In this essay, I'll run with that premise and draw loose parallels between under
 
 The most well-known instances of "dialectics" are perhaps the [Socratic dialogues](https://en.wikipedia.org/wiki/Socratic_dialogue), where through a series of back-and-forth arguments, Socrates helps his interlocutor refine their philosophical views.
 
-Now, what is _Hegel's_ dialectic[5](https://universalprior.substack.com/p/continental-philosophy-as-undergraduate#footnote-5-52772253)? Someone on Quora asks, "[Could someone explain Hegelian dialectics in simple terms, particularly negation?](https://www.quora.com/Could-someone-explain-Hegelian-dialectics-in-simple-terms-particularly-negation)". The top answer runs 1500 words, introduces "triplicity", "being-for-itself vs. being-in-itself", and "being-a-thing-on-the-floor", and uses words like "unexplicated", "originary", and "sublation".
+Now, what is _Hegel's_ dialectic[^5]? Someone on Quora asks, "[Could someone explain Hegelian dialectics in simple terms, particularly negation?](https://www.quora.com/Could-someone-explain-Hegelian-dialectics-in-simple-terms-particularly-negation)". The top answer runs 1500 words, introduces "triplicity", "being-for-itself vs. being-in-itself", and "being-a-thing-on-the-floor", and uses words like "unexplicated", "originary", and "sublation".
 
 I asked GPT-3 to [give me a summary of that summary](https://medium.com/@SteveMoraco/gpt-3-as-explained-to-a-2nd-grader-by-gpt-3-f7767c274613), and the result is pretty impressive:
 
-> The dialectic is a moving soul of further development where things are related to each other in threes. The first part of the three is the in-itself, the second is the for-itself, and the third is the unity of the first two terms, the in-and-for-itself. This is the developmental path that truth must submit itself to, to realize or explicate itself.[6](https://universalprior.substack.com/p/continental-philosophy-as-undergraduate#footnote-6-52772253)
+> The dialectic is a moving soul of further development where things are related to each other in threes. The first part of the three is the in-itself, the second is the for-itself, and the third is the unity of the first two terms, the in-and-for-itself. This is the developmental path that truth must submit itself to, to realize or explicate itself.[^6]
 
 Still, total gibberish, but at least very compact gibberish. But what I'm getting is that Hegel's dialectic is a process for finding the truth that occurs in three steps, where the third step is a combination of the first two steps. This intuition is corroborated by what Google Image Search produces:
 
@@ -144,36 +144,20 @@ Everything falls naturally into place once we consider opposite categories. The 
 
 ## Closing thoughts
 
-I can’t lie to you, dear reader. That last section was mostly [written by GPT-3](https://openai.com/blog/openai-api/)[7](https://universalprior.substack.com/p/continental-philosophy-as-undergraduate#footnote-7-52772253). I didn’t want to put my poor brain through the exercise of coming up with a Heidegger/category theory crossover. But if that’s your jam, I can only encourage you to dive deeper into it! [Mysterious Answers to Mysterious Questions](https://www.lesswrong.com/posts/6i3zToomS86oj9bS6/mysterious-answers-to-mysterious-questions) aren’t _typically_ useful, but your personal enjoyment should count for something too.
+I can’t lie to you, dear reader. That last section was mostly [written by GPT-3](https://openai.com/blog/openai-api/)[^7]. I didn’t want to put my poor brain through the exercise of coming up with a Heidegger/category theory crossover. But if that’s your jam, I can only encourage you to dive deeper into it! [Mysterious Answers to Mysterious Questions](https://www.lesswrong.com/posts/6i3zToomS86oj9bS6/mysterious-answers-to-mysterious-questions) aren’t _typically_ useful, but your personal enjoyment should count for something too.
 
 Is there anything else left to say? I told my colleagues about the idea for this post during lunch today. **While explaining the idea out loud I realized that the audience for this essay might be very small indeed.** But [that has never stopped me](https://universalprior.substack.com/p/belief-conditional-things-things?s=w) and I’d feel like a sellout if I start caring about it (too much). Anyways, next week we’ll return to our regularly scheduled program of slightly less weird essays! Consider signing up for the newsletter to get a notification, it’s free and will stay free (:
 
-Subscribe
+[^1]:To clarify my central point from that post: I don't think a declaration from a handful of neuroscientists should form the core of any argument for something as important as the [well-being of non-human animals](https://en.wikipedia.org/wiki/Animal_welfare). 
 
-[1](https://universalprior.substack.com/p/continental-philosophy-as-undergraduate#footnote-anchor-1-52772253)
+[^2]:I also found out that 10 years after the declaration was made, its initiator is still very active on Twitter and will block anyone who says something critical about it.
 
-To clarify my central point from that post: I don't think a declaration from a handful of neuroscientists should form the core of any argument for something as important as the [well-being of non-human animals](https://en.wikipedia.org/wiki/Animal_welfare). 
+[^3]:That was three months ago, but it feels like something already [from a very distant past](https://www.youtube.com/watch?v=oVlspd9hxFA).
 
-[2](https://universalprior.substack.com/p/continental-philosophy-as-undergraduate#footnote-anchor-2-52772253)
+[^4]:There is a [steelman of Marx's position](https://twitter.com/DavidDarmon/status/1470033566906130441), but this essay is not concerned with nuance.
 
-I also found out that 10 years after the declaration was made, its initiator is still very active on Twitter and will block anyone who says something critical about it.
+[^5]:Really, Jan, really? How did things go so wrong? There was a time when I was writing about albatrosses and water allergy.
 
-[3](https://universalprior.substack.com/p/continental-philosophy-as-undergraduate#footnote-anchor-3-52772253)
+[^6]:If [machines can suffer](https://universalprior.substack.com/p/what-are-red-flags-for-neural-network?s=w), I would not be surprised if summarizing Hegel induces some non-negligible amount of suffering.
 
-That was three months ago, but it feels like something already [from a very distant past](https://www.youtube.com/watch?v=oVlspd9hxFA).
-
-[4](https://universalprior.substack.com/p/continental-philosophy-as-undergraduate#footnote-anchor-4-52772253)
-
-There is a [steelman of Marx's position](https://twitter.com/DavidDarmon/status/1470033566906130441), but this essay is not concerned with nuance.
-
-[5](https://universalprior.substack.com/p/continental-philosophy-as-undergraduate#footnote-anchor-5-52772253)
-
-Really, Jan, really? How did things go so wrong? There was a time when I was writing about albatrosses and water allergy.
-
-[6](https://universalprior.substack.com/p/continental-philosophy-as-undergraduate#footnote-anchor-6-52772253)
-
-If [machines can suffer](https://universalprior.substack.com/p/what-are-red-flags-for-neural-network?s=w), I would not be surprised if summarizing Hegel induces some non-negligible amount of suffering.
-
-[7](https://universalprior.substack.com/p/continental-philosophy-as-undergraduate#footnote-anchor-7-52772253)
-
-Why not [IAN](https://universalprior.substack.com/p/making-of-ian), you ask? The sad truth is that the gap between the very large models and the smaller fine-tuned models has become very large. But I’m planning to [fine-tune a DaVinci model](https://beta.openai.com/docs/api-reference/fine-tunes) through the API soon :)
+[^7]:Why not [IAN](https://universalprior.substack.com/p/making-of-ian), you ask? The sad truth is that the gap between the very large models and the smaller fine-tuned models has become very large. But I’m planning to [fine-tune a DaVinci model](https://beta.openai.com/docs/api-reference/fine-tunes) through the API soon :)

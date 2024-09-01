@@ -11,13 +11,13 @@ date: 2022-01-12
 
 Please enjoy this clip of the reigning chess world champion Magnus Carlsen playing a game of [hyperbullet](https://en.wikipedia.org/wiki/Fast_chess#:~:text=controls%20are%20called%20%27-,hyperbullet,-%27%20and%20%27ultrabullet%27%20for) (30 sec total per player) while inebriated.
 
-As the commenters are quick to point out, Magnus winning this game is partially due to his opponent blundering their Queen a couple of moves after Magnus takes over. But still. Even after a full night of sleep and being highly caffeinated I would struggle to _complete_ a game of chess in 30 seconds[1](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-1-46914010). Winning while chanting party bangers, and complaining about the state of one's own body, is kind of impressive.
+As the commenters are quick to point out, Magnus winning this game is partially due to his opponent blundering their Queen a couple of moves after Magnus takes over. But still. Even after a full night of sleep and being highly caffeinated I would struggle to _complete_ a game of chess in 30 seconds[^1]. Winning while chanting party bangers, and complaining about the state of one's own body, is kind of impressive.
 
-Magnus is standing on the shoulders of giants in this game. Drinking and chess have been going hand in hand since at least [Paul Morphy](https://en.wikipedia.org/wiki/Paul_Morphy), whose family [started](https://www.chesshistory.com/winter/extra/alcohol.html#:~:text=Morphy%2C%20Murphy%20and%20beer) the [Murphy brewery](http://www.murphys.com/). Since Morphy, two former world champions stand out as particularly heavy drinkers, [Alexander Alekhine](https://en.wikipedia.org/wiki/Alexander_Alekhine) and [Mikhail Tal](https://en.wikipedia.org/wiki/Mikhail_Tal). The story of [Mikhail Tal](https://en.wikipedia.org/wiki/Mikhail_Tal), the Magician from Riga, is interesting as he was drinking and smoking _en masse_ while producing [more brilliancies](https://en.wikipedia.org/wiki/Mikhail_Tal#:~:text=more%20games%20by%20Tal%20than%20any%20other%20player)[2](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-2-46914010) than any other player.
+Magnus is standing on the shoulders of giants in this game. Drinking and chess have been going hand in hand since at least [Paul Morphy](https://en.wikipedia.org/wiki/Paul_Morphy), whose family [started](https://www.chesshistory.com/winter/extra/alcohol.html#:~:text=Morphy%2C%20Murphy%20and%20beer) the [Murphy brewery](http://www.murphys.com/). Since Morphy, two former world champions stand out as particularly heavy drinkers, [Alexander Alekhine](https://en.wikipedia.org/wiki/Alexander_Alekhine) and [Mikhail Tal](https://en.wikipedia.org/wiki/Mikhail_Tal). The story of [Mikhail Tal](https://en.wikipedia.org/wiki/Mikhail_Tal), the Magician from Riga, is interesting as he was drinking and smoking _en masse_ while producing [more brilliancies](https://en.wikipedia.org/wiki/Mikhail_Tal#:~:text=more%20games%20by%20Tal%20than%20any%20other%20player)[^2] than any other player.
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32.png)The Magician from Riga in his element.
 
-His play under the influence might be the source of the common [urban myth](https://wegochess.com/does-alcohol-improve-chess-drunken-style/) that drinking might _improve_ one’s play. Tal's heavy drinking was likely not a character flaw, but [presumably](https://www.quora.com/Is-it-true-that-Mikhail-Tal-would-drink-heavily-even-on-nights-when-he-had-a-tournament-the-next-day-Would-he-have-been-an-even-better-player-without-this-way-of-living-or-did-it-add-to-his-wild-style-of-play) represented a type of [self-medication](https://en.wikipedia.org/wiki/Self-medication) for his congenital chronic illnesses. The same can not be said for another grandmaster, who triggered one of many[3](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-3-46914010) episodes of chess drama by drinking heavily and "[losing it](https://www.reddit.com/r/AnarchyChess/comments/gi6ysu/drunk_gm_hansen_losing_it_on_stream/)" live on Twitch during a chess streaming session. On the other hand, he was [awarded](https://www.youtube.com/watch?v=pCOiGL9--9I&ab_channel=CHESSMEMEX) the infamous title "best drunk chess player in the world" by world championship challenger [Fabiano Caruana](https://en.wikipedia.org/wiki/Fabiano_Caruana). Beyond the players, there is "[alcoholic chess](https://www.pinterest.de/pin/279786195576639442/)", the "[bongcloud opening](https://en.wikipedia.org/wiki/Bongcloud_Attack)", and of course, the recent Netflix hit show "[The Queen's Gambit](https://en.wikipedia.org/wiki/The_Queen%27s_Gambit_%28miniseries%29)" about a drug-addicted, female[ Bobby Fisher](https://en.wikipedia.org/wiki/Bobby_Fischer). Magnus Carlsen winning a game of hyperbullet after having a drink or two might appear impressive to an outsider - the aficionado just calls it "Tuesday".
+His play under the influence might be the source of the common [urban myth](https://wegochess.com/does-alcohol-improve-chess-drunken-style/) that drinking might _improve_ one’s play. Tal's heavy drinking was likely not a character flaw, but [presumably](https://www.quora.com/Is-it-true-that-Mikhail-Tal-would-drink-heavily-even-on-nights-when-he-had-a-tournament-the-next-day-Would-he-have-been-an-even-better-player-without-this-way-of-living-or-did-it-add-to-his-wild-style-of-play) represented a type of [self-medication](https://en.wikipedia.org/wiki/Self-medication) for his congenital chronic illnesses. The same can not be said for another grandmaster, who triggered one of many[^3] episodes of chess drama by drinking heavily and "[losing it](https://www.reddit.com/r/AnarchyChess/comments/gi6ysu/drunk_gm_hansen_losing_it_on_stream/)" live on Twitch during a chess streaming session. On the other hand, he was [awarded](https://www.youtube.com/watch?v=pCOiGL9--9I&ab_channel=CHESSMEMEX) the infamous title "best drunk chess player in the world" by world championship challenger [Fabiano Caruana](https://en.wikipedia.org/wiki/Fabiano_Caruana). Beyond the players, there is "[alcoholic chess](https://www.pinterest.de/pin/279786195576639442/)", the "[bongcloud opening](https://en.wikipedia.org/wiki/Bongcloud_Attack)", and of course, the recent Netflix hit show "[The Queen's Gambit](https://en.wikipedia.org/wiki/The_Queen%27s_Gambit_%28miniseries%29)" about a drug-addicted, female[ Bobby Fisher](https://en.wikipedia.org/wiki/Bobby_Fischer). Magnus Carlsen winning a game of hyperbullet after having a drink or two might appear impressive to an outsider - the aficionado just calls it "Tuesday".
 
 ##  **How do they do it?**
 
@@ -25,13 +25,13 @@ What's my point? I don't think we should be surprised that chess players drink a
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_1.png)Benny Watts, professional chess-playing “bad boy” from the [Queen's Gambit](https://en.wikipedia.org/wiki/The_Queen%27s_Gambit_\(miniseries\)).
 
-The thing that boggles my mind is something else: _How_ can chess players get blackout drunk and still play decent chess? Chess was once [considered](https://twitter.com/martin_gorner/status/1199844865053347840) the [pinnacle](https://www.eapoe.org/works/essays/maelzel.htm) of human intellect. And while that perspective (perhaps rightfully) has [fallen out of favor](https://en.wikipedia.org/wiki/AI_effect), I'd like to circle back to the fact that the only way that I win against drunk Magnus Carlsen is when he literally [passes out during the game](https://www.quora.com/How-much-vodka-must-Magnus-Carlsen-drink-so-an-average-amateur-could-beat-him)[4](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-4-46914010).
+The thing that boggles my mind is something else: _How_ can chess players get blackout drunk and still play decent chess? Chess was once [considered](https://twitter.com/martin_gorner/status/1199844865053347840) the [pinnacle](https://www.eapoe.org/works/essays/maelzel.htm) of human intellect. And while that perspective (perhaps rightfully) has [fallen out of favor](https://en.wikipedia.org/wiki/AI_effect), I'd like to circle back to the fact that the only way that I win against drunk Magnus Carlsen is when he literally [passes out during the game](https://www.quora.com/How-much-vodka-must-Magnus-Carlsen-drink-so-an-average-amateur-could-beat-him)[^4].
 
 In this post, I want to propose an analogy with the type of AI architecture that currently dominates computer chess, and which might give us some ideas for why grandmasters can play decent chess while drunk. Perhaps there is even something we can learn from inebriated humans that is interesting for AI.
 
 ##  **How to solve chess**
 
-Which tool in our belt is best suited to understand complicated cognitive phenomena? [David Marr](https://en.wikipedia.org/wiki/David_Marr_%28neuroscientist%29)'s three[5](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-5-46914010) levels of analysis appear like a good match[6](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-6-46914010):
+Which tool in our belt is best suited to understand complicated cognitive phenomena? [David Marr](https://en.wikipedia.org/wiki/David_Marr_%28neuroscientist%29)'s three[^5] levels of analysis appear like a good match[^6]:
 
   1.  **computational level** : a formal description of what the system does.
   1.  **algorithmic level** : a step-by-step description of how a formal system can construct a solution.
@@ -41,9 +41,9 @@ Which tool in our belt is best suited to understand complicated cognitive phenom
 
 #####  **Chess: the computational level.**
 
-I find it very instructive to look back at the very early days of the computer[7](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-7-46914010) and to see what people came up with when confronted with this new toy. [After factoring a large number](https://en.wikipedia.org/wiki/History_of_software#:~:text=from%20the%20beginning.-,The%20very%20first%20time,-a%20stored%2Dprogram), researchers turned almost immediately to building a [theorem prover](https://en.wikipedia.org/wiki/Logic_Theorist), and then [in 1948: chess](http://billwall.phpwebhosting.com/articles/computer_chess_timeline.htm#:~:text=In%201948%20the%20UNIVAC). In the same year, Claude Shannon at Bell Labs published a [paper](https://vision.unipv.it/IA1/ProgrammingaComputerforPlayingChess.pdf) containing a strategy for, in theory, playing flawless chess on a computer. This strategy is now known as the [MiniMax decision rule](https://en.wikipedia.org/wiki/Minimax) and, informally, states that you should pick the chess move that gives you the best possible position (max), given that your opponent _afterward_ will choose the move that gives you the worst possible position (min).
+I find it very instructive to look back at the very early days of the computer[^7] and to see what people came up with when confronted with this new toy. [After factoring a large number](https://en.wikipedia.org/wiki/History_of_software#:~:text=from%20the%20beginning.-,The%20very%20first%20time,-a%20stored%2Dprogram), researchers turned almost immediately to building a [theorem prover](https://en.wikipedia.org/wiki/Logic_Theorist), and then [in 1948: chess](http://billwall.phpwebhosting.com/articles/computer_chess_timeline.htm#:~:text=In%201948%20the%20UNIVAC). In the same year, Claude Shannon at Bell Labs published a [paper](https://vision.unipv.it/IA1/ProgrammingaComputerforPlayingChess.pdf) containing a strategy for, in theory, playing flawless chess on a computer. This strategy is now known as the [MiniMax decision rule](https://en.wikipedia.org/wiki/Minimax) and, informally, states that you should pick the chess move that gives you the best possible position (max), given that your opponent _afterward_ will choose the move that gives you the worst possible position (min).
 
-What makes a position good or bad? If you care about winning, a position where you mate the opponent’s king is good, while a position where your own king is mated is bad[8](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-8-46914010).
+What makes a position good or bad? If you care about winning, a position where you mate the opponent’s king is good, while a position where your own king is mated is bad[^8].
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_2.png)A schematic of a game tree, where some of the leaf nodes have a value of positive infinity (win) or negative infinity (lose). These values are propagated upwards in the tree, and at each level either the maximum or the minimum gets carried over.
 
@@ -73,7 +73,7 @@ So how does AlphaZero work? It's in essence a product of a [recent revolution](h
 
 #####  **AlphaZero as an example of Iterated Amplification and Distillation.**
 
-Paul Christiano [argues](https://ai-alignment.com/alphago-zero-and-capability-amplification-ede767bb8446) that the training procedure for AlphaZero can be interpreted as an instance of **Iterated Amplification and Distillation** (IAD)[9](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-9-46914010).
+Paul Christiano [argues](https://ai-alignment.com/alphago-zero-and-capability-amplification-ede767bb8446) that the training procedure for AlphaZero can be interpreted as an instance of **Iterated Amplification and Distillation** (IAD)[^9].
 
 Conceptually, IAD requires three components:
 
@@ -85,25 +85,25 @@ Conceptually, IAD requires three components:
 
 We can then **iterate** this procedure, and compute **p* =D(A(D(A(....D(A(p))))))**. If everything goes well, our prior **p** * will be getting better at every iteration, improving without bound or converging to a fixed point, **p*=D(A(p*))**.
 
-For learning to play chess, we might start with a very poor prior distribution **p** , which suggests mostly terrible moves but still performs slightly above chance[10](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-10-46914010). In the previous section, we have already encountered a method to amplify the performance of this prior! Shannon's MiniMax strategy tells us that we can traverse the game tree, putting ourselves in the shoes of our opponent at every second level, to evaluate whether moves are good or bad for us. Doing this is costly (combinatorial explosion), but since our search is guided by our “slightly better than chance” prior, we have hope that some of the sequences of moves we explore end up relevant to the game. Using our prior **p** in conjunction with some amount of exploration of the game tree will, in effect, provide us with a slightly more accurate, or _amplified_ , distribution over moves in a position, **A(p)**.
+For learning to play chess, we might start with a very poor prior distribution **p** , which suggests mostly terrible moves but still performs slightly above chance[^10]. In the previous section, we have already encountered a method to amplify the performance of this prior! Shannon's MiniMax strategy tells us that we can traverse the game tree, putting ourselves in the shoes of our opponent at every second level, to evaluate whether moves are good or bad for us. Doing this is costly (combinatorial explosion), but since our search is guided by our “slightly better than chance” prior, we have hope that some of the sequences of moves we explore end up relevant to the game. Using our prior **p** in conjunction with some amount of exploration of the game tree will, in effect, provide us with a slightly more accurate, or _amplified_ , distribution over moves in a position, **A(p)**.
 
-Using **A(p)** to play chess was _de facto_ the way that all chess computers worked up until AlphaZero. People came up with ever cleverer prior distributions **p** and search strategies **A(p)** , and the superior speed and memory of modern computer systems were sufficient to leave human players in the dust. The novelty with AlphaZero[11](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-11-46914010) is the use of a **very deep neural network** to implement the prior **p**.
+Using **A(p)** to play chess was _de facto_ the way that all chess computers worked up until AlphaZero. People came up with ever cleverer prior distributions **p** and search strategies **A(p)** , and the superior speed and memory of modern computer systems were sufficient to leave human players in the dust. The novelty with AlphaZero[^11] is the use of a **very deep neural network** to implement the prior **p**.
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_4.png)The [ResNet](https://universalprior.substack.com/p/serendipitous-connections-applying) component of AlphaZero, [source](https://hackernoon.com/the-3-tricks-that-made-alphago-zero-work-f3d47b6686ef).
 
 The big advantage of using this network is that there is a flexible operation for adopting the output of the network to a given target, the [backpropagation algorithm](https://en.wikipedia.org/wiki/Backpropagation). In the context of learning to play chess, the backpropagation algorithm allows us to perform the last step of IDA; given the move suggestions of the amplified prior **A(p)** , we can train an updated prior, **p*=D(A(p))** , which will reap some of the benefits of **A(p)** without having to perform the costly search!
 
-And that's all the components we need to iterate the procedure, **p* =D(A(D(A(....D(A(p))))))** , and to see if we approach a fixed point[12](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-12-46914010).
+And that's all the components we need to iterate the procedure, **p* =D(A(D(A(....D(A(p))))))** , and to see if we approach a fixed point[^12].
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_1.gif)Note that here AlphaZero is playing against a version of Stockfish that has already adopted the new trick of IAD.
 
-Looks like it! The performance of AlphaZero against the leading chess computer StockFish increases monotonically over training and asymptotically reaches a level slightly above it[13](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-13-46914010).
+Looks like it! The performance of AlphaZero against the leading chess computer StockFish increases monotonically over training and asymptotically reaches a level slightly above it[^13].
 
 We thus have a very powerful **algorithm-level** approximation to the ideal at the computational level. This implementation matches, and even outplays, Magnus Carlsen on his best day, while still playing in a distinctly human-like style. How might this algorithm be implemented in the brain? And, even more importantly, how can we make it drunk?
 
 #####  **Chess, the implementation level.**
 
-The kicker of Marr's method is that once we have a particular algorithmic implementation, we can set out and try to find neural correlates. We have no guarantee of finding these correlates - in general, there are multiple possible algorithmic implementations, and there are no theoretical guarantees that we pick the one that evolution picked[14](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-14-46914010).
+The kicker of Marr's method is that once we have a particular algorithmic implementation, we can set out and try to find neural correlates. We have no guarantee of finding these correlates - in general, there are multiple possible algorithmic implementations, and there are no theoretical guarantees that we pick the one that evolution picked[^14].
 
 But I have a good feeling about this one. Let's see how far we can get.
 
@@ -121,7 +121,7 @@ The [2010s](https://www.sciencedirect.com/science/article/abs/pii/S0304394011006
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_7.png)Again, the arrows are supposed to point to the _inside_ of the lobe.
 
-For [2019](https://www.sciencedirect.com/science/article/abs/pii/S0031938418309351?dgcid=api_sd_search-api-endpoint) I found a paper where researchers found that the parietal cortex tends to be more involved in chess games in the rapid format (10 minutes + 10 seconds increment) than in the lightning format (1 minute), p=0.045.
+For [^2019](https://www.sciencedirect.com/science/article/abs/pii/S0031938418309351?dgcid=api_sd_search-api-endpoint) I found a paper where researchers found that the parietal cortex tends to be more involved in chess games in the rapid format (10 minutes + 10 seconds increment) than in the lightning format (1 minute), p=0.045.
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_8.png)
 
@@ -189,60 +189,30 @@ A big thank you to Philipp Hummel for giving me the central insight of this post
 
 If you enjoyed this post and want to receive a notification for my next post, consider subscribing (it’s free and will stay free!)
 
-Subscribe
+[^1]:Much less _win_ against a 2400 opponent.
 
-[1](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-anchor-1-46914010)
+[^2]:A term in chess that is not rigorously defined, but roughly equates to " **an extremely powerful move that is usually not obvious but that almost automatically wins** (or draws, if you are losing) the game. Some would call this move a “brilliant” one".[ source](https://www.quora.com/How-would-you-define-a-brilliancy-in-chess)
 
-Much less _win_ against a 2400 opponent.
+[^3]:Who would have thought!
 
-[2](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-anchor-2-46914010)
+[^4]:At which point I'd have decent drawing chances.
 
-A term in chess that is not rigorously defined, but roughly equates to " **an extremely powerful move that is usually not obvious but that almost automatically wins** (or draws, if you are losing) the game. Some would call this move a “brilliant” one".[ source](https://www.quora.com/How-would-you-define-a-brilliancy-in-chess)
+[^5]:The[ original paper actually lists four](https://dspace.mit.edu/handle/1721.1/5782), but they are confusing.
 
-[3](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-anchor-3-46914010)
+[^6]:Actually, it's the only tool I have. Send help. Or more tools.
 
-Who would have thought!
+[^7]:Despite being so relatively recent, it is very hard to find a source that is reasonably complete and correct. Almost everyone ignores[ Konrad Zuse](https://en.wikipedia.org/wiki/Konrad_Zuse), or those who don't ignore him ignore everything else. I spent way too much time diving into this a few years ago, but it seems super relevant to me.
 
-[4](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-anchor-4-46914010)
+[^8]:A draw is simply a disgrace and should be avoided whenever possible.
 
-At which point I'd have decent drawing chances.
+[^9]:Or "Iterated capability amplification". Terminology is not quite set in stone yet.
 
-[5](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-anchor-5-46914010)
+[^10]:To get this, we might instantiate the prior randomly and then make it perform slightly better than random by creating two copies of the system and adopting the prior through traditional reinforcement learning and self-play. This is where the _grounding_ of the prior comes from.
 
-The[ original paper actually lists four](https://dspace.mit.edu/handle/1721.1/5782), but they are confusing.
+[^11]:Am I being unfair to the people who came up with this using[ neural networks for chess in 1999](https://www.chessprogramming.org/Neural_Networks#:~:text=generalized%20AlphaZero%20algorithm.-,Move%20Ordering,-Concerning%20move%20ordering)? Possibly.
 
-[6](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-anchor-6-46914010)
+[^12]:In case somebody who worked on the project ever reads this: Please don't be mad. I can't imagine the amount of blood, sweat, and tears that went into this.
 
-Actually, it's the only tool I have. Send help. Or more tools.
+[^13]:[Stockfish](https://en.wikipedia.org/wiki/Stockfish_%28chess%29), the goliath of computer chess, has by now caught up and overtaken the record set by AlphaZero.
 
-[7](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-anchor-7-46914010)
-
-Despite being so relatively recent, it is very hard to find a source that is reasonably complete and correct. Almost everyone ignores[ Konrad Zuse](https://en.wikipedia.org/wiki/Konrad_Zuse), or those who don't ignore him ignore everything else. I spent way too much time diving into this a few years ago, but it seems super relevant to me.
-
-[8](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-anchor-8-46914010)
-
-A draw is simply a disgrace and should be avoided whenever possible.
-
-[9](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-anchor-9-46914010)
-
-Or "Iterated capability amplification". Terminology is not quite set in stone yet.
-
-[10](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-anchor-10-46914010)
-
-To get this, we might instantiate the prior randomly and then make it perform slightly better than random by creating two copies of the system and adopting the prior through traditional reinforcement learning and self-play. This is where the _grounding_ of the prior comes from.
-
-[11](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-anchor-11-46914010)
-
-Am I being unfair to the people who came up with this using[ neural networks for chess in 1999](https://www.chessprogramming.org/Neural_Networks#:~:text=generalized%20AlphaZero%20algorithm.-,Move%20Ordering,-Concerning%20move%20ordering)? Possibly.
-
-[12](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-anchor-12-46914010)
-
-In case somebody who worked on the project ever reads this: Please don't be mad. I can't imagine the amount of blood, sweat, and tears that went into this.
-
-[13](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-anchor-13-46914010)
-
-[Stockfish](https://en.wikipedia.org/wiki/Stockfish_%28chess%29), the goliath of computer chess, has by now caught up and overtaken the record set by AlphaZero.
-
-[14](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-anchor-14-46914010)
-
-There are, however, weak hand-wavy arguments for why we might be lucky sometimes. In particular, the[ more general an algorithm, the more robust it tends to be to perturbations](https://deepmind.com/blog/article/generally-capable-agents-emerge-from-open-ended-play). Robustness is something that evolution "cares" a lot about. Generality is something that DeepMind cares a lot about (see also[ MuZero](https://deepmind.com/blog/article/muzero-mastering-go-chess-shogi-and-atari-without-rules)). Perhaps the number of totally general algorithm that can do all the things humans do is not _that_ large? Sounds plausible, right?
+[^14]:There are, however, weak hand-wavy arguments for why we might be lucky sometimes. In particular, the[ more general an algorithm, the more robust it tends to be to perturbations](https://deepmind.com/blog/article/generally-capable-agents-emerge-from-open-ended-play). Robustness is something that evolution "cares" a lot about. Generality is something that DeepMind cares a lot about (see also[ MuZero](https://deepmind.com/blog/article/muzero-mastering-go-chess-shogi-and-atari-without-rules)). Perhaps the number of totally general algorithm that can do all the things humans do is not _that_ large? Sounds plausible, right?

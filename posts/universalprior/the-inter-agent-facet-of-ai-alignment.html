@@ -87,12 +87,18 @@ Kirchner</a></td>
     that, especially in complex <a
     href="https://en.wikipedia.org/wiki/Multi-agent_system">Multi-Agent
     Systems</a> (MAS), this is not sufficient to actually achieve
-    aligned outcomes<a
-    href="https://universalprior.substack.com/p/the-inter-agent-facet-of-ai-alignment#footnote-1-73850726">1</a>.
-    Therefore, we introduce another facet of AI Alignment, which deals
-    with the connection between an agent’s intention and its actual
-    impact, due to multi-agent interactions (as opposed to capability
-    robustness).</p>
+    aligned outcomes<sup>[1]</sup>. Therefore, we introduce another
+    facet of AI Alignment, which deals with the connection between an
+    agent’s intention and its actual impact, due to multi-agent
+    interactions (as opposed to capability robustness).</p>
+    <div class="sidenote">
+    <p>[1] </p>
+    <p>Optimizing an objective in the real world can also be hard if
+    there’s only a single agent, such that intent alignment isn’t
+    sufficient for impact alignment. Nevertheless, multi-agent settings,
+    especially with multiple superhuman AIs, seem like the most
+    challenging case.</p>
+    </div>
     <p><img
     src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_125.png" /></p>
     <h2 id="motivation">Motivation</h2>
@@ -136,8 +142,14 @@ Kirchner</a></td>
     justify its own type of alignment, separated from the existing
     alignment model. Adding inter-agent alignment to the alignment tree,
     we see that it complements intent alignment and capability
-    robustness, resulting in full alignment (i.e., impact alignment)<a
-    href="https://universalprior.substack.com/p/the-inter-agent-facet-of-ai-alignment#footnote-2-73850726">2</a>.</p>
+    robustness, resulting in full alignment (i.e., impact
+    alignment)<sup>[2]</sup>.</p>
+    <div class="sidenote">
+    <p>[2] </p>
+    <p>I fact, we suspect there might be other requirements for full
+    alignment (unless we just use one of the existing terms as an
+    umbrella).</p>
+    </div>
     <p><img
     src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_128.png" /></p>
     <h2 id="challenging-questions">Challenging Questions</h2>
@@ -150,16 +162,26 @@ Kirchner</a></td>
     impact can be neatly broken down, we argue that it makes sense to
     introduce a new term for this additional dimension.</p>
     <p>Naturally, one can always argue that <em>a sufficiently advanced
-    AGI will be able to see through this dilemma and resolve it</em><a
-    href="https://universalprior.substack.com/p/the-inter-agent-facet-of-ai-alignment#footnote-3-73850726">3</a>,
-    but this seems to be a variant of the No-True-Scotsman fallacy: As
-    long as we can imagine an AGI which is advanced enough to interact
-    with other agents, but not able to successfully coordinate their
-    actions and therefore avoid unintended outcomes, inter-agent
-    alignment is a problem that needs to be addressed. Independent
-    learners using state-of-the-art RL algorithms like DQN or PPO
-    provide evidence that these “medium-level” agents do, in fact,
-    exist.</p>
+    AGI will be able to see through this dilemma and resolve
+    it</em><sup>[3]</sup>, but this seems to be a variant of the
+    No-True-Scotsman fallacy: As long as we can imagine an AGI which is
+    advanced enough to interact with other agents, but not able to
+    successfully coordinate their actions and therefore avoid unintended
+    outcomes, inter-agent alignment is a problem that needs to be
+    addressed. Independent learners using state-of-the-art RL algorithms
+    like DQN or PPO provide evidence that these “medium-level” agents
+    do, in fact, exist.</p>
+    <div class="sidenote">
+    <p>[3] </p>
+    <p>A stronger version of this argument (due to Erik Jenner) would
+    be: <em>Assuming that humans can solve this problem, so could a
+    (super-)human-level AI agent. If the agent is not able to solve this
+    problem, it should hopefully at least figure out that it could ask
+    humans for help. An agent that does so badly in multi-agent settings
+    that it leads to a big catastrophe, and doesn’t check in with humans
+    before acting, is either not intent-aligned, or has some very
+    peculiar capabilities blindspots.</em></p>
+    </div>
     <h3
     id="what-does-it-look-like-if-an-agi-is-intent-aligned-and-capability-robust-but-not-inter-agent-aligned">What
     does it look like if an AGI is intent aligned and capability robust,
@@ -254,28 +276,6 @@ Kirchner</a></td>
     <p><em>Thanks to Jan Kirchner, Erik Jenner and Logan Smith for
     providing helpful feedback and shaping some of the ideas in this
     post.</em></p>
-    <p><a
-    href="https://universalprior.substack.com/p/the-inter-agent-facet-of-ai-alignment#footnote-anchor-1-73850726">1</a></p>
-    <p>Optimizing an objective in the real world can also be hard if
-    there’s only a single agent, such that intent alignment isn’t
-    sufficient for impact alignment. Nevertheless, multi-agent settings,
-    especially with multiple superhuman AIs, seem like the most
-    challenging case.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/the-inter-agent-facet-of-ai-alignment#footnote-anchor-2-73850726">2</a></p>
-    <p>I fact, we suspect there might be other requirements for full
-    alignment (unless we just use one of the existing terms as an
-    umbrella).</p>
-    <p><a
-    href="https://universalprior.substack.com/p/the-inter-agent-facet-of-ai-alignment#footnote-anchor-3-73850726">3</a></p>
-    <p>A stronger version of this argument (due to Erik Jenner) would
-    be: <em>Assuming that humans can solve this problem, so could a
-    (super-)human-level AI agent. If the agent is not able to solve this
-    problem, it should hopefully at least figure out that it could ask
-    humans for help. An agent that does so badly in multi-agent settings
-    that it leads to a big catastrophe, and doesn’t check in with humans
-    before acting, is either not intent-aligned, or has some very
-    peculiar capabilities blindspots.</em></p>
     <div class="debug-grid"></div>
   <script src="index.js"></script>
 </body>

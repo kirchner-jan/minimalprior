@@ -13,7 +13,7 @@ date: 2021-12-25
 
 It is the season, and I just finished watching the 2003 classic "[Elf](https://en.wikipedia.org/wiki/Elf_%28film%29)" with Will Ferrell as "Buddy", a human raised among elves at the North Pole who travels to New York to reunite with his biological father and to save Christmas. The movie got me thinking.
 
-There is an interesting trope in the movie that's used as a story device: the magical powers of Santa are predicated on humans believing in Santa. Thus, Santa falls in the same category as some [magical creatures](https://en.wikipedia.org/wiki/Tinkerbell_effect), [the value of fiat money](https://www.investopedia.com/terms/f/fiatmoney.asp) and, arguably, god[1](https://universalprior.substack.com/p/belief-conditional-things-things#footnote-1-41815715). To spread some magical fuzzy winter feelings, I want to share some thoughts about what I call "belief-conditional things". I think I'm on to something here.
+There is an interesting trope in the movie that's used as a story device: the magical powers of Santa are predicated on humans believing in Santa. Thus, Santa falls in the same category as some [magical creatures](https://en.wikipedia.org/wiki/Tinkerbell_effect), [the value of fiat money](https://www.investopedia.com/terms/f/fiatmoney.asp) and, arguably, god[^1]. To spread some magical fuzzy winter feelings, I want to share some thoughts about what I call "belief-conditional things". I think I'm on to something here.
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_54.png)Expect me to upgrade my [CGD](https://githubmemory.com/repo/crowsonkb/v-diffusion-pytorch) game even further in the new year! This looks a lot like Santa.
 
@@ -31,7 +31,7 @@ But if your metric is symmetric (and why would you call it a [metric](https://en
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_57.png)Woke: Believing in the dragon so hard that reality changes to match your belief.
 
-Indeed, I think this is what motivates a substantial part of moral philosophy[2](https://universalprior.substack.com/p/belief-conditional-things-things#footnote-2-41815715): Instead of accepting the world as it is, we conjure our ideas about how things ought to be into reality. Thus, it's not unheard of that reality is affected by our beliefs. This opens the door for...
+Indeed, I think this is what motivates a substantial part of moral philosophy[^2]: Instead of accepting the world as it is, we conjure our ideas about how things ought to be into reality. Thus, it's not unheard of that reality is affected by our beliefs. This opens the door for...
 
 ##  **Gödel's trick**
 
@@ -43,11 +43,11 @@ implies knowledge of the existence of Santa Claus,
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_59.png)
 
-And then, by using [axiom T](https://en.wikipedia.org/wiki/Modal_logic#Axiomatic_systems), we immediately arrive at the existence of Santa Claus[3](https://universalprior.substack.com/p/belief-conditional-things-things#footnote-3-41815715),
+And then, by using [axiom T](https://en.wikipedia.org/wiki/Modal_logic#Axiomatic_systems), we immediately arrive at the existence of Santa Claus[^3],
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_60.png)
 
-I presume that this must be essentially equivalent to [Gödel's ontological proof](https://en.wikipedia.org/wiki/G%C3%B6del%27s_ontological_proof), although I (same as everybody else) haven't checked the details. Therefore, I will call this “Gödel’s trick"[4](https://universalprior.substack.com/p/belief-conditional-things-things#footnote-4-41815715); and epistemic logic turns out to be extremely useful once again.
+I presume that this must be essentially equivalent to [Gödel's ontological proof](https://en.wikipedia.org/wiki/G%C3%B6del%27s_ontological_proof), although I (same as everybody else) haven't checked the details. Therefore, I will call this “Gödel’s trick"[^4]; and epistemic logic turns out to be extremely useful once again.
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_61.png)I guess this is supposed to read “Gödel, Kurt”. Almost, CGD, almost.
 
@@ -84,7 +84,7 @@ But what is the "money" here? What is used to pay the rent? And what determines 
 
 In a [Bayesian framework](https://en.wikipedia.org/wiki/Bayesian_probability),[ beliefs are akin to probabilities](https://www.sciencedirect.com/science/article/pii/S0888613X03001506) and have a number between zero and one [associated with them](https://en.wikipedia.org/wiki/Credence_%28statistics%29), indicating how strong the belief is. Changes these numbers in a systematic way (that incorporates all the evidence optimally) is called [Bayesian belief updates](https://www.lesswrong.com/posts/XTXWPQSEgoMkAupKt/an-intuitive-explanation-of-bayes-s-theorem). On the road to believing **X** into existence, you might suffer severe setbacks. If you naively follow Bayes, these setbacks will reduce your belief until you end up not believing in the _belief-conditional thing_ **X** \- thus creating a self-fulfilling prophecy.
 
-Luckily, we are now in the territory of mathematics, a field known to be highly susceptible to shenanigans. Most [mathematicians are trollable](https://www.lesswrong.com/posts/5bd75cc58225bf067037518c/all-mathematicians-are-trollable-divergence-of-naturalistic-logical-updates)[5](https://universalprior.substack.com/p/belief-conditional-things-things#footnote-5-41815715). It turns out that any Bayesian hit to our belief in **X** through new evidence can be counteracted by thinking about ways that **X** might be true after all. In particular, any sentence **A - > X** that you can prove (like ["Santa Claus exists and used to be a reclusive toymaker in the Far North"](https://en.wikipedia.org/wiki/Klaus_film) therefore "Santa Claus exists"[6](https://universalprior.substack.com/p/belief-conditional-things-things#footnote-6-41815715)) eliminates probability mass of **not X**. Repeated sufficiently many times, this procedure should allow us to believe in **X** sufficiently strong to believe **X** into existence - again, a self-fulfilling prophecy. Dreaming about **X** and picturing it with as many details as possible is thus a necessary step for making it real.
+Luckily, we are now in the territory of mathematics, a field known to be highly susceptible to shenanigans. Most [mathematicians are trollable](https://www.lesswrong.com/posts/5bd75cc58225bf067037518c/all-mathematicians-are-trollable-divergence-of-naturalistic-logical-updates)[^5]. It turns out that any Bayesian hit to our belief in **X** through new evidence can be counteracted by thinking about ways that **X** might be true after all. In particular, any sentence **A - > X** that you can prove (like ["Santa Claus exists and used to be a reclusive toymaker in the Far North"](https://en.wikipedia.org/wiki/Klaus_film) therefore "Santa Claus exists"[^6]) eliminates probability mass of **not X**. Repeated sufficiently many times, this procedure should allow us to believe in **X** sufficiently strong to believe **X** into existence - again, a self-fulfilling prophecy. Dreaming about **X** and picturing it with as many details as possible is thus a necessary step for making it real.
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_63.png)A very formal troll.
 
@@ -98,28 +98,14 @@ Through the examples I have listed in the first section, I might have deceived y
 
 Thank you, dear reader. Happy holidays.
 
-Subscribe
+[^1]:as explained in the [Book of Jezuboad](http://unsongbook.com/chapter-3-on-a-cloud-i-saw-a-child/) and discussed [here](https://brill.com/view/journals/jocc/8/1-2/article-p149_8.xml)
 
-[1](https://universalprior.substack.com/p/belief-conditional-things-things#footnote-anchor-1-41815715)
+[^2]:and, for that matter,[ larping](https://en.wikipedia.org/wiki/Live_action_role-playing_game).
 
-as explained in the [Book of Jezuboad](http://unsongbook.com/chapter-3-on-a-cloud-i-saw-a-child/) and discussed [here](https://brill.com/view/journals/jocc/8/1-2/article-p149_8.xml)
+[^3]:Please don't send me messages about how this is wrong. I _want_ to believe.
 
-[2](https://universalprior.substack.com/p/belief-conditional-things-things#footnote-anchor-2-41815715)
+[^4]:My Substack, my rules.
 
-and, for that matter,[ larping](https://en.wikipedia.org/wiki/Live_action_role-playing_game).
+[^5]:Admittedly,[ not every prior is trollable in this way](https://www.lesswrong.com/posts/CvKnhXTu9BPcdKE4W/an-untrollable-mathematician-illustrated), but last time I checked, the choice of prior is personal. So the power to believe is ours.
 
-[3](https://universalprior.substack.com/p/belief-conditional-things-things#footnote-anchor-3-41815715)
-
-Please don't send me messages about how this is wrong. I _want_ to believe.
-
-[4](https://universalprior.substack.com/p/belief-conditional-things-things#footnote-anchor-4-41815715)
-
-My Substack, my rules.
-
-[5](https://universalprior.substack.com/p/belief-conditional-things-things#footnote-anchor-5-41815715)
-
-Admittedly,[ not every prior is trollable in this way](https://www.lesswrong.com/posts/CvKnhXTu9BPcdKE4W/an-untrollable-mathematician-illustrated), but last time I checked, the choice of prior is personal. So the power to believe is ours.
-
-[6](https://universalprior.substack.com/p/belief-conditional-things-things#footnote-anchor-6-41815715)
-
-This _is_ a valid inference (the antecedent does, in fact, imply the succedent) and even a true statement (if the antecedent is false, the implication is always true)!
+[^6]:This _is_ a valid inference (the antecedent does, in fact, imply the succedent) and even a true statement (if the antecedent is false, the implication is always true)!

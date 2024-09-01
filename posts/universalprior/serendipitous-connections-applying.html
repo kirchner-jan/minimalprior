@@ -53,9 +53,13 @@ Kirchner</a></td>
     AI, (not that this has ever stopped me from sharing my opinion
     before) the paper made me connect some ideas from neuroscience that
     I couldn’t connect before. This post is capturing those connections.
-    I’m not sure if all of this is novel<a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-1-46595289">1</a>,
-    but it was novel to me!</p>
+    I’m not sure if all of this is novel<sup>[1]</sup>, but it was novel
+    to me!</p>
+    <div class="sidenote">
+    <p>[1] </p>
+    <p>I fully expect someone to tell me: Oh, that’s the
+    “The-Brain-Is-A-Residual-Stream” theory from Smith et al. 1986.</p>
+    </div>
     <p>If you just want to read the idea, feel free to skip to the
     section <strong>“Put it together, it just makes sense”</strong>. If
     you know a bit of neuroscience, but no machine learning, skip to the
@@ -97,8 +101,7 @@ Kirchner</a></td>
     <li>we get raw edges at the level of the primary visual cortex
     (V1),</li>
     <li>we move to flat shapes in the secondary visual cortex (V2),</li>
-    <li>we skip V3<a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-2-46595289">2</a>,</li>
+    <li>we skip V3<sup>[2]</sup>,</li>
     <li>and finally on to the quaternary visual cortex (V4) for
     three-dimensional objects.</li>
     </ol>
@@ -136,28 +139,49 @@ Kirchner</a></td>
     href="https://www.nature.com/articles/s41586-020-2894-4">Rossi et
     al., 2020</a>), and by modeling this to death (<a
     href="https://pubmed.ncbi.nlm.nih.gov/9425519/">Carandini and
-    Ringach, 1997</a><a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-3-46595289">3</a>).</p>
+    Ringach, 1997</a><sup>[3]</sup>).</p>
+    <div class="sidenote">
+    <p>[3] </p>
+    <p>And a lot more. Even your’s truly has a model that can do this!
+    (<a
+    href="https://www.nature.com/articles/s41467-021-23557-3">Kirchner
+    and Gjorgjieva, 2021</a>).</p>
+    </div>
     <p>After getting orientation selectivity in V1 there is less
     agreement about how to get shapes, objects, and faces in the
     higher-order cortices. My favorite work on this topic comes from <a
     href="https://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/GOMES1/marr.html">David
     Marr (1982)</a>, but I can’t find super strong experimental evidence
-    that teases apart a circuit implementation<a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-4-46595289">4</a>.</p>
+    that teases apart a circuit implementation<sup>[4]</sup>.</p>
+    <div class="sidenote">
+    <p>[4] </p>
+    <p>This looks relevant however,<a
+    href="https://www.cell.com/neuron/fulltext/S0896-6273%2811%2900995-0">Verhoef
+    et al., 2012</a>.</p>
+    </div>
     <p><strong>Canonical circuits for assembling
     representations.</strong> However, perhaps an exact implementation
     is also not necessary. There is a hand-wavy, standard circuit-level
     explanation referred to as the “canonical microcircuit” (<a
     href="https://www.frontiersin.org/articles/10.3389/fnana.2011.00030/full">Shepherd,
-    2011</a>). In its simplest<a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-5-46595289">5</a>
-    form, the theory describes the information flow through the six
-    layers of the cortex. Lower levels (f.e. LGN) project to neurons in
-    layer 4, from where the information gets forwarded to layer 2/3<a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-6-46595289">6</a>,
-    from there back to layer 5, and from there to the next level in the
+    2011</a>). In its simplest<sup>[5]</sup> form, the theory describes
+    the information flow through the six layers of the cortex. Lower
+    levels (f.e. LGN) project to neurons in layer 4, from where the
+    information gets forwarded to layer 2/3<sup>[6]</sup>, from there
+    back to layer 5, and from there to the next level in the
     hierarchy.</p>
+    <div class="sidenote">
+    <p>[6] </p>
+    <p>If you wonder why there is no mention of layer 1 or layer 6, and
+    why layers 2 and 3 are lumped together - that is <em>also</em> the
+    fault of<a
+    href="https://en.wikipedia.org/wiki/Cerebral_cortex#:~:text=The%20work%20of%20Korbinian%20Brodmann%20%281909%29%20established%20that%20the%20mammalian%20neocortex%20is%20consistently%20divided%20into%20six%20layers">that
+    guy in 1909</a>…</p>
+    </div>
+    <div class="sidenote">
+    <p>[5] </p>
+    <p>i.e. only reasonably useful,</p>
+    </div>
     <p><img
     src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_95.png" />Schematic
     of the six layers of the cortex. Eight sample neurons are displayed
@@ -187,8 +211,15 @@ Kirchner</a></td>
     href="https://distill.pub/2020/circuits/zoom-in/">Olah et
     al. (2020)</a> that “zooms in” on different levels in a deep
     convolutional network to identify and interpret the motifs that give
-    the network its umpf<a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-7-46595289">7</a>.</p>
+    the network its umpf<sup>[7]</sup>.</p>
+    <div class="sidenote">
+    <p>[7] </p>
+    <p><a
+    href="https://www.urbandictionary.com/define.php?term=umpf#:~:text=Power%2C%20Strength%2C%20Energy%2C%20Might%2C%20Force%2C%20Potency%2C%20Ability%2C%20Excite">This</a>
+    one, not<a
+    href="https://www.urbandictionary.com/define.php?term=umpf#:~:text=A%20word%20that%20represents%20the%20sound%20made%20when%20one%20craves%20sexual%20intercourse.">this</a>
+    one.</p>
+    </div>
     <p>The whole story is very appealing for many reasons:</p>
     <ul class="incremental">
     <li><p>It’s a simple theory with lots of experimentally-testable
@@ -202,14 +233,18 @@ Kirchner</a></td>
     </ul>
     <h2 id="not-the-full-story"><strong>Not the full story</strong></h2>
     <p>I’m not saying that anybody is saying that the NHBT is the full
-    story<a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-8-46595289">8</a>.
-    But it’s certainly an influential story that a lot of people take as
-    a starting point for building more complicated models. <em>I’m</em>
-    certainly using the NHBT a lot when I need high-level intuitions for
-    how sensory processing works. However, there are also a bunch of
-    puzzle pieces that I’ve collected over the years that don’t fit at
-    all.</p>
+    story<sup>[8]</sup>. But it’s certainly an influential story that a
+    lot of people take as a starting point for building more complicated
+    models. <em>I’m</em> certainly using the NHBT a lot when I need
+    high-level intuitions for how sensory processing works. However,
+    there are also a bunch of puzzle pieces that I’ve collected over the
+    years that don’t fit at all.</p>
+    <div class="sidenote">
+    <p>[8] </p>
+    <p>I’d perhaps argue that the situation is even worse and that
+    people don’t have a theory concrete enough to be wrong, but that
+    would just bog us down at this point.</p>
+    </div>
     <p><strong>Redundancies.</strong> I’ve laid out above how the
     representation of edges emerges in the primary visual cortex from
     combining simpler features from the LGN. Well, it turns out that 35%
@@ -243,10 +278,18 @@ Kirchner</a></td>
     ventral pathway, there are <em>still</em> cells that only encode
     edges (<a
     href="https://www.sciencedirect.com/science/article/pii/S0896627313005266">Olcese
-    et al., 2013</a>). There are ways we can try to explain this away<a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-9-46595289">9</a>,
-    but prima facie this is just inconsistent with the naive
-    perspective.</p>
+    et al., 2013</a>). There are ways we can try to explain this
+    away<sup>[9]</sup>, but prima facie this is just inconsistent with
+    the naive perspective.</p>
+    <div class="sidenote">
+    <p>[9] </p>
+    <p>Maybe the cortex is just doing this <em>better</em> than the
+    retina? Perhaps the computation in the retina is for rapidly
+    filtering out useless input that doesn’t even need to be sent to the
+    cortex? After all, there is a bottleneck (the LGN has much fewer
+    neurons than the retina or the primary visual cortex) that the
+    information needs to be passed through.</p>
+    </div>
     <p><strong>Input, Output, all the same.</strong> Also, get this: The
     supposed “output” layer 5 of the cortex <em>also</em> receives the
     same input as the “input” layer 4 (<a
@@ -259,11 +302,23 @@ Kirchner</a></td>
     src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_96.png" />As
     the schematic before, but now with an additional “shortcut”
     connection that connects the input directly to the output unit.</p>
-    <p>There are a lot of other connections<a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-10-46595289">10</a>
-    that are not drawn into this diagram, but none of them are quite as
-    strikingly inconsistent with the NHBT<a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-11-46595289">11</a>.</p>
+    <p>There are a lot of other connections<sup>[10]</sup> that are not
+    drawn into this diagram, but none of them are quite as strikingly
+    inconsistent with the NHBT<sup>[11]</sup>.</p>
+    <div class="sidenote">
+    <p>[11] </p>
+    <p>In particular, each transmission from one cell to another induces
+    a temporal delay of a few milliseconds. This might be negligible for
+    most macroscopic behavior, but for neural circuits <a
+    href="http://www.scholarpedia.org/article/Spike-timing_dependent_plasticity">timing
+    matters</a>. Directly feeding the input into the output messes this
+    up, big time.</p>
+    </div>
+    <div class="sidenote">
+    <p>[10] </p>
+    <p>My favorite resource comes from the Allen Brain Institute<a
+    href="https://portal.brain-map.org/explore/models/mv1-all-layers">here</a>.</p>
+    </div>
     <p><strong>The problem with grandma.</strong> Remember that thing
     about Jennifer Aniston and the grandmother from the previous
     section? Yeah, turns out that’s super controversial to the point
@@ -295,23 +350,35 @@ Kirchner</a></td>
     interpreted in the context of their local network.</p>
     <p>While this is not fully inconsistent with the NHBT where
     representations in the visual cortex are assembled from simpler
-    representations in the thalamus<a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-12-46595289">12</a>,
-    it requires an additional component to explain why this scheme does
-    not apply to the highest levels of the hierarchy.</p>
+    representations in the thalamus<sup>[12]</sup>, it requires an
+    additional component to explain why this scheme does not apply to
+    the highest levels of the hierarchy.</p>
+    <div class="sidenote">
+    <p>[12] </p>
+    <p>It could be that at lower levels in the hierarchy, the receptive
+    field of a cell can still be defined, and only at higher levels, it
+    falls apart.</p>
+    </div>
     <h2 id="the-residual"><strong>The Residual</strong></h2>
     <p><strong>Degraded performance in deep networks.</strong> We now
     dive briefly into the ancient history of machine learning, all the
-    way back into the year 2016<a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-13-46595289">13</a>.
-    Up to this point, steady progress in machine learning meant
-    improving relatively “shallow”<a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-14-46595289">14</a>
-    networks (&lt; 25 layers) to squeeze out more and more performance
-    on the ImageNet classification dataset. Intuitively, we might expect
-    deeper networks to perform better (more layers should allow more
-    computation), but this didn’t bear out in terms of performance.
-    Making networks deeper actually <em>degraded</em> performance.</p>
+    way back into the year 2016<sup>[13]</sup>. Up to this point, steady
+    progress in machine learning meant improving relatively
+    “shallow”<sup>[14]</sup> networks (&lt; 25 layers) to squeeze out
+    more and more performance on the ImageNet classification dataset.
+    Intuitively, we might expect deeper networks to perform better (more
+    layers should allow more computation), but this didn’t bear out in
+    terms of performance. Making networks deeper actually
+    <em>degraded</em> performance.</p>
+    <div class="sidenote">
+    <p>[14] </p>
+    <p>People at the time probably did not think these networks were
+    “shallow”.</p>
+    </div>
+    <div class="sidenote">
+    <p>[13] </p>
+    <p>The field is moving <em>fast</em>.</p>
+    </div>
     <p><img
     src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_97.png" />Schematic
     of the training error as a function of the total number of layers in
@@ -390,13 +457,23 @@ Kirchner</a></td>
     layer performs an arbitrary linear transformation to “read in”
     information from the residual stream at the start, and performs
     another arbitrary linear transformation before adding to “write” its
-    output back into the residual stream.<a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-15-46595289">15</a></p>
+    output back into the residual stream.<sup>[15]</sup></p>
+    <div class="sidenote">
+    <p>[15] </p>
+    <p>Something interesting happened to my mind, where I now cannot
+    un-see this interpretation anymore. I feel convinced that something
+    about the old “vanishing gradient” explanation was unsatisfactory,
+    but that I couldn’t put my finger on it. Hindsight is, of course,
+    20/20.</p>
+    </div>
     </blockquote>
     <p>Interpreted as a “residual stream”, it is clear that later
     information computed early on is still accessible later in the
-    stream<a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-16-46595289">16</a>.</p>
+    stream<sup>[16]</sup>.</p>
+    <div class="sidenote">
+    <p>[16] </p>
+    <p>As long as the information is not overwritten.</p>
+    </div>
     <p><img
     src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_99.png" />Schematic
     illustrating same situation as in the previous figure, but now with
@@ -443,15 +520,17 @@ Kirchner</a></td>
     stream.</p></li>
     <li><p>representations would still <em>look</em> somewhat
     hierarchical: as later processing steps of the stream receive the
-    output of earlier steps as input, complexity<a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-17-46595289">17</a>
-    of the representation will increase at later stages in the stream.
-    However, the hierarchy is a lot more flexible, and can dynamically
-    route intermediate outputs from all levels to the end of the stream.
-    <img
+    output of earlier steps as input, complexity<sup>[17]</sup> of the
+    representation will increase at later stages in the stream. However,
+    the hierarchy is a lot more flexible, and can dynamically route
+    intermediate outputs from all levels to the end of the stream. <img
     src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_102.png" />Schematic
     illustrating that later stations in the stream might still have
-    access to all previously computed intermediate results.</p></li>
+    access to all previously computed intermediate results.</p>
+    <div class="sidenote">
+    <p>[17] </p>
+    <p>As measured by the degree of processing of the information.</p>
+    </div></li>
     <li><p>computation is highly flexible. Depending on the input
     statistics, the same cell might be recruited in a wide range of
     roles.</p></li>
@@ -486,8 +565,12 @@ Kirchner</a></td>
     are no motion cues at all.</p>
     </blockquote>
     <p><strong>Model predictions.</strong> There are also
-    experimentally-testable predictions<a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-18-46595289">18</a>:</p>
+    experimentally-testable predictions<sup>[18]</sup>:</p>
+    <div class="sidenote">
+    <p>[18] </p>
+    <p>Or perhaps post-dictions, those claims seem plausible enough that
+    I might have read them before.</p>
+    </div>
     <ul class="incremental">
     <li><p>When task-relevant, robust representations of simple stimuli
     (f.e. edges) should be found all along layer 5 of the ventral
@@ -508,8 +591,11 @@ Kirchner</a></td>
     <p><strong>Model limitations.</strong> While I’d argue that the
     “residual stream” interpretation explains strictly more about
     biology than the NHBT interpretation, there are still a bunch more
-    puzzle pieces<a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-19-46595289">19</a>.</p>
+    puzzle pieces<sup>[19]</sup>.</p>
+    <div class="sidenote">
+    <p>[19] </p>
+    <p>Of course, this is neuroscience after all.</p>
+    </div>
     <p>But at least there are some interesting hints for how to
     continue:</p>
     <ol class="incremental" type="1">
@@ -522,9 +608,8 @@ Kirchner</a></td>
     <li>How do we train the network to do “useful” computations? The
     specter of the “missing teaching signal” in the biological brain has
     prompted a lot of creative proposals from the neuroscience community
-    over the decades<a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-20-46595289">20</a>.
-    But the recent astonishing progress with “<a
+    over the decades<sup>[20]</sup>. But the recent astonishing progress
+    with “<a
     href="https://en.wikipedia.org/wiki/Self-supervised_learning">self-supervised</a>”
     (i.e. autoregressive) learning shows that very capable networks can
     emerge without an external teaching signal. Instead of the
@@ -536,11 +621,10 @@ Kirchner</a></td>
     et al., 2018</a>)</li>
     <li>What about inhibition? <a
     href="https://www.biorxiv.org/content/10.1101/2021.03.10.434756v1.full">Sezener
-    et al. (2020)</a> again have an answer<a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-21-46595289">21</a>:
-    Inhibition might be responsible for gating on or off certain
-    branches of the dendrites, effectively modulating the projection of
-    the residual stream.</li>
+    et al. (2020)</a> again have an answer<sup>[21]</sup>: Inhibition
+    might be responsible for gating on or off certain branches of the
+    dendrites, effectively modulating the projection of the residual
+    stream.</li>
     </ol>
     <p>And what about <a
     href="https://www.nature.com/articles/nn.4201">calcium waves in
@@ -553,114 +637,28 @@ Kirchner</a></td>
     <p>If you want to subscribe (it’s easy, free, and will stay free),
     click the button &lt;3</p>
     <p>Subscribe</p>
-    <p><a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-anchor-1-46595289">1</a></p>
-    <p>I fully expect someone to tell me: Oh, that’s the
-    “The-Brain-Is-A-Residual-Stream” theory from Smith et al. 1986.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-anchor-2-46595289">2</a></p>
+    <div class="sidenote">
+    <p>[2] </p>
     <p>Look, the<a
     href="https://en.wikipedia.org/wiki/Brodmann_area">guy who came up
     with these areas in 1909</a> didn’t actually know what they were
     good for, so let’s cut him some slack.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-anchor-3-46595289">3</a></p>
-    <p>And a lot more. Even your’s truly has a model that can do this!
-    (<a
-    href="https://www.nature.com/articles/s41467-021-23557-3">Kirchner
-    and Gjorgjieva, 2021</a>).</p>
-    <p><a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-anchor-4-46595289">4</a></p>
-    <p>This looks relevant however,<a
-    href="https://www.cell.com/neuron/fulltext/S0896-6273%2811%2900995-0">Verhoef
-    et al., 2012</a>.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-anchor-5-46595289">5</a></p>
-    <p>i.e. only reasonably useful,</p>
-    <p><a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-anchor-6-46595289">6</a></p>
-    <p>If you wonder why there is no mention of layer 1 or layer 6, and
-    why layers 2 and 3 are lumped together - that is <em>also</em> the
-    fault of<a
-    href="https://en.wikipedia.org/wiki/Cerebral_cortex#:~:text=The%20work%20of%20Korbinian%20Brodmann%20%281909%29%20established%20that%20the%20mammalian%20neocortex%20is%20consistently%20divided%20into%20six%20layers">that
-    guy in 1909</a>…</p>
-    <p><a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-anchor-7-46595289">7</a></p>
-    <p><a
-    href="https://www.urbandictionary.com/define.php?term=umpf#:~:text=Power%2C%20Strength%2C%20Energy%2C%20Might%2C%20Force%2C%20Potency%2C%20Ability%2C%20Excite">This</a>
-    one, not<a
-    href="https://www.urbandictionary.com/define.php?term=umpf#:~:text=A%20word%20that%20represents%20the%20sound%20made%20when%20one%20craves%20sexual%20intercourse.">this</a>
-    one.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-anchor-8-46595289">8</a></p>
-    <p>I’d perhaps argue that the situation is even worse and that
-    people don’t have a theory concrete enough to be wrong, but that
-    would just bog us down at this point.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-anchor-9-46595289">9</a></p>
-    <p>Maybe the cortex is just doing this <em>better</em> than the
-    retina? Perhaps the computation in the retina is for rapidly
-    filtering out useless input that doesn’t even need to be sent to the
-    cortex? After all, there is a bottleneck (the LGN has much fewer
-    neurons than the retina or the primary visual cortex) that the
-    information needs to be passed through.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-anchor-10-46595289">10</a></p>
-    <p>My favorite resource comes from the Allen Brain Institute<a
-    href="https://portal.brain-map.org/explore/models/mv1-all-layers">here</a>.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-anchor-11-46595289">11</a></p>
-    <p>In particular, each transmission from one cell to another induces
-    a temporal delay of a few milliseconds. This might be negligible for
-    most macroscopic behavior, but for neural circuits <a
-    href="http://www.scholarpedia.org/article/Spike-timing_dependent_plasticity">timing
-    matters</a>. Directly feeding the input into the output messes this
-    up, big time.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-anchor-12-46595289">12</a></p>
-    <p>It could be that at lower levels in the hierarchy, the receptive
-    field of a cell can still be defined, and only at higher levels, it
-    falls apart.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-anchor-13-46595289">13</a></p>
-    <p>The field is moving <em>fast</em>.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-anchor-14-46595289">14</a></p>
-    <p>People at the time probably did not think these networks were
-    “shallow”.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-anchor-15-46595289">15</a></p>
-    <p>Something interesting happened to my mind, where I now cannot
-    un-see this interpretation anymore. I feel convinced that something
-    about the old “vanishing gradient” explanation was unsatisfactory,
-    but that I couldn’t put my finger on it. Hindsight is, of course,
-    20/20.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-anchor-16-46595289">16</a></p>
-    <p>As long as the information is not overwritten.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-anchor-17-46595289">17</a></p>
-    <p>As measured by the degree of processing of the information.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-anchor-18-46595289">18</a></p>
-    <p>Or perhaps post-dictions, those claims seem plausible enough that
-    I might have read them before.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-anchor-19-46595289">19</a></p>
-    <p>Of course, this is neuroscience after all.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-anchor-20-46595289">20</a></p>
+    </div>
+    <div class="sidenote">
+    <p>[20] </p>
     <p>Although most proposals I’ve encountered so far have been begging
     the question, just hiding the teaching signal in ever-more-clever
     places. Self-organizing networks are the notable exception (<a
     href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3138194/">Kaschube
     et al., 2010</a>).</p>
-    <p><a
-    href="https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-anchor-21-46595289">21</a></p>
+    </div>
+    <div class="sidenote">
+    <p>[21] </p>
     <p>The paper is not without flaws (the biological evidence is weak,
     the SARCOS dataset is contaminated to the point of non-usability,
     the results don’t quite deliver what they promise), but it has
     <em>so many</em> great ideas.</p>
+    </div>
     <div class="debug-grid"></div>
   <script src="index.js"></script>
 </body>

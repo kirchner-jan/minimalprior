@@ -7,7 +7,7 @@ date: 2022-01-23
 ---
 
 
-**Epistemic status** _: I wrote this to understand how a GiveWell-type analysis feels from the inside[1](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-1-47550671). I expect this would require a couple hundred hours of additional research to get to the point where I'd be confident in the conclusions. But I still think the resulting analysis is interesting, so read it like you'd read the Feuilleton. Any feedback is highly appreciated._
+**Epistemic status** _: I wrote this to understand how a GiveWell-type analysis feels from the inside[^1]. I expect this would require a couple hundred hours of additional research to get to the point where I'd be confident in the conclusions. But I still think the resulting analysis is interesting, so read it like you'd read the Feuilleton. Any feedback is highly appreciated._
 
  **Reading Guide** _: If you're familiar with the "Cause X" concept, you can skip the "Searching for Cause X" section. You can jump to "Conclusions & FAQ" if you want my conclusions._
 
@@ -19,7 +19,7 @@ Within the effective altruism community, there is a game (in the broadest sense 
 
 >  _Imagine it's 50 years in the future. Which part of our early 21st-century civilization will make people 50 years from now recoil in horror?_
 
-It's a pretty weird game, as "winning" means that you will start seeing atrocities committed everywhere, which can't be healthy[2](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-2-47550671).
+It's a pretty weird game, as "winning" means that you will start seeing atrocities committed everywhere, which can't be healthy[^2].
 
 But, I argue, the "game" component stems from a dynamic where people come up with the most _surprising_ proposal for unnoticed widespread atrocity (also called "[Cause X](https://www.effectivealtruism.org/articles/three-heuristics-for-finding-cause-x/)" since we don't know what they might be). [Proposals include](https://forum.effectivealtruism.org/posts/SCqRu6shoa8ySvRAa/big-list-of-cause-candidates):
 
@@ -27,12 +27,12 @@ But, I argue, the "game" component stems from a dynamic where people come up wit
 
   * [Wild animal welfare.](https://forum.effectivealtruism.org/tag/wild-animal-welfare) Imagine being a field mouse. Everyone is trying to eat you, food is scarce, and half of your pups don't make it. This situation is exacerbated by the fact that there are [billions](https://babelniche.com/2010/12/31/are-there-more-animals-than-people/#:~:text=Mice-,20,-%28%3F%29) in the same situation as you. There is not a lot we can do about it at the moment. But perhaps, [there are things we can do](https://forum.effectivealtruism.org/tag/wild-animal-welfare) at some point in the future, and then it will seem barbaric to let wild animals suffer.
 
-  * [Cluster Headaches](https://forum.effectivealtruism.org/posts/wfXrMmKcD6eLEbS6R/opis-initiative-on-access-to-psilocybin-for-cluster). Cluster Headaches are [bad](https://www.qualiaresearchinstitute.org/blog/log-scales#:~:text=be%20super%20blissful.-,Right,-%3A%20True%20long%2Dtail)[3](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-3-47550671). [Really bad](https://www.youtube.com/watch?v=UzpcPeoPnW0). Like, ["people-call-them-suicide-headache"-level bad](https://www.migraineurmagazine.com/migraineur/therapies-migraine-prevention-feast-to-famine-xg8z4). 1 in 1000 people are affected, and most other people don't even know how bad it is. Perhaps we'll be able to fix this (and other diseases that cause immense suffering) eventually and wonder how people could ever endure this.
+  * [Cluster Headaches](https://forum.effectivealtruism.org/posts/wfXrMmKcD6eLEbS6R/opis-initiative-on-access-to-psilocybin-for-cluster). Cluster Headaches are [bad](https://www.qualiaresearchinstitute.org/blog/log-scales#:~:text=be%20super%20blissful.-,Right,-%3A%20True%20long%2Dtail)[^3]. [Really bad](https://www.youtube.com/watch?v=UzpcPeoPnW0). Like, ["people-call-them-suicide-headache"-level bad](https://www.migraineurmagazine.com/migraineur/therapies-migraine-prevention-feast-to-famine-xg8z4). 1 in 1000 people are affected, and most other people don't even know how bad it is. Perhaps we'll be able to fix this (and other diseases that cause immense suffering) eventually and wonder how people could ever endure this.
 
 
 
 
-These are bound to sound a bit outlandish; the idea of not eating meat probably also sounded very weird to the median person living a century ago. The [complete list](https://forum.effectivealtruism.org/posts/SCqRu6shoa8ySvRAa/big-list-of-cause-candidates) includes 97 items, and (obviously) not all of them will be hits - and perhaps even _none_ of those will be[4](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-4-47550671). But they also don't have to be! Coming up with candidates for possible Cause X's and then arguing for or against them is part of the "game".
+These are bound to sound a bit outlandish; the idea of not eating meat probably also sounded very weird to the median person living a century ago. The [complete list](https://forum.effectivealtruism.org/posts/SCqRu6shoa8ySvRAa/big-list-of-cause-candidates) includes 97 items, and (obviously) not all of them will be hits - and perhaps even _none_ of those will be[^4]. But they also don't have to be! Coming up with candidates for possible Cause X's and then arguing for or against them is part of the "game".
 
 In this spirit, here is my contribution. Could it be that 50 years from now, we will look back and say:
 
@@ -43,7 +43,7 @@ In this spirit, here is my contribution. Could it be that 50 years from now, we 
 >  _“How often do I lull my seething blood to rest, for you have never seen anything so unsteady, so uncertain, as this heart.”_  
 >  ― **Johann Wolfgang von Goethe**
 
-Here is the short version: 1 in 25 describes high school time as the [worst time in their life](https://news.gallup.com/poll/16807/high-school-worst-times-best-times.aspx). [Fourteen percent of students reported being victims of bullying.](https://nces.ed.gov/pubs2005/2005310.pdf) [Life satisfaction decreases steadily during adolescence](https://www.jstor.org/stable/27641333) and [increases only during the transition to post-comprehensive education](https://psycnet.apa.org/record/2010-23009-002). A lot of this bad stuff is linked to forcing kids to go to high school, [where a lot of the bullying occurs](https://web.archive.org/web/20170927082731/https://www.cdc.gov/violenceprevention/pdf/Bullying_Factsheet.pdf)[5](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-5-47550671). There is a [disturbing seasonality in teenage suicides](https://www.basilhalperin.com/essays/school-and-teen-suicide.html) that has its high points immediately after school breaks. Reading [anecdotes about bad experiences in high school](https://www.reddit.com/r/self/comments/bue4qo/am_i_the_only_person_who_feels_that_school_was/) completes the picture.
+Here is the short version: 1 in 25 describes high school time as the [worst time in their life](https://news.gallup.com/poll/16807/high-school-worst-times-best-times.aspx). [Fourteen percent of students reported being victims of bullying.](https://nces.ed.gov/pubs2005/2005310.pdf) [Life satisfaction decreases steadily during adolescence](https://www.jstor.org/stable/27641333) and [increases only during the transition to post-comprehensive education](https://psycnet.apa.org/record/2010-23009-002). A lot of this bad stuff is linked to forcing kids to go to high school, [where a lot of the bullying occurs](https://web.archive.org/web/20170927082731/https://www.cdc.gov/violenceprevention/pdf/Bullying_Factsheet.pdf)[^5]. There is a [disturbing seasonality in teenage suicides](https://www.basilhalperin.com/essays/school-and-teen-suicide.html) that has its high points immediately after school breaks. Reading [anecdotes about bad experiences in high school](https://www.reddit.com/r/self/comments/bue4qo/am_i_the_only_person_who_feels_that_school_was/) completes the picture.
 
 And now the extended version:
 
@@ -81,7 +81,7 @@ I like them because they have a great sample size (n=1,274 German adolescents), 
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_68.png)
 
-This looks equally damning, again with a -0.5 change in life satisfaction per year. [Aymerich et al. (2021)](https://link.springer.com/article/10.1007/s12187-021-09846-9) also find this effect (n=600 Spanish adolescents)[6](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-6-47550671). [Willroth et al. (2021)](https://psycnet.apa.org/record/2020-24000-001) find no changes from age 14 to age 17 (n=674 Mexica-origin adolescents). This is consistent with the previous studies, where most of the drop occurs before age 14. [Uusitalo-Malmivaara (2014)](https://www.scirp.org/html/7-6901064_45333.htm) also finds a drop in life satisfaction between ages 12 and 15 (n=339 Finnish adolescents). Still, the effect size looks a lot less impressive (AFAICT only a total change of -0.4 in three years). [Proctor et al. (2008)](https://www.pprc.gg/wp-content/uploads/2014/05/JHS.LS-Review.pdf) do a meta-study and find that:
+This looks equally damning, again with a -0.5 change in life satisfaction per year. [Aymerich et al. (2021)](https://link.springer.com/article/10.1007/s12187-021-09846-9) also find this effect (n=600 Spanish adolescents)[^6]. [Willroth et al. (2021)](https://psycnet.apa.org/record/2020-24000-001) find no changes from age 14 to age 17 (n=674 Mexica-origin adolescents). This is consistent with the previous studies, where most of the drop occurs before age 14. [Uusitalo-Malmivaara (2014)](https://www.scirp.org/html/7-6901064_45333.htm) also finds a drop in life satisfaction between ages 12 and 15 (n=339 Finnish adolescents). Still, the effect size looks a lot less impressive (AFAICT only a total change of -0.4 in three years). [Proctor et al. (2008)](https://www.pprc.gg/wp-content/uploads/2014/05/JHS.LS-Review.pdf) do a meta-study and find that:
 
 > global [life satisfaction] tends to decline slightly with the onset and progression of adolescence and [these] findings are similarly supported by international research, including those from: America (e.g. Suldo and Huebner 2004b), Israel (e.g. Ullman and Tatar 2001), South Korea (e.g. Park 2005), and China (e.g. Chang et al. 2003).
 
@@ -97,7 +97,7 @@ However, here's an important **note of caution** : I'm just a guy [(not) reading
 
 > any conclusions about the average trajectories of [subjective well-being] in children and adolescents are premature given the lack of studies that follow large-scale samples of children and adolescents over multiple years.
 
-I'm not convinced by the argument they bring forward for this conclusion[7](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-7-47550671), but they have a Ph.D. in this topic, and I don't. So if anybody has a more careful reading of the literature, I'd be happy to hear about it!
+I'm not convinced by the argument they bring forward for this conclusion[^7], but they have a Ph.D. in this topic, and I don't. So if anybody has a more careful reading of the literature, I'd be happy to hear about it!
 
 ####  **Shut up and calculate.**
 
@@ -113,11 +113,11 @@ This is pretty damning, especially considering that we are talking about the **a
 
 Joel McGuire from the Happier Lives Institute has a great post on the impact of cash transfers on subjective wellbeing. He performs a careful meta-analysis and [finds](https://forum.effectivealtruism.org/posts/PPNgQSvKrcKvsM2ZN/the-effect-of-cash-transfers-on-subjective-well-being-and#:~:text=deviations%2C%20or%20roughly-,0.87%20WELLBYs,-.%5B10%5D%5B11%5D) that a transfer of $1000 to someone living in "global poverty" results in an increase of roughly 0.87 WELLBYs. It's probably unfair to rip this number from his report without any of the additional qualifications and caveats he provides. Still, this post is already too long as it is.
 
-In summary: I'm already way outside of my intellectual comfort zone, but to put the money where my mouth is and to start a discussion: **fixing whatever makes[1.2 billion adolescents](https://www.who.int/health-topics/adolescent-health#:~:text=than%20ever%20before%3A-,1.2%20billion,-%2C%20totalling%20one%20sixth)**[8](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-8-47550671) **unhappy (on average) could have the same positive impact as giving 1.2 billion people living in global poverty $1000 each, or relieving 1.2 billion people from moderate pain or discomfort. Any solution that costs less than $1.2 trillion could be considered a "win".**
+In summary: I'm already way outside of my intellectual comfort zone, but to put the money where my mouth is and to start a discussion: **fixing whatever makes[1.2 billion adolescents](https://www.who.int/health-topics/adolescent-health#:~:text=than%20ever%20before%3A-,1.2%20billion,-%2C%20totalling%20one%20sixth)**[^8] **unhappy (on average) could have the same positive impact as giving 1.2 billion people living in global poverty $1000 each, or relieving 1.2 billion people from moderate pain or discomfort. Any solution that costs less than $1.2 trillion could be considered a "win".**
 
 ###  **Tractability & Neglectedness.**
 
-This is where the analysis gets a bit hairier[9](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-9-47550671). All the data I presented in the previous section is purely correlational and establishes _zero_ causation. [Proctor et al. (2009)](https://www.pprc.gg/wp-content/uploads/2014/05/JHS.LS-Review.pdf), after doing a thorough meta-analysis of 141 studies on youth life satisfaction, also admit that:
+This is where the analysis gets a bit hairier[^9]. All the data I presented in the previous section is purely correlational and establishes _zero_ causation. [Proctor et al. (2009)](https://www.pprc.gg/wp-content/uploads/2014/05/JHS.LS-Review.pdf), after doing a thorough meta-analysis of 141 studies on youth life satisfaction, also admit that:
 
 > Additional research is required in order to further discover causal pathways through which personal and environmental factors effect and influence how youths’ perceive their lives.
 
@@ -139,7 +139,7 @@ However, 50 years might appear relatively short without some [radical/exponentia
 
 ####  **... please don't hit adolescents with it.**
 
- **Angle of attack:** When reading the summary from [Proctor et al. (2009)](https://www.pprc.gg/wp-content/uploads/2014/05/JHS.LS-Review.pdf), I was surprised to find only minimal mention of the common factor from almost all [anecdotal reports](https://www.reddit.com/r/self/comments/bue4qo/am_i_the_only_person_who_feels_that_school_was/): bullying[10](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-10-47550671). One possible (though surprising) explanation for this is that, according to [Lázaro-Visa et al. (2019)](https://www.frontiersin.org/articles/10.3389/fpsyg.2019.01691/full#h1),
+ **Angle of attack:** When reading the summary from [Proctor et al. (2009)](https://www.pprc.gg/wp-content/uploads/2014/05/JHS.LS-Review.pdf), I was surprised to find only minimal mention of the common factor from almost all [anecdotal reports](https://www.reddit.com/r/self/comments/bue4qo/am_i_the_only_person_who_feels_that_school_was/): bullying[^10]. One possible (though surprising) explanation for this is that, according to [Lázaro-Visa et al. (2019)](https://www.frontiersin.org/articles/10.3389/fpsyg.2019.01691/full#h1),
 
 > The study of bullying in relation to perceived life satisfaction has only recently begun to be addressed.
 
@@ -147,11 +147,11 @@ These recent studies suggest indeed what one might intuitively suppose: bullying
 
  **What can we do about it?** This space is a little bit crowded. There are _three_[different](https://en.wikipedia.org/wiki/International_Day_of_Pink) [anti-bullying](https://en.wikipedia.org/wiki/International_Stand_Up_to_Bullying_Day) [days](https://en.wikipedia.org/wiki/Anti-Bullying_Day), an [anti-bullying week](https://en.wikipedia.org/wiki/Anti-Bullying_Week), the [Bullying-Prevention Month](https://www.pacer.org/bullying/nbpm/history.asp) (it's October), more [anti-bullying](https://anti-bullyingalliance.org.uk/)[ charities](https://www.kidscape.org.uk/)[ than](https://bulliesout.com/)[ stars](https://standupfoundation-uk.org/)[ in](https://www.ditchthelabel.org/)[ the](https://www.bullyzero.org.au/)[ universe](https://standforthesilent.org/),... 
 
-And they appear to be doing _something_! According to data by[ Due et al. (2019)](https://www.journaljesbs.com/index.php/JESBS/article/view/30160), there was a large drop in the percentage of Danish adolescents exposed to bullying in the late 90s (the authors don't know why this is, but believe it's due to raised awareness[11](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-11-47550671)), and a more moderate decline afterward.
+And they appear to be doing _something_! According to data by[ Due et al. (2019)](https://www.journaljesbs.com/index.php/JESBS/article/view/30160), there was a large drop in the percentage of Danish adolescents exposed to bullying in the late 90s (the authors don't know why this is, but believe it's due to raised awareness[^11]), and a more moderate decline afterward.
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_71.png)
 
-The slow decline since the early 2000s is also mirrored in [data from the U.S.](https://nces.ed.gov/blogs/nces/post/bullying-down-from-a-decade-ago-but-unchanged-since-2013), although the baseline is higher, around 30%. I like to believe that this is because the Danish are just friendlier by nature, but, realistically, it's probably due to differences in definition[12](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-12-47550671). A slow but steady decline might make us hopeful that the problem will dissolve itself in 50 years. Unfortunately, [statistics on cyberbullying](https://www.statista.com/statistics/509349/student-cyber-bullying-offending-rate-usa/) look a bit less promising[13](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-13-47550671).
+The slow decline since the early 2000s is also mirrored in [data from the U.S.](https://nces.ed.gov/blogs/nces/post/bullying-down-from-a-decade-ago-but-unchanged-since-2013), although the baseline is higher, around 30%. I like to believe that this is because the Danish are just friendlier by nature, but, realistically, it's probably due to differences in definition[^12]. A slow but steady decline might make us hopeful that the problem will dissolve itself in 50 years. Unfortunately, [statistics on cyberbullying](https://www.statista.com/statistics/509349/student-cyber-bullying-offending-rate-usa/) look a bit less promising[^13].
 
 Assuming that bullying will level off at a nonzero, constant rate, we might need additional interventions beyond awareness campaigns to protect the victims of bullying. [Anonymous surveillance](https://ieeexplore.ieee.org/document/6012206), if implemented reliably, might provide the tools to identify destructive social dynamics before they escalate into bullying dynamics. However, maintaining anonymity when resolving these dynamics is challenging.
 
@@ -169,7 +169,7 @@ The other conventional wisdom is that the amygdala, a region of the brain primar
 
 Changes in the amygdala could _totally_ explain why teenagers are unhappy. We also [suspect](https://pubmed.ncbi.nlm.nih.gov/33067167/) differences between the left and the right amygdala. We [suspect](https://www.sciencedirect.com/science/article/pii/S1053811919310328?dgcid=api_sd_search-api-endpoint) there might be differences between males and females. Beyond this, it is still exceedingly unclear how the amygdala (and the limbic system in general) and we don't know a lot more beyond this.
 
- **What can we do about it?** There might be pharmacological (or non-obvious lifestyle) interventions to soften the emotional blow of puberty without affecting any of the necessary developmental processes. [Some researchers](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4471741/) call for "aging" to be classified as a disease. Perhaps an analogous argument can be made for puberty. Further research on this question (particularly on the amygdala's role in puberty) could help clarify the situation and potentially even lead to interventions to alleviate suffering during adolescence[14](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-14-47550671).
+ **What can we do about it?** There might be pharmacological (or non-obvious lifestyle) interventions to soften the emotional blow of puberty without affecting any of the necessary developmental processes. [Some researchers](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4471741/) call for "aging" to be classified as a disease. Perhaps an analogous argument can be made for puberty. Further research on this question (particularly on the amygdala's role in puberty) could help clarify the situation and potentially even lead to interventions to alleviate suffering during adolescence[^14].
 
 ##  **Summary & FAQ**
 
@@ -218,80 +218,50 @@ But vegetarians can still have delicious food! Same-sex marriage does not subtra
 
   *  **Q:** Okay, okay, I admit, perhaps there are some things that could be better. But this problem appears suuuuper intractable. Adolescence is such a fundamental thing…
 
-  *  **A:** Zero tractable _for now_. More tractable than[ electron suffering](https://reducing-suffering.org/is-there-suffering-in-fundamental-physics/)[15](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-15-47550671). I can totally imagine that in 50 years we have designed mechanisms to protect small humans from each other. And perhaps there is something we can do already today to work in that direction.
+  *  **A:** Zero tractable _for now_. More tractable than[ electron suffering](https://reducing-suffering.org/is-there-suffering-in-fundamental-physics/)[^15]. I can totally imagine that in 50 years we have designed mechanisms to protect small humans from each other. And perhaps there is something we can do already today to work in that direction.
 
 
 
 
-[1](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-anchor-1-47550671)
+[^1]:Potentially, a [recent comment](https://www.lesswrong.com/posts/kdLupXLAmWBGueCBR/the-unreasonable-feasibility-of-playing-chess-under-the?commentId=pvfHDW5kafmso4Jjs) on a LessWrong post of mine might have also triggered something in me.
 
-Potentially, a [recent comment](https://www.lesswrong.com/posts/kdLupXLAmWBGueCBR/the-unreasonable-feasibility-of-playing-chess-under-the?commentId=pvfHDW5kafmso4Jjs) on a LessWrong post of mine might have also triggered something in me.
+[^2]:Imagine being transported back into an age where burning witches at the stake is [good-natured fun](https://www.hpmor.com/chapter/87#:~:text=dozen%20live%20cats%20in%20it), but having the moral sensibilities of a human of the early 21st century.
 
-[2](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-anchor-2-47550671)
-
-Imagine being transported back into an age where burning witches at the stake is [good-natured fun](https://www.hpmor.com/chapter/87#:~:text=dozen%20live%20cats%20in%20it), but having the moral sensibilities of a human of the early 21st century.
-
-[3](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-anchor-3-47550671)
-
-This has got to be my favorite illustration _ever_. I mean, apart from depicting horrors beyond comprehension.
+[^3]:This has got to be my favorite illustration _ever_. I mean, apart from depicting horrors beyond comprehension.
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_74.png)
 
-[4](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-anchor-4-47550671)
+[^4]:Although watching the cluster headache video gave me a renewed appreciation for a cluster-headache-free life.
 
-Although watching the cluster headache video gave me a renewed appreciation for a cluster-headache-free life.
+[^5]:This probably looks different now, with even more bullying happening online. But I'd guess it's still mostly in the context of school.
 
-[5](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-anchor-5-47550671)
+[^6]:In their data, the drop levels off earlier, though.
 
-This probably looks different now, with even more bullying happening online. But I'd guess it's still mostly in the context of school.
-
-[6](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-anchor-6-47550671)
-
-In their data, the drop levels off earlier, though.
-
-[7](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-anchor-7-47550671)
-
-The whole passage from[ Luhmann (2017)](https://sci-hub.se/https://www.sciencedirect.com/science/article/pii/B9780128046746000132) is:
+[^7]:The whole passage from[ Luhmann (2017)](https://sci-hub.se/https://www.sciencedirect.com/science/article/pii/B9780128046746000132) is:
 
  _Only a few studies have examined age differences in SWB in adolescence systematically. A consistent cross-sectional finding is that life satisfaction is lower (Goldbeck, Schmitz, Besier, Herschbach, & Henrich, 2007; Moksnes, Løhre, & Espnes, 2013; Weber, Ruch, & Huebner, 2013) and depressive mood is higher (Costello, Swendsen, Rose, & Dierker, 2008) in mid-adolescence than in early adolescence. However, in a longitudinal study of American 6th to 12th graders followed over 2 years, average levels of life satisfaction did not change significantly over this period (Lyons, Huebner, Hills, & Van Horn, 2013). Furthermore, a longitudinal study of Finnish highschool students found increasing average life satisfaction levels from 9th grade until 2 years later (Salmela-Aro & Tuominen-Soini, 2010). In sum, any conclusions about the average trajectories of SWB in children and adolescents are premature given the lack of studies that follow large-scale samples of children and adolescents over multiple years. The remainder of this chapter therefore focuses on the development of SWB from early adulthood to old age, on which more and better studies are available._
 
 Due to the speed of light and the resulting impossibility of time travel, they don't take [Herke et al. (2019)](https://academic.oup.com/eurpub/article/29/5/960/5422987?login=true) into account, which has a great sample size and clearly shows the effect. But even without that strong data point, I'm confused why they regard [Salmela-Aro et al. (2010)](https://link.springer.com/article/10.1007%2Fs10902-009-9156-3#Fig1) as evidence against the trend - the age range studied there is much later than in all the other studies. So it's no evidence against a decline; it's evidence for a decline followed by a rebound.
 
-[8](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-anchor-8-47550671)
+[^8]:The LSF data I looked at stems mostly from adolescents living in the West, so it's unclear how to extrapolate to the entire world. [This](https://www.oecd-ilibrary.org/education/pisa-2015-results-volume-iii/students-satisfaction-with-their-life_9789264273856-7-en;jsessionid=q4ho6spVC2izqXQbxqg2uj7U.ip-10-240-5-76) PISA report shows that students in Asian countries are even unhappier than those in the West (but they don't have longitudinal data across adolescence). And [this](https://www.thelancet.com/journals/eclinm/article/PIIS2589-5370%2820%2930020-1/fulltext) paper looks at bullying across countries and finds that it's a lot more prevalent in the Eastern Mediterranean and Africa.
 
-The LSF data I looked at stems mostly from adolescents living in the West, so it's unclear how to extrapolate to the entire world. [This](https://www.oecd-ilibrary.org/education/pisa-2015-results-volume-iii/students-satisfaction-with-their-life_9789264273856-7-en;jsessionid=q4ho6spVC2izqXQbxqg2uj7U.ip-10-240-5-76) PISA report shows that students in Asian countries are even unhappier than those in the West (but they don't have longitudinal data across adolescence). And [this](https://www.thelancet.com/journals/eclinm/article/PIIS2589-5370%2820%2930020-1/fulltext) paper looks at bullying across countries and finds that it's a lot more prevalent in the Eastern Mediterranean and Africa.
+[^9]:Scratch that. This was hairy from the beginning.
 
-[9](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-anchor-9-47550671)
+[^10]:Or, as a friend charmingly called it: Averse behavior in small person environments.
 
-Scratch that. This was hairy from the beginning.
-
-[10](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-anchor-10-47550671)
-
-Or, as a friend charmingly called it: Averse behavior in small person environments.
-
-[11](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-anchor-11-47550671)
-
-Here's the relevant passage:
+[^11]:Here's the relevant passage:
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_75.png)
 
-[12](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-anchor-12-47550671)
-
-I think this data would suggest at least two tests for the hypothesis that "bullying drives lowered life satisfaction".
+[^12]:I think this data would suggest at least two tests for the hypothesis that "bullying drives lowered life satisfaction".
 
   1. We might expect adolescents’ life satisfaction in Denmark to have been much lower in the 90sthano today. As using life satisfaction as a metric has only come _in vogue_ recently, I have little hope to find the perfect data. However, perhaps there is still something that can be said from other metrics.
   1. Taking the much higher baseline in the U.S. compared to Denmark seriously: might adolescent's life satisfaction be higher in Denmark compared to the U.S.?
 
 
 
-[13](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-anchor-13-47550671)
+[^13]:Strongly fluctuating between 2007 and 2019 without a clear trend either way.
 
-Strongly fluctuating between 2007 and 2019 without a clear trend either way.
+[^14]:While perhaps feasible from a technical point of view, it is unclear whether [extensive medication of teenagers](https://www.wsj.com/articles/were-overmedicating-our-children-11551917025) is a desirable outcome.
 
-[14](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-anchor-14-47550671)
-
-While perhaps feasible from a technical point of view, it is unclear whether [extensive medication of teenagers](https://www.wsj.com/articles/were-overmedicating-our-children-11551917025) is a desirable outcome.
-
-[15](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-anchor-15-47550671)
-
-Also a lot more likely to _actually_ be an issue. Less neglected, though, admittedly.
+[^15]:Also a lot more likely to _actually_ be an issue. Less neglected, though, admittedly.

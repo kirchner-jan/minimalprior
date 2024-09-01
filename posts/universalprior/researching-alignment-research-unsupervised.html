@@ -76,11 +76,20 @@ Kirchner</a></td>
     download <a
     href="https://the-eye.eu/public/AI/Alignment/moirage_alignment-research-dataset/">here</a>
     and the code for reproducing the scrape is on GitHub <a
-    href="https://github.com/moirage/alignment-research-dataset">here</a><a
-    href="https://universalprior.substack.com/p/researching-alignment-research-unsupervised#footnote-1-58069413">1</a>.
+    href="https://github.com/moirage/alignment-research-dataset">here</a><sup>[1]</sup>.
     When using the dataset, please cite our manuscript as described in
-    the footnote<a
-    href="https://universalprior.substack.com/p/researching-alignment-research-unsupervised#footnote-2-58069413">2</a>.</p>
+    the footnote<sup>[2]</sup>.</p>
+    <div class="sidenote">
+    <p>[2] </p>
+    <p>Kirchner, J. H., Smith, L., Thibodeau, J., McDonnell, K., and
+    Reynolds, L. “Understanding AI alignment research: A Systematic
+    Analysis.” <em>arXiv preprint arXiv:2206.02841</em> (2022).</p>
+    </div>
+    <div class="sidenote">
+    <p>[1] </p>
+    <p>We will make some finishing touches on the repository over the
+    next few weeks after this post is published.</p>
+    </div>
     <p><img
     src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_191.png" />Table
     1: <strong>Different sources of text included in the dataset
@@ -149,12 +158,15 @@ Kirchner</a></td>
     <p>We were curious to see if the five clusters identified by k-means
     map onto existing distinctions in the field. When identifying the
     most prolific authors in each cluster, we noticed strong
-    differences<a
-    href="https://universalprior.substack.com/p/researching-alignment-research-unsupervised#footnote-3-58069413">3</a>
-    (<a
+    differences<sup>[3]</sup> (<a
     href="https://universalprior.substack.com/p/on-context-and-people?s=w">consistent
     with previous work</a> that suggests that author identity is an
     important indicator of research direction).</p>
+    <div class="sidenote">
+    <p>[3] </p>
+    <p>Except for Stuart Armstrong, who publishes prolifically across
+    all clusters.</p>
+    </div>
     <p><img
     src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_194.png" />Table
     2: <strong>Researchers with the highest number of articles per
@@ -190,11 +202,9 @@ Kirchner</a></td>
     </ol>
     <p>We note that <strong>these descriptions are chosen to be
     descriptive, not prescriptive</strong>. Our approach has the
-    advantage of being (comparatively<a
-    href="https://universalprior.substack.com/p/researching-alignment-research-unsupervised#footnote-4-58069413">4</a>)
-    unbiased and can therefore serve as a baseline against which other
-    (more prescriptive) descriptions of the landscape can be compared
-    (<a
+    advantage of being (comparatively<sup>[4]</sup>) unbiased and can
+    therefore serve as a baseline against which other (more
+    prescriptive) descriptions of the landscape can be compared (<a
     href="https://vkrakovna.wordpress.com/2022/06/02/paradigms-of-ai-alignment-components-and-enablers/">Krakovna’s
     paradigms</a>, <a href="https://futureoflife.org/landscape/">FLI
     landscape</a>, <a
@@ -205,6 +215,10 @@ Kirchner</a></td>
     can serve as important information for funding agencies (to identify
     neglected areas) and AI Governance researchers (for early
     identification of natural categories for regulation).</p>
+    <div class="sidenote">
+    <p>[4] </p>
+    <p>Remaining biases include:</p>
+    </div>
     <h2
     id="research-dynamics-vary-across-the-identified-clusters">Research
     dynamics vary across the identified clusters</h2>
@@ -240,18 +254,27 @@ Kirchner</a></td>
     issue we noted at the onset of our analysis: the apparent decrease
     in publications on the arXiv in recent years (Fig. 1a). We were
     skeptical about this and hypothesized that our data collection might
-    have missed relevant recent articles<a
-    href="https://universalprior.substack.com/p/researching-alignment-research-unsupervised#footnote-5-58069413">5</a>.
-    Therefore, we trained a logistic regression classifier to
-    distinguish alignment articles (level-0) from articles cited by
-    alignment articles (level-1) (Fig.4 a). The resulting classifier
-    achieved good performance and generalized well to papers from
-    unrelated sources (Fig. 4b). We then scraped all the articles from
-    the arXiv cs.AI category and asked our classifier to score them
-    (Fig. 4c,d). Based on the distribution of scores of Alignment Forum
-    posts (Fig. 4d) and after skimming the relevant articles, we chose a
-    threshold of 75% as a reasonable trade-off between false positives
-    and false negatives.</p>
+    have missed relevant recent articles<sup>[5]</sup>. Therefore, we
+    trained a logistic regression classifier to distinguish alignment
+    articles (level-0) from articles cited by alignment articles
+    (level-1) (Fig.4 a). The resulting classifier achieved good
+    performance and generalized well to papers from unrelated sources
+    (Fig. 4b). We then scraped all the articles from the arXiv cs.AI
+    category and asked our classifier to score them (Fig. 4c,d). Based
+    on the distribution of scores of Alignment Forum posts (Fig. 4d) and
+    after skimming the relevant articles, we chose a threshold of 75% as
+    a reasonable trade-off between false positives and false
+    negatives.</p>
+    <div class="sidenote">
+    <p>[5] </p>
+    <p>We took the <a
+    href="https://www.alignmentforum.org/posts/4DegbDJJiMX2b3EKm/tai-safety-bibliographic-database">TAI
+    Safety Bibliographic Database</a> from early 2020 as a starting
+    point and manually added relevant articles from other existing
+    bibliographies or based on our judgment. We were very conservative
+    in this step, as we wanted to make sure that our dataset includes as
+    few false positives as possible.</p>
+    </div>
     <p>When adding the arXiv articles above the cutoff to our dataset,
     we observed a rapid increase in publications also on the arXiv (Fig.
     4e). To test if our clustering is robust to this increase, we
@@ -312,22 +335,6 @@ Kirchner</a></td>
     Adam Shimi, and Arush Tagade for feedback on the research. We thank
     Chu Chen, Ömer Faruk Şen, Hey, Nihal Mohan Moodbidri, and Trinity
     Smith for cleaning the audio transcripts.</em></p>
-    <p><a
-    href="https://universalprior.substack.com/p/researching-alignment-research-unsupervised#footnote-anchor-1-58069413">1</a></p>
-    <p>We will make some finishing touches on the repository over the
-    next few weeks after this post is published.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/researching-alignment-research-unsupervised#footnote-anchor-2-58069413">2</a></p>
-    <p>Kirchner, J. H., Smith, L., Thibodeau, J., McDonnell, K., and
-    Reynolds, L. “Understanding AI alignment research: A Systematic
-    Analysis.” <em>arXiv preprint arXiv:2206.02841</em> (2022).</p>
-    <p><a
-    href="https://universalprior.substack.com/p/researching-alignment-research-unsupervised#footnote-anchor-3-58069413">3</a></p>
-    <p>Except for Stuart Armstrong, who publishes prolifically across
-    all clusters.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/researching-alignment-research-unsupervised#footnote-anchor-4-58069413">4</a></p>
-    <p>Remaining biases include:</p>
     <ul class="incremental">
     <li><p>differences in formatting between arxiv and AF articles that
     bias the embedding</p></li>
@@ -338,15 +345,6 @@ Kirchner</a></td>
     our analysis in favor of questions that can be written about more
     easily</p></li>
     </ul>
-    <p><a
-    href="https://universalprior.substack.com/p/researching-alignment-research-unsupervised#footnote-anchor-5-58069413">5</a></p>
-    <p>We took the <a
-    href="https://www.alignmentforum.org/posts/4DegbDJJiMX2b3EKm/tai-safety-bibliographic-database">TAI
-    Safety Bibliographic Database</a> from early 2020 as a starting
-    point and manually added relevant articles from other existing
-    bibliographies or based on our judgment. We were very conservative
-    in this step, as we wanted to make sure that our dataset includes as
-    few false positives as possible.</p>
     <div class="debug-grid"></div>
   <script src="index.js"></script>
 </body>

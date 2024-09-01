@@ -9,7 +9,7 @@ date: 2021-08-29
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_4.gif)“ _Show, don’t tell._ ” - probably said originally by someone with bad hearing
 
-### Building a 'digital person'.[1](https://universalprior.substack.com/p/making-of-ian#footnote-1-40527537)
+### Building a 'digital person'.[^1]
 
 Holden Karnofsky asks you to [imagine yourself as a digital person](https://www.cold-takes.com/imagining-yourself-as-a-digital-person-two-sketches/) \- a copy of yourself that runs on a computer and that has the potential to vastly increase both productivity and output. An easily deployable digital person has the thrilling potential to not only reduce the effort a task requires (like other productivity tools might), but additionally to scale up and dramatically raise the ceiling of your output.
 
@@ -33,19 +33,19 @@ However, none of the existing solutions enable exactly what I imagined. They are
 
 ### A big language model that can produce human-like text. What can go wrong?
 
-Enter #IAN ( _intelligence artificielle neuronale_ ), a hacky (and obviously narrow) version of a digital person based on my writing pattern. I collected text across different platforms (Email, WhatsApp, Telegram, Facebook, Roam Research, ~50Mb in total) and used the Google [TPU Research Cloud](https://sites.research.google/trc/) to [fine-tune GPT-J](https://github.com/kingoflolz/mesh-transformer-jax/blob/master/howto_finetune.md), a language model recently released by the rockstars at [EleutherAI](https://www.eleuther.ai/). I then wrote a small plugin for Roam Research and a custom keyboard for Android that allow me to integrate #IAN into my daily workflow.[2](https://universalprior.substack.com/p/making-of-ian#footnote-2-40527537) It was a marvelous experience and the result is surprisingly useful - even though it of course falls way short of a full "digital person".
+Enter #IAN ( _intelligence artificielle neuronale_ ), a hacky (and obviously narrow) version of a digital person based on my writing pattern. I collected text across different platforms (Email, WhatsApp, Telegram, Facebook, Roam Research, ~50Mb in total) and used the Google [TPU Research Cloud](https://sites.research.google/trc/) to [fine-tune GPT-J](https://github.com/kingoflolz/mesh-transformer-jax/blob/master/howto_finetune.md), a language model recently released by the rockstars at [EleutherAI](https://www.eleuther.ai/). I then wrote a small plugin for Roam Research and a custom keyboard for Android that allow me to integrate #IAN into my daily workflow.[^2] It was a marvelous experience and the result is surprisingly useful - even though it of course falls way short of a full "digital person".
 
 Let me first show you what the result looks like. I have three main modes of interaction with the model.
 
- **curl in the command line.** For a stylish retro aesthetic, sampling given a prompt works directly from the command line.[3](https://universalprior.substack.com/p/making-of-ian#footnote-3-40527537)
+ **curl in the command line.** For a stylish retro aesthetic, sampling given a prompt works directly from the command line.[^3]
 
 While the thought process of #IAN here is not 100% clean (it suggests a name and then immediately states it's searching for a name), this example nicely demonstrates that the fine-tuning clearly had some effect. I have indeed been thinking a lot about effective altruism recently and this exact suggestion would be highly unlikely from a model only trained on random text from the internet.
 
- **SmartBlock in Roam Research.** Since this project is already weird enough, I will not commence this section with a love letter to [Roam Research](https://roamresearch.com/)[4](https://universalprior.substack.com/p/making-of-ian#footnote-4-40527537). I will only state that I've been using this note-taking app quite extensively and integrating a language model that can automatically expand my thoughts has been the primary motivation for this project. Because, while Roam Research is useful as is, some workflows are rather painful. In particular, sometimes I want to retrieve notes where I don’t remember any of the relevant keywords nor the context in which I stored the note. While this can also be resolved by a [good system of tags and querying](https://roamstack.com/searching-in-roam/), I thought it would just be a lot cooler to give some more interactivity to [my second brain](https://medium.datadriveninvestor.com/how-to-create-your-second-brain-and-why-roam-research-is-pushing-to-it-97f217f1e8cc?gi=55454aa6beda).[5](https://universalprior.substack.com/p/making-of-ian#footnote-5-40527537)
+ **SmartBlock in Roam Research.** Since this project is already weird enough, I will not commence this section with a love letter to [Roam Research](https://roamresearch.com/)[^4]. I will only state that I've been using this note-taking app quite extensively and integrating a language model that can automatically expand my thoughts has been the primary motivation for this project. Because, while Roam Research is useful as is, some workflows are rather painful. In particular, sometimes I want to retrieve notes where I don’t remember any of the relevant keywords nor the context in which I stored the note. While this can also be resolved by a [good system of tags and querying](https://roamstack.com/searching-in-roam/), I thought it would just be a lot cooler to give some more interactivity to [my second brain](https://medium.datadriveninvestor.com/how-to-create-your-second-brain-and-why-roam-research-is-pushing-to-it-97f217f1e8cc?gi=55454aa6beda).[^5]
 
 In this example, #IAN is producing a lot of - somewhat disjoint - thoughts on polarisation, with references to Scott Alexander, Nate Silver, and Tyler Cowen's "[mood affiliation](https://marginalrevolution.com/marginalrevolution/2011/03/the-fallacy-of-mood-affiliation.html)". A lot like how my notes would usually look before editing. Some of these are potentially fruitful, mood affiliation can certainly contribute to polarization, even though I have never (i.e. don't remember having) made that connection before.
 
- **A custom keyboard for Android.** While the Roam plugin probably has the biggest potential to be useful in the long run, I also wanted an easy way of interacting with #IAN while on the road. So I dove into the exciting world of app development and hacked together a custom keyboard that allows querying #IAN in any text box.[6](https://universalprior.substack.com/p/making-of-ian#footnote-6-40527537)
+ **A custom keyboard for Android.** While the Roam plugin probably has the biggest potential to be useful in the long run, I also wanted an easy way of interacting with #IAN while on the road. So I dove into the exciting world of app development and hacked together a custom keyboard that allows querying #IAN in any text box.[^6]
 
 This is mostly a party trick because the text is annoying to enter on the smartphone keyboard and the results are not easy to process further. But this mode of interaction makes it tempting to perform a type of Turing test with my friends over WhatsApp - if I end up doing that, it'll be another post.
 
@@ -74,7 +74,7 @@ IAN provides different [samples](https://huggingface.co/blog/how-to-generate#top
 >  _ **Sampling Can Prove The Presence Of Knowledge But Not The Absence**  
 >  GPT-3 may “fail” if a prompt is poorly-written, does not include enough examples, or bad sampling settings are used. [...] The question is not whether a given prompt works, but whether any prompt works. _[Gwern Branwen](https://www.gwern.net/GPT-3#:~:text=Sampling%20Can%20Prove%20The%20Presence%20Of%20Knowledge%20But%20Not%20The%20Absence)
 
-Large language models have _hidden knowledge_ that is only revealed when the query is phrased [in the right way](https://www.gwern.net/GPT-3#prompts-as-programming). Asking #IAN a question usually doesn't work[7](https://universalprior.substack.com/p/making-of-ian#footnote-7-40527537) \- it gets "distracted" and changes the topic or continues with a volley of more questions.
+Large language models have _hidden knowledge_ that is only revealed when the query is phrased [in the right way](https://www.gwern.net/GPT-3#prompts-as-programming). Asking #IAN a question usually doesn't work[^7] \- it gets "distracted" and changes the topic or continues with a volley of more questions.
 
 >  _IAN says: What is the capital of Spain?_ What is the length of the human foot? What are common uses of the words "dog," "cat," "horse," "sheep," "cow," "goat," "fish"?" What is a deductive process? What is a market economy? What is a human being?  
 >  The list goes on for a while and eventually ends with the same question: What is a word?
@@ -89,7 +89,7 @@ Listicles work great - probably because they provide multiple results per prompt
 
  **Embrace it.** While the previous two points have been made before, this next point I haven't encountered before. There are two ways to reduce the difference between model output and ground truth - either change the model or change the ground truth. I believe the second option has been under-explored. To get good performance, I might just change what I consider “good output”.
 
-While I obviously say this tongue in cheek, I think there is a case to be made here. Something like the uncanny valley effect[8](https://universalprior.substack.com/p/making-of-ian#footnote-8-40527537) or [Larry Tesler's Theorem](https://en.wikipedia.org/wiki/AI_effect#cite_note-7)[9](https://universalprior.substack.com/p/making-of-ian#footnote-9-40527537) might unjustly bias us to dismiss model output that _is_ useful. Therefore, the "trick" for better performance is just to embrace the weirdness and the otherworldly quirkiness.
+While I obviously say this tongue in cheek, I think there is a case to be made here. Something like the uncanny valley effect[^8] or [Larry Tesler's Theorem](https://en.wikipedia.org/wiki/AI_effect#cite_note-7)[^9] might unjustly bias us to dismiss model output that _is_ useful. Therefore, the "trick" for better performance is just to embrace the weirdness and the otherworldly quirkiness.
 
 On decisions that have objectively good and bad outcomes, like personal finance, I don't feel ready to follow #IANs advice, which is a bit too [Keynesian](https://www.investopedia.com/terms/d/deficit-spending.asp) for me:
 
@@ -115,7 +115,7 @@ But for decisions where the outcome is purely subjective and where _owning it_ i
 
 > >  _IAN says: Here is a list of things I want to draw: 1. A tree on fire_ 2\. A wormhole 3. A space station 4. A list of things that are kind of neat 5. The first law of metaphysics 6. The general equilibrium effect 7. isomorphic and equivalently 8. A use of Kurt Gödel’s incompleteness theorem
 
-So I will attempt to counter the [Larry Tesler bias](https://en.wikipedia.org/wiki/AI_effect#cite_note-7) and cut the model some slack. Instead of trying to poke holes into an idea, I will let myself be guided by (cherrypicked) suggestions from #IAN sometimes. Why _can’t_ I get a tattoo just because an AI told me to?[10](https://universalprior.substack.com/p/making-of-ian#footnote-10-40527537) Why _can’t_ I draw a “use of Kurt Gödel’s incompleteness theorem”? I can't help but think of this plot that has been popping up on Twitter a lot recently:
+So I will attempt to counter the [Larry Tesler bias](https://en.wikipedia.org/wiki/AI_effect#cite_note-7) and cut the model some slack. Instead of trying to poke holes into an idea, I will let myself be guided by (cherrypicked) suggestions from #IAN sometimes. Why _can’t_ I get a tattoo just because an AI told me to?[^10] Why _can’t_ I draw a “use of Kurt Gödel’s incompleteness theorem”? I can't help but think of this plot that has been popping up on Twitter a lot recently:
 
 > ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_1.jpeg)
 
@@ -125,11 +125,11 @@ Adapting to the trend might require radical changes. Better start early.
 
 ### Learning to learn with AGI.
 
-I have a few things I'd love to try once I have a continuous stretch of free time to improve #IAN. Top of my list is to find a smarter way of extracting text from Roam Research. Currently, the graph structure is lost completely in preprocessing. There must be something clever[11](https://universalprior.substack.com/p/making-of-ian#footnote-11-40527537) that can be done short of [changing the architecture](https://paperswithcode.com/method/graph-transformer).
+I have a few things I'd love to try once I have a continuous stretch of free time to improve #IAN. Top of my list is to find a smarter way of extracting text from Roam Research. Currently, the graph structure is lost completely in preprocessing. There must be something clever[^11] that can be done short of [changing the architecture](https://paperswithcode.com/method/graph-transformer).
 
-It is also just a [question of time](https://www.eleuther.ai/faq/#:~:text=Are%20you%20serious,200%20billion%20parameters.) until larger pre-trained (i.e. foundational[12](https://universalprior.substack.com/p/making-of-ian#footnote-12-40527537)) models become available. [Larger models exhibit more "general reasoning capabilities"](https://arxiv.org/abs/2005.14165), which would expand the domain in which #IAN output is useable. It would likely also come with higher hardware requirements, to the point where fine-tuning is not feasible even with TRC access. On the other hand, compute gets cheaper every year, so perhaps it _will_ become feasible eventually.
+It is also just a [question of time](https://www.eleuther.ai/faq/#:~:text=Are%20you%20serious,200%20billion%20parameters.) until larger pre-trained (i.e. foundational[^12]) models become available. [Larger models exhibit more "general reasoning capabilities"](https://arxiv.org/abs/2005.14165), which would expand the domain in which #IAN output is useable. It would likely also come with higher hardware requirements, to the point where fine-tuning is not feasible even with TRC access. On the other hand, compute gets cheaper every year, so perhaps it _will_ become feasible eventually.
 
-One thing that I'd be curious to test is some version of [Iterated Distillation and Amplification](https://ai-alignment.com/iterated-distillation-and-amplification-157debfd1616)[13](https://universalprior.substack.com/p/making-of-ian#footnote-13-40527537) to boost performance. I imagine a routine as follows:
+One thing that I'd be curious to test is some version of [Iterated Distillation and Amplification](https://ai-alignment.com/iterated-distillation-and-amplification-157debfd1616)[^13] to boost performance. I imagine a routine as follows:
 
   1. when querying #IAN from Roam Research, amplify performance by generating multiple samples (/listicles) and only keeping the best.
   1. consistently prepend these with the #[[IAN says:]] tag.
@@ -137,13 +137,13 @@ One thing that I'd be curious to test is some version of [Iterated Distillation 
 
 
 
-This could potentially be automated by training a classifier that learns my preferences for which of the multiple samples to keep. However, I don't have great intuition about how sensible the output will be, given that we're talking about a miniature dataset here (~50Mb). But perhaps automation is not even necessary and a slow circle (amplifying for a month and then distilling) might already produce useful results. Note that I'm not trying to build artificial general intelligence here. I'm just trying to build something useful[14](https://universalprior.substack.com/p/making-of-ian#footnote-14-40527537).
+This could potentially be automated by training a classifier that learns my preferences for which of the multiple samples to keep. However, I don't have great intuition about how sensible the output will be, given that we're talking about a miniature dataset here (~50Mb). But perhaps automation is not even necessary and a slow circle (amplifying for a month and then distilling) might already produce useful results. Note that I'm not trying to build artificial general intelligence here. I'm just trying to build something useful[^14].
 
 * * *
 
 ### Do I even want to do this?
 
-Connected to this last point, there are some points on AI safety and ethics that I want to make. When I told friends about this project, I got two types of responses: either moderate enthusiasm and encouragement or resigned despair ( _"Oh no, I already hate this"_ ). Since I try to take feedback that I get serious[15](https://universalprior.substack.com/p/making-of-ian#footnote-15-40527537), I’ll share my thought process here on why this is not a terrible idea.
+Connected to this last point, there are some points on AI safety and ethics that I want to make. When I told friends about this project, I got two types of responses: either moderate enthusiasm and encouragement or resigned despair ( _"Oh no, I already hate this"_ ). Since I try to take feedback that I get serious[^15], I’ll share my thought process here on why this is not a terrible idea.
 
 I don't run any danger of creating something dangerous myself. I don't have the required access to compute and I am not an ML researcher. Taking the [outside view](https://www.lesswrong.com/tag/inside-outside-view) (no matter what my latent god complex tries to convince me of) worrying about this particular danger appears like an inefficient use of limited cognitive resources.
 
@@ -163,84 +163,48 @@ Although I want to point out that #IAN has not "spilled any beans" so far. It _i
 
 ### A high-level view of what I just explained.
 
-What to take away from this project? The most striking part for me is to interact with a statistical summary of my collected output. I notice certain invariants and lots of variabilities - a bit like a word cloud on steroids[16](https://universalprior.substack.com/p/making-of-ian#footnote-16-40527537). It made me reflect a lot on identity and style. At the same time, reading text generated in the style of _you_ is a lot of fun, and teasing meaning from #IAN is at times like reading tea leaves - any possible meaning is not in the object but in the interaction. 
+What to take away from this project? The most striking part for me is to interact with a statistical summary of my collected output. I notice certain invariants and lots of variabilities - a bit like a word cloud on steroids[^16]. It made me reflect a lot on identity and style. At the same time, reading text generated in the style of _you_ is a lot of fun, and teasing meaning from #IAN is at times like reading tea leaves - any possible meaning is not in the object but in the interaction. 
 
-It's interesting to see a substantial part of my lifetime output condensed to 50Mb. One consoling thought is that, as Gwern puts it, [the last bits are the deepest](https://www.gwern.net/Scaling-hypothesis#:~:text=The%20last%20bits%20are%20deepest.)[17](https://universalprior.substack.com/p/making-of-ian#footnote-17-40527537), and perhaps getting a great language model of a person doesn't actually require a lot of data - just extremely high quality. I’ll keep that in mind the next time I text someone about their lunch plans. Finally, figuring out how to "talk" to #IAN and to tease out the most useful responses is a pretty remarkable experience. Probably the closest you can currently get to talking to an alien mind. Can recommend.
-
-Subscribe
+It's interesting to see a substantial part of my lifetime output condensed to 50Mb. One consoling thought is that, as Gwern puts it, [the last bits are the deepest](https://www.gwern.net/Scaling-hypothesis#:~:text=The%20last%20bits%20are%20deepest.)[^17], and perhaps getting a great language model of a person doesn't actually require a lot of data - just extremely high quality. I’ll keep that in mind the next time I text someone about their lunch plans. Finally, figuring out how to "talk" to #IAN and to tease out the most useful responses is a pretty remarkable experience. Probably the closest you can currently get to talking to an alien mind. Can recommend.
 
 * * *
 
  _A big thank you to the following people for proofreading & feedback: Jasper, Nadia, Max, Hiba, Dylan, Deyue and Zhuoshi._
 
-[1](https://universalprior.substack.com/p/making-of-ian#footnote-anchor-1-40527537)
+[^1]:All the section titles after this one were generated by #IAN and then lightly cherrypicked by me. The prompt is _Here is a list of possible titles for the sections of my first Substack post on the creation of a large language model fine-tuned to my own speech patterns. This list has been curated by a very smart AI. 1._
 
-All the section titles after this one were generated by #IAN and then lightly cherrypicked by me. The prompt is _Here is a list of possible titles for the sections of my first Substack post on the creation of a large language model fine-tuned to my own speech patterns. This list has been curated by a very smart AI. 1._
+[^2]:I’ll publish another post with all the boring technical details and code snippets in case someone wants to try the same.
 
-[2](https://universalprior.substack.com/p/making-of-ian#footnote-anchor-2-40527537)
+[^3]:The nice folks at EleutherAI already [provide](https://github.com/kingoflolz/mesh-transformer-jax/blob/master/device_serve.py) a minimal python flask server that can process POST queries.
 
-I’ll publish another post with all the boring technical details and code snippets in case someone wants to try the same.
+[^4]:That will be another post.
 
-[3](https://universalprior.substack.com/p/making-of-ian#footnote-anchor-3-40527537)
+[^5]:Note the words generated in italics - those would be bidirectional tags in Roam which I change to italics to avoid my Roam graph from becoming cluttered.
 
-The nice folks at EleutherAI already [provide](https://github.com/kingoflolz/mesh-transformer-jax/blob/master/device_serve.py) a minimal python flask server that can process POST queries.
+[^6]:This required [installing](https://lybekk.tech/guide/termux-install-google-cloud-cli) the gcloud suite on Termux which is a bit (very) whacky but works for now. The prompt templates in the keyboard are taken from [this](https://github.com/semiosis/prompts) GitHub repo. 
 
-[4](https://universalprior.substack.com/p/making-of-ian#footnote-anchor-4-40527537)
+[^7]:Asking politely _never_ works and is guaranteed to get you made fun of for trying.
 
-That will be another post.
+[^8]:Anything that is close to but not quite human can elicit an adverse emotional response.
 
-[5](https://universalprior.substack.com/p/making-of-ian#footnote-anchor-5-40527537)
+[^9]: _“AI is whatever hasn't been done yet.”_
 
-Note the words generated in italics - those would be bidirectional tags in Roam which I change to italics to avoid my Roam graph from becoming cluttered.
+[^10]:![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_2.jpeg) _#IAN says: I want to get a new tattoo! This time it will be_ a snake on my shoulder, and I thought about asking you first. Do you have an idea what I could do? I’m thinking about snakes, I guess. Best, Jan
 
-[6](https://universalprior.substack.com/p/making-of-ian#footnote-anchor-6-40527537)
+[^11]:Perhaps just adding some indication of the indentation level can already help? Or splitting the file, not after a fixed number of lines but after all the children of a block are processed?
 
-This required [installing](https://lybekk.tech/guide/termux-install-google-cloud-cli) the gcloud suite on Termux which is a bit (very) whacky but works for now. The prompt templates in the keyboard are taken from [this](https://github.com/semiosis/prompts) GitHub repo. 
-
-[7](https://universalprior.substack.com/p/making-of-ian#footnote-anchor-7-40527537)
-
-Asking politely _never_ works and is guaranteed to get you made fun of for trying.
-
-[8](https://universalprior.substack.com/p/making-of-ian#footnote-anchor-8-40527537)
-
-Anything that is close to but not quite human can elicit an adverse emotional response.
-
-[9](https://universalprior.substack.com/p/making-of-ian#footnote-anchor-9-40527537)
-
- _“AI is whatever hasn't been done yet.”_
-
-[10](https://universalprior.substack.com/p/making-of-ian#footnote-anchor-10-40527537)
-
-![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_2.jpeg) _#IAN says: I want to get a new tattoo! This time it will be_ a snake on my shoulder, and I thought about asking you first. Do you have an idea what I could do? I’m thinking about snakes, I guess. Best, Jan
-
-[11](https://universalprior.substack.com/p/making-of-ian#footnote-anchor-11-40527537)
-
-Perhaps just adding some indication of the indentation level can already help? Or splitting the file, not after a fixed number of lines but after all the children of a block are processed?
-
-[12](https://universalprior.substack.com/p/making-of-ian#footnote-anchor-12-40527537)
-
-![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_3.jpeg)
+[^12]:![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_3.jpeg)
 
 They are just the same thing, right?
 
-[13](https://universalprior.substack.com/p/making-of-ian#footnote-anchor-13-40527537)
+[^13]:> [We use a learned model many times as a subroutine in a more powerful decision-making process, and then re-train the model to imitate those better decisions.](https://ai-alignment.com/iterated-distillation-and-amplification-157debfd1616)
 
-> [We use a learned model many times as a subroutine in a more powerful decision-making process, and then re-train the model to imitate those better decisions.](https://ai-alignment.com/iterated-distillation-and-amplification-157debfd1616)
+[^14]:That can help me research how to align AGI.
 
-[14](https://universalprior.substack.com/p/making-of-ian#footnote-anchor-14-40527537)
+[^15]:As some people have pointed out to me later, the arguments that I am providing in this section are not at all soothing and only tangentially related to the reasons for why they originally said “Oh no”. To this, I can only say “Oh well”.
 
-That can help me research how to align AGI.
+[^16]:Credit for this phrase goes fully to Dylan.
 
-[15](https://universalprior.substack.com/p/making-of-ian#footnote-anchor-15-40527537)
-
-As some people have pointed out to me later, the arguments that I am providing in this section are not at all soothing and only tangentially related to the reasons for why they originally said “Oh no”. To this, I can only say “Oh well”.
-
-[16](https://universalprior.substack.com/p/making-of-ian#footnote-anchor-16-40527537)
-
-Credit for this phrase goes fully to Dylan.
-
-[17](https://universalprior.substack.com/p/making-of-ian#footnote-anchor-17-40527537)
-
- _“For everyday actions, anybody, of any intelligence, can get enough practice & feedback to do them quite well. Where individuals differ is when they start running into novel choices, rare choices, choices that take seconds but unfold over a lifetime, choices where we will never get any feedback (like after our death).” _My (fuzzy, handwavy) point here is that pretraining can get you very close to the first part. Once you are there, what distinguishes individuals might actually be a rather small set of preferences that plays out in complicated ways. 
+[^17]: _“For everyday actions, anybody, of any intelligence, can get enough practice & feedback to do them quite well. Where individuals differ is when they start running into novel choices, rare choices, choices that take seconds but unfold over a lifetime, choices where we will never get any feedback (like after our death).” _My (fuzzy, handwavy) point here is that pretraining can get you very close to the first part. Once you are there, what distinguishes individuals might actually be a rather small set of preferences that plays out in complicated ways. 
 
 I realize that this runs counter the typical idea of scaling, where the last bit requires the _most_ training data.

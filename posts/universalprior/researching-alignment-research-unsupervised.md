@@ -15,7 +15,7 @@ _Meta-meta: You can also find this[here](https://www.alignmentforum.org/posts/Fg
 
 ## Dataset Announcement
 
-In the context of the [6th AISC](https://aisafety.camp/), we collected a dataset of alignment research articles from a variety of different sources. This dataset is now available for download [here](https://the-eye.eu/public/AI/Alignment/moirage_alignment-research-dataset/) and the code for reproducing the scrape is on GitHub [here](https://github.com/moirage/alignment-research-dataset)[1](https://universalprior.substack.com/p/researching-alignment-research-unsupervised#footnote-1-58069413). When using the dataset, please cite our manuscript as described in the footnote[2](https://universalprior.substack.com/p/researching-alignment-research-unsupervised#footnote-2-58069413).
+In the context of the [6th AISC](https://aisafety.camp/), we collected a dataset of alignment research articles from a variety of different sources. This dataset is now available for download [here](https://the-eye.eu/public/AI/Alignment/moirage_alignment-research-dataset/) and the code for reproducing the scrape is on GitHub [here](https://github.com/moirage/alignment-research-dataset)[^1]. When using the dataset, please cite our manuscript as described in the footnote[^2].
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_191.png)Table 1: **Different sources of text included in the dataset alongside the number of articles per source.** Color of row indicates that data was analyzed as AI alignment research articles (green) or baseline (gray), or that the articles were added to the dataset as a result of the analysis in Fig. 4 (purple). Definition of level-0 and level-1 articles in Fig. 4c. For details about our collection procedure see the Methods section.
 
@@ -33,7 +33,7 @@ Given access to this unique dataset, we were curious to see if we could identify
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_193.png)Figure 2: **Dimensionality reduction and unsupervised clustering of alignment research.** ( **a** ) Schematic of the embedding and dimensionality reduction. After concatenating title and abstract of articles, we embed the resulting string with the Allen SPECTER model40, and then perform UMAP dimensionality reduction with n_neighbors=250. ( **b** ) UMAP embedding of articles with color indicating the source (AF, purple; arXiv, green). ( **c** ) UMAP embedding of articles with color indicating date of publication. Arrows superimposed to indicate direction of temporal evolution. ( **d** ) UMAP embedding of articles with color indicating cluster membership as determined with k-means (k=5). Inset shows sum of residuals as a function of clusters k, with an arrow highlighting the chosen number of clusters.
 
-We were curious to see if the five clusters identified by k-means map onto existing distinctions in the field. When identifying the most prolific authors in each cluster, we noticed strong differences[3](https://universalprior.substack.com/p/researching-alignment-research-unsupervised#footnote-3-58069413) ([consistent with previous work](https://universalprior.substack.com/p/on-context-and-people?s=w) that suggests that author identity is an important indicator of research direction).
+We were curious to see if the five clusters identified by k-means map onto existing distinctions in the field. When identifying the most prolific authors in each cluster, we noticed strong differences[^3] ([consistent with previous work](https://universalprior.substack.com/p/on-context-and-people?s=w) that suggests that author identity is an important indicator of research direction).
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_194.png)Table 2: **Researchers with the highest number of articles per cluster.** Clusters as determined in Fig. 2, with number of articles per cluster 𝑁. Number in brackets behind researcher name indicates number of articles published by that researcher. Note: "Diffractor" is an undisclosed pseudonym.
 
@@ -47,7 +47,7 @@ By skimming articles in each cluster and given the typical research published by
 
 
 
-We note that **these descriptions are chosen to be descriptive, not prescriptive**. Our approach has the advantage of being (comparatively[4](https://universalprior.substack.com/p/researching-alignment-research-unsupervised#footnote-4-58069413)) unbiased and can therefore serve as a baseline against which other (more prescriptive) descriptions of the landscape can be compared ([Krakovna's paradigms](https://vkrakovna.wordpress.com/2022/06/02/paradigms-of-ai-alignment-components-and-enablers/), [FLI landscape](https://futureoflife.org/landscape/), [Christiano's landscape](https://www.youtube.com/watch?v=-vsYtevJ2bc&ab_channel=CentreforEffectiveAltruism), [Nanda's overview](https://www.lesswrong.com/posts/SQ9cZtfrzDJmw9A2m/my-overview-of-the-ai-alignment-landscape-a-bird-s-eye-view), ...). Discrepancies between these descriptions and ours can serve as important information for funding agencies (to identify neglected areas) and AI Governance researchers (for early identification of natural categories for regulation).
+We note that **these descriptions are chosen to be descriptive, not prescriptive**. Our approach has the advantage of being (comparatively[^4]) unbiased and can therefore serve as a baseline against which other (more prescriptive) descriptions of the landscape can be compared ([Krakovna's paradigms](https://vkrakovna.wordpress.com/2022/06/02/paradigms-of-ai-alignment-components-and-enablers/), [FLI landscape](https://futureoflife.org/landscape/), [Christiano's landscape](https://www.youtube.com/watch?v=-vsYtevJ2bc&ab_channel=CentreforEffectiveAltruism), [Nanda's overview](https://www.lesswrong.com/posts/SQ9cZtfrzDJmw9A2m/my-overview-of-the-ai-alignment-landscape-a-bird-s-eye-view), ...). Discrepancies between these descriptions and ours can serve as important information for funding agencies (to identify neglected areas) and AI Governance researchers (for early identification of natural categories for regulation).
 
 ## Research dynamics vary across the identified clusters
 
@@ -57,7 +57,7 @@ We further note some properties of the identified clusters (Fig. 3a). The cluste
 
 ## Leveraging dataset to train an AI alignment research classifier
 
-After having identified the five clusters, we returned to the issue we noted at the onset of our analysis: the apparent decrease in publications on the arXiv in recent years (Fig. 1a). We were skeptical about this and hypothesized that our data collection might have missed relevant recent articles[5](https://universalprior.substack.com/p/researching-alignment-research-unsupervised#footnote-5-58069413). Therefore, we trained a logistic regression classifier to distinguish alignment articles (level-0) from articles cited by alignment articles (level-1) (Fig.4 a). The resulting classifier achieved good performance and generalized well to papers from unrelated sources (Fig. 4b). We then scraped all the articles from the arXiv cs.AI category and asked our classifier to score them (Fig. 4c,d). Based on the distribution of scores of Alignment Forum posts (Fig. 4d) and after skimming the relevant articles, we chose a threshold of 75% as a reasonable trade-off between false positives and false negatives.
+After having identified the five clusters, we returned to the issue we noted at the onset of our analysis: the apparent decrease in publications on the arXiv in recent years (Fig. 1a). We were skeptical about this and hypothesized that our data collection might have missed relevant recent articles[^5]. Therefore, we trained a logistic regression classifier to distinguish alignment articles (level-0) from articles cited by alignment articles (level-1) (Fig.4 a). The resulting classifier achieved good performance and generalized well to papers from unrelated sources (Fig. 4b). We then scraped all the articles from the arXiv cs.AI category and asked our classifier to score them (Fig. 4c,d). Based on the distribution of scores of Alignment Forum posts (Fig. 4d) and after skimming the relevant articles, we chose a threshold of 75% as a reasonable trade-off between false positives and false negatives.
 
 When adding the arXiv articles above the cutoff to our dataset, we observed a rapid increase in publications also on the arXiv (Fig. 4e). To test if our clustering is robust to this increase, we repeated the UMAP projection with the updated dataset and found that, indeed, the clusters are still in distinct regions of the manifold (Fig. 4f). Interestingly, the added literature appears to fill some of the gaps between "alignment foundations" and "agent alignment" research.
 
@@ -84,21 +84,13 @@ As we plan to continue this line of research, we are happy about any and all fee
 
  _Acknowledgments: We thank Daniel Clothiaux for help with writing the code and extracting articles. We thank Remmelt Ellen, Adam Shimi, and Arush Tagade for feedback on the research. We thank Chu Chen, Ömer Faruk Şen, Hey, Nihal Mohan Moodbidri, and Trinity Smith for cleaning the audio transcripts._
 
-[1](https://universalprior.substack.com/p/researching-alignment-research-unsupervised#footnote-anchor-1-58069413)
+[^1]:We will make some finishing touches on the repository over the next few weeks after this post is published.
 
-We will make some finishing touches on the repository over the next few weeks after this post is published.
+[^2]:Kirchner, J. H., Smith, L., Thibodeau, J., McDonnell, K., and Reynolds, L. "Understanding AI alignment research: A Systematic Analysis." _arXiv preprint arXiv:2206.02841_ (2022).
 
-[2](https://universalprior.substack.com/p/researching-alignment-research-unsupervised#footnote-anchor-2-58069413)
+[^3]:Except for Stuart Armstrong, who publishes prolifically across all clusters.
 
-Kirchner, J. H., Smith, L., Thibodeau, J., McDonnell, K., and Reynolds, L. "Understanding AI alignment research: A Systematic Analysis." _arXiv preprint arXiv:2206.02841_ (2022).
-
-[3](https://universalprior.substack.com/p/researching-alignment-research-unsupervised#footnote-anchor-3-58069413)
-
-Except for Stuart Armstrong, who publishes prolifically across all clusters.
-
-[4](https://universalprior.substack.com/p/researching-alignment-research-unsupervised#footnote-anchor-4-58069413)
-
-Remaining biases include: 
+[^4]:Remaining biases include: 
 
   * differences in formatting between arxiv and AF articles that bias the embedding
 
@@ -109,6 +101,4 @@ Remaining biases include:
 
 
 
-[5](https://universalprior.substack.com/p/researching-alignment-research-unsupervised#footnote-anchor-5-58069413)
-
-We took the [TAI Safety Bibliographic Database](https://www.alignmentforum.org/posts/4DegbDJJiMX2b3EKm/tai-safety-bibliographic-database) from early 2020 as a starting point and manually added relevant articles from other existing bibliographies or based on our judgment. We were very conservative in this step, as we wanted to make sure that our dataset includes as few false positives as possible.
+[^5]:We took the [TAI Safety Bibliographic Database](https://www.alignmentforum.org/posts/4DegbDJJiMX2b3EKm/tai-safety-bibliographic-database) from early 2020 as a starting point and manually added relevant articles from other existing bibliographies or based on our judgment. We were very conservative in this step, as we wanted to make sure that our dataset includes as few false positives as possible.

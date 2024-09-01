@@ -26,13 +26,13 @@ date: 2021-09-20
 
 ## The potential impact of academic research
 
-I have to admit, I kind of drank the [effective altruism](https://www.effectivealtruism.org/) cool-aid. I _do_ critically question all the assumptions and inferences of the community (and I don't agree with everything, not by a long shot[1](https://universalprior.substack.com/p/on-scaling-academia#footnote-1-41525488)), but the core principles are just too obviously good and true for me. This caused a good bit of distress for me since the other love of my life (academia) appears to be everything _but_ effective or altruistic.
+I have to admit, I kind of drank the [effective altruism](https://www.effectivealtruism.org/) cool-aid. I _do_ critically question all the assumptions and inferences of the community (and I don't agree with everything, not by a long shot[^1]), but the core principles are just too obviously good and true for me. This caused a good bit of distress for me since the other love of my life (academia) appears to be everything _but_ effective or altruistic.
 
 So it was a surprise to read the very positive 80,000 Hours [career review](https://80000hours.org/career-reviews/academic-research/) on the (potentially) great impact of academic research. Here's part of the conclusion:
 
 > A single outstanding researcher can move a field forward and make a significant contribution to solving key global problems. Beyond research, academics also have other avenues for impact, such as by influencing government policy, the priorities within their field, and the culture of society at large.
 
-Now if that doesn’t sound encouraging! Examples of "outstanding researchers" with a huge altruistic impact that come to my mind are f.e. Norman Borlaug, whose discovery of the "[miracle wheat](https://en.wikipedia.org/wiki/Norman_Borlaug#Dwarfing)" prevented the starvation of [a billion people](https://twin-cities.umn.edu/news-events/man-who-saved-billion-lives)[2](https://universalprior.substack.com/p/on-scaling-academia#footnote-2-41525488). Also, [Karikó and Weissman](https://www.nytimes.com/2021/04/08/health/coronavirus-mrna-kariko.html), whose research paved the way for the mRNA vaccines that have the potential to save lives from many more things than Covid-19. So, undoubtedly, there is potential for altruistic impact in academic research.
+Now if that doesn’t sound encouraging! Examples of "outstanding researchers" with a huge altruistic impact that come to my mind are f.e. Norman Borlaug, whose discovery of the "[miracle wheat](https://en.wikipedia.org/wiki/Norman_Borlaug#Dwarfing)" prevented the starvation of [a billion people](https://twin-cities.umn.edu/news-events/man-who-saved-billion-lives)[^2]. Also, [Karikó and Weissman](https://www.nytimes.com/2021/04/08/health/coronavirus-mrna-kariko.html), whose research paved the way for the mRNA vaccines that have the potential to save lives from many more things than Covid-19. So, undoubtedly, there is potential for altruistic impact in academic research.
 
 I still want to hedge my bets. If I’ll be an academic, I want to be an effective, altruistic academic. The logic is simple: If "more science = more good", we just need to get more science. Therefore, in this post, I’ll investigate some of the factors limiting academic research and think about how we work on these bottlenecks.
 
@@ -44,13 +44,13 @@ There are some pretty large research institutes: the Chinese Academy of Sciences
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_247.png)Leading 500 Fortune companies based on number of employees in 2019 ([source](https://www.statista.com/statistics/264671/top-50-companies-based-on-number-of-employees/)). I did _not_ expect the Deutsche Post on this list.
 
-And the numbers from academia are also misleading: from experience, I can attest that the 7500 researchers of the Max Planck Society are, _at most_ , connected by some vague set of standards and values. In actuality, the society consists of a few hundred independent research groups, each with 5 to 100 researchers. And "independence" is really important here - anything like central coordination of research would be perceived as limiting scientific freedom[3](https://universalprior.substack.com/p/on-scaling-academia#footnote-3-41525488) and therefore bad. Why are 10-30 researchers the de-facto limit to how large a research group can grow? Why not thousands or tens of thousands?
+And the numbers from academia are also misleading: from experience, I can attest that the 7500 researchers of the Max Planck Society are, _at most_ , connected by some vague set of standards and values. In actuality, the society consists of a few hundred independent research groups, each with 5 to 100 researchers. And "independence" is really important here - anything like central coordination of research would be perceived as limiting scientific freedom[^3] and therefore bad. Why are 10-30 researchers the de-facto limit to how large a research group can grow? Why not thousands or tens of thousands?
 
 Some differences between academia and the Fortune 500 are apparent immediately: Academic research requires highly trained labor and is constrained by whatever the funding bodies are willing to cough up in a given academic year. Walmart needs to provide much less training to their employees and their funding is self-generated, so we can expect scaling to be much easier here.
 
-But there are also very strong amplification forces and accumulation of resources in academia. This is the famous "[Matthew effect](https://www.pnas.org/content/115/19/4887)", after the Dave Matthews band who tend to sell all the tickets in any city they play in[4](https://universalprior.substack.com/p/on-scaling-academia#footnote-4-41525488). The well-funded get even more funding and those with little funding get pruned out. Why doesn't this dynamic "run away"? Why isn't literally _everyone_ a Ph.D. student of [Yoshua Bengio](https://nouvelles.umontreal.ca/en/article/2021/05/20/yoshua-bengio-ranked-2nd-in-the-world-by-guide2research/)?
+But there are also very strong amplification forces and accumulation of resources in academia. This is the famous "[Matthew effect](https://www.pnas.org/content/115/19/4887)", after the Dave Matthews band who tend to sell all the tickets in any city they play in[^4]. The well-funded get even more funding and those with little funding get pruned out. Why doesn't this dynamic "run away"? Why isn't literally _everyone_ a Ph.D. student of [Yoshua Bengio](https://nouvelles.umontreal.ca/en/article/2021/05/20/yoshua-bengio-ranked-2nd-in-the-world-by-guide2research/)?
 
-Perhaps research questions are just not _deep enough_ to have 1000s of people working on them? I don't think this is true. Most researchers have very ambitious ideas and must contend themselves to work on small portions of those questions. The Manhatten Project, the Human Genome Project, and the LHC are prominent examples of such wide-ranging projects[5](https://universalprior.substack.com/p/on-scaling-academia#footnote-5-41525488). _I_ could come up with a research program that keeps 1000s of people busy. Coming up with deep research questions is not the issue.
+Perhaps research questions are just not _deep enough_ to have 1000s of people working on them? I don't think this is true. Most researchers have very ambitious ideas and must contend themselves to work on small portions of those questions. The Manhatten Project, the Human Genome Project, and the LHC are prominent examples of such wide-ranging projects[^5]. _I_ could come up with a research program that keeps 1000s of people busy. Coming up with deep research questions is not the issue.
 
 Might we conclude that we are already at some efficient frontier most of the time? Are we squeezing out the maximal efficiency with research groups with a median size of ten people? I have a couple of reasons to believe that this is not the case and that research output could be substantially increased.
 
@@ -93,7 +93,7 @@ Currently, this number does not scale. Approximately one hundred researchers app
 
  _Now_ we're talking. Why are we not doing that?
 
-(Obviously, there are more factors that influence scientific output beyond group size and a strict hierarchy is not the best way to structure things[6](https://universalprior.substack.com/p/on-scaling-academia#footnote-6-41525488). But this objection [misses the point of scaling](https://www.gwern.net/Scaling-hypothesis#:~:text=capabilities.%20This%20year%2C-,GPT-3%20is%20scary,-because%20it%E2%80%99s%20a): Having something that _does_ scale, even if it looks stupid and over-simplified, beats something that doesn’t scale.)
+(Obviously, there are more factors that influence scientific output beyond group size and a strict hierarchy is not the best way to structure things[^6]. But this objection [misses the point of scaling](https://www.gwern.net/Scaling-hypothesis#:~:text=capabilities.%20This%20year%2C-,GPT-3%20is%20scary,-because%20it%E2%80%99s%20a): Having something that _does_ scale, even if it looks stupid and over-simplified, beats something that doesn’t scale.)
 
 * * *
 
@@ -111,13 +111,13 @@ The natural limitation to “how deep you can make a hierarchy” is how efficie
 
 > Somewhere there are multiple leadership teams meeting who report to other leadership teams who report to the top, all of whom are trying to figure out what decisions should be made this week. And it's hard. Because if you have 10 projects ongoing and want to do a status update on all of them plus do review meetings, that's the week gone. Easily. Do this whole thing 10 times in parallel, and you could easily have an organisation of 1000s but where things take forever to move.
 
-So the hierarchy cannot be scaled arbitrarily deep and broad, fair enough. But I have a hard time believing that academia is already maxing out its potential. Sure, every researcher at every level of the hierarchy will tell you that they are operating at the limit of what is humanly possible - but if you ask the same researcher which project management framework they are using, you get blank stares. Often, a new project is started by "just having the student read a bit" and then answering questions as they come up. If the stars align, a journal publication will pop out at the end of the process. Timelines are either non-existent or ridiculously poorly calibrated[7](https://universalprior.substack.com/p/on-scaling-academia#footnote-7-41525488). At the same time, we are overloading the people at the top of the hierarchy (whose time is the most valuable resource of the entire system) with all the mundane tasks, paperwork, and emails. Adapting a page from "[Moloch's toolbox](https://equilibriabook.com/molochs-toolbox/#:~:text=Your%20translator%20wasn%E2%80%99t%20broken.)":
+So the hierarchy cannot be scaled arbitrarily deep and broad, fair enough. But I have a hard time believing that academia is already maxing out its potential. Sure, every researcher at every level of the hierarchy will tell you that they are operating at the limit of what is humanly possible - but if you ask the same researcher which project management framework they are using, you get blank stares. Often, a new project is started by "just having the student read a bit" and then answering questions as they come up. If the stars align, a journal publication will pop out at the end of the process. Timelines are either non-existent or ridiculously poorly calibrated[^7]. At the same time, we are overloading the people at the top of the hierarchy (whose time is the most valuable resource of the entire system) with all the mundane tasks, paperwork, and emails. Adapting a page from "[Moloch's toolbox](https://equilibriabook.com/molochs-toolbox/#:~:text=Your%20translator%20wasn%E2%80%99t%20broken.)":
 
 > In our world, "professors" are supposed to write grants, do teaching, oversee hiring, do public outreach, attend faculty meetings, supervise, write papers and (sometimes even) do research.
 
-Getting a secretary, lab manager, or just someone who can help with illustrations[8](https://universalprior.substack.com/p/on-scaling-academia#footnote-8-41525488) is somehow perceived to be an optional luxury.
+Getting a secretary, lab manager, or just someone who can help with illustrations[^8] is somehow perceived to be an optional luxury.
 
- **The proposed solution:** The answer is simple; _systematize_ and _delegate_. Create (and perfect) explicit workflows for short-term student internships, undergraduate theses, Ph.D. projects, long-running lab ambitions. Have explicit timelines with regular check-ins where you see if you hit your milestones or not. Have writing guides for papers[9](https://universalprior.substack.com/p/on-scaling-academia#footnote-9-41525488). Set achievable, explicit goals (# of GitHub commits, # of entries in a group wiki, ...) and link career rewards to hitting these goals.
+ **The proposed solution:** The answer is simple; _systematize_ and _delegate_. Create (and perfect) explicit workflows for short-term student internships, undergraduate theses, Ph.D. projects, long-running lab ambitions. Have explicit timelines with regular check-ins where you see if you hit your milestones or not. Have writing guides for papers[^9]. Set achievable, explicit goals (# of GitHub commits, # of entries in a group wiki, ...) and link career rewards to hitting these goals.
 
  **How to get there?** Perhaps the solution is not as easy as "[just start using agile](https://www.nature.com/articles/d41586-019-01184-9)". [This](https://brainbaking.com/post/2020/02/agile-academia/) post highlights the roadblocks the author ran into when trying to implement the agile framework in a traditional academic context. But the reasons for his failure can be summarized as: “traditional academia is not flexible enough to give project management frameworks a fair shot. It just doesn't compute with the academic mindset.”
 
@@ -133,7 +133,7 @@ I'm not satisfied with that answer. Systematizing has worked well for me in my r
 
 What would it mean for academia to be "efficient"? I like [this definition from economics](https://www.etf.com/sections/features/123.html) illustrated by the joke about the economist who won’t pick up the 20$ bill lying on a busy street because " _if it was real, somebody else would have already picked it up_ ". In academia, this translates to the statement "there is no low-hanging fruit": If you think you made an exciting new discovery after investing only little effort, you should be wary. Most likely, you are either wrong or somebody else already made this discovery and published it in the 1960s.
 
-Physics is one subfield of science that appears to be "efficient" in this sense. If you _think_ you have built a Perpetuum mobile, [you are probably wrong](https://en.wikipedia.org/wiki/History_of_perpetual_motion_machines). The same goes for mathematics, where amateur "proofs" of ancient theorems _always_[10](https://universalprior.substack.com/p/on-scaling-academia#footnote-10-41525488) [turn out to be wrong](https://www.laphamsquarterly.org/roundtable/beware-cranks). Famously, Edmund Landau received so many incorrect amateur proofs that he prepared a form letter saying " _Dear Sir or Madam: Your proof of Fermat's Last Theorem has been received. The first mistake is on page _ line __." so that he'd only have to fill in the page and the line.
+Physics is one subfield of science that appears to be "efficient" in this sense. If you _think_ you have built a Perpetuum mobile, [you are probably wrong](https://en.wikipedia.org/wiki/History_of_perpetual_motion_machines). The same goes for mathematics, where amateur "proofs" of ancient theorems _always_[^10] [turn out to be wrong](https://www.laphamsquarterly.org/roundtable/beware-cranks). Famously, Edmund Landau received so many incorrect amateur proofs that he prepared a form letter saying " _Dear Sir or Madam: Your proof of Fermat's Last Theorem has been received. The first mistake is on page _ line __." so that he'd only have to fill in the page and the line.
 
 But it is wrong to conclude that every subfield of science is efficient. In 1880, observing a squirrel swimming across a river gave you a good shot at getting [published in Nature](https://www.nature.com/articles/023485b0). "[The developmental psychology of linguistics could've been discovered in the eighteenth century, in principle, but no one had even thought to look until the twentieth.](https://www.hpmor.com/chapter/6#:~:text=The%20developmental%20psychology%20of%20linguistics%20could%27ve%20been%20discovered%20in%20the%20eighteenth%20century%2C%20in%20principle%2C%20but%20no%20one%20had%20even%20thought%20to%20look%20until%20the%20twentieth)" Beyond a few "funny" (by academic standards) [ridiculously short journal papers](https://paperpile.com/blog/shortest-papers/), there are also [extremely](https://library.princeton.edu/special-collections/sites/default/files/Non-Cooperative_Games_Nash.pdf) [short](https://einsteinpapers.press.princeton.edu/vol2-doc/220) [Ph.D.](https://www.jstor.org/stable/44438182) theses from excellent researchers. And when physics was still "young", people like [Newton](https://en.wikipedia.org/wiki/Isaac_Newton) or [Euler](https://en.wikipedia.org/wiki/Leonhard_Euler) singlehandedly made _all_ the exciting discoveries.
 
@@ -166,7 +166,7 @@ In my ideal world, we would establish prediction markets for _everything_. This 
 
 However, not all of academia _has to_ switch. While "glory" and "funding" for picking low-hanging fruit might only follow once the larger part of academia adopts better metrics, you still get to keep the low-hanging fruit regardless. If only one discipline (Machine Learning, Cognitive Science?) or even just one sub-community (EAs? Rationalists?) can be convinced to adopt objective metrics, they can already reap the benefits.
 
-Setting up an academic prediction market that is technically well-done and fun to use could do a lot of good. Perhaps [Metaculus](https://www.metaculus.com/questions/) is already exactly that platform[11](https://universalprior.substack.com/p/on-scaling-academia#footnote-11-41525488). Alternatively, one could start a new scientific journal that has a prediction market for replication probability embedded for each paper? To reach a critical mass of scientific submissions, the journal could focus on publishing undergraduate or master theses in the beginning (which can be of surprisingly high quality). Finally, every academic reading this can do their part by calling their colleagues out on their bad predictions. This ties in with the previous section's point about calibrated timelines.
+Setting up an academic prediction market that is technically well-done and fun to use could do a lot of good. Perhaps [Metaculus](https://www.metaculus.com/questions/) is already exactly that platform[^11]. Alternatively, one could start a new scientific journal that has a prediction market for replication probability embedded for each paper? To reach a critical mass of scientific submissions, the journal could focus on publishing undergraduate or master theses in the beginning (which can be of surprisingly high quality). Finally, every academic reading this can do their part by calling their colleagues out on their bad predictions. This ties in with the previous section's point about calibrated timelines.
 
 * * *
 
@@ -179,7 +179,7 @@ Please don’t think that I was intentionally burying the lede. I do believe tha
 
 
 
-would be genuinely awesome things for academia at large. If I ever get to have my own lab, those two components will be high on my list of priorities. But it also turns out that those two components would go a long way towards automating research. I’m thinking a lot about how I could replace my students with Robo Researchers[12](https://universalprior.substack.com/p/on-scaling-academia#footnote-12-41525488):
+would be genuinely awesome things for academia at large. If I ever get to have my own lab, those two components will be high on my list of priorities. But it also turns out that those two components would go a long way towards automating research. I’m thinking a lot about how I could replace my students with Robo Researchers[^12]:
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_252.png)#images-with-explicitly-threatening-aura
 
@@ -191,7 +191,7 @@ My motivation for thinking about Robo Researchers is exactly the same as the mot
 
 ## Conclusion
 
-While systematizing and introducing better metrics promise marginal improvements to research output, automation has the potential to be transformative. A [lot](https://web.stanford.edu/~chadj/IdeaPF.pdf) [has been](https://slatestarcodex.com/2018/11/26/is-science-slowing-down-2/) [said](https://marginalrevolution.com/marginalrevolution/2019/11/is-the-rate-of-scientific-progress-slowing-down.html) on the question of whether scientific progress is slowing down, but an equal amount [has](https://moores.samaltman.com/) [been](https://www.cold-takes.com/are-we-trending-toward-transformative-ai-how-would-we-know/) [said](https://twitter.com/balajis/status/1181830195260657664?lang=en) on how technology accelerates everything it touches. And it [does not take a huge stretch of the imagination](https://www.cold-takes.com/transformative-ai-timelines-part-1-of-4-what-kind-of-ai/) to see this trend reach research in due time. The consequences are hard to forecast and it’s a difficult question of whether it’s a desirable thing or not. Does “more research = more good” actually hold if we push to the extremes?[13](https://universalprior.substack.com/p/on-scaling-academia#footnote-13-41525488) I’m on the fence about this.
+While systematizing and introducing better metrics promise marginal improvements to research output, automation has the potential to be transformative. A [lot](https://web.stanford.edu/~chadj/IdeaPF.pdf) [has been](https://slatestarcodex.com/2018/11/26/is-science-slowing-down-2/) [said](https://marginalrevolution.com/marginalrevolution/2019/11/is-the-rate-of-scientific-progress-slowing-down.html) on the question of whether scientific progress is slowing down, but an equal amount [has](https://moores.samaltman.com/) [been](https://www.cold-takes.com/are-we-trending-toward-transformative-ai-how-would-we-know/) [said](https://twitter.com/balajis/status/1181830195260657664?lang=en) on how technology accelerates everything it touches. And it [does not take a huge stretch of the imagination](https://www.cold-takes.com/transformative-ai-timelines-part-1-of-4-what-kind-of-ai/) to see this trend reach research in due time. The consequences are hard to forecast and it’s a difficult question of whether it’s a desirable thing or not. Does “more research = more good” actually hold if we push to the extremes?[^13] I’m on the fence about this.
 
 Different point. [Grace et al.](https://arxiv.org/pdf/1705.08807.pdf) performed an influential survey among machine learning experts about their timelines for when certain tasks can be accomplished by AI at the same level as humans:
 
@@ -212,60 +212,32 @@ But I think this provides a false sense of job security for researchers. Here ar
 
 I have a hard time figuring out what to make of this. One rather obvious conclusion for me is that I should not expect the near future in academia to look a lot like the last ten years. Putting myself in a position where I have the tools to pick low-hanging fruit as soon as it becomes feasible also sounds smart. Making sure that not everything goes terribly wrong? Not so sure how to tackle that one yet. Stay tuned.
 
-Subscribe
-
 * * *
 
  _Once again, big “thank you” to Nadia Mir-Montazeri for extremely useful feedback on this post!_
 
-[1](https://universalprior.substack.com/p/on-scaling-academia#footnote-anchor-1-41525488)
+[^1]:And I will voice my concerns loudly on this Substack in due time.
 
-And I will voice my concerns loudly on this Substack in due time.
+[^2]:Although some say much less, the exact number is disputed.
 
-[2](https://universalprior.substack.com/p/on-scaling-academia#footnote-anchor-2-41525488)
+[^3]:The situation at the CAS is probably different, see f.e. the [Pioneer Initiative](https://academic.oup.com/nsr/article/1/4/618/1515931). If anybody has more insight on how much research "on the ground" is centrally coordinated, I'd be interested to hear about it!
 
-Although some say much less, the exact number is disputed.
+[^4]:Okay, okay. “ _For to every one who has will more be given, and he will have abundance; but from him who has not, even what he has will be taken away.”_ — Matthew 25:29, RSV. 
 
-[3](https://universalprior.substack.com/p/on-scaling-academia#footnote-anchor-3-41525488)
+[^5]:And their respective successes and failures are highly instructive.
 
-The situation at the CAS is probably different, see f.e. the [Pioneer Initiative](https://academic.oup.com/nsr/article/1/4/618/1515931). If anybody has more insight on how much research "on the ground" is centrally coordinated, I'd be interested to hear about it!
+[^6]:[This](https://forum.effectivealtruism.org/posts/dCjz5mgQdiv57wWGz/ingredients-for-creating-disruptive-research-teams) extremely thorough and well-written EA Forum post seeks to identify the key factors that make some research teams more effective than others.
 
-[4](https://universalprior.substack.com/p/on-scaling-academia#footnote-anchor-4-41525488)
+[^7]:Timelines being poorly calibrated is of course the standard _everywhere_. But academics should really know better, or at least start learning not to trust their gut feeling at some point.
 
-Okay, okay. “ _For to every one who has will more be given, and he will have abundance; but from him who has not, even what he has will be taken away.”_ — Matthew 25:29, RSV. 
+[^8]:Guess where I learned to make pretty illustrations of albatrosses?
 
-[5](https://universalprior.substack.com/p/on-scaling-academia#footnote-anchor-5-41525488)
+[^9]:Which are not passed on in ancient scrolls .docx files from senior PostDocs to PhDs, but instead are stored in a central repository.
 
-And their respective successes and failures are highly instructive.
+[^10]:[Exceptions](https://slatestarcodex.com/2015/01/31/the-parable-of-the-talents/#:~:text=Consider%20for%20a,the%20unsolveable%20ones.) prove the rule.
 
-[6](https://universalprior.substack.com/p/on-scaling-academia#footnote-anchor-6-41525488)
+[^11]:Although "real" financial incentives (rather than internet points) are obviously necessary to make this a viable source of income for experts.
 
-[This](https://forum.effectivealtruism.org/posts/dCjz5mgQdiv57wWGz/ingredients-for-creating-disruptive-research-teams) extremely thorough and well-written EA Forum post seeks to identify the key factors that make some research teams more effective than others.
+[^12]:If you’re reading this: no offense, y’all are great.
 
-[7](https://universalprior.substack.com/p/on-scaling-academia#footnote-anchor-7-41525488)
-
-Timelines being poorly calibrated is of course the standard _everywhere_. But academics should really know better, or at least start learning not to trust their gut feeling at some point.
-
-[8](https://universalprior.substack.com/p/on-scaling-academia#footnote-anchor-8-41525488)
-
-Guess where I learned to make pretty illustrations of albatrosses?
-
-[9](https://universalprior.substack.com/p/on-scaling-academia#footnote-anchor-9-41525488)
-
-Which are not passed on in ancient scrolls .docx files from senior PostDocs to PhDs, but instead are stored in a central repository.
-
-[10](https://universalprior.substack.com/p/on-scaling-academia#footnote-anchor-10-41525488)
-
-[Exceptions](https://slatestarcodex.com/2015/01/31/the-parable-of-the-talents/#:~:text=Consider%20for%20a,the%20unsolveable%20ones.) prove the rule.
-
-[11](https://universalprior.substack.com/p/on-scaling-academia#footnote-anchor-11-41525488)
-
-Although "real" financial incentives (rather than internet points) are obviously necessary to make this a viable source of income for experts.
-
-[12](https://universalprior.substack.com/p/on-scaling-academia#footnote-anchor-12-41525488)
-
-If you’re reading this: no offense, y’all are great.
-
-[13](https://universalprior.substack.com/p/on-scaling-academia#footnote-anchor-13-41525488)
-
-Once I’ve thought about it more this will be another post.
+[^13]:Once I’ve thought about it more this will be another post.

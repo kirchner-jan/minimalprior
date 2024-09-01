@@ -13,9 +13,9 @@ _Disclaimer: This is coming from a rather neuroscience-centric perspective. I'd 
 
 ##  **Bottlenecks and Context**
 
-I'm _still_ hung up on that question of how we might make research "scalable"[1](https://universalprior.substack.com/p/on-context-and-people#footnote-1-50643295). Answering this question involves identifying bottlenecks and finding efficient ways to circumvent them. "Generating ideas" [appeared to be one such bottleneck](https://universalprior.substack.com/p/on-automatic-ideas?s=w). But, as language models like GPT-3 shine when it comes to systematically generating ideas, the bottleneck effectively reduces to a search problem. And while the hacky prototype I threw together in [a previous post](https://universalprior.substack.com/p/on-automatic-ideas?s=w) probably does not quite qualify as a _solution_ to "generating ideas", I feel pretty optimistic that we can crack this with a larger language model and some elbow grease.
+I'm _still_ hung up on that question of how we might make research "scalable"[^1]. Answering this question involves identifying bottlenecks and finding efficient ways to circumvent them. "Generating ideas" [appeared to be one such bottleneck](https://universalprior.substack.com/p/on-automatic-ideas?s=w). But, as language models like GPT-3 shine when it comes to systematically generating ideas, the bottleneck effectively reduces to a search problem. And while the hacky prototype I threw together in [a previous post](https://universalprior.substack.com/p/on-automatic-ideas?s=w) probably does not quite qualify as a _solution_ to "generating ideas", I feel pretty optimistic that we can crack this with a larger language model and some elbow grease.
 
-A great idea, however, is not enough to scale research. **Ideas need to be** _ **contextualized**_ **[2](https://universalprior.substack.com/p/on-context-and-people#footnote-2-50643295).** Did somebody work on the idea before? What do we know about the topic already? What are disagreements, confusions, and holes in the research landscape?
+A great idea, however, is not enough to scale research. **Ideas need to be** _ **contextualized**_ **[^2].** Did somebody work on the idea before? What do we know about the topic already? What are disagreements, confusions, and holes in the research landscape?
 
 Finding those answers is a severe bottleneck to scaling; the problem gets harder as the number of established insights increases. I've argued before that [the situation is ](https://universalprior.substack.com/p/on-not-reading-papers?s=w)_[already](https://universalprior.substack.com/p/on-not-reading-papers?s=w)_[ pretty bad](https://universalprior.substack.com/p/on-not-reading-papers?s=w) and that researchers tend to be overwhelmed by the available literature. Current solutions (like "not reading papers") are only band-aids that will not hold when we try to scale research. Therefore, **we will need to change how we manage our established knowledge to make research scalable**. This post is an exploration of what that might look like.
 
@@ -27,7 +27,7 @@ What _does_ the research landscape look like? When I started out in research, my
 
 i.e. a graph of (hopefully) true statements connected with each other. Think "The brain is made of neurons" or "[The mitochondria is the powerhouse of the cell](https://knowyourmeme.com/memes/mitochondria-is-the-powerhouse-of-the-cell)" and how you can connect these statements across layers of abstraction. In this view, a new scientific insight is a new entry in this big graph of truth. And the goal of the scientific endeavor is to discover all the true statements. I call this the "statement-centric” view of research.
 
-I might have picked up the statement-centric view because I'm a [nerd in love with formal logic](https://universalprior.substack.com/p/applied-mathematical-logic-for-the)[3](https://universalprior.substack.com/p/on-context-and-people#footnote-3-50643295), but I don't think I'm the only one. Cataloging all the knowledge of a scientific field is the goal of [several](https://markusstrasser.org/companies-knowledge-discovery/) [ambitious](https://derivationmap.net/other_projects) [projects](https://ebrains.eu/service/find-data/) in different subfields of science, most of which are now defunct[4](https://universalprior.substack.com/p/on-context-and-people#footnote-4-50643295). Admittedly, there are also some people [trying to catalog all of human knowledge](https://blog.wolframalpha.com/2010/09/24/stephen-wolfram-on-making-the-worlds-data-computable/#:~:text=The%20idea%20is%3A%20take%20all%20the%20systematic%20knowledge%E2%80%94and%20data%E2%80%94that%20our%20civilization%20has%20accumulated%2C%20and%20somehow%20make%20it%20computable.) that can report [undeniable](https://www.wolframalpha.com/)[ successes](https://en.wikipedia.org/wiki/Google_Knowledge_Graph). But I want to argue that these successes will be bounded: [constructing a knowledge graph is a huge kludge](https://markusstrasser.org/extracting-knowledge-from-literature/)[5](https://universalprior.substack.com/p/on-context-and-people#footnote-5-50643295). Attempts to catalog all knowledge are stereotypical [Hydra problems](https://universalprior.substack.com/p/via-productiva?s=w#:~:text=Don%27t%20fight%20the%20Hydra.), things that grow in complexity as you fight them. The more statements you add, the more possible connections you need to consider. **Thus, organizing research according to the statement-centric view results in poor scaling properties and introduces a key bottleneck**.
+I might have picked up the statement-centric view because I'm a [nerd in love with formal logic](https://universalprior.substack.com/p/applied-mathematical-logic-for-the)[^3], but I don't think I'm the only one. Cataloging all the knowledge of a scientific field is the goal of [several](https://markusstrasser.org/companies-knowledge-discovery/) [ambitious](https://derivationmap.net/other_projects) [projects](https://ebrains.eu/service/find-data/) in different subfields of science, most of which are now defunct[^4]. Admittedly, there are also some people [trying to catalog all of human knowledge](https://blog.wolframalpha.com/2010/09/24/stephen-wolfram-on-making-the-worlds-data-computable/#:~:text=The%20idea%20is%3A%20take%20all%20the%20systematic%20knowledge%E2%80%94and%20data%E2%80%94that%20our%20civilization%20has%20accumulated%2C%20and%20somehow%20make%20it%20computable.) that can report [undeniable](https://www.wolframalpha.com/)[ successes](https://en.wikipedia.org/wiki/Google_Knowledge_Graph). But I want to argue that these successes will be bounded: [constructing a knowledge graph is a huge kludge](https://markusstrasser.org/extracting-knowledge-from-literature/)[^5]. Attempts to catalog all knowledge are stereotypical [Hydra problems](https://universalprior.substack.com/p/via-productiva?s=w#:~:text=Don%27t%20fight%20the%20Hydra.), things that grow in complexity as you fight them. The more statements you add, the more possible connections you need to consider. **Thus, organizing research according to the statement-centric view results in poor scaling properties and introduces a key bottleneck**.
 
 ##  **People-centric view**
 
@@ -56,13 +56,13 @@ The statement-centric view is implicitly underlying the [many](https://markusstr
 
 ##  **I trawl the neuroverse**
 
-I've been having a ton of fun with [finetuning language models](https://universalprior.substack.com/p/making-of-ian) on various types of text. For example, I finetuned a model on [Kialo](https://www.kialo.com/) debates (a platform with extremely structured debates about complex questions)[6](https://universalprior.substack.com/p/on-context-and-people#footnote-6-50643295). The resulting model is great at LARPing a serious debate about _any_ topic you provide as a prompt. Here is a debate about "Is it morally permissible to wear socks?":
+I've been having a ton of fun with [finetuning language models](https://universalprior.substack.com/p/making-of-ian) on various types of text. For example, I finetuned a model on [Kialo](https://www.kialo.com/) debates (a platform with extremely structured debates about complex questions)[^6]. The resulting model is great at LARPing a serious debate about _any_ topic you provide as a prompt. Here is a debate about "Is it morally permissible to wear socks?":
 
 (That debate about socks is irrelevant to scaling research, but I've been dying to share it, and the moment seemed opportune.)
 
-More _useful_ models[7](https://universalprior.substack.com/p/on-context-and-people#footnote-7-50643295) are my "[Buzsáki](https://en.wikipedia.org/wiki/Gy%C3%B6rgy_Buzs%C3%A1ki)" and my "[Marder](https://en.wikipedia.org/wiki/Eve_Marder)" models. Both Eve Marder and György Buzsáki are famous neuroscientists who write extensively and have well-defined world views. I collected a lot of their writing (as well as interviews given, articles written about them, articles written by their students, ...) and finetuned two separate models on that data.
+More _useful_ models[^7] are my "[Buzsáki](https://en.wikipedia.org/wiki/Gy%C3%B6rgy_Buzs%C3%A1ki)" and my "[Marder](https://en.wikipedia.org/wiki/Eve_Marder)" models. Both Eve Marder and György Buzsáki are famous neuroscientists who write extensively and have well-defined world views. I collected a lot of their writing (as well as interviews given, articles written about them, articles written by their students, ...) and finetuned two separate models on that data.
 
-The resulting models have picked up many peculiarities of their flesh-and-blood counterparts. Buzsáki talks a lot about oscillations and rhythms, Marder talks about the [stomatogastric ganglion](https://en.wikipedia.org/wiki/Stomatogastric_nervous_system) in the crab[8](https://universalprior.substack.com/p/on-context-and-people#footnote-8-50643295). Just having these models fantasize open-ended text is an interesting experience! Here is Buzsáki fantasizing about the brain:
+The resulting models have picked up many peculiarities of their flesh-and-blood counterparts. Buzsáki talks a lot about oscillations and rhythms, Marder talks about the [stomatogastric ganglion](https://en.wikipedia.org/wiki/Stomatogastric_nervous_system) in the crab[^8]. Just having these models fantasize open-ended text is an interesting experience! Here is Buzsáki fantasizing about the brain:
 
 > The purpose of the brain is to help in an organism’s survival. However, survival requires not only an optimal physiological function but also a dynamic adaptation to changing environmental conditions, which is why we have two brains in our skull. There is a slow and a fast one. The slow brain handles tasks of perception, emotion, motor activation, and general purpose computation, whereas the fast brain (or limbic system) deals with tasks of action selection, impulse generation, and goal-directed behavior.
 
@@ -94,13 +94,11 @@ All of the above smells like the "[Newton hypothesis](https://nintil.com/newton-
 
 One (distasteful, but supported by [some evidence](https://nintil.com/newton-hypothesis)) answer is, "yep, looking at the big fish is enough. If you focus on the critical 5%, you'll get all the signal and none of the noise." As a starving grad student™, this answer makes me sad. Sure, most people will associate the [stomatogastric ganglion](https://en.wikipedia.org/wiki/Stomatogastric_nervous_system) with Eve Marder, but what about the grad students and postdocs that contribute data and ideas? And the colleagues who challenge and improve the research through peer review and their work?
 
-Perhaps calling it the "person-centric" view is a bit of a misnomer[9](https://universalprior.substack.com/p/on-context-and-people#footnote-9-50643295). When we feed the language model with papers from Eve Marder, the model learns not from Eve Marder the person, but Eve Marder the ~~egregore~~ collection of ideas and influences that converge in that person. The papers are written by many people and contain references to the works of even more people. And they are shaped by how the entire field thinks about certain questions at a given time.
+Perhaps calling it the "person-centric" view is a bit of a misnomer[^9]. When we feed the language model with papers from Eve Marder, the model learns not from Eve Marder the person, but Eve Marder the ~~egregore~~ collection of ideas and influences that converge in that person. The papers are written by many people and contain references to the works of even more people. And they are shaped by how the entire field thinks about certain questions at a given time.
 
 In that sense, the person-centric view represents a very neat compromise between the Newton hypothesis and the [Ortega hypothesis](https://en.wikipedia.org/wiki/Ortega_hypothesis) (which holds that average or mediocre scientists contribute substantially to the advancement of science). In this setup, it is impossible to disentangle the individual from the community they work in. Instead, the [paradigm](https://plato.stanford.edu/entries/thomas-kuhn/) and the supporting ideas are central.
 
-Still - having found a solution[10](https://universalprior.substack.com/p/on-context-and-people#footnote-10-50643295) to the bottleneck of contextualizing scientific questions, the next bottleneck becomes apparent. Assuming we have a neat way of coming up with interesting questions and contextualizing them - how do we find answers in a scalable way? More on that next time.
-
-Subscribe
+Still - having found a solution[^10] to the bottleneck of contextualizing scientific questions, the next bottleneck becomes apparent. Assuming we have a neat way of coming up with interesting questions and contextualizing them - how do we find answers in a scalable way? More on that next time.
 
 ##  **Appendix**
 
@@ -108,11 +106,11 @@ When I talk about the topic of this post to friends and colleagues, at some poin
 
 Those are 100% reasonable objections and the phrase in isolation creates more confusion than illumination. So here is an elaboration of what I mean when I talk about “researcher identity explains variability”.
 
-First, a tSNE projection of the semantic embedding of all the preprints on biorxiv[11](https://universalprior.substack.com/p/on-context-and-people#footnote-11-50643295):
+First, a tSNE projection of the semantic embedding of all the preprints on biorxiv[^11]:
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_184.png)I use the [rxivist](http://rxivist.org/) API to download the titles, abstracts, and metadata of the preprints available on [biorxiv](https://www.biorxiv.org/). Then I used the [Allen AI SPECTER](https://github.com/allenai/specter) model in huggingface to compute embeddings (768 dimensions) for all the preprints. With tSNE I project those embeddings down to two dimensions where I can plot them and color them according to their category on biorxiv.
 
-We see that mostly the categories occupy different regions of the space, except for “genomics” and “bioinformatics”[12](https://universalprior.substack.com/p/on-context-and-people#footnote-12-50643295). Let’s focus on neuroscience since it’s the largest category on biorxiv and since I know the people in that field the best.
+We see that mostly the categories occupy different regions of the space, except for “genomics” and “bioinformatics”[^12]. Let’s focus on neuroscience since it’s the largest category on biorxiv and since I know the people in that field the best.
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_185.png) **a** Zoom in on neuroscience from the tSNE plot above. Superimposed are the projected embeddings of three famous neuroscientists as well as yours truly. **b** Schematic illustrating the construction of the authorship matrix. **c** Coefficient of determination (r^2) as a function of the percentage of authors included in the regression between the authorship matrix and the semantic embedding. Authors are ordered from “most to least occurrences on papers”.
 
@@ -122,50 +120,26 @@ When we highlight the papers of only a few select researchers in the projection 
 
 This is what I mean when I say “researcher identity explains the highest amount of variability”. Note that this analysis does not show that it’s _true_ when I say that - I haven’t even investigated other possible regressors like “more granular research topic” or “citation count”. Also, the Allen AI SPECTER model was trained with the citation graph, potentially biasing the analysis towards the people-centric view.
 
-[1](https://universalprior.substack.com/p/on-context-and-people#footnote-anchor-1-50643295)
+[^1]:It appears more and more important to me to figure this out! In particular, we might want to be able to accelerate AI Safety research because [some people argue](https://www.greaterwrong.com/posts/CpvyhFy9WvCNsifkY/discussion-with-eliezer-yudkowsky-on-agi-interventions#:~:text=Anonymous-,How,-do%20you%20feel) progress is dangerously slow.
 
-It appears more and more important to me to figure this out! In particular, we might want to be able to accelerate AI Safety research because [some people argue](https://www.greaterwrong.com/posts/CpvyhFy9WvCNsifkY/discussion-with-eliezer-yudkowsky-on-agi-interventions#:~:text=Anonymous-,How,-do%20you%20feel) progress is dangerously slow.
+[^2]:Strictly speaking, they don't _need_ to be contextualized. There is value in [rediscovering things that are already know](https://www.lesswrong.com/s/6BFkmEgre7uwhDxDR/p/KfMNFB3G7XNviHBPN)n. And there certainly is a failure mode where researchers try to cater to an audience and optimize for the virality of their projects. But those points aside, scalable science needs to be context-aware (if only for the shared vocabulary).
 
-[2](https://universalprior.substack.com/p/on-context-and-people#footnote-anchor-2-50643295)
+[^3]:Rude!
 
-Strictly speaking, they don't _need_ to be contextualized. There is value in [rediscovering things that are already know](https://www.lesswrong.com/s/6BFkmEgre7uwhDxDR/p/KfMNFB3G7XNviHBPN)n. And there certainly is a failure mode where researchers try to cater to an audience and optimize for the virality of their projects. But those points aside, scalable science needs to be context-aware (if only for the shared vocabulary).
+[^4]:(The projects, not the subfields. It’s not _that_ bad.)
 
-[3](https://universalprior.substack.com/p/on-context-and-people#footnote-anchor-3-50643295)
+[^5]:I don't endorse the following statement, but it's too snappy not to include: "[Those who can't do teach, and those who can't teach decorate data with semantic features.](https://news.ycombinator.com/item?id=29445715#:~:text=Those%20who%20can%27t%20do%20teach%2C%20and%20those%20who%20can%27t%20teach%20decorate%20data%20with%20semantic%20features.)"
 
-Rude!
+[^6]:I got a scrape from the authors of [this](https://arxiv.org/pdf/2006.04562.pdf) paper; very clean dataset! <3
 
-[4](https://universalprior.substack.com/p/on-context-and-people#footnote-anchor-4-50643295)
+[^7]:albeit less funny
 
-(The projects, not the subfields. It’s not _that_ bad.)
+[^8]:They are also terribly shallow and inconsistent, and I have mixed feelings about[ going down this road](https://qntm.org/mmacevedo). Perhaps it would be nicer to separate the person from the "school of thought", which is the thing we _actually_ care about. But the person-proxy was easier to implement. And I do think scaling research might be very important.
 
-[5](https://universalprior.substack.com/p/on-context-and-people#footnote-anchor-5-50643295)
+[^9]:But I'm not just going to rewrite the previous sections because of that! Who am I? George R. R. Martin?
 
-I don't endorse the following statement, but it's too snappy not to include: "[Those who can't do teach, and those who can't teach decorate data with semantic features.](https://news.ycombinator.com/item?id=29445715#:~:text=Those%20who%20can%27t%20do%20teach%2C%20and%20those%20who%20can%27t%20teach%20decorate%20data%20with%20semantic%20features.)"
+[^10]:A solution that satisfies _me_ ; not sure about you, dear reader. Also, it's not so much a solution as a solution strategy. Maybe.
 
-[6](https://universalprior.substack.com/p/on-context-and-people#footnote-anchor-6-50643295)
+[^11]:Actually not _all_ the papers, only from ~ half of the categories. But those are the largest categories.
 
-I got a scrape from the authors of [this](https://arxiv.org/pdf/2006.04562.pdf) paper; very clean dataset! <3
-
-[7](https://universalprior.substack.com/p/on-context-and-people#footnote-anchor-7-50643295)
-
-albeit less funny
-
-[8](https://universalprior.substack.com/p/on-context-and-people#footnote-anchor-8-50643295)
-
-They are also terribly shallow and inconsistent, and I have mixed feelings about[ going down this road](https://qntm.org/mmacevedo). Perhaps it would be nicer to separate the person from the "school of thought", which is the thing we _actually_ care about. But the person-proxy was easier to implement. And I do think scaling research might be very important.
-
-[9](https://universalprior.substack.com/p/on-context-and-people#footnote-anchor-9-50643295)
-
-But I'm not just going to rewrite the previous sections because of that! Who am I? George R. R. Martin?
-
-[10](https://universalprior.substack.com/p/on-context-and-people#footnote-anchor-10-50643295)
-
-A solution that satisfies _me_ ; not sure about you, dear reader. Also, it's not so much a solution as a solution strategy. Maybe.
-
-[11](https://universalprior.substack.com/p/on-context-and-people#footnote-anchor-11-50643295)
-
-Actually not _all_ the papers, only from ~ half of the categories. But those are the largest categories.
-
-[12](https://universalprior.substack.com/p/on-context-and-people#footnote-anchor-12-50643295)
-
-It also looks a bit like a cauliflower head from the top.
+[^12]:It also looks a bit like a cauliflower head from the top.

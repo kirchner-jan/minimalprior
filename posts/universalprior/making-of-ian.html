@@ -33,7 +33,7 @@ Kirchner</a></td>
         <ul class="incremental">
         <li><a href="#building-a-digital-person.1"
         id="toc-building-a-digital-person.1">Building a ‘digital
-        person’.1</a></li>
+        person’.<sup>[1]</sup></a></li>
         <li><a href="#does-this-have-any-practical-use"
         id="toc-does-this-have-any-practical-use">Does this have any
         practical use?</a></li>
@@ -63,8 +63,8 @@ Kirchner</a></td>
     src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_4.gif" />“
     <em>Show, don’t tell.</em> ” - probably said originally by someone
     with bad hearing</p>
-    <h3 id="building-a-digital-person.1">Building a ‘digital person’.<a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-1-40527537">1</a></h3>
+    <h3 id="building-a-digital-person.1">Building a ‘digital
+    person’.<sup>[1]</sup></h3>
     <p>Holden Karnofsky asks you to <a
     href="https://www.cold-takes.com/imagining-yourself-as-a-digital-person-two-sketches/">imagine
     yourself as a digital person</a> - a copy of yourself that runs on a
@@ -141,17 +141,26 @@ Kirchner</a></td>
     GPT-J</a>, a language model recently released by the rockstars at <a
     href="https://www.eleuther.ai/">EleutherAI</a>. I then wrote a small
     plugin for Roam Research and a custom keyboard for Android that
-    allow me to integrate #IAN into my daily workflow.<a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-2-40527537">2</a>
-    It was a marvelous experience and the result is surprisingly useful
-    - even though it of course falls way short of a full “digital
+    allow me to integrate #IAN into my daily workflow.<sup>[2]</sup> It
+    was a marvelous experience and the result is surprisingly useful -
+    even though it of course falls way short of a full “digital
     person”.</p>
+    <div class="sidenote">
+    <p>[2] </p>
+    <p>I’ll publish another post with all the boring technical details
+    and code snippets in case someone wants to try the same.</p>
+    </div>
     <p>Let me first show you what the result looks like. I have three
     main modes of interaction with the model.</p>
     <p><strong>curl in the command line.</strong> For a stylish retro
     aesthetic, sampling given a prompt works directly from the command
-    line.<a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-3-40527537">3</a></p>
+    line.<sup>[3]</sup></p>
+    <div class="sidenote">
+    <p>[3] </p>
+    <p>The nice folks at EleutherAI already <a
+    href="https://github.com/kingoflolz/mesh-transformer-jax/blob/master/device_serve.py">provide</a>
+    a minimal python flask server that can process POST queries.</p>
+    </div>
     <p>While the thought process of #IAN here is not 100% clean (it
     suggests a name and then immediately states it’s searching for a
     name), this example nicely demonstrates that the fine-tuning clearly
@@ -161,21 +170,29 @@ Kirchner</a></td>
     <p><strong>SmartBlock in Roam Research.</strong> Since this project
     is already weird enough, I will not commence this section with a
     love letter to <a href="https://roamresearch.com/">Roam
-    Research</a><a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-4-40527537">4</a>.
-    I will only state that I’ve been using this note-taking app quite
-    extensively and integrating a language model that can automatically
-    expand my thoughts has been the primary motivation for this project.
-    Because, while Roam Research is useful as is, some workflows are
-    rather painful. In particular, sometimes I want to retrieve notes
-    where I don’t remember any of the relevant keywords nor the context
-    in which I stored the note. While this can also be resolved by a <a
+    Research</a><sup>[4]</sup>. I will only state that I’ve been using
+    this note-taking app quite extensively and integrating a language
+    model that can automatically expand my thoughts has been the primary
+    motivation for this project. Because, while Roam Research is useful
+    as is, some workflows are rather painful. In particular, sometimes I
+    want to retrieve notes where I don’t remember any of the relevant
+    keywords nor the context in which I stored the note. While this can
+    also be resolved by a <a
     href="https://roamstack.com/searching-in-roam/">good system of tags
     and querying</a>, I thought it would just be a lot cooler to give
     some more interactivity to <a
     href="https://medium.datadriveninvestor.com/how-to-create-your-second-brain-and-why-roam-research-is-pushing-to-it-97f217f1e8cc?gi=55454aa6beda">my
-    second brain</a>.<a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-5-40527537">5</a></p>
+    second brain</a>.<sup>[5]</sup></p>
+    <div class="sidenote">
+    <p>[5] </p>
+    <p>Note the words generated in italics - those would be
+    bidirectional tags in Roam which I change to italics to avoid my
+    Roam graph from becoming cluttered.</p>
+    </div>
+    <div class="sidenote">
+    <p>[4] </p>
+    <p>That will be another post.</p>
+    </div>
     <p>In this example, #IAN is producing a lot of - somewhat disjoint -
     thoughts on polarisation, with references to Scott Alexander, Nate
     Silver, and Tyler Cowen’s “<a
@@ -189,8 +206,15 @@ Kirchner</a></td>
     run, I also wanted an easy way of interacting with #IAN while on the
     road. So I dove into the exciting world of app development and
     hacked together a custom keyboard that allows querying #IAN in any
-    text box.<a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-6-40527537">6</a></p>
+    text box.<sup>[6]</sup></p>
+    <div class="sidenote">
+    <p>[6] </p>
+    <p>This required <a
+    href="https://lybekk.tech/guide/termux-install-google-cloud-cli">installing</a>
+    the gcloud suite on Termux which is a bit (very) whacky but works
+    for now. The prompt templates in the keyboard are taken from <a
+    href="https://github.com/semiosis/prompts">this</a> GitHub repo.</p>
+    </div>
     <p>This is mostly a party trick because the text is annoying to
     enter on the smartphone keyboard and the results are not easy to
     process further. But this mode of interaction makes it tempting to
@@ -263,10 +287,14 @@ Kirchner</a></td>
     <p>Large language models have <em>hidden knowledge</em> that is only
     revealed when the query is phrased <a
     href="https://www.gwern.net/GPT-3#prompts-as-programming">in the
-    right way</a>. Asking #IAN a question usually doesn’t work<a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-7-40527537">7</a>
-    - it gets “distracted” and changes the topic or continues with a
-    volley of more questions.</p>
+    right way</a>. Asking #IAN a question usually doesn’t
+    work<sup>[7]</sup> - it gets “distracted” and changes the topic or
+    continues with a volley of more questions.</p>
+    <div class="sidenote">
+    <p>[7] </p>
+    <p>Asking politely <em>never</em> works and is guaranteed to get you
+    made fun of for trying.</p>
+    </div>
     <blockquote>
     <p><em>IAN says: What is the capital of Spain?</em> What is the
     length of the human foot? What are common uses of the words “dog,”
@@ -306,15 +334,22 @@ Kirchner</a></td>
     believe the second option has been under-explored. To get good
     performance, I might just change what I consider “good output”.</p>
     <p>While I obviously say this tongue in cheek, I think there is a
-    case to be made here. Something like the uncanny valley effect<a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-8-40527537">8</a>
-    or <a
+    case to be made here. Something like the uncanny valley
+    effect<sup>[8]</sup> or <a
     href="https://en.wikipedia.org/wiki/AI_effect#cite_note-7">Larry
-    Tesler’s Theorem</a><a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-9-40527537">9</a>
-    might unjustly bias us to dismiss model output that <em>is</em>
-    useful. Therefore, the “trick” for better performance is just to
-    embrace the weirdness and the otherworldly quirkiness.</p>
+    Tesler’s Theorem</a><sup>[9]</sup> might unjustly bias us to dismiss
+    model output that <em>is</em> useful. Therefore, the “trick” for
+    better performance is just to embrace the weirdness and the
+    otherworldly quirkiness.</p>
+    <div class="sidenote">
+    <p>[9] </p>
+    <p><em>“AI is whatever hasn’t been done yet.”</em></p>
+    </div>
+    <div class="sidenote">
+    <p>[8] </p>
+    <p>Anything that is close to but not quite human can elicit an
+    adverse emotional response.</p>
+    </div>
     <p>On decisions that have objectively good and bad outcomes, like
     personal finance, I don’t feel ready to follow #IANs advice, which
     is a bit too <a
@@ -374,11 +409,19 @@ Kirchner</a></td>
     Tesler bias</a> and cut the model some slack. Instead of trying to
     poke holes into an idea, I will let myself be guided by
     (cherrypicked) suggestions from #IAN sometimes. Why <em>can’t</em> I
-    get a tattoo just because an AI told me to?<a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-10-40527537">10</a>
-    Why <em>can’t</em> I draw a “use of Kurt Gödel’s incompleteness
+    get a tattoo just because an AI told me to?<sup>[10]</sup> Why
+    <em>can’t</em> I draw a “use of Kurt Gödel’s incompleteness
     theorem”? I can’t help but think of this plot that has been popping
     up on Twitter a lot recently:</p>
+    <div class="sidenote">
+    <p>[10] </p>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_2.jpeg" />
+    <em>#IAN says: I want to get a new tattoo! This time it will be</em>
+    a snake on my shoulder, and I thought about asking you first. Do you
+    have an idea what I could do? I’m thinking about snakes, I guess.
+    Best, Jan</p>
+    </div>
     <blockquote>
     <p><img
     src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_1.jpeg" /></p>
@@ -392,16 +435,19 @@ Kirchner</a></td>
     stretch of free time to improve #IAN. Top of my list is to find a
     smarter way of extracting text from Roam Research. Currently, the
     graph structure is lost completely in preprocessing. There must be
-    something clever<a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-11-40527537">11</a>
-    that can be done short of <a
+    something clever<sup>[11]</sup> that can be done short of <a
     href="https://paperswithcode.com/method/graph-transformer">changing
     the architecture</a>.</p>
+    <div class="sidenote">
+    <p>[11] </p>
+    <p>Perhaps just adding some indication of the indentation level can
+    already help? Or splitting the file, not after a fixed number of
+    lines but after all the children of a block are processed?</p>
+    </div>
     <p>It is also just a <a
     href="https://www.eleuther.ai/faq/#:~:text=Are%20you%20serious,200%20billion%20parameters.">question
-    of time</a> until larger pre-trained (i.e. foundational<a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-12-40527537">12</a>)
-    models become available. <a
+    of time</a> until larger pre-trained
+    (i.e. foundational<sup>[12]</sup>) models become available. <a
     href="https://arxiv.org/abs/2005.14165">Larger models exhibit more
     “general reasoning capabilities”</a>, which would expand the domain
     in which #IAN output is useable. It would likely also come with
@@ -409,11 +455,25 @@ Kirchner</a></td>
     feasible even with TRC access. On the other hand, compute gets
     cheaper every year, so perhaps it <em>will</em> become feasible
     eventually.</p>
+    <div class="sidenote">
+    <p>[12] </p>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_3.jpeg" /></p>
+    </div>
     <p>One thing that I’d be curious to test is some version of <a
     href="https://ai-alignment.com/iterated-distillation-and-amplification-157debfd1616">Iterated
-    Distillation and Amplification</a><a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-13-40527537">13</a>
-    to boost performance. I imagine a routine as follows:</p>
+    Distillation and Amplification</a><sup>[13]</sup> to boost
+    performance. I imagine a routine as follows:</p>
+    <div class="sidenote">
+    <p>[13] </p>
+    <blockquote>
+    <p><a
+    href="https://ai-alignment.com/iterated-distillation-and-amplification-157debfd1616">We
+    use a learned model many times as a subroutine in a more powerful
+    decision-making process, and then re-train the model to imitate
+    those better decisions.</a></p>
+    </blockquote>
+    </div>
     <ol class="incremental" type="1">
     <li>when querying #IAN from Roam Research, amplify performance by
     generating multiple samples (/listicles) and only keeping the
@@ -430,18 +490,27 @@ Kirchner</a></td>
     circle (amplifying for a month and then distilling) might already
     produce useful results. Note that I’m not trying to build artificial
     general intelligence here. I’m just trying to build something
-    useful<a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-14-40527537">14</a>.</p>
+    useful<sup>[14]</sup>.</p>
+    <div class="sidenote">
+    <p>[14] </p>
+    <p>That can help me research how to align AGI.</p>
+    </div>
     <hr />
     <h3 id="do-i-even-want-to-do-this">Do I even want to do this?</h3>
     <p>Connected to this last point, there are some points on AI safety
     and ethics that I want to make. When I told friends about this
     project, I got two types of responses: either moderate enthusiasm
     and encouragement or resigned despair ( <em>“Oh no, I already hate
-    this”</em> ). Since I try to take feedback that I get serious<a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-15-40527537">15</a>,
-    I’ll share my thought process here on why this is not a terrible
-    idea.</p>
+    this”</em> ). Since I try to take feedback that I get
+    serious<sup>[15]</sup>, I’ll share my thought process here on why
+    this is not a terrible idea.</p>
+    <div class="sidenote">
+    <p>[15] </p>
+    <p>As some people have pointed out to me later, the arguments that I
+    am providing in this section are not at all soothing and only
+    tangentially related to the reasons for why they originally said “Oh
+    no”. To this, I can only say “Oh well”.</p>
+    </div>
     <p>I don’t run any danger of creating something dangerous myself. I
     don’t have the required access to compute and I am not an ML
     researcher. Taking the <a
@@ -513,114 +582,28 @@ Kirchner</a></td>
     <p>What to take away from this project? The most striking part for
     me is to interact with a statistical summary of my collected output.
     I notice certain invariants and lots of variabilities - a bit like a
-    word cloud on steroids<a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-16-40527537">16</a>.
-    It made me reflect a lot on identity and style. At the same time,
-    reading text generated in the style of <em>you</em> is a lot of fun,
-    and teasing meaning from #IAN is at times like reading tea leaves -
-    any possible meaning is not in the object but in the
-    interaction.</p>
+    word cloud on steroids<sup>[16]</sup>. It made me reflect a lot on
+    identity and style. At the same time, reading text generated in the
+    style of <em>you</em> is a lot of fun, and teasing meaning from #IAN
+    is at times like reading tea leaves - any possible meaning is not in
+    the object but in the interaction.</p>
+    <div class="sidenote">
+    <p>[16] </p>
+    <p>Credit for this phrase goes fully to Dylan.</p>
+    </div>
     <p>It’s interesting to see a substantial part of my lifetime output
     condensed to 50Mb. One consoling thought is that, as Gwern puts it,
     <a
     href="https://www.gwern.net/Scaling-hypothesis#:~:text=The%20last%20bits%20are%20deepest.">the
-    last bits are the deepest</a><a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-17-40527537">17</a>,
-    and perhaps getting a great language model of a person doesn’t
-    actually require a lot of data - just extremely high quality. I’ll
-    keep that in mind the next time I text someone about their lunch
-    plans. Finally, figuring out how to “talk” to #IAN and to tease out
-    the most useful responses is a pretty remarkable experience.
-    Probably the closest you can currently get to talking to an alien
-    mind. Can recommend.</p>
-    <p>Subscribe</p>
-    <hr />
-    <p><em>A big thank you to the following people for proofreading
-    &amp; feedback: Jasper, Nadia, Max, Hiba, Dylan, Deyue and
-    Zhuoshi.</em></p>
-    <p><a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-anchor-1-40527537">1</a></p>
-    <p>All the section titles after this one were generated by #IAN and
-    then lightly cherrypicked by me. The prompt is <em>Here is a list of
-    possible titles for the sections of my first Substack post on the
-    creation of a large language model fine-tuned to my own speech
-    patterns. This list has been curated by a very smart AI. 1.</em></p>
-    <p><a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-anchor-2-40527537">2</a></p>
-    <p>I’ll publish another post with all the boring technical details
-    and code snippets in case someone wants to try the same.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-anchor-3-40527537">3</a></p>
-    <p>The nice folks at EleutherAI already <a
-    href="https://github.com/kingoflolz/mesh-transformer-jax/blob/master/device_serve.py">provide</a>
-    a minimal python flask server that can process POST queries.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-anchor-4-40527537">4</a></p>
-    <p>That will be another post.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-anchor-5-40527537">5</a></p>
-    <p>Note the words generated in italics - those would be
-    bidirectional tags in Roam which I change to italics to avoid my
-    Roam graph from becoming cluttered.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-anchor-6-40527537">6</a></p>
-    <p>This required <a
-    href="https://lybekk.tech/guide/termux-install-google-cloud-cli">installing</a>
-    the gcloud suite on Termux which is a bit (very) whacky but works
-    for now. The prompt templates in the keyboard are taken from <a
-    href="https://github.com/semiosis/prompts">this</a> GitHub repo.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-anchor-7-40527537">7</a></p>
-    <p>Asking politely <em>never</em> works and is guaranteed to get you
-    made fun of for trying.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-anchor-8-40527537">8</a></p>
-    <p>Anything that is close to but not quite human can elicit an
-    adverse emotional response.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-anchor-9-40527537">9</a></p>
-    <p><em>“AI is whatever hasn’t been done yet.”</em></p>
-    <p><a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-anchor-10-40527537">10</a></p>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_2.jpeg" />
-    <em>#IAN says: I want to get a new tattoo! This time it will be</em>
-    a snake on my shoulder, and I thought about asking you first. Do you
-    have an idea what I could do? I’m thinking about snakes, I guess.
-    Best, Jan</p>
-    <p><a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-anchor-11-40527537">11</a></p>
-    <p>Perhaps just adding some indication of the indentation level can
-    already help? Or splitting the file, not after a fixed number of
-    lines but after all the children of a block are processed?</p>
-    <p><a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-anchor-12-40527537">12</a></p>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_3.jpeg" /></p>
-    <p>They are just the same thing, right?</p>
-    <p><a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-anchor-13-40527537">13</a></p>
-    <blockquote>
-    <p><a
-    href="https://ai-alignment.com/iterated-distillation-and-amplification-157debfd1616">We
-    use a learned model many times as a subroutine in a more powerful
-    decision-making process, and then re-train the model to imitate
-    those better decisions.</a></p>
-    </blockquote>
-    <p><a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-anchor-14-40527537">14</a></p>
-    <p>That can help me research how to align AGI.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-anchor-15-40527537">15</a></p>
-    <p>As some people have pointed out to me later, the arguments that I
-    am providing in this section are not at all soothing and only
-    tangentially related to the reasons for why they originally said “Oh
-    no”. To this, I can only say “Oh well”.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-anchor-16-40527537">16</a></p>
-    <p>Credit for this phrase goes fully to Dylan.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/making-of-ian#footnote-anchor-17-40527537">17</a></p>
+    last bits are the deepest</a><sup>[17]</sup>, and perhaps getting a
+    great language model of a person doesn’t actually require a lot of
+    data - just extremely high quality. I’ll keep that in mind the next
+    time I text someone about their lunch plans. Finally, figuring out
+    how to “talk” to #IAN and to tease out the most useful responses is
+    a pretty remarkable experience. Probably the closest you can
+    currently get to talking to an alien mind. Can recommend.</p>
+    <div class="sidenote">
+    <p>[17] </p>
     <p>_“For everyday actions, anybody, of any intelligence, can get
     enough practice &amp; feedback to do them quite well. Where
     individuals differ is when they start running into novel choices,
@@ -630,8 +613,23 @@ Kirchner</a></td>
     get you very close to the first part. Once you are there, what
     distinguishes individuals might actually be a rather small set of
     preferences that plays out in complicated ways.</p>
+    </div>
+    <p>Subscribe</p>
+    <hr />
+    <p><em>A big thank you to the following people for proofreading
+    &amp; feedback: Jasper, Nadia, Max, Hiba, Dylan, Deyue and
+    Zhuoshi.</em></p>
+    <p>They are just the same thing, right?</p>
     <p>I realize that this runs counter the typical idea of scaling,
     where the last bit requires the <em>most</em> training data.</p>
+    <div class="sidenote">
+    <p>[1] </p>
+    <p>All the section titles after this one were generated by #IAN and
+    then lightly cherrypicked by me. The prompt is <em>Here is a list of
+    possible titles for the sections of my first Substack post on the
+    creation of a large language model fine-tuned to my own speech
+    patterns. This list has been curated by a very smart AI. 1.</em></p>
+    </div>
     <div class="debug-grid"></div>
   <script src="index.js"></script>
 </body>

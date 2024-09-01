@@ -55,16 +55,23 @@ Kirchner</a></td>
     Asymmetries</strong></h2>
     <p><strong><code>There is a curious asymmetry in how difficult it is to make something versus how easy it is to evaluate it.</code></strong>
     After working on an idea for a couple of days, I usually run my work
-    by a friend or<a
-    href="https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-1-47977244">1</a>
-    colleague once I <em>think</em> I have found a solution. More often
-    than not, said colleagues manage to find a flaw in my argument in 5
-    minutes. While I can’t deny that some of them are smarter than me,
-    they are <em>not</em> smart enough to do the same amount of mental
-    work in 5 minutes that took me several days. They are no <a
+    by a friend or<sup>[1]</sup> colleague once I <em>think</em> I have
+    found a solution. More often than not, said colleagues manage to
+    find a flaw in my argument in 5 minutes. While I can’t deny that
+    some of them are smarter than me, they are <em>not</em> smart enough
+    to do the same amount of mental work in 5 minutes that took me
+    several days. They are no <a
     href="https://fantasticanachronism.com/2021/03/23/two-paths-to-the-future/">clones
-    of John von Neumann</a><a
-    href="https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-2-47977244">2</a>.</p>
+    of John von Neumann</a><sup>[2]</sup>.</p>
+    <div class="sidenote">
+    <p>[2] </p>
+    <p>Or, if they are, I would be shocked that the topic never came up
+    during lunch before.</p>
+    </div>
+    <div class="sidenote">
+    <p>[1] </p>
+    <p>Not an XOR!</p>
+    </div>
     <p><strong><code>We might leverage that asymmetry for AI Alignment.</code></strong>
     This asymmetry pops up all over the place, sometimes making life <a
     href="https://www.ijert.org/pvs-np-problem-and-its-application-in-public-key-cryptography">better</a>,
@@ -93,14 +100,23 @@ Kirchner</a></td>
     subtasks. It is an empirical question whether this is possible in
     general, and some <a
     href="https://ought.org/updates/2020-01-11-arguments">initial
-    results</a> looked a bit discouraging<a
-    href="https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-3-47977244">3</a>.
-    But there is also more recent research on “<a
+    results</a> looked a bit discouraging<sup>[3]</sup>. But there is
+    also more recent research on “<a
     href="https://arxiv.org/abs/2109.10862">Recursively Summarizing
-    Books with Human Feedback</a>” that looks more encouraging<a
-    href="https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-4-47977244">4</a>.
-    What is this proposal, and why is it encouraging? I’m glad you
-    ask.</p>
+    Books with Human Feedback</a>” that looks more
+    encouraging<sup>[4]</sup>. What is this proposal, and why is it
+    encouraging? I’m glad you ask.</p>
+    <div class="sidenote">
+    <p>[4] </p>
+    <p>Yey humanity!</p>
+    </div>
+    <div class="sidenote">
+    <p>[3] </p>
+    <p>Some people also argue that we have to be even more thoughtful in
+    leveraging the asymmetry because it’s not enough to control the AI -
+    we also have to control it <a
+    href="https://www.alignmentforum.org/tag/inner-alignment">robustly</a>.</p>
+    </div>
     <h2 id="recursive-raillery"><strong>Recursive Raillery</strong></h2>
     <p><strong><code>Summarizing books is an instructive test case.</code></strong>
     Reading an entire book and summarizing its content is <a
@@ -109,16 +125,27 @@ Kirchner</a></td>
     someone else to do it for us. But how can we trust someone to do a
     good job at the summary? How do we know they are not leaving out
     important things or that the resulting summary is completely
-    decoupled from the original text<a
-    href="https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-5-47977244">5</a>?</p>
+    decoupled from the original text<sup>[5]</sup>?</p>
+    <div class="sidenote">
+    <p>[5] </p>
+    <p>A while ago, I experimented with recursively summarizing a
+    research paper of mine, and the resulting top-level summary was
+    talking a <em>lot</em> about owls. There is no mention of owls in my
+    paper, except in one sentence towards the end.</p>
+    </div>
     <p><strong><code>There is a natural, recursive strategy for summarization.</code></strong>
     Fortunately, summarizing text can be broken down into simpler
     subtasks. To generate a summary of a book, generate a summary of all
     the chapters and then combine those. To generate a summary of a
     chapter, generate a summary of all the paragraphs and then combine
     those. To generate a summary of a paragraph, take all the sentences
-    and smush them together hard until they look summary-y<a
-    href="https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-6-47977244">6</a>.</p>
+    and smush them together hard until they look
+    summary-y<sup>[6]</sup>.</p>
+    <div class="sidenote">
+    <p>[6] </p>
+    <p>I apologize for this abuse of language, but I could not
+    resist.</p>
+    </div>
     <p><img
     src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_26.png" />
     <strong>Figure 1.</strong> <strong>(a)</strong> The story “Alice in
@@ -153,9 +180,13 @@ Kirchner</a></td>
     Factorization</strong></h2>
     <p><strong><code>Summarization is idempotent and books are highly structured.</code></strong>
     Well, of course there are caveats. As alluded to above, summarising
-    books lends itself well to decomposition<a
-    href="https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-7-47977244">7</a>.
-    This is due to two factors:</p>
+    books lends itself well to decomposition<sup>[7]</sup>. This is due
+    to two factors:</p>
+    <div class="sidenote">
+    <p>[7] </p>
+    <p>I’m not sure if it is only evident in hindsight that
+    summarization <em>should</em> work well.</p>
+    </div>
     <ol class="incremental" type="1">
     <li>The summarization operator is <a
     href="https://en.wikipedia.org/wiki/Idempotence">idempotent</a>: the
@@ -180,8 +211,14 @@ Kirchner</a></td>
     thing is confused</a>. However, before we <em>know</em> how to
     decompose something into its constituents correctly, we can get <a
     href="https://en.wikipedia.org/wiki/Phlogiston_theory">very
-    confused</a> about how it works<a
-    href="https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-8-47977244">8</a>.</p>
+    confused</a> about how it works<sup>[8]</sup>.</p>
+    <div class="sidenote">
+    <p>[8] </p>
+    <p>I am ~60% sure that Scott Garrabrant’s work on <a
+    href="https://www.lesswrong.com/posts/N5Jm6Nj4HkNKySA5Z/finite-factored-sets">finite
+    factored sets</a> is relevant here, but I am confused about how
+    exactly. Okay, actually, make that ~30%.</p>
+    </div>
     <p><strong><code>Debate as one proposal for automatic decomposition.</code></strong>
     Consequently, finding the correct lens for <a
     href="https://distill.pub/2020/circuits/zoom-in/">zooming in</a>,
@@ -241,8 +278,11 @@ Kirchner</a></td>
     <a
     href="https://universalprior.substack.com/p/on-automatic-ideas">ideas</a>
     for automating parts of the research process, but the core of the
-    problem eludes me<a
-    href="https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-9-47977244">9</a>.</p>
+    problem eludes me<sup>[9]</sup>.</p>
+    <div class="sidenote">
+    <p>[9] </p>
+    <p>It’s a hard problem.</p>
+    </div>
     <p><strong><code>A decomposition has semantics and syntax.</code></strong>
     But I <em>do</em> have a trace of an idea. The first observation is
     that there is something like <a
@@ -275,8 +315,12 @@ Kirchner</a></td>
     <p>The resulting correlation matrix is clearly not random. For one,
     there are blocks of high correlation along the diagonal, which stem
     from the fact that paragraphs nearby in the text tend to share
-    semantic features<a
-    href="https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-10-47977244">10</a>.</p>
+    semantic features<sup>[10]</sup>.</p>
+    <div class="sidenote">
+    <p>[10] </p>
+    <p>I’m arranging the rows and columns of the correlation matrix to
+    follow the story’s sequential ordering.</p>
+    </div>
     <p>Another observation is that there are two highly correlated
     off-diagonals indicating the similarity of the depth two summary and
     the source text. There is also a much fainter set of four additional
@@ -310,71 +354,27 @@ Kirchner</a></td>
     other. This observation might be trivially true, but (I hope) it’s
     trivially true <a
     href="https://en.wikipedia.org/wiki/Semantic_theory_of_truth">in an
-    interesting way</a><a
-    href="https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-11-47977244">11</a>.</p>
-    <p><strong><code>And then, a cliffhanger…</code></strong> What does
-    this buy us? I don’t have a great answer to that question yet<a
-    href="https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-12-47977244">12</a>.
-    I’m running a bunch of experiments on this idea to see what it can
-    do, but it’ll take a bit more time to process. But since my posts
-    have been getting pretty long recently, and in the spirit of “<a
-    href="https://publiclab.co/building-in-public">building in
-    public</a>,” I’m putting this out there anyway. I’ll update you when
-    I learn more!</p>
-    <p>Subscribe</p>
-    <p><a
-    href="https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-anchor-1-47977244">1</a></p>
-    <p>Not an XOR!</p>
-    <p><a
-    href="https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-anchor-2-47977244">2</a></p>
-    <p>Or, if they are, I would be shocked that the topic never came up
-    during lunch before.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-anchor-3-47977244">3</a></p>
-    <p>Some people also argue that we have to be even more thoughtful in
-    leveraging the asymmetry because it’s not enough to control the AI -
-    we also have to control it <a
-    href="https://www.alignmentforum.org/tag/inner-alignment">robustly</a>.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-anchor-4-47977244">4</a></p>
-    <p>Yey humanity!</p>
-    <p><a
-    href="https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-anchor-5-47977244">5</a></p>
-    <p>A while ago, I experimented with recursively summarizing a
-    research paper of mine, and the resulting top-level summary was
-    talking a <em>lot</em> about owls. There is no mention of owls in my
-    paper, except in one sentence towards the end.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-anchor-6-47977244">6</a></p>
-    <p>I apologize for this abuse of language, but I could not
-    resist.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-anchor-7-47977244">7</a></p>
-    <p>I’m not sure if it is only evident in hindsight that
-    summarization <em>should</em> work well.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-anchor-8-47977244">8</a></p>
-    <p>I am ~60% sure that Scott Garrabrant’s work on <a
-    href="https://www.lesswrong.com/posts/N5Jm6Nj4HkNKySA5Z/finite-factored-sets">finite
-    factored sets</a> is relevant here, but I am confused about how
-    exactly. Okay, actually, make that ~30%.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-anchor-9-47977244">9</a></p>
-    <p>It’s a hard problem.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-anchor-10-47977244">10</a></p>
-    <p>I’m arranging the rows and columns of the correlation matrix to
-    follow the story’s sequential ordering.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-anchor-11-47977244">11</a></p>
+    interesting way</a><sup>[11]</sup>.</p>
+    <div class="sidenote">
+    <p>[11] </p>
     <p>I had a whole section on Wittgenstein’s <a
     href="https://en.wikipedia.org/wiki/Picture_theory_of_language">picture
     theory of language</a> and on the relationship between <a
     href="https://universalprior.substack.com/p/applied-mathematical-logic-for-the">syntax
     and semantics in mathematical logic</a> sketched out, but it’s late,
     and who am I kidding.</p>
-    <p><a
-    href="https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-anchor-12-47977244">12</a></p>
+    </div>
+    <p><strong><code>And then, a cliffhanger…</code></strong> What does
+    this buy us? I don’t have a great answer to that question
+    yet<sup>[12]</sup>. I’m running a bunch of experiments on this idea
+    to see what it can do, but it’ll take a bit more time to process.
+    But since my posts have been getting pretty long recently, and in
+    the spirit of “<a
+    href="https://publiclab.co/building-in-public">building in
+    public</a>,” I’m putting this out there anyway. I’ll update you when
+    I learn more!</p>
+    <div class="sidenote">
+    <p>[12] </p>
     <p>Ideally, the distinction between semantics and syntax of
     decompositions will allow us to automate the process of decomposing.
     I’m thinking of a type of <a
@@ -383,6 +383,8 @@ Kirchner</a></td>
     elements, attempts a decomposition, compares semantics and syntax,
     and proposes a new hierarchical clustering. But I’m pretty sure this
     is not how it’ll work.</p>
+    </div>
+    <p>Subscribe</p>
     <div class="debug-grid"></div>
   <script src="index.js"></script>
 </body>

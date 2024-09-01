@@ -24,13 +24,13 @@ Both of us ([Sam](https://snellessen.com/) & [Jan](https://universalprior.substa
 
 
 
-While being brain enthusiasts undoubtedly makes us biased in favor of their importance, it also gives us a (hopefully) useful inside view of how brain enthusiasts might meaningfully contribute to AI Safety[1](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-1-59586443). In this post, we attempt to shine a light on the current representation of brain enthusiasts in AI Safety and provide some advice on how brain enthusiasts might enter the field.
+While being brain enthusiasts undoubtedly makes us biased in favor of their importance, it also gives us a (hopefully) useful inside view of how brain enthusiasts might meaningfully contribute to AI Safety[^1]. In this post, we attempt to shine a light on the current representation of brain enthusiasts in AI Safety and provide some advice on how brain enthusiasts might enter the field.
 
 ##  **A long tail of number-lovers**
 
 When you hear terms like "AI Alignment", "AI Safety," or "AGI", you probably think of people with a strong technical background, e.g. in computer science, mathematics, or physics. This is an instance where stereotypes are correct:
 
-Using a [previously published dataset](https://www.lesswrong.com/posts/FgjcHiWvADgsocE34/a-descriptive-not-prescriptive-overview-of-current-ai), we determined the number of Alignment Forum posts per researcher and sorted the resulting table. We then added a "Background" column, where we noted the field in which the researcher obtained their most recent degree[2](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-2-59586443). As observed [previously](https://www.lesswrong.com/posts/FgjcHiWvADgsocE34/a-descriptive-not-prescriptive-overview-of-current-ai), the number of published posts is a long-tailed distribution[3](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-3-59586443), with Stuart Armstrong dominating over everyone.
+Using a [previously published dataset](https://www.lesswrong.com/posts/FgjcHiWvADgsocE34/a-descriptive-not-prescriptive-overview-of-current-ai), we determined the number of Alignment Forum posts per researcher and sorted the resulting table. We then added a "Background" column, where we noted the field in which the researcher obtained their most recent degree[^2]. As observed [previously](https://www.lesswrong.com/posts/FgjcHiWvADgsocE34/a-descriptive-not-prescriptive-overview-of-current-ai), the number of published posts is a long-tailed distribution[^3], with Stuart Armstrong dominating over everyone.
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_186.png)
 
@@ -46,7 +46,7 @@ We'd wager the bet that most people on the list don't identify with their "forma
 
 ##  **How did we get here?**
 
-There are (at least) two[4](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-4-59586443) possible explanations for why the composition of the field is biased in favor of researchers with technical backgrounds:
+There are (at least) two[^4] possible explanations for why the composition of the field is biased in favor of researchers with technical backgrounds:
 
   * Either, there is an "efficient market" dynamic whereby only people with a technical background make progress and stay in the field,
 
@@ -68,7 +68,7 @@ Between these two poles, there is an entire spectrum of what "solving” AI Safe
 
 
 
-The poles of this spectrum appear highly unlikely - pure theory without implementation is as useless as pure observation without foresight[5](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-5-59586443). But the intermediate scenarios appear plausible, and we'll dive into them more in the next two sections.
+The poles of this spectrum appear highly unlikely - pure theory without implementation is as useless as pure observation without foresight[^5]. But the intermediate scenarios appear plausible, and we'll dive into them more in the next two sections.
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_187.png)On the spectrum from empirical to logical, brain enthusiasts tend more to the empirical pole than the typical AI Safety researcher. The bull & bear case describe two plausible ranges in which researchers could be able work productively on AI Safety.
 
@@ -82,7 +82,7 @@ In this scenario, AI Safety is mostly a technical problem, and the current distr
 
 Your brain enthusiasm background won't be sufficient to contribute to the field. Cognitive science is [kind of a mess](https://www.nature.com/articles/s41562-019-0626-2), the study of neuroscience generates insights with [endless caveats](https://www.theatlantic.com/science/archive/2019/07/ten-years-human-brain-project-simulation-markram-ted-talk/594493/) that have little hope of generalizing to superhuman minds, and mainstream philosophy of mind is… [still stuck](https://www.lesswrong.com/posts/oTX2LXHqXqYg2u4g6/less-wrong-rationality-and-mainstream-philosophy) on [that zombie thing](https://www.lesswrong.com/posts/fdEWWr8St59bXLbQr/zombies-zombies). [Brain-like AGI](https://www.lesswrong.com/posts/4basF9w9jaPZpoC8R/intro-to-brain-like-agi-safety-1-what-s-the-problem-and-why) is not on the table. People have no incentive to follow a blueprint for making AGI more "brain-like", and they might be correct not to follow it. Our confusion about how the brain works is even deeper than our confusion about AI Safety. _Trying_ to build brain-like AGI is in the same category as "[mysterious answers to mysterious questions"](https://www.lesswrong.com/posts/6i3zToomS86oj9bS6/mysterious-answers-to-mysterious-questions).
 
-However, your brain enthusiasm background is not something to be ashamed of either. Realize that you might know more about your field of study (the amygdala? meerkat's mating rituals? the extended mind hypothesis?) than the median researcher you encounter. Sometimes this is a problem ("[law of the instrument"](https://en.wikipedia.org/wiki/Law_of_the_instrument), when all you have is a hammer…), but sometimes the correct response to "my area of expertise seems relevant here; why hasn’t anyone mentioned meerkats yet?" actually is "I should mention meerkats and explain why they are relevant". Some reasonably well-understood portions of biological intelligence can map onto artificial intelligence. As long as you're able to explain yourself in the common (technical) vocabulary, your contribution will be valuable[6](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-6-59586443).
+However, your brain enthusiasm background is not something to be ashamed of either. Realize that you might know more about your field of study (the amygdala? meerkat's mating rituals? the extended mind hypothesis?) than the median researcher you encounter. Sometimes this is a problem ("[law of the instrument"](https://en.wikipedia.org/wiki/Law_of_the_instrument), when all you have is a hammer…), but sometimes the correct response to "my area of expertise seems relevant here; why hasn’t anyone mentioned meerkats yet?" actually is "I should mention meerkats and explain why they are relevant". Some reasonably well-understood portions of biological intelligence can map onto artificial intelligence. As long as you're able to explain yourself in the common (technical) vocabulary, your contribution will be valuable[^6].
 
 ### Recommendations: the bull case
 
@@ -90,7 +90,7 @@ However, your brain enthusiasm background is not something to be ashamed of eith
 
  _AI Safety requires **some** theoretical research and **some** empirical research._
 
-In this scenario, AI Safety could benefit from more empirical input and the current distribution of backgrounds is an artifact produced by something like the [founder effect](https://en.wikipedia.org/wiki/Founder_effect). To contribute, you might have to learn some basic coding skills and technical vocabulary. But don't spend too much time on this. Your comparative advantage lies elsewhere. Consider applying for the [PIBBSS fellowship](https://www.pibbss.ai/fellowship), but also consider "just start experimenting". [Request research access to the GPT API](https://share.hsforms.com/1b-BEAq_qQpKcfFGKwwuhxA4sk30) and ask the model [some pointed questions](https://universalprior.substack.com/p/cognitive-biases-in-large-language), grab [a dataset](https://www.lesswrong.com/posts/FgjcHiWvADgsocE34/a-descriptive-not-prescriptive-overview-of-current-ai) and investigate the eye color of the prominent researchers in the field[7](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-7-59586443), or see what you can learn about [myopia](https://www.lesswrong.com/tag/myopia) by looking at people with anterograde/retrograde amnesia.
+In this scenario, AI Safety could benefit from more empirical input and the current distribution of backgrounds is an artifact produced by something like the [founder effect](https://en.wikipedia.org/wiki/Founder_effect). To contribute, you might have to learn some basic coding skills and technical vocabulary. But don't spend too much time on this. Your comparative advantage lies elsewhere. Consider applying for the [PIBBSS fellowship](https://www.pibbss.ai/fellowship), but also consider "just start experimenting". [Request research access to the GPT API](https://share.hsforms.com/1b-BEAq_qQpKcfFGKwwuhxA4sk30) and ask the model [some pointed questions](https://universalprior.substack.com/p/cognitive-biases-in-large-language), grab [a dataset](https://www.lesswrong.com/posts/FgjcHiWvADgsocE34/a-descriptive-not-prescriptive-overview-of-current-ai) and investigate the eye color of the prominent researchers in the field[^7], or see what you can learn about [myopia](https://www.lesswrong.com/tag/myopia) by looking at people with anterograde/retrograde amnesia.
 
 Your brain enthusiasm background is your great strength, and it might appear counterintuitive how many [low-hanging fruits are for you to pick](https://www.theseedsofscience.org/2022-on-scaling-academia). _Usually,_ low-hanging fruits are bad (or someone else would have picked them) - but AI Safety might _genuinely_ be in a non-equilibrium state, and some very impactful projects might require little effort. Simply writing a post about what AI Safety looks like [through the lens of something you know well](https://www.lesswrong.com/posts/KtCJNw93KHg7MSSvw/adversarial-attacks-and-optimal-control) could be valuable. It is corny beyond all reasonableness - but you should adopt the [abundance mindset](https://www.clydebankmedia.com/definitions/business/abundance-mindset).
 
@@ -98,7 +98,7 @@ However, even though your brain enthusiasm background is [da shit](http://online
 
 ## What now? A call to action.
 
-In this section, we want to give you different options and recommendations for projects and topics you could contribute to, depending on whether you are more of a bear or a bull[8](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-8-59586443). Consider these "mini-project proposals". If you'd like to work on one of those, feel free to reach out! Perhaps we can help!
+In this section, we want to give you different options and recommendations for projects and topics you could contribute to, depending on whether you are more of a bear or a bull[^8]. Consider these "mini-project proposals". If you'd like to work on one of those, feel free to reach out! Perhaps we can help!
 
  **Forecasting AI capabilities and analyzing AI takeoff scenarios.** One approach for forecasting timelines until the emergence of AGI is to [anchor](https://astralcodexten.substack.com/p/biological-anchors-a-trick-that-might?s=r) the analysis with what we know about the [computational capacity of the human brain](https://www.lesswrong.com/posts/pgQ3m73kpjGDgKuRM/how-much-computational-power-does-it-take-to-match-the-human). This "[Possible further investigation](https://www.lesswrong.com/posts/nfoYnASKHczH4G5pT/Possible%20further%20investigations)" section might be a great starting point.
 
@@ -110,9 +110,9 @@ In this section, we want to give you different options and recommendations for p
 
  **Human-Computer Interaction.**[Assuming](https://www.lesswrong.com/posts/xF7gBJYsy6qenmmCS/don-t-die-with-dignity-instead-play-to-your-outs) AGI doesn't immediately [foom](https://wiki.lesswrong.com/wiki/The_Hanson-Yudkowsky_AI-Foom_Debate?_ga=2.115203591.10725987.1654946975-1319048119.1649575990), the way humanity interacts with AGI might become critical. Studying human susceptibility to manipulation could provide hints at what bounded AI-assisted warfare might look like. Studying historical changes in values might help anticipate what [intentional and unintentional value corruption](https://www.lesswrong.com/posts/HTgakSs6JpnogD6c2/two-neglected-problems-in-human-ai-safety?_ga=2.66222953.693505013.1654946995-662448457.1649576736) might look like. Thinking about how humans can [leverage existing AI tools](https://www.lesswrong.com/posts/A9tJFJY7DsGTFKKkh/high-stakes-alignment-via-adversarial-training-redwood) might provide a critical headstart for optimally designing future safety technology.
 
- **Playing with fire.** Some people used to think it was plausible that AGI can be [achieved by copying the brain](https://www.youtube.com/watch?v=Qgd3OK5DZWI&ab_channel=DeepMind) (although the approach is falling out of favor[9](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-9-59586443)). But even if the secret to AGI is not buried in your neuroanatomy textbook, through some type of convergent evolution AGI _might_ share some features of the human brain. [Modularity appears like a plausible candidate](https://www.lesswrong.com/posts/XKwKJCXgSKhSr9bZY/project-intro-selection-theorems-for-modularity). Perhaps there are others?
+ **Playing with fire.** Some people used to think it was plausible that AGI can be [achieved by copying the brain](https://www.youtube.com/watch?v=Qgd3OK5DZWI&ab_channel=DeepMind) (although the approach is falling out of favor[^9]). But even if the secret to AGI is not buried in your neuroanatomy textbook, through some type of convergent evolution AGI _might_ share some features of the human brain. [Modularity appears like a plausible candidate](https://www.lesswrong.com/posts/XKwKJCXgSKhSr9bZY/project-intro-selection-theorems-for-modularity). Perhaps there are others?
 
- **Exploring directions we haven't thought of.** Maybe you already had ideas when you began reading this article. Great! The above list isn't intended to constrain your creativity; don't be afraid to try out things. In fact, we believe that the most impact of a brain-enthusiast AI safety project could be exactly this: contributing an unusual perspective to AI Safety research[10](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-10-59586443).
+ **Exploring directions we haven't thought of.** Maybe you already had ideas when you began reading this article. Great! The above list isn't intended to constrain your creativity; don't be afraid to try out things. In fact, we believe that the most impact of a brain-enthusiast AI safety project could be exactly this: contributing an unusual perspective to AI Safety research[^10].
 
 If you are still not convinced, consider the [information value gained through failing](https://funds.effectivealtruism.org/grantmaking-approach). High-variability projects are lucrative for grantmakers (more information value gained for future grantmaking), giving you a good shot at getting funding (there is a small probability that the projects mentioned above work out).
 
@@ -124,21 +124,13 @@ While we wrote in an authoritative voice in some places, please read all of this
 
 We look forward to any questions and/or comments below, or via mail to either of us (you can find our contact info on our blogs: [Sam](https://snellessen.com/) & [Jan](https://universalprior.substack.com/)).
 
-[1](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-anchor-1-59586443)
+[^1]:While we focus on brain enthusiasts, our ideas might also apply to other fields that concern themselves with the study of complex social or biological systems.
 
-While we focus on brain enthusiasts, our ideas might also apply to other fields that concern themselves with the study of complex social or biological systems.
+[^2]:We almost certainly got some of these wrong. If you notice a mistake, please reach out to us in the comments or via DM.
 
-[2](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-anchor-2-59586443)
+[^3]:we need a long-tail distribution journal, similar to the Fibonacci Quarterly, seriously.
 
-We almost certainly got some of these wrong. If you notice a mistake, please reach out to us in the comments or via DM.
-
-[3](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-anchor-3-59586443)
-
-we need a long-tail distribution journal, similar to the Fibonacci Quarterly, seriously.
-
-[4](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-anchor-4-59586443)
-
-Other, minor, reasons include:
+[^4]:Other, minor, reasons include:
 
   * Brain enthusiasts aren’t even getting the idea that they could contribute, because of multiple reasons:
 
@@ -153,31 +145,19 @@ Other, minor, reasons include:
 
 
 
-[5](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-anchor-5-59586443)
+[^5]:By the time we have an AGI to experiment on we might not have researchers to do the experimenting.
 
-By the time we have an AGI to experiment on we might not have researchers to do the experimenting.
+[^6]:in expected value
 
-[6](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-anchor-6-59586443)
+[^7]:we already called dibs on the formal education, sorry not sorry.
 
-in expected value
-
-[7](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-anchor-7-59586443)
-
-we already called dibs on the formal education, sorry not sorry.
-
-[8](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-anchor-8-59586443)
-
-We suspect that people from fields that are a) not cognitive science/neuroscience (or a more technical background) and b) nevertheless interested in AI Safety also read this post. In our research, we also found many interesting resources for those people. In this footnote, we want to compile these resources.  
+[^8]:We suspect that people from fields that are a) not cognitive science/neuroscience (or a more technical background) and b) nevertheless interested in AI Safety also read this post. In our research, we also found many interesting resources for those people. In this footnote, we want to compile these resources.  
 See [here](https://metabstract.squarespace.com/blog/compilation-of-thoguhts-on-high-impact-interdisciplinary-research) for a great collection of topics categorized by unusual backgrounds (compiled by Nora Ammann, Project Lead for pibbss.ai -> check this out as well).  
   
 If you have a philosophy background, [check this out](https://www.lesswrong.com/posts/rASeoR7iZ9Fokzh7L/problems-in-ai-alignment-that-philosophers-could-potentially).  
   
 Debating as a method to align agents could be interesting for you if your background is in social sciences (See [here](https://distill.pub/2019/safety-needs-social-scientists/) and [here](https://arxiv.org/pdf/1805.00899.pdf) for more info)
 
-[9](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-anchor-9-59586443)
+[^9]:The new approach is the much less dignified "GPUs go brrrrrr".
 
-The new approach is the much less dignified "GPUs go brrrrrr".
-
-[10](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-anchor-10-59586443)
-
-Even if you fail - we believe this is what the EA community is for. The necessary consequence of 80000hours saying that we have to focus on technical AI Safety research (with a technical background) is not that this is the path everybody has to take. We want to have the highest expected value as a community, not necessarily as an individual. Thus, [be ambitious and do things that have great upside scenarios](https://80000hours.org/articles/be-more-ambitious/) \- the community is covering you!
+[^10]:Even if you fail - we believe this is what the EA community is for. The necessary consequence of 80000hours saying that we have to focus on technical AI Safety research (with a technical background) is not that this is the path everybody has to take. We want to have the highest expected value as a community, not necessarily as an individual. Thus, [be ambitious and do things that have great upside scenarios](https://80000hours.org/articles/be-more-ambitious/) \- the community is covering you!

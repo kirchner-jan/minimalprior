@@ -97,12 +97,10 @@ Text within this block will maintain its original spacing when published
     
     I walk home alone. _Ah no, with two friends._ _They are talking about the Sahara desert and how you can repurpose an old fire engine to travel through the desert. In fact, you can fit an entire family into that thing and just go from village to village. And you'll have all eyes on you when you arrive; what a ridiculous(ly awesome) scene._
 
-I yawn. The fire engine story doesn’t move me. Even the excitement of my friends does not manage to jump over. I used to be very worried about that; why don't I like what other people like? But the angst has been in retrograde for a long while now, and I've learned to like myself[1](https://universalprior.substack.com/p/im-not-getting-in-that-van#footnote-1-52921017). And it's even more than that. I've learned to like _everyone else,_ too, even if they talk about fire engines. _Especially_ when they talk about fire engines.
+I yawn. The fire engine story doesn’t move me. Even the excitement of my friends does not manage to jump over. I used to be very worried about that; why don't I like what other people like? But the angst has been in retrograde for a long while now, and I've learned to like myself[^1]. And it's even more than that. I've learned to like _everyone else,_ too, even if they talk about fire engines. _Especially_ when they talk about fire engines.
 
 I draw energy from that thought. This is what humanity _is_. It's driving a fire engine through the desert and rejoicing. It's partying through the night, bonfires, night swims, friendship, art, and awkwardness. It's [climbing into a random van](https://forum.effectivealtruism.org/posts/cRsPfkyAKZ3crxynB/get-in-the-van) and going on adventures. It sits at the core of everything.
 
 I don't tend to do those things myself too much. I love numbers and thinking about the future. I am restless. And I am fine. Caring about numbers is humanity, too, you know. We might be somewhat different, you and I, but in the end, we all want the same things.
 
-[1](https://universalprior.substack.com/p/im-not-getting-in-that-van#footnote-anchor-1-52921017)
-
-Most of the time.
+[^1]:Most of the time.
