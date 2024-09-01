@@ -15,7 +15,7 @@ Buckle up, this will be a weird one.
 
 Before I get into the nitty-gritty of my newfound interest in fashion, let me first address the elephant in the room - why care about fashion in the first place[2](https://universalprior.substack.com/p/this-week-in-fashion#footnote-2-97157004)?
 
-# Why fashion
+## Why fashion
 
 There are three different schools[3](https://universalprior.substack.com/p/this-week-in-fashion#footnote-3-97157004) of thought on the question.
 
@@ -31,11 +31,11 @@ There are three different schools[3](https://universalprior.substack.com/p/this-
 
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F435c1e15-ae89-41be-b0f8-b62c9ec83c07_1585x1433.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F435c1e15-ae89-41be-b0f8-b62c9ec83c07_1585x1433.png)
 
-# Why I'm not buying it
+## Why I'm not buying it
 
 But none of these explanations are quite satisfying (or even mutually exclusive). Let’s put them under the microscope one by one.
 
-#### Is fashion a form of _power and influence_? 
+##### Is fashion a form of _power and influence_? 
 
 Let's start with numbers: Global revenue from luxury apparel [comes in at US$82.30bn](https://www.statista.com/outlook/cmo/luxury-goods/luxury-fashion/luxury-apparel/worldwide), which is a so-called [not-insignificant-number](https://universalprior.substack.com/p/on-scaling-academia#:~:text=\).%20Those%20are-,not%2Dsmall%20numbers,-%2C%20but%20they%20pale). [Thanks to the bird app](https://fortune.com/2022/12/13/elo-musk-no-longer-world-richest-person-net-worth-drop/), the richest person on earth is now the CEO of the world's largest luxury goods company[5](https://universalprior.substack.com/p/this-week-in-fashion#footnote-5-97157004).
 
@@ -56,7 +56,7 @@ Unfortunately, this "truth by definition" also makes the insight vacuous. My que
 
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f8a79bc-3c06-4c02-a2e5-2155d2ca6dfb_1422x1433.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f8a79bc-3c06-4c02-a2e5-2155d2ca6dfb_1422x1433.png)
 
-#### Is fashion all about _signaling_ and the _slow, cyclical propagation of status markers through society's ranks_?
+##### Is fashion all about _signaling_ and the _slow, cyclical propagation of status markers through society's ranks_?
 
 There certainly is some truth to the barber pole phenomenon. When sources as distinct as SlateStarCodex and [CurrentBoutique](https://currentboutique.com/blogs/cravingcurrent/why-do-fashion-trends-come-back) report the same phenomenon, _something_ real is happening. Fashion trends _do_ come back
 
@@ -70,7 +70,7 @@ While the general cuts of fashion tend to return in some form or other, the deta
 
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fba7d9a51-1322-4231-83cb-825355a7e5aa_1537x1433.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fba7d9a51-1322-4231-83cb-825355a7e5aa_1537x1433.png)
 
-#### Is fashion about creative self-expression and art appreciation?
+##### Is fashion about creative self-expression and art appreciation?
 
 This theory is actually correct. I think ‘fashion can help us better understand ourselves, each other, and the world we live in’ is the true answer. People tend to buy pretty things that are valuable to them and they fit into the big tapestry of everything.
 
@@ -80,7 +80,7 @@ But it falls short of its potential[11](https://universalprior.substack.com/p/th
 
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdd11fff4-808e-4315-bc91-097023901502_1024x1024.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdd11fff4-808e-4315-bc91-097023901502_1024x1024.png)I give it 3/5 Jans.
 
-# What I did about it
+## What I did about it
 
 So now we find ourselves at the center of my holiday obsession.
 
@@ -103,7 +103,7 @@ There is [more](https://iep.utm.edu/empirical-aesthetics/) [than](https://en.wik
 
 
 
-# The Mechanical Anna Wintour
+## The Mechanical Anna Wintour
 
 Despite laboring away for multiple **days** I still felt insecure about my ability to distinguish good from bad fashion. I _do_ however feel rather secure about my ability to [train a neural network to learn human preferences](https://universalprior.substack.com/p/inferring-utility-functions?utm_source=substack&utm_campaign=post_embed&utm_medium=web). So I threw the experiment strategy out the window, obtained a full scrape of the [Vogue Archive](https://archive.vogue.com/), performed object detection to get cutouts of all the outfits, and embedded the cutouts in a semantic vector space with [CLIP](https://huggingface.co/docs/transformers/model_doc/clip).
 
@@ -127,7 +127,7 @@ So I made the website public for you all to try:
 
 All your rankings are stored in a database, so I’ll be able to do some fantastic data analysis soon. If you enter your email address, I might send you your top 15 images. And maybe a follow-up survey. Eventually, with sufficient data, I might be able to get to the bottom of what makes beautiful things beautiful. And then, perhaps, I could install a camera in the closet and help me pick my outfits…
 
-# Closing words
+## Closing words
 
 The holidays have been over for a while, but the finishing touches on this project ended up taking a while. That’s a bummer because I would love to dive deeper into the world of fashion. Knocking out the fashionator app was a ton of fun, and there are so many things I’d like to implement:
 

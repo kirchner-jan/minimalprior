@@ -9,7 +9,7 @@ date: 2022-01-31
 
 _Meta: As this post is all about summarization (and since I value your time!), I’m experimenting with putting a_ **`one sentence`** **`summary`** _ **``** at the beginning of each paragraph. Let me know if you hate this in the comments._
 
-#  **Astonishing Asymmetries**
+##  **Astonishing Asymmetries**
 
  **`There is a curious asymmetry in how difficult it is to make something versus how easy it is to evaluate it.`** After working on an idea for a couple of days, I usually run my work by a friend or[1](https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-1-47977244) colleague once I _think_ I have found a solution. More often than not, said colleagues manage to find a flaw in my argument in 5 minutes. While I can't deny that some of them are smarter than me, they are _not_ smart enough to do the same amount of mental work in 5 minutes that took me several days. They are no [clones of John von Neumann](https://fantasticanachronism.com/2021/03/23/two-paths-to-the-future/)[2](https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-2-47977244).
 
@@ -17,7 +17,7 @@ _Meta: As this post is all about summarization (and since I value your time!), I
 
  **`For this strategy to work we need to`** _ **`decompose`**_ **`complex tasks.`** [But it turns out that](https://www.lesswrong.com/s/xezt7HYfpWR6nwp7Z/p/vhfATmAoJcN8RqGg6) a critical property for these proposals to work out is that we can _decompose_ tasks into simpler subtasks. It is an empirical question whether this is possible in general, and some [initial results](https://ought.org/updates/2020-01-11-arguments) looked a bit discouraging[3](https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-3-47977244). But there is also more recent research on "[Recursively Summarizing Books with Human Feedback](https://arxiv.org/abs/2109.10862)" that looks more encouraging[4](https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-4-47977244). What is this proposal, and why is it encouraging? I'm glad you ask.
 
-#  **Recursive Raillery**
+##  **Recursive Raillery**
 
  **`Summarizing books is an instructive test case.`** Reading an entire book and summarizing its content is [hard work and costs time](https://www.cold-takes.com/reading-books-vs-engaging-with-them/), so it would be fantastic if we could get someone else to do it for us. But how can we trust someone to do a good job at the summary? How do we know they are not leaving out important things or that the resulting summary is completely decoupled from the original text[5](https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-5-47977244)?
 
@@ -29,7 +29,7 @@ _Meta: As this post is all about summarization (and since I value your time!), I
 
  **`Reward modeling is a scalable technique for verification.`** "[Recursively Summarizing Books with Human Feedback](https://arxiv.org/abs/2109.10862)" demonstrates that "[reward modeling](https://arxiv.org/abs/1811.07871)" can do the trick. We can capture human preferences for one summary over another in a reward model, serving as a target for the summarization process. The result is a collection of pretty good summaries of [hundreds of books](https://openaipublic.blob.core.windows.net/recursive-book-summ/website/index.html?data_id=175b%2F4&dataset=gutenberg#/gutenberg), produced by repeatedly breaking down the summarization task into simpler subtasks. Pretty nifty, right?
 
-#  **Frenzied Factorization**
+##  **Frenzied Factorization**
 
  **`Summarization is idempotent and books are highly structured.`** Well, of course there are caveats. As alluded to above, summarising books lends itself well to decomposition[7](https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-7-47977244). This is due to two factors:
 
@@ -48,7 +48,7 @@ As a consequence, we can solve each step of the process with the same operation,
 
  **`Scientific inquiry as a robust technique for decomposition.`** [There is, of course, another way of looking at this.](https://youtu.be/1bSPNboKCzM?t=966) We _do_ have a much more robust method for decomposing problems: scientific inquiry. Half of the research process is about [finding the question](https://www.quora.com/How-long-does-it-take-for-a-PhD-scholar-to-decide-on-a-research-topic). Similarly, the hard part of proving a complicated mathematical theorem is _seeing_ why it has to be true; often, writing the proof can be almost mechanic. If we could automate scientific inquiry, we might get to a point where we can _reliably_ discover appropriate decompositions of problems.
 
-#  **Dense Discoveries**
+##  **Dense Discoveries**
 
  **`Automating scientific inquiry is hard.`** Just saying “science!” is easy, of course. While we have [great tools](https://openai.com/blog/openai-api/) for automating debates, we [do not even have a clear idea](https://en.wikipedia.org/wiki/Philosophy_of_science) of what the scientific method _actually looks like_. Most knowledge about science is implicit, and an [unhealthy admiration of serendipity](http://philsci-archive.pitt.edu/14127/1/On%20Serendipity%20in%20Science%20FINAL_preprint.pdf) pervades academia. [I](https://universalprior.substack.com/p/making-of-ian) [have](https://universalprior.substack.com/p/on-scaling-academia) [some](https://universalprior.substack.com/p/on-not-reading-papers) [ideas](https://universalprior.substack.com/p/on-automatic-ideas) for automating parts of the research process, but the core of the problem eludes me[9](https://universalprior.substack.com/p/task-decomposition-and-scientific#footnote-9-47977244).
 

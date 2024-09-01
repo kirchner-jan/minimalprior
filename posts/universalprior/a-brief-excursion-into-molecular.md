@@ -11,7 +11,7 @@ date: 2022-04-10
 
 _Previously in this series:[How to build a mind - neuroscience edition,](https://universalprior.substack.com/p/how-to-build-a-mind-neuroscience?s=w) [Serendipitous connections: applying explanations from AI to the brain](https://universalprior.substack.com/p/serendipitous-connections-applying?s=w)_, [The Unreasonable Feasibility Of Playing Chess Under The Influence.](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing?s=w)
 
-#  **The Emperor's New Ǫ̵͎͊G̶̦̉̇l̶͉͇̝̽͆̚i̷͔̓̏͌c̷̱̙̍̂͜k̷̠͍͌l̷̢̍͗̃n̷̖͇̏̆å̴̤c̵̲̼̫͑̎̆**
+##  **The Emperor's New Ǫ̵͎͊G̶̦̉̇l̶͉͇̝̽͆̚i̷͔̓̏͌c̷̱̙̍̂͜k̷̠͍͌l̷̢̍͗̃n̷̖͇̏̆å̴̤c̵̲̼̫͑̎̆**
 
  _(Ǫ̵͎͊G̶̦̉̇l̶͉͇̝̽͆̚i̷͔̓̏͌c̷̱̙̍̂͜k̷̠͍͌l̷̢̍͗̃n̷̖͇̏̆å̴̤c̵̲̼̫͑̎̆ is an intentionally[garbled](https://lingojam.com/GlitchTextGenerator) version of the word O-GlcNAc. The reasons for garbling it will hopefully become clear while reading this essay!)_
 
@@ -31,7 +31,7 @@ There are some things to be said here about how we use terminology[3](https://un
 
 When I was first confronted with the [alphabet soup](https://rupress.org/jcb/article/160/4/466/33255/Stories-of-Cells-The-American-Society-for-Cell#:~:text=supplied%20us%20with-,many%20gene%20names,-%28an%20%E2%80%9Calphabet%20soup) that calls itself molecular neuroscience, I was _awed_ by my colleagues, who appeared to be fluent in speaking p̴͓̂͘á̴̻͌s̶̻̗͋͑ṯ̸̹̈́̌à̶̳. It took me a year or two to figure out that they also do not know what most of the terms mean - and for most abbreviations, there are only a handful of people in the world who _can_ decode them. But nobody likes to [acknowledge that they don't know what things mean publicly](https://en.wikipedia.org/wiki/The_Emperor%27s_New_Clothes). Therefore everybody nods along when they read Ǫ̵͎͊G̶̦̉̇l̶͉͇̝̽͆̚i̷͔̓̏͌c̷̱̙̍̂͜k̷̠͍͌l̷̢̍͗̃n̷̖͇̏̆å̴̤c̵̲̼̫͑̎̆. So it's fine if you don't know what it means. Almost nobody does[6](https://universalprior.substack.com/p/a-brief-excursion-into-molecular#footnote-6-51607370).
 
-#  **Let’s talk about BDNF.**
+##  **Let’s talk about BDNF.**
 
 Perhaps you are the kind of person that takes the preceding paragraphs as a challenge, and you’d like to learn to speak p̴͓̂͘á̴̻͌s̶̻̗͋͑ṯ̸̹̈́̌à̶̳ yourself. Or perhaps you like to read about different levels of abstraction, what we gain by using them, and how we can transition between them. Or perhaps you’re having a slow day and want to learn something funky. In all those cases, this essay is certainly for you. 
 
@@ -114,7 +114,7 @@ BDNF makes the neuroscience landscape [light up like a Christmas tree](https://g
 
 So I conclude that there is _some_ true signal in all the noise. That’s rather fortunate[11](https://universalprior.substack.com/p/a-brief-excursion-into-molecular#footnote-11-51607370) for me since it means that the time I already spent [working on this](https://www.nature.com/articles/s41467-021-23557-3#:~:text=an%20activity%2Ddependent-,neurotrophin,-model) is not (completely) wasted. Let’s see if we can unpack this further and separate the fluff from the science.
 
-# Exposition
+## Exposition
 
 It’s 1982[12](https://universalprior.substack.com/p/a-brief-excursion-into-molecular#footnote-12-51607370), [and you are](https://en.wikipedia.org/wiki/Hans_Thoenen) a Swiss-born neurobiologist[13](https://universalprior.substack.com/p/a-brief-excursion-into-molecular#footnote-13-51607370) who finds himself as the director of the Max-Planck Institute for Psychiatry[14](https://universalprior.substack.com/p/a-brief-excursion-into-molecular#footnote-14-51607370) established only 5 years earlier. During your childhood in the Swiss mountainside, you would not have expected to find yourself in a laboratory, cooled down to 4°, containing several refrigerators filled with pig brains and a blender; but here you are. Together with [your colleague,](https://www.cardiff.ac.uk/people/view/81114-barde-yves) you are looking at a dark stripe localized in a single spot of the gel you just electrophorized. You can’t quite hide your satisfaction that the procedure worked. Indeed, it seems there _is_ a growth factor in the central nervous system that nobody has seen before.
 
@@ -140,7 +140,7 @@ While BDNF initially was only found in brain smoothies that are not doing much o
 
 Alright, so far[,](https://www.science.org/doi/10.1126/science.2549634) so good. Neurons contain BDNF, which brings about good things, and its evil twin, proBDNF, which brings about bad things. When a neuron fires, we get some additional BDNF. But _how_ does BDNF bring about good things? I’m glad you ask.
 
-#  **Levels of abstraction**
+##  **Levels of abstraction**
 
 Have you ever wondered what a synapse looks like up close[17](https://universalprior.substack.com/p/a-brief-excursion-into-molecular#footnote-17-51607370)? Synapses are too small to see or even to image properly[18](https://universalprior.substack.com/p/a-brief-excursion-into-molecular#footnote-18-51607370), but Dr. [David Goodsell](https://ccsb.scripps.edu/goodsell/) at the Scripps Research Institute has a great knack for illustrating what we would see if we were to look at a synapse in all its molecular glory:
 
@@ -158,7 +158,7 @@ Don’t worry if you didn’t get that summary of BDNF action; I don’t get it 
 
 But this level of abstraction still has severe limitations: Unless we have some _real_ expertise in molecular neuroscience, we are essentially operating at the level of [Ţ̷̣̙̖̠͊͑͌͌̈̚l̵̻̯̪͇͙̓̀̐d̶̖̊́t̶̰̄̎̌̈͛ͅs̵͎͇͍̮͑̎́̌̆i̶̱̙͕̰͎̍̅a̸̩͕̐͝ͅw̶̝̘̗͕̰̉̎̃s̵̹̀͘d̸̝͊̽́̎́i̴͇͈̝̭̝̝͋̍̿̐͝,](https://www.lesswrong.com/posts/f4txACqDWithRi7hs/occam-s-razor#:~:text=whole%20sentence%20as%20%E2%80%9C-,Tldtsiawsdi,-!%E2%80%9D%20so%20that%20the) recounting [magic password](https://www.lesswrong.com/posts/NMoLJuDJEms7Ku9XS/guessing-the-teacher-s-password) that lets us pass a test. What does any of it _mean_[23](https://universalprior.substack.com/p/a-brief-excursion-into-molecular#footnote-23-51607370)? Taken in isolation, “PLC-γ-mediated activation of IP3” are prototypical “[words of false comprehension](https://www.hpmor.com/chapter/109#:~:text=%22-,The,-runes%20say%2C%20noitilov)”, disjoint from anything we can mentally operate on. If we want to understand more, we’ll have to zoom out further[24](https://universalprior.substack.com/p/a-brief-excursion-into-molecular#footnote-24-51607370),[25](https://universalprior.substack.com/p/a-brief-excursion-into-molecular#footnote-25-51607370).
 
-# Less is More?
+## Less is More?
 
 To simplify the tangle of arrows and boxes from the picture in the previous section, we can do: 1. **clustering** , 2. **summarizing** , and 3. **unrolling in time**. 
 
@@ -195,7 +195,7 @@ Resolving this type of confusion is not straightforward. Here are some possible 
 
 I’m still unsure what the answers to these questions are, and I have a good bit of probability mass on the three non-answers above[31](https://universalprior.substack.com/p/a-brief-excursion-into-molecular#footnote-31-51607370). There is, however, [another way of looking at this](https://www.youtube.com/watch?t=966&v=1bSPNboKCzM&feature=youtu.be).
 
-# Neurotrophin balance is all you need
+## Neurotrophin balance is all you need
 
 In a shocking plot twist, the evil twin proBDNF reappears on the scene, resolving the dramatic tension rising throughout the preceding sections[32](https://universalprior.substack.com/p/a-brief-excursion-into-molecular#footnote-32-51607370). Before we can witness the spectacle, here is an epistemic warning sign:
 
@@ -230,7 +230,7 @@ I’m pretty satisfied with these answers, but I want to stress again that a lot
 
 So let’s wait and see what the universe says when we ask it.
 
-# Closing thoughts
+## Closing thoughts
 
 We’ve learned a bit about the beautiful language I call p̴͓̂͘á̴̻͌s̶̻̗͋͑ṯ̸̹̈́̌à̶̳, we’ve looked at pretty pictures, and we’ve closely observed what we do when we abstract away things. What more could we wish for on a slow Sunday afternoon?
 

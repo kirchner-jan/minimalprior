@@ -7,7 +7,7 @@ date: 2021-11-15
 ---
 
 
-## **What is the Greedy Doctor Problem?**
+### **What is the Greedy Doctor Problem?**
 
 I came up with a neat little thought experiment[1](https://universalprior.substack.com/p/the-greedy-doctor-problem#footnote-1-44025459):
 
@@ -15,7 +15,7 @@ I came up with a neat little thought experiment[1](https://universalprior.substa
 
 Over the last few weeks, I've been walking around and [bugging people](https://universalprior.substack.com/p/applied-mathematical-logic-for-the) with this question to see what they come up with. Here I want to share some of the things I learned in the process with you, as well as some potential answers. I don't think the question (as presented) is completely well-formed, so the first step to answering it is clarifying the setup and [deconfusing](https://www.lesswrong.com/posts/5Nz4PJgvLCpJd6YTA/looking-deeper-at-deconfusion) the terms. Also, as is typical with thought experiments, I do not have a definitive "solution" and invite you (right now!) to try and come up with something yourself[2](https://universalprior.substack.com/p/the-greedy-doctor-problem#footnote-2-44025459).
 
-##  **Some background on the problem**
+###  **Some background on the problem**
 
 The subtext for the thought experiment is: How should you act when interacting with someone [smarter than yourself](https://www.lesswrong.com/posts/kXSETKZ3X9oidMozA/the-level-above-mine)? What can you say or do, when your interlocutor has thought of everything you might say and more? Should you _trust_ someone's advice, when you can't pinpoint their motivation? As a Ph.D. student, I run into this problem around three to five times a week, when interacting with colleagues or my advisor[3](https://universalprior.substack.com/p/the-greedy-doctor-problem#footnote-3-44025459).
 
@@ -29,7 +29,7 @@ While this impossibility result is prima facie discouraging, it reveals a useful
 
 But having said all that, I have not encountered any satisfying proposals for how to approach the problem, nor convincing arguments for why these approaches fail. So let's think about it ourselves.
 
-##  **Three approaches to handling greedy doctors**
+###  **Three approaches to handling greedy doctors**
 
 Here is how I think about the situation:
 
@@ -41,7 +41,7 @@ This is a (slightly pathological) [Markov Decision Process](https://en.wikipedia
 
 What does this set-up buy us?
 
-###  **Scenario one: just pay the doctor, dammit.**
+####  **Scenario one: just pay the doctor, dammit.**
 
 This first approach appears silly after setting up all the mathematical apparatus, but I include it since I got this suggestion from one or two people: Why don't we just pay the doctor when they diagnose something?
 
@@ -82,7 +82,7 @@ So that you don't just have to trust me that something like this is bound to hap
 
 This is a classic case of [outer alignment](https://www.lesswrong.com/tag/outer-alignment) failure: The thing we wrote down does not actually capture the thing we care about. Try again.
 
-###  **Scenario two: Do the obvious thing.**
+####  **Scenario two: Do the obvious thing.**
 
 The second proposed solution is _very_ commonsensical: Just [ask for a second opinion](https://www.webmd.com/a-to-z-guides/features/how-to-ask-for-second-opinion) and _only_ pay the doctors when they come to the same conclusion. While this _sounds_ clever, it falls into the same trap as before. When both doctors are _greedy_ , they will coordinate and both _always_ say that you are either healthy or that you need treatment.
 
@@ -131,7 +131,7 @@ Clearly, we'd want to forbid any communication between the doctors. However, it 
 
 Just forcing the doctors to cooperate leaves too many doors open. We need something more... [adversarial](https://en.wikipedia.org/wiki/Generative_adversarial_network).
 
-### Scenario three: Do the _other_ obvious thing.
+#### Scenario three: Do the _other_ obvious thing.
 
 The other most common-sensical answer that I heard a lot can be summarized in two words: [lawyer up](https://www.youtube.com/watch?v=wqnHtGgVAUE). Instead of trusting in the goodwill of the doctor, or letting them come up with a cozy cooperative deal, make them work for their money. The idea is simple: get a detective to investigate what the doctor is doing. If it looks shady, don't pay the doctor.
 
@@ -149,7 +149,7 @@ The highest reward that the doctor can now get is with random performance (Rewar
 
 What do we do in the case of a more sophisticated doctor that might have a random number generator available? Running that generator would result in the same reward as forwarding the randomness from the observation. However, [true randomness is really hard to get by](https://www.americanscientist.org/article/the-quest-for-randomness) and computers usually use routines that produce numbers that [look random, but aren’t really](https://en.wikipedia.org/wiki/Pseudorandomness). If the detective was an exact clone of the doctor[23](https://universalprior.substack.com/p/the-greedy-doctor-problem#footnote-23-44025459), they would have access to the exact same random number generators as the doctor. Whatever routine the doctor uses to determine a [seed](https://en.wikipedia.org/wiki/Random_seed) for the generator, the detective would come up with the same routine. The only source of randomness that the doctor has access to, but the detective doesn’t, is (by construction) the observation.
 
-## Truth values and terminal diseases
+### Truth values and terminal diseases
 
 This leaves us with one[24](https://universalprior.substack.com/p/the-greedy-doctor-problem#footnote-24-44025459) central conundrum: When is it appropriate to model reality as a flip of a coin? I’m not sure. I guess at this point the doctor analogy has served its usefulness and it makes sense to talk about advanced AI instead. The central question then translates into: How can we incentivize an advanced AI (that might be smarter than us) to tell us truthfully about its inferences - even though those inferences completely fly over our heads and we have no way of verifying the truthfulness.
 

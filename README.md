@@ -4,13 +4,13 @@ Monospace fonts are dear to many of us. Some find them more readable, consistent
 
 https://owickstrom.github.io/the-monospace-web/
 
-## Build
+### Build
 
 ```
 nix develop # or `direnv allow .`
 make
 ```
 
-## License
+### License
 
 [MIT](LICENSE.md)

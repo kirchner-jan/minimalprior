@@ -22,7 +22,7 @@ There are two complementary avenues for ensuring that humanity successfully navi
 
 In this post, I will explore possible implications on Compute Governance of a recently proposed technique for accelerating progress in AI research ([Chen et al. 2019](https://arxiv.org/abs/1903.03129)).
 
-#  **State of Compute Governance, “AI-specialized” and “commodity” hardware**
+##  **State of Compute Governance, “AI-specialized” and “commodity” hardware**
 
 To properly contextualize the proposed technique, I will briefly summarize the state of Compute Governance. A series of reports from the Center for Security and Emerging Technology ([CSET](https://cset.georgetown.edu/)) examines the supply chain for computing resources ([Khan et al.,2021](https://cset.georgetown.edu/publication/the-semiconductor-supply-chain/)). In particular, the reports 
 
@@ -41,7 +41,7 @@ However, existing proposals for effective Compute Governance consistently make o
 
 While most cutting-edge research occurs on AI-specialized hardware ([Amodei and Hernandez 2018](https://openai.com/blog/ai-and-compute/)), it is unclear whether this is necessary or merely convenient. Furthermore, recent progress in algorithmic efficiency ([Ye et al. 2021](https://arxiv.org/abs/2111.00210); [Hernandez and Brown 2020](https://openai.com/blog/ai-and-efficiency/)) casts doubt on whether access to AI-specialized hardware will continue to be the main factor driving performance gains. 
 
-# **Commodity hardware might outperform AI-specialized hardware**
+## **Commodity hardware might outperform AI-specialized hardware**
 
 Much of the performance advantage of AI-specialized hardware comes from sacrificing flexibility for efficiency ([Heim 2021](https://forum.effectivealtruism.org/s/4yLbeJ33fYrwnfDev/p/YNB39RyJ7iAQKGJvq#Chip_Architectures__From_Flexibility_to_Efficiency)). In particular, as the pivotal operations of learning in deep networks are ["embarrassingly parallel"](https://www.wikiwand.com/en/Embarrassingly_parallel) operations (dense matrix multiplication), AI-specialized hardware sacrifices sequential processing speed for increased parallel processing bandwidth ([Gupta 2020](https://developer.nvidia.com/blog/cuda-refresher-reviewing-the-origins-of-gpu-computing/)). Embracing this trade-off has been the primary driver behind the impressive increase in computational capabilities of AI-specialized hardware ([Sato et al. 2017](https://cloud.google.com/blog/products/ai-machine-learning/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu)).
 
@@ -57,7 +57,7 @@ Researchers from the [Shrivastava lab](https://www.cs.rice.edu/~as143/) present 
 
 Indeed, their proposed implementation on commodity hardware, called "Sub-LInear Deep learning Engine" (SLIDE), outperforms AI-specialized hardware. Using SLIDE, Chen and colleagues can achieve 3.5 times faster training on commodity hardware (44 cores CPU) than AI-specialized hardware (Tesla V100). In collaboration with researchers from Intel, they were able to improve performance even further to a speedup of up to 7 times by exploiting advanced features of commodity hardware ([Daghaghi et al., 2021](https://arxiv.org/abs/2103.10891)). With the venture-funded startup [ThirdAI](https://www.thirdai.com/team/), Shrivastava and colleagues are now developing an "algorithmic accelerator for training deep learning models that can achieve or even surpass GPU-level performance on commodity CPU hardware" ([Bolt 2021](https://www.thirdai.com/bolt-overview/)). While the software is still closed alpha, a recent blog post [announced](https://www.thirdai.com/cpu-or-gpu/) the successful training of a 1.6 billion parameter model on CPUs. This research suggests that AI researchers' heavy reliance on AI-specialized hardware might not be necessary and that commodity hardware can achieve equal or greater performance.
 
-#  **Implications of Efficient Commodity Hardware on Compute Governance**
+##  **Implications of Efficient Commodity Hardware on Compute Governance**
 
 Before analyzing some of the caveats and weaknesses of the proposed approach, I want to take the published results at face value and mention implications. If broadly adopted, a shift away from AI-specialized hardware to commodity hardware would have significant implications for AI Safety in general and Compute Governance in particular.
 
@@ -69,7 +69,7 @@ Before analyzing some of the caveats and weaknesses of the proposed approach, I 
 
  **Secondary markets.** There exists a much larger secondary market for used commodity hardware than for AI-specialized hardware. It is conceivable that bad actors can bypass existing policies restricting access to AI-specialized hardware by buying commodity hardware on the second market.
 
-#  **Limiting factors and open questions**
+##  **Limiting factors and open questions**
 
 After presenting the argument for the use of commodity hardware in accelerating AI research, I now want to highlight that there are considerable limitations and reasons for doubting this outcome.
 
@@ -79,7 +79,7 @@ After presenting the argument for the use of commodity hardware in accelerating 
 
  **Scalability.** As discussed in the previous section, it is unclear whether the proposed technique would scale up naturally to extremely large computing systems like the [Fugaku supercomputer](https://en.wikipedia.org/wiki/Fugaku_\(supercomputer\)). Avoiding diminishing (or even disappearing) returns when scaling up AI-specialized hardware to trillion parameter models is an active area of research ([Rajbhandari et al. 2019](https://arxiv.org/abs/1910.02054); [Shoeybi et al. 2020](https://arxiv.org/abs/1909.08053)). Thus, while commodity hardware might be able to replace AI-specialized hardware in smaller computing systems, this translation might well break down once we attempt to scale up the systems.
 
-#  **Conclusions and Outlook**
+##  **Conclusions and Outlook**
 
 Despite the limitations of the approach highlighted in the previous section, this analysis has uncovered a number of insights relevant to Compute Governance that apply more broadly.
 

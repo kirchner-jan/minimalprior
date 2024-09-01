@@ -15,7 +15,7 @@ Subscribe
 
 * * *
 
-# Technically, I _am_ modeling for a living
+## Technically, I _am_ modeling for a living
 
 A couple of months ago I've started asking my colleagues during lunch what their definition of a "model" is. This question is important: our job consists of building, evaluating, and comparing models. I am not hoping for an Aristotelean list of necessary & sufficient conditions, but it still appears like a good idea to "survey the land". Also, admittedly, lunch can get a bit boring without challenging questions.
 
@@ -41,7 +41,7 @@ Alright, survey done, lunch is over. Back to...
 
 * * *
 
-# In search of tighter concepts
+## In search of tighter concepts
 
 No! I'm not satisfied. What do you mean it's a _sociological_ term? What do you mean they are _false_? Can a model have a truth value? If a model is a "representation" / "abstraction" / "description" then what _exactly_ is a "representation" / "abstraction" / "description"? This is not some [idle philosophical nitpicking](https://www.lesswrong.com/posts/FwiPfF8Woe5JrzqEu/philosophy-a-diseased-discipline), this question is _immediately_ important. As a reviewer, I have to judge whether a model is _good_ (enough). As a researcher, I want to build a _good_ model. I'm not going to devote my career to building models if I don't have a _really good_ idea of what a model _is_.
 
@@ -53,7 +53,7 @@ So in the spirit of [conceptual engineering](https://www.lesswrong.com/posts/9iA
 
 * * *
 
-# Mathematical logic to the rescue
+## Mathematical logic to the rescue
 
 Since we mean so many different things by the term "model" it makes sense to start very general, i.e. mathematical. There is indeed a subfield of mathematics called "[model theory](https://en.wikipedia.org/wiki/Model_theory)" that makes some very useful distinctions! I'll trample over all subtleties to get to the core quickly, but consider checking out [this](https://www.lesswrong.com/posts/MG8Yhsxqu9JY4xRPr/mental-context-for-model-theory) or [this](https://www.lesswrong.com/s/SqFbMbtxGybdS2gRs/p/Z2CuyKtkCmWGQtAEh) for accessible introductory reading.
 
@@ -89,7 +89,7 @@ All fine and well. What does this added complexity buy us?
 
 * * *
 
-# Good models, bad models
+## Good models, bad models
 
 Defining a model as an object satisfying a theory is broad enough to cover all the ways in which the term is used:
 
@@ -114,7 +114,7 @@ Why does it make sense to set up things like this?
 
 * * *
 
-# Models with benefits
+## Models with benefits
 
 First, it establishes a neat hierarchy. Understanding is gradual: It goes from non-existing (chance level) to poor (consistently above chance[7](https://universalprior.substack.com/p/applied-mathematical-logic-for-the#footnote-7-42721010)) to great (almost perfect prediction) to complete (100% prediction accuracy).
 
@@ -132,7 +132,7 @@ Thus, to determine whether a model is good or bad, you have to figure out which 
 
 * * *
 
-# Cliffhanger!
+## Cliffhanger!
 
 This is almost all I wanted to say on the topic. But I glossed over an important point in that exposition: If a model is a mathematical object, why might we expect that it can predict physical processes _out there in the territory_? In fact, why should there be _any_ similarity between the [solar system and the atom](https://en.wikipedia.org/wiki/Bohr_model)[10](https://universalprior.substack.com/p/applied-mathematical-logic-for-the#footnote-10-42721010)? Why does [analogical reasoning](https://plato.stanford.edu/entries/reasoning-analogy/) work?
 

@@ -9,7 +9,7 @@ date: 2021-12-09
 
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2b9f91e8-ef19-49fb-b934-70af62c41324_520x228.gif)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2b9f91e8-ef19-49fb-b934-70af62c41324_520x228.gif)A prototype for automatic idea generation.
 
-### Code first, ask questions later
+#### Code first, ask questions later
 
 In [On Scaling Academia](https://universalprior.substack.com/p/on-scaling-academia) I made the case that _automatic research_ , i.e. AI-supported & scalable application of the [scientific method](https://www.hpmor.com/chapter/8#:~:text=science%20investigation%20project%3A-,Step,-1%3A%20Form%20a), might be great. My argument went like this,
 
@@ -20,7 +20,7 @@ In [On Scaling Academia](https://universalprior.substack.com/p/on-scaling-academ
 
 However, many things "might be great"[1](https://universalprior.substack.com/p/on-automatic-ideas#footnote-1-45230438), but most aren't [tractable](https://forum.effectivealtruism.org/tag/itn-framework-1). Does _automatic research_ fall into that category? It's tempting to [tackle that question from the metaphorical ivory tower](https://www.nature.com/articles/s41599-020-0494-4) and to get lost in definitions and speculation. That's not my comparative advantage[2](https://universalprior.substack.com/p/on-automatic-ideas#footnote-2-45230438), I prefer getting excited and building things. In this spirit, I'll "code first, ask questions later". Instead of doing all of research at once, I focus on a central aspect of research, _idea generation_ , and present some of my initial experiments and experiences with automating idea generation.
 
-###  **Using IAN to generate all the (proto-)ideas**
+####  **Using IAN to generate all the (proto-)ideas**
 
 The first insight is that having ideas is _really easy_. The problem is having _good_ ideas[3](https://universalprior.substack.com/p/on-automatic-ideas#footnote-3-45230438). When you feel like you can't come up with any ideas, you probably can’t see the forest for the trees. Generating ideas is a combinatoric process: take two things (or more), combine them, and, voilà, [Clown Dentists, West Dakota, and Halloween in January](https://screenrant.com/bojack-horseman-todd-popular-dumb-ideas-reddit/)[4](https://universalprior.substack.com/p/on-automatic-ideas#footnote-4-45230438). People working on computational creativity [call this "pastiche"](https://www.creativitypost.com/article/systematizing-creativity-a-computational-view) and distinguish it from "real creativity". But let us not be deterred by that, we'll start philosophizing once we’re done coding. Perhaps we will see a path forward once we know how to generate pastiche at scale.
 
@@ -66,7 +66,7 @@ produces pastiche gems like
 
 And a _lot_ more. Making IAN generate pastiche for 24 hours results in ~10,000 "proto-ideas". I call them proto-ideas because quality varies a lot[5](https://universalprior.substack.com/p/on-automatic-ideas#footnote-5-45230438); sifting through all of them is more work than coming up with proper ideas myself. This leads us directly to the next step.
 
-###  **Turning proto-ideas into ideas**
+####  **Turning proto-ideas into ideas**
 
 The second insight is that distinguishing nonsense from ideas is _easy_. I can tell if a proto-idea is nonsense in less than a second, which is [usually a good indicator](https://second.wiki/wiki/100-schritt-regel) that the process can be automated. The solution that I came up with is a logistic regression model on a [semantic embedding](https://www.sbert.net/) of the proto-idea, that is trained [online](https://github.com/online-ml/river) through an interface I [threw together](https://streamlit.io/):
 
@@ -120,7 +120,7 @@ But also in other regions of semantic space, there are ideas with high predicted
 > 
 > [7](https://universalprior.substack.com/p/on-automatic-ideas#footnote-7-45230438) _, …_
 
-### **Ideas and "great" ideas**
+#### **Ideas and "great" ideas**
 
 The third insight is that the quality of an idea is not an _intrinsic_ , but an _extrinsic_ property. The quality does not sit within the idea, it is determined by us from the outside. And these judgments are subjective[8](https://universalprior.substack.com/p/on-automatic-ideas#footnote-8-45230438), so there is no universal way to generate _great_ ideas.
 
@@ -136,7 +136,7 @@ I've implemented this with a [semantic search](https://www.sbert.net/examples/ap
 
 The _actual_ constraints arising in a research project are substantially more complicated than just semantic similarity[11](https://universalprior.substack.com/p/on-automatic-ideas#footnote-11-45230438), but the central logic of this approach remains unchanged: generate a _lot_ of ideas and filter. The comparative advantage of computers is that they can do a simple thing much faster and much longer than a human can; generating a ginormous dataset of proto-ideas is not feasible for humans, but "easy"[12](https://universalprior.substack.com/p/on-automatic-ideas#footnote-12-45230438) for computers. This is essentially the same strategy that led to [superhuman chess performance](https://en.wikipedia.org/wiki/Deep_Blue_%28chess_computer%29) and that only now, after decades, is supplanted by [more data-efficient methods](https://www.youtube.com/watch?v=NJCLUzkn-sA&ab_channel=YannicKilcher).
 
-###  **Going from great ideas to implementations**
+####  **Going from great ideas to implementations**
 
 The fourth insight is that while the greatness of ideas is subjective, the greatness of _implementations_ is more objective. You can argue whether some of the "great" ideas I listed above are actually great, but once there is an implementation the nature of an argument changes qualitatively. Once implemented, reality enters the discussion and adjudicates.
 
@@ -156,7 +156,7 @@ There are [fantastic tools](https://roamresearch.com/) for some of these steps, 
 
 Subscribe
 
-###  **Closing thoughts**
+####  **Closing thoughts**
 
 According to "code first, think later" we've now reached the "think" part. You can probably tell that I am skeptical of people who [declare](https://www.fastcompany.com/90339590/3-reasons-why-ai-will-never-match-human-creativity) that [creativity](https://thenextweb.com/news/ai-is-incredibly-smart-but-it-will-never-match-human-creativity) is [uniquely](https://www.aceyus.com/blog/why-ai-will-never-match-human-creativity/) human. These voices are less numerous now that AI-generated [poetry](https://www.gwern.net/GPT-3), [art-on-demand](https://www.wombo.art/), and [music](https://www.aisongcontest.com/) are actually enjoyable[16](https://universalprior.substack.com/p/on-automatic-ideas#footnote-16-45230438). Perhaps there is still a way of [drawing concept boundaries](https://www.lesswrong.com/s/SGB7Y5WERh4skwtnb/p/7X2j8HAkWdmMoS8PE) that make creativity uniquely human, but I'm skeptical that those concepts will end up being very useful.
 

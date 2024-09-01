@@ -9,7 +9,7 @@ date: 2021-12-25
 ---
 
 
-# **🎵 Do you believe... 🎵**
+## **🎵 Do you believe... 🎵**
 
 It is the season, and I just finished watching the 2003 classic "[Elf](https://en.wikipedia.org/wiki/Elf_%28film%29)" with Will Ferrell as "Buddy", a human raised among elves at the North Pole who travels to New York to reunite with his biological father and to save Christmas. The movie got me thinking.
 
@@ -17,7 +17,7 @@ There is an interesting trope in the movie that's used as a story device: the ma
 
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fc25f2c85-95cf-469b-8251-36c97e0c571f_256x256.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fc25f2c85-95cf-469b-8251-36c97e0c571f_256x256.png)Expect me to upgrade my [CGD](https://githubmemory.com/repo/crowsonkb/v-diffusion-pytorch) game even further in the new year! This looks a lot like Santa.
 
-#  **🎵 ... in love after love 🎵**
+##  **🎵 ... in love after love 🎵**
 
 What is the relationship between belief and reality? Some like to think in terms of "territory and map": the territory is everything _out there_. The map is a lossy _mental_ representation of the territory. We know that the [map is not the territory](https://www.lesswrong.com/posts/KJ9MFBPwXGwNpadf2/skill-the-map-is-not-the-territory); sometimes, we are [confused about how things work](https://universalprior.substack.com/p/frankfurt-declaration-on-the-cambridge), sometimes we [treat complex systems as black boxes](https://www.lesswrong.com/posts/tPqQdLCuxanjhoaNs/reductionism), and some things are [not represented in our map](https://xkcd.com/1053/).
 
@@ -33,7 +33,7 @@ But if your metric is symmetric (and why would you call it a [metric](https://en
 
 Indeed, I think this is what motivates a substantial part of moral philosophy[2](https://universalprior.substack.com/p/belief-conditional-things-things#footnote-2-41815715): Instead of accepting the world as it is, we conjure our ideas about how things ought to be into reality. Thus, it's not unheard of that reality is affected by our beliefs. This opens the door for...
 
-#  **Gödel's trick**
+##  **Gödel's trick**
 
 When thinking about existence and belief, it is natural to think of [epistemic logic](https://plato.stanford.edu/entries/logic-epistemic) \- the subfield of the philosophy of knowledge that formalizes how we form and maintain beliefs. This approach allows us to derive, under reasonable axioms, that [belief and knowledge collapse](https://link.springer.com/chapter/10.1007/3-540-16761-7_68). Formally, this means that believing in the existence of Santa Claus,
 
@@ -51,7 +51,7 @@ I presume that this must be essentially equivalent to [Gödel's ontological proo
 
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fe9c657b8-048a-4a42-9b68-0ebdf1276521_256x256.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fe9c657b8-048a-4a42-9b68-0ebdf1276521_256x256.png)I guess this is supposed to read “Gödel, Kurt”. Almost, CGD, almost.
 
-#  **No, really, there** _ **is**_ **a dragon in my garage.**
+##  **No, really, there** _ **is**_ **a dragon in my garage.**
 
 Any good rationalist might now counter: "Well, yes, belief might imply existence. But you don't actually believe in **X**. You only [believe that you believe](https://www.lesswrong.com/posts/CqyJzDZWvGhhFJ7dY/belief-in-belief) in **X**." The classic example is the "[dragon in the garage](http://people.whitman.edu/~herbrawt/classes/110/Sagan.pdf)" of Carl Sagan:
 
@@ -76,7 +76,7 @@ Carl Sagan argues that the person claiming a dragon in their garage doesn't _act
 
 But for Gödel's trick to work, we _actually_ need to believe **X**. Thus we have to stick our necks out and make falsifiable predictions. Saying, "Come to my garage and see the dragon. She's really cool!" is not the hard part. The hard part is [paying rent](https://www.lesswrong.com/posts/a7n8GdKiAZRX86T5A/making-beliefs-pay-rent-in-anticipated-experiences).
 
-#  **Trolling your landlord.**
+##  **Trolling your landlord.**
 
 "Paying rent" in this context comes from the rationalist strategy of "[making your beliefs pay rent](https://www.lesswrong.com/posts/a7n8GdKiAZRX86T5A/making-beliefs-pay-rent-in-anticipated-experiences)". Beliefs are only allowed to stay in your head if they "pay" by making predictions about the world. If those predictions cash out, the belief is allowed to stay. If not, they will be kicked out. If you continuously claim that there is a dragon in your garage, and you make predictions accordingly, eventually the belief won't be able to pay anymore. Then you won't be able to use Gödel's trick.
 
@@ -90,7 +90,7 @@ Luckily, we are now in the territory of mathematics, a field known to be highly 
 
 Thus, through several loops and twists, we arrive at what every child can already tell you: Making belief-conditional-things exists only requires us to believe strongly, picture the thing in as many details as possible, and act as if it really can exist. Easy as that.
 
-#  **Closing thoughts.**
+##  **Closing thoughts.**
 
 Through the examples I have listed in the first section, I might have deceived you into exclusively thinking about fantastic and mystical creatures. But those are (by far) not the only examples of things that can only exist when we believe in them. [Mars colonies](https://www.youtube.com/watch?v=0agVZwux1Hs), [curing cancer](https://www.nature.com/articles/nrd.2017.243), and peace on earth are additional examples - in fact, most good things in the future are belief-conditional. Following the argument outlined above, we can believe belief-conditional thing **X** into existence by doing the following things: By changing the territory rather than our map, by providing as many viable avenues to achieve **X** as possible, and by sticking our necks out to perform tests while actually believing in the possibility of **X**. There might be more things we can do, and most of the ones I list might not apply in all situations. But this is for you to find out.
 

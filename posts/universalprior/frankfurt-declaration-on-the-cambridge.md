@@ -9,7 +9,7 @@ date: 2021-10-24
 
 Subscribe
 
-# A fateful conference dinner…
+## A fateful conference dinner…
 
 >  _#[IAN](https://universalprior.substack.com/p/making-of-ian) says: The problem with being a "good person" is that you never have enough energy left over for doing really evil things._
 
@@ -21,7 +21,7 @@ Imagine the following: It is the year 2012 and you have been invited to a fancy 
 
 * * *
 
-# … and its predictable aftermath
+## … and its predictable aftermath
 
 The subsequent news cycle is as wild as you'd predict. Here’s [New Scientist](https://www.newscientist.com/article/mg21528836-200-animals-are-conscious-and-should-be-treated-as-such/):
 
@@ -61,7 +61,7 @@ I've also asked a couple of colleagues in the field about their opinion on the d
 
 * * *
 
-# Declaration on a declaration
+## Declaration on a declaration
 
 >  _#IAN says: "[T]he physical world is what it is, and whatever else it may be, it is not conscious."_
 

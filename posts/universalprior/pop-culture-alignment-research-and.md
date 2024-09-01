@@ -9,7 +9,7 @@ date: 2022-04-16
 
 _Previously in this series:[Cognitive Biases in Large Language Models](https://universalprior.substack.com/p/cognitive-biases-in-large-language?s=w), [Drug addicts and deceptively aligned agents - a comparative analysis](https://universalprior.substack.com/p/drug-addicts-and-deceptively-aligned?s=w), [Inferring utility functions from locally non-transitive preferences](https://universalprior.substack.com/p/inferring-utility-functions?s=w)._
 
-#  **[All Bad Ends All](https://www.youtube.com/watch?v=oD4anv60ow8&ab_channel=TheBooks-Topic) (click for soundtrack)**
+##  **[All Bad Ends All](https://www.youtube.com/watch?v=oD4anv60ow8&ab_channel=TheBooks-Topic) (click for soundtrack)**
 
 It's been a couple of exciting weeks.
 
@@ -36,7 +36,7 @@ In my experience, the best strategy in response to a big, exciting thing is to [
 
 Consequently, I focus on the [B-story](https://stevenpressfield.com/2012/08/the-a-story-and-the-b-story/) that develops parallel to all the exciting rush. I look at whether there currently is any alignment tax, whether the alignment tax might be negative (temporarily), and how we might expect the alignment tax to change.
 
-#  **Pop culture alignment problem**
+##  **Pop culture alignment problem**
 
 Let's recap one line of argument for what we might expect advanced AI to look like:
 
@@ -65,7 +65,7 @@ Note that none of these cases resemble "The Joker" - these systems did not have 
 
 **Systems in the "neutral" or "evil" row are called[unaligned](https://en.wikipedia.org/wiki/Misaligned_goals_in_artificial_intelligence) or [misaligned](https://proceedings.neurips.cc/paper/2020/file/b607ba543ad05417b8507ee86c54fcb7-Paper.pdf), and the problem of pushing them more into the top row is called [The Alignment Problem](https://www.amazon.de/-/en/Brian-Christian/dp/0393635821).** Some people argue that solving the alignment problem could be [one of the most important challenges](https://www.alignmentforum.org/posts/krsjmpDB4kgDq6pdu/axrp-episode-12-ai-existential-risk-with-paul-christiano). Such claims are made about [different](https://www.gvi.co.uk/blog/6-critical-global-issues-what-are-the-worlds-biggest-problems-and-how-i-can-help/) [things](https://www.businessinsider.com/world-economic-forum-world-biggest-problems-concerning-millennials-2016-8?r=US&IR=T) [all the time](https://www.bbvaopenmind.com/en/articles/15-global-challenges-for-the-next-decades/). But when we see how our AI systems are getting exponentially more capable, we can imagine that problems like those with the YouTube recommendation algorithm, Tay AI, and the Amazon hiring software might also grow exponentially in severity. And the same way that more capable AI systems exhibit qualitatively new capabilities, there is also the possibility that we will encounter [qualitatively new problems](https://www.lesswrong.com/posts/FkgsxrGf3QxhfLWHG/risks-from-learned-optimization-introduction).
 
-#  **The only certainty in life**
+##  **The only certainty in life**
 
 We might want to be very careful when designing a new system to avoid these problems. We might want to [run many tests before deployment](https://en.wikipedia.org/wiki/AI_box) and build the system to [steer it away from bad failure modes](https://arbital.com/p/corrigibility/). (Or perhaps we could “just” decide [not to develop the system in the first place](https://www.lesswrong.com/posts/vaHgLF2BCEdK3KxQd/convincing-all-capability-researchers).) 
 
@@ -90,7 +90,7 @@ Arguments on this topic have, however, an unmistakable theoretical bent. We can 
 
 We can (and should) sit down and [think about how AI can go wrong](https://www.lesswrong.com/posts/HBxe6wdjxK239zajf/what-failure-looks-like) and what it would cost to prevent it. If that number comes out to be ∞ or some number larger than anything we could ever reasonably afford, well, [that's not actionable](https://www.lesswrong.com/posts/Cf2zBkoocqcjnrNFD/emotionally-confronting-a-probably-doomed-world-against). If that were the number I came up with, I'd want to keep the argument in mind, hope I'm wrong, and try to do the things I _can_ do.
 
-#  **The Impossibility Of A Negative Alignment Tax**
+##  **The Impossibility Of A Negative Alignment Tax**
 
 All of this was a rather longwinded intro[11](https://universalprior.substack.com/p/pop-culture-alignment-research-and#footnote-11-52299921) for an interesting result from the [InstructGPT paper](https://www.arxiv-vanity.com/papers/2203.02155/) and the new [Anthropic paper](https://www.arxiv-vanity.com/papers/2204.05862/) (emphasis is theirs):
 
@@ -132,7 +132,7 @@ The picture shows three scenarios I could come up with:
 
 These scenarios are not meant to be comprehensive, but I hope they illustrate the usefulness of the 2D model.
 
-#  **Closing thoughts**
+##  **Closing thoughts**
 
 I’m undecided about whether it’s a good thing that safety research and capability research are pushing in the same direction. On the one hand, [incentives matter](https://equilibriabook.com/), and having strong incentives to do safety research is (ceteris paribus) a good thing. On the other hand, things are already moving fast and _any_ push in the capabilities direction is [seen as a threat by some](https://www.lesswrong.com/posts/kipMvuaK3NALvFHc9/what-an-actually-pessimistic-containment-strategy-looks-like). But independent of any moral judgment of what is happening, knowing that it’s happening, and having better terminology to communicate it, appears useful.
 

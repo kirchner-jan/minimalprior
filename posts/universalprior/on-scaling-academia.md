@@ -24,7 +24,7 @@ date: 2021-09-20
 
 * * *
 
-# The potential impact of academic research
+## The potential impact of academic research
 
 I have to admit, I kind of drank the [effective altruism](https://www.effectivealtruism.org/) cool-aid. I _do_ critically question all the assumptions and inferences of the community (and I don't agree with everything, not by a long shot[1](https://universalprior.substack.com/p/on-scaling-academia#footnote-1-41525488)), but the core principles are just too obviously good and true for me. This caused a good bit of distress for me since the other love of my life (academia) appears to be everything _but_ effective or altruistic.
 
@@ -38,7 +38,7 @@ I still want to hedge my bets. If I’ll be an academic, I want to be an effecti
 
 * * *
 
-# Inadequate science
+## Inadequate science
 
 There are some pretty large research institutes: the Chinese Academy of Sciences employs 60.000 researchers, the French Centre National de la Recherche Scientifique employs 15.000 researchers and the German Max Planck Society employs around 7.500 researchers ([source](https://www.natureindex.com/news-blog/ten-global-institutions-universities-twenty-nineteen-annual-tables)). Those are not-small numbers, but they pale in comparison to employee numbers of Fortune 500 companies:
 
@@ -56,7 +56,7 @@ Might we conclude that we are already at some efficient frontier most of the tim
 
 * * *
 
-# Hire more people?
+## Hire more people?
 
 >  _#[[IAN says:] ] An army of albatrosses walks into a bar:_
 > 
@@ -97,7 +97,7 @@ Currently, this number does not scale. Approximately one hundred researchers app
 
 * * *
 
-#  **Adding more levels and increasing the supervision ratio**
+##  **Adding more levels and increasing the supervision ratio**
 
 >  _#[[IAN says:]] By the power of exponents I call upon_
 > 
@@ -125,7 +125,7 @@ I'm not satisfied with that answer. Systematizing has worked well for me in my r
 
 * * *
 
-##  **Possibility of low hanging fruit and lack of objective metrics**
+###  **Possibility of low hanging fruit and lack of objective metrics**
 
 >  _#[[IAN says:]] Here is a classic proverb about low-hanging fruit:_ Eat the seeds you planted, not the fruit that ripened.
 
@@ -170,7 +170,7 @@ Setting up an academic prediction market that is technically well-done and fun t
 
 * * *
 
-# Better tools, better science
+## Better tools, better science
 
 Please don’t think that I was intentionally burying the lede. I do believe that 
 
@@ -189,7 +189,7 @@ would be genuinely awesome things for academia at large. If I ever get to have m
 
 My motivation for thinking about Robo Researchers is exactly the same as the motivation for accepting to supervise students in the first place: A day only has 24 hours and there is so much to do and it’s awesome to have someone help you. And let’s face it: a lot of the “stuff-that-needs-doing” is just grunt work. A typical task for a student of mine is “Can you run those simulations again but with different values of θ and put the results on slides?” or “Can you read up on the effect of the Fragile X mutation on SST interneurons in early development and write me a brief summary?“. If we could get a Robo Researcher to assist with that, that would be a big win for everyone involved. And with a software suite composed of something like [Codex](https://openai.com/blog/openai-codex/), a [fine-tuned language model](https://universalprior.substack.com/p/making-of-ian), and [Ought’s Elicit](https://elicit.org/) I think I am not too far away from making that a reality.
 
-# Conclusion
+## Conclusion
 
 While systematizing and introducing better metrics promise marginal improvements to research output, automation has the potential to be transformative. A [lot](https://web.stanford.edu/~chadj/IdeaPF.pdf) [has been](https://slatestarcodex.com/2018/11/26/is-science-slowing-down-2/) [said](https://marginalrevolution.com/marginalrevolution/2019/11/is-the-rate-of-scientific-progress-slowing-down.html) on the question of whether scientific progress is slowing down, but an equal amount [has](https://moores.samaltman.com/) [been](https://www.cold-takes.com/are-we-trending-toward-transformative-ai-how-would-we-know/) [said](https://twitter.com/balajis/status/1181830195260657664?lang=en) on how technology accelerates everything it touches. And it [does not take a huge stretch of the imagination](https://www.cold-takes.com/transformative-ai-timelines-part-1-of-4-what-kind-of-ai/) to see this trend reach research in due time. The consequences are hard to forecast and it’s a difficult question of whether it’s a desirable thing or not. Does “more research = more good” actually hold if we push to the extremes?[13](https://universalprior.substack.com/p/on-scaling-academia#footnote-13-41525488) I’m on the fence about this.
 

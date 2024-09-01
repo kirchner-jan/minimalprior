@@ -11,7 +11,7 @@ I recently read the new [Transformers Circuit](https://transformer-circuits.pub/
 
 If you just want to read the idea, feel free to skip to the section **“Put it together, it just makes sense”**. If you know a bit of neuroscience, but no machine learning, skip to the section **“The Residual”**. If you know a bit of machine learning, but no neuroscience, continue with the sections **“Visionary Hierarchy”** and **“Not the full story”**. If you want _everything_ , just keep reading.
 
-#  **Visionary Hierarchy**
+##  **Visionary Hierarchy**
 
 There is this idea floating around since at least [Hubel and Wiesel](https://braintour.harvard.edu/archives/portfolio-items/hubel-and-wiesel) that information processing in the brain is _hierarchical_ , in the sense that there are "lower" and "higher" levels of information processing. I will call this broad idea the “naive hierarchical brain theory” or **[NHBT](https://newhorizonsbandtoronto.ca/)** to indicate that probably very few people believe _exactly_ this. 
 
@@ -68,7 +68,7 @@ The whole story is very appealing for many reasons:
 
 
 
-#  **Not the full story**
+##  **Not the full story**
 
 I'm not saying that anybody is saying that the NHBT is the full story[8](https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-8-46595289). But it's certainly an influential story that a lot of people take as a starting point for building more complicated models. _I'm_ certainly using the NHBT a lot when I need high-level intuitions for how sensory processing works. However, there are also a bunch of puzzle pieces that I've collected over the years that don't fit at all.
 
@@ -94,7 +94,7 @@ This means, in particular, that it does not make a lot of sense to talk about on
 
 While this is not fully inconsistent with the NHBT where representations in the visual cortex are assembled from simpler representations in the thalamus[12](https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-12-46595289), it requires an additional component to explain why this scheme does not apply to the highest levels of the hierarchy.
 
-#  **The Residual**
+##  **The Residual**
 
  **Degraded performance in deep networks.** We now dive briefly into the ancient history of machine learning, all the way back into the year 2016[13](https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-13-46595289). Up to this point, steady progress in machine learning meant improving relatively "shallow"[14](https://universalprior.substack.com/p/serendipitous-connections-applying#footnote-14-46595289) networks (< 25 layers) to squeeze out more and more performance on the ImageNet classification dataset. Intuitively, we might expect deeper networks to perform better (more layers should allow more computation), but this didn't bear out in terms of performance. Making networks deeper actually _degraded_ performance.
 
@@ -128,7 +128,7 @@ Interpreted as a "residual stream", it is clear that later information computed 
 
 In addition, there is a kind of "[memory management](https://en.wikipedia.org/wiki/Turing_machine)" that becomes possible through the residual stream: computational units later in the stream can "pick up and continue" the output of previous units, and then copy, modify, delete, or merge them. Presented like this, it is clear that the residual stream might be more than just a "solution to the problem of degrading performance", and that the residual stream is intimately involved in the complex calculations performed by deep networks.
 
-#  **Put it together, it just makes sense**
+##  **Put it together, it just makes sense**
 
 If you've read the previous two sections back-to-back you can probably already predict where I'm going: Perhaps we shouldn't be thinking of the steps in the ventral stream as successive levels of a _hierarchy_ , but instead, we should think of them as reading from and writing into a _residual stream_. Instead of _levels_ in the hierarchy, we think of _stations_ in the stream. Instead of _merging_ representations, we _operate_ on portions of the stream. It’s just a small shift in perspective, but we can get a lot of mileage from it.
 

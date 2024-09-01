@@ -11,7 +11,7 @@ Previously in this series: _[How to build a mind - neuroscience edition](https:/
 
 * * *
 
-#  **Constraints make creative**
+##  **Constraints make creative**
 
 Originally, my motivation for getting into neuroscience was: " _Building artificial intelligence is difficult, so perhaps I can learn something from looking at how the biological brain is built. Once I've figured that out, AI will be easy_ ".
 
@@ -41,7 +41,7 @@ But [constraints make creative](https://www.youtube.com/watch?v=v5FL9VTBZzQ&ab_c
 
 What is the benefit of having to build yourself? I'm not sure. Let's zoom in on that.
 
-#  **Bootstrapping brains**
+##  **Bootstrapping brains**
 
 What does it mean for the brain to be building itself?
 
@@ -75,7 +75,7 @@ And that's indeed the conclusion that Niell and colleagues arrive at. They look 
 
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa5fd8847-512f-4125-9f32-e828254bf978_600x558.jpeg)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa5fd8847-512f-4125-9f32-e828254bf978_600x558.jpeg)
 
-#  **Probably prunable**
+##  **Probably prunable**
 
 But not all development is about growth! Rather, it's about growth plus **selective pruning**. I've [written](https://universalprior.substack.com/p/a-brief-excursion-into-molecular?s=w) about a potential molecular mechanism underlying this dynamic before, and now we'll see it in action.
 
@@ -107,7 +107,7 @@ So **specific activity can trigger the growth of dendrites**.
 
 
 
-#  **Computerization**
+##  **Computerization**
 
 Those were the puzzle pieces we knew about (or [guessed](https://universalprior.substack.com/p/on-not-reading-papers?s=w#:~:text=a%20paper%20adds.-,Schematic,-of%20%E2%80%9Cthe%20delta)) when we started the project. It seemed plausible that synapse formation and removal might have a pretty big impact on what the dendrite looks like. And in particular, whether a synapse stabilizes or not might be determined by whether it fires in synchrony with its neighbors.
 
@@ -139,7 +139,7 @@ This way, our model can link the development of dendrites and the emergence of s
 
 [In the paper](https://www.biorxiv.org/content/10.1101/2022.05.24.493217v1), we push things further and show how our model fits in with more experiments and how the resulting dendrites have some cool optimality properties that emerge from a simple synapse-centric growth rule. But for this post, it's time to wrap things up and to return to our original question: How can the brain be, at the same time, "the thing you're building" and "the thing that is doing the building"? And could this be good for anything?
 
-#  **Closing thoughts**
+##  **Closing thoughts**
 
 I feel the strong urge to do a bunch of epistemic hedging, "theory is theory and experiment is experiment," and "I could be totally wrong about this", but I think that's [pretty bad style](https://nassimtaleb.org/2016/09/intellectual-yet-idiot/). Instead, I’ll say that this is my current best guess, and if I’m wrong I’ll be appropriately surprised and embarrassed.
 

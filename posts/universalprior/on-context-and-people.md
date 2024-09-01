@@ -11,7 +11,7 @@ _Disclaimer: This is coming from a rather neuroscience-centric perspective. I'd 
 
  _Previously in this series:[On Scaling Academia](https://universalprior.substack.com/p/on-scaling-academia), [On Automatic Ideas](https://universalprior.substack.com/p/on-automatic-ideas?s=w), and [On (Not) Reading Papers](https://universalprior.substack.com/p/on-not-reading-papers?s=w)._
 
-#  **Bottlenecks and Context**
+##  **Bottlenecks and Context**
 
 I'm _still_ hung up on that question of how we might make research "scalable"[1](https://universalprior.substack.com/p/on-context-and-people#footnote-1-50643295). Answering this question involves identifying bottlenecks and finding efficient ways to circumvent them. "Generating ideas" [appeared to be one such bottleneck](https://universalprior.substack.com/p/on-automatic-ideas?s=w). But, as language models like GPT-3 shine when it comes to systematically generating ideas, the bottleneck effectively reduces to a search problem. And while the hacky prototype I threw together in [a previous post](https://universalprior.substack.com/p/on-automatic-ideas?s=w) probably does not quite qualify as a _solution_ to "generating ideas", I feel pretty optimistic that we can crack this with a larger language model and some elbow grease.
 
@@ -19,7 +19,7 @@ A great idea, however, is not enough to scale research. **Ideas need to be** _ *
 
 Finding those answers is a severe bottleneck to scaling; the problem gets harder as the number of established insights increases. I've argued before that [the situation is ](https://universalprior.substack.com/p/on-not-reading-papers?s=w)_[already](https://universalprior.substack.com/p/on-not-reading-papers?s=w)_[ pretty bad](https://universalprior.substack.com/p/on-not-reading-papers?s=w) and that researchers tend to be overwhelmed by the available literature. Current solutions (like "not reading papers") are only band-aids that will not hold when we try to scale research. Therefore, **we will need to change how we manage our established knowledge to make research scalable**. This post is an exploration of what that might look like.
 
-#  **Statement-centric view**
+##  **Statement-centric view**
 
 What _does_ the research landscape look like? When I started out in research, my mental [picture of the scientific landscape](https://en.wikipedia.org/wiki/Picture_theory_of_language) looked like this:
 
@@ -29,7 +29,7 @@ i.e. a graph of (hopefully) true statements connected with each other. Think "Th
 
 I might have picked up the statement-centric view because I'm a [nerd in love with formal logic](https://universalprior.substack.com/p/applied-mathematical-logic-for-the)[3](https://universalprior.substack.com/p/on-context-and-people#footnote-3-50643295), but I don't think I'm the only one. Cataloging all the knowledge of a scientific field is the goal of [several](https://markusstrasser.org/companies-knowledge-discovery/) [ambitious](https://derivationmap.net/other_projects) [projects](https://ebrains.eu/service/find-data/) in different subfields of science, most of which are now defunct[4](https://universalprior.substack.com/p/on-context-and-people#footnote-4-50643295). Admittedly, there are also some people [trying to catalog all of human knowledge](https://blog.wolframalpha.com/2010/09/24/stephen-wolfram-on-making-the-worlds-data-computable/#:~:text=The%20idea%20is%3A%20take%20all%20the%20systematic%20knowledge%E2%80%94and%20data%E2%80%94that%20our%20civilization%20has%20accumulated%2C%20and%20somehow%20make%20it%20computable.) that can report [undeniable](https://www.wolframalpha.com/)[ successes](https://en.wikipedia.org/wiki/Google_Knowledge_Graph). But I want to argue that these successes will be bounded: [constructing a knowledge graph is a huge kludge](https://markusstrasser.org/extracting-knowledge-from-literature/)[5](https://universalprior.substack.com/p/on-context-and-people#footnote-5-50643295). Attempts to catalog all knowledge are stereotypical [Hydra problems](https://universalprior.substack.com/p/via-productiva?s=w#:~:text=Don%27t%20fight%20the%20Hydra.), things that grow in complexity as you fight them. The more statements you add, the more possible connections you need to consider. **Thus, organizing research according to the statement-centric view results in poor scaling properties and introduces a key bottleneck**.
 
-#  **People-centric view**
+##  **People-centric view**
 
 As always, [there is another way of looking at this](https://www.youtube.com/watch?t=966&v=1bSPNboKCzM&feature=youtu.be). When I started out in research, I did not find a big graph of (hopefully) true statements, densely interconnected and easily accessible. Instead, I found a great, disjoint, overwhelming _everything_. 
 
@@ -54,7 +54,7 @@ There are a ton of reasons why this people-centric view of the research landscap
 
 The statement-centric view is implicitly underlying the [many](https://markusstrasser.org/companies-knowledge-discovery/) [previous](https://derivationmap.net/other_projects) [approaches](https://ebrains.eu/service/find-data/) to organizing research knowledge; none of the projects I’ve seen focus on the people who do the research. What would an approach that embraces the people-centric view look like? Would it be scalable? I'm glad you ask!
 
-#  **I trawl the neuroverse**
+##  **I trawl the neuroverse**
 
 I've been having a ton of fun with [finetuning language models](https://universalprior.substack.com/p/making-of-ian) on various types of text. For example, I finetuned a model on [Kialo](https://www.kialo.com/) debates (a platform with extremely structured debates about complex questions)[6](https://universalprior.substack.com/p/on-context-and-people#footnote-6-50643295). The resulting model is great at LARPing a serious debate about _any_ topic you provide as a prompt. Here is a debate about "Is it morally permissible to wear socks?":
 
@@ -88,7 +88,7 @@ The solution to hallucinations will likely be some combination of [InstructGPT](
 
  **In the "limit of awesomeness" (i.e. imagining everything works well), we could get a language-model version of influential people in the field, have them hash out disagreements, and identify "holes" in the state-of-the-art.** We would update these models regularly to always be up-to-date and make them available to any researcher who would like to use them. (The researchers whose work is being used could be rewarded with a “super-citation”, or some type of “sub-coauthorship”). Using language models is highly scalable; [given a research question](https://universalprior.substack.com/p/on-automatic-ideas?s=w), we ask our team of experts about their thoughts on the matter and summarize the conclusions they derive. Ideally, this will leave us with _only_ the relevant literature information for the question at hand, removing all the [extra information we currently have to sift through](https://universalprior.substack.com/p/on-not-reading-papers?s=w#:~:text=The%20scientific%20paper%2C%20as%20it%20exists%2C%20has%20one%20central%20shortcoming%3A%20The%20author). **Shifting from a statement-centric to a people-centric view might remove the bottleneck of contextualizing ideas in the existing literature.**
 
-#  **People and Groups**
+##  **People and Groups**
 
 All of the above smells like the "[Newton hypothesis](https://nintil.com/newton-hypothesis)", the idea that science is advanced only by a few exceptional individuals. We might create language models of the big fish and have them hash out the difficult questions, but aren't we neglecting the contributions of the majority of all researchers?
 
@@ -102,7 +102,7 @@ Still - having found a solution[10](https://universalprior.substack.com/p/on-con
 
 Subscribe
 
-#  **Appendix**
+##  **Appendix**
 
 When I talk about the topic of this post to friends and colleagues, at some point I usually say something like “researcher identity explains the highest amount of variability”. This is met with some confusion. Variability in _what_? And how do you even encode researcher identity? Which space are you talking about?
 

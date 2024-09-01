@@ -7,7 +7,7 @@ date: 2021-12-20
 ---
 
 
-# **The emperor's new paper.**
+## **The emperor's new paper.**
 
 In a recent [lunch conversation](https://universalprior.substack.com/p/applied-mathematical-logic-for-the)[1](https://universalprior.substack.com/p/on-not-reading-papers#footnote-1-45773700), a colleague of mine explained her system for reading scientific papers. She calls the system tongue-in-cheek " _not_ reading the paper". It goes as follows:
 
@@ -26,7 +26,7 @@ So why is this not common knowledge? A likely cause is the stinging horror that 
 
 * * *
 
-#  **And yet it moves.**
+##  **And yet it moves.**
 
 >  **Argyle**[6](https://universalprior.substack.com/p/on-not-reading-papers#footnote-6-45773700): Okay, level with me here. How can you just _not_ read the paper? **How do you know what's written in it**? 
 > 
@@ -104,7 +104,7 @@ So why is this not common knowledge? A likely cause is the stinging horror that 
 
 * * *
 
-# “Not reading papers” is a fix, not a solution.
+## “Not reading papers” is a fix, not a solution.
 
 As useful as the method might be, it is borne out of necessity, not because it is the optimal way of conducting research. **The scientific paper, as it exists, has one central shortcoming:** **The author(s) do not know the reader.** When writing a paper the author(s) try to break down their explanations to the smallest common denominator of hypothetical readers. As a consequence, no actual reader is served in an ideal way. A beginner might require a lot more background. An expert might care for more raw data and for more speculative discussions. A researcher from an adjacent field might need translations for certain terminology. A reader from the future might want to know how the study connects to future work. None of those get what they want from the average paper.
 

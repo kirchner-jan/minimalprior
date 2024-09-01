@@ -9,7 +9,7 @@ date: 2021-08-29
 
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fee60786b-f547-4d3c-92b4-351d547b729a_600x338.gif)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fee60786b-f547-4d3c-92b4-351d547b729a_600x338.gif)“ _Show, don’t tell._ ” - probably said originally by someone with bad hearing
 
-## Building a 'digital person'.[1](https://universalprior.substack.com/p/making-of-ian#footnote-1-40527537)
+### Building a 'digital person'.[1](https://universalprior.substack.com/p/making-of-ian#footnote-1-40527537)
 
 Holden Karnofsky asks you to [imagine yourself as a digital person](https://www.cold-takes.com/imagining-yourself-as-a-digital-person-two-sketches/) \- a copy of yourself that runs on a computer and that has the potential to vastly increase both productivity and output. An easily deployable digital person has the thrilling potential to not only reduce the effort a task requires (like other productivity tools might), but additionally to scale up and dramatically raise the ceiling of your output.
 
@@ -23,7 +23,7 @@ I used a two-week vacation to take these thoughts to heart by fine-tuning a larg
 
 * * *
 
-## Does this have any practical use?
+### Does this have any practical use?
 
 Turning large language models into productivity tools is _in vogue_. OpenAI Codex [promises](https://openai.com/blog/openai-codex/) to reduce coding to the exciting part, decomposing the problem, and remove the laborious part, turning the decomposed problem into code. [Emacs packages](https://github.com/semiosis/pen.el) to seamlessly apply well-engineered contextual prompts to arbitrary text are under development. And out of a [slurry](https://aiwriter.app/) of [quirky](https://twitter.com/sharifshameem/status/1284095222939451393?lang=en) GPT [applications](https://www.overfit.ai/classroom-items/gpt-3-text-to-emoji), Ought's [Elicit](https://elicit.org/) stands out to me for its vision and its obvious potential to accelerate science. Even the idea of [fine-tuning a language model with personal text](https://svilentodorov.xyz/blog/gpt-15b-chat-finetune/) is not new - [Tom Riddle](https://www.youtube.com/watch?v=dZewnFXl_MY) did it long ago.
 
@@ -31,7 +31,7 @@ However, none of the existing solutions enable exactly what I imagined. They are
 
 * * *
 
-## A big language model that can produce human-like text. What can go wrong?
+### A big language model that can produce human-like text. What can go wrong?
 
 Enter #IAN ( _intelligence artificielle neuronale_ ), a hacky (and obviously narrow) version of a digital person based on my writing pattern. I collected text across different platforms (Email, WhatsApp, Telegram, Facebook, Roam Research, ~50Mb in total) and used the Google [TPU Research Cloud](https://sites.research.google/trc/) to [fine-tune GPT-J](https://github.com/kingoflolz/mesh-transformer-jax/blob/master/howto_finetune.md), a language model recently released by the rockstars at [EleutherAI](https://www.eleuther.ai/). I then wrote a small plugin for Roam Research and a custom keyboard for Android that allow me to integrate #IAN into my daily workflow.[2](https://universalprior.substack.com/p/making-of-ian#footnote-2-40527537) It was a marvelous experience and the result is surprisingly useful - even though it of course falls way short of a full "digital person".
 
@@ -51,7 +51,7 @@ This is mostly a party trick because the text is annoying to enter on the smartp
 
 * * *
 
-## How to use a large language model for something.
+### How to use a large language model for something.
 
 Now as you've seen in the demo videos, result quality can vary quite drastically. As has been [pointed out](https://twitter.com/RokoMijic/status/1288427331674083332?s=20) [before](https://bmk.sh/2020/08/17/Building-AGI-Using-Language-Models/#fn3), a language model pre-trained on the internet will end up producing text that looks like random text from the internet, which is often not exceedingly useful. Fine-tuning [might](https://bmk.sh/2021/06/02/Thoughts-on-the-Alignment-Implications-of-Scaling-Language-Models/#:~:text=exploring%20ways%20to,something%20like%20this) alleviate this to some degree, but to improve model output there are additional strategies that have been proposed:
 
@@ -123,7 +123,7 @@ Adapting to the trend might require radical changes. Better start early.
 
 * * *
 
-## Learning to learn with AGI.
+### Learning to learn with AGI.
 
 I have a few things I'd love to try once I have a continuous stretch of free time to improve #IAN. Top of my list is to find a smarter way of extracting text from Roam Research. Currently, the graph structure is lost completely in preprocessing. There must be something clever[11](https://universalprior.substack.com/p/making-of-ian#footnote-11-40527537) that can be done short of [changing the architecture](https://paperswithcode.com/method/graph-transformer).
 
@@ -141,7 +141,7 @@ This could potentially be automated by training a classifier that learns my pref
 
 * * *
 
-## Do I even want to do this?
+### Do I even want to do this?
 
 Connected to this last point, there are some points on AI safety and ethics that I want to make. When I told friends about this project, I got two types of responses: either moderate enthusiasm and encouragement or resigned despair ( _"Oh no, I already hate this"_ ). Since I try to take feedback that I get serious[15](https://universalprior.substack.com/p/making-of-ian#footnote-15-40527537), I’ll share my thought process here on why this is not a terrible idea.
 
@@ -153,7 +153,7 @@ But I am [by far](https://www.gwern.net/GPT-3#:~:text=For%20example%2C%20I,if%20
 
 * * *
 
-## #IAN doesn’t have a brain.
+### #IAN doesn’t have a brain.
 
 One last ethical consideration I would like to touch on is whether it is acceptable for me to include information about all my interactions with other people in the fine-tuning of the model. My primary [intuition pump](https://en.wikipedia.org/wiki/Intuition_pump) here is that if it's fine to write notes about these interactions in an analog notepad, then it should also be fine to compute a statistical representation of these notes in a language model - as long as I am only using the resulting model as I would use a notepad (i.e. an external extension to my mental scratchpad). Setting up a chatbot where people can just ask any question to #IAN on f.e. Telegram and receive an automatic response would cross this line for me. Or really any interaction with #IAN that is not monitored/filtered by me. That would just feel icky.
 
@@ -161,7 +161,7 @@ Although I want to point out that #IAN has not "spilled any beans" so far. It _i
 
 * * *
 
-## A high-level view of what I just explained.
+### A high-level view of what I just explained.
 
 What to take away from this project? The most striking part for me is to interact with a statistical summary of my collected output. I notice certain invariants and lots of variabilities - a bit like a word cloud on steroids[16](https://universalprior.substack.com/p/making-of-ian#footnote-16-40527537). It made me reflect a lot on identity and style. At the same time, reading text generated in the style of _you_ is a lot of fun, and teasing meaning from #IAN is at times like reading tea leaves - any possible meaning is not in the object but in the interaction. 
 

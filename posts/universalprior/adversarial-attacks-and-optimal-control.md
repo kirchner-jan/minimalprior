@@ -11,7 +11,7 @@ date: 2022-05-22
 
 _Meta: After a fun little motivating section, this post goes pretty deep into the mathematical weeds - you might prefer to read it on[LessWrong](https://www.lesswrong.com/posts/KtCJNw93KHg7MSSvw/adversarial-attacks-and-optimal-control) with proper typesetting instead of my creative use of Unicode._
 
-###  **TL;DR:**
+####  **TL;DR:**
 
   1. When we invest the appropriate effort, the probability of random catastrophic events tends to decrease exponentially with a rate given by the[1](https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-1-56106015) rate function.
   1. One way of estimating the rate function is to solve an optimal control problem, where we have to determine the "least surprising" way that the catastrophic event comes about. The rate function then equals the catastrophic event's surprise (in [nats](https://en.wikipedia.org/wiki/Nat_\(unit\))).
@@ -19,7 +19,7 @@ _Meta: After a fun little motivating section, this post goes pretty deep into th
 
 
 
-#  **Real talk and real estate**
+##  **Real talk and real estate**
 
 Zillow is an American tech real-estate marketplace company that recently had (what the experts call) a small [snafu](https://en.wikipedia.org/wiki/SNAFU). They decided they were done _just_ being a marketplace and started [buying up homes, completing light renovations, and then selling them with a profit](https://www.businessinsider.com/ibuyer-defunct-why-did-zillow-stop-buying-houses-2021-11). The whole thing went poorly; they bought houses too expensive and had to sell at a loss, [costing the company $420 million and leading to large lay-offs](https://www.nytimes.com/2021/11/02/business/zillow-q3-earnings-home-flipping-ibuying.html).
 
@@ -35,7 +35,7 @@ I have approximately zero knowledge about Zillow or the real estate business, so
 
 This post works towards achieving a mathematical understanding of what distinguishes [these two worlds](https://people.wou.edu/~shawd/mediocristan--extremistan.html). Perhaps other people are not as confused about this point as I was, but hopefully, the arguments are still useful and/or interesting to some. I'll introduce a bit of [extreme value theory.](https://en.wikipedia.org/wiki/Extreme_value_theory) Then I'll demonstrate a neat connection to [control theory](https://en.wikipedia.org/wiki/Control_theory) via [large deviation theory](https://en.wikipedia.org/wiki/Large_deviations_theory), which shows that an exponentially decreasing risk of failure translates into a linearly increasing difficulty of adversarial attacks.
 
-#  **A random environment**
+##  **A random environment**
 
 I'll go over the basics quickly: When you (i.e. Zillow) think of your environment as random, each house you buy is essentially a coin flip with a biased coin. If you make sure that 
 
@@ -62,7 +62,7 @@ The function J(ξ) is called the "[rate function,](https://en.wikipedia.org/wiki
 
 How to compute the rate function[5](https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-5-56106015)? That is what we'll explore in the next section. There is a "[standard](https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_theorem_\(large_deviations\))" way of calculating J(ξ), which is a bit involved and opaque[6](https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-6-56106015) for my taste; I prefer a slightly non-standard derivation[7](https://universalprior.substack.com/p/adversarial-attacks-and-optimal-control#footnote-7-56106015) of arriving at the rate function, which gives deeper insight into how adversarial attacks and extreme events relate.
 
-#  **Average surprise and optimal control**
+##  **Average surprise and optimal control**
 
 As I like to say: [there is, of course, another way of looking at this.](https://youtu.be/1bSPNboKCzM?t=966) We can think of the sequence of house deals as a sequence of random events that fluctuate around the probability of failure 1−p. 
 
@@ -120,7 +120,7 @@ You might recognize this as the KL-divergence between two Bernoulli random varia
 
 as it should be.
 
-#  **An adversarial environment**
+##  **An adversarial environment**
 
 Quick recap: 
 

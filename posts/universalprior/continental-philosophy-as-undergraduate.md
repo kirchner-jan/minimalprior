@@ -9,7 +9,7 @@ date: 2022-04-25
 
 _Previously in this series:[Frankfurt Declaration on the Cambridge Declaration on Consciousness](https://universalprior.substack.com/p/frankfurt-declaration-on-the-cambridge?s=w), [Belief-conditional things - things that only exist when you believe in them](https://universalprior.substack.com/p/belief-conditional-things-things?s=w)_
 
-#  **Not another declaration.**
+##  **Not another declaration.**
 
 Looking back, I feel bad about how I wrote the [Frankfurt declaration](https://universalprior.substack.com/p/frankfurt-declaration-on-the-cambridge?s=w). I'm not sure I managed to convey that I am against _both_ animal suffering _and_ the Cambridge Declaration[1](https://universalprior.substack.com/p/continental-philosophy-as-undergraduate#footnote-1-52772253). Also, mixing in that fictional narrative of intoxicated neuroscientists partying and signing something they don't understand might have taken things too far[2](https://universalprior.substack.com/p/continental-philosophy-as-undergraduate#footnote-2-52772253). But, oh well, [live and learn](https://www.youtube.com/watch?v=3gPBmDptqlQ&ab_channel=blackblur7).
 
@@ -17,7 +17,7 @@ How can I avoid that failure mode? How can I clearly state that when I'm writing
 
  _Epistemic status: Spurious fragments of sense-making, arranged to amuse, not to enlighten._
 
-#  **Words, not numbers**
+##  **Words, not numbers**
 
  _Does anyone remember[wordcels vs. shape rotators](https://roonscape.substack.com/p/a-song-of-shapes-and-words?s=r)?_[3](https://universalprior.substack.com/p/continental-philosophy-as-undergraduate#footnote-3-52772253) _No? Okay, good for you._
 
@@ -48,7 +48,7 @@ Evidence for this hypothesis comes in many shapes:
 
 In this essay, I'll run with that premise and draw loose parallels between undergraduate maths and continental philosophy. I'm almost certain I won't be doing the ideas from continental philosophy justice, but I [don't know in which way I am misrepresenting them](https://www.lesswrong.com/tag/conservation-of-expected-evidence#:~:text=Conservation%20of%20Expected%20Evidence%20is,expectation%20of%20counterevidence%20%5B1%5D.). It might still be a useful starting point if you ever want to learn more about continental philosophy or maths.
 
-#  **Hegel's dialectic**
+##  **Hegel's dialectic**
 
 "Dialectic" is not too hard to explain. The word [comes from](https://www.etymonline.com/word/dialectic) the old greek "dialegesthai," which means "discourse" or "conversation". [SEP defines it as](https://plato.stanford.edu/entries/hegel-dialectics/):
 
@@ -88,7 +88,7 @@ Using this dictionary, we can produce sentences that sound like continental phil
 
 Pretty cool, eh? And much easier than all that stuff about the “moving soul” and the “in-and-for-itself”. In Hegel’s defense, PCA was [only invented in 1901](https://en.wikipedia.org/wiki/Principal_component_analysis#:~:text=was%20invented%20in-,1901,-by%20Karl%20Pearson), some 70 years after Hegel’s death. So he _couldn’t_ have explained it in those terms. But if any living descendants want to rectify the situation, hmu, I can set up a GitHub page with a PCA explainer for y’all.
 
-# I just Kant even
+## I just Kant even
 
 This is a bit awkward. While coming up with the idea for this post I did not really spend a lot of time fact-checking whether the philosophers I’d wanted to talk about are _actually_ continental philosophers. And I came up with a cool correspondence between Kant’s categorical imperative and Lagrange multipliers. But Kant lived before the analytic/continental rift in philosophy happened and he has [influenced both camps](https://science.jrank.org/pages/7595/Continental-Philosophy.html#:~:text=Taking%20different%20stances%20toward%20the,and%20the%20Critique%20of%20Judgment.).
 
@@ -128,7 +128,7 @@ Now we see clearly that Kant and Mill are _actually_ compatible: **we should pic
 
 > I like ice cream, but if everyone eats ice cream, the world will be a bad place.
 
-# Heidegger's being and nothingness
+## Heidegger's being and nothingness
 
 Everyone knows that a good essay contains [exactly three examples](https://en.wikipedia.org/wiki/Rule_of_three_\(writing\)). Now I already did Hegel, Kant, and Mill, _three_ examples, but spread across only _two_ sections. **To resolve this unfortunate situation I’ll keep this section short and only outline in broad strokes how Heidegger’s metaphysic can be identified with basic category theory**. The scaffolding I provide in this section should be more than sufficient for the careful reader to [fill in the missing details](https://www.lesswrong.com/s/5uZQHpecjn7955faL).
 
@@ -142,7 +142,7 @@ So far, so easy.
 
 Everything falls naturally into place once we consider opposite categories. The opposite category of the [category of beings](https://en.wikipedia.org/wiki/Category_of_being) is the category of nothingnesses. The objects in this category are nothingnesses and the morphisms are the relationships between them… well, you get the idea. [Heidegger’s ontological project](https://en.wikipedia.org/wiki/Heideggerian_terminology#:~:text=Ontology%2C%20a%20discipline%20of%20philosophy,the%20concept%20of%20Being%20itself.) is just category theory. He wants us to understand that being and nothingness are two different categories and that “beingness” (the beingness of beings) is just a morphism between those two categories.
 
-# Closing thoughts
+## Closing thoughts
 
 I can’t lie to you, dear reader. That last section was mostly [written by GPT-3](https://openai.com/blog/openai-api/)[7](https://universalprior.substack.com/p/continental-philosophy-as-undergraduate#footnote-7-52772253). I didn’t want to put my poor brain through the exercise of coming up with a Heidegger/category theory crossover. But if that’s your jam, I can only encourage you to dive deeper into it! [Mysterious Answers to Mysterious Questions](https://www.lesswrong.com/posts/6i3zToomS86oj9bS6/mysterious-answers-to-mysterious-questions) aren’t _typically_ useful, but your personal enjoyment should count for something too.
 

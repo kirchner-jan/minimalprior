@@ -9,7 +9,7 @@ date: 2022-07-03
 ---
 
 
-# [A quick update](https://www.youtube.com/watch?v=RJv2-_--EY4&ab_channel=TheWhoVEVO)
+## [A quick update](https://www.youtube.com/watch?v=RJv2-_--EY4&ab_channel=TheWhoVEVO)
 
 My earliest best friend from school is named Jan. Later in high school, three out of four people in my group of closest friends were also called Jan. In university, I had three flatmates whose name was, I kid you not, also Jan[1](https://universalprior.substack.com/p/a-quick-one-while-hes-away#footnote-1-62384184). We all had middle names that we used to differentiate ourselves, so throughout my childhood and teenage years, I was always called Jan _Hendrik_. It was very weird for me when I moved further south and people called me _just_ Jan because there were no other Jans around. I almost felt [like I was missing something](https://www.hpmor.com/chapter/25#:~:text=\(Back%20in%20the%20old%20days%2C%20whenever%20magical%20identical%20twins%20were%20born%2C%20it%20had%20been%20the%20custom%20to%20kill%20one%20of%20them%20after%20birth.\)).
 

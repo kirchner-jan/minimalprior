@@ -23,7 +23,7 @@ There are many articles online explaining [how it works](https://www.assemblyai.
 
 Here it goes:
 
-### Why is this technology impressive, and how did we get here? 
+#### Why is this technology impressive, and how did we get here? 
 
 At its core, DALL-E is a computer algorithm that can take _any request_ in plain language and produce an image of what was asked for. This is, for many people, no less baffling than if you handed them a magic lamp and told them they need only rub it and out will emerge a genie that can answer any prayer. 
 
@@ -45,7 +45,7 @@ Most charmingly, DALL-E can produce images in any “style” or texture asked f
 
 Thus, when prompted with “a Cubist painting of a bat painting a self-portrait at an easel”, DALL-E returns an image with the angular shapes and shadows typical of Cubist painting. When prompted to return “an Impressionist painting”, it produces images with visible, broad brush-strokes, with shading and light details that are too unmistakably “impressionistic”. (Note that in the examples below, some prompt engineering and cherry-picking were employed.)
 
-##  _“[DALL-E generates] images that, to many of us, feel 'artistic' in some meaningful sense.”_
+###  _“[DALL-E generates] images that, to many of us, feel 'artistic' in some meaningful sense.”_
 
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7587ff1e-c824-49b9-9eb6-4b004d16cb4e_512x512.jpeg)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7587ff1e-c824-49b9-9eb6-4b004d16cb4e_512x512.jpeg) _a Cubist painting of a bat painting a self-portrait at an easel_
 
@@ -101,7 +101,7 @@ This is the ideal embodied by the robots in Star Wars, which have no problem und
 
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F777569c7-01f1-421d-83c4-71ec897df56c_802x404.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F777569c7-01f1-421d-83c4-71ec897df56c_802x404.png)_Left: baby Darth Vader playing with a bunny doll; Right: shaky image of Darth Vader and a person dressed like the pope at a nightclub_
 
-### But what’s it good for?
+#### But what’s it good for?
 
 As I was testing out what DALL-E can do well and what it can't, I found myself often wondering what practical application it may have. Can this develop into a tool whose utility extends beyond entertainment? Can it be more than a souped up parlor trick?
 
@@ -111,7 +111,7 @@ Perhaps a good place to start would be to consider OpenAI’s own recommendation
 
 The first (and most banal) application that comes to mind is its use for generating graphical content. It’s not difficult to imagine that future versions of DALL-E could become sufficiently good at understanding the task that they may compete with human graphic designers. But while DALL-E may democratize access to bespoke graphic images (e.g. a layperson’s ability to generate a fitting logo for their website), it seems unlikely that even an army of DALL-E’s would unseat the human element in art and design. 
 
-## AI art, like forgeries, are _artifice_ , not art, for they lack the most compelling aspect of the process of creation: original intent.
+### AI art, like forgeries, are _artifice_ , not art, for they lack the most compelling aspect of the process of creation: original intent.
 
 >  _“It might be that, with time, we become less impressed by the algorithm's ability to emulate the immediate stylistic impressions of particular artists, and care more about other abilities that remain (for now) the domain of the human artist, for example conceptual creativity or stylistic innovation,” Harrison adds._
 
@@ -131,7 +131,7 @@ Turning to the benefits it could confer: what could DALL-E make easy that is cur
 
 NLPs can quickly process immense amounts of text, and a DALL-E variant could do the same for images. The use cases for this simple task are endless. Today, scholars, editors, and researchers in many fields lament that [the rate of publishing is now too high](https://www.nature.com/articles/s41562-019-0741-0#:~:text=A%20culture%20of%20publication%2Dworship,methodological%20rigour%2C%20rather%20than%20publishability.) for individuals to have a comprehensive understanding, or even a practicable overview, of their field. 
 
-## The issue is: how can we safely incorporate artificial intelligence into consequential decision-making processes?
+### The issue is: how can we safely incorporate artificial intelligence into consequential decision-making processes?
 
 With the aid of powerful text and image comprehension tools, the scope of literary and historical research may suddenly expand exponentially (e.g. find all mentions of the phrase “silent as the grave” in English written history[10](https://universalprior.substack.com/p/hello-dall-e#footnote-10-64366896)). It can bootstrap research in science, whether the problem in question requires broad text search (e.g. conducting a thorough review of the literature for a specific topic) or the study and comparison of visual features (e.g. for taxonomists or anatomists, find all known images of dacetine ants). 
 
@@ -149,7 +149,7 @@ Here, we return to the fundamental issue of alignment. We do not yet know how to
 
 GPT-3, DALL-E, and related algorithms are promising tools, but which problems they are best suited to solving and how we can safely scale them for general use remains unclear. 
 
-### Conclusions
+#### Conclusions
 
 In sum, DALL-E (and DALL-E 2) constitutes an impressive implementation of natural language processing and image generation models. Moreover, its surprising flexibility and “creativity,” given the poverty of the input it receives has generated much food for thought for AI researchers and the public alike. Yet, what tools like DALL-E can or should be used for in the wider world remains an open, important, and delicate question. For now, let us heed the example of the [sorcerer’s apprentice](https://www.scottish-country-dancing-dictionary.com/sorcerers-apprentice.html), and play with caution. 
 

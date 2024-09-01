@@ -13,7 +13,7 @@ date: 2022-01-23
 
 * * *
 
-#  **Searching for Cause X**
+##  **Searching for Cause X**
 
 Within the effective altruism community, there is a game (in the broadest sense of the word) that goes like this:
 
@@ -38,7 +38,7 @@ In this spirit, here is my contribution. Could it be that 50 years from now, we 
 
 > "Oh boy, people really used to be blind. How on earth did we miss that the small humans are **not** alright? We even put all of them together, have them form little tribes and let them fight it out, unsupervised, [Lord-of-the-Flies](https://www.youtube.com/watch?v=WfNiQBXmPw8)-style? It's not even their fault, their [brains are just going coo-coo](https://journals.sagepub.com/doi/full/10.1177/0963721412473755) at that age! The small humans literally don't even have [properly developed morality yet](https://psycnet.apa.org/record/2018-63285-020). Puberty really was _the worst_."
 
-#  **Low Points in High School**
+##  **Low Points in High School**
 
 >  _“How often do I lull my seething blood to rest, for you have never seen anything so unsteady, so uncertain, as this heart.”_  
 >  ― **Johann Wolfgang von Goethe**
@@ -59,7 +59,7 @@ The [80000 hours](https://80000hours.org/) project has a framework for tackling 
 
 There is a more [informal](https://80000hours.org/career-guide/most-pressing-problems/) and a more [formal](https://80000hours.org/articles/problem-framework/) version of this framework, and my analysis falls somewhere in the middle.
 
-##  **Impact.**
+###  **Impact.**
 
 [Traditionally](https://80000hours.org/articles/problem-framework/#:~:text=ill%2Dhealth%20worldwide%20%28-,measured,-in%20QALYs%20lost), the impact was often measured in QALYs (Quality Adjusted Life Years). But [QUALYs are bad](https://www.happierlivesinstitute.org/health-metrics.html) because they ask people to _imagine_ how bad certain conditions are. A [better](https://forum.effectivealtruism.org/posts/nevDBjuCPMCuaoMYT/we-care-about-walys-not-qalys)[ alternative is WELLBYs](https://www.happierlivesinstitute.org/walys.html) (Well-being Adjusted Life Years), which derive from asking how people in the condition feel.
 
@@ -99,7 +99,7 @@ However, here's an important **note of caution** : I'm just a guy [(not) reading
 
 I'm not convinced by the argument they bring forward for this conclusion[7](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-7-47550671), but they have a Ph.D. in this topic, and I don't. So if anybody has a more careful reading of the literature, I'd be happy to hear about it!
 
-###  **Shut up and calculate.**
+####  **Shut up and calculate.**
 
 Despite the considerable uncertainty around these numbers, I'd conservatively estimate that, _on average,_ adolescents experience a decrease of -0.2-0.4 LSP relative to baseline between the ages of 11 and 16. How bad is that?
 
@@ -115,7 +115,7 @@ Joel McGuire from the Happier Lives Institute has a great post on the impact of 
 
 In summary: I'm already way outside of my intellectual comfort zone, but to put the money where my mouth is and to start a discussion: **fixing whatever makes[1.2 billion adolescents](https://www.who.int/health-topics/adolescent-health#:~:text=than%20ever%20before%3A-,1.2%20billion,-%2C%20totalling%20one%20sixth)**[8](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-8-47550671) **unhappy (on average) could have the same positive impact as giving 1.2 billion people living in global poverty $1000 each, or relieving 1.2 billion people from moderate pain or discomfort. Any solution that costs less than $1.2 trillion could be considered a "win".**
 
-##  **Tractability & Neglectedness.**
+###  **Tractability & Neglectedness.**
 
 This is where the analysis gets a bit hairier[9](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-9-47550671). All the data I presented in the previous section is purely correlational and establishes _zero_ causation. [Proctor et al. (2009)](https://www.pprc.gg/wp-content/uploads/2014/05/JHS.LS-Review.pdf), after doing a thorough meta-analysis of 141 studies on youth life satisfaction, also admit that:
 
@@ -125,7 +125,7 @@ If we don't know which factors contribute to the decrease in life satisfaction, 
 
 So, instead, let's tackle the problem one level higher. How can we identify candidate interventions for improving life satisfaction in adolescents? I came up with three categories by imagining that we [have solved the problem in 50 years and working back from there](https://en.wikipedia.org/wiki/Backward_induction).
 
-###  **When all you have is a hammer...**
+####  **When all you have is a hammer...**
 
  **Angle of attack?** While [Proctor et al. (2009)](https://www.pprc.gg/wp-content/uploads/2014/05/JHS.LS-Review.pdf) are hesitant about naming causal factors, they _do_ highlight several factors that "foster" positive life satisfaction (LS).
 
@@ -137,7 +137,7 @@ It appears at least plausible that if we manage to provide all these things to t
 
 However, 50 years might appear relatively short without some [radical/exponential transformation of the world economy](https://www.lesswrong.com/posts/KrJfoZzpSDpnrv9va/draft-report-on-ai-timelines). Thus, the task of reaching this standard of living is probably basically [equivalent to solving AI Safety](https://futureoflife.org/ai-safety-research/).
 
-###  **... please don't hit adolescents with it.**
+####  **... please don't hit adolescents with it.**
 
  **Angle of attack:** When reading the summary from [Proctor et al. (2009)](https://www.pprc.gg/wp-content/uploads/2014/05/JHS.LS-Review.pdf), I was surprised to find only minimal mention of the common factor from almost all [anecdotal reports](https://www.reddit.com/r/self/comments/bue4qo/am_i_the_only_person_who_feels_that_school_was/): bullying[10](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-10-47550671). One possible (though surprising) explanation for this is that, according to [Lázaro-Visa et al. (2019)](https://www.frontiersin.org/articles/10.3389/fpsyg.2019.01691/full#h1),
 
@@ -155,7 +155,7 @@ The slow decline since the early 2000s is also mirrored in [data from the U.S.](
 
 Assuming that bullying will level off at a nonzero, constant rate, we might need additional interventions beyond awareness campaigns to protect the victims of bullying. [Anonymous surveillance](https://ieeexplore.ieee.org/document/6012206), if implemented reliably, might provide the tools to identify destructive social dynamics before they escalate into bullying dynamics. However, maintaining anonymity when resolving these dynamics is challenging.
 
-###  **Make brains less coo-coo.**
+####  **Make brains less coo-coo.**
 
 While the previous interventions attempt to tackle the problem at the societal level, not all of the factors leading to suffering during puberty are due to external factors. In particular, I've already alluded to the fact that the brain of adolescents has to go through a lot during puberty. [Conventional](https://www.khanacademy.org/test-prep/mcat/behavior/human-development/v/brain-changes-during-adolescence)[ wisdom](https://www.ted.com/talks/sarah_jayne_blakemore_the_mysterious_workings_of_the_adolescent_brain/transcript?language=en#t-262099) backed up by [evidence](https://www.nature.com/articles/nn1099_861) is that the grey matter of the frontal cortex (containing cell bodies of neurons) grows more prominent and then shrinks again during puberty.
 
@@ -171,7 +171,7 @@ Changes in the amygdala could _totally_ explain why teenagers are unhappy. We al
 
  **What can we do about it?** There might be pharmacological (or non-obvious lifestyle) interventions to soften the emotional blow of puberty without affecting any of the necessary developmental processes. [Some researchers](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4471741/) call for "aging" to be classified as a disease. Perhaps an analogous argument can be made for puberty. Further research on this question (particularly on the amygdala's role in puberty) could help clarify the situation and potentially even lead to interventions to alleviate suffering during adolescence[14](https://universalprior.substack.com/p/puberty-as-cause-x#footnote-14-47550671).
 
-#  **Summary & FAQ**
+##  **Summary & FAQ**
 
 Here are my key takeaways:
 
@@ -194,7 +194,7 @@ Here are my key takeaways:
 
 
 
-## FAQ
+### FAQ
 
 I’ve been bugging people for a long while with the idea that we might look back at puberty and shudder in horror. I tend to receive the same responses, so I have a FAQ:
 

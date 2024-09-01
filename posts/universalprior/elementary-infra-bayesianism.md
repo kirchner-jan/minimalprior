@@ -19,7 +19,7 @@ While that idea is nice, there is a severe flaw at its core: [obfuscation](https
 
 Why am I bringing this up? No reason in particular.
 
-#  **Why Infra-Bayesianism?**
+##  **Why Infra-Bayesianism?**
 
 Engaging with the work of Vanessa Kosoy is a [rite](https://www.alignmentforum.org/posts/SzrmsbkqydpZyPuEh/my-take-on-vanessa-kosoy-s-take-on-agi-safety) [of](https://www.alignmentforum.org/posts/Zi7nmuSmBFbQWgFBa/infra-bayesianism-unwrapped) [passage](https://www.alignmentforum.org/posts/beLgLr6edbZw4koh2/an-143-how-to-make-embedded-agents-that-reason) in the AI Safety space. Why is that?
 
@@ -34,7 +34,7 @@ Engaging with the work of Vanessa Kosoy is a [rite](https://www.alignmentforum.o
 
 But being complicated is (in itself) not a mark of quality. [If you can't explain it, you don't understand it](https://en.wikiquote.org/wiki/Richard_Feynman#:~:text=You%20know%2C%20I%20couldn%27t%20do%20it.%20I%20couldn%27t%20reduce%20it%20to%20the%20freshman%20level.%20That%20means%20we%20really%20don%27t%20understand%20it.). So here goes my attempt at "Elementary Infrabayesianism", where I motivate a portion of Infrabayesianism using pretty pictures and high school mathematic[1](https://universalprior.substack.com/p/elementary-infra-bayesianism#footnote-1-53997824).
 
-#  **Uncertain updates**
+##  **Uncertain updates**
 
 Imagine it's late in the night, the lights are off, and you are trying to find your smartphone. You cannot turn on the lights, and you are having a bit of trouble seeing properly[2](https://universalprior.substack.com/p/elementary-infra-bayesianism#footnote-2-53997824). You have a vague sense about where your smartphone should be (your prior, panel **a** ). Then you see a red blinking light from your smartphone (sensory evidence, panel **b** ). Since your brain is [really good at this type of thing](https://www.sciencedirect.com/science/article/abs/pii/S0928425704000841), you integrate the sensory evidence with your prior optimally[3](https://universalprior.substack.com/p/elementary-infra-bayesianism#footnote-3-53997824) to obtain an improved sense of where your smartphone might be (posterior, panel **c** ).
 
@@ -46,7 +46,7 @@ Now let's say you are even more uncertain about where you put your smartphone.[4
 
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7fcb60df-dc59-4831-8911-155c6349d3a4_3413x659.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7fcb60df-dc59-4831-8911-155c6349d3a4_3413x659.png)This is _still_ only boring old Bayes. To go Infra, we have to go weird.
 
-#  **Fundamentally uncertain updates**
+##  **Fundamentally uncertain updates**
 
 Let's say you are _really, fundamentally_ unsure about where you put your phone. If someone were to ~~put a gun to your head~~ threaten to [sign you up for sweaters for kittens](https://universalprior.substack.com/p/the-tale-of-gandhi-and-the-devil?s=w#:~:text=sweaters%20for%20kittens) unless you give them your best guess, you could not[5](https://universalprior.substack.com/p/elementary-infra-bayesianism#footnote-5-53997824). 
 
@@ -75,7 +75,7 @@ This is basically Bayes' theorem applied to each prior separately. Still, the ev
 
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F38488f90-80ce-427e-b8f9-7ada74e15836_3413x659.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F38488f90-80ce-427e-b8f9-7ada74e15836_3413x659.png)While this picture looks almost identical to the previous section, notice that the posterior is still split in two! Thus, we can still tell which one of our initial guesses turned out to be "more accurate".
 
-#  **Fundamentally** _ **dangerous**_ **updates**
+##  **Fundamentally** _ **dangerous**_ **updates**
 
 Alright, you know where this is going. We will have to start caring about things that become less likely after observing the evidence. Why we have to care is a bit hard to motivate; Vanessa Kossoy and Diffractor motivate in [three parts](https://www.alignmentforum.org/s/CmrW8fCmSLK7E25sa/p/YAa4qcMyoucRS2Ykr#:~:text=will%20confuse%20you.-,First,-%2C%20what%20sorts%20of) where I don't even get the first part[9](https://universalprior.substack.com/p/elementary-infra-bayesianism#footnote-9-53997824)[10](https://universalprior.substack.com/p/elementary-infra-bayesianism#footnote-10-53997824).
 
@@ -101,7 +101,7 @@ Intuitively this translates into something like:
 
 This is a _very_ cautious strategy, and it might be appropriate when you're in dangerous domains with the potential for catastrophic outliers, basically what Nassim Taleb calls [Black Swan](https://en.wikipedia.org/wiki/The_Black_Swan:_The_Impact_of_the_Highly_Improbable) events. I'm not sure how _productive_ this strategy is, though; noise might dramatically mess up your updates at some point.
 
-#  **Closing thoughts**
+##  **Closing thoughts**
 
 This concludes the introduction to Elementary Infrabayesianism. I realize that I have only scratched the surface of what's in [the sequence](https://www.lesswrong.com/s/CmrW8fCmSLK7E25sa), and there is [more](https://www.alignmentforum.org/posts/gHgs2e2J5azvGFatb/infra-bayesian-physicalism-a-formal-theory-of-naturalized) coming [out](https://www.alignmentforum.org/posts/PrYbdKcj89f8swCkr/infra-topology) every other month, but letting yourself get nerd-sniped is just about as important as being able to [stop working on something and publish](https://universalprior.substack.com/p/via-productiva?s=w#:~:text=Don%27t%20fight%20the%20Hydra.). I hope what I wrote here is helpful to some, particularly in conjunction with the other explanations on the topic ([1](https://www.alignmentforum.org/posts/SzrmsbkqydpZyPuEh/my-take-on-vanessa-kosoy-s-take-on-agi-safety) [2](https://www.alignmentforum.org/posts/Zi7nmuSmBFbQWgFBa/infra-bayesianism-unwrapped) [3](https://www.alignmentforum.org/posts/beLgLr6edbZw4koh2/an-143-how-to-make-embedded-agents-that-reason)), which also go beyond the introduction.
 

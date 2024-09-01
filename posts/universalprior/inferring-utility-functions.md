@@ -7,7 +7,7 @@ date: 2022-02-10
 ---
 
 
-# **Johnny did it.**
+## **Johnny did it.**
 
 [Last week](https://universalprior.substack.com/p/task-decomposition-and-scientific) I offhandedly mentioned the unlikely possibility that my coworkers are [clones of John von Neumann](https://fantasticanachronism.com/2021/03/23/two-paths-to-the-future/). I need to explain that a bit more ——— It was a compliment, I swear! John von Neumann was... a "[genius](https://unherd.com/2021/11/the-genius-of-john-von-neumann/)" doesn't quite do it justice. The "[Last Great Polymath](https://www.sothebys.com/en/articles/john-von-neumann-the-last-great-polymath)"? The "[Man from the Future](https://www.amazon.co.uk/dp/B08X6QLFSC/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1)"? The ["life of the party," "an occasional heavy drinker," and "reckless driver"](https://cs.stanford.edu/people/eroberts/courses/soco/projects/1998-99/game-theory/neumann.html)[1](https://universalprior.substack.com/p/inferring-utility-functions#footnote-1-48484774)? Okay, that last one again isn't very flattering. I'm trying to say that von Neumann was an interesting person who did many interesting things.
 
@@ -27,7 +27,7 @@ But I think it’s an interesting perspective. There is a seemingly straightforw
 
 Sounds good. Where is the catch?
 
-#  **The futility of computing utility.**
+##  **The futility of computing utility.**
 
 Let's start by trying to write down a utility function. **The proof of the von-Neumann-Morgenstern is** _ **constructive**_ , i.e., it doesn't only guarantee the existence of a utility function, it also shows us the way to get there. Here is a step-by-step guide:
 
@@ -65,7 +65,7 @@ After sorting all outcomes from worst to best, we offer you a sequence of lotter
 
 I was halfway through setting up [MTurk](https://www.mturk.com/), but let's be realistic - this will not work. [Allais paradox](https://en.wikipedia.org/wiki/Allais_paradox) aside, I don't have the patience to set this up, so who will have the patience to go through this? Of course, we should have seen this coming. **Just because a proof is "constructive" doesn't mean that we can apply it in the messy real world.** Getting a utility function out of a human will require some elbow grease.
 
-#  **Human fallibility and reward modeling.**
+##  **Human fallibility and reward modeling.**
 
 Let’s shuffle some symbols. How do we account for all the human messiness and the tendency to make mistakes? A standard trick is to call it "noise"[7](https://universalprior.substack.com/p/inferring-utility-functions#footnote-7-48484774). Given a _true_ estimate of utility, ū(A), we might write the perceived utility at any given time as a random variable, u(A), distributed around the true value,
 
@@ -97,7 +97,7 @@ Having uncovered this connection, a natural strategy for inferring a utility fun
 
 Can this work? It doesn’t involve MTurk for now, so I am happy to try!
 
-# A natural representation of utility functions.
+## A natural representation of utility functions.
 
 I found that the neural network achieves near-zero loss on the comparisons after 20k steps (panel **a** ). Runtime appears to increase linearly with the number of elements[10](https://universalprior.substack.com/p/inferring-utility-functions#footnote-10-48484774). The resulting utility functions are monotonic and increase by an (approximately) equal amount from one item to another (panel **b** ). This demonstrates that given enough time, a multilayer perceptron can sort a list.
 
@@ -107,7 +107,7 @@ Some might say that I used several hours of compute time on a [Google Colab](htt
 
 This last set of experiments is exciting because introducing loops leads to nonlinear utility functions that are squashed together in the vicinity of the loop. Intuitively, if outcomes #3 and #4 are impossible to distinguish reliably, this might indicate that their utility is indeed very similar. The exciting possibility is that step 3 of the procedure above (psychometric calibration of utilities) could automatically be satisfied when options are sufficiently similar and sometimes confused[11](https://universalprior.substack.com/p/inferring-utility-functions#footnote-11-48484774).
 
-# Concluding thoughts and what’s next?
+## Concluding thoughts and what’s next?
 
 There are a lot more experiments I want to run on this toy domain to probe the limits to which preference orderings can be turned into utility functions:
 

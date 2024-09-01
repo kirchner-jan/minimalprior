@@ -12,7 +12,7 @@ date: 2022-12-28
 >     
 >      _The letter is for you, dear reader. For you who are still here, for you who are still a reader, for the only reader of all, the author, for her, for all readers, for those who've long ago read and found the story unsatisfactory, for all of you who, as I've said, have long since passed through the gateway, through the doorway, through the opening that leads to the realms of the story and to the realm of the storytellers, who are all gone, who are all gone forever. Thank you for being here. […] Best wishes to you, dear reader. -[#IAN](https://universalprior.substack.com/p/making-of-ian)_
 
-## It’s been a minute! And darn, I’ve missed you.
+### It’s been a minute! And darn, I’ve missed you.
 
 As some of you might have read, I recently [joined OpenAI](https://universalprior.substack.com/p/a-quick-one-while-hes-away) as a researcher on the alignment team, and, phew, doing _[all the things](https://forum.effectivealtruism.org/posts/CCx7KpQHMLbkud9PK/slightly-advanced-decision-theory-102-four-reasons-not-to-be#Gotta_catch_them_all_:~:text=ex%2Dpost\)%20option.-,Or,-%2C%20in%20less%20fancy)_ is not as trivial as I thought. I've [previously quipped about](https://universalprior.substack.com/p/serendipitous-connections-applying?utm_source=substack&utm_campaign=post_embed&utm_medium=web#:~:text=While%20I%20am%20in%20no%20position) how I have no expertise in AI. While that was perhaps hyperbole, getting up to speed with where AI is heading and how to best contribute to that is fun but also a challenge. Luckily, I am not alone on my journey into AI alignment research, and I get to collaborate [with some absurdely](https://scottaaronson.blog/?p=6823#:~:text=hundred%20prime%20numbers\).-,Anyway,-%2C%20we%20actually%20have)[1](https://universalprior.substack.com/p/tspsis-and-how-i-write#footnote-1-92912194) [brilliant](https://universalprior.substack.com/p/introduction-to-hebbian-natural-abstractions) [people](https://universalprior.substack.com/p/introduction-to-hebbian-natural-abstractions). So the timing of joining was also [kind of perfect](https://openai.com/blog/chatgpt/). So things are getting more manageable every day.
 
@@ -22,7 +22,7 @@ Thanks for reading On Brains, Minds, And Their Possible Uses! Subscribe for free
 
 Subscribe
 
-## Why I shouldn’t write this
+### Why I shouldn’t write this
 
 First off, I’m not a fan of belaboring a process. [XKCD said all that needs to be said](https://xkcd.com/1827/), reality is not a nice linear sequence of events where cause and effect are visible on the surface but rather a [weird mess of causally entangled stuff](https://www.alignmentforum.org/s/kxs3eeEti9ouwWFzr).
 
@@ -36,7 +36,7 @@ And yet, here we are.
 
 I decided to reject the second argument above because [it is self-reinforcing](https://universalprior.substack.com/p/the-tale-of-gandhi-and-the-devil?r=7inm4&utm_campaign=post&utm_medium=web&utm_source=#details). Not writing because I have not written recently is - quite clearly - a lousy reason. After not having written for a while, writing about how I write seems appropriately self-referential for this Substack. And finally, with prose and code [converging rapidly](https://www.nature.com/articles/d41586-022-04383-z), a reflection on the architecture of text might provide unexpected insights into [how AI thinks](https://www.alignmentforum.org/posts/vJFdjigzmcXMhNTsx/simulators). And maybe looking at my process allows some people to derive a generator[3](https://universalprior.substack.com/p/tspsis-and-how-i-write#footnote-3-92912194). Sooo~
 
-## Je Vous présente ~~`TSPSI~~`.
+### Je Vous présente ~~`TSPSI~~`.
 
 My writing framework is called the ‘TSPSI’[4](https://universalprior.substack.com/p/tspsis-and-how-i-write#footnote-4-92912194) framework. I picked it up at some point during my Ph.D. and can't find a reference for it online, but I'm almost sure it's [not original](https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LCqKL89KNzcxYPQSTS1LLaosycjMS1fILFZIVChKzc2sAADuNQzM&q=everything+is+a+remix&oq=Everything+is+a+rem&aqs=chrome.1.0i355i512j46i512j69i57j0i512l2j46i512j0i512l4.3545j0j7&sourceid=chrome&ie=UTF-8#:~:text=with%20Site%20Links-,Everything%20is%20a%20Remix,https%3A//www.everythingisaremix.info,-The%20site%20about).
 
@@ -85,7 +85,7 @@ What’s next?
 
 Now that we have an improved view of the territory, we can describe ‘[the delta](https://universalprior.substack.com/p/on-not-reading-papers)’ and the new territory that has become accessible. Again, be humble (don’t oversell) but also keep in mind that you are in the best position to see the new territory, given how familiar you are with your work.
 
-## Musings
+### Musings
 
 While the TSPSI framework was introduced to me as a framework for academic writing, I’m applying it much more broadly. For example, whenever I have a blank page in front of me that I want to fill with words, I create five headers and write down thoughts as they appear in the appropriate section. This is particularly fun with a tool like [Roam Research](https://roamresearch.com/), where I can drag and drop thoughts from outside the workspace into the list and rearrange things on the fly.
 
@@ -119,7 +119,7 @@ Having revealed my secret sauce for writing, consider going through some of my o
 
 and see if you can recover the TSPSI framework ;)
 
-## Closing thoughts
+### Closing thoughts
 
 I’m happy to have written this! I’ve wanted to have a reference for the TSPSI framework for a while, and I also enjoy being able to click the “publish” button once again. I hope that, despite my general skepticism of advice, the ideas in this post can be useful for other people.
 

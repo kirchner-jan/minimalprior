@@ -11,7 +11,7 @@ _Hello and welcome to everyone who joined from Hacker News or Marginal Revolutio
 
 * * *
 
-# Foundations and Flaws
+## Foundations and Flaws
 
 In high school I learned that there are four fundamental questions in philosophy:
 
@@ -32,7 +32,7 @@ This leads to an interesting clash of cultures: people interested in "what can I
 
 So buckle up, I'll be diving into expected value reasoning and slightly advanced decision theory. In four bite-sized sections that can be enjoyed in sequence or in isolation, I'll provide theoretical footing for a lot of the things that are already practiced in effective altruism anyway, but that do not follow directly from naively applying expected value reasoning. As mentioned above, I'm partially doing this to satisfy my own need for having a solid theoretical basis for my actions. But beyond that, my hope is also that by articulating these arguments and demonstrating how to use computational toy models to understand complicated dynamics I'm providing useful tools for the community.
 
-#  **Average action**
+##  **Average action**
 
 But before we can talk about tools, let me set the stage. Feel free to skip this section if you are familiar with the central logic and recommendations for action of effective altruism.
 
@@ -51,7 +51,7 @@ Despite these caveats, a handful of recommendations have emerged for the aspirin
 
 
 
-#  **Suboptimal solutions**
+##  **Suboptimal solutions**
 
 Are you convinced? I hope not. Here are three points that give me pause:
 
@@ -63,7 +63,7 @@ Are you convinced? I hope not. Here are three points that give me pause:
 
 Let's see if we can untangle this and see where the discord is coming from.
 
-###  **Diverse detours.**
+####  **Diverse detours.**
 
 On the topic of career choice: I have the impression that[ too much importance is assigned to the choice of a career](https://80000hours.org/about/#:~:text=your%20choice%20of%20career%20is%20probably%20your%20best%20opportunity%20to%20do%20that). 80.000 hours writes:
 
@@ -111,7 +111,7 @@ There are only two conditions: We should focus on opportunities that have at lea
 
 “Maximize variance”, a friend once told me. Those are words to live by.
 
-###  **Intoxicated imagination.**
+####  **Intoxicated imagination.**
 
 (For comedic effect I'm putting these sections back to back.)
 
@@ -149,7 +149,7 @@ Now we turn to the last point on my list: the unintuitive notion that you[ ought
 
 In the next two sections, I'll present two more arguments for why it's (sometimes) fine to spread your efforts across multiple opportunities.
 
-###  **Gotta catch them all.**
+####  **Gotta catch them all.**
 
 Imagine you are caught in a psychology student's nightmare and have to choose between two sources of reward. One provides rewards on 70% of occasions where you approach it, the other only on 30%. The standard answer from decision theory is that you ought to always go to the first source[15](https://universalprior.substack.com/p/slightly-advanced-decision-theory#footnote-15-44426436).
 
@@ -177,7 +177,7 @@ If we translate the toy model into the domain of existential risk prevention, th
 
 Under the maxipok rule, we don’t care about whether we get an unholy amount of reward from one of the sources, we only care about making sure that nothing _terrible_ flies under the radar.
 
-###  **The first and the tenth Oreo cookie.**
+####  **The first and the tenth Oreo cookie.**
 
 While the argument from non-fungible goods is already sufficient to justify splitting donations across existential risk prevention charities, no discussion of the topic would be complete without mentioning [diminishing returns](https://forum.effectivealtruism.org/tag/diminishing-returns). I expect that most people are familiar with the concept, but I'm having a _lot_ of fun with my toy models and with making pretty figures, so here we go.
 
@@ -217,7 +217,7 @@ When the **x** is small, then we are still in the "basically linear" regime and 
 
 Now, clearly, if the **a** of some opportunities are [orders of magnitude larger](https://www.effectivealtruism.org/articles/prospecting-for-gold-owen-cotton-barratt/) than others, then those other opportunities still should receive approximately 0% of our donations (sorry [sweaters-for-kittens](https://universalprior.substack.com/p/the-tale-of-gandhi-and-the-devil)). But if there are multiple equally promising opportunities, it is o.k. to split your budget.
 
-###  **Concluding thoughts**
+####  **Concluding thoughts**
 
 In this post, I have re-derived some of the community maxims that have naturally emerged over the years. In particular, I argued that
 

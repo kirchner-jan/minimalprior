@@ -7,7 +7,7 @@ date: 2023-01-03
 ---
 
 
-# Nerding out with the OG cyborgs
+## Nerding out with the OG cyborgs
 
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb622ed84-247b-4e9c-a998-6aa364c481e8_2048x1628.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb622ed84-247b-4e9c-a998-6aa364c481e8_2048x1628.png)
 
@@ -32,7 +32,7 @@ However, as we learned through the seminar, janus has indeed asked and answered 
 
 Today we published the [first](https://www.alignmentforum.org/posts/nmMorGE4MS4txzr8q/simulators-seminar-sequence-1-background-and-shared) [two](https://www.alignmentforum.org/posts/TTn6vTcZ3szBctvgb/simulators-seminar-sequence-2-semiotic-physics) posts in the sequence! In case you want to get the full scoop, I invite you to check them out now. If you're more here for the 20-80, I reproduce one of the coolest results from the first session below - the semiotic coin.
 
-# Semiotic coin flip
+## Semiotic coin flip
 
 The first session of the seminar was concerned with what janus calls “semiotic physics”. Semiotics is the study of signs and symbols and their use or interpretation. Physics is physics. But the type of physics we were discussing at the seminar is the type that tries to [explain everything in the universe with simple rules](https://www.lesswrong.com/tag/reductionism-sequence). Semiotic physics, then, is the _study of the fundamental forces and laws that govern the behavior of signs and symbols_.
 
@@ -78,7 +78,7 @@ Here we see that, indeed, the negative probability of the most likely sequence f
 
 just as we would expect from a large deviation principle. The full mathematical shebang to formulate this proposition is [in the forum post](https://www.alignmentforum.org/posts/TTn6vTcZ3szBctvgb/simulators-seminar-sequence-2-semiotic-physics), but even there we don’t have a mathematically rigorous proof. But that was part of the beauty of the seminar; by limiting the time we spend per session, we forced ourselves not to get hung up on details.
 
-# Closing thoughts
+## Closing thoughts
 
 Attending this seminar was one of my clear highlights of the past months. Discussing the shape and function of simulators with a group of people who share a lot of interests, but also contribute their diverse backgrounds, was a constant string of revelations. I am still confused about a lot of things, and there are a bunch of experiments I can’t wait to run, but even if none of the wild ideas we churned through end up being correct, I’m still bullish on the overall format of the seminar.
 

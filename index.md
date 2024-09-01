@@ -24,7 +24,7 @@ Jan 3, 2023 • Jan Hendrik Kirchner
 
 <hr>
 
-### December 2022
+#### December 2022
 
 [TSPSIs and How I Write](./posts/universalprior/tspsis-and-how-i-write.html)
 
@@ -34,7 +34,7 @@ Dec 27, 2022 • Jan Hendrik Kirchner
 
 <hr>
 
-### November 2022
+#### November 2022
 
 <hr>
 
@@ -46,7 +46,7 @@ Nov 21, 2022 • Jan Hendrik Kirchner and Samuel Nellessen
 
 <hr>
 
-### September 2022
+#### September 2022
 
 <hr>
 
@@ -56,7 +56,7 @@ TL;DR: Guest post by Michael Oesterle on coordination problems (and more) betwee
 
 Sep 19, 2022 • Jan Hendrik Kirchner and Michael Oesterle
 
-### July 2022
+#### July 2022
 
 [Hello DALL-E!](./posts/universalprior/hello-dall-e.html)
 
@@ -74,7 +74,7 @@ Jul 3, 2022 • Jan Hendrik Kirchner
 
 <hr>
 
-### June 2022
+#### June 2022
 
 <hr>
 
@@ -94,7 +94,7 @@ Jun 6, 2022 • Jan Hendrik Kirchner
 
 <hr>
 
-### May 2022
+#### May 2022
 
 <hr>
 
@@ -130,7 +130,7 @@ May 1, 2022 • Jan Hendrik Kirchner
 
 <hr>
 
-### April 2022
+#### April 2022
 
 <hr>
 
@@ -174,7 +174,7 @@ Apr 6, 2022 • Jan Hendrik Kirchner
 
 <hr>
 
-### March 2022
+#### March 2022
 
 <hr>
 
@@ -202,7 +202,7 @@ Mar 6, 2022 • Jan Hendrik Kirchner
 
 <hr>
 
-### February 2022
+#### February 2022
 
 [Trust-maximizing AGI](./posts/universalprior/trust-maximizing-agi.html)
 
@@ -220,7 +220,7 @@ Feb 9, 2022 • Jan Hendrik Kirchner
 
 <hr>
 
-### January 2022
+#### January 2022
 
 [Task Decomposition And Scientific Inquiry](./posts/universalprior/task-decomposition-and-scientific.html)
 
@@ -262,7 +262,7 @@ Jan 4, 2022 • Jan Hendrik Kirchner
 
 <hr>
 
-### December 2021
+#### December 2021
 
 <hr>
 
@@ -290,7 +290,7 @@ Dec 9, 2021 • Jan Hendrik Kirchner
 
 <hr>
 
-### November 2021
+#### November 2021
 
 [Slightly advanced decision theory 102: Four reasons not to be a (naive) utility maximizer](./posts/universalprior/slightly-advanced-decision-theory.html)
 
@@ -332,7 +332,7 @@ Nov 5, 2021 • Jan Hendrik Kirchner and Nadia
 
 <hr>
 
-### October 2021
+#### October 2021
 
 <hr>
 
@@ -368,7 +368,7 @@ Oct 3, 2021 • Jan Hendrik Kirchner
 
 <hr>
 
-### September 2021
+#### September 2021
 
 [Cognitive Biases in Large Language Models](./posts/universalprior/cognitive-biases-in-large-language-edc.html)
 
@@ -402,7 +402,7 @@ Sep 4, 2021 • Jan Hendrik Kirchner
 
 <hr>
 
-### August 2021
+#### August 2021
 
 [Making of #IAN](./posts/universalprior/making-of-ian.html)
 

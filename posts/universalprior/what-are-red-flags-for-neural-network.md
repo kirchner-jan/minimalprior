@@ -33,7 +33,7 @@ It’s not super clear what we are looking for exactly. In general, we are looki
 
 Combining all of the above, we think it is more plausible that current NN architectures don’t suffer than that they do. However, we are pretty uncertain since we mix the fuzzy concept of suffering with NNs, which are also not well understood.
 
-##  **Neural correlates**
+###  **Neural correlates**
 
 First, [to avoid specific philosophical tripwires](https://www.jstor.org/stable/187355)[1](https://universalprior.substack.com/p/what-are-red-flags-for-neural-network#footnote-1-43720749), we [engineer our concepts](https://www.lesswrong.com/posts/9iA87EfNKnREgdTJN/conceptual-engineering-the-revolution-in-philosophy-you-ve) using insights from neuroscience. The hope is that we might be able to derive necessary or sufficient conditions (or at least bundles of features that strongly correlate with suffering) that generalize outside the realm of biology. Thus, a natural approach to investigating how suffering comes about is to look at how it comes about in the (human) brain. The neuroscience of pain/suffering is a mature scientific field with [seminal work going back to the 1800s](https://sci-hub.se/https://www.annualreviews.org/doi/full/10.1146/annurev.neuro.26.041002.131022), [multiple](https://www.dovepress.com/journal-of-pain-research-journal) [dedicated](https://www.jpain.org/) [journals](https://www.journals.elsevier.com/neurobiology-of-pain)[2](https://universalprior.substack.com/p/what-are-red-flags-for-neural-network#footnote-2-43720749), and very few straightforward answers:
 
@@ -71,7 +71,7 @@ While neither nociception nor pain is _necessary_ or _sufficient_ for suffering,
 
 Beyond the practical limitation, there is also the conceptual ”elephant in the room” limitation that we do not know if neural networks would suffer in a way analogous to humans. This limitation applies more generally (How do we know that animals suffer in a way analogous to humans? Do other humans suffer in a way analogous to me?). Still, it applies doubly to neural networks since they do not share an evolutionary origin[9](https://universalprior.substack.com/p/what-are-red-flags-for-neural-network#footnote-9-43720749) with us.
 
-##  **Behavior**
+###  **Behavior**
 
 Inferring the ability to suffer from behavioral data is hard, but we can still gain some understanding. We split this section into two parts - one for large language models and one for RL agents.
 
@@ -109,7 +109,7 @@ For RL agents, we can observe their behavior in an environment. This is easier f
 
 
 
-##  **High-level considerations**
+###  **High-level considerations**
 
 Rather than looking closely at necessary and sufficient conditions for suffering or comparisons on the individual level, one could also make more abstract comparisons. Firstly, we will look at how large current neural networks are compared to those we usually expect to be sentient as a rough hand-wavy estimate. Secondly, we will think about the conditions under which the ability to suffer is likely to arise.
 

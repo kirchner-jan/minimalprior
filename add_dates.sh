@@ -1,15 +1,15 @@
 #!/bin/bash
 
-# Hardcoded directory path
+## Hardcoded directory path
 dir="./posts/universalprior"
 
-# Check if the directory exists
+## Check if the directory exists
 if [ ! -d "$dir" ]; then
     echo "Error: Directory $dir does not exist"
     exit 1
 fi
 
-# Loop through all .md files in the specified directory
+## Loop through all .md files in the specified directory
 for file in "$dir"/*.md; do
     if [ -f "$file" ]; then
         # Extract the date from the 5th line of the file

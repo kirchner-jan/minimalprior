@@ -7,7 +7,7 @@ date: 2022-01-12
 ---
 
 
-# **A proud history of drinking and playing chess**
+## **A proud history of drinking and playing chess**
 
 Please enjoy this clip of the reigning chess world champion Magnus Carlsen playing a game of [hyperbullet](https://en.wikipedia.org/wiki/Fast_chess#:~:text=controls%20are%20called%20%27-,hyperbullet,-%27%20and%20%27ultrabullet%27%20for) (30 sec total per player) while inebriated.
 
@@ -19,7 +19,7 @@ Magnus is standing on the shoulders of giants in this game. Drinking and chess h
 
 His play under the influence might be the source of the common [urban myth](https://wegochess.com/does-alcohol-improve-chess-drunken-style/) that drinking might _improve_ one’s play. Tal's heavy drinking was likely not a character flaw, but [presumably](https://www.quora.com/Is-it-true-that-Mikhail-Tal-would-drink-heavily-even-on-nights-when-he-had-a-tournament-the-next-day-Would-he-have-been-an-even-better-player-without-this-way-of-living-or-did-it-add-to-his-wild-style-of-play) represented a type of [self-medication](https://en.wikipedia.org/wiki/Self-medication) for his congenital chronic illnesses. The same can not be said for another grandmaster, who triggered one of many[3](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-3-46914010) episodes of chess drama by drinking heavily and "[losing it](https://www.reddit.com/r/AnarchyChess/comments/gi6ysu/drunk_gm_hansen_losing_it_on_stream/)" live on Twitch during a chess streaming session. On the other hand, he was [awarded](https://www.youtube.com/watch?v=pCOiGL9--9I&ab_channel=CHESSMEMEX) the infamous title "best drunk chess player in the world" by world championship challenger [Fabiano Caruana](https://en.wikipedia.org/wiki/Fabiano_Caruana). Beyond the players, there is "[alcoholic chess](https://www.pinterest.de/pin/279786195576639442/)", the "[bongcloud opening](https://en.wikipedia.org/wiki/Bongcloud_Attack)", and of course, the recent Netflix hit show "[The Queen's Gambit](https://en.wikipedia.org/wiki/The_Queen%27s_Gambit_%28miniseries%29)" about a drug-addicted, female[ Bobby Fisher](https://en.wikipedia.org/wiki/Bobby_Fischer). Magnus Carlsen winning a game of hyperbullet after having a drink or two might appear impressive to an outsider - the aficionado just calls it "Tuesday".
 
-#  **How do they do it?**
+##  **How do they do it?**
 
 What's my point? I don't think we should be surprised that chess players drink alcohol. They are, visibly, human, which means the prior probability of them [having had a drink in the last year](https://ourworldindata.org/alcohol-consumption) is (based on location) somewhere between 60 and 100%. I couldn't find more specific numbers for Twitch streamers in their mid- or late-twenties, but you probably have a decent gut feeling for that demographic. Also, given the [stigma that chess is a game for four-eyes and dweebs,](https://www.reddit.com/r/chess/comments/a2ea2b/social_and_public_perception_of_chess_in_schools/) it's not surprising to find [countersignaling](https://en.wikipedia.org/wiki/Countersignaling) in the form of leather jackets and drug consumption. No mysteries there.
 
@@ -29,7 +29,7 @@ The thing that boggles my mind is something else: _How_ can chess players get bl
 
 In this post, I want to propose an analogy with the type of AI architecture that currently dominates computer chess, and which might give us some ideas for why grandmasters can play decent chess while drunk. Perhaps there is even something we can learn from inebriated humans that is interesting for AI.
 
-#  **How to solve chess**
+##  **How to solve chess**
 
 Which tool in our belt is best suited to understand complicated cognitive phenomena? [David Marr](https://en.wikipedia.org/wiki/David_Marr_%28neuroscientist%29)'s three[5](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-5-46914010) levels of analysis appear like a good match[6](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-6-46914010):
 
@@ -39,7 +39,7 @@ Which tool in our belt is best suited to understand complicated cognitive phenom
 
 
 
-####  **Chess: the computational level.**
+#####  **Chess: the computational level.**
 
 I find it very instructive to look back at the very early days of the computer[7](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-7-46914010) and to see what people came up with when confronted with this new toy. [After factoring a large number](https://en.wikipedia.org/wiki/History_of_software#:~:text=from%20the%20beginning.-,The%20very%20first%20time,-a%20stored%2Dprogram), researchers turned almost immediately to building a [theorem prover](https://en.wikipedia.org/wiki/Logic_Theorist), and then [in 1948: chess](http://billwall.phpwebhosting.com/articles/computer_chess_timeline.htm#:~:text=In%201948%20the%20UNIVAC). In the same year, Claude Shannon at Bell Labs published a [paper](https://vision.unipv.it/IA1/ProgrammingaComputerforPlayingChess.pdf) containing a strategy for, in theory, playing flawless chess on a computer. This strategy is now known as the [MiniMax decision rule](https://en.wikipedia.org/wiki/Minimax) and, informally, states that you should pick the chess move that gives you the best possible position (max), given that your opponent _afterward_ will choose the move that gives you the worst possible position (min).
 
@@ -57,7 +57,7 @@ A moderate amount of possible moves at each level of the game tree results in [a
 
 Claude Shannon's strategy was (and still is) impractical, but practicality is also not what we aim for at the computational level. Rather, **Shannon's MiniMax strategy provides us with a useful** _abstraction_ **through which we can analyze chess further with Marr's levels**.
 
-####  **Chess: the algorithmic level.**
+#####  **Chess: the algorithmic level.**
 
 We will now brazenly skip half a century of chess history (including several [AI winters](https://en.wikipedia.org/wiki/AI_winter), the first computer to [beat the reigning world champion](https://en.wikipedia.org/wiki/Deep_Blue_%28chess_computer%29) in 1996, and [Centaur Chess](https://en.wikipedia.org/wiki/Advanced_chess)) and arrive almost in the present day. While humans have been completely outclassed on the chessboard for almost 30 years now, computer chess was characterized as "[solid and slow](https://www.theguardian.com/sport/2018/dec/11/creative-alphazero-leads-way-chess-computers-science)", taking no risks and grinding down their human opponents by accumulating tiny advantages. This changed with [AlphaZero](https://en.wikipedia.org/wiki/AlphaZero), a chess computer from the wonder factory that is Deepmind, with a playing style that is [a bit closer to the Romantics or Tal than most chess players would probably have expected](https://www.chess.com/article/view/7-games-that-transformed-chess). Grandmaster Peter Heine Nielsen [says](https://www.chess.com/article/view/7-games-that-transformed-chess#:~:text=the%20engine%27s%20games.%20%22-,After,-reading%20the%20%5BAlphaZero):
 
@@ -71,7 +71,7 @@ And despite only playing with itself, there are some [striking parallels](https:
 
 So how does AlphaZero work? It's in essence a product of a [recent revolution](https://universalprior.substack.com/p/serendipitous-connections-applying) in deep learning that allows the training of deeper and more capable neural networks. These networks are then used to bypass the problem of combinatorial explosion: instead of exploring _all_ the moves all the way to the end, the networks give reasonable suggestions for which moves appear particularly interesting, and which intermediate positions appear particularly favorable for which player. There are excellent explanations of the architecture [out](https://medium.com/applied-data-science/alphago-zero-explained-in-one-diagram-365f5abf67e0)[ there](https://nikcheerla.github.io/deeplearningschool/2018/01/01/AlphaZero-Explained/) from a machine learning engineering perspective, but for this post, I instead want to follow the lead of Paul Christiano.
 
-####  **AlphaZero as an example of Iterated Amplification and Distillation.**
+#####  **AlphaZero as an example of Iterated Amplification and Distillation.**
 
 Paul Christiano [argues](https://ai-alignment.com/alphago-zero-and-capability-amplification-ede767bb8446) that the training procedure for AlphaZero can be interpreted as an instance of **Iterated Amplification and Distillation** (IAD)[9](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-9-46914010).
 
@@ -101,7 +101,7 @@ Looks like it! The performance of AlphaZero against the leading chess computer S
 
 We thus have a very powerful **algorithm-level** approximation to the ideal at the computational level. This implementation matches, and even outplays, Magnus Carlsen on his best day, while still playing in a distinctly human-like style. How might this algorithm be implemented in the brain? And, even more importantly, how can we make it drunk?
 
-####  **Chess, the implementation level.**
+#####  **Chess, the implementation level.**
 
 The kicker of Marr's method is that once we have a particular algorithmic implementation, we can set out and try to find neural correlates. We have no guarantee of finding these correlates - in general, there are multiple possible algorithmic implementations, and there are no theoretical guarantees that we pick the one that evolution picked[14](https://universalprior.substack.com/p/the-unreasonable-feasibility-of-playing#footnote-14-46914010).
 
@@ -173,7 +173,7 @@ About a 40% reduction in rating. Substantial, but still enough to put it [neck-a
 
 It would be great to have more solid data on how alcohol affects play. Anecdotally, [Carlsen quit drinking](https://slate.com/culture/2020/02/magnus-carlsen-speed-chess-drdrunkenstein-pseudonyms-twitch-youtube.html#:~:text=Carlsen%20admits%20he%20quit) a while back for health reasons (and [after "sandbagging" the fifth Lichess Titled Arena](https://slate.com/culture/2020/02/magnus-carlsen-speed-chess-drdrunkenstein-pseudonyms-twitch-youtube.html#:~:text=I%20thought%20Carlsen%20was%20sandbagging%20these%20tournaments%20to%20make%20it%20interesting)). [This](https://wegochess.com/does-alcohol-improve-chess-drunken-style/) blog post talks at length about the detrimental effect of alcohol on chess play but does not list any sources. Opinions on the [Chess Forum](https://www.chess.com/forum/view/livechess/alcohol--chess--bad-or-good-idea) are divided.
 
-#  **Concluding thoughts**
+##  **Concluding thoughts**
 
 Should we feel less amazed at Carlsen’s intoxicated chess play, after all the above? Quite the contrary, thinking about _how_ something works can allow us to [appreciate at an even deeper level](https://www.lesswrong.com/posts/x4dG4GhpZH2hgz59x/joy-in-the-merely-real). And despite not really drinking too much myself, I _do_ have a few ideas for a couple of small experiments that really shouldn’t be too much effort…
 

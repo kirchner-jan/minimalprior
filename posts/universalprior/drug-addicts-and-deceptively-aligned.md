@@ -8,7 +8,7 @@ date: 2024-08-31
 
 Edit: The nice folks at the [Nonlinear Library](https://forum.effectivealtruism.org/posts/JTZTBienqWEAjGDRv/listen-to-more-ea-content-with-the-nonlinear-library) turned this post into an audio version [here](https://podcasts.google.com/feed/aHR0cHM6Ly9zcGt0LmlvL2YvODY5Mi83ODg4L3JlYWRfODYxN2QzYWVlNTNmM2FiODQ0YTMwOWQzNzg5NWMxNDM/episode/cEZYRUc5QzVtMlg1aDJ5aXE?sa=X&ved=0CAgQuIEEahgKEwi4yLOmrfj0AhUAAAAAHQAAAAAQngM).
 
-## Addicts and AIs
+### Addicts and AIs
 
  _A young man, let’s call him Dave[1](https://universalprior.substack.com/p/drug-addicts-and-deceptively-aligned#footnote-1-43628201), starts consuming different kinds of illegal drugs (mostly heroin) as early as age 14, as a reaction to the divorce of his parents. Even though he is from an otherwise stable family, he becomes homeless after fights about his drug consumption. Repeatedly, Dave returns to his family's home, crying and asking to sleep on the couch for a few nights. Repeatedly, the family takes him in, believing that this time he finally has a change of heart. And time and time again, Dave will disappear after a few days, taking with him all money or any other valuable thing that is not nailed down._
 
@@ -41,7 +41,7 @@ We find potential analogon of addiction therapy for AI Safety:
 
 * * *
 
-## Ontogenesis and characteristics of an addict
+### Ontogenesis and characteristics of an addict
 
 [Koob and Volkov](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6135092/) define addiction as:
 
@@ -63,7 +63,7 @@ Interestingly, the further the addiction progresses, [the more the addict resemb
 
 * * *
 
-## Instrumental convergence in addicts and AIs
+### Instrumental convergence in addicts and AIs
 
 This resemblance is particularly interesting, as addicts share additional features with the hypothetical paperclip maximizers. They exhibit (a limited form of) [instrumental convergence](https://en.wikipedia.org/wiki/Instrumental_convergence). Nick Bostrom formulates the [instrumental convergence thesis](https://www.nickbostrom.com/superintelligentwill.pdf) as:
 
@@ -91,7 +91,7 @@ Interestingly, not all instrumental values proposed by Bostrom are pursued by ad
 
 * * *
 
-## Deceptiveness in addicts and AIs
+### Deceptiveness in addicts and AIs
 
 As we have alluded to in the introduction, beyond being somewhat [myopic](https://www.alignmentforum.org/posts/Y76durQHrfqwgwM5o/lcdt-a-myopic-decision-theory#The_looming_shadow_of_deception), addicts are often also [deceptive](https://www.alignmentforum.org/s/r9tYkB2a8Fp4DN8yB/p/zthDPAjh9w6Ytbeks). Beyond [dishonesty towards a therapist about drug use](https://onlinelibrary.wiley.com/doi/abs/10.1002/jclp.22894), [feigning physical illness to receive medication](https://www.sciencedirect.com/science/article/abs/pii/0740547294900825), and [extensive self-deception](https://pubmed.ncbi.nlm.nih.gov/26820418/), addicts also tend to [manipulate emotions](https://journals.sagepub.com/doi/10.1177/0022042619853299):
 
@@ -107,7 +107,7 @@ At this point, it is worth pointing out the obvious: these epistemic strategies 
 
 * * *
 
-## Epistemic transfer from drug addiction therapy to AI safety
+### Epistemic transfer from drug addiction therapy to AI safety
 
 Is there something we can learn from drug addiction therapy that translates into AI safety?
 
@@ -137,7 +137,7 @@ Self-motivation alone, however, isn’t enough in most cases. There are several 
 
 * * *
 
-## Limitations and Conclusions
+### Limitations and Conclusions
 
 While there are some striking similarities between addicts and AIs, there are some very important differences that limit comparability:
 

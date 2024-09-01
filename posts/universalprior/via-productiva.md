@@ -7,7 +7,7 @@ date: 2022-03-06
 ---
 
 
-# **Against advice**
+## **Against advice**
 
 > Be careful whose advice you buy, but be patient with those who supply it. Advice is a form of nostalgia, dispensing it is a way of fishing the past from the disposal, wiping it off, painting over the ugly parts and recycling it for more than it's worth. - [Everybody's Free To Wear Sunscreen](https://www.youtube.com/watch?v=sTJ7AzBIJoI&ab_channel=steffyweffy777)
 
@@ -31,7 +31,7 @@ and because of your [social bubble](https://slatestarcodex.com/2017/10/02/differ
 
 Consequently, a lot of advice floating around online and offline tends to be [pretty](https://yanngirard.typepad.com/yanns_blog/2016/09/why-advice-is-useless.html) [much](https://brightside.me/inspiration-psychology/10-useless-pieces-of-advice-that-people-should-stop-giving-480710/) [useless](https://medium.com/honest-creative/why-most-advice-is-useless-5903825a4700). Even in the rationality community (which gets a lot of other things right), I’m rather put off by “[group debugging](https://www.lesswrong.com/tag/debugging)”, “[Hamming circles](https://www.lesswrong.com/posts/P5k3PGzebd5yYrYqd/the-hamming-question)“, and the “[Hammertime](https://www.lesswrong.com/posts/rFjhz5Ks685xHbMXW/hammertime-day-1-bug-hunt)”. I see that people get value from doing these things, but most (if not all) value appears to come from the “side-effects” of advice-giving and -receiving rather than the actual content of the advice.
 
-# The negative way
+## The negative way
 
 Considering all these arguments, I try to limit my advice-giving to an absolute minimum. This, as you can imagine, is becoming increasingly difficult as I continue [this experiment](https://universalprior.substack.com/) of broadcasting my thoughts on a near-weekly basis. There are so many things I _want_ to write about because I think I’ve figured out a truly brilliant way of doing them, but I stop myself so as not to embarrass my future self. Most things that work well for me might be Jan-specific strategies that don’t generalize[3](https://universalprior.substack.com/p/via-productiva#footnote-3-49610622).
 
@@ -57,7 +57,7 @@ Hence, this post is _not_ regular old advice. It's _via negativa_. I want to art
 
 However, If you happen to be curious about how I do things, read on[6](https://universalprior.substack.com/p/via-productiva#footnote-6-49610622).
 
-#  **Don't fight the Hydra.**
+##  **Don't fight the Hydra.**
 
 Perhaps the most common failure mode I observe in myself and others is "getting sidetracked" or "losing focus". It's hard to pinpoint exactly what is happening, so I'll use the (admittedly a bit stale) metaphor of [fighting the Lernaean Hydra](https://en.wikipedia.org/wiki/Lernaean_Hydra) to illustrate.
 
@@ -77,7 +77,7 @@ I found it fruitful to discard the framing and [slice reality along different ax
 
 Now, as stated from the onset, this is not positive advice. I do not know how to avoid Hydra-problems in general. Sometimes you _do_ need to dive into the depths of Wikipedia, fight your way through increasingly complicated algebraic equations, or utterly demolish a technical problem - only to come out at the other side and to find the [branching factor collapse suddenly](https://en.wikipedia.org/wiki/Andrew_Wiles). And sometimes all the new heads of the Hydra that emerge [turn out to be](https://en.wikipedia.org/wiki/Dartmouth_workshop) deep and important problems that can be (approximately) separated from each other. But unless the problem you solve is so important that you’re okay with spending a lifetime without making progress, don’t risk engaging with a Hydra problem.
 
-#  **One must imagine Sisyphus unproductive**[.](https://en.wikipedia.org/wiki/Dartmouth_workshop)
+##  **One must imagine Sisyphus unproductive**[.](https://en.wikipedia.org/wiki/Dartmouth_workshop)
 
 I’ve spent an insane amount of time in the early 2000s manually adding thumbnails to my music collection in Windows Media Player[11](https://universalprior.substack.com/p/via-productiva#footnote-11-49610622).
 
@@ -113,7 +113,7 @@ These counterexamples motivate me to think of “optimization in null space”. 
 
 But those are, of course, only heuristics. “Via negativa” does not provide a rulebook to follow; it just tries to highlight major pitfalls. Noticing the pitfalls and avoiding them is up to you.
 
-#  **Don't listen to Cassandra.**
+##  **Don't listen to Cassandra.**
 
 There _is_ a chance that I’m taking this Greek mythology thing too far. Let me be clear, if you find someone who really, legitimately _is_ Cassandra, please _do_ listen to them. Also, please correct your [bias of not believing women](https://www.feministcurrent.com/2020/12/23/cassandra-lives-from-politics-to-the-court-room-women-are-disbelieved/). Also, if people talk to you, please listen to them or (alternatively) tell them you have to visit the bathroom or something. Just “not listening” is rude.
 
@@ -127,7 +127,7 @@ What are the properties of a good filter? A really good filter will only let the
 
 And, please, do all of that without being rude.
 
-# Closing thoughts
+## Closing thoughts
 
 Even though I presented them as three different ideas (don’t try to solve Hydra problems, don’t optimize in null space, don’t try to pay attention to everything), they all circle around one common theme: be honest with yourself about your limitations, notice when you're going down a rabbit hole, and constantly recalibrate. Try to have a good epistemic.
 

@@ -9,7 +9,7 @@ date: 2022-06-15
 ---
 
 
-# Motivation
+## Motivation
 
 AI Safety is a rapidly growing field of research that is singular in its goal: to avoid or mitigate negative outcomes from advanced AI. At the same time, AI Safety research touches on many aspects of human lives: from the philosophy of human values, via the neuroscience of human cognition, to the intricacies of human politics and coordination. This interplay between a singular goal with multiple facets makes the problem intrinsically interdisciplinary and warrants the application of various tools by researchers with diverse backgrounds.
 
@@ -26,7 +26,7 @@ Both of us ([Sam](https://snellessen.com/) & [Jan](https://universalprior.substa
 
 While being brain enthusiasts undoubtedly makes us biased in favor of their importance, it also gives us a (hopefully) useful inside view of how brain enthusiasts might meaningfully contribute to AI Safety[1](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-1-59586443). In this post, we attempt to shine a light on the current representation of brain enthusiasts in AI Safety and provide some advice on how brain enthusiasts might enter the field.
 
-#  **A long tail of number-lovers**
+##  **A long tail of number-lovers**
 
 When you hear terms like "AI Alignment", "AI Safety," or "AGI", you probably think of people with a strong technical background, e.g. in computer science, mathematics, or physics. This is an instance where stereotypes are correct:
 
@@ -44,7 +44,7 @@ Almost everyone on the list has a computer science, physics, or mathematics back
 
 We'd wager the bet that most people on the list don't identify with their "formal education" too much and regard themselves primarily as AI Safety researchers - but still, the uniformity of backgrounds is striking. For someone at the beginning of their career who doesn't have the option to major in "AI Safety", is a major in mathematics the next best thing? Is a strong technical background [necessary or merely sufficient](https://www.txstate.edu/philosophy/resources/fallacy-definitions/Confusion-of-Necessary.html)?
 
-#  **How did we get here?**
+##  **How did we get here?**
 
 There are (at least) two[4](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-4-59586443) possible explanations for why the composition of the field is biased in favor of researchers with technical backgrounds:
 
@@ -72,7 +72,7 @@ The poles of this spectrum appear highly unlikely - pure theory without implemen
 
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ffe32e865-7b95-4ceb-b959-77b1d563da4a_1903x627.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ffe32e865-7b95-4ceb-b959-77b1d563da4a_1903x627.png)On the spectrum from empirical to logical, brain enthusiasts tend more to the empirical pole than the typical AI Safety researcher. The bull & bear case describe two plausible ranges in which researchers could be able work productively on AI Safety.
 
-## Recommendations: the bear case
+### Recommendations: the bear case
 
  _AI Safety **mostly** requires theoretical research but also **some** empirical research._
 
@@ -84,7 +84,7 @@ Your brain enthusiasm background won't be sufficient to contribute to the field.
 
 However, your brain enthusiasm background is not something to be ashamed of either. Realize that you might know more about your field of study (the amygdala? meerkat's mating rituals? the extended mind hypothesis?) than the median researcher you encounter. Sometimes this is a problem ("[law of the instrument"](https://en.wikipedia.org/wiki/Law_of_the_instrument), when all you have is a hammer…), but sometimes the correct response to "my area of expertise seems relevant here; why hasn’t anyone mentioned meerkats yet?" actually is "I should mention meerkats and explain why they are relevant". Some reasonably well-understood portions of biological intelligence can map onto artificial intelligence. As long as you're able to explain yourself in the common (technical) vocabulary, your contribution will be valuable[6](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-6-59586443).
 
-## Recommendations: the bull case
+### Recommendations: the bull case
 
 [![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fd2969176-fd38-4f58-8be3-a1740dd3f997_1024x1024.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fd2969176-fd38-4f58-8be3-a1740dd3f997_1024x1024.png) _A bull furiously writing computer code while drinking coffee in a room crammed full of books and papers stacked to the ceiling._[#dalle](https://labs.openai.com/s/rsrRDoqZo2oXqYuapVan8MoC)
 
@@ -96,7 +96,7 @@ Your brain enthusiasm background is your great strength, and it might appear cou
 
 However, even though your brain enthusiasm background is [da shit](http://onlineslangdictionary.com/meaning-definition-of/da-shit), please don't start spamming the Alignment Forum. You might genuinely have important insights, but the ability to communicate them is now more important than ever. Without a shared vocabulary, you will want to invest much effort into expressing yourself well. Use simple sentences. Include many examples. Be patient. And prepare for the possibility that nobody will interact with what you produce for a long time. Even though, as per the assumption of this subsection, your brain enthusiast background is useful, the onus is still on you to demonstrate _in what way_ this is true.
 
-# What now? A call to action.
+## What now? A call to action.
 
 In this section, we want to give you different options and recommendations for projects and topics you could contribute to, depending on whether you are more of a bear or a bull[8](https://universalprior.substack.com/p/brain-enthusiasts-in-ai-safety#footnote-8-59586443). Consider these "mini-project proposals". If you'd like to work on one of those, feel free to reach out! Perhaps we can help!
 
@@ -116,7 +116,7 @@ In this section, we want to give you different options and recommendations for p
 
 If you are still not convinced, consider the [information value gained through failing](https://funds.effectivealtruism.org/grantmaking-approach). High-variability projects are lucrative for grantmakers (more information value gained for future grantmaking), giving you a good shot at getting funding (there is a small probability that the projects mentioned above work out).
 
-#  **The bottom line**
+##  **The bottom line**
 
 We were torn between two extremes when composing this post: "the brain is useless" and "the brain is all you need". Between these extremes, we found a spectrum of research with varying technical and empirical components. Eventually, we decided to present both a pessimistic (bear case) and an optimistic (bull case) of how brain enthusiasts might fit into AI Safety research. What became clear in both scenarios is that there is value in variability, and a nonstandard background can be an advantage more often than not.
 
