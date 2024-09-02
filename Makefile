@@ -12,11 +12,15 @@ SCRIPT_PATH := index.js
 RELATIVESCRIPT_PATH := ../../index.js
 
 # Default target
-all: index.html $(HTML_FILES)
+all: clean_log index.html $(HTML_FILES)
 
 # Clean target
 clean:
 	rm -f index.html $(HTML_FILES)
+
+# Clean log target
+clean_log:
+	rm -f sidenote_filter.log
 
 # Rule for index.html
 index.html: index.md template.html Makefile
@@ -31,4 +35,4 @@ $(SRC_DIR)/%.html: $(SRC_DIR)/%.md template.html Makefile
 	rm temp_template.html
 
 # Declare phony targets
-.PHONY: all clean
+.PHONY: all clean clean_log

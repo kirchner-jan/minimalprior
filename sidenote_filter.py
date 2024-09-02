@@ -3,10 +3,11 @@
 import panflute as pf
 import logging
 
-logging.basicConfig(level=logging.DEBUG, filename="sidenote_filter.log", filemode="w")
+logging.basicConfig(level=logging.DEBUG, filename="sidenote_filter.log", filemode="a")
 
 
 def prepare(doc):
+    logging.info(f"Processing document: {doc.get_metadata('title', 'Untitled')}")
     doc.sidenotes = {}
     doc.current_sidenote_index = 1
     doc.processed_superscripts = set()
@@ -43,10 +44,10 @@ def sidenote(elem, doc):
         note = create_sidenote(index, elem.content)
         doc.sidenotes[index] = note
         doc.missing_references.add(index)  # Assume missing until found
-        logging.debug(f"Created sidenote with index {index}")
+        # logging.debug(f"Created sidenote with index {index}")
         return ref
     elif isinstance(elem, pf.Div) and "footnotes" in elem.classes:
-        logging.debug("Removed footnotes div")
+        # logging.debug("Removed footnotes div")
         return []
     elif isinstance(elem, pf.Para):
         return process_paragraph(elem, doc)
@@ -56,11 +57,11 @@ def sidenote(elem, doc):
 def process_paragraph(elem, doc):
     new_content = []
     sidenotes_to_insert = []
-    logging.debug(f"Processing paragraph: {pf.stringify(elem)}")
+    # logging.debug(f"Processing paragraph: {pf.stringify(elem)}")
     for child in elem.content:
-        logging.debug(f"Checking element: {type(child).__name__}")
-        if isinstance(child, pf.Link):
-            logging.debug(f"Found link: {pf.stringify(child)}")
+        # logging.debug(f"Checking element: {type(child).__name__}")
+        # if isinstance(child, pf.Link):
+        # logging.debug(f"Found link: {pf.stringify(child)}")
         if is_sidenote_reference(child):
             processed = process_sidenote_reference(child, doc)
             new_content.append(processed[0])  # Add the reference
@@ -81,7 +82,7 @@ def process_paragraph(elem, doc):
 
 def process_sidenote_reference(elem, doc):
     text = elem.content[0].text
-    logging.debug(f"Processing superscript: {text}")
+    # logging.debug(f"Processing superscript: {text}")
     try:
         index = int(text[1:-1])
         if index in doc.sidenotes:
@@ -89,7 +90,7 @@ def process_sidenote_reference(elem, doc):
             doc.missing_references.discard(
                 index
             )  # Reference found, remove from missing set
-            logging.debug(f"Found reference for sidenote {index}")
+            # logging.debug(f"Found reference for sidenote {index}")
             return [elem, doc.sidenotes[index]]
         else:
             logging.warning(f"Sidenote {index} not found in doc.sidenotes")
@@ -106,8 +107,8 @@ def is_sidenote_reference(elem):
         and elem.content[0].text.startswith("[")
         and elem.content[0].text.endswith("]")
     )
-    if is_ref:
-        logging.debug(f"Found sidenote reference: {pf.stringify(elem)}")
+    # if is_ref:
+    # logging.debug(f"Found sidenote reference: {pf.stringify(elem)}")
     return is_ref
 
 

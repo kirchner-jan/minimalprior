@@ -19,7 +19,7 @@ Before I get into the nitty-gritty of my newfound interest in fashion, let me fi
 
 There are three different schools[^3] of thought on the question.
 
- _School of the devil_ : The philosophy of "[The Devil Wears Prada](https://en.wikipedia.org/wiki/The_Devil_Wears_Prada_\(film\))[^4]" is centered around the idea that fashion is a form of power and influence. The film explores the idea that the fashion industry is a demanding and competitive field that requires a high level of expertise and commitment, and that subverting the rigid hierarchy of fashion can have unintended or unexpected consequences.
+ _School of the devil_ : The philosophy of "[The Devil Wears Prada](https://en.wikipedia.org/wiki/The_Devil_Wears_Prada_\(film\))"[^4] is centered around the idea that fashion is a form of power and influence. The film explores the idea that the fashion industry is a demanding and competitive field that requires a high level of expertise and commitment, and that subverting the rigid hierarchy of fashion can have unintended or unexpected consequences.
 
 ![](../../images/https3A2F2Fsubstack-post-medias3amazonawscom2Fpubl_1.png)
 
