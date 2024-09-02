@@ -3,11 +3,11 @@
 import panflute as pf
 import logging
 
-logging.basicConfig(level=logging.DEBUG, filename="sidenote_filter.log", filemode="a")
+logging.basicConfig(level=logging.WARNING, filename="sidenote_filter.log", filemode="a")
 
 
 def prepare(doc):
-    logging.info(f"Processing document: {doc.get_metadata('title', 'Untitled')}")
+    logging.warning(f"Processing document: {doc.get_metadata('title', 'Untitled')}")
     doc.sidenotes = {}
     doc.current_sidenote_index = 1
     doc.processed_superscripts = set()
@@ -37,6 +37,7 @@ def create_sidenote(index, content):
 
 
 def sidenote(elem, doc):
+    logging.debug(f"Processing element: {elem}")
     if isinstance(elem, pf.Note):
         index = doc.current_sidenote_index
         doc.current_sidenote_index += 1
@@ -50,6 +51,8 @@ def sidenote(elem, doc):
         # logging.debug("Removed footnotes div")
         return []
     elif isinstance(elem, pf.Para):
+        return process_paragraph(elem, doc)
+    elif isinstance(elem, pf.Plain):
         return process_paragraph(elem, doc)
     return elem
 
@@ -92,10 +95,11 @@ def process_sidenote_reference(elem, doc):
             )  # Reference found, remove from missing set
             # logging.debug(f"Found reference for sidenote {index}")
             return [elem, doc.sidenotes[index]]
-        else:
-            logging.warning(f"Sidenote {index} not found in doc.sidenotes")
+        # else:
+        #     logging.warning(f"Sidenote {index} not found in doc.sidenotes")
     except ValueError:
-        logging.warning(f"Invalid sidenote index: {text}")
+        pass
+        # logging.warning(f"Invalid sidenote index: {text}")
     return [elem]
 
 

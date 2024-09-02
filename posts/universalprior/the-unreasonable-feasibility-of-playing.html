@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="" >
 
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="Jan Kirchner" />
-  <meta name="dcterms.date" content="2022-01-12" />
-  <title>The Unreasonable Feasibility Of Playing Chess Under The Influence</title>
-  <link rel="stylesheet" href="../../reset.css" />
-  <link rel="stylesheet" href="../../index.css" />
-</head>
+    <meta name="author" content="Jan Kirchner" />
+      <meta name="dcterms.date" content="2022-01-12" />
+        <title>The Unreasonable Feasibility Of Playing Chess Under The Influence</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../index.css" />
+      </head>
 
 <body>
-  <table class="header">
+    <table class="header">
     <tr>
       <td colspan="2" rowspan="2" class="width-auto">
         <h1 class="title"><a href="https://kirchner-jan.github.io/minimalprior/"
             style="text-decoration: none; color: inherit;">The
-            Unreasonable Feasibility Of Playing Chess Under The Influence</a></h1>
+Unreasonable Feasibility Of Playing Chess Under The Influence</a></h1>
         <span class="subtitle">TL;DR The wonderful tradition of playing
-          chess drunk, Marr’s levels of analysis, AlphaZero, and Iterated
-          Amplification and Distillation.</span>
+chess drunk, Marr’s levels of analysis, AlphaZero, and Iterated
+Amplification and Distillation.</span>
       </td>
       <th>Updated</th>
       <td class="width-min"><time style="white-space: pre;">2022-01-12</time></td>
@@ -29,268 +29,296 @@
     <tr>
       <th class="width-min">Author</th>
       <td class="width-auto"><a href="https://kirchner-jan.github.io/minimalprior/">Jan
-          Kirchner</a></td>
+Kirchner</a></td>
     </tr>
   </table>
-  <nav id="TOC" role="doc-toc">
-    <ul class="incremental">
-      <li><a href="#a-proud-history-of-drinking-and-playing-chess"
-          id="toc-a-proud-history-of-drinking-and-playing-chess"><strong>A
-            proud history of drinking and playing chess</strong></a></li>
-      <li><a href="#how-do-they-do-it" id="toc-how-do-they-do-it"><strong>How do they do
-            it?</strong></a></li>
-      <li><a href="#how-to-solve-chess" id="toc-how-to-solve-chess"><strong>How to solve
-            chess</strong></a></li>
-      <li><a href="#concluding-thoughts" id="toc-concluding-thoughts"><strong>Concluding
-            thoughts</strong></a></li>
-    </ul>
+      <nav id="TOC" role="doc-toc">
+        <ul class="incremental">
+        <li><a href="#a-proud-history-of-drinking-and-playing-chess"
+        id="toc-a-proud-history-of-drinking-and-playing-chess"><strong>A
+        proud history of drinking and playing chess</strong></a></li>
+        <li><a href="#how-do-they-do-it"
+        id="toc-how-do-they-do-it"><strong>How do they do
+        it?</strong></a></li>
+        <li><a href="#how-to-solve-chess"
+        id="toc-how-to-solve-chess"><strong>How to solve
+        chess</strong></a></li>
+        <li><a href="#concluding-thoughts"
+        id="toc-concluding-thoughts"><strong>Concluding
+        thoughts</strong></a></li>
+        </ul>
   </nav>
-  <h2 id="a-proud-history-of-drinking-and-playing-chess"><strong>A
-      proud history of drinking and playing chess</strong></h2>
-  <p>Please enjoy this clip of the reigning chess world champion
+    <h2 id="a-proud-history-of-drinking-and-playing-chess"><strong>A
+    proud history of drinking and playing chess</strong></h2>
+    <p>Please enjoy this clip of the reigning chess world champion
     Magnus Carlsen playing a game of <a
-      href="https://en.wikipedia.org/wiki/Fast_chess#:~:text=controls%20are%20called%20%27-,hyperbullet,-%27%20and%20%27ultrabullet%27%20for">hyperbullet</a>
+    href="https://en.wikipedia.org/wiki/Fast_chess#:~:text=controls%20are%20called%20%27-,hyperbullet,-%27%20and%20%27ultrabullet%27%20for">hyperbullet</a>
     (30 sec total per player) while inebriated.</p>
-  <p>As the commenters are quick to point out, Magnus winning this
+    <p>As the commenters are quick to point out, Magnus winning this
     game is partially due to his opponent blundering their Queen a
     couple of moves after Magnus takes over. But still. Even after a
     full night of sleep and being highly caffeinated I would struggle to
     <em>complete</em> a game of chess in 30 seconds<sup>[1]</sup>.
     Winning while chanting party bangers, and complaining about the
-    state of one’s own body, is kind of impressive.
-  </p>
-  <div class="sidenote">
+    state of one’s own body, is kind of impressive.</p>
+    <div class="sidenote">
     <p>[1] </p>
     <p>Much less <em>win</em> against a 2400 opponent.</p>
-  </div>
-  <p>Magnus is standing on the shoulders of giants in this game.
+    </div>
+    <p>Magnus is standing on the shoulders of giants in this game.
     Drinking and chess have been going hand in hand since at least <a
-      href="https://en.wikipedia.org/wiki/Paul_Morphy">Paul Morphy</a>,
+    href="https://en.wikipedia.org/wiki/Paul_Morphy">Paul Morphy</a>,
     whose family <a
-      href="https://www.chesshistory.com/winter/extra/alcohol.html#:~:text=Morphy%2C%20Murphy%20and%20beer">started</a>
+    href="https://www.chesshistory.com/winter/extra/alcohol.html#:~:text=Morphy%2C%20Murphy%20and%20beer">started</a>
     the <a href="http://www.murphys.com/">Murphy brewery</a>. Since
     Morphy, two former world champions stand out as particularly heavy
-    drinkers, <a href="https://en.wikipedia.org/wiki/Alexander_Alekhine">Alexander
-      Alekhine</a> and <a href="https://en.wikipedia.org/wiki/Mikhail_Tal">Mikhail Tal</a>.
-    The story of <a href="https://en.wikipedia.org/wiki/Mikhail_Tal">Mikhail Tal</a>,
+    drinkers, <a
+    href="https://en.wikipedia.org/wiki/Alexander_Alekhine">Alexander
+    Alekhine</a> and <a
+    href="https://en.wikipedia.org/wiki/Mikhail_Tal">Mikhail Tal</a>.
+    The story of <a
+    href="https://en.wikipedia.org/wiki/Mikhail_Tal">Mikhail Tal</a>,
     the Magician from Riga, is interesting as he was drinking and
     smoking <em>en masse</em> while producing <a
-      href="https://en.wikipedia.org/wiki/Mikhail_Tal#:~:text=more%20games%20by%20Tal%20than%20any%20other%20player">more
-      brilliancies</a><sup>[2]</sup> than any other player.</p>
-  <div class="sidenote">
+    href="https://en.wikipedia.org/wiki/Mikhail_Tal#:~:text=more%20games%20by%20Tal%20than%20any%20other%20player">more
+    brilliancies</a><sup>[2]</sup> than any other player.</p>
+    <div class="sidenote">
     <p>[2] </p>
     <p>A term in chess that is not rigorously defined, but roughly
-      equates to ” <strong>an extremely powerful move that is usually not
-        obvious but that almost automatically wins</strong> (or draws, if
-      you are losing) the game. Some would call this move a “brilliant”
-      one”.<a href="https://www.quora.com/How-would-you-define-a-brilliancy-in-chess">source</a></p>
-  </div>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32.png" />The
+    equates to ” <strong>an extremely powerful move that is usually not
+    obvious but that almost automatically wins</strong> (or draws, if
+    you are losing) the game. Some would call this move a “brilliant”
+    one”.<a
+    href="https://www.quora.com/How-would-you-define-a-brilliancy-in-chess">source</a></p>
+    </div>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32.png" />The
     Magician from Riga in his element.</p>
-  <p>His play under the influence might be the source of the common <a
-      href="https://wegochess.com/does-alcohol-improve-chess-drunken-style/">urban
-      myth</a> that drinking might <em>improve</em> one’s play. Tal’s
+    <p>His play under the influence might be the source of the common <a
+    href="https://wegochess.com/does-alcohol-improve-chess-drunken-style/">urban
+    myth</a> that drinking might <em>improve</em> one’s play. Tal’s
     heavy drinking was likely not a character flaw, but <a
-      href="https://www.quora.com/Is-it-true-that-Mikhail-Tal-would-drink-heavily-even-on-nights-when-he-had-a-tournament-the-next-day-Would-he-have-been-an-even-better-player-without-this-way-of-living-or-did-it-add-to-his-wild-style-of-play">presumably</a>
-    represented a type of <a href="https://en.wikipedia.org/wiki/Self-medication">self-medication</a>
+    href="https://www.quora.com/Is-it-true-that-Mikhail-Tal-would-drink-heavily-even-on-nights-when-he-had-a-tournament-the-next-day-Would-he-have-been-an-even-better-player-without-this-way-of-living-or-did-it-add-to-his-wild-style-of-play">presumably</a>
+    represented a type of <a
+    href="https://en.wikipedia.org/wiki/Self-medication">self-medication</a>
     for his congenital chronic illnesses. The same can not be said for
     another grandmaster, who triggered one of many<sup>[3]</sup>
     episodes of chess drama by drinking heavily and “<a
-      href="https://www.reddit.com/r/AnarchyChess/comments/gi6ysu/drunk_gm_hansen_losing_it_on_stream/">losing
-      it</a>” live on Twitch during a chess streaming session. On the
-    other hand, he was <a href="https://www.youtube.com/watch?v=pCOiGL9--9I&amp;ab_channel=CHESSMEMEX">awarded</a>
+    href="https://www.reddit.com/r/AnarchyChess/comments/gi6ysu/drunk_gm_hansen_losing_it_on_stream/">losing
+    it</a>” live on Twitch during a chess streaming session. On the
+    other hand, he was <a
+    href="https://www.youtube.com/watch?v=pCOiGL9--9I&amp;ab_channel=CHESSMEMEX">awarded</a>
     the infamous title “best drunk chess player in the world” by world
-    championship challenger <a href="https://en.wikipedia.org/wiki/Fabiano_Caruana">Fabiano
-      Caruana</a>. Beyond the players, there is “<a href="https://www.pinterest.de/pin/279786195576639442/">alcoholic
-      chess</a>”, the “<a href="https://en.wikipedia.org/wiki/Bongcloud_Attack">bongcloud
-      opening</a>”, and of course, the recent Netflix hit show “<a
-      href="https://en.wikipedia.org/wiki/The_Queen%27s_Gambit_%28miniseries%29">The
-      Queen’s Gambit</a>” about a drug-addicted, female<a href="https://en.wikipedia.org/wiki/Bobby_Fischer">Bobby
-      Fisher</a>.
+    championship challenger <a
+    href="https://en.wikipedia.org/wiki/Fabiano_Caruana">Fabiano
+    Caruana</a>. Beyond the players, there is “<a
+    href="https://www.pinterest.de/pin/279786195576639442/">alcoholic
+    chess</a>”, the “<a
+    href="https://en.wikipedia.org/wiki/Bongcloud_Attack">bongcloud
+    opening</a>”, and of course, the recent Netflix hit show “<a
+    href="https://en.wikipedia.org/wiki/The_Queen%27s_Gambit_%28miniseries%29">The
+    Queen’s Gambit</a>” about a drug-addicted, female<a
+    href="https://en.wikipedia.org/wiki/Bobby_Fischer">Bobby Fisher</a>.
     Magnus Carlsen winning a game of hyperbullet after having a drink or
     two might appear impressive to an outsider - the aficionado just
     calls it “Tuesday”.</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[3] </p>
     <p>Who would have thought!</p>
-  </div>
-  <h2 id="how-do-they-do-it"><strong>How do they do it?</strong></h2>
-  <p>What’s my point? I don’t think we should be surprised that chess
+    </div>
+    <h2 id="how-do-they-do-it"><strong>How do they do it?</strong></h2>
+    <p>What’s my point? I don’t think we should be surprised that chess
     players drink alcohol. They are, visibly, human, which means the
-    prior probability of them <a href="https://ourworldindata.org/alcohol-consumption">having had a
-      drink in the last year</a> is (based on location) somewhere between
+    prior probability of them <a
+    href="https://ourworldindata.org/alcohol-consumption">having had a
+    drink in the last year</a> is (based on location) somewhere between
     60 and 100%. I couldn’t find more specific numbers for Twitch
     streamers in their mid- or late-twenties, but you probably have a
     decent gut feeling for that demographic. Also, given the <a
-      href="https://www.reddit.com/r/chess/comments/a2ea2b/social_and_public_perception_of_chess_in_schools/">stigma
-      that chess is a game for four-eyes and dweebs,</a> it’s not
-    surprising to find <a href="https://en.wikipedia.org/wiki/Countersignaling">countersignaling</a>
+    href="https://www.reddit.com/r/chess/comments/a2ea2b/social_and_public_perception_of_chess_in_schools/">stigma
+    that chess is a game for four-eyes and dweebs,</a> it’s not
+    surprising to find <a
+    href="https://en.wikipedia.org/wiki/Countersignaling">countersignaling</a>
     in the form of leather jackets and drug consumption. No mysteries
     there.</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_1.png" />Benny
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_1.png" />Benny
     Watts, professional chess-playing “bad boy” from the <a
-      href="https://en.wikipedia.org/wiki/The_Queen%27s_Gambit_(miniseries)">Queen’s
-      Gambit</a>.</p>
-  <p>The thing that boggles my mind is something else: <em>How</em>
+    href="https://en.wikipedia.org/wiki/The_Queen%27s_Gambit_(miniseries)">Queen’s
+    Gambit</a>.</p>
+    <p>The thing that boggles my mind is something else: <em>How</em>
     can chess players get blackout drunk and still play decent chess?
-    Chess was once <a href="https://twitter.com/martin_gorner/status/1199844865053347840">considered</a>
-    the <a href="https://www.eapoe.org/works/essays/maelzel.htm">pinnacle</a>
+    Chess was once <a
+    href="https://twitter.com/martin_gorner/status/1199844865053347840">considered</a>
+    the <a
+    href="https://www.eapoe.org/works/essays/maelzel.htm">pinnacle</a>
     of human intellect. And while that perspective (perhaps rightfully)
     has <a href="https://en.wikipedia.org/wiki/AI_effect">fallen out of
-      favor</a>, I’d like to circle back to the fact that the only way
+    favor</a>, I’d like to circle back to the fact that the only way
     that I win against drunk Magnus Carlsen is when he literally <a
-      href="https://www.quora.com/How-much-vodka-must-Magnus-Carlsen-drink-so-an-average-amateur-could-beat-him">passes
-      out during the game</a><sup>[4]</sup>.</p>
-  <div class="sidenote">
+    href="https://www.quora.com/How-much-vodka-must-Magnus-Carlsen-drink-so-an-average-amateur-could-beat-him">passes
+    out during the game</a><sup>[4]</sup>.</p>
+    <div class="sidenote">
     <p>[4] </p>
     <p>At which point I’d have decent drawing chances.</p>
-  </div>
-  <p>In this post, I want to propose an analogy with the type of AI
+    </div>
+    <p>In this post, I want to propose an analogy with the type of AI
     architecture that currently dominates computer chess, and which
     might give us some ideas for why grandmasters can play decent chess
     while drunk. Perhaps there is even something we can learn from
     inebriated humans that is interesting for AI.</p>
-  <h2 id="how-to-solve-chess"><strong>How to solve chess</strong></h2>
-  <p>Which tool in our belt is best suited to understand complicated
-    cognitive phenomena? <a href="https://en.wikipedia.org/wiki/David_Marr_%28neuroscientist%29">David
-      Marr</a>’s three<sup>[5]</sup> levels of analysis appear like a good
+    <h2 id="how-to-solve-chess"><strong>How to solve chess</strong></h2>
+    <p>Which tool in our belt is best suited to understand complicated
+    cognitive phenomena? <a
+    href="https://en.wikipedia.org/wiki/David_Marr_%28neuroscientist%29">David
+    Marr</a>’s three<sup>[5]</sup> levels of analysis appear like a good
     match<sup>[6]</sup>:</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[5] </p>
     <p>The<a href="https://dspace.mit.edu/handle/1721.1/5782">original
-        paper actually lists four</a>, but they are confusing.</p>
-  </div>
-  <div class="sidenote">
+    paper actually lists four</a>, but they are confusing.</p>
+    </div>
+    <div class="sidenote">
     <p>[6] </p>
     <p>Actually, it’s the only tool I have. Send help. Or more
-      tools.</p>
-  </div>
-  <ol class="incremental" type="1">
+    tools.</p>
+    </div>
+    <ol class="incremental" type="1">
     <li><strong>computational level</strong> : a formal description of
-      what the system does.</li>
+    what the system does.</li>
     <li><strong>algorithmic level</strong> : a step-by-step description
-      of how a formal system can construct a solution.</li>
+    of how a formal system can construct a solution.</li>
     <li><strong>implementational level</strong> : identification of a
-      neural circuit that can implement the step-by-step description.</li>
-  </ol>
-  <h5 id="chess-the-computational-level."><strong>Chess: the
-      computational level.</strong></h5>
-  <p>I find it very instructive to look back at the very early days of
+    neural circuit that can implement the step-by-step description.</li>
+    </ol>
+    <h5 id="chess-the-computational-level."><strong>Chess: the
+    computational level.</strong></h5>
+    <p>I find it very instructive to look back at the very early days of
     the computer<sup>[7]</sup> and to see what people came up with when
     confronted with this new toy. <a
-      href="https://en.wikipedia.org/wiki/History_of_software#:~:text=from%20the%20beginning.-,The%20very%20first%20time,-a%20stored%2Dprogram">After
-      factoring a large number</a>, researchers turned almost immediately
-    to building a <a href="https://en.wikipedia.org/wiki/Logic_Theorist">theorem
-      prover</a>, and then <a
-      href="http://billwall.phpwebhosting.com/articles/computer_chess_timeline.htm#:~:text=In%201948%20the%20UNIVAC">in
-      1948: chess</a>. In the same year, Claude Shannon at Bell Labs
-    published a <a href="https://vision.unipv.it/IA1/ProgrammingaComputerforPlayingChess.pdf">paper</a>
+    href="https://en.wikipedia.org/wiki/History_of_software#:~:text=from%20the%20beginning.-,The%20very%20first%20time,-a%20stored%2Dprogram">After
+    factoring a large number</a>, researchers turned almost immediately
+    to building a <a
+    href="https://en.wikipedia.org/wiki/Logic_Theorist">theorem
+    prover</a>, and then <a
+    href="http://billwall.phpwebhosting.com/articles/computer_chess_timeline.htm#:~:text=In%201948%20the%20UNIVAC">in
+    1948: chess</a>. In the same year, Claude Shannon at Bell Labs
+    published a <a
+    href="https://vision.unipv.it/IA1/ProgrammingaComputerforPlayingChess.pdf">paper</a>
     containing a strategy for, in theory, playing flawless chess on a
-    computer. This strategy is now known as the <a href="https://en.wikipedia.org/wiki/Minimax">MiniMax decision
-      rule</a> and, informally, states that you should pick the chess move
+    computer. This strategy is now known as the <a
+    href="https://en.wikipedia.org/wiki/Minimax">MiniMax decision
+    rule</a> and, informally, states that you should pick the chess move
     that gives you the best possible position (max), given that your
     opponent <em>afterward</em> will choose the move that gives you the
     worst possible position (min).</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[7] </p>
     <p>Despite being so relatively recent, it is very hard to find a
-      source that is reasonably complete and correct. Almost everyone
-      ignores<a href="https://en.wikipedia.org/wiki/Konrad_Zuse">Konrad
-        Zuse</a>, or those who don’t ignore him ignore everything else. I
-      spent way too much time diving into this a few years ago, but it
-      seems super relevant to me.</p>
-  </div>
-  <p>What makes a position good or bad? If you care about winning, a
+    source that is reasonably complete and correct. Almost everyone
+    ignores<a href="https://en.wikipedia.org/wiki/Konrad_Zuse">Konrad
+    Zuse</a>, or those who don’t ignore him ignore everything else. I
+    spent way too much time diving into this a few years ago, but it
+    seems super relevant to me.</p>
+    </div>
+    <p>What makes a position good or bad? If you care about winning, a
     position where you mate the opponent’s king is good, while a
     position where your own king is mated is bad<sup>[8]</sup>.</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[8] </p>
     <p>A draw is simply a disgrace and should be avoided whenever
-      possible.</p>
-  </div>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_2.png" />A
+    possible.</p>
+    </div>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_2.png" />A
     schematic of a game tree, where some of the leaf nodes have a value
     of positive infinity (win) or negative infinity (lose). These values
     are propagated upwards in the tree, and at each level either the
     maximum or the minimum gets carried over.</p>
-  <p>In theory, determining if a move is good or bad requires only
+    <p>In theory, determining if a move is good or bad requires only
     that the minimax decision rule is applied repeatedly. I pick a move
     that seems good for <em>me</em> , then I put myself in my opponent’s
     shoes and pick a move that would be good for <em>them</em> , at
     which I pick again a move that seems good for <em>me</em> , etc.
     Eventually, we reach a position that is either a mate for
     <em>me</em> or for <em>them</em>. Then I know that I won’t go down
-    that path in particular and I can go down a different path.
-  </p>
-  <p>The problem with this becomes clear very quickly when we look at
+    that path in particular and I can go down a different path.</p>
+    <p>The problem with this becomes clear very quickly when we look at
     a portion of the tree with possible moves for a position late in the
     game:</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_3.png" />A
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_3.png" />A
     game tree from an endgame in chess based on the <a
-      href="https://www.amazon.com/Computers-Chess-Long-Range-Planning-Botvinnik/dp/B000QS7KLS">analysis</a>
+    href="https://www.amazon.com/Computers-Chess-Long-Range-Planning-Botvinnik/dp/B000QS7KLS">analysis</a>
     of former world champion Mikhail Botvinnik.</p>
-  <p>A moderate amount of possible moves at each level of the game
-    tree results in <a href="https://en.wikipedia.org/wiki/Combinatorial_explosion">a
-      combinatorial explosion</a> and an <a
-      href="https://en.wikipedia.org/wiki/Shannon_number#:~:text=Shannon%27s%20calculation%5Bedit%5D-,Shannon,-showed%20a%20calculation">intimidating
-      amount of possible chess positions</a>. It’s <a
-      href="https://www.quora.com/What-is-the-probability-that-at-a-given-point-of-time-a-particular-pattern-of-pieces-on-a-chess-board-during-a-game-is-unique-and-has-never-been-encountered-before-in-the-world#:~:text=The%20average%20length%20of%20a%20chess%20game%20is%20around%2040%20moves%3B%20given%20the%20distribution%20during%20the%20game%20I%20would%20estimate%20the%20overall%20percentage%20to%20be%20around%2050%25.">not
-      uncommon</a> that within 20 to 30 moves the pieces on the board are
+    <p>A moderate amount of possible moves at each level of the game
+    tree results in <a
+    href="https://en.wikipedia.org/wiki/Combinatorial_explosion">a
+    combinatorial explosion</a> and an <a
+    href="https://en.wikipedia.org/wiki/Shannon_number#:~:text=Shannon%27s%20calculation%5Bedit%5D-,Shannon,-showed%20a%20calculation">intimidating
+    amount of possible chess positions</a>. It’s <a
+    href="https://www.quora.com/What-is-the-probability-that-at-a-given-point-of-time-a-particular-pattern-of-pieces-on-a-chess-board-during-a-game-is-unique-and-has-never-been-encountered-before-in-the-world#:~:text=The%20average%20length%20of%20a%20chess%20game%20is%20around%2040%20moves%3B%20given%20the%20distribution%20during%20the%20game%20I%20would%20estimate%20the%20overall%20percentage%20to%20be%20around%2050%25.">not
+    uncommon</a> that within 20 to 30 moves the pieces on the board are
     in a position they have never been in before.</p>
-  <p>Claude Shannon’s strategy was (and still is) impractical, but
+    <p>Claude Shannon’s strategy was (and still is) impractical, but
     practicality is also not what we aim for at the computational level.
     Rather, <strong>Shannon’s MiniMax strategy provides us with a
-      useful</strong> <em>abstraction</em> <strong>through which we can
-      analyze chess further with Marr’s levels</strong>.</p>
-  <h5 id="chess-the-algorithmic-level."><strong>Chess: the algorithmic
-      level.</strong></h5>
-  <p>We will now brazenly skip half a century of chess history
-    (including several <a href="https://en.wikipedia.org/wiki/AI_winter">AI winters</a>, the
-    first computer to <a href="https://en.wikipedia.org/wiki/Deep_Blue_%28chess_computer%29">beat
-      the reigning world champion</a> in 1996, and <a href="https://en.wikipedia.org/wiki/Advanced_chess">Centaur
-      Chess</a>) and arrive almost in the present day. While humans have
+    useful</strong> <em>abstraction</em> <strong>through which we can
+    analyze chess further with Marr’s levels</strong>.</p>
+    <h5 id="chess-the-algorithmic-level."><strong>Chess: the algorithmic
+    level.</strong></h5>
+    <p>We will now brazenly skip half a century of chess history
+    (including several <a
+    href="https://en.wikipedia.org/wiki/AI_winter">AI winters</a>, the
+    first computer to <a
+    href="https://en.wikipedia.org/wiki/Deep_Blue_%28chess_computer%29">beat
+    the reigning world champion</a> in 1996, and <a
+    href="https://en.wikipedia.org/wiki/Advanced_chess">Centaur
+    Chess</a>) and arrive almost in the present day. While humans have
     been completely outclassed on the chessboard for almost 30 years
     now, computer chess was characterized as “<a
-      href="https://www.theguardian.com/sport/2018/dec/11/creative-alphazero-leads-way-chess-computers-science">solid
-      and slow</a>”, taking no risks and grinding down their human
+    href="https://www.theguardian.com/sport/2018/dec/11/creative-alphazero-leads-way-chess-computers-science">solid
+    and slow</a>”, taking no risks and grinding down their human
     opponents by accumulating tiny advantages. This changed with <a
-      href="https://en.wikipedia.org/wiki/AlphaZero">AlphaZero</a>, a
+    href="https://en.wikipedia.org/wiki/AlphaZero">AlphaZero</a>, a
     chess computer from the wonder factory that is Deepmind, with a
-    playing style that is <a href="https://www.chess.com/article/view/7-games-that-transformed-chess">a
-      bit closer to the Romantics or Tal than most chess players would
-      probably have expected</a>. Grandmaster Peter Heine Nielsen <a
-      href="https://www.chess.com/article/view/7-games-that-transformed-chess#:~:text=the%20engine%27s%20games.%20%22-,After,-reading%20the%20%5BAlphaZero">says</a>:
-  </p>
-  <blockquote>
+    playing style that is <a
+    href="https://www.chess.com/article/view/7-games-that-transformed-chess">a
+    bit closer to the Romantics or Tal than most chess players would
+    probably have expected</a>. Grandmaster Peter Heine Nielsen <a
+    href="https://www.chess.com/article/view/7-games-that-transformed-chess#:~:text=the%20engine%27s%20games.%20%22-,After,-reading%20the%20%5BAlphaZero">says</a>:</p>
+    <blockquote>
     <p>After […] seeing the games, I thought, ’well, I always wondered
-      how it would be if a superior species landed on earth and showed us
-      how they play chess. I feel now I know.</p>
-  </blockquote>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32.gif" />Such
+    how it would be if a superior species landed on earth and showed us
+    how they play chess. I feel now I know.</p>
+    </blockquote>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32.gif" />Such
     a wild game. AlphaZero plays with white.</p>
-  <p>Why do people even still care about chess if no human has been
+    <p>Why do people even still care about chess if no human has been
     able to compete with a computer for decades? On the one hand, chess
-    has been called “<a href="https://link.springer.com/chapter/10.1007/978-1-4613-9080-0_14">the
-      drosophila of artificial intelligence</a>”, i.e. a well-controlled
+    has been called “<a
+    href="https://link.springer.com/chapter/10.1007/978-1-4613-9080-0_14">the
+    drosophila of artificial intelligence</a>”, i.e. a well-controlled
     model organism with, nonetheless, a rich repertoire of interesting
     behaviors. On the other hand, AlphaZero stood out for being trained
     exclusively through self-play (i.e. without access to human games),
     and still blazing past the best chess computer at the time <a
-      href="https://www.theverge.com/2017/12/6/16741106/deepmind-ai-chess-alphazero-shogi-go">after
-      just a few hours of training</a>.</p>
-  <p>And despite only playing with itself, there are some <a href="https://arxiv.org/abs/2111.09259">striking
-      parallels</a> in
+    href="https://www.theverge.com/2017/12/6/16741106/deepmind-ai-chess-alphazero-shogi-go">after
+    just a few hours of training</a>.</p>
+    <p>And despite only playing with itself, there are some <a
+    href="https://arxiv.org/abs/2111.09259">striking parallels</a> in
     the concepts that emerge in the model compared to those that humans
     use to evaluate the game. Consistently, the play of AlphaZero has
     been described as <a
-      href="https://www.newyorker.com/science/elements/how-the-artificial-intelligence-program-alphazero-mastered-its-games#:~:text=that%20the%20engine%20%E2%80%9C-,plays%20like%20a%20human%20on%20fire,-.%E2%80%9D%20Quickly%2C%20Lc0%2C%20as">much
-      more human-like</a> compared to previous chess computers. <strong>On
-      Marr’s algorithmic level, AlphaZero appears like an interesting
-      candidate to evaluate for our goal of understanding human chess
-      playing</strong>.</p>
-  <p>So how does AlphaZero work? It’s in essence a product of a <a
-      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/serendipitous-connections-applying">recent
-      revolution</a> in deep learning that allows the training of deeper
+    href="https://www.newyorker.com/science/elements/how-the-artificial-intelligence-program-alphazero-mastered-its-games#:~:text=that%20the%20engine%20%E2%80%9C-,plays%20like%20a%20human%20on%20fire,-.%E2%80%9D%20Quickly%2C%20Lc0%2C%20as">much
+    more human-like</a> compared to previous chess computers. <strong>On
+    Marr’s algorithmic level, AlphaZero appears like an interesting
+    candidate to evaluate for our goal of understanding human chess
+    playing</strong>.</p>
+    <p>So how does AlphaZero work? It’s in essence a product of a <a
+    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/serendipitous-connections-applying">recent
+    revolution</a> in deep learning that allows the training of deeper
     and more capable neural networks. These networks are then used to
     bypass the problem of combinatorial explosion: instead of exploring
     <em>all</em> the moves all the way to the end, the networks give
@@ -298,46 +326,43 @@
     interesting, and which intermediate positions appear particularly
     favorable for which player. There are excellent explanations of the
     architecture <a
-      href="https://medium.com/applied-data-science/alphago-zero-explained-in-one-diagram-365f5abf67e0">out</a><a
-      href="https://nikcheerla.github.io/deeplearningschool/2018/01/01/AlphaZero-Explained/">there</a>
+    href="https://medium.com/applied-data-science/alphago-zero-explained-in-one-diagram-365f5abf67e0">out</a><a
+    href="https://nikcheerla.github.io/deeplearningschool/2018/01/01/AlphaZero-Explained/">there</a>
     from a machine learning engineering perspective, but for this post,
-    I instead want to follow the lead of Paul Christiano.
-  </p>
-  <h5 id="alphazero-as-an-example-of-iterated-amplification-and-distillation."><strong>AlphaZero
-      as an example of Iterated Amplification and
-      Distillation.</strong></h5>
-  <p>Paul Christiano <a
-      href="https://ai-alignment.com/alphago-zero-and-capability-amplification-ede767bb8446">argues</a>
+    I instead want to follow the lead of Paul Christiano.</p>
+    <h5
+    id="alphazero-as-an-example-of-iterated-amplification-and-distillation."><strong>AlphaZero
+    as an example of Iterated Amplification and
+    Distillation.</strong></h5>
+    <p>Paul Christiano <a
+    href="https://ai-alignment.com/alphago-zero-and-capability-amplification-ede767bb8446">argues</a>
     that the training procedure for AlphaZero can be interpreted as an
     instance of <strong>Iterated Amplification and Distillation</strong>
     (IAD)<sup>[9]</sup>.</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[9] </p>
     <p>Or “Iterated capability amplification”. Terminology is not quite
-      set in stone yet.</p>
-  </div>
-  <p>Conceptually, IAD requires three components:</p>
-  <ol class="incremental" type="1">
+    set in stone yet.</p>
+    </div>
+    <p>Conceptually, IAD requires three components:</p>
+    <ol class="incremental" type="1">
     <li>a prior distribution <strong>p</strong> over moves in a given
-      position,</li>
+    position,</li>
     <li>an <strong>amplification</strong> procedure
-      <strong>A(p)</strong> that can boost the performance of
-      <strong>p</strong> (usually at the cost of runtime or storage),
-    </li>
+    <strong>A(p)</strong> that can boost the performance of
+    <strong>p</strong> (usually at the cost of runtime or storage),</li>
     <li>and a <strong>distillation</strong> procedure <strong>p* =
-        D(A(p))</strong> that takes the boosted distribution
-      <strong>A(p)</strong> as input and condenses it down to an updated
-      prior distribution <strong>p</strong> * (usually at the cost of a
-      bit of performance in exchange for a large speedup in runtime).
-    </li>
-  </ol>
-  <p>We can then <strong>iterate</strong> this procedure, and compute
+    D(A(p))</strong> that takes the boosted distribution
+    <strong>A(p)</strong> as input and condenses it down to an updated
+    prior distribution <strong>p</strong> * (usually at the cost of a
+    bit of performance in exchange for a large speedup in runtime).</li>
+    </ol>
+    <p>We can then <strong>iterate</strong> this procedure, and compute
     <strong>p* =D(A(D(A(….D(A(p))))))</strong>. If everything goes well,
     our prior <strong>p</strong> * will be getting better at every
     iteration, improving without bound or converging to a fixed point,
-    <strong>p<em>=D(A(p</em>))</strong>.
-  </p>
-  <p>For learning to play chess, we might start with a very poor prior
+    <strong>p<em>=D(A(p</em>))</strong>.</p>
+    <p>For learning to play chess, we might start with a very poor prior
     distribution <strong>p</strong> , which suggests mostly terrible
     moves but still performs slightly above chance<sup>[10]</sup>. In
     the previous section, we have already encountered a method to
@@ -351,18 +376,16 @@
     <strong>p</strong> in conjunction with some amount of exploration of
     the game tree will, in effect, provide us with a slightly more
     accurate, or <em>amplified</em> , distribution over moves in a
-    position, <strong>A(p)</strong>.
-  </p>
-  <div class="sidenote">
+    position, <strong>A(p)</strong>.</p>
+    <div class="sidenote">
     <p>[10] </p>
     <p>To get this, we might instantiate the prior randomly and then
-      make it perform slightly better than random by creating two copies
-      of the system and adopting the prior through traditional
-      reinforcement learning and self-play. This is where the
-      <em>grounding</em> of the prior comes from.
-    </p>
-  </div>
-  <p>Using <strong>A(p)</strong> to play chess was <em>de facto</em>
+    make it perform slightly better than random by creating two copies
+    of the system and adopting the prior through traditional
+    reinforcement learning and self-play. This is where the
+    <em>grounding</em> of the prior comes from.</p>
+    </div>
+    <p>Using <strong>A(p)</strong> to play chess was <em>de facto</em>
     the way that all chess computers worked up until AlphaZero. People
     came up with ever cleverer prior distributions <strong>p</strong>
     and search strategies <strong>A(p)</strong> , and the superior speed
@@ -370,277 +393,294 @@
     players in the dust. The novelty with AlphaZero<sup>[11]</sup> is
     the use of a <strong>very deep neural network</strong> to implement
     the prior <strong>p</strong>.</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[11] </p>
     <p>Am I being unfair to the people who came up with this using<a
-        href="https://www.chessprogramming.org/Neural_Networks#:~:text=generalized%20AlphaZero%20algorithm.-,Move%20Ordering,-Concerning%20move%20ordering">neural
-        networks for chess in 1999</a>? Possibly.</p>
-  </div>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_4.png" />The
+    href="https://www.chessprogramming.org/Neural_Networks#:~:text=generalized%20AlphaZero%20algorithm.-,Move%20Ordering,-Concerning%20move%20ordering">neural
+    networks for chess in 1999</a>? Possibly.</p>
+    </div>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_4.png" />The
     <a
-      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/serendipitous-connections-applying">ResNet</a>
+    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/serendipitous-connections-applying">ResNet</a>
     component of AlphaZero, <a
-      href="https://hackernoon.com/the-3-tricks-that-made-alphago-zero-work-f3d47b6686ef">source</a>.
-  </p>
-  <p>The big advantage of using this network is that there is a
+    href="https://hackernoon.com/the-3-tricks-that-made-alphago-zero-work-f3d47b6686ef">source</a>.</p>
+    <p>The big advantage of using this network is that there is a
     flexible operation for adopting the output of the network to a given
-    target, the <a href="https://en.wikipedia.org/wiki/Backpropagation">backpropagation
-      algorithm</a>. In the context of learning to play chess, the
+    target, the <a
+    href="https://en.wikipedia.org/wiki/Backpropagation">backpropagation
+    algorithm</a>. In the context of learning to play chess, the
     backpropagation algorithm allows us to perform the last step of IDA;
     given the move suggestions of the amplified prior
     <strong>A(p)</strong> , we can train an updated prior,
     **p*=D(A(p))<strong> , which will reap some of the benefits of
-    </strong>A(p)** without having to perform the costly search!
-  </p>
-  <p>And that’s all the components we need to iterate the procedure,
+    </strong>A(p)** without having to perform the costly search!</p>
+    <p>And that’s all the components we need to iterate the procedure,
     <strong>p* =D(A(D(A(….D(A(p))))))</strong> , and to see if we
-    approach a fixed point<sup>[12]</sup>.
-  </p>
-  <div class="sidenote">
+    approach a fixed point<sup>[12]</sup>.</p>
+    <div class="sidenote">
     <p>[12] </p>
     <p>In case somebody who worked on the project ever reads this:
-      Please don’t be mad. I can’t imagine the amount of blood, sweat, and
-      tears that went into this.</p>
-  </div>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_1.gif" />Note
+    Please don’t be mad. I can’t imagine the amount of blood, sweat, and
+    tears that went into this.</p>
+    </div>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_1.gif" />Note
     that here AlphaZero is playing against a version of Stockfish that
     has already adopted the new trick of IAD.</p>
-  <p>Looks like it! The performance of AlphaZero against the leading
+    <p>Looks like it! The performance of AlphaZero against the leading
     chess computer StockFish increases monotonically over training and
     asymptotically reaches a level slightly above it<sup>[13]</sup>.</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[13] </p>
-    <p><a href="https://en.wikipedia.org/wiki/Stockfish_%28chess%29">Stockfish</a>,
-      the goliath of computer chess, has by now caught up and overtaken
-      the record set by AlphaZero.</p>
-  </div>
-  <p>We thus have a very powerful <strong>algorithm-level</strong>
+    <p><a
+    href="https://en.wikipedia.org/wiki/Stockfish_%28chess%29">Stockfish</a>,
+    the goliath of computer chess, has by now caught up and overtaken
+    the record set by AlphaZero.</p>
+    </div>
+    <p>We thus have a very powerful <strong>algorithm-level</strong>
     approximation to the ideal at the computational level. This
     implementation matches, and even outplays, Magnus Carlsen on his
     best day, while still playing in a distinctly human-like style. How
     might this algorithm be implemented in the brain? And, even more
     importantly, how can we make it drunk?</p>
-  <h5 id="chess-the-implementation-level."><strong>Chess, the
-      implementation level.</strong></h5>
-  <p>The kicker of Marr’s method is that once we have a particular
+    <h5 id="chess-the-implementation-level."><strong>Chess, the
+    implementation level.</strong></h5>
+    <p>The kicker of Marr’s method is that once we have a particular
     algorithmic implementation, we can set out and try to find neural
     correlates. We have no guarantee of finding these correlates - in
     general, there are multiple possible algorithmic implementations,
     and there are no theoretical guarantees that we pick the one that
     evolution picked<sup>[14]</sup>.</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[14] </p>
     <p>There are, however, weak hand-wavy arguments for why we might be
-      lucky sometimes. In particular, the<a
-        href="https://deepmind.com/blog/article/generally-capable-agents-emerge-from-open-ended-play">more
-        general an algorithm, the more robust it tends to be to
-        perturbations</a>. Robustness is something that evolution “cares” a
-      lot about. Generality is something that DeepMind cares a lot about
-      (see also<a
-        href="https://deepmind.com/blog/article/muzero-mastering-go-chess-shogi-and-atari-without-rules">MuZero</a>).
-      Perhaps the number of totally general algorithm that can do all the
-      things humans do is not <em>that</em> large? Sounds plausible,
-      right?</p>
-  </div>
-  <p>But I have a good feeling about this one. Let’s see how far we
+    lucky sometimes. In particular, the<a
+    href="https://deepmind.com/blog/article/generally-capable-agents-emerge-from-open-ended-play">more
+    general an algorithm, the more robust it tends to be to
+    perturbations</a>. Robustness is something that evolution “cares” a
+    lot about. Generality is something that DeepMind cares a lot about
+    (see also<a
+    href="https://deepmind.com/blog/article/muzero-mastering-go-chess-shogi-and-atari-without-rules">MuZero</a>).
+    Perhaps the number of totally general algorithm that can do all the
+    things humans do is not <em>that</em> large? Sounds plausible,
+    right?</p>
+    </div>
+    <p>But I have a good feeling about this one. Let’s see how far we
     can get.</p>
-  <p><strong>Where’s the prior?</strong> First, which part of the
+    <p><strong>Where’s the prior?</strong> First, which part of the
     brain might implement the neural network that computes the prior
     <strong>p</strong> for a given position? Given three decades of
     functional brain imaging, you’d expect that we have a pretty decent
     idea about which brain areas are active when chess experts evaluate
-    a position?
-  </p>
-  <p>Yeah, that would be nice, wouldn’t it? <a href="https://www.nature.com/articles/35088119">Studies</a><a
-      href="https://scite.ai/reports/non-dominant-dorsal-prefrontal-activation-during-chess-PKa4rm">from
-      the 90s</a> highlight the importance of frontal and parietal
+    a position?</p>
+    <p>Yeah, that would be nice, wouldn’t it? <a
+    href="https://www.nature.com/articles/35088119">Studies</a><a
+    href="https://scite.ai/reports/non-dominant-dorsal-prefrontal-activation-during-chess-PKa4rm">from
+    the 90s</a> highlight the importance of frontal and parietal
     areas.</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_5.png" /></p>
-  <p>Then, in the <a href="https://jov.arvojournals.org/article.aspx?articleid=2131186">2000s</a>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_5.png" /></p>
+    <p>Then, in the <a
+    href="https://jov.arvojournals.org/article.aspx?articleid=2131186">2000s</a>
     it was in vogue to attribute every kind of expert-level skill with a
-    <a href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/serendipitous-connections-applying">recurring
-      guest</a> on this Substack, the fusiform face area.
-  </p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_6.png" />The
+    <a
+    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/serendipitous-connections-applying">recurring
+    guest</a> on this Substack, the fusiform face area.</p>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_6.png" />The
     arrows are supposed to point to the <em>inside</em> of the lobe.</p>
-  <p>The <a href="https://www.sciencedirect.com/science/article/abs/pii/S0304394011006471">2010s</a>
+    <p>The <a
+    href="https://www.sciencedirect.com/science/article/abs/pii/S0304394011006471">2010s</a>
     were marked by a shift of focus towards the posterior cingulate,
     orbitofrontal cortex, and right temporal cortex.</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_7.png" />Again,
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_7.png" />Again,
     the arrows are supposed to point to the <em>inside</em> of the
     lobe.</p>
-  <p>For
+    <p>For
     [^2019](https://www.sciencedirect.com/science/article/abs/pii/S0031938418309351?dgcid=api_sd_search-api-endpoint)
     I found a paper where researchers found that the parietal cortex
     tends to be more involved in chess games in the rapid format (10
     minutes + 10 seconds increment) than in the lightning format (1
     minute), p=0.045.</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_8.png" /></p>
-  <p>And then nothing too enlightening since then.</p>
-  <p>If I was <a href="https://astralcodexten.substack.com/p/ivermectin-much-more-than-you-wanted">Scott
-      Alexander</a> or <a href="https://thezvi.substack.com/p/omicron-post-13-outlook">Zvi</a>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_8.png" /></p>
+    <p>And then nothing too enlightening since then.</p>
+    <p>If I was <a
+    href="https://astralcodexten.substack.com/p/ivermectin-much-more-than-you-wanted">Scott
+    Alexander</a> or <a
+    href="https://thezvi.substack.com/p/omicron-post-13-outlook">Zvi</a>
     I’d comb through those papers and wring out insight. Maybe I can
-    take into account that something like the “<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4915619/">peak of
-      the replication crisis in medicine</a>” hit in 2016, and discredit
+    take into account that something like the “<a
+    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4915619/">peak of
+    the replication crisis in medicine</a>” hit in 2016, and discredit
     things before that strongly? Maybe I can go through the
     methodologies, evaluate each paper based on its merits, and assemble
     a coherent whole that explains discrepancies through differences in
     experimental design?</p>
-  <p>I can’t bring myself to do that. And I also don’t think I
+    <p>I can’t bring myself to do that. And I also don’t think I
     <em>have to</em>. In AlphaZero the prior <strong>p</strong> is
     computed from a deep neural network that receives the board position
     and a possible move as input and returns an estimate for how good
     this move appears. This type of pattern processing is pretty much
-    what <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4141622/">the
-      cortex overall is best at</a>. In fact, it might <a
-      href="https://www.alignmentforum.org/posts/diruo47z32eprenTg/my-computational-framework-for-the-brain#:~:text=it%27s%20highly%20structured%20to%20remember%20particular%20kinds%20of%20patterns%20and%20their%20relationships">not
-      be too much of a stretch</a> to characterize the cortex as one big
+    what <a
+    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4141622/">the
+    cortex overall is best at</a>. In fact, it might <a
+    href="https://www.alignmentforum.org/posts/diruo47z32eprenTg/my-computational-framework-for-the-brain#:~:text=it%27s%20highly%20structured%20to%20remember%20particular%20kinds%20of%20patterns%20and%20their%20relationships">not
+    be too much of a stretch</a> to characterize the cortex as one big
     prediction machine. So let’s just say that the prior
     <strong>p</strong> might probably be computed <em>somewhere</em> in
-    the cortex.
-  </p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_9.png" /></p>
-  <p>This sounds vague, but it still excludes subcortical regions, the
-    cerebellum, and the <a href="https://en.wikipedia.org/wiki/Extended_mind_thesis">extended
-      mind thesis</a>. So it’s better than nothing!</p>
-  <p><strong>Where’s the amplifier?</strong> The second important IAD
+    the cortex.</p>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_9.png" /></p>
+    <p>This sounds vague, but it still excludes subcortical regions, the
+    cerebellum, and the <a
+    href="https://en.wikipedia.org/wiki/Extended_mind_thesis">extended
+    mind thesis</a>. So it’s better than nothing!</p>
+    <p><strong>Where’s the amplifier?</strong> The second important IAD
     component of AlphaZero is the amplification mechanism that boosts
     the prior <strong>p</strong> through exploration of the game tree.
     To identify a neural correlate, I first need to fill you in on a
     detail that I glossed over earlier: AlphaZero needs to have the
     rules of chess explicitly encoded, which is a big discrepancy to how
     the brain does it (most people are not <a
-      href="https://www.google.com/search?q=misha+chess&amp;oq=misha&amp;aqs=chrome.1.69i57j69i59j0i512l2j46i512j0i512l2j46i512l2j0i512.2937j0j7&amp;sourceid=chrome&amp;ie=UTF-8#:~:text=PREVIEW,Jan%2024%2C%202017">Misha
-      Osipov</a> and have to learn the rules first). But a new version,
+    href="https://www.google.com/search?q=misha+chess&amp;oq=misha&amp;aqs=chrome.1.69i57j69i59j0i512l2j46i512j0i512l2j46i512l2j0i512.2937j0j7&amp;sourceid=chrome&amp;ie=UTF-8#:~:text=PREVIEW,Jan%2024%2C%202017">Misha
+    Osipov</a> and have to learn the rules first). But a new version,
     called <a
-      href="https://deepmind.com/blog/article/muzero-mastering-go-chess-shogi-and-atari-without-rules">MuZero</a>,
+    href="https://deepmind.com/blog/article/muzero-mastering-go-chess-shogi-and-atari-without-rules">MuZero</a>,
     is also able to learn the rules of chess (and Shogi, Go, and Atari
     games), in addition to the prior <strong>p</strong> *, just from
     playing the game.</p>
-  <p>This type of learning is called <em>model-based</em> learning,
-    and it’s totally <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3570165/">stolen
-      from neuroscience</a>. Neuroscientific theories of model-based
-    learning originally emerged from <a href="https://pubmed.ncbi.nlm.nih.gov/12662535/">research on motor
-      learning</a>, where an internal “forward” model of the body’s
+    <p>This type of learning is called <em>model-based</em> learning,
+    and it’s totally <a
+    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3570165/">stolen
+    from neuroscience</a>. Neuroscientific theories of model-based
+    learning originally emerged from <a
+    href="https://pubmed.ncbi.nlm.nih.gov/12662535/">research on motor
+    learning</a>, where an internal “forward” model of the body’s
     movement can help master complex behaviors. Interestingly, <a
-      href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3570165/#:~:text=most%20likely%20neural%20substrate%20of%20putative%20internal%20models">there
-      is a very strong candidate</a> for implementing the forward model in
+    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3570165/#:~:text=most%20likely%20neural%20substrate%20of%20putative%20internal%20models">there
+    is a very strong candidate</a> for implementing the forward model in
     the brain: the cerebellum.</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_10.png" /></p>
-  <p>Finally some answers! Could it be that the cerebellum is the
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_10.png" /></p>
+    <p>Finally some answers! Could it be that the cerebellum is the
     neural correlate of the amplifier? Turns out, <a
-      href="https://www.sciencedirect.com/science/article/abs/pii/S1364661398012236">people</a>
-    have been thinking about this for more than 20 years. <a href="https://www.nature.com/articles/nrn2332">Ito
-      (2008)</a>
+    href="https://www.sciencedirect.com/science/article/abs/pii/S1364661398012236">people</a>
+    have been thinking about this for more than 20 years. <a
+    href="https://www.nature.com/articles/nrn2332">Ito (2008)</a>
     says:</p>
-  <blockquote>
+    <blockquote>
     <p>The intricate neuronal circuitry of the cerebellum is thought to
-      encode internal models that reproduce the dynamic properties of body
-      parts. […] It is thought that the cerebellum might also encode
-      internal models that reproduce the essential properties of mental
-      representations in the cerebral cortex.</p>
-  </blockquote>
-  <p>And here is <a href="https://link.springer.com/article/10.1080/14734220701344507">Steinlin
-      (2007)</a>, who summarizes insights on the role of the cerebellum in
+    encode internal models that reproduce the dynamic properties of body
+    parts. […] It is thought that the cerebellum might also encode
+    internal models that reproduce the essential properties of mental
+    representations in the cerebral cortex.</p>
+    </blockquote>
+    <p>And here is <a
+    href="https://link.springer.com/article/10.1080/14734220701344507">Steinlin
+    (2007)</a>, who summarizes insights on the role of the cerebellum in
     development:</p>
-  <blockquote>
+    <blockquote>
     <p>The cerebrum might be like a glider, which needs the cerebellum
-      as the motor aeroplane to bring it up in the air – once there, the
-      glider is able to fly alone. But any troubles during this flight
-      might bring it down again and the cerebellar motor aeroplane has to
-      help once more to regain altitude!</p>
-  </blockquote>
-  <p>Looking past the flowery language, this matches exactly what we
+    as the motor aeroplane to bring it up in the air – once there, the
+    glider is able to fly alone. But any troubles during this flight
+    might bring it down again and the cerebellar motor aeroplane has to
+    help once more to regain altitude!</p>
+    </blockquote>
+    <p>Looking past the flowery language, this matches exactly what we
     would expect from a converged solution in IDA. Once the application
     of the amplification and distillation mechanism does not change the
     prior <strong>p</strong> * anymore, <strong>p*
-      =D(A(D(A(….D(A(p))))))</strong> , their absence should not
+    =D(A(D(A(….D(A(p))))))</strong> , their absence should not
     matter.</p>
-  <p>(There is even <a href="https://pubmed.ncbi.nlm.nih.gov/16255391/">a bit of
-      evidence</a> on the cerebellum being involved in chess playing but
+    <p>(There is even <a
+    href="https://pubmed.ncbi.nlm.nih.gov/16255391/">a bit of
+    evidence</a> on the cerebellum being involved in chess playing but
     <em>only</em> in novices. But, actually, this bit of evidence does
     not pass the bar that I put up in the previous section where I
-    talked about fMRI. So let’s scratch this last part.)
-  </p>
-  <p><strong>Getting a neural network drunk.</strong></p>
-  <p>Now we’ve moved all the pieces (no pun intended) in the right
+    talked about fMRI. So let’s scratch this last part.)</p>
+    <p><strong>Getting a neural network drunk.</strong></p>
+    <p>Now we’ve moved all the pieces (no pun intended) in the right
     position to think about how Magnus Carlsen can still win at chess
     while intoxicated.</p>
-  <p>1. <strong>What does (acute) alcohol consumption do to the
-      brain?</strong><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3971012/">Bjork
-      and Gilman (2014)</a> have an answer:</p>
-  <blockquote>
+    <p>1. <strong>What does (acute) alcohol consumption do to the
+    brain?</strong><a
+    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3971012/">Bjork
+    and Gilman (2014)</a> have an answer:</p>
     <blockquote>
-      <p>[W]hile there are some discrepancies in specific regional effects
-        of acute alcohol on the resting brain and on the brain at work, the
-        preponderance of evidence indicates that <strong>acute alcohol
-          exerts region-specific suppression (e.g. cerebellum)</strong> or
-        enhancement (e.g. ventral striatum) of brain metabolic or
-        hemodynamic activity, and by inference, neuronal activity.</p>
+    <blockquote>
+    <p>[W]hile there are some discrepancies in specific regional effects
+    of acute alcohol on the resting brain and on the brain at work, the
+    preponderance of evidence indicates that <strong>acute alcohol
+    exerts region-specific suppression (e.g. cerebellum)</strong> or
+    enhancement (e.g. ventral striatum) of brain metabolic or
+    hemodynamic activity, and by inference, neuronal activity.</p>
     </blockquote>
-  </blockquote>
-  <p>This is, of course, no coincidence since if this wasn’t the case
+    </blockquote>
+    <p>This is, of course, no coincidence since if this wasn’t the case
     I wouldn’t have led you down this entire chain of logic.</p>
-  <ol class="incremental" start="2" type="1">
+    <ol class="incremental" start="2" type="1">
     <li><strong>What happens to AlphaZero when we force it to only rely
-        on its prior p for playing chess?</strong> We don’t know. But we
-      know the next best thing, which is what happens to AlphaZero when we
-      force it to only rely on its prior <strong>p</strong> for playing
-      <em>Go</em> :
-    </li>
-  </ol>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_11.png" />Estimated
+    on its prior p for playing chess?</strong> We don’t know. But we
+    know the next best thing, which is what happens to AlphaZero when we
+    force it to only rely on its prior <strong>p</strong> for playing
+    <em>Go</em> :</li>
+    </ol>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_11.png" />Estimated
     difference in elo rating between the full AlphaZero model (blue) and
     the model restricted to the prior <strong>p</strong> (grey). Adapted
     from <a href="https://www.nature.com/articles/nature24270">Silver et
-      al., 2017</a>.</p>
-  <p>About a 40% reduction in rating. Substantial, but still enough to
+    al., 2017</a>.</p>
+    <p>About a 40% reduction in rating. Substantial, but still enough to
     put it <a
-      href="https://www.lesswrong.com/posts/HAMsX36kCbbeju6M7/is-alphazero-any-good-without-the-tree-search?commentId=th3qptQoPFFYgqhR6">neck-at-neck
-      with a human professional</a>.</p>
-  <p>3. <strong>How much worse does Magnus Carlsen play under the
-      influence?</strong> Carlsen recently set a new record for the<a
-      href="https://lichess.org/@/Kingscrusher-YouTube/blog/magnus-carlsen-creates-new-all-time-bullet-rating-record-11th-november-2021/kTiFcikR">highest
-      bullet chess rating ever on Lichess</a>: 3379. Giving up 40% of
+    href="https://www.lesswrong.com/posts/HAMsX36kCbbeju6M7/is-alphazero-any-good-without-the-tree-search?commentId=th3qptQoPFFYgqhR6">neck-at-neck
+    with a human professional</a>.</p>
+    <p>3. <strong>How much worse does Magnus Carlsen play under the
+    influence?</strong> Carlsen recently set a new record for the<a
+    href="https://lichess.org/@/Kingscrusher-YouTube/blog/magnus-carlsen-creates-new-all-time-bullet-rating-record-11th-november-2021/kTiFcikR">highest
+    bullet chess rating ever on Lichess</a>: 3379. Giving up 40% of
     rating points would knock him down to a rating of ~2000. His
     opponent from the beginning is rated 2500, making a win rather
-    unlikely:<a href="https://wismuth.com/elo/calculator.html#rating1=2000&amp;rating2=2500">only
-      around 1%</a>. But then again;<a
-      href="https://en.wikipedia.org/wiki/Fast_chess#:~:text=%C2%A0Kazakhstan-,Criticism,-%5Bedit%5D">anything
-      is possible in bullet</a>, and this particular game has collected
+    unlikely:<a
+    href="https://wismuth.com/elo/calculator.html#rating1=2000&amp;rating2=2500">only
+    around 1%</a>. But then again;<a
+    href="https://en.wikipedia.org/wiki/Fast_chess#:~:text=%C2%A0Kazakhstan-,Criticism,-%5Bedit%5D">anything
+    is possible in bullet</a>, and this particular game has collected
     north of half a million views. Also, it’s unlikely that alcohol
     knocks out the <em>entire</em> amplification mechanism of the brain
     (not all of which will be located in the cerebellum).</p>
-  <p>It would be great to have more solid data on how alcohol affects
+    <p>It would be great to have more solid data on how alcohol affects
     play. Anecdotally, <a
-      href="https://slate.com/culture/2020/02/magnus-carlsen-speed-chess-drdrunkenstein-pseudonyms-twitch-youtube.html#:~:text=Carlsen%20admits%20he%20quit">Carlsen
-      quit drinking</a> a while back for health reasons (and <a
-      href="https://slate.com/culture/2020/02/magnus-carlsen-speed-chess-drdrunkenstein-pseudonyms-twitch-youtube.html#:~:text=I%20thought%20Carlsen%20was%20sandbagging%20these%20tournaments%20to%20make%20it%20interesting">after
-      “sandbagging” the fifth Lichess Titled Arena</a>). <a
-      href="https://wegochess.com/does-alcohol-improve-chess-drunken-style/">This</a>
+    href="https://slate.com/culture/2020/02/magnus-carlsen-speed-chess-drdrunkenstein-pseudonyms-twitch-youtube.html#:~:text=Carlsen%20admits%20he%20quit">Carlsen
+    quit drinking</a> a while back for health reasons (and <a
+    href="https://slate.com/culture/2020/02/magnus-carlsen-speed-chess-drdrunkenstein-pseudonyms-twitch-youtube.html#:~:text=I%20thought%20Carlsen%20was%20sandbagging%20these%20tournaments%20to%20make%20it%20interesting">after
+    “sandbagging” the fifth Lichess Titled Arena</a>). <a
+    href="https://wegochess.com/does-alcohol-improve-chess-drunken-style/">This</a>
     blog post talks at length about the detrimental effect of alcohol on
     chess play but does not list any sources. Opinions on the <a
-      href="https://www.chess.com/forum/view/livechess/alcohol--chess--bad-or-good-idea">Chess
-      Forum</a> are divided.</p>
-  <h2 id="concluding-thoughts"><strong>Concluding
-      thoughts</strong></h2>
-  <p>Should we feel less amazed at Carlsen’s intoxicated chess play,
+    href="https://www.chess.com/forum/view/livechess/alcohol--chess--bad-or-good-idea">Chess
+    Forum</a> are divided.</p>
+    <h2 id="concluding-thoughts"><strong>Concluding
+    thoughts</strong></h2>
+    <p>Should we feel less amazed at Carlsen’s intoxicated chess play,
     after all the above? Quite the contrary, thinking about <em>how</em>
     something works can allow us to <a
-      href="https://www.lesswrong.com/posts/x4dG4GhpZH2hgz59x/joy-in-the-merely-real">appreciate
-      at an even deeper level</a>. And despite not really drinking too
+    href="https://www.lesswrong.com/posts/x4dG4GhpZH2hgz59x/joy-in-the-merely-real">appreciate
+    at an even deeper level</a>. And despite not really drinking too
     much myself, I <em>do</em> have a few ideas for a couple of small
     experiments that really shouldn’t be too much effort…</p>
-  <p>Back to the point, is there anything we can say about artificial
+    <p>Back to the point, is there anything we can say about artificial
     intelligence from these experiments? First, I find it interesting
     that performance deteriorates so much when relying only on the prior
     <strong>p</strong>. From one perspective this <em>does</em> make a
     lot of intuitive sense, disabling a central component of the model
     <em>should</em> affect performance. And it would be weird to play
     chess without <em>any</em> consideration of what the opponent will
-    likely do.
-  </p>
-  <p>From another perspective, it is still a bit surprising.
+    likely do.</p>
+    <p>From another perspective, it is still a bit surprising.
     Performance deteriorating implies that the prior <strong>p</strong>
     is not yet a fixed point of <strong>p<em>=D(A(p</em>))</strong>.
     Possibly this is because the network that implements
@@ -650,20 +690,20 @@
     Who can tell? In any case, it is pretty amazing that computer chess
     continues to provide so many interesting questions, despite the
     match DeepBlue vs. Kasparov already being 25 years ago. As the great
-    poet <a href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/making-of-ian">#IAN</a>
-    used to say:
-  </p>
-  <blockquote>
+    poet <a
+    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/making-of-ian">#IAN</a>
+    used to say:</p>
+    <blockquote>
     <p><em>There are two kinds of players: those who can play and those
-        who can’t. “Charles Darwin”</em></p>
-  </blockquote>
-  <hr />
-  <p>A big thank you to Philipp Hummel for giving me the central
+    who can’t. “Charles Darwin”</em></p>
+    </blockquote>
+    <hr />
+    <p>A big thank you to Philipp Hummel for giving me the central
     insight of this post, and for very helpful proofreading.</p>
-  <p>If you enjoyed this post and want to receive a notification for
+    <p>If you enjoyed this post and want to receive a notification for
     my next post, consider subscribing (it’s free and will stay
     free!)</p>
-  <div class="debug-grid"></div>
+    <div class="debug-grid"></div>
   <script src="../../index.js"></script>
 </body>
 

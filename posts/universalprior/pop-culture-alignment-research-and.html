@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="" >
 
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="Jan Kirchner" />
-  <meta name="dcterms.date" content="2022-04-16" />
-  <title>Pop Culture Alignment Research and Taxes</title>
-  <link rel="stylesheet" href="../../reset.css" />
-  <link rel="stylesheet" href="../../index.css" />
-</head>
+    <meta name="author" content="Jan Kirchner" />
+      <meta name="dcterms.date" content="2022-04-16" />
+        <title>Pop Culture Alignment Research and Taxes</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../index.css" />
+      </head>
 
 <body>
-  <table class="header">
+    <table class="header">
     <tr>
       <td colspan="2" rowspan="2" class="width-auto">
         <h1 class="title"><a href="https://kirchner-jan.github.io/minimalprior/"
             style="text-decoration: none; color: inherit;">Pop Culture
-            Alignment Research and Taxes</a></h1>
+Alignment Research and Taxes</a></h1>
         <span class="subtitle">TL;DR A quick recap of all the AI
-          progress published recently, a shortcoming of the alignment tax
-          definition, and a dynamical systems model of AI…</span>
+progress published recently, a shortcoming of the alignment tax
+definition, and a dynamical systems model of AI…</span>
       </td>
       <th>Updated</th>
       <td class="width-min"><time style="white-space: pre;">2022-04-16</time></td>
@@ -29,376 +29,388 @@
     <tr>
       <th class="width-min">Author</th>
       <td class="width-auto"><a href="https://kirchner-jan.github.io/minimalprior/">Jan
-          Kirchner</a></td>
+Kirchner</a></td>
     </tr>
   </table>
-  <nav id="TOC" role="doc-toc">
-    <ul class="incremental">
-      <li><a href="#all-bad-ends-all-click-for-soundtrack" id="toc-all-bad-ends-all-click-for-soundtrack"><strong>All
-            Bad
-            Ends All (click for soundtrack)</strong></a></li>
-      <li><a href="#pop-culture-alignment-problem" id="toc-pop-culture-alignment-problem"><strong>Pop culture
-            alignment problem</strong></a></li>
-      <li><a href="#the-only-certainty-in-life" id="toc-the-only-certainty-in-life"><strong>The only certainty
-            in life</strong></a></li>
-      <li><a href="#the-impossibility-of-a-negative-alignment-tax"
-          id="toc-the-impossibility-of-a-negative-alignment-tax"><strong>The
-            Impossibility Of A Negative Alignment Tax</strong></a></li>
-      <li><a href="#closing-thoughts" id="toc-closing-thoughts"><strong>Closing
-            thoughts</strong></a></li>
-    </ul>
+      <nav id="TOC" role="doc-toc">
+        <ul class="incremental">
+        <li><a href="#all-bad-ends-all-click-for-soundtrack"
+        id="toc-all-bad-ends-all-click-for-soundtrack"><strong>All Bad
+        Ends All (click for soundtrack)</strong></a></li>
+        <li><a href="#pop-culture-alignment-problem"
+        id="toc-pop-culture-alignment-problem"><strong>Pop culture
+        alignment problem</strong></a></li>
+        <li><a href="#the-only-certainty-in-life"
+        id="toc-the-only-certainty-in-life"><strong>The only certainty
+        in life</strong></a></li>
+        <li><a href="#the-impossibility-of-a-negative-alignment-tax"
+        id="toc-the-impossibility-of-a-negative-alignment-tax"><strong>The
+        Impossibility Of A Negative Alignment Tax</strong></a></li>
+        <li><a href="#closing-thoughts"
+        id="toc-closing-thoughts"><strong>Closing
+        thoughts</strong></a></li>
+        </ul>
   </nav>
-  <p><em>Previously in this series:<a
-        href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/cognitive-biases-in-large-language?s=w">Cognitive
-        Biases in Large Language Models</a>, <a
-        href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/drug-addicts-and-deceptively-aligned?s=w">Drug
-        addicts and deceptively aligned agents - a comparative analysis</a>,
-      <a href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/inferring-utility-functions?s=w">Inferring
-        utility functions from locally non-transitive
-        preferences</a>.</em></p>
-  <h2 id="all-bad-ends-all-click-for-soundtrack"><strong><a
-        href="https://www.youtube.com/watch?v=oD4anv60ow8&amp;ab_channel=TheBooks-Topic">All
-        Bad Ends All</a> (click for soundtrack)</strong></h2>
-  <p>It’s been a couple of exciting weeks.</p>
-  <ul class="incremental">
-    <li>
-      <p>Google DeepMind <a href="https://arxiv.org/abs/2203.15556">published a paper</a>
-        showing we’ve been training our language models in a suboptimal way.
-        Their new model (continuing the rodent-themed naming scheme), <a
-          href="https://en.wikipedia.org/wiki/Chinchilla">Chinchilla</a>,
-        fixes that issue and manages to compete with/beat the much larger <a
-          href="https://en.wikipedia.org/wiki/Gopher">Gopher</a>.</p>
-    </li>
-    <li>
-      <p>Google Brain didn’t get that message in time (also not the
-        message about the rodent-themed naming scheme)<sup>[1]</sup> and <a
-          href="https://arxiv.org/abs/2204.02311">published a paper</a> where
-        they train a model that’s even larger than Gopher, but with the old,
-        suboptimal training scheme. That model can now solve logic puzzles
-        that <em>I</em> could not solve in a thousand
-        years<sup>[2]</sup>.</p>
-      <div class="sidenote">
-        <p>[1] </p>
-        <p>I like “<a href="https://en.wikipedia.org/wiki/Heptaxodontidae">Giant
-            Hutia</a>” or “<a href="https://www.youtube.com/watch?v=UPXUG8q4jKU&amp;ab_channel=MattLittle">New
-            York Pizza Rat</a>”.</p>
-      </div>
-      <div class="sidenote">
-        <p>[2] </p>
-        <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_39.png" /></p>
-      </div>
-    </li>
-    <li>
-      <p>The new kid on the block, Anthropic, is not dragging its feet
-        and <a href="https://arxiv.org/abs/2204.05862">published a paper</a>
-        where they show that reinforcement learning from human values meshes
-        well with their “Helpful, Harmless, <del>and Honest</del>” <a
-          href="https://www.lesswrong.com/posts/oBpebs5j5ngs3EXr5/a-summary-of-anthropic-s-first-paper-3">approach</a><sup>[3]</sup>.
-        This paper contains the first plot I’ve seen with a language model
-        score better than a human expert on a relevant metric<sup>[4]</sup>
-        - but that doesn’t mean it didn’t happen before. I don’t pay super
-        close attention to the metrics.</p>
-      <div class="sidenote">
-        <p>[3] </p>
-        <p>They leave out “honest” because it’s really hard to evaluate for
-          non-expert humans.</p>
-      </div>
-      <div class="sidenote">
-        <p>[4] </p>
-        <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_40.png" /></p>
-      </div>
-    </li>
-    <li>
-      <p>Finally, OpenAI <a href="https://arxiv.org/abs/2204.06125">published a paper</a> where
-        they trained a new type of text-to-image model based on their
-        previously released <a href="https://openai.com/blog/clip/">CLIP</a>. The result is…
-        mind-blowing, to the point where people on Twitter <a
-          href="https://twitter.com/VividVoid_/status/1512140765656338432">announce
-          the end of traditional visual art forms</a><sup>[5]</sup>.</p>
-      <div class="sidenote">
-        <p>[5] </p>
-        <p>That’s Twitter, though. An artsy friend of mine is now
-          considering changing career tracks to go into “AI art”, something
-          that wasn’t really on the menu a few weeks ago.</p>
-      </div>
-    </li>
-  </ul>
-  <p>Through a series of wacky coincidences (TBA), yours truly got
+    <p><em>Previously in this series:<a
+    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/cognitive-biases-in-large-language?s=w">Cognitive
+    Biases in Large Language Models</a>, <a
+    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/drug-addicts-and-deceptively-aligned?s=w">Drug
+    addicts and deceptively aligned agents - a comparative analysis</a>,
+    <a
+    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/inferring-utility-functions?s=w">Inferring
+    utility functions from locally non-transitive
+    preferences</a>.</em></p>
+    <h2 id="all-bad-ends-all-click-for-soundtrack"><strong><a
+    href="https://www.youtube.com/watch?v=oD4anv60ow8&amp;ab_channel=TheBooks-Topic">All
+    Bad Ends All</a> (click for soundtrack)</strong></h2>
+    <p>It’s been a couple of exciting weeks.</p>
+    <ul class="incremental">
+    <li><p>Google DeepMind <a
+    href="https://arxiv.org/abs/2203.15556">published a paper</a>
+    showing we’ve been training our language models in a suboptimal way.
+    Their new model (continuing the rodent-themed naming scheme), <a
+    href="https://en.wikipedia.org/wiki/Chinchilla">Chinchilla</a>,
+    fixes that issue and manages to compete with/beat the much larger <a
+    href="https://en.wikipedia.org/wiki/Gopher">Gopher</a>.</p></li>
+    <li><p>Google Brain didn’t get that message in time (also not the
+    message about the rodent-themed naming scheme)<sup>[1]</sup> and <a
+    href="https://arxiv.org/abs/2204.02311">published a paper</a> where
+    they train a model that’s even larger than Gopher, but with the old,
+    suboptimal training scheme. That model can now solve logic puzzles
+    that <em>I</em> could not solve in a thousand
+    years<sup>[2]</sup>.</p>
+    <div class="sidenote">
+    <p>[1] </p>
+    <p>I like “<a
+    href="https://en.wikipedia.org/wiki/Heptaxodontidae">Giant
+    Hutia</a>” or “<a
+    href="https://www.youtube.com/watch?v=UPXUG8q4jKU&amp;ab_channel=MattLittle">New
+    York Pizza Rat</a>”.</p>
+    </div>
+    <div class="sidenote">
+    <p>[2] </p>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_39.png" /></p>
+    </div></li>
+    <li><p>The new kid on the block, Anthropic, is not dragging its feet
+    and <a href="https://arxiv.org/abs/2204.05862">published a paper</a>
+    where they show that reinforcement learning from human values meshes
+    well with their “Helpful, Harmless, <del>and Honest</del>” <a
+    href="https://www.lesswrong.com/posts/oBpebs5j5ngs3EXr5/a-summary-of-anthropic-s-first-paper-3">approach</a><sup>[3]</sup>.
+    This paper contains the first plot I’ve seen with a language model
+    score better than a human expert on a relevant metric<sup>[4]</sup>
+    - but that doesn’t mean it didn’t happen before. I don’t pay super
+    close attention to the metrics.</p>
+    <div class="sidenote">
+    <p>[3] </p>
+    <p>They leave out “honest” because it’s really hard to evaluate for
+    non-expert humans.</p>
+    </div>
+    <div class="sidenote">
+    <p>[4] </p>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_40.png" /></p>
+    </div></li>
+    <li><p>Finally, OpenAI <a
+    href="https://arxiv.org/abs/2204.06125">published a paper</a> where
+    they trained a new type of text-to-image model based on their
+    previously released <a
+    href="https://openai.com/blog/clip/">CLIP</a>. The result is…
+    mind-blowing, to the point where people on Twitter <a
+    href="https://twitter.com/VividVoid_/status/1512140765656338432">announce
+    the end of traditional visual art forms</a><sup>[5]</sup>.</p>
+    <div class="sidenote">
+    <p>[5] </p>
+    <p>That’s Twitter, though. An artsy friend of mine is now
+    considering changing career tracks to go into “AI art”, something
+    that wasn’t really on the menu a few weeks ago.</p>
+    </div></li>
+    </ul>
+    <p>Through a series of wacky coincidences (TBA), yours truly got
     access to the beta version of OpenAI’s new image generation
     technology and has been updating the thumbnails of his Substack (see
-    <a href="https://kirchner-jan.github.io/minimalprior/about">here</a> for a
-    disclosure).
-  </p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_33.png" />Three
+    <a href="https://kirchner-jan.github.io/minimalprior/about">here</a>
+    for a disclosure).</p>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_33.png" />Three
     images created by me with OpenAI’s DALL-E 2. The prompts are: “A
     painting of Leonardo Da Vinci holding a slice of pizza.”, “A
     painting of a chinchilla and a gopher dancing.”, “A painting of a
     painting of a painting of a painting.”</p>
-  <p>Not coincidentally, one of the founding figures of AI Safety
+    <p>Not coincidentally, one of the founding figures of AI Safety
     published an April Fool’s post announcing that their new strategy is
-    <a href="https://www.lesswrong.com/posts/j9Q8bRmwCgXRYAgcJ/miri-announces-new-death-with-dignity-strategy">just
-      giving up</a>, accompanied by a fair <a
-      href="https://www.lesswrong.com/posts/j9Q8bRmwCgXRYAgcJ/miri-announces-new-death-with-dignity-strategy?commentId=QMfBRH3rydbukCosb">amount</a>
+    <a
+    href="https://www.lesswrong.com/posts/j9Q8bRmwCgXRYAgcJ/miri-announces-new-death-with-dignity-strategy">just
+    giving up</a>, accompanied by a fair <a
+    href="https://www.lesswrong.com/posts/j9Q8bRmwCgXRYAgcJ/miri-announces-new-death-with-dignity-strategy?commentId=QMfBRH3rydbukCosb">amount</a>
     of <a
-      href="https://www.lesswrong.com/posts/Cf2zBkoocqcjnrNFD/emotionally-confronting-a-probably-doomed-world-against">despair</a>
+    href="https://www.lesswrong.com/posts/Cf2zBkoocqcjnrNFD/emotionally-confronting-a-probably-doomed-world-against">despair</a>
     in the <a
-      href="https://www.lesswrong.com/posts/wrkEnGrTTrM2mnmGa/retracted-it-s-time-for-ea-leadership-to-pull-the-short">community</a>.
+    href="https://www.lesswrong.com/posts/wrkEnGrTTrM2mnmGa/retracted-it-s-time-for-ea-leadership-to-pull-the-short">community</a>.
     More moderate voices are <a
-      href="https://www.lesswrong.com/posts/X3p8mxE5dHYDZNxCm/a-concrete-bet-offer-to-those-with-short-ai-timelines">willing
-      to bet money</a> that AI doom is not imminent and that we still have
+    href="https://www.lesswrong.com/posts/X3p8mxE5dHYDZNxCm/a-concrete-bet-offer-to-those-with-short-ai-timelines">willing
+    to bet money</a> that AI doom is not imminent and that we still have
     <em>at least</em> ten years<sup>[6]</sup>. Prediction markets <a
-      href="https://www.metaculus.com/questions/3479/date-weakly-general-ai-system-is-devised/">have</a><a
-      href="https://www.metaculus.com/questions/5121/date-of-first-agi-strong/">reacted</a>
+    href="https://www.metaculus.com/questions/3479/date-weakly-general-ai-system-is-devised/">have</a><a
+    href="https://www.metaculus.com/questions/5121/date-of-first-agi-strong/">reacted</a>
     to the news by decreasing median timelines by 5 to 10 years but
     still placing it 10 to 20 years in the future. Notably, this is less
     than the <a
-      href="https://astralcodexten.substack.com/p/biological-anchors-a-trick-that-might?s=r#:~:text=Law%20Taketh%20Away-,Eliezer%E2%80%99s,-other%20argument%20is">typical
-      30 years implied by Platt’s law</a>, but these estimates are
-    notoriously hard to interpret<sup>[7]</sup>.
-  </p>
-  <div class="sidenote">
+    href="https://astralcodexten.substack.com/p/biological-anchors-a-trick-that-might?s=r#:~:text=Law%20Taketh%20Away-,Eliezer%E2%80%99s,-other%20argument%20is">typical
+    30 years implied by Platt’s law</a>, but these estimates are
+    notoriously hard to interpret<sup>[7]</sup>.</p>
+    <div class="sidenote">
     <p>[6] </p>
     <p>To those not familiar with this type of talk, yeah, ten years is
-      still a <em>lot</em> shorter than what the median person on the
-      street or even <a href="https://www.alignmentforum.org/posts/KrJfoZzpSDpnrv9va/draft-report-on-ai-timelines">some
-        experts</a> would guess. I don’t have robust reasoning for how
-      different “timelines” should affect what I do on a day-to-day basis,
-      so I tend not to think about the question too much.</p>
-  </div>
-  <div class="sidenote">
+    still a <em>lot</em> shorter than what the median person on the
+    street or even <a
+    href="https://www.alignmentforum.org/posts/KrJfoZzpSDpnrv9va/draft-report-on-ai-timelines">some
+    experts</a> would guess. I don’t have robust reasoning for how
+    different “timelines” should affect what I do on a day-to-day basis,
+    so I tend not to think about the question too much.</p>
+    </div>
+    <div class="sidenote">
     <p>[7] </p>
     <p>There has been an influx of new people on those questions in the
-      last two weeks for the prediction markets. It’s probably fair to
-      assume that those are not experts (who would have thought about the
-      question even before the new wave of papers) but people who decided
-      to participate <em>because of</em> the papers. And beyond prediction
-      markets, there’s this <a
-        href="https://astralcodexten.substack.com/p/biological-anchors-a-trick-that-might?s=r">ongoing
-        discussion</a> about whether forecasting AI is possible.</p>
-  </div>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_34.png" />From
-    <a href="https://www.metaculus.com/questions/3479/date-weakly-general-ai-system-is-devised/">source</a>.
-    Note that the y-axis is logarithmic.
-  </p>
-  <p>In my experience, the best strategy in response to a big,
+    last two weeks for the prediction markets. It’s probably fair to
+    assume that those are not experts (who would have thought about the
+    question even before the new wave of papers) but people who decided
+    to participate <em>because of</em> the papers. And beyond prediction
+    markets, there’s this <a
+    href="https://astralcodexten.substack.com/p/biological-anchors-a-trick-that-might?s=r">ongoing
+    discussion</a> about whether forecasting AI is possible.</p>
+    </div>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_34.png" />From
+    <a
+    href="https://www.metaculus.com/questions/3479/date-weakly-general-ai-system-is-devised/">source</a>.
+    Note that the y-axis is logarithmic.</p>
+    <p>In my experience, the best strategy in response to a big,
     exciting thing is to <a
-      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/via-productiva?s=w#:~:text=Don%27t%20listen%20to%20Cassandra.">ignore
-      it</a>. Enough smart people will already be thinking about the
+    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/via-productiva?s=w#:~:text=Don%27t%20listen%20to%20Cassandra.">ignore
+    it</a>. Enough smart people will already be thinking about the
     topic, and all the important details will reach you through <a
-      href="https://en.wikipedia.org/wiki/Social_osmosis">social
-      osmosis</a><sup>[8]</sup> in due time.</p>
-  <div class="sidenote">
+    href="https://en.wikipedia.org/wiki/Social_osmosis">social
+    osmosis</a><sup>[8]</sup> in due time.</p>
+    <div class="sidenote">
     <p>[8] </p>
-    <p>Or, let’s be honest, <a href="https://www.lesswrong.com/">LessWrong</a>.</p>
-  </div>
-  <p>Consequently, I focus on the <a
-      href="https://stevenpressfield.com/2012/08/the-a-story-and-the-b-story/">B-story</a>
+    <p>Or, let’s be honest, <a
+    href="https://www.lesswrong.com/">LessWrong</a>.</p>
+    </div>
+    <p>Consequently, I focus on the <a
+    href="https://stevenpressfield.com/2012/08/the-a-story-and-the-b-story/">B-story</a>
     that develops parallel to all the exciting rush. I look at whether
     there currently is any alignment tax, whether the alignment tax
     might be negative (temporarily), and how we might expect the
     alignment tax to change.</p>
-  <h2 id="pop-culture-alignment-problem"><strong>Pop culture alignment
-      problem</strong></h2>
-  <p>Let’s recap one line of argument for what we might expect
+    <h2 id="pop-culture-alignment-problem"><strong>Pop culture alignment
+    problem</strong></h2>
+    <p>Let’s recap one line of argument for what we might expect
     advanced AI to look like:</p>
-  <p><a href="https://www.lesswrong.com/posts/AuMk9g8BhjFKooSdq/my-recollection-of-how-this-all-got-started">In
-      the early days</a> when people started to think about advanced AI,
+    <p><a
+    href="https://www.lesswrong.com/posts/AuMk9g8BhjFKooSdq/my-recollection-of-how-this-all-got-started">In
+    the early days</a> when people started to think about advanced AI,
     there was a pretty even divide on whether an advanced AI will tend
     to be <a
-      href="https://www.rivendellinstitute.org/wp-content/uploads/2018/02/McDermott-on-Singularity.pdf">friendly</a>
+    href="https://www.rivendellinstitute.org/wp-content/uploads/2018/02/McDermott-on-Singularity.pdf">friendly</a>
     or <a href="https://intelligence.org/files/CFAI.pdf">unfriendly</a>
     “by default”<sup>[9]</sup>. With this debate as a backdrop, Nick
-    Bostrom <a href="https://www.nickbostrom.com/superintelligentwill.pdf">posited</a>
+    Bostrom <a
+    href="https://www.nickbostrom.com/superintelligentwill.pdf">posited</a>
     his Orthogonality thesis in 2012:</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[9] </p>
     <p>i.e. if we don’t put a lot of work into pushing in one direction
-      or the other.</p>
-  </div>
-  <blockquote>
+    or the other.</p>
+    </div>
+    <blockquote>
     <p>Intelligence and final goals are orthogonal axes along which
-      possible agents can freely vary.</p>
-  </blockquote>
-  <p>The orthogonality thesis is an idea we are very familiar with
+    possible agents can freely vary.</p>
+    </blockquote>
+    <p>The orthogonality thesis is an idea we are very familiar with
     from pop culture. Fictional characters can be heroes or villains,
     and they can be capable or inept. Have a look at this alignment
     chart that took me way too long to make:</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_35.png" />I
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_35.png" />I
     don’t <em>know</em> what half of these characters do, but I hope I
     placed them approximately right. Please have extensive discussions
     about this chart in the comments.</p>
-  <p>None of these characters are real, and <a
-      href="https://www.lesswrong.com/posts/rHBdcHGLJ7KvLJQPk/the-logical-fallacy-of-generalization-from-fictional">arguments
-      from fictional evidence</a> shouldn’t convince anyone. But we don’t
+    <p>None of these characters are real, and <a
+    href="https://www.lesswrong.com/posts/rHBdcHGLJ7KvLJQPk/the-logical-fallacy-of-generalization-from-fictional">arguments
+    from fictional evidence</a> shouldn’t convince anyone. But we don’t
     have to search long to find <em>real</em> examples of very capable
-    evil (<a href="https://www.effectivealtruism.org/articles/cause-profile-animal-welfare">factory
-      farming</a>, <a href="https://en.wikipedia.org/wiki/Drug_cartel">drug cartels</a>,
+    evil (<a
+    href="https://www.effectivealtruism.org/articles/cause-profile-animal-welfare">factory
+    farming</a>, <a
+    href="https://en.wikipedia.org/wiki/Drug_cartel">drug cartels</a>,
     or <a href="https://hbr.org/2012/03/psychopaths-on-wall-street">Wall
-      Street psychopaths</a>) or very inept good (<a
-      href="https://petition.parliament.uk/archived/petitions/62900">petition
-      to end poverty</a>, <a href="https://www.bbc.co.uk/news/uk-england-54366461">plastic straw
-      bans</a>, or <a
-      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/the-tale-of-gandhi-and-the-devil?s=w#:~:text=sweaters%20for%20kittens">sweaters
-      for kittens</a>).</p>
-  <p>The category “capable neutral”, however, is the weirdest one.
+    Street psychopaths</a>) or very inept good (<a
+    href="https://petition.parliament.uk/archived/petitions/62900">petition
+    to end poverty</a>, <a
+    href="https://www.bbc.co.uk/news/uk-england-54366461">plastic straw
+    bans</a>, or <a
+    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/the-tale-of-gandhi-and-the-devil?s=w#:~:text=sweaters%20for%20kittens">sweaters
+    for kittens</a>).</p>
+    <p>The category “capable neutral”, however, is the weirdest one.
     Surprisingly, it contains some striking examples from advanced AI
     systems:</p>
-  <ul class="incremental">
-    <li>
-      <p>The YouTube recommendation algorithm used to be only <a
-          href="https://www.nytimes.com/column/rabbit-hole">really good at
-          presenting people with content they wanted to watch</a>. As a
-        negative byproduct, they contributed to polarization and
-        misinformation.</p>
-    </li>
-    <li>
-      <p>The Microsoft chatbot Tay used to be only <a href="https://en.wikipedia.org/wiki/Tay_%28bot%29">really good at
-          learning from what people tweeted at it</a>. It quickly became <a
-          href="https://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist">very
-          ugly</a>.</p>
-    </li>
-    <li>
-      <p>The Amazon hiring software used to be only <a
-          href="https://becominghuman.ai/amazons-sexist-ai-recruiting-tool-how-did-it-go-so-wrong-e3d14816d98e">really
-          good at predicting resume scores based on previously observed and
-          evaluated resumes</a>. It took way too long until they realized it
-        also incorporated a pretty bad bias against female
-        applicants.</p>
-    </li>
-  </ul>
-  <p>Note that none of these cases resemble “The Joker” - these
+    <ul class="incremental">
+    <li><p>The YouTube recommendation algorithm used to be only <a
+    href="https://www.nytimes.com/column/rabbit-hole">really good at
+    presenting people with content they wanted to watch</a>. As a
+    negative byproduct, they contributed to polarization and
+    misinformation.</p></li>
+    <li><p>The Microsoft chatbot Tay used to be only <a
+    href="https://en.wikipedia.org/wiki/Tay_%28bot%29">really good at
+    learning from what people tweeted at it</a>. It quickly became <a
+    href="https://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist">very
+    ugly</a>.</p></li>
+    <li><p>The Amazon hiring software used to be only <a
+    href="https://becominghuman.ai/amazons-sexist-ai-recruiting-tool-how-did-it-go-so-wrong-e3d14816d98e">really
+    good at predicting resume scores based on previously observed and
+    evaluated resumes</a>. It took way too long until they realized it
+    also incorporated a pretty bad bias against female
+    applicants.</p></li>
+    </ul>
+    <p>Note that none of these cases resemble “The Joker” - these
     systems did not have the explicit goal of harming someone or causing
     chaos. The bad effects I list are only <em>side</em> -effects of the
     thing the system is designed to do.</p>
-  <p><strong>Systems in the “neutral” or “evil” row are called<a
-        href="https://en.wikipedia.org/wiki/Misaligned_goals_in_artificial_intelligence">unaligned</a>
-      or <a
-        href="https://proceedings.neurips.cc/paper/2020/file/b607ba543ad05417b8507ee86c54fcb7-Paper.pdf">misaligned</a>,
-      and the problem of pushing them more into the top row is called <a
-        href="https://www.amazon.de/-/en/Brian-Christian/dp/0393635821">The
-        Alignment Problem</a>.</strong> Some people argue that solving the
+    <p><strong>Systems in the “neutral” or “evil” row are called<a
+    href="https://en.wikipedia.org/wiki/Misaligned_goals_in_artificial_intelligence">unaligned</a>
+    or <a
+    href="https://proceedings.neurips.cc/paper/2020/file/b607ba543ad05417b8507ee86c54fcb7-Paper.pdf">misaligned</a>,
+    and the problem of pushing them more into the top row is called <a
+    href="https://www.amazon.de/-/en/Brian-Christian/dp/0393635821">The
+    Alignment Problem</a>.</strong> Some people argue that solving the
     alignment problem could be <a
-      href="https://www.alignmentforum.org/posts/krsjmpDB4kgDq6pdu/axrp-episode-12-ai-existential-risk-with-paul-christiano">one
-      of the most important challenges</a>. Such claims are made about <a
-      href="https://www.gvi.co.uk/blog/6-critical-global-issues-what-are-the-worlds-biggest-problems-and-how-i-can-help/">different</a>
+    href="https://www.alignmentforum.org/posts/krsjmpDB4kgDq6pdu/axrp-episode-12-ai-existential-risk-with-paul-christiano">one
+    of the most important challenges</a>. Such claims are made about <a
+    href="https://www.gvi.co.uk/blog/6-critical-global-issues-what-are-the-worlds-biggest-problems-and-how-i-can-help/">different</a>
     <a
-      href="https://www.businessinsider.com/world-economic-forum-world-biggest-problems-concerning-millennials-2016-8?r=US&amp;IR=T">things</a>
-    <a href="https://www.bbvaopenmind.com/en/articles/15-global-challenges-for-the-next-decades/">all
-      the time</a>. But when we see how our AI systems are getting
+    href="https://www.businessinsider.com/world-economic-forum-world-biggest-problems-concerning-millennials-2016-8?r=US&amp;IR=T">things</a>
+    <a
+    href="https://www.bbvaopenmind.com/en/articles/15-global-challenges-for-the-next-decades/">all
+    the time</a>. But when we see how our AI systems are getting
     exponentially more capable, we can imagine that problems like those
     with the YouTube recommendation algorithm, Tay AI, and the Amazon
     hiring software might also grow exponentially in severity. And the
     same way that more capable AI systems exhibit qualitatively new
     capabilities, there is also the possibility that we will encounter
-    <a href="https://www.lesswrong.com/posts/FkgsxrGf3QxhfLWHG/risks-from-learned-optimization-introduction">qualitatively
-      new problems</a>.
-  </p>
-  <h2 id="the-only-certainty-in-life"><strong>The only certainty in
-      life</strong></h2>
-  <p>We might want to be very careful when designing a new system to
-    avoid these problems. We might want to <a href="https://en.wikipedia.org/wiki/AI_box">run many tests before
-      deployment</a> and build the system to <a href="https://arbital.com/p/corrigibility/">steer it away from bad
-      failure modes</a>. (Or perhaps we could “just” decide <a
-      href="https://www.lesswrong.com/posts/vaHgLF2BCEdK3KxQd/convincing-all-capability-researchers">not
-      to develop the system in the first place</a>.)</p>
-  <p>All of these proposals come with a certain
-    <em>cost</em><sup>[10]</sup>; they might
-  </p>
-  <div class="sidenote">
+    <a
+    href="https://www.lesswrong.com/posts/FkgsxrGf3QxhfLWHG/risks-from-learned-optimization-introduction">qualitatively
+    new problems</a>.</p>
+    <h2 id="the-only-certainty-in-life"><strong>The only certainty in
+    life</strong></h2>
+    <p>We might want to be very careful when designing a new system to
+    avoid these problems. We might want to <a
+    href="https://en.wikipedia.org/wiki/AI_box">run many tests before
+    deployment</a> and build the system to <a
+    href="https://arbital.com/p/corrigibility/">steer it away from bad
+    failure modes</a>. (Or perhaps we could “just” decide <a
+    href="https://www.lesswrong.com/posts/vaHgLF2BCEdK3KxQd/convincing-all-capability-researchers">not
+    to develop the system in the first place</a>.)</p>
+    <p>All of these proposals come with a certain
+    <em>cost</em><sup>[10]</sup>; they might</p>
+    <div class="sidenote">
     <p>[10] </p>
     <p>Imagine being the poor schlub who has to tell their boss that the
-      system won’t be ready for another year because the team has decided
-      to lock it in a box to perform psychoanalysis.</p>
-  </div>
-  <ul class="incremental">
-    <li>
-      <p>delay deployment,</p>
-    </li>
-    <li>
-      <p>make the project more expensive,</p>
-    </li>
-    <li>
-      <p>and/or decrease performance.</p>
-    </li>
-  </ul>
-  <p>Paying these costs might be worth it <em>ex-post</em> (YouTube,
+    system won’t be ready for another year because the team has decided
+    to lock it in a box to perform psychoanalysis.</p>
+    </div>
+    <ul class="incremental">
+    <li><p>delay deployment,</p></li>
+    <li><p>make the project more expensive,</p></li>
+    <li><p>and/or decrease performance.</p></li>
+    </ul>
+    <p>Paying these costs might be worth it <em>ex-post</em> (YouTube,
     Microsoft, and Amazon probably wish they had done those things only
     to avoid the bad PR). Still, ex-ante, the danger of being scooped by
     a faster rival or the possibility that the safety precautions turn
     out to be unnecessary are more salient.</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_36.png" />Schematic
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_36.png" />Schematic
     of the alignment tax. The label on the y-axis is debatable. The tax
     can not only be paid in performance but also in development time or
     system complexity (in which case the relationship reverses).</p>
-  <p><strong>The additional cost imposed by making a system safe is
-      called the<a href="https://forum.effectivealtruism.org/tag/alignment-tax">alignment
-        tax</a>.</strong> The idea came <a href="https://arbital.com/p/aligning_adds_time/">originally from
-      Eliezer Yudkowsky</a>, but <a href="https://youtu.be/-vsYtevJ2bc?t=541">Paul Christiano
-      popularized the term</a>. The term <a
-      href="https://www.lesswrong.com/posts/HEZgGBZTpT4Bov7nH/mapping-the-conceptual-territory-in-ai-existential-safety#:~:text=about%20the%20subject.-,Alignment,-tax%20and%20alignable">popped</a>
+    <p><strong>The additional cost imposed by making a system safe is
+    called the<a
+    href="https://forum.effectivealtruism.org/tag/alignment-tax">alignment
+    tax</a>.</strong> The idea came <a
+    href="https://arbital.com/p/aligning_adds_time/">originally from
+    Eliezer Yudkowsky</a>, but <a
+    href="https://youtu.be/-vsYtevJ2bc?t=541">Paul Christiano
+    popularized the term</a>. The term <a
+    href="https://www.lesswrong.com/posts/HEZgGBZTpT4Bov7nH/mapping-the-conceptual-territory-in-ai-existential-safety#:~:text=about%20the%20subject.-,Alignment,-tax%20and%20alignable">popped</a>
     up <a
-      href="https://www.lesswrong.com/posts/X2fRsTjd2kQ89pipE/an-74-separating-beneficial-ai-into-competence-alignment-and#:~:text=to%20image%20below%https://www.lesswrong.com/posts/HEZgGBZTpT4Bov7nH/mapping-the-conceptual-territory-in-ai-existential-safety#:~:text=about%20the%20subject.-,Alignment,-tax%20and%20alignable5D-,Rohin%27s,-opinion%3A%20Here%20are">repeatedly</a>
+    href="https://www.lesswrong.com/posts/X2fRsTjd2kQ89pipE/an-74-separating-beneficial-ai-into-competence-alignment-and#:~:text=to%20image%20below%https://www.lesswrong.com/posts/HEZgGBZTpT4Bov7nH/mapping-the-conceptual-territory-in-ai-existential-safety#:~:text=about%20the%20subject.-,Alignment,-tax%20and%20alignable5D-,Rohin%27s,-opinion%3A%20Here%20are">repeatedly</a>
     in the following years, with some people arguing that the tax <a
-      href="https://forum.effectivealtruism.org/posts/Ayu5im98u8FeMWoBZ/my-personal-cruxes-for-working-on-ai-safety#:~:text=put%20to%20use-,Good,-alignment%20solutions%20will">could
-      be pretty low</a> or <a
-      href="https://www.alignmentforum.org/posts/tmyTb4bQQi7C47sde/safety-capabilities-tradeoff-dials-are-inevitable-in-agi#3__A_better_way_to_think_about_it___alignment_tax_">infinitely
-      high</a>. An infinite tax corresponds to an unsolvable problem
+    href="https://forum.effectivealtruism.org/posts/Ayu5im98u8FeMWoBZ/my-personal-cruxes-for-working-on-ai-safety#:~:text=put%20to%20use-,Good,-alignment%20solutions%20will">could
+    be pretty low</a> or <a
+    href="https://www.alignmentforum.org/posts/tmyTb4bQQi7C47sde/safety-capabilities-tradeoff-dials-are-inevitable-in-agi#3__A_better_way_to_think_about_it___alignment_tax_">infinitely
+    high</a>. An infinite tax corresponds to an unsolvable problem
     (there is no way to make the system safe). A tax close to zero means
     that it will take very little additional effort to include the
     safety features (possibly because other researchers have made it
     very easy to include them).</p>
-  <p>Arguments on this topic have, however, an unmistakable
+    <p>Arguments on this topic have, however, an unmistakable
     theoretical bent. We can only determine the actual cost of the
     alignment tax in retrospect once you realize all your mistakes. And
     maybe not even then; we don’t only care about the actual cost but
     also the <em>probability</em> of failure. If something works 99% of
     the time but has a bad failure mode in 1% of cases, <a
-      href="https://www.lesswrong.com/posts/zzBbRotDubk33YdGd/nuclear-preparedness-guide#Nuclear_Power_Plant_Meltdown">we
-      still want to have good mechanisms to handle the 1%</a>. Just
+    href="https://www.lesswrong.com/posts/zzBbRotDubk33YdGd/nuclear-preparedness-guide#Nuclear_Power_Plant_Meltdown">we
+    still want to have good mechanisms to handle the 1%</a>. Just
     because the 1% didn’t happen doesn’t mean it was the right decision
     not to prepare for it.</p>
-  <p>We can (and should) sit down and <a
-      href="https://www.lesswrong.com/posts/HBxe6wdjxK239zajf/what-failure-looks-like">think
-      about how AI can go wrong</a> and what it would cost to prevent it.
+    <p>We can (and should) sit down and <a
+    href="https://www.lesswrong.com/posts/HBxe6wdjxK239zajf/what-failure-looks-like">think
+    about how AI can go wrong</a> and what it would cost to prevent it.
     If that number comes out to be ∞ or some number larger than anything
     we could ever reasonably afford, well, <a
-      href="https://www.lesswrong.com/posts/Cf2zBkoocqcjnrNFD/emotionally-confronting-a-probably-doomed-world-against">that’s
-      not actionable</a>. If that were the number I came up with, I’d want
+    href="https://www.lesswrong.com/posts/Cf2zBkoocqcjnrNFD/emotionally-confronting-a-probably-doomed-world-against">that’s
+    not actionable</a>. If that were the number I came up with, I’d want
     to keep the argument in mind, hope I’m wrong, and try to do the
     things I <em>can</em> do.</p>
-  <h2 id="the-impossibility-of-a-negative-alignment-tax"><strong>The
-      Impossibility Of A Negative Alignment Tax</strong></h2>
-  <p>All of this was a rather longwinded intro<sup>[11]</sup> for an
-    interesting result from the <a href="https://www.arxiv-vanity.com/papers/2203.02155/">InstructGPT
-      paper</a> and the new <a href="https://www.arxiv-vanity.com/papers/2204.05862/">Anthropic
-      paper</a> (emphasis is theirs):</p>
-  <div class="sidenote">
+    <h2 id="the-impossibility-of-a-negative-alignment-tax"><strong>The
+    Impossibility Of A Negative Alignment Tax</strong></h2>
+    <p>All of this was a rather longwinded intro<sup>[11]</sup> for an
+    interesting result from the <a
+    href="https://www.arxiv-vanity.com/papers/2203.02155/">InstructGPT
+    paper</a> and the new <a
+    href="https://www.arxiv-vanity.com/papers/2204.05862/">Anthropic
+    paper</a> (emphasis is theirs):</p>
+    <div class="sidenote">
     <p>[11] </p>
     <p>I’m traveling this weekend, and this was supposed to be just a
-      quick &amp; dirty, lightweight post. <a href="https://quoteinvestigator.com/2012/04/28/shorter-letter/">If I
-        had more time, I’d write a shorter post.</a></p>
-  </div>
-  <blockquote>
+    quick &amp; dirty, lightweight post. <a
+    href="https://quoteinvestigator.com/2012/04/28/shorter-letter/">If I
+    had more time, I’d write a shorter post.</a></p>
+    </div>
+    <blockquote>
     <p><strong>We were able to mitigate most of the performance
-        degradations introduced by our fine-tuning.</strong> --<a
-        href="https://www.arxiv-vanity.com/papers/2203.02155/">Training
-        language models to follow instructions with human feedback</a></p>
-  </blockquote>
-  <blockquote>
+    degradations introduced by our fine-tuning.</strong> --<a
+    href="https://www.arxiv-vanity.com/papers/2203.02155/">Training
+    language models to follow instructions with human feedback</a></p>
+    </blockquote>
+    <blockquote>
     <p>Smaller models experience severe ‘alignment taxes’ – their
-      performance on a wide variety of evaluations declines after RLHF
-      training. However, we find a variety of <strong>alignment
-        bonuses</strong> , with our 13B and 52B RLHF-trained models
-      performing better at zero-shot NLP evaluations, and the same at
-      few-shot evaluations. –<a href="https://www.arxiv-vanity.com/papers/2204.05862/">Training a
-        Helpful and Harmless Assistant with Reinforcement Learning from
-        Human Feedback</a></p>
-  </blockquote>
-  <p>Note that both papers use a technique called ’ <em>reinforcement
-      learning from human feedback</em> ’ (<a
-      href="https://www.deepmind.com/blog/learning-through-human-feedback">RLHF</a>)
-    to <a href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/making-of-ian">finetune
-      a language model</a> to produce output that scores well when rated
+    performance on a wide variety of evaluations declines after RLHF
+    training. However, we find a variety of <strong>alignment
+    bonuses</strong> , with our 13B and 52B RLHF-trained models
+    performing better at zero-shot NLP evaluations, and the same at
+    few-shot evaluations. –<a
+    href="https://www.arxiv-vanity.com/papers/2204.05862/">Training a
+    Helpful and Harmless Assistant with Reinforcement Learning from
+    Human Feedback</a></p>
+    </blockquote>
+    <p>Note that both papers use a technique called ’ <em>reinforcement
+    learning from human feedback</em> ’ (<a
+    href="https://www.deepmind.com/blog/learning-through-human-feedback">RLHF</a>)
+    to <a
+    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/making-of-ian">finetune
+    a language model</a> to produce output that scores well when rated
     by humans. Both of these papers observe that this finetuning can be
     done without deteriorating performance on the benchmarks. And both
     papers observe that the finetuned models became a lot
@@ -406,37 +418,38 @@
     papers mention that there doesn’t appear to be a huge alignment tax
     (or that we can mitigate it), Anthropic going even so far as to talk
     about an <em>alignment bonus</em>. <strong>What’s going on
-      here?</strong>
-  </p>
-  <div class="sidenote">
+    here?</strong></p>
+    <div class="sidenote">
     <p>[12] </p>
     <p>As opposed to the benchmarks, which don’t capture what we care
-      about super well once they are pushed to an extreme.</p>
-  </div>
-  <p>When I put my <a
-      href="https://www.alignmentforum.org/posts/X2i9dQQK3gETCyqh2/chris-olah-s-views-on-agi-safety">skeptical
-      hat</a> on, the answer is a bit dismissive: ” <em>RLHF does not
-      provide any degree of safety worth mentioning, and even if it did,
-      it would not continue to work once we have models that are a lot
-      more capable and dangerous. Applying the “alignment tax” concept to
-      these models is a</em><a href="https://en.wikipedia.org/wiki/Category_mistake">category
-      error</a> <em>and produces misleading intuitions.</em> ”</p>
-  <p>That’s a fair point<sup>[13]</sup>, but still, <em>something</em>
+    about super well once they are pushed to an extreme.</p>
+    </div>
+    <p>When I put my <a
+    href="https://www.alignmentforum.org/posts/X2i9dQQK3gETCyqh2/chris-olah-s-views-on-agi-safety">skeptical
+    hat</a> on, the answer is a bit dismissive: ” <em>RLHF does not
+    provide any degree of safety worth mentioning, and even if it did,
+    it would not continue to work once we have models that are a lot
+    more capable and dangerous. Applying the “alignment tax” concept to
+    these models is a</em><a
+    href="https://en.wikipedia.org/wiki/Category_mistake">category
+    error</a> <em>and produces misleading intuitions.</em> ”</p>
+    <p>That’s a fair point<sup>[13]</sup>, but still, <em>something</em>
     is going on, and <a
-      href="https://www.lesswrong.com/posts/9iA87EfNKnREgdTJN/conceptual-engineering-the-revolution-in-philosophy-you-ve">we
-      need some terminology</a>. I think about it this way: remember the
+    href="https://www.lesswrong.com/posts/9iA87EfNKnREgdTJN/conceptual-engineering-the-revolution-in-philosophy-you-ve">we
+    need some terminology</a>. I think about it this way: remember the
     orthogonality thesis from the beginning. Agents can vary along the
     two axes “good &lt;-&gt; evil” and “capable &lt;-&gt; inept”. When
     we think of the abstract space of AI techniques, the current
     state-of-the-art is a point in that space. <strong>Each innovation
-      translates into moving the state-of-the-art in some
-      direction</strong>. At each time, we choose between pushing for
+    translates into moving the state-of-the-art in some
+    direction</strong>. At each time, we choose between pushing for
     innovation in the “safety” or the “capability” direction.</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[13] </p>
     <p>thank you, skeptical hat</p>
-  </div>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_37.png" />
+    </div>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_37.png" />
     <strong>2D picture of AI innovations. a.</strong> The current
     state-of-the-art (grey dot) lies in the alignment chart space from
     section 1. At any time, we can consider the direction in which a
@@ -444,130 +457,125 @@
     pushes the state-of-the-art. <strong>b.</strong> In an “alignment
     tax situation”, the two vectors have a strictly negative dot
     product. <strong>c.</strong> In an “alignment bonus” situation, the
-    two vectors have a strictly positive dot product.
-  </p>
-  <p>This model allows us to explain:</p>
-  <ul class="incremental">
-    <li>
-      <p>how a safety technique can improve capabilities: To some
-        degree, safety is a capability. If a system is not safe at all, it’s
-        also not useful at all.</p>
-    </li>
-    <li>
-      <p>how an alignment tax might come about; at some point, we
-        might have to decide between pushing more in the “capable” or the
-        “good” direction <em>,</em> and there might be hard trade-offs
-        between the two.</p>
-    </li>
-  </ul>
-  <p>The model also allows us to visualize possible failure modes:</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_38.png" /></p>
-  <p>The picture shows three scenarios I could come up with:</p>
-  <ul class="incremental">
-    <li>
-      <p><strong>The automobile model.</strong> When we built the
-        first cars, they were <a
-          href="https://eu.detroitnews.com/story/news/local/michigan-history/2015/04/26/auto-traffic-history-detroit/26312107/">insanely</a>
-        <a href="https://americanhistory.si.edu/america-on-the-move/essays/automobile-safety">dangerous</a>.
-        Figuring out how to not make them as dangerous was pretty central to
-        the mission of making them useful. But eventually, we figured out
-        how to not make <a href="https://www.youtube.com/watch?v=hVbpGmX890I&amp;ab_channel=FilmsbytheYear">cars
-          explode</a>, and we reached the point where safety measures make the
-        experience of riding a car worse<sup>[14]</sup>. We have now reached
-        a point where some features that would substantially improve
-        safety<sup>[15]</sup> are not implemented because they would
-        deteriorate capabilities too much<sup>[16]</sup>.
-      </p>
-      <div class="sidenote">
-        <p>[14] </p>
-        <p><a href="https://www.wpr.org/surprisingly-controversial-history-seat-belts">seatbelts
-            were massively unpopular</a> when they were first mandated</p>
-      </div>
-      <div class="sidenote">
-        <p>[15] </p>
-        <p>like <a href="https://www.youtube.com/watch?v=VejNuZ3RrMs">limiting the
-            speed of a car on highways</a></p>
-      </div>
-      <div class="sidenote">
-        <p>[16] </p>
-        <p>Also, we cannot adopt <a
-            href="https://www.bloomberg.com/news/features/2020-08-12/why-are-cars-still-so-dangerous-to-pedestrians">other</a><a
-            href="https://en.wikipedia.org/wiki/Unsafe_at_Any_Speed">technologies</a>
-          for some reason, although they appear to be an improvement in
-          <em>both</em> safety and capabilities. This would be an interesting
-          topic to dive deeper into - is it the “evil greedy company,” or is
-          it some <a href="https://equilibriabook.com/">inadequate
-            equilibrium</a>?
-        </p>
-      </div>
-    </li>
-    <li>
-      <p><strong>The deception scenario.</strong> With the help of a
-        psychiatrist friend, I’ve written previously on how drug addicts can
-        be<a
-          href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/drug-addicts-and-deceptively-aligned">incredibly
-          good at deception</a>. They will credibly signal all the things that
-        make you believe that this time they have <em>really</em> changed -
-        and then disappear with your microwave. As far as I can tell, there
-        is no empirical evidence of deceptive AI yet<sup>[17]</sup>. But
-        there are <a href="https://www.lesswrong.com/posts/zthDPAjh9w6Ytbeks/deceptive-alignment">theoretical
-          arguments</a> for why it might happen once capabilities increase. In
-        this scenario, everything appears to be going super smoothly, and
-        all the safety features we implement keep pushing in the same
-        direction as the capability features. The AI is an overwhelming
-        sweetheart - helping old ladies across the street and everything -
-        until it isn’t. Our measure for “good” and “bad” was not reliable,
-        and by the time we found out<sup>[18]</sup>, it was too late.</p>
-      <div class="sidenote">
-        <p>[17] </p>
-        <p>Which might be a good or a <em>really</em> bad thing.</p>
-      </div>
-      <div class="sidenote">
-        <p>[18] </p>
-        <p>the <a
-            href="https://www.lesswrong.com/tag/ai-takeoff#:~:text=easier%20to%20engineer.-,Hard%20takeoff,-A%20hard%20takeoff">milliseconds
-            before everyone dies</a>.</p>
-      </div>
-    </li>
-    <li>
-      <p><strong>The “what failure looks like” scenario.</strong> This
-        one is speculative and inspired by <a
-          href="https://www.lesswrong.com/posts/AyNHoTWWAJ5eb99ji/another-outer-alignment-failure-story">an
-          alignment failure story</a> but appears like a very real
-        possibility. We might try to apply safety innovations at each point
-        of the process, but they don’t seem to be <em>doing</em> anything
-        beyond some point. The situation is gradually getting more severe,
-        but we can’t put the finger on the issue. Whenever we run a
-        diagnostic, we get “everything is going according to plan”. And at
-        some point, the entire system is so opaque that nobody can tell what
-        is going on anymore.</p>
-    </li>
-  </ul>
-  <p>These scenarios are not meant to be comprehensive, but I hope
+    two vectors have a strictly positive dot product.</p>
+    <p>This model allows us to explain:</p>
+    <ul class="incremental">
+    <li><p>how a safety technique can improve capabilities: To some
+    degree, safety is a capability. If a system is not safe at all, it’s
+    also not useful at all.</p></li>
+    <li><p>how an alignment tax might come about; at some point, we
+    might have to decide between pushing more in the “capable” or the
+    “good” direction <em>,</em> and there might be hard trade-offs
+    between the two.</p></li>
+    </ul>
+    <p>The model also allows us to visualize possible failure modes:</p>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_38.png" /></p>
+    <p>The picture shows three scenarios I could come up with:</p>
+    <ul class="incremental">
+    <li><p><strong>The automobile model.</strong> When we built the
+    first cars, they were <a
+    href="https://eu.detroitnews.com/story/news/local/michigan-history/2015/04/26/auto-traffic-history-detroit/26312107/">insanely</a>
+    <a
+    href="https://americanhistory.si.edu/america-on-the-move/essays/automobile-safety">dangerous</a>.
+    Figuring out how to not make them as dangerous was pretty central to
+    the mission of making them useful. But eventually, we figured out
+    how to not make <a
+    href="https://www.youtube.com/watch?v=hVbpGmX890I&amp;ab_channel=FilmsbytheYear">cars
+    explode</a>, and we reached the point where safety measures make the
+    experience of riding a car worse<sup>[14]</sup>. We have now reached
+    a point where some features that would substantially improve
+    safety<sup>[15]</sup> are not implemented because they would
+    deteriorate capabilities too much<sup>[16]</sup>.</p>
+    <div class="sidenote">
+    <p>[14] </p>
+    <p><a
+    href="https://www.wpr.org/surprisingly-controversial-history-seat-belts">seatbelts
+    were massively unpopular</a> when they were first mandated</p>
+    </div>
+    <div class="sidenote">
+    <p>[15] </p>
+    <p>like <a
+    href="https://www.youtube.com/watch?v=VejNuZ3RrMs">limiting the
+    speed of a car on highways</a></p>
+    </div>
+    <div class="sidenote">
+    <p>[16] </p>
+    <p>Also, we cannot adopt <a
+    href="https://www.bloomberg.com/news/features/2020-08-12/why-are-cars-still-so-dangerous-to-pedestrians">other</a><a
+    href="https://en.wikipedia.org/wiki/Unsafe_at_Any_Speed">technologies</a>
+    for some reason, although they appear to be an improvement in
+    <em>both</em> safety and capabilities. This would be an interesting
+    topic to dive deeper into - is it the “evil greedy company,” or is
+    it some <a href="https://equilibriabook.com/">inadequate
+    equilibrium</a>?</p>
+    </div></li>
+    <li><p><strong>The deception scenario.</strong> With the help of a
+    psychiatrist friend, I’ve written previously on how drug addicts can
+    be<a
+    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/drug-addicts-and-deceptively-aligned">incredibly
+    good at deception</a>. They will credibly signal all the things that
+    make you believe that this time they have <em>really</em> changed -
+    and then disappear with your microwave. As far as I can tell, there
+    is no empirical evidence of deceptive AI yet<sup>[17]</sup>. But
+    there are <a
+    href="https://www.lesswrong.com/posts/zthDPAjh9w6Ytbeks/deceptive-alignment">theoretical
+    arguments</a> for why it might happen once capabilities increase. In
+    this scenario, everything appears to be going super smoothly, and
+    all the safety features we implement keep pushing in the same
+    direction as the capability features. The AI is an overwhelming
+    sweetheart - helping old ladies across the street and everything -
+    until it isn’t. Our measure for “good” and “bad” was not reliable,
+    and by the time we found out<sup>[18]</sup>, it was too late.</p>
+    <div class="sidenote">
+    <p>[17] </p>
+    <p>Which might be a good or a <em>really</em> bad thing.</p>
+    </div>
+    <div class="sidenote">
+    <p>[18] </p>
+    <p>the <a
+    href="https://www.lesswrong.com/tag/ai-takeoff#:~:text=easier%20to%20engineer.-,Hard%20takeoff,-A%20hard%20takeoff">milliseconds
+    before everyone dies</a>.</p>
+    </div></li>
+    <li><p><strong>The “what failure looks like” scenario.</strong> This
+    one is speculative and inspired by <a
+    href="https://www.lesswrong.com/posts/AyNHoTWWAJ5eb99ji/another-outer-alignment-failure-story">an
+    alignment failure story</a> but appears like a very real
+    possibility. We might try to apply safety innovations at each point
+    of the process, but they don’t seem to be <em>doing</em> anything
+    beyond some point. The situation is gradually getting more severe,
+    but we can’t put the finger on the issue. Whenever we run a
+    diagnostic, we get “everything is going according to plan”. And at
+    some point, the entire system is so opaque that nobody can tell what
+    is going on anymore.</p></li>
+    </ul>
+    <p>These scenarios are not meant to be comprehensive, but I hope
     they illustrate the usefulness of the 2D model.</p>
-  <h2 id="closing-thoughts"><strong>Closing thoughts</strong></h2>
-  <p>I’m undecided about whether it’s a good thing that safety
+    <h2 id="closing-thoughts"><strong>Closing thoughts</strong></h2>
+    <p>I’m undecided about whether it’s a good thing that safety
     research and capability research are pushing in the same direction.
     On the one hand, <a href="https://equilibriabook.com/">incentives
-      matter</a>, and having strong incentives to do safety research is
+    matter</a>, and having strong incentives to do safety research is
     (ceteris paribus) a good thing. On the other hand, things are
     already moving fast and <em>any</em> push in the capabilities
     direction is <a
-      href="https://www.lesswrong.com/posts/kipMvuaK3NALvFHc9/what-an-actually-pessimistic-containment-strategy-looks-like">seen
-      as a threat by some</a>. But independent of any moral judgment of
+    href="https://www.lesswrong.com/posts/kipMvuaK3NALvFHc9/what-an-actually-pessimistic-containment-strategy-looks-like">seen
+    as a threat by some</a>. But independent of any moral judgment of
     what is happening, knowing that it’s happening, and having better
     terminology to communicate it, appears useful.</p>
-  <p>Now I really have to head out! If you’re at EAG London let me
+    <p>Now I really have to head out! If you’re at EAG London let me
     know - would love to meet you, dear reader :)</p>
-  <p>From Figure 19 of <a href="https://arxiv.org/pdf/2204.02311.pdf">source</a>. Someone on
+    <p>From Figure 19 of <a
+    href="https://arxiv.org/pdf/2204.02311.pdf">source</a>. Someone on
     Twitter pointed out that Leonardo is more likely to hold a slice of
     pizza, so the answer should be Italy. I’m happy that we’ve reached
     this level of criticism.</p>
-  <p>From Figure 1 of <a href="https://arxiv.org/pdf/2204.05862.pdf">source</a>. The green
+    <p>From Figure 1 of <a
+    href="https://arxiv.org/pdf/2204.05862.pdf">source</a>. The green
     triangle is just outside the “Professional Writer” region. That
     point represents the set-up where the model was explicitly
     fine-tuned to be helpful, neglecting harmlessness.</p>
-  <div class="debug-grid"></div>
+    <div class="debug-grid"></div>
   <script src="../../index.js"></script>
 </body>
 

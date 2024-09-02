@@ -1,27 +1,26 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="" >
 
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="Jan Kirchner" />
-  <meta name="dcterms.date" content="2022-04-10" />
-  <title>A Brief Excursion Into Molecular Neuroscience</title>
-  <link rel="stylesheet" href="../../reset.css" />
-  <link rel="stylesheet" href="../../index.css" />
-</head>
+    <meta name="author" content="Jan Kirchner" />
+      <meta name="dcterms.date" content="2022-04-10" />
+        <title>A Brief Excursion Into Molecular Neuroscience</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../index.css" />
+      </head>
 
 <body>
-  <table class="header">
+    <table class="header">
     <tr>
       <td colspan="2" rowspan="2" class="width-auto">
         <h1 class="title"><a href="https://kirchner-jan.github.io/minimalprior/"
             style="text-decoration: none; color: inherit;">A Brief
-            Excursion Into Molecular Neuroscience</a></h1>
+Excursion Into Molecular Neuroscience</a></h1>
         <span class="subtitle">Previously in this series How to build a
-          mind - neuroscience edition. The Emperor’s New
-          Ǫ̵͎͊G̶̦̉̇l̶͉͇̝̽͆̚i̷͔̓̏͌c̷̱̙̍̂͜k̷̠͍͌l̷̢̍͗̃n̷̖͇̏̆å̴̤c̵̲̼̫͑̎̆…</span>
+mind - neuroscience edition. The Emperor’s New Ǫ̵͎͊G̶̦̉̇l̶͉͇̝̽͆̚i̷͔̓̏͌c̷̱̙̍̂͜k̷̠͍͌l̷̢̍͗̃n̷̖͇̏̆å̴̤c̵̲̼̫͑̎̆…</span>
       </td>
       <th>Updated</th>
       <td class="width-min"><time style="white-space: pre;">2022-04-10</time></td>
@@ -29,748 +28,813 @@
     <tr>
       <th class="width-min">Author</th>
       <td class="width-auto"><a href="https://kirchner-jan.github.io/minimalprior/">Jan
-          Kirchner</a></td>
+Kirchner</a></td>
     </tr>
   </table>
-  <nav id="TOC" role="doc-toc">
-    <ul class="incremental">
-      <li><a href="#the-emperors-new-ǫglicklnåc" id="toc-the-emperors-new-ǫglicklnåc"><strong>The Emperor’s New
-            Ǫ̵͎͊G̶̦̉̇l̶͉͇̝̽͆̚i̷͔̓̏͌c̷̱̙̍̂͜k̷̠͍͌l̷̢̍͗̃n̷̖͇̏̆å̴̤c̵̲̼̫͑̎̆</strong></a></li>
-      <li><a href="#lets-talk-about-bdnf." id="toc-lets-talk-about-bdnf."><strong>Let’s talk about
-            BDNF.</strong></a></li>
-      <li><a href="#exposition" id="toc-exposition">Exposition</a></li>
-      <li><a href="#levels-of-abstraction" id="toc-levels-of-abstraction"><strong>Levels of
-            abstraction</strong></a></li>
-      <li><a href="#less-is-more" id="toc-less-is-more">Less is
-          More?</a></li>
-      <li><a href="#neurotrophin-balance-is-all-you-need" id="toc-neurotrophin-balance-is-all-you-need">Neurotrophin
-          balance is all you need</a></li>
-      <li><a href="#closing-thoughts" id="toc-closing-thoughts">Closing thoughts</a></li>
-    </ul>
+      <nav id="TOC" role="doc-toc">
+        <ul class="incremental">
+        <li><a href="#the-emperors-new-ǫglicklnåc"
+        id="toc-the-emperors-new-ǫglicklnåc"><strong>The Emperor’s New
+        Ǫ̵͎͊G̶̦̉̇l̶͉͇̝̽͆̚i̷͔̓̏͌c̷̱̙̍̂͜k̷̠͍͌l̷̢̍͗̃n̷̖͇̏̆å̴̤c̵̲̼̫͑̎̆</strong></a></li>
+        <li><a href="#lets-talk-about-bdnf."
+        id="toc-lets-talk-about-bdnf."><strong>Let’s talk about
+        BDNF.</strong></a></li>
+        <li><a href="#exposition"
+        id="toc-exposition">Exposition</a></li>
+        <li><a href="#levels-of-abstraction"
+        id="toc-levels-of-abstraction"><strong>Levels of
+        abstraction</strong></a></li>
+        <li><a href="#less-is-more" id="toc-less-is-more">Less is
+        More?</a></li>
+        <li><a href="#neurotrophin-balance-is-all-you-need"
+        id="toc-neurotrophin-balance-is-all-you-need">Neurotrophin
+        balance is all you need</a></li>
+        <li><a href="#closing-thoughts"
+        id="toc-closing-thoughts">Closing thoughts</a></li>
+        </ul>
   </nav>
-  <p><em>Previously in this series:<a
-        href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/how-to-build-a-mind-neuroscience?s=w">How
-        to build a mind - neuroscience edition,</a> <a
-        href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/serendipitous-connections-applying?s=w">Serendipitous
-        connections: applying explanations from AI to the brain</a></em>, <a
-      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/the-unreasonable-feasibility-of-playing?s=w">The
-      Unreasonable Feasibility Of Playing Chess Under The
-      Influence.</a></p>
-  <h2 id="the-emperors-new-ǫglicklnåc"><strong>The Emperor’s New
-      Ǫ̵͎͊G̶̦̉̇l̶͉͇̝̽͆̚i̷͔̓̏͌c̷̱̙̍̂͜k̷̠͍͌l̷̢̍͗̃n̷̖͇̏̆å̴̤c̵̲̼̫͑̎̆</strong></h2>
-  <p><em>(Ǫ̵͎͊G̶̦̉̇l̶͉͇̝̽͆̚i̷͔̓̏͌c̷̱̙̍̂͜k̷̠͍͌l̷̢̍͗̃n̷̖͇̏̆å̴̤c̵̲̼̫͑̎̆ is an intentionally<a
-        href="https://lingojam.com/GlitchTextGenerator">garbled</a> version
-      of the word O-GlcNAc. The reasons for garbling it will hopefully
-      become clear while reading this essay!)</em></p>
-  <p><em>Flashback</em> : It’s June 7th, 2017. The transformer
+    <p><em>Previously in this series:<a
+    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/how-to-build-a-mind-neuroscience?s=w">How
+    to build a mind - neuroscience edition,</a> <a
+    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/serendipitous-connections-applying?s=w">Serendipitous
+    connections: applying explanations from AI to the brain</a></em>, <a
+    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/the-unreasonable-feasibility-of-playing?s=w">The
+    Unreasonable Feasibility Of Playing Chess Under The
+    Influence.</a></p>
+    <h2 id="the-emperors-new-ǫglicklnåc"><strong>The Emperor’s New
+    Ǫ̵͎͊G̶̦̉̇l̶͉͇̝̽͆̚i̷͔̓̏͌c̷̱̙̍̂͜k̷̠͍͌l̷̢̍͗̃n̷̖͇̏̆å̴̤c̵̲̼̫͑̎̆</strong></h2>
+    <p><em>(Ǫ̵͎͊G̶̦̉̇l̶͉͇̝̽͆̚i̷͔̓̏͌c̷̱̙̍̂͜k̷̠͍͌l̷̢̍͗̃n̷̖͇̏̆å̴̤c̵̲̼̫͑̎̆ is an intentionally<a
+    href="https://lingojam.com/GlitchTextGenerator">garbled</a> version
+    of the word O-GlcNAc. The reasons for garbling it will hopefully
+    become clear while reading this essay!)</em></p>
+    <p><em>Flashback</em> : It’s June 7th, 2017. The transformer
     architecture <a href="https://arxiv.org/abs/1706.03762">will drop on
-      the arxiv</a> in 5 days, Hugh Hefner will die in less than 3
+    the arxiv</a> in 5 days, Hugh Hefner will die in less than 3
     months<sup>[1]</sup>, and the computational neuroscience community
     is having a field day on Twitter. It started with this tweet from <a
-      href="https://medicine.yale.edu/lab/nitabach/">Michael Nitabach</a>
+    href="https://medicine.yale.edu/lab/nitabach/">Michael Nitabach</a>
     from Yale School of Medicine complaining about opaque jargon in
     theoretical papers:</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[1] </p>
     <p>Should we tell him? He’ll probably find a way to make good use of
-      his remaining time.</p>
-  </div>
-  <p><a href="https://twitter.com/mnitabach/status/873199689855795200?s=20&amp;t=rbbyorUR899Wl-KM94vCTg"><img
-        src="https://substackcdn.com/image/twitter_name/w_96/mnitabach.jpg" alt="Twitter avatar for @mnitabach" />Dr
-      Habanolide Nitters <span class="citation" data-cites="mnitabachIs">@mnitabachIs</span> it
-      really necessary to use mathematical jargon term “manifold” for this
-      instead of plain English? <img src="https://substackcdn.com/image/twitter_name/w_40/NeuroCellPress.jpg"
-        alt="Twitter avatar for @NeuroCellPress" />Neuron <span class="citation"
-        data-cites="NeuroCellPressGallego">@NeuroCellPressGallego</span> et
-      al. discuss neural manifolds for the control of movement in the
-      latest special issue <span class="citation" data-cites="NeuroCellPress">@NeuroCellPress</span>
-      https://t.co/aKp5GsSxEn https://t.co/rDTIgjeinJ</a>[3:26 PM ∙ Jun 9,
+    his remaining time.</p>
+    </div>
+    <p><a
+    href="https://twitter.com/mnitabach/status/873199689855795200?s=20&amp;t=rbbyorUR899Wl-KM94vCTg"><img
+    src="https://substackcdn.com/image/twitter_name/w_96/mnitabach.jpg"
+    alt="Twitter avatar for @mnitabach" />Dr Habanolide Nitters <span
+    class="citation" data-cites="mnitabachIs">@mnitabachIs</span> it
+    really necessary to use mathematical jargon term “manifold” for this
+    instead of plain English? <img
+    src="https://substackcdn.com/image/twitter_name/w_40/NeuroCellPress.jpg"
+    alt="Twitter avatar for @NeuroCellPress" />Neuron <span
+    class="citation"
+    data-cites="NeuroCellPressGallego">@NeuroCellPressGallego</span> et
+    al. discuss neural manifolds for the control of movement in the
+    latest special issue <span class="citation"
+    data-cites="NeuroCellPress">@NeuroCellPress</span>
+    https://t.co/aKp5GsSxEn https://t.co/rDTIgjeinJ</a>[3:26 PM ∙ Jun 9,
     2017</p>
-  <hr />
-  <p>33Likes6Retweets](https://twitter.com/mnitabach/status/873199689855795200?s=20&amp;t=rbbyorUR899Wl-KM94vCTg)</p>
-  <p>(33 likes is a <em>lot</em> on neurotwitter.)</p>
-  <p>There was a bit of goofy back and forth about the (un)importance
+    <hr />
+    <p>33Likes6Retweets](https://twitter.com/mnitabach/status/873199689855795200?s=20&amp;t=rbbyorUR899Wl-KM94vCTg)</p>
+    <p>(33 likes is a <em>lot</em> on neurotwitter.)</p>
+    <p>There was a bit of goofy back and forth about the (un)importance
     of mathematical vocabulary in neuroscience, some attempts at
     explaining the term, and eventually the call for a workshop on
     “Manifold-splaining”, which happened half a year
     later<sup>[2]</sup>.</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[2] </p>
     <p>At the <a href="https://www.cosyne.org/">Cosyne</a> 2018 <a
-        href="https://cosyne-2022.squarespace.com/s/Cosyne2018_workshops_program.pdf">workshop</a>
-      with the title “Manifold-splaining: What the theorist said to the
-      experimentalist”.</p>
-  </div>
-  <p>There are some things to be said here about how we use
+    href="https://cosyne-2022.squarespace.com/s/Cosyne2018_workshops_program.pdf">workshop</a>
+    with the title “Manifold-splaining: What the theorist said to the
+    experimentalist”.</p>
+    </div>
+    <p>There are some things to be said here about how we use
     terminology<sup>[3]</sup> or what manifolds <em>actually</em>
     are<sup>[4]</sup>, but I’m bringing this up because I
     distinctly<sup>[5]</sup> remember an offhand comment that someone
     made at that workshop. The comment was that it’s unfair that
     experimentalists get to write things like “<a
-      href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=Xxmiua8AAAAJ&amp;citation_for_view=Xxmiua8AAAAJ:8k81kl-MbHgC">O-GlcNAc
-      signaling entrains the circadian clock by inhibiting BMAL1/CLOCK
-      ubiquitination,</a>” and nobody gives <em>them</em> hell for writing
+    href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=Xxmiua8AAAAJ&amp;citation_for_view=Xxmiua8AAAAJ:8k81kl-MbHgC">O-GlcNAc
+    signaling entrains the circadian clock by inhibiting BMAL1/CLOCK
+    ubiquitination,</a>” and nobody gives <em>them</em> hell for writing
     their papers in Klingon. Or at least <a
-      href="https://www.quora.com/Why-are-the-terms-in-biology-so-complicated-and-confusing">they
-      are not getting</a> <em>enough</em> hell for it.</p>
-  <div class="sidenote">
+    href="https://www.quora.com/Why-are-the-terms-in-biology-so-complicated-and-confusing">they
+    are not getting</a> <em>enough</em> hell for it.</p>
+    <div class="sidenote">
     <p>[3] </p>
     <p>I want to write a full post on that at some point, but for now,
-      <a
-        href="https://slatestarcodex.com/2014/11/21/the-categories-were-made-for-man-not-man-for-the-categories/">this</a>
-      and <a href="https://www.lesswrong.com/s/SGB7Y5WERh4skwtnb">this</a>
-      is great.
-    </p>
-  </div>
-  <div class="sidenote">
+    <a
+    href="https://slatestarcodex.com/2014/11/21/the-categories-were-made-for-man-not-man-for-the-categories/">this</a>
+    and <a href="https://www.lesswrong.com/s/SGB7Y5WERh4skwtnb">this</a>
+    is great.</p>
+    </div>
+    <div class="sidenote">
     <p>[4] </p>
     <p><em>The answer may surprise you</em>. Hint: The average
-      neuroscientist does <em>not</em> know what “a topological space with
-      the property that each point has a neighborhood that is homeomorphic
-      to an open subset of n-dimensional Euclidean space” is.</p>
-  </div>
-  <div class="sidenote">
+    neuroscientist does <em>not</em> know what “a topological space with
+    the property that each point has a neighborhood that is homeomorphic
+    to an open subset of n-dimensional Euclidean space” is.</p>
+    </div>
+    <div class="sidenote">
     <p>[5] </p>
     <p>i.e. 75% chance this actually happened</p>
-  </div>
-  <p>When I was first confronted with the <a
-      href="https://rupress.org/jcb/article/160/4/466/33255/Stories-of-Cells-The-American-Society-for-Cell#:~:text=supplied%20us%20with-,many%20gene%20names,-%28an%20%E2%80%9Calphabet%20soup">alphabet
-      soup</a> that calls itself molecular neuroscience, I was
+    </div>
+    <p>When I was first confronted with the <a
+    href="https://rupress.org/jcb/article/160/4/466/33255/Stories-of-Cells-The-American-Society-for-Cell#:~:text=supplied%20us%20with-,many%20gene%20names,-%28an%20%E2%80%9Calphabet%20soup">alphabet
+    soup</a> that calls itself molecular neuroscience, I was
     <em>awed</em> by my colleagues, who appeared to be fluent in
     speaking p̴͓̂͘á̴̻͌s̶̻̗͋͑ṯ̸̹̈́̌à̶̳. It took me a year or two to figure out that they
     also do not know what most of the terms mean - and for most
     abbreviations, there are only a handful of people in the world who
     <em>can</em> decode them. But nobody likes to <a
-      href="https://en.wikipedia.org/wiki/The_Emperor%27s_New_Clothes">acknowledge
-      that they don’t know what things mean publicly</a>. Therefore
+    href="https://en.wikipedia.org/wiki/The_Emperor%27s_New_Clothes">acknowledge
+    that they don’t know what things mean publicly</a>. Therefore
     everybody nods along when they read Ǫ̵͎͊G̶̦̉̇l̶͉͇̝̽͆̚i̷͔̓̏͌c̷̱̙̍̂͜k̷̠͍͌l̷̢̍͗̃n̷̖͇̏̆å̴̤c̵̲̼̫͑̎̆. So it’s fine if you
-    don’t know what it means. Almost nobody does<sup>[6]</sup>.
-  </p>
-  <div class="sidenote">
+    don’t know what it means. Almost nobody does<sup>[6]</sup>.</p>
+    <div class="sidenote">
     <p>[6] </p>
     <p>A colleague of mine points out that she reads this as: “[pathway
-      I don’t work on] is affected by [protein I don’t work on]”. I guess
-      that’s fine, and perhaps it even represents some optimal trade-off
-      between conciseness and information content for some people. I’m
-      just pointing out that most people don’t know that there is no
-      secret society of “initiated people” who can read all those titles
-      and know what they mean.</p>
-  </div>
-  <h2 id="lets-talk-about-bdnf."><strong>Let’s talk about
-      BDNF.</strong></h2>
-  <p>Perhaps you are the kind of person that takes the preceding
+    I don’t work on] is affected by [protein I don’t work on]”. I guess
+    that’s fine, and perhaps it even represents some optimal trade-off
+    between conciseness and information content for some people. I’m
+    just pointing out that most people don’t know that there is no
+    secret society of “initiated people” who can read all those titles
+    and know what they mean.</p>
+    </div>
+    <h2 id="lets-talk-about-bdnf."><strong>Let’s talk about
+    BDNF.</strong></h2>
+    <p>Perhaps you are the kind of person that takes the preceding
     paragraphs as a challenge, and you’d like to learn to speak p̴͓̂͘á̴̻͌s̶̻̗͋͑ṯ̸̹̈́̌à̶̳
     yourself. Or perhaps you like to read about different levels of
     abstraction, what we gain by using them, and how we can transition
     between them. Or perhaps you’re having a slow day and want to learn
     something funky. In all those cases, this essay is certainly for
     you.</p>
-  <p>But perhaps you are a very busy person, and you tend to be very
+    <p>But perhaps you are a very busy person, and you tend to be very
     selective about how you spend your time. Perhaps you want to be sure
     that <em>if</em> you’re going to dive into this mess of molecules,
-    you’ll be able to get a <a href="https://en.wikipedia.org/wiki/Pareto_principle">Pareto-sized
-      chunk</a> of insight in return. Perhaps <a
-      href="https://slatestarcodex.com/2019/05/07/5-httlpr-a-pointed-review/">you’ve
-      been hurt before</a> and have difficulties trusting <em>any</em>
+    you’ll be able to get a <a
+    href="https://en.wikipedia.org/wiki/Pareto_principle">Pareto-sized
+    chunk</a> of insight in return. Perhaps <a
+    href="https://slatestarcodex.com/2019/05/07/5-httlpr-a-pointed-review/">you’ve
+    been hurt before</a> and have difficulties trusting <em>any</em>
     molecule. In all those cases, this section is here to assuage you.
     Let me motivate why you might care about the protagonist of this
     essay, the “brain-derived neurotrophic factor”
     (BDNF<sup>[7]</sup>).</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[7] </p>
     <p>Or, as I like to call it, bedumpf.</p>
-  </div>
-  <p><strong>Argument from interestingness.</strong></p>
-  <p>BDNF has shown up repeatedly in the rationality-sphere over the
+    </div>
+    <p><strong>Argument from interestingness.</strong></p>
+    <p>BDNF has shown up repeatedly in the rationality-sphere over the
     last years:</p>
-  <ul class="incremental">
-    <li>
-      <p>Alexey Guzey’s thesis about <a href="https://guzey.com/theses-on-sleep/">why you</a><em><a
-            href="https://guzey.com/theses-on-sleep/">shouldn’t</a></em><a
-          href="https://guzey.com/theses-on-sleep/">sleep</a> circles around
-        BDNF.</p>
-    </li>
-    <li>
-      <p>Natália Mendonça’s counter-thesis that you <em><a
-            href="https://www.lesswrong.com/posts/sbcmACvB6DqYXYidL/counter-theses-on-sleep">should</a></em><a
-          href="https://www.lesswrong.com/posts/sbcmACvB6DqYXYidL/counter-theses-on-sleep">sleep
-          all the time</a> attacks Guzey’s claims about BDNF.</p>
-    </li>
-    <li>
-      <p>Scott Alexander <a
-          href="https://slatestarcodex.com/2017/06/13/what-is-depression-anyway-the-synapse-hypothesis/">explained
-          a few years ago</a> how an increase in BDNF plays a central role in
-        the function of antidepressants.</p>
-    </li>
-    <li>
-      <p>Then there was a <a href="https://www.cell.com/cell/fulltext/S0092-8674%2821%2900077-5">big
-          Cell paper</a> that argued for the importance of the canonical BDNF
-        receptor (TrkB) rather than BDNF. Scott <a
-          href="https://astralcodexten.substack.com/p/a-look-down-track-b?s=r">didn’t
-          buy it</a>.</p>
-    </li>
-  </ul>
-  <p>But that is just the tip of the iceberg! Let’s check out what we
+    <ul class="incremental">
+    <li><p>Alexey Guzey’s thesis about <a
+    href="https://guzey.com/theses-on-sleep/">why you</a><em><a
+    href="https://guzey.com/theses-on-sleep/">shouldn’t</a></em><a
+    href="https://guzey.com/theses-on-sleep/">sleep</a> circles around
+    BDNF.</p></li>
+    <li><p>Natália Mendonça’s counter-thesis that you <em><a
+    href="https://www.lesswrong.com/posts/sbcmACvB6DqYXYidL/counter-theses-on-sleep">should</a></em><a
+    href="https://www.lesswrong.com/posts/sbcmACvB6DqYXYidL/counter-theses-on-sleep">sleep
+    all the time</a> attacks Guzey’s claims about BDNF.</p></li>
+    <li><p>Scott Alexander <a
+    href="https://slatestarcodex.com/2017/06/13/what-is-depression-anyway-the-synapse-hypothesis/">explained
+    a few years ago</a> how an increase in BDNF plays a central role in
+    the function of antidepressants.</p></li>
+    <li><p>Then there was a <a
+    href="https://www.cell.com/cell/fulltext/S0092-8674%2821%2900077-5">big
+    Cell paper</a> that argued for the importance of the canonical BDNF
+    receptor (TrkB) rather than BDNF. Scott <a
+    href="https://astralcodexten.substack.com/p/a-look-down-track-b?s=r">didn’t
+    buy it</a>.</p></li>
+    </ul>
+    <p>But that is just the tip of the iceberg! Let’s check out what we
     can find on Spotify about BDNF.</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_103.png" /></p>
-  <p>Faster learning, better memory, neurogenesis, stopping
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_103.png" /></p>
+    <p>Faster learning, better memory, neurogenesis, stopping
     Alzheimer’s. Also, some playlists that will boost your BDNF!</p>
-  <p>What about YouTube?</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_104.png" /></p>
-  <p>More boosting brainpower, fighting anxiety, naturally increasing
+    <p>What about YouTube?</p>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_104.png" /></p>
+    <p>More boosting brainpower, fighting anxiety, naturally increasing
     BDNF through workout…</p>
-  <p>Hopefully, all of your <a
-      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/via-productiva?s=w#:~:text=Don%27t%20listen%20to%20Cassandra.">alarm
-      bells</a> are going off right now. This pattern-matches with scams
-    and <a href="https://slatestarcodex.com/2019/05/07/5-httlpr-a-pointed-review/">irreplicability</a>.
-    Cognitive enhancement would be a <a href="https://www.gwern.net/Nootropics">huge deal</a>, but it’s also
-    super <a href="https://www.gwern.net/docs/algernon/2011-lynch.pdf">difficult,</a>
+    <p>Hopefully, all of your <a
+    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/via-productiva?s=w#:~:text=Don%27t%20listen%20to%20Cassandra.">alarm
+    bells</a> are going off right now. This pattern-matches with scams
+    and <a
+    href="https://slatestarcodex.com/2019/05/07/5-httlpr-a-pointed-review/">irreplicability</a>.
+    Cognitive enhancement would be a <a
+    href="https://www.gwern.net/Nootropics">huge deal</a>, but it’s also
+    super <a
+    href="https://www.gwern.net/docs/algernon/2011-lynch.pdf">difficult,</a>
     and apart from maybe coffee and modafinil, there don’t appear to be
     any easy hacks.</p>
-  <p>But why do (some) people <em>believe</em> BDNF can do all these
+    <p>But why do (some) people <em>believe</em> BDNF can do all these
     things? There are so many words in p̴͓̂͘á̴̻͌s̶̻̗͋͑ṯ̸̹̈́̌à̶̳; why pick BDNF in
     particular? Why are there no playlists about Ǫ̵͎͊G̶̦̉̇l̶͉͇̝̽͆̚i̷͔̓̏͌c̷̱̙̍̂͜k̷̠͍͌l̷̢̍͗̃n̷̖͇̏̆å̴̤c̵̲̼̫͑̎̆ improving
     your mental faculties?</p>
-  <p><strong>Argument from academic street cred.</strong></p>
-  <p>A partial answer to that question comes directly when we open
+    <p><strong>Argument from academic street cred.</strong></p>
+    <p>A partial answer to that question comes directly when we open
     Google Scholar and search for BDNF.</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_105.png" />A
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_105.png" />A
     semi-random selection of BDNF papers from the first page of Google
     Scholar.</p>
-  <p>If you happen to be doing neuroscience research in the 90s and
+    <p>If you happen to be doing neuroscience research in the 90s and
     you are looking for a hot topic to research - BDNF is your
     fast-track ticket to tenure<sup>[8]</sup>. Considering that the
     “normal” citation count for a paper in a top journal like Nature is
-    “<a href="https://www.nature.com/nature-portfolio/about/journal-metrics">only”
-      in the double digits</a>, and a lot of papers <a
-      href="https://blogs.lse.ac.uk/impactofsocialsciences/2014/04/23/academic-papers-citation-rates-remler">never
-      get cited at all</a>, it is pretty insane that you have to go to
+    “<a
+    href="https://www.nature.com/nature-portfolio/about/journal-metrics">only”
+    in the double digits</a>, and a lot of papers <a
+    href="https://blogs.lse.ac.uk/impactofsocialsciences/2014/04/23/academic-papers-citation-rates-remler">never
+    get cited at all</a>, it is pretty insane that you have to go to
     page <em>14</em> on Google Scholar after searching”BDNF” to find a
     paper with less than 100 citations<sup>[9]</sup>.</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[8] </p>
     <p>Also, consider telling Hugh Hefner about his death date. He’ll
-      probably find a way to make good use of his remaining time.</p>
-  </div>
-  <div class="sidenote">
+    probably find a way to make good use of his remaining time.</p>
+    </div>
+    <div class="sidenote">
     <p>[9] </p>
-    <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_117.png" />And
-      this one was published only last… wait.. oh no. When did that
-      happen?</p>
-  </div>
-  <p>Other signaling molecules pale in comparison:</p>
-  <ul class="incremental">
-    <li>
-      <p>glutamate; first sub-100 citations paper on page 9</p>
-    </li>
-    <li>
-      <p>GABA; first sub-100 citations paper on page 4</p>
-    </li>
-    <li>
-      <p>dopamine; first sub-100 citations paper on page 3</p>
-    </li>
-  </ul>
-  <p>Calling BDNF a “big deal” in neuroscience would be an
-    understatement. In the literature, it’s called “<a href="https://www.nature.com/articles/nrn1078">A convergence
-      point
-      for many signaling pathways</a>“, “<a href="https://www.frontiersin.org/articles/10.3389/fncel.2019.00363/full">A
-      Key Molecule for Memory in the Healthy and the Pathological
-      Brain</a>“, and “<a href="https://link.springer.com/article/10.1007/s10571-017-0510-4">A
-      Key Factor with Multipotent Impact on Brain Signaling and Synaptic
-      Plasticity</a>”.</p>
-  <p>The fact that there is so much research on BDNF also hints at why
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_117.png" />And
+    this one was published only last… wait.. oh no. When did that
+    happen?</p>
+    </div>
+    <p>Other signaling molecules pale in comparison:</p>
+    <ul class="incremental">
+    <li><p>glutamate; first sub-100 citations paper on page 9</p></li>
+    <li><p>GABA; first sub-100 citations paper on page 4</p></li>
+    <li><p>dopamine; first sub-100 citations paper on page 3</p></li>
+    </ul>
+    <p>Calling BDNF a “big deal” in neuroscience would be an
+    understatement. In the literature, it’s called “<a
+    href="https://www.nature.com/articles/nrn1078">A convergence point
+    for many signaling pathways</a>“, “<a
+    href="https://www.frontiersin.org/articles/10.3389/fncel.2019.00363/full">A
+    Key Molecule for Memory in the Healthy and the Pathological
+    Brain</a>“, and “<a
+    href="https://link.springer.com/article/10.1007/s10571-017-0510-4">A
+    Key Factor with Multipotent Impact on Brain Signaling and Synaptic
+    Plasticity</a>”.</p>
+    <p>The fact that there is so much research on BDNF also hints at why
     there should be so much questionable content on Spotify and YouTube.
     We should expect the <a
-      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/via-productiva?s=w#:~:text=Don%27t%20listen%20to%20Cassandra.">noise
-      to scale with the signal</a> - the more research there is, the
+    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/via-productiva?s=w#:~:text=Don%27t%20listen%20to%20Cassandra.">noise
+    to scale with the signal</a> - the more research there is, the
     easier it is to pick out individual pieces and spin an arbitrary
     narrative. But this should not <em>a priori</em> mean that the
-    underlying science is bad! <a href="https://en.wikipedia.org/wiki/Quantum_healing">Quantum
-      healing</a> does not invalidate quantum physics.</p>
-  <p>Then again, <a href="https://journals.sagepub.com/doi/10.1177/2158244019829575">citations
-      are not a good proxy for quality,</a> and especially articles in <a
-      href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0020885">medicine-adjacent
-      fields suffer from citation inflation</a>. And as a lot of
+    underlying science is bad! <a
+    href="https://en.wikipedia.org/wiki/Quantum_healing">Quantum
+    healing</a> does not invalidate quantum physics.</p>
+    <p>Then again, <a
+    href="https://journals.sagepub.com/doi/10.1177/2158244019829575">citations
+    are not a good proxy for quality,</a> and especially articles in <a
+    href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0020885">medicine-adjacent
+    fields suffer from citation inflation</a>. And as a lot of
     literature on BDNF comes from those fields, they might have <a
-      href="https://slatestarcodex.com/2019/05/07/5-httlpr-a-pointed-review/">replicability
-      issues</a>. So, just because there are many highly-cited papers, we
+    href="https://slatestarcodex.com/2019/05/07/5-httlpr-a-pointed-review/">replicability
+    issues</a>. So, just because there are many highly-cited papers, we
     can’t necessarily conclude that the underlying research is
     solid.</p>
-  <p><strong>Argument from ubiquity.</strong></p>
-  <p>So let us zoom out instead and (try to) take an unbiased look.
-    From a <a href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-context-and-people?s=w">previous
-      project,</a> I happen to have a 2D embedding of all the neuroscience
+    <p><strong>Argument from ubiquity.</strong></p>
+    <p>So let us zoom out instead and (try to) take an unbiased look.
+    From a <a
+    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-context-and-people?s=w">previous
+    project,</a> I happen to have a 2D embedding of all the neuroscience
     papers published on biorxiv:</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_106.png" />Zoom
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_106.png" />Zoom
     in on the neuroscience section of biorxiv (red) from a tSNE
     embedding of all papers on biorxiv. Superimposed are the projected
     embeddings of three famous neuroscientists and yours truly.</p>
-  <p>This embedding is useful for understanding <em>where/in which
-      subcommunity</em> certain topics are being researched. In
+    <p>This embedding is useful for understanding <em>where/in which
+    subcommunity</em> certain topics are being researched. In
     particular, for any given keyword, we can compute the semantic
     similarity with all the papers:</p>
-  <pre><code>corpus_embeddings = get_papers(&#39;neuroscience&#39;)
+    <pre><code>corpus_embeddings = get_papers(&#39;neuroscience&#39;)
 serotonin_embedding = model.encode(&quot;Serotonin or 5-hydroxytryptamine (5-HT)&quot;)
 util.cos_sim(corpus_embeddings, serotonin_embedding)</code></pre>
-  <p>We can use the resulting similarity scores to color in a tSNE
+    <p>We can use the resulting similarity scores to color in a tSNE
     embedding of all the neuroscience papers.</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_107.png" />TSNE
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_107.png" />TSNE
     embedding of all preprints published in the neuroscience section of
-    biorxiv. Embedding computed with the <a href="https://github.com/allenai/specter">Allen SPECTER model</a>.
+    biorxiv. Embedding computed with the <a
+    href="https://github.com/allenai/specter">Allen SPECTER model</a>.
     The color indicates semantic similarity with serotonin (left),
     glutamate (middle), or BDNF (right).</p>
-  <p>BDNF makes the neuroscience landscape <a
-      href="https://getyarn.io/yarn-clip/dbc520a9-9a06-4eba-8c3b-c6c0ad1ea3a3">light
-      up like a Christmas tree</a><sup>[10]</sup>! Almost all areas of
+    <p>BDNF makes the neuroscience landscape <a
+    href="https://getyarn.io/yarn-clip/dbc520a9-9a06-4eba-8c3b-c6c0ad1ea3a3">light
+    up like a Christmas tree</a><sup>[10]</sup>! Almost all areas of
     neuroscience that are represented on biorxiv appear to have active
     research related to BDNF. Postulating that all the subfields of
     neuroscience conspire to do shoddy science on BDNF is probably a bit
     much.</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[10] </p>
     <p>I didn’t expect to see such a strong difference (glutamate and
-      serotonin are also kind of important), so perhaps there is some bias
-      in how the SPECTER model computes the embedding of the string
-      “Brain-derived neurotrophic factor (BDNF)”. (Also, this is totally
-      not how the SPECTER model is supposed to be used.) Or perhaps it’s
-      because BDNF is comparatively “new”, i.e. only discovered 40 years
-      ago?</p>
-  </div>
-  <p>So I conclude that there is <em>some</em> true signal in all the
+    serotonin are also kind of important), so perhaps there is some bias
+    in how the SPECTER model computes the embedding of the string
+    “Brain-derived neurotrophic factor (BDNF)”. (Also, this is totally
+    not how the SPECTER model is supposed to be used.) Or perhaps it’s
+    because BDNF is comparatively “new”, i.e. only discovered 40 years
+    ago?</p>
+    </div>
+    <p>So I conclude that there is <em>some</em> true signal in all the
     noise. That’s rather fortunate<sup>[11]</sup> for me since it means
     that the time I already spent <a
-      href="https://www.nature.com/articles/s41467-021-23557-3#:~:text=an%20activity%2Ddependent-,neurotrophin,-model">working
-      on this</a> is not (completely) wasted. Let’s see if we can unpack
+    href="https://www.nature.com/articles/s41467-021-23557-3#:~:text=an%20activity%2Ddependent-,neurotrophin,-model">working
+    on this</a> is not (completely) wasted. Let’s see if we can unpack
     this further and separate the fluff from the science.</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[11] </p>
     <p>or overly convenient?</p>
-  </div>
-  <h2 id="exposition">Exposition</h2>
-  <p>It’s 1982<sup>[12]</sup>, <a href="https://en.wikipedia.org/wiki/Hans_Thoenen">and you are</a> a
+    </div>
+    <h2 id="exposition">Exposition</h2>
+    <p>It’s 1982<sup>[12]</sup>, <a
+    href="https://en.wikipedia.org/wiki/Hans_Thoenen">and you are</a> a
     Swiss-born neurobiologist<sup>[13]</sup> who finds himself as the
     director of the Max-Planck Institute for Psychiatry<sup>[14]</sup>
     established only 5 years earlier. During your childhood in the Swiss
     mountainside, you would not have expected to find yourself in a
     laboratory, cooled down to 4°, containing several refrigerators
     filled with pig brains and a blender; but here you are. Together
-    with <a href="https://www.cardiff.ac.uk/people/view/81114-barde-yves">your
-      colleague,</a> you are looking at a dark stripe localized in a
+    with <a
+    href="https://www.cardiff.ac.uk/people/view/81114-barde-yves">your
+    colleague,</a> you are looking at a dark stripe localized in a
     single spot of the gel you just electrophorized. You can’t quite
     hide your satisfaction that the procedure worked. Indeed, it seems
     there <em>is</em> a growth factor in the central nervous system that
     nobody has seen before.</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[12] </p>
     <p>Hugh Hefner will have a minor stroke in three years and <a
-        href="https://en.wikipedia.org/wiki/Hugh_Hefner#:~:text=and%20he%20re%2Devaluated%20his%20lifestyle">reevaluate
-        his lifestyle</a>. Perhaps we should stop this time-traveling
-      thing.</p>
-  </div>
-  <div class="sidenote">
+    href="https://en.wikipedia.org/wiki/Hugh_Hefner#:~:text=and%20he%20re%2Devaluated%20his%20lifestyle">reevaluate
+    his lifestyle</a>. Perhaps we should stop this time-traveling
+    thing.</p>
+    </div>
+    <div class="sidenote">
     <p>[13] </p>
     <p>You can find an autobiography of Hans Thoenen focused on his
-      scientific work <a
-        href="https://www.sfn.org/~/media/SfN/Documents/TheHistoryofNeuroscience/Volume%206/c14.asx">here</a>.</p>
-  </div>
-  <div class="sidenote">
+    scientific work <a
+    href="https://www.sfn.org/~/media/SfN/Documents/TheHistoryofNeuroscience/Volume%206/c14.asx">here</a>.</p>
+    </div>
+    <div class="sidenote">
     <p>[14] </p>
     <p>Soon rebranded as the “Max-Planck Institute of Neurobiology” in
-      1998.</p>
-  </div>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_108.png" /></p>
-  <p>Yves-Alain Barde and Hans Thoenen had searched for BDNF by
+    1998.</p>
+    </div>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_108.png" /></p>
+    <p>Yves-Alain Barde and Hans Thoenen had searched for BDNF by
     purifying it from pig brains. It’s present in very low quantities,
     so it took them a while to find it. But they reasoned that there
     <em>should</em> be an analog of the nerve growth factor (NGF) that
     was <a
-      href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4530710/#:~:text=exhibited%20similar%20properties%20for%20other%20populations%20of%20neurons">critical
-      for survival of peripheral neurons</a>, so they kept searching until
+    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4530710/#:~:text=exhibited%20similar%20properties%20for%20other%20populations%20of%20neurons">critical
+    for survival of peripheral neurons</a>, so they kept searching until
     they found it<sup>[15]</sup>. After this initial discovery, it <a
-      href="https://www.nature.com/articles/341149a0">took seven years</a>
+    href="https://www.nature.com/articles/341149a0">took seven years</a>
     for them to deduce the amino acid sequence and produce BDNF in
     sufficient quantity to study its structure and
-    effect<sup>[16]</sup>.
-  </p>
-  <div class="sidenote">
+    effect<sup>[16]</sup>.</p>
+    <div class="sidenote">
     <p>[15] </p>
     <p>They wrote the <a
-        href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/soldiers-scouts-and-albatrosses?s=w">bottom
-        line first</a>.</p>
-  </div>
-  <div class="sidenote">
+    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/soldiers-scouts-and-albatrosses?s=w">bottom
+    line first</a>.</p>
+    </div>
+    <div class="sidenote">
     <p>[16] </p>
     <blockquote>
-      <p>“<a
-          href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4530710/#:~:text=BDNF%20was%20initially%20purified%20from%20pig%20brain%20(1)%2C%20and%20was%20found%20to%20be%20expressed%20at%20low%20concentrations%3B%201.5%20kg%20of%20starting%20material%20was%20required%20to%20purify%201%20%CE%BCg%20of%20BDNF.">BDNF
-          was initially purified from pig brain (1), and was found to be
-          expressed at low concentrations; 1.5 kg of starting material was
-          required to purify 1 μg of BDNF.</a>”</p>
+    <p>“<a
+    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4530710/#:~:text=BDNF%20was%20initially%20purified%20from%20pig%20brain%20(1)%2C%20and%20was%20found%20to%20be%20expressed%20at%20low%20concentrations%3B%201.5%20kg%20of%20starting%20material%20was%20required%20to%20purify%201%20%CE%BCg%20of%20BDNF.">BDNF
+    was initially purified from pig brain (1), and was found to be
+    expressed at low concentrations; 1.5 kg of starting material was
+    required to purify 1 μg of BDNF.</a>”</p>
     </blockquote>
-  </div>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_109.png" />This
-    is actually NGF, but all the neurotrophins are pretty similar. <a href="https://pdb101.rcsb.org/motm/68">source</a>
-  </p>
-  <p>People got excited about BDNF in the first place because it <a
-      href="https://pubmed.ncbi.nlm.nih.gov/2697237/">keeps neurons
-      alive</a> and <a href="https://pubmed.ncbi.nlm.nih.gov/12441056/">makes synapses
-      stronger</a>. Turns out neurons are little divas: when you put too
-    many (or too few, or without <a href="https://en.wikipedia.org/wiki/Glia">their cheerleaders</a>) of
+    </div>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_109.png" />This
+    is actually NGF, but all the neurotrophins are pretty similar. <a
+    href="https://pdb101.rcsb.org/motm/68">source</a></p>
+    <p>People got excited about BDNF in the first place because it <a
+    href="https://pubmed.ncbi.nlm.nih.gov/2697237/">keeps neurons
+    alive</a> and <a
+    href="https://pubmed.ncbi.nlm.nih.gov/12441056/">makes synapses
+    stronger</a>. Turns out neurons are little divas: when you put too
+    many (or too few, or without <a
+    href="https://en.wikipedia.org/wiki/Glia">their cheerleaders</a>) of
     them in a dish, they <a
-      href="https://www.researchgate.net/post/Why-are-my-primary-rat-neuronal-cultures-dying-at-around-14-days">just
-      die</a>. A stroke (a reduction in blood supply to a part of the
-    brain) really wouldn’t be so bad if it didn’t <a href="https://pubmed.ncbi.nlm.nih.gov/19182083/">kill a ton of
-      neurons in the process</a>. And what Parkinson’s, Alzheimer’s,
+    href="https://www.researchgate.net/post/Why-are-my-primary-rat-neuronal-cultures-dying-at-around-14-days">just
+    die</a>. A stroke (a reduction in blood supply to a part of the
+    brain) really wouldn’t be so bad if it didn’t <a
+    href="https://pubmed.ncbi.nlm.nih.gov/19182083/">kill a ton of
+    neurons in the process</a>. And what Parkinson’s, Alzheimer’s,
     Huntington’s, etc., have in common is that their behavioral
-    phenotype is <a href="https://en.wikipedia.org/wiki/Neurodegenerative_disease">brought
-      about mostly by neural death</a>. Naturally, researchers hoped they
+    phenotype is <a
+    href="https://en.wikipedia.org/wiki/Neurodegenerative_disease">brought
+    about mostly by neural death</a>. Naturally, researchers hoped they
     could convince neurons not to do that if offered enough BDNF. (After
     tons of animal testing, the phase 1 trial of administering BDNF to
-    people affected by Alzheimer’s disease <a href="https://clinicaltrials.gov/ct2/show/NCT05040217">started in
-      2021</a>.)</p>
-  <p>This is not the end of the story, though. If you’ve been living
+    people affected by Alzheimer’s disease <a
+    href="https://clinicaltrials.gov/ct2/show/NCT05040217">started in
+    2021</a>.)</p>
+    <p>This is not the end of the story, though. If you’ve been living
     in this universe for a while, you will have realized that there can
-    be no Sherlock without a Moriarty. <a href="https://pubmed.ncbi.nlm.nih.gov/8603699/">Seven years after
-      BDNF could be cloned in sufficient quantity</a>, we finally got a
+    be no Sherlock without a Moriarty. <a
+    href="https://pubmed.ncbi.nlm.nih.gov/8603699/">Seven years after
+    BDNF could be cloned in sufficient quantity</a>, we finally got a
     solid understanding of how BDNF is produced in the brain: similar to
     other neurotrophins, it’s synthesized as a precursor (preproBDNF),
     which is then processed by an enzyme into an immature version of
     BDNF (proBDNF) and then finally into mature BDNF.</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_110.png" /><strong>a</strong>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_110.png" /><strong>a</strong>
     Schematic representation of preproBDNF, proBDNF, and mature BDNF.
     The scissor indicates cleaving by the appropriate enzyme.
     <strong>b</strong> Antagonistic relationship of proBDNF and BDNF.
     While proBDNF preferentially binds to a receptor that promotes
     synaptic depression and cell death, BDNF preferentially binds to a
-    receptor that induces synaptic potentiation and cell growth.
-  </p>
-  <p>Initially, people <a href="https://www.nature.com/articles/nn0209-105">were a bit
-      doubtful</a> of the biological relevance of proBDNF. But over time,
-    <a href="https://www.nature.com/articles/nn1510">a</a> <a href="https://www.nature.com/articles/nn.2244">lot</a> <a
-      href="https://www.science.org/doi/full/10.1126/science.1100135">of</a>
-    <a href="https://www.jneurosci.org/content/25/22/5455.short">evidence</a>
+    receptor that induces synaptic potentiation and cell growth.</p>
+    <p>Initially, people <a
+    href="https://www.nature.com/articles/nn0209-105">were a bit
+    doubtful</a> of the biological relevance of proBDNF. But over time,
+    <a href="https://www.nature.com/articles/nn1510">a</a> <a
+    href="https://www.nature.com/articles/nn.2244">lot</a> <a
+    href="https://www.science.org/doi/full/10.1126/science.1100135">of</a>
+    <a
+    href="https://www.jneurosci.org/content/25/22/5455.short">evidence</a>
     emerged that proBDNF is a true <a
-      href="https://community-sitcom.fandom.com/wiki/Darkest_Timeline#:~:text=The%20Darkest%20Timeline%20is%20an,tragedy%20within%20the%20study%20group.">darkest
-      timeline</a> version of BDNF. Instead of making neurons survive, <a
-      href="https://pubmed.ncbi.nlm.nih.gov/15930396/">it kills them</a>.
-    Instead of making synapses stronger, it <a href="https://pubmed.ncbi.nlm.nih.gov/19451278/">makes them
-      weaker</a>. And yet, as if stars of a sitcom, both proBDNF and BDNF
+    href="https://community-sitcom.fandom.com/wiki/Darkest_Timeline#:~:text=The%20Darkest%20Timeline%20is%20an,tragedy%20within%20the%20study%20group.">darkest
+    timeline</a> version of BDNF. Instead of making neurons survive, <a
+    href="https://pubmed.ncbi.nlm.nih.gov/15930396/">it kills them</a>.
+    Instead of making synapses stronger, it <a
+    href="https://pubmed.ncbi.nlm.nih.gov/19451278/">makes them
+    weaker</a>. And yet, as if stars of a sitcom, both proBDNF and BDNF
     have to live cramped together in synaptic vesicles. (Surprisingly, I
     could not find any phase 1 trial of administering proBDNF to people
-    who are too healthy.)
-  </p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_111.png" />Both
+    who are too healthy.)</p>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_111.png" />Both
     proBDNF and BDNF are packed tightly into vesicles, ready to be
     released into the synaptic cleft. Alongside the neurotrophins, there
     are also cleaving proteases in the vesicle that can turn proBDNF
-    into BDNF. Adapted from <a href="https://www.pnas.org/doi/10.1073/pnas.1803645115">source</a>.</p>
-  <p>While BDNF initially was only found in brain smoothies that are
+    into BDNF. Adapted from <a
+    href="https://www.pnas.org/doi/10.1073/pnas.1803645115">source</a>.</p>
+    <p>While BDNF initially was only found in brain smoothies that are
     not doing much of anything anymore, it soon became clear that <a
-      href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5479144/">neural
-      activity can modulate neurotrophin concentration</a>. The first hint
+    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5479144/">neural
+    activity can modulate neurotrophin concentration</a>. The first hint
     came from the fact that mRNA for neurotrophins increases <a
-      href="https://www.science.org/doi/10.1126/science.2549634">after
-      seizures,</a> but soon people were able to tease apart more closely
-    that activity-dependent release of BDNF is <a href="https://pubmed.ncbi.nlm.nih.gov/12553913/">important for
-      retaining memories</a>. And now we’re even getting to the point
+    href="https://www.science.org/doi/10.1126/science.2549634">after
+    seizures,</a> but soon people were able to tease apart more closely
+    that activity-dependent release of BDNF is <a
+    href="https://pubmed.ncbi.nlm.nih.gov/12553913/">important for
+    retaining memories</a>. And now we’re even getting to the point
     where we can stimulate individual synapses with a laser and <a
-      href="https://www.nature.com/articles/nature19766">watch the amount
-      of BDNF released in real-time</a>.</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_6.gif" />Two-photon
+    href="https://www.nature.com/articles/nature19766">watch the amount
+    of BDNF released in real-time</a>.</p>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_6.gif" />Two-photon
     video demonstrating the increase in BDNF-SEP fluorescence in
     response to the induction of sLTP by two-photon glutamate uncaging.
-    <a href="https://www.nature.com/articles/nature19766">source</a>
-  </p>
-  <p>Alright, so far<a href="https://www.science.org/doi/10.1126/science.2549634">,</a> so
+    <a href="https://www.nature.com/articles/nature19766">source</a></p>
+    <p>Alright, so far<a
+    href="https://www.science.org/doi/10.1126/science.2549634">,</a> so
     good. Neurons contain BDNF, which brings about good things, and its
     evil twin, proBDNF, which brings about bad things. When a neuron
     fires, we get some additional BDNF. But <em>how</em> does BDNF bring
     about good things? I’m glad you ask.</p>
-  <h2 id="levels-of-abstraction"><strong>Levels of
-      abstraction</strong></h2>
-  <p>Have you ever wondered what a synapse looks like up
+    <h2 id="levels-of-abstraction"><strong>Levels of
+    abstraction</strong></h2>
+    <p>Have you ever wondered what a synapse looks like up
     close<sup>[17]</sup>? Synapses are too small to see or even to image
-    properly<sup>[18]</sup>, but Dr. <a href="https://ccsb.scripps.edu/goodsell/">David Goodsell</a> at the
+    properly<sup>[18]</sup>, but Dr. <a
+    href="https://ccsb.scripps.edu/goodsell/">David Goodsell</a> at the
     Scripps Research Institute has a great knack for illustrating what
     we would see if we were to look at a synapse in all its molecular
     glory:</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[17] </p>
     <p>Like, for example, right now when I just asked you that
-      question?</p>
-  </div>
-  <div class="sidenote">
+    question?</p>
+    </div>
+    <div class="sidenote">
     <p>[18] </p>
-    <p>Unless you <a href="https://www.sciencedirect.com/science/article/pii/S096999612100111X">put
-        them in a diaper and blow them up</a>.</p>
-  </div>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_112.png" />This
+    <p>Unless you <a
+    href="https://www.sciencedirect.com/science/article/pii/S096999612100111X">put
+    them in a diaper and blow them up</a>.</p>
+    </div>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_112.png" />This
     depicts a neuromuscular junction synapse at a magnification of
     x1,000,000. At this magnification, individual atoms are too small to
     resolve (about the size of a grain of salt). The axon terminal is at
     the top, and the muscle cell is at the bottom. A more detailed
-    description is included with the <a href="https://iubmb.onlinelibrary.wiley.com/doi/10.1002/bmb.20297">source</a>.
-  </p>
-  <p>This picture is pretty and gives you (maybe) a sense of awe at
+    description is included with the <a
+    href="https://iubmb.onlinelibrary.wiley.com/doi/10.1002/bmb.20297">source</a>.</p>
+    <p>This picture is pretty and gives you (maybe) a sense of awe at
     the mind-boggling complexity that lurks just a few levels below. It
     might help you understand <a
-      href="https://www.ncbi.nlm.nih.gov/books/NBK11143/#:~:text=About%2010%2C000%20molecules%20of%20ACh,by%20a%20vesicular%20ACh%20transporter.">how
-      small an acetylcholine molecule is</a> compared to the vesicle that
+    href="https://www.ncbi.nlm.nih.gov/books/NBK11143/#:~:text=About%2010%2C000%20molecules%20of%20ACh,by%20a%20vesicular%20ACh%20transporter.">how
+    small an acetylcholine molecule is</a> compared to the vesicle that
     carries it. Or why neurotransmitters released into the synaptic
     cleft <a href="https://www.nature.com/articles/srep42022">might get
-      lost on the way to the postsynapse</a>. Or just for <a
-      href="https://www.youtube.com/watch?v=F37kuXObIBU&amp;ab_channel=TEDxTalks">how
-      incredibly</a><em><a href="https://www.youtube.com/watch?v=F37kuXObIBU&amp;ab_channel=TEDxTalks">dense</a></em><a
-      href="https://www.youtube.com/watch?v=F37kuXObIBU&amp;ab_channel=TEDxTalks">the
-      brain is</a>.</p>
-  <p>But beyond intuitions, the picture cannot carry you that much
+    lost on the way to the postsynapse</a>. Or just for <a
+    href="https://www.youtube.com/watch?v=F37kuXObIBU&amp;ab_channel=TEDxTalks">how
+    incredibly</a><em><a
+    href="https://www.youtube.com/watch?v=F37kuXObIBU&amp;ab_channel=TEDxTalks">dense</a></em><a
+    href="https://www.youtube.com/watch?v=F37kuXObIBU&amp;ab_channel=TEDxTalks">the
+    brain is</a>.</p>
+    <p>But beyond intuitions, the picture cannot carry you that much
     further. If we want to <em>understand</em><sup>[19]</sup> what
     happens at a synapse, we need to abstract away details.</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[19] </p>
     <p>I mean, not “crappy”-crappy. Actually also kind of cool. But not
-      with a satisfying amount of detail, anyway.</p>
-  </div>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_113.png" />In
+    with a satisfying amount of detail, anyway.</p>
+    </div>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_113.png" />In
     the words of Scott Alexander: “ <em><a
-        href="https://slatestarcodex.com/2017/06/13/what-is-depression-anyway-the-synapse-hypothesis/#:~:text=People%20try%20to%20make%20this%20seem%20simple%20by%20displaying%20it%20as%20a%20system%20of%20billiard%20balls%20and%20tubes%20in%20a%20cute%20cartoon%2C%20but%20don%E2%80%99t%20be%20fooled%20%E2%80%93%20no%20human%20being%20has%20ever%20remembered%20any%20of%20it%20for%20more%20than%20two%20seconds.">People
-        try to make this seem simple by displaying it as a system of
-        billiard balls and tubes in a cute cartoon, but don’t be fooled – no
-        human being has ever remembered any of it for more than two
-        seconds.</a> ” </em><a href="https://www.hindawi.com/journals/ijpep/2011/654085/">source</a>.</p>
-  <p>Now, this is… different. Certainly a lot less pretty. And
+    href="https://slatestarcodex.com/2017/06/13/what-is-depression-anyway-the-synapse-hypothesis/#:~:text=People%20try%20to%20make%20this%20seem%20simple%20by%20displaying%20it%20as%20a%20system%20of%20billiard%20balls%20and%20tubes%20in%20a%20cute%20cartoon%2C%20but%20don%E2%80%99t%20be%20fooled%20%E2%80%93%20no%20human%20being%20has%20ever%20remembered%20any%20of%20it%20for%20more%20than%20two%20seconds.">People
+    try to make this seem simple by displaying it as a system of
+    billiard balls and tubes in a cute cartoon, but don’t be fooled – no
+    human being has ever remembered any of it for more than two
+    seconds.</a> ” </em><a
+    href="https://www.hindawi.com/journals/ijpep/2011/654085/">source</a>.</p>
+    <p>Now, this is… different. Certainly a lot less pretty. And
     importantly, we have exchanged the territory for a
     map<sup>[20]</sup>. We lost information about spatial scales and how
     <em>dense</em> everything is. But we have gained arrows! Suppose we
     trust the authors<sup>[21]</sup> to have done their literature
     research properly. In that case, we might now feel compelled to make
     statements like “ <em>Extracellular BDNF binds to the TrkB receptor
-      and triggers the PLC-γ-mediated activation of IP3, which in turn
-      contributes to intracellular calcium release. An increase in
-      postsynaptic calcium triggers exocytosis of BDNF into the synaptic
-      cleft, where it binds to pre-and postsynaptic TrkB receptors,
-      kicking off further signaling cascades</em> ”. And just like that,
+    and triggers the PLC-γ-mediated activation of IP3, which in turn
+    contributes to intracellular calcium release. An increase in
+    postsynaptic calcium triggers exocytosis of BDNF into the synaptic
+    cleft, where it binds to pre-and postsynaptic TrkB receptors,
+    kicking off further signaling cascades</em> ”. And just like that,
     we find ourselves one step closer to speaking p̴͓̂͘á̴̻͌s̶̻̗͋͑ṯ̸̹̈́̌à̶̳ fluently
-    ourselves.
-  </p>
-  <div class="sidenote">
+    ourselves.</p>
+    <div class="sidenote">
     <p>[20] </p>
     <p>Or rather, we have exchanged one map for a less detailed map.</p>
-  </div>
-  <div class="sidenote">
+    </div>
+    <div class="sidenote">
     <p>[21] </p>
     <p>A definition of “understanding” I like is “being able to predict
-      the state at t+1 given the state at t”. Framed like this,
-      understanding can be gradual (above chance performance), you can
-      misunderstand (below chance performance), and you can grok something
-      (near 100% performance).</p>
-  </div>
-  <p>Don’t worry if you didn’t get that summary of BDNF action; I
+    the state at t+1 given the state at t”. Framed like this,
+    understanding can be gradual (above chance performance), you can
+    misunderstand (below chance performance), and you can grok something
+    (near 100% performance).</p>
+    </div>
+    <p>Don’t worry if you didn’t get that summary of BDNF action; I
     don’t get it either. A picture at this level might help us if we
     want to <strong>roughly predict</strong><sup>[22]</sup> how a defect
     in one thing might affect other things - we can just follow the
     arrows. And it might inspire us to hunt for new connections between
     things that we didn’t know about - can we add an arrow
     somewhere?</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[22] </p>
     <p>We probably won’t be able to <strong>predict</strong> what
-      happens <strong>precisely</strong>. The diagram is almost guaranteed
-      to be missing some arrows, and removing an arrow will probably
-      result in the addition of new arrows (the brain is <a href="https://www.nature.com/articles/nrn1949">one big lump
-        of
-        homeostasis)</a>. Any single component you knock out has a good
-      chance of triggering a cascade of compensatory processes.</p>
-  </div>
-  <p>But this level of abstraction still has severe limitations:
+    happens <strong>precisely</strong>. The diagram is almost guaranteed
+    to be missing some arrows, and removing an arrow will probably
+    result in the addition of new arrows (the brain is <a
+    href="https://www.nature.com/articles/nrn1949">one big lump of
+    homeostasis)</a>. Any single component you knock out has a good
+    chance of triggering a cascade of compensatory processes.</p>
+    </div>
+    <p>But this level of abstraction still has severe limitations:
     Unless we have some <em>real</em> expertise in molecular
     neuroscience, we are essentially operating at the level of <a
-      href="https://www.lesswrong.com/posts/f4txACqDWithRi7hs/occam-s-razor#:~:text=whole%20sentence%20as%20%E2%80%9C-,Tldtsiawsdi,-!%E2%80%9D%20so%20that%20the">Ţ̷̣̙̖̠͊͑͌͌̈̚l̵̻̯̪͇͙̓̀̐d̶̖̊́t̶̰̄̎̌̈͛ͅs̵͎͇͍̮͑̎́̌̆i̶̱̙͕̰͎̍̅a̸̩͕̐͝ͅw̶̝̘̗͕̰̉̎̃s̵̹̀͘d̸̝͊̽́̎́i̴͇͈̝̭̝̝͋̍̿̐͝,</a>
-    recounting <a href="https://www.lesswrong.com/posts/NMoLJuDJEms7Ku9XS/guessing-the-teacher-s-password">magic
-      password</a> that lets us pass a test. What does any of it
+    href="https://www.lesswrong.com/posts/f4txACqDWithRi7hs/occam-s-razor#:~:text=whole%20sentence%20as%20%E2%80%9C-,Tldtsiawsdi,-!%E2%80%9D%20so%20that%20the">Ţ̷̣̙̖̠͊͑͌͌̈̚l̵̻̯̪͇͙̓̀̐d̶̖̊́t̶̰̄̎̌̈͛ͅs̵͎͇͍̮͑̎́̌̆i̶̱̙͕̰͎̍̅a̸̩͕̐͝ͅw̶̝̘̗͕̰̉̎̃s̵̹̀͘d̸̝͊̽́̎́i̴͇͈̝̭̝̝͋̍̿̐͝,</a>
+    recounting <a
+    href="https://www.lesswrong.com/posts/NMoLJuDJEms7Ku9XS/guessing-the-teacher-s-password">magic
+    password</a> that lets us pass a test. What does any of it
     <em>mean</em><sup>[23]</sup>? Taken in isolation, “PLC-γ-mediated
     activation of IP3” are prototypical “<a
-      href="https://www.hpmor.com/chapter/109#:~:text=%22-,The,-runes%20say%2C%20noitilov">words
-      of false comprehension</a>”, disjoint from anything we can mentally
+    href="https://www.hpmor.com/chapter/109#:~:text=%22-,The,-runes%20say%2C%20noitilov">words
+    of false comprehension</a>”, disjoint from anything we can mentally
     operate on. If we want to understand more, we’ll have to zoom out
-    further<sup>[24]</sup>,<sup>[25]</sup>.
-  </p>
-  <div class="sidenote">
+    further<sup>[24]</sup>,<sup>[25]</sup>.</p>
+    <div class="sidenote">
     <p>[23] </p>
     <p>What <em>is</em> PLC-γ? Uhm, one moment, let me goooooogle. <a
-        href="https://en.wikipedia.org/wiki/Phosphoinositide_phospholipase_C">Ah</a>.
-      It’s “Phosphoinositide phospholipase C,” an<a
-        href="https://slatestarcodex.com/2019/05/07/5-httlpr-a-pointed-review/">enzyme
-        tha</a>t plays an important role in signal transduction processes.
-      You’re welcome.</p>
-  </div>
-  <div class="sidenote">
+    href="https://en.wikipedia.org/wiki/Phosphoinositide_phospholipase_C">Ah</a>.
+    It’s “Phosphoinositide phospholipase C,” an<a
+    href="https://slatestarcodex.com/2019/05/07/5-httlpr-a-pointed-review/">enzyme
+    tha</a>t plays an important role in signal transduction processes.
+    You’re welcome.</p>
+    </div>
+    <div class="sidenote">
     <p>[24] </p>
     <p>Foolish!</p>
-  </div>
-  <div class="sidenote">
+    </div>
+    <div class="sidenote">
     <p>[25] </p>
-    <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_5.jpeg" /></p>
-  </div>
-  <h2 id="less-is-more">Less is More?</h2>
-  <p>To simplify the tangle of arrows and boxes from the picture in
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_5.jpeg" /></p>
+    </div>
+    <h2 id="less-is-more">Less is More?</h2>
+    <p>To simplify the tangle of arrows and boxes from the picture in
     the previous section, we can do: 1. <strong>clustering</strong> , 2.
     <strong>summarizing</strong> , and 3. <strong>unrolling in
-      time</strong>.
-  </p>
-  <ol class="incremental" type="1">
-    <li><strong><a href="https://en.wikipedia.org/wiki/Cluster_analysis">Clustering</a></strong>
-      requires identifying components that are similar to each other and
-      different from all the other things. For example, we might decide to
-      lump together voltage-gated calcium channels and NMDA channels
-      because they both lead to an influx of calcium<sup>[26]</sup>.</li>
-    <li><strong><a href="https://en.wikipedia.org/wiki/Dimensionality_reduction">Summarizing</a>
-      </strong>requires lowering the system’s dimensionality by <a
-        href="https://en.wikipedia.org/wiki/Summary_statistics">reducing</a>
-      multiple items into a single item or identifying a <a
-        href="https://en.wikipedia.org/wiki/Prototype_theory">prototypical</a>
-      stand-in for the cluster.</li>
-    <li><strong><a href="https://en.wikipedia.org/wiki/Backpropagation_through_time">Unrolling
-          in time</a></strong> is a kind of clustering &amp; reducing in
-      <em>time</em>. Which processes happen (mostly) simultaneously and
-      before/after others? How much temporal overlap can we ignore before
-      the picture gets misleading<sup>[27]</sup>?
-    </li>
-  </ol>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_114.png" />Presynaptic
+    time</strong>.</p>
+    <ol class="incremental" type="1">
+    <li><strong><a
+    href="https://en.wikipedia.org/wiki/Cluster_analysis">Clustering</a></strong>
+    requires identifying components that are similar to each other and
+    different from all the other things. For example, we might decide to
+    lump together voltage-gated calcium channels and NMDA channels
+    because they both lead to an influx of calcium<sup>[26]</sup>.
+    <div class="sidenote">
+    <p>[26] </p>
+    <p>(Similarly, PLC-γ, Shc, Grb2, Gab1, … share the property of being
+    written in p̴͓̂͘á̴̻͌s̶̻̗͋͑ṯ̸̹̈́̌à̶̳).</p>
+    </div></li>
+    <li><strong><a
+    href="https://en.wikipedia.org/wiki/Dimensionality_reduction">Summarizing</a>
+    </strong>requires lowering the system’s dimensionality by <a
+    href="https://en.wikipedia.org/wiki/Summary_statistics">reducing</a>
+    multiple items into a single item or identifying a <a
+    href="https://en.wikipedia.org/wiki/Prototype_theory">prototypical</a>
+    stand-in for the cluster.</li>
+    <li><strong><a
+    href="https://en.wikipedia.org/wiki/Backpropagation_through_time">Unrolling
+    in time</a></strong> is a kind of clustering &amp; reducing in
+    <em>time</em>. Which processes happen (mostly) simultaneously and
+    before/after others? How much temporal overlap can we ignore before
+    the picture gets misleading<sup>[27]</sup>?
+    <div class="sidenote">
+    <p>[27] </p>
+    <p>Because effectively, all of those things might happen almost
+    simultaneously.</p>
+    </div></li>
+    </ol>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_114.png" />Presynaptic
     activation leads to the release of glutamate into the synaptic
     cleft. Glutamate binds to postsynaptic receptors and triggers an
     influx of calcium. Calcium, in turn, brings about the release of
     BDNF into the synaptic cleft. BDNF binds to pre- and postsynaptic
     receptors, which prompts an increase in presynaptic glutamate stores
     and the insertion of additional postsynaptic glutamate receptors.
-    Adapted from <a href="https://link.springer.com/article/10.1007/s13295-014-0053-9">source</a>.</p>
-  <p>While the story we can tell about the picture (see the caption)
+    Adapted from <a
+    href="https://link.springer.com/article/10.1007/s13295-014-0053-9">source</a>.</p>
+    <p>While the story we can tell about the picture (see the caption)
     gets a lot more concise, abstraction also means losing information.
     If I’d only shown you this version of the picture, you wouldn’t know
     that PLC-γ is involved<sup>[28]</sup>. But abstracting to this level
     of resolution gives us two powerful new actions:</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[28] </p>
     <p>There is the danger of starting to believe that the <a
-        href="https://en.wikipedia.org/wiki/The_Treachery_of_Images">picture
-        is reality</a>. That’s how you get <a href="https://en.wikipedia.org/wiki/There_are_known_knowns">unknown
-        unknowns</a>.</p>
-  </div>
-  <ol class="incremental" type="1">
-    <li>We can start to think about <strong><a href="https://en.wiktionary.org/wiki/ulterior">purpose</a></strong>.
-      When we follow the progression of steps, we realize that they
-      culminate into more presynaptic glutamate and more postsynaptic
-      receptors. Both of those things enable <a href="https://en.wikipedia.org/wiki/Long-term_potentiation">more
-        reliable signaling and stronger activation of the postsynapse</a>.
-      The BDNF signaling cascade depicted above leads to the <a
-        href="https://www.pnas.org/doi/10.1073/pnas.0711863105">strengthening
-        of a synapse</a>.</li>
-    <li>We can start <strong><a href="http://www.hpmor.com/chapter/8">charting negative idea
-          space</a></strong>. The degrees of freedom in the picture are
-      sufficiently reduced that we can look at the flow of information and
-      wonder about “how things could be different”. And we can start to be
-      <a href="https://www.lesswrong.com/posts/5JDkW4MYXit2CquLs/your-strength-as-a-rationalist">confused
-        without being overwhelmed</a>.
-    </li>
-  </ol>
-  <p>Here are three examples of what I mean by “charting negative idea
+    href="https://en.wikipedia.org/wiki/The_Treachery_of_Images">picture
+    is reality</a>. That’s how you get <a
+    href="https://en.wikipedia.org/wiki/There_are_known_knowns">unknown
+    unknowns</a>.</p>
+    </div>
+    <ol class="incremental" type="1">
+    <li>We can start to think about <strong><a
+    href="https://en.wiktionary.org/wiki/ulterior">purpose</a></strong>.
+    When we follow the progression of steps, we realize that they
+    culminate into more presynaptic glutamate and more postsynaptic
+    receptors. Both of those things enable <a
+    href="https://en.wikipedia.org/wiki/Long-term_potentiation">more
+    reliable signaling and stronger activation of the postsynapse</a>.
+    The BDNF signaling cascade depicted above leads to the <a
+    href="https://www.pnas.org/doi/10.1073/pnas.0711863105">strengthening
+    of a synapse</a>.</li>
+    <li>We can start <strong><a
+    href="http://www.hpmor.com/chapter/8">charting negative idea
+    space</a></strong>. The degrees of freedom in the picture are
+    sufficiently reduced that we can look at the flow of information and
+    wonder about “how things could be different”. And we can start to be
+    <a
+    href="https://www.lesswrong.com/posts/5JDkW4MYXit2CquLs/your-strength-as-a-rationalist">confused
+    without being overwhelmed</a>.</li>
+    </ol>
+    <p>Here are three examples of what I mean by “charting negative idea
     space”:</p>
-  <ol class="incremental" type="1">
+    <ol class="incremental" type="1">
     <li>When I saw (a variation) of this picture for the first time, it
-      made sense that there should be BDNF receptors in the <em>pre</em>
-      synapse. Diffusion of BDNF from the <em>post</em> synapse back to
-      the <em>pre</em> synapse could be a kind of “read receipt”,
-      indicating that signal transmission went fine<sup>[29]</sup>. But
-      why would there also be BDNF receptors in the <em>post</em> synapse?
-      The postsynapse already “ <em>knows</em> ” that it just released
-      BDNF. Why would you <em>build</em> something like this?</li>
+    made sense that there should be BDNF receptors in the <em>pre</em>
+    synapse. Diffusion of BDNF from the <em>post</em> synapse back to
+    the <em>pre</em> synapse could be a kind of “read receipt”,
+    indicating that signal transmission went fine<sup>[29]</sup>. But
+    why would there also be BDNF receptors in the <em>post</em> synapse?
+    The postsynapse already “ <em>knows</em> ” that it just released
+    BDNF. Why would you <em>build</em> something like this?
+    <div class="sidenote">
+    <p>[29] </p>
+    <p>I’m calling this move the “reversed Olah”.</p>
+    </div></li>
     <li>And, if BDNF is just overall awesome and stops your neurons from
-      dying, why doesn’t your brain push the “more BDNF” button <em>all
-        the time</em>? There must be trade-offs. Perhaps you don’t want
-      <em>way</em> <em>too</em> <em>much</em> BDNF. Still, if BDNF has all
-      the magical abilities from the introduction (better hair, fantastic
-      baritone voice, the ability to jump 3 meters high), then evolution
-      ought to have figured out a way to crank up the natural production
-      of BDNF.
-    </li>
+    dying, why doesn’t your brain push the “more BDNF” button <em>all
+    the time</em>? There must be trade-offs. Perhaps you don’t want
+    <em>way</em> <em>too</em> <em>much</em> BDNF. Still, if BDNF has all
+    the magical abilities from the introduction (better hair, fantastic
+    baritone voice, the ability to jump 3 meters high), then evolution
+    ought to have figured out a way to crank up the natural production
+    of BDNF.</li>
     <li>And finally: how does this relate to <em>everything else</em>?
-      What about the <a
-        href="https://www.science.org/doi/10.1126/science.aao0862#:~:text=OPEN%20IN%20VIEWER-,Arc,-%2C%20the%20protein%20encoded">A̷͈̐̈́̆̍̋̃͑͘ṛ̸̨̨̻̹̖̙͖̺̱̋̇̈̈́̈́͆̈́̈̒̆̀̾̕͜c̴̢̢̢̜̪͖͇̥̲̟̱̪͓͚͊̅̈́̓́̒̑̑̌͐͂͗̚͘͠-signaling</a>,
-      <a
-        href="https://www.cell.com/article/S2211-1247(14)01045-6/fulltext#:~:text=requires%20activation%20of-,calcineurin,-%2C%20IP3Rs%2C%20and%20mGluRs">c̵̫̦̙̤͓̞̮̥͈̱̻͈̖͙̥̾͋͗́͛͆̇̏̏͘͝a̶̳̱̜̻̝̙̭̽̍͋̿̊̅͋͋̾̕͜͠ḷ̸̢̨̛̭̜͓̜͈̈̈́̋̏̀͑̅̇̈́̄̂̕͜ͅç̴̨̡̪͈͉̜̋̓̈́͌͘͝ͅḯ̶̫̬̝͑͐̌͑̓͐̓̋̈̓͆͘͠͝ͅn̸̥̬͉̯̙̻͍͙̪̲͚̭̮̎͌͝e̴̜̼̦̯̓̏̈́̾̐̃̄̇͝ù̶̮̹̺̤̫̰̰̝͕̣̘͉̜͌̾͜͝ȑ̶̪̣̙͇̣̻͔̪̘̙̎̉̂́̄̈́͌̋͑̽̈́̑̂͝í̵̫͆̇͋͑͘͝n̷̹̰͓̤̗̱̲̗͖̩̑̌-signaling,</a>
-      <a
-        href="https://www.nature.com/articles/nrn2963#:~:text=term%20memory%20if-,PRPs,-are%20made%20available">P̶̧̡͔̞͉̜̜̼̩͕̘̙̰͍͊̎̾̏̆͗́̕̕ͅR̶̛̛̯̍́̊̈̅̐̔̍͋̌͘P̸͖̗̹̩͂̂͌̌͒̃̎͆̉̓͊̈́̕͠͝-signaling,</a>
-      and of course <a
-        href="https://pubmed.ncbi.nlm.nih.gov/24484698/#:~:text=the%20activation%20of-,CaMKII,-in%20dendritic%20spines">C̴͉͙̘̞̏͂̌́̅͊̇̄͌̂̿͐́ȁ̸̡̧̛̞͍̟̖̗͖̜͓͚̃́̑́͆̅̚͠M̴̡̩̙͛̈́̇̄̉̏͑̈̓̾̍̍̚̕͠K̷̢͔͇̭̘͈̼͚͉̭̦̖̥̩̅͌Į̶̼̼̫̀̐̂̅̊̇̈̈́̍̽͊̀̎̔͘I̴̡̼̠͍̹̭̦̓̆̈̅͊̄̓̊͆-signaling</a>?
-      Are all of those signaling cascades just <em>wrong</em> or
-      <em>irrelevant</em>?
-    </li>
-  </ol>
-  <p>Resolving this type of confusion is not straightforward. Here are
+    What about the <a
+    href="https://www.science.org/doi/10.1126/science.aao0862#:~:text=OPEN%20IN%20VIEWER-,Arc,-%2C%20the%20protein%20encoded">A̷͈̐̈́̆̍̋̃͑͘ṛ̸̨̨̻̹̖̙͖̺̱̋̇̈̈́̈́͆̈́̈̒̆̀̾̕͜c̴̢̢̢̜̪͖͇̥̲̟̱̪͓͚͊̅̈́̓́̒̑̑̌͐͂͗̚͘͠-signaling</a>,
+    <a
+    href="https://www.cell.com/article/S2211-1247(14)01045-6/fulltext#:~:text=requires%20activation%20of-,calcineurin,-%2C%20IP3Rs%2C%20and%20mGluRs">c̵̫̦̙̤͓̞̮̥͈̱̻͈̖͙̥̾͋͗́͛͆̇̏̏͘͝a̶̳̱̜̻̝̙̭̽̍͋̿̊̅͋͋̾̕͜͠ḷ̸̢̨̛̭̜͓̜͈̈̈́̋̏̀͑̅̇̈́̄̂̕͜ͅç̴̨̡̪͈͉̜̋̓̈́͌͘͝ͅḯ̶̫̬̝͑͐̌͑̓͐̓̋̈̓͆͘͠͝ͅn̸̥̬͉̯̙̻͍͙̪̲͚̭̮̎͌͝e̴̜̼̦̯̓̏̈́̾̐̃̄̇͝ù̶̮̹̺̤̫̰̰̝͕̣̘͉̜͌̾͜͝ȑ̶̪̣̙͇̣̻͔̪̘̙̎̉̂́̄̈́͌̋͑̽̈́̑̂͝í̵̫͆̇͋͑͘͝n̷̹̰͓̤̗̱̲̗͖̩̑̌-signaling,</a>
+    <a
+    href="https://www.nature.com/articles/nrn2963#:~:text=term%20memory%20if-,PRPs,-are%20made%20available">P̶̧̡͔̞͉̜̜̼̩͕̘̙̰͍͊̎̾̏̆͗́̕̕ͅR̶̛̛̯̍́̊̈̅̐̔̍͋̌͘P̸͖̗̹̩͂̂͌̌͒̃̎͆̉̓͊̈́̕͠͝-signaling,</a>
+    and of course <a
+    href="https://pubmed.ncbi.nlm.nih.gov/24484698/#:~:text=the%20activation%20of-,CaMKII,-in%20dendritic%20spines">C̴͉͙̘̞̏͂̌́̅͊̇̄͌̂̿͐́ȁ̸̡̧̛̞͍̟̖̗͖̜͓͚̃́̑́͆̅̚͠M̴̡̩̙͛̈́̇̄̉̏͑̈̓̾̍̍̚̕͠K̷̢͔͇̭̘͈̼͚͉̭̦̖̥̩̅͌Į̶̼̼̫̀̐̂̅̊̇̈̈́̍̽͊̀̎̔͘I̴̡̼̠͍̹̭̦̓̆̈̅͊̄̓̊͆-signaling</a>?
+    Are all of those signaling cascades just <em>wrong</em> or
+    <em>irrelevant</em>?</li>
+    </ol>
+    <p>Resolving this type of confusion is not straightforward. Here are
     some possible non-answers:</p>
-  <ol class="incremental" type="1">
+    <ol class="incremental" type="1">
     <li>Sometimes the error is in the map - perhaps the experiments that
-      indicate BDNF receptors in the postsynapse are just
-      bad<sup>[30]</sup>?</li>
+    indicate BDNF receptors in the postsynapse are just
+    bad<sup>[30]</sup>?
+    <div class="sidenote">
+    <p>[30] </p>
+    <p>That’s how <a
+    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3517813">endocannabinoids</a>
+    work, I think.</p>
+    </div></li>
     <li>Sometimes you don’t look at the map carefully enough, and the
-      confusion comes from poor understanding.</li>
+    confusion comes from poor understanding.</li>
     <li>Sometimes there is no answer. Evolution is just <a
-        href="https://en.wikipedia.org/wiki/Retina#Inverted_versus_non-inverted_retina">not
-        always great at planning</a>. Things are complicated.</li>
-  </ol>
-  <p>I’m still unsure what the answers to these questions are, and I
+    href="https://en.wikipedia.org/wiki/Retina#Inverted_versus_non-inverted_retina">not
+    always great at planning</a>. Things are complicated.</li>
+    </ol>
+    <p>I’m still unsure what the answers to these questions are, and I
     have a good bit of probability mass on the three non-answers
     above<sup>[31]</sup>. There is, however, <a
-      href="https://www.youtube.com/watch?t=966&amp;v=1bSPNboKCzM&amp;feature=youtu.be">another
-      way of looking at this</a>.</p>
-  <div class="sidenote">
+    href="https://www.youtube.com/watch?t=966&amp;v=1bSPNboKCzM&amp;feature=youtu.be">another
+    way of looking at this</a>.</p>
+    <div class="sidenote">
     <p>[31] </p>
     <p>One simple explanation for why there are receptors in the
-      postsynapse would be that since there is also presynaptic release of
-      BDNF (which I just left out of the simplified schematic), the
-      postsynaptic receptors just detect that.</p>
-  </div>
-  <h2 id="neurotrophin-balance-is-all-you-need">Neurotrophin balance
+    postsynapse would be that since there is also presynaptic release of
+    BDNF (which I just left out of the simplified schematic), the
+    postsynaptic receptors just detect that.</p>
+    </div>
+    <h2 id="neurotrophin-balance-is-all-you-need">Neurotrophin balance
     is all you need</h2>
-  <p>In a shocking plot twist, the evil twin proBDNF reappears on the
+    <p>In a shocking plot twist, the evil twin proBDNF reappears on the
     scene, resolving the dramatic tension rising throughout the
     preceding sections<sup>[32]</sup>. Before we can witness the
     spectacle, here is an epistemic warning sign:</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[32] </p>
     <p>did you notice?</p>
-  </div>
-  <p>Text within this block will maintain its original spacing when
+    </div>
+    <p>Text within this block will maintain its original spacing when
     published</p>
-  <pre><code> _The content of the preceding sections is perhaps simplified in some parts, but I’m pretty confident that none of it contradicts the consensus view on BDNF. But while the concentration of BDNF is low and experiments are difficult, the **[concentration of proBDNF is](https://www.nature.com/articles/nn0209-105#:~:text=by%20these%20cells.-,Thus,-%2C%20Matsumoto%20et%20al)**[ ](https://www.nature.com/articles/nn0209-105#:~:text=by%20these%20cells.-,Thus,-%2C%20Matsumoto%20et%20al)**[very low](https://www.nature.com/articles/nn0209-105#:~:text=by%20these%20cells.-,Thus,-%2C%20Matsumoto%20et%20al)**[and ](https://www.nature.com/articles/nn0209-105#:~:text=by%20these%20cells.-,Thus,-%2C%20Matsumoto%20et%20al)**[experiments are very difficult](https://www.nature.com/articles/nn0209-105#:~:text=by%20these%20cells.-,Thus,-%2C%20Matsumoto%20et%20al)**. While there haven’t been any papers arguing against the importance of proBDNF in the last decade, most of the recent supporting literature comes from a few research groups, and I’ve met some people at conferences who were skeptical of the whole story. So beware and mark this section with the appropriate amount of uncertainty._</code></pre>
-  <p>As proBDNF and BDNF are packed together into the same vesicle, we
+    <pre><code> _The content of the preceding sections is perhaps simplified in some parts, but I’m pretty confident that none of it contradicts the consensus view on BDNF. But while the concentration of BDNF is low and experiments are difficult, the **[concentration of proBDNF is](https://www.nature.com/articles/nn0209-105#:~:text=by%20these%20cells.-,Thus,-%2C%20Matsumoto%20et%20al)**[ ](https://www.nature.com/articles/nn0209-105#:~:text=by%20these%20cells.-,Thus,-%2C%20Matsumoto%20et%20al)**[very low](https://www.nature.com/articles/nn0209-105#:~:text=by%20these%20cells.-,Thus,-%2C%20Matsumoto%20et%20al)**[and ](https://www.nature.com/articles/nn0209-105#:~:text=by%20these%20cells.-,Thus,-%2C%20Matsumoto%20et%20al)**[experiments are very difficult](https://www.nature.com/articles/nn0209-105#:~:text=by%20these%20cells.-,Thus,-%2C%20Matsumoto%20et%20al)**. While there haven’t been any papers arguing against the importance of proBDNF in the last decade, most of the recent supporting literature comes from a few research groups, and I’ve met some people at conferences who were skeptical of the whole story. So beware and mark this section with the appropriate amount of uncertainty._</code></pre>
+    <p>As proBDNF and BDNF are packed together into the same vesicle, we
     might expect them to be released into the synaptic cleft together.
-    And indeed, there is <a href="https://www.pnas.org/doi/10.1073/pnas.1207767109">some</a> <a
-      href="https://pubmed.ncbi.nlm.nih.gov/19147841/">evidence</a> of
+    And indeed, there is <a
+    href="https://www.pnas.org/doi/10.1073/pnas.1207767109">some</a> <a
+    href="https://pubmed.ncbi.nlm.nih.gov/19147841/">evidence</a> of
     proBDNF in the synaptic cleft following neural activity. So
     effectively, neural activity tells a synapse <strong>both</strong>
     to get stronger (BDNF signaling) and to get weaker (proBDNF
-    signaling). It’s like <a href="https://youtu.be/K_DcOWDOETo?t=218">holding the gas and brake
-      pedal at once.</a></p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_7.gif" /></p>
-  <p>What is going on here? Has the brain lost its
+    signaling). It’s like <a
+    href="https://youtu.be/K_DcOWDOETo?t=218">holding the gas and brake
+    pedal at once.</a></p>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_7.gif" /></p>
+    <p>What is going on here? Has the brain lost its
     mind<sup>[33]</sup>? Well, maybe. But an alternative explanation
-    comes from the fact that <strong><a href="https://pubmed.ncbi.nlm.nih.gov/19147841/">the processing of
-        proBDNF into BDNF can also happen in extracellular
-        space</a></strong>. If we were to anthropomorphize the situation, we
+    comes from the fact that <strong><a
+    href="https://pubmed.ncbi.nlm.nih.gov/19147841/">the processing of
+    proBDNF into BDNF can also happen in extracellular
+    space</a></strong>. If we were to anthropomorphize the situation, we
     might say: The postsynapse makes a <em>best guess</em> at whether it
     should become stronger or weaker and releases proBDNF and BDNF into
     the synaptic cleft in accordance. Then, the
     <strong>presynapse</strong> makes corrections to this best guess by
     <strong>differentially processing some amount of proBDNF into
-      BDNF</strong>.
-  </p>
-  <div class="sidenote">
+    BDNF</strong>.</p>
+    <div class="sidenote">
     <p>[33] </p>
     <p>I wrote this essay mostly to make this one pun.</p>
-  </div>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_115.png" />Top:
+    </div>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_115.png" />Top:
     Interactions between neurotrophins (BDNF and proBDNF), neurotrophin
     receptors (TrkB and P75NTR), and cleaving protease (MMP9). Bottom:
     Outcome of synaptic stimulation where two synapses separated by a
@@ -783,125 +847,128 @@ util.cos_sim(corpus_embeddings, serotonin_embedding)</code></pre>
     differentially cleaves proBDNF into BDNF at the stimulated synapse.
     V. Repeating this pattern of stimulation potentiates the stimulated
     synapse and depresses the unstimulated synapse (arrows). <a
-      href="https://www.nature.com/articles/s41467-021-23557-3#Fig1">source</a></p>
-  <p>MMP9 here is just a type of cleaving enzyme (represented by a
+    href="https://www.nature.com/articles/s41467-021-23557-3#Fig1">source</a></p>
+    <p>MMP9 here is just a type of cleaving enzyme (represented by a
     scissor in the illustration in an earlier section). Notice how, even
     though <strong>both</strong> synapses initially released proBDNF and
     BDNF in an equal amount, only <strong>one</strong> synapse gets
     larger. The important difference is that only one of the two
     synapses has the cleaving enzyme.</p>
-  <p>This particular <a href="http://www.bio.brandeis.edu/classes/nbio143/Papers/Neurotrophins/Lu05.pdf">framing
-      of neurotrophin interaction</a> is fascinating to me, and I’ve spent
+    <p>This particular <a
+    href="http://www.bio.brandeis.edu/classes/nbio143/Papers/Neurotrophins/Lu05.pdf">framing
+    of neurotrophin interaction</a> is fascinating to me, and I’ve spent
     some portion of my doctoral research thinking about how far we can
     push this interplay of activity and molecular balance to <a
-      href="https://www.nature.com/articles/s41467-021-23557-3#Fig1">establish
-      structure in the developing brain</a><sup>[34]</sup>. In particular,
+    href="https://www.nature.com/articles/s41467-021-23557-3#Fig1">establish
+    structure in the developing brain</a><sup>[34]</sup>. In particular,
     this framing provides several elegant answers to the questions I
     have raised throughout this essay:</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[34] </p>
     <p>As a good rationalist, I am of course not resting all of my
-      research on this one (potentially shaky) assumption. After setting
-      up a dynamical system of neurotrophin interactions, I immediately
-      demonstrate how <a
-        href="https://www.nature.com/articles/s41467-021-23557-3#:~:text=to%20each%20other.-,Generalized%20neurotrophin%2Dinspired%20model,-We%20reduced%20the">we
-        can reduce it</a> to a simpler system that is ubiquitous in
-      computational neuroscience.</p>
-  </div>
-  <ol class="incremental" type="1">
+    research on this one (potentially shaky) assumption. After setting
+    up a dynamical system of neurotrophin interactions, I immediately
+    demonstrate how <a
+    href="https://www.nature.com/articles/s41467-021-23557-3#:~:text=to%20each%20other.-,Generalized%20neurotrophin%2Dinspired%20model,-We%20reduced%20the">we
+    can reduce it</a> to a simpler system that is ubiquitous in
+    computational neuroscience.</p>
+    </div>
+    <ol class="incremental" type="1">
     <li><strong>Q</strong> : Why would there also be BDNF receptors in
-      the postsynapse? <strong>A</strong> : Because sending out proBDNF
-      and BDNF into the synaptic cleft is not a “read receipt”, it’s a
-      probe supposed to gather information about the status of the
-      presynapse! Depending on how active the presynapse has been, the <a
-        href="https://pubmed.ncbi.nlm.nih.gov/23019376/">more cleaving
-        enzyme will be around</a>.</li>
+    the postsynapse? <strong>A</strong> : Because sending out proBDNF
+    and BDNF into the synaptic cleft is not a “read receipt”, it’s a
+    probe supposed to gather information about the status of the
+    presynapse! Depending on how active the presynapse has been, the <a
+    href="https://pubmed.ncbi.nlm.nih.gov/23019376/">more cleaving
+    enzyme will be around</a>.</li>
     <li><strong>Q</strong> : If BDNF is overall awesome and makes your
-      brain better, why doesn’t your brain push the “more BDNF” button
-      <em>all the time</em>? <strong>A</strong> : Because what you want is
-      not more BDNF <em>everywhere</em> equally (unless you just had a <a
-        href="https://www.science.org/doi/10.1126/science.2549634">seizure</a>
-      or have a neurodegenerative disease). The brain’s ability to process
-      information comes from the <em>selective</em> connectivity of
-      different neurons. You want BDNF and proBDNF in an appropriate
-      balance.
-    </li>
+    brain better, why doesn’t your brain push the “more BDNF” button
+    <em>all the time</em>? <strong>A</strong> : Because what you want is
+    not more BDNF <em>everywhere</em> equally (unless you just had a <a
+    href="https://www.science.org/doi/10.1126/science.2549634">seizure</a>
+    or have a neurodegenerative disease). The brain’s ability to process
+    information comes from the <em>selective</em> connectivity of
+    different neurons. You want BDNF and proBDNF in an appropriate
+    balance.</li>
     <li><strong>Q</strong> : And finally: how does this relate to
-      <em>all the other signaling pathways</em> we know?
-      <strong>A</strong> : The interplay of proBDNF and BDNF is
-      responsible for setting up the groundwork - making sure that the
-      appropriate neurons and synapses survive. But once the groundwork is
-      established, the pair fades into the background and leaves the stage
-      for fancier actors to refine and tune. Indeed, expression of BDNF
-      and proBDNF peaks in the second postnatal week and shifts into a
-      BDNF dominated regime afterward. <img
-        src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_116.png" />Hippocampal
-      lysates from mice of the indicated genotype and ages were subjected
-      to immunoprecipitation/western blot analysis for BDNF isoforms. <a
-        href="https://www.nature.com/articles/nn.2244/figures/2">source</a>
-    </li>
-  </ol>
-  <p>I’m pretty satisfied with these answers, but I want to stress
+    <em>all the other signaling pathways</em> we know?
+    <strong>A</strong> : The interplay of proBDNF and BDNF is
+    responsible for setting up the groundwork - making sure that the
+    appropriate neurons and synapses survive. But once the groundwork is
+    established, the pair fades into the background and leaves the stage
+    for fancier actors to refine and tune. Indeed, expression of BDNF
+    and proBDNF peaks in the second postnatal week and shifts into a
+    BDNF dominated regime afterward. <img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_116.png" />Hippocampal
+    lysates from mice of the indicated genotype and ages were subjected
+    to immunoprecipitation/western blot analysis for BDNF isoforms. <a
+    href="https://www.nature.com/articles/nn.2244/figures/2">source</a></li>
+    </ol>
+    <p>I’m pretty satisfied with these answers, but I want to stress
     again that a lot of stuff in this section is <a
-      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-not-reading-papers?s=w#:~:text=a%20paper%20adds.-,Schematic,-of%20%E2%80%9Cthe%20delta">conjecture</a>.
+    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-not-reading-papers?s=w#:~:text=a%20paper%20adds.-,Schematic,-of%20%E2%80%9Cthe%20delta">conjecture</a>.
     “Neurotrophin balance is all you need” has explanatory power and
-    meshes well with <a href="https://en.wikipedia.org/wiki/Homeostasis">known themes in
-      biology,</a> but it’s important to keep in mind that:</p>
-  <blockquote>
+    meshes well with <a
+    href="https://en.wikipedia.org/wiki/Homeostasis">known themes in
+    biology,</a> but it’s important to keep in mind that:</p>
+    <blockquote>
     <p>The ultimate arbiter of truth is experiment, not the comfort one
-      derives from one’s a priori beliefs, nor the beauty or elegance one
-      ascribes to one’s theoretical models. <a href="https://www.azquotes.com/quote/702191">Lawrence M.
-        Krauss</a></p>
-  </blockquote>
-  <p>So let’s wait and see what the universe says when we ask it.</p>
-  <h2 id="closing-thoughts">Closing thoughts</h2>
-  <p>We’ve learned a bit about the beautiful language I call p̴͓̂͘á̴̻͌s̶̻̗͋͑ṯ̸̹̈́̌à̶̳,
+    derives from one’s a priori beliefs, nor the beauty or elegance one
+    ascribes to one’s theoretical models. <a
+    href="https://www.azquotes.com/quote/702191">Lawrence M.
+    Krauss</a></p>
+    </blockquote>
+    <p>So let’s wait and see what the universe says when we ask it.</p>
+    <h2 id="closing-thoughts">Closing thoughts</h2>
+    <p>We’ve learned a bit about the beautiful language I call p̴͓̂͘á̴̻͌s̶̻̗͋͑ṯ̸̹̈́̌à̶̳,
     we’ve looked at pretty pictures, and we’ve closely observed what we
     do when we abstract away things. What more could we wish for on a
     slow Sunday afternoon?</p>
-  <p>We could inject ourselves into a debate that has raged in the
+    <p>We could inject ourselves into a debate that has raged in the
     LessWrong comment section for <a
-      href="https://www.lesswrong.com/posts/sbcmACvB6DqYXYidL/counter-theses-on-sleep?commentId=Ehcng2LgeDuWmgQS3">the
-      last few weeks</a> about whether sleep deprivation might increase
+    href="https://www.lesswrong.com/posts/sbcmACvB6DqYXYidL/counter-theses-on-sleep?commentId=Ehcng2LgeDuWmgQS3">the
+    last few weeks</a> about whether sleep deprivation might increase
     (<a
-      href="https://www.lesswrong.com/posts/HvcZmKS43SLCbJvRb/theses-on-sleep#:~:text=Sleep%20deprivation%20appears%20to%20increase%20BDNF">Alexey’s
-      position</a>) or decrease (<a
-      href="https://www.lesswrong.com/posts/sbcmACvB6DqYXYidL/counter-theses-on-sleep#:~:text=is%20not%20linear.-,Chronic%20sleep%20deprivation%20might%20be%20associated%20with%20*decreased*%20BDNF%20expression,-%2C%20as%20shown%20by">Natália’s
-      position</a>) the amount of BDNF in your brain. The two have been
+    href="https://www.lesswrong.com/posts/HvcZmKS43SLCbJvRb/theses-on-sleep#:~:text=Sleep%20deprivation%20appears%20to%20increase%20BDNF">Alexey’s
+    position</a>) or decrease (<a
+    href="https://www.lesswrong.com/posts/sbcmACvB6DqYXYidL/counter-theses-on-sleep#:~:text=is%20not%20linear.-,Chronic%20sleep%20deprivation%20might%20be%20associated%20with%20*decreased*%20BDNF%20expression,-%2C%20as%20shown%20by">Natália’s
+    position</a>) the amount of BDNF in your brain. The two have been
     pushing back and forth on this point and are now stuck drawing
     causal arrows between depression ←→ more sleep ←→ more/less BDNF.
     What can we contribute to this?</p>
-  <ol class="incremental" type="1">
+    <ol class="incremental" type="1">
     <li>According to the “neurotrophin balance is all you need”
-      perspective, the point is moot. Unless you have some reason to
-      believe that you have too little BDNF by default, you probably don’t
-      even <em>want</em> more BDNF. Sleeping more or less doesn’t matter
-      if you don’t know if either affects the balance in the right
-      way.</li>
-    <li>The papers that Alexey lists (<a href="https://pubmed.ncbi.nlm.nih.gov/31782101/"><sup>[35]</sup></a>,
-      <a href="https://www.sciencedirect.com/science/article/abs/pii/S0924933817324033"><sup>[36]</sup></a>,
-      <a href="https://www.nature.com/articles/mp201310"><sup>[37]</sup></a>,
-      <a href="https://academic.oup.com/sleep/article/42/Supplement_1/A356/5451256"><sup>[38]</sup></a>)
-      are all kind of… “meh”. After reading them semi-carefully, I come
-      out mostly confused. <a href="https://www.nature.com/articles/mp201310"><sup>[39]</sup></a>
-      finds lower BDNF serum levels in people who are tired and fatigued,
-      but they split their sample post-hoc between smokers and
-      non-smokers. In the discussion, they hypothesize that acute sleep
-      deprivation might <em>increase</em> BDNF (they cite <a href="https://www.nature.com/articles/4001897">this
-        paper</a> which
-      looks a bit more trustworthy) and that prolonged sleep deprivation
-      <em>decreases</em> it. So depending on how much BDNF you want in
-      your brain, you might want to …
-    </li>
+    perspective, the point is moot. Unless you have some reason to
+    believe that you have too little BDNF by default, you probably don’t
+    even <em>want</em> more BDNF. Sleeping more or less doesn’t matter
+    if you don’t know if either affects the balance in the right
+    way.</li>
+    <li>The papers that Alexey lists (<a
+    href="https://pubmed.ncbi.nlm.nih.gov/31782101/">ref</a>, <a
+    href="https://www.sciencedirect.com/science/article/abs/pii/S0924933817324033">ref</a>,
+    <a href="https://www.nature.com/articles/mp201310">ref</a>, <a
+    href="https://academic.oup.com/sleep/article/42/Supplement_1/A356/5451256">ref</a>)
+    are all kind of… “meh”. After reading them semi-carefully, I come
+    out mostly confused. <a
+    href="https://www.nature.com/articles/mp201310">ref</a> finds lower
+    BDNF serum levels in people who are tired and fatigued, but they
+    split their sample post-hoc between smokers and non-smokers. In the
+    discussion, they hypothesize that acute sleep deprivation might
+    <em>increase</em> BDNF (they cite <a
+    href="https://www.nature.com/articles/4001897">this paper</a> which
+    looks a bit more trustworthy) and that prolonged sleep deprivation
+    <em>decreases</em> it. So depending on how much BDNF you want in
+    your brain, you might want to …</li>
     <li>… no, but really, those papers are all kind of “meh”. I don’t
-      want to slight any of my fellow researchers (I’m sure they’ve worked
-      hard on this), but the results are not solid enough to conclusively
-      arbitrate <em>any</em> high-level debate. Let’s wait five to ten
-      years and <a href="https://slatestarcodex.com/2014/12/12/beware-the-man-of-one-study/">see
-        if we can get a meta-analysis</a>. And then we can get back to the
-      discussion.</li>
-  </ol>
-  <p>Thus our excursion into the fascinating world of molecular
+    want to slight any of my fellow researchers (I’m sure they’ve worked
+    hard on this), but the results are not solid enough to conclusively
+    arbitrate <em>any</em> high-level debate. Let’s wait five to ten
+    years and <a
+    href="https://slatestarcodex.com/2014/12/12/beware-the-man-of-one-study/">see
+    if we can get a meta-analysis</a>. And then we can get back to the
+    discussion.</li>
+    </ol>
+    <p>Thus our excursion into the fascinating world of molecular
     neuroscience comes to an end. If you happen to be an expert in that
     field, please don’t be upset about the simplifications I made, and
     please let me know if I got anything wrong. If you are an excited
@@ -909,74 +976,22 @@ util.cos_sim(corpus_embeddings, serotonin_embedding)</code></pre>
     Anyone else who is ready to move on - consider signing up for my
     newsletter to get (free!) notifications about new posts I publish
     straight to your inbox. See you next time (:</p>
-  <p>As a “control” condition, I also compute the similarity with the
-    word “socks”, thinking that there <a href="https://neuro-socks.com/">should not be anything in
-      neuroscience</a> that has a lot of semantic similarity with
+    <p>As a “control” condition, I also compute the similarity with the
+    word “socks”, thinking that there <a
+    href="https://neuro-socks.com/">should not be anything in
+    neuroscience</a> that has a lot of semantic similarity with
     socks.</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_118.png" />The
-    highest scoring paper is “<a href="https://www.biorxiv.org/content/10.1101/318758v1">Estimating
-      the sensorimotor components of cybersickness</a>”.</p>
-  <p>Well, that’s awkward. I forgot about cognitive neuroscience, and
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_118.png" />The
+    highest scoring paper is “<a
+    href="https://www.biorxiv.org/content/10.1101/318758v1">Estimating
+    the sensorimotor components of cybersickness</a>”.</p>
+    <p>Well, that’s awkward. I forgot about cognitive neuroscience, and
     it turns out that the link “socks→feet→sensorimotor processing” is
     strong enough to make a portion of the field light up.</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_4.jpeg" /></p>
-  <div class="sidenote">
-    <p>[35] </p>
-    <p>Should we tell him? He’ll probably find a way to make good use of
-      his remaining time.</p>
-  </div>
-  <div class="sidenote">
-    <p>[36] </p>
-    <p>At the <a href="https://www.cosyne.org/">Cosyne</a> 2018 <a
-        href="https://cosyne-2022.squarespace.com/s/Cosyne2018_workshops_program.pdf">workshop</a>
-      with the title “Manifold-splaining: What the theorist said to the
-      experimentalist”.</p>
-  </div>
-  <div class="sidenote">
-    <p>[37] </p>
-    <p>I want to write a full post on that at some point, but for now,
-      <a
-        href="https://slatestarcodex.com/2014/11/21/the-categories-were-made-for-man-not-man-for-the-categories/">this</a>
-      and <a href="https://www.lesswrong.com/s/SGB7Y5WERh4skwtnb">this</a>
-      is great.
-    </p>
-  </div>
-  <div class="sidenote">
-    <p>[38] </p>
-    <p><em>The answer may surprise you</em>. Hint: The average
-      neuroscientist does <em>not</em> know what “a topological space with
-      the property that each point has a neighborhood that is homeomorphic
-      to an open subset of n-dimensional Euclidean space” is.</p>
-  </div>
-  <div class="sidenote">
-    <p>[39] </p>
-    <p>I want to write a full post on that at some point, but for now,
-      <a
-        href="https://slatestarcodex.com/2014/11/21/the-categories-were-made-for-man-not-man-for-the-categories/">this</a>
-      and <a href="https://www.lesswrong.com/s/SGB7Y5WERh4skwtnb">this</a>
-      is great.
-    </p>
-  </div>
-  <div class="sidenote">
-    <p>[26] </p>
-    <p>(Similarly, PLC-γ, Shc, Grb2, Gab1, … share the property of being
-      written in p̴͓̂͘á̴̻͌s̶̻̗͋͑ṯ̸̹̈́̌à̶̳).</p>
-  </div>
-  <div class="sidenote">
-    <p>[27] </p>
-    <p>Because effectively, all of those things might happen almost
-      simultaneously.</p>
-  </div>
-  <div class="sidenote">
-    <p>[29] </p>
-    <p>I’m calling this move the “reversed Olah”.</p>
-  </div>
-  <div class="sidenote">
-    <p>[30] </p>
-    <p>That’s how <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3517813">endocannabinoids</a>
-      work, I think.</p>
-  </div>
-  <div class="debug-grid"></div>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_4.jpeg" /></p>
+    <div class="debug-grid"></div>
   <script src="../../index.js"></script>
 </body>
 

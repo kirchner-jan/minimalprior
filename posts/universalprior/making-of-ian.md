@@ -1,5 +1,5 @@
 ---
-title: Making of #IAN
+title: 'Making of #IAN'
 subtitle: TL;DR I fine-tuned a large language model on my personal notes and embedded the resulting model in my everyday workflow. Personal experience, Roam…
 author: Jan Kirchner
 author-url: "https://kirchner-jan.github.io/minimalprior/"
@@ -9,7 +9,8 @@ date: 2021-08-29
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_4.gif)“ _Show, don’t tell._ ” - probably said originally by someone with bad hearing
 
-### Building a 'digital person'.[^1]
+### Building a 'digital person'.
+[^1]
 
 Holden Karnofsky asks you to [imagine yourself as a digital person](https://www.cold-takes.com/imagining-yourself-as-a-digital-person-two-sketches/) \- a copy of yourself that runs on a computer and that has the potential to vastly increase both productivity and output. An easily deployable digital person has the thrilling potential to not only reduce the effort a task requires (like other productivity tools might), but additionally to scale up and dramatically raise the ceiling of your output.
 

@@ -21,7 +21,7 @@ Since those innocent days, I have come to appreciate that building a biological 
 
   1. First off - **even before you're done building, the brain must make itself useful**. And it's not just "occasionally helping with an arithmetic problem" - I'm talking about "breathing", "eating", "coordinating limbs"... If the environment is dangerous, then also "running away" or "fighting" is on the menu. And you need to do these things _reliably_ \- lapsing means death.
   1. Second - **every neuron only has access to** _ **local**_ **information**. In particular, every neuron only receives input from a limited number of other neurons (usually < 10,000 out of ~80 billion). From that information, a neuron needs to infer what its role in the developing brain ought to be. Consequently, every solution you come up with must be "symmetric" in the sense that you can swap two neurons, and the end result must still work. ([It turns out the two neurons don't even have to be from the same species](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6899440/)).
-  1. Third - **there is no clear separation between "the thing you're building" and "the thing that is doing the building"[^1]**. [The brain is making itself](https://generative.ink/prophecies/#:~:text=The%20message%20had%20become%20the%20medium) with only rough guidance from genes and the environment (see [this post](https://kirchner-jan.github.io/minimalprior/posts/universalprior/how-to-build-a-mind-neuroscience?s=w) I wrote on the topic a while ago).
+  1. Third - **there is no clear separation between "the thing you're building" and "the thing that is doing the building"**[^1]. [The brain is making itself](https://generative.ink/prophecies/#:~:text=The%20message%20had%20become%20the%20medium) with only rough guidance from genes and the environment (see [this post](https://kirchner-jan.github.io/minimalprior/posts/universalprior/how-to-build-a-mind-neuroscience?s=w) I wrote on the topic a while ago).
 
 
 
@@ -149,7 +149,7 @@ Instead of doing more hedging, I’ll stick my neck out even further and talk ab
 
 What do I believe now about “the brain that builds itself”?
 
-  1. A straightforward way to obtain structured connectivity in a neural circuit is to start with a _[greedy](https://en.wikipedia.org/wiki/Greedy_algorithm)_[ strategy](https://en.wikipedia.org/wiki/Greedy_algorithm) (connect as many things as possible), followed by an **autoregressive[^4] learning rule that amplifies structure and prunes away the noise**.
+  1. A straightforward way to obtain structured connectivity in a neural circuit is to start with a _[greedy](https://en.wikipedia.org/wiki/Greedy_algorithm)_[ strategy](https://en.wikipedia.org/wiki/Greedy_algorithm) (connect as many things as possible), followed by an **autoregressive**[^4] **learning rule that amplifies structure and prunes away the noise**.
   1. Through successive amplification of structure and pruning of noise, **the developmental process converges to a fixed point** , defined as the point where the learning rule produces no more competition.
 
 

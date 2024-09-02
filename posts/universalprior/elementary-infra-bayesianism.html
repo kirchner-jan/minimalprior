@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="" >
 
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="Jan Kirchner" />
-  <meta name="dcterms.date" content="2022-05-08" />
-  <title>Elementary Infra-Bayesianism</title>
-  <link rel="stylesheet" href="../../reset.css" />
-  <link rel="stylesheet" href="../../index.css" />
-</head>
+    <meta name="author" content="Jan Kirchner" />
+      <meta name="dcterms.date" content="2022-05-08" />
+        <title>Elementary Infra-Bayesianism</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../index.css" />
+      </head>
 
 <body>
-  <table class="header">
+    <table class="header">
     <tr>
       <td colspan="2" rowspan="2" class="width-auto">
         <h1 class="title"><a href="https://kirchner-jan.github.io/minimalprior/"
             style="text-decoration: none; color: inherit;">Elementary
-            Infra-Bayesianism</a></h1>
+Infra-Bayesianism</a></h1>
         <span class="subtitle">TL;DR I got nerd-sniped into working
-          through some rather technical work in AI Safety. Here’s my best guess of
-          what is going on. Imprecise probabilities…</span>
+through some rather technical work in AI Safety. Here’s my best guess of
+what is going on. Imprecise probabilities…</span>
       </td>
       <th>Updated</th>
       <td class="width-min"><time style="white-space: pre;">2022-05-08</time></td>
@@ -29,123 +29,124 @@
     <tr>
       <th class="width-min">Author</th>
       <td class="width-auto"><a href="https://kirchner-jan.github.io/minimalprior/">Jan
-          Kirchner</a></td>
+Kirchner</a></td>
     </tr>
   </table>
-  <nav id="TOC" role="doc-toc">
-    <ul class="incremental">
-      <li><a href="#why-infra-bayesianism" id="toc-why-infra-bayesianism"><strong>Why
-            Infra-Bayesianism?</strong></a></li>
-      <li><a href="#uncertain-updates" id="toc-uncertain-updates"><strong>Uncertain
-            updates</strong></a></li>
-      <li><a href="#fundamentally-uncertain-updates" id="toc-fundamentally-uncertain-updates"><strong>Fundamentally
-            uncertain updates</strong></a></li>
-      <li><a href="#fundamentally-_-dangerous_-updates"
-          id="toc-fundamentally-_-dangerous_-updates"><strong>Fundamentally</strong>
-          _ <strong>dangerous</strong>_ <strong>updates</strong></a></li>
-      <li><a href="#closing-thoughts" id="toc-closing-thoughts"><strong>Closing
-            thoughts</strong></a></li>
-    </ul>
+      <nav id="TOC" role="doc-toc">
+        <ul class="incremental">
+        <li><a href="#why-infra-bayesianism"
+        id="toc-why-infra-bayesianism"><strong>Why
+        Infra-Bayesianism?</strong></a></li>
+        <li><a href="#uncertain-updates"
+        id="toc-uncertain-updates"><strong>Uncertain
+        updates</strong></a></li>
+        <li><a href="#fundamentally-uncertain-updates"
+        id="toc-fundamentally-uncertain-updates"><strong>Fundamentally
+        uncertain updates</strong></a></li>
+        <li><a href="#fundamentally-_-dangerous_-updates"
+        id="toc-fundamentally-_-dangerous_-updates"><strong>Fundamentally</strong>
+        _ <strong>dangerous</strong>_ <strong>updates</strong></a></li>
+        <li><a href="#closing-thoughts"
+        id="toc-closing-thoughts"><strong>Closing
+        thoughts</strong></a></li>
+        </ul>
   </nav>
-  <p><strong>Short summary</strong> : I apply the updating equation
+    <p><strong>Short summary</strong> : I apply the updating equation
     from Infra-Bayesianism to a concrete example of an Infradistribution
     and illustrate the process. When we “care” a lot for things that are
     unlikely given what we’ve observed before, we get updates that are
     extremely sensitive to outliers.</p>
-  <hr />
-  <p>I’ve <a
-      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/the-greedy-doctor-problem?s=w">written
-      previously</a> on how to act when confronted with something smarter
+    <hr />
+    <p>I’ve <a
+    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/the-greedy-doctor-problem?s=w">written
+    previously</a> on how to act when confronted with something smarter
     than yourself. When in such a precarious situation, it is difficult
     to trust “the other”; they might dispense their wisdom in a way that
-    steers you to their benefit. <a href="https://arbital.com/p/Vinge_principle">In general</a>, we’re
+    steers you to their benefit. <a
+    href="https://arbital.com/p/Vinge_principle">In general</a>, we’re
     screwed.</p>
-  <p>But there are ideas for a constrained set-up that <a href="https://openai.com/blog/debate/">forces “the other” to
-      explain
-      itself and point out potential flaws in its arguments</a>. We might
+    <p>But there are ideas for a constrained set-up that <a
+    href="https://openai.com/blog/debate/">forces “the other” to explain
+    itself and point out potential flaws in its arguments</a>. We might
     thus leverage “the other”’s ingenuity against itself by slowing down
     its reasoning to our pace. “The other” would no longer be an oracle
     with <a href="https://en.wikipedia.org/wiki/Pythia">prophecies that
-      might or might not kill us</a> but instead a teacher who lets us see
+    might or might not kill us</a> but instead a teacher who lets us see
     things we otherwise couldn’t.</p>
-  <p>While that idea is nice, there is a severe flaw at its core: <a
-      href="https://www.alignmentforum.org/posts/PJLABqQ962hZEqhdB/debate-update-obfuscated-arguments-problem">obfuscation</a>.
+    <p>While that idea is nice, there is a severe flaw at its core: <a
+    href="https://www.alignmentforum.org/posts/PJLABqQ962hZEqhdB/debate-update-obfuscated-arguments-problem">obfuscation</a>.
     By making the argument sufficiently long and complicated, “the
     other” can sneak a false conclusion past our defenses. Forcing “the
     other” to lay out its reasoning, thus, is not a foolproof solution.
     But (<a
-      href="https://www.alignmentforum.org/posts/huNvfttDpxCApC3xZ/an-132-complex-and-subtly-incorrect-arguments-as-an-obstacle#:~:text=I%E2%80%99m%20not%20really%20sure%20whether%20I%20expect%20this%20to%20be%20a%20problem%20in%20practice">as
-      some have argued</a>), it’s unclear whether this will be a problem
+    href="https://www.alignmentforum.org/posts/huNvfttDpxCApC3xZ/an-132-complex-and-subtly-incorrect-arguments-as-an-obstacle#:~:text=I%E2%80%99m%20not%20really%20sure%20whether%20I%20expect%20this%20to%20be%20a%20problem%20in%20practice">as
+    some have argued</a>), it’s unclear whether this will be a problem
     in practice.</p>
-  <p>Why am I bringing this up? No reason in particular.</p>
-  <h2 id="why-infra-bayesianism"><strong>Why
-      Infra-Bayesianism?</strong></h2>
-  <p>Engaging with the work of Vanessa Kosoy is a <a
-      href="https://www.alignmentforum.org/posts/SzrmsbkqydpZyPuEh/my-take-on-vanessa-kosoy-s-take-on-agi-safety">rite</a>
-    <a href="https://www.alignmentforum.org/posts/Zi7nmuSmBFbQWgFBa/infra-bayesianism-unwrapped">of</a>
+    <p>Why am I bringing this up? No reason in particular.</p>
+    <h2 id="why-infra-bayesianism"><strong>Why
+    Infra-Bayesianism?</strong></h2>
+    <p>Engaging with the work of Vanessa Kosoy is a <a
+    href="https://www.alignmentforum.org/posts/SzrmsbkqydpZyPuEh/my-take-on-vanessa-kosoy-s-take-on-agi-safety">rite</a>
     <a
-      href="https://www.alignmentforum.org/posts/beLgLr6edbZw4koh2/an-143-how-to-make-embedded-agents-that-reason">passage</a>
-    in the AI Safety space. Why is that?
-  </p>
-  <ul class="incremental">
-    <li>
-      <p>The <a
-          href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/pop-culture-alignment-research-and?s=w#:~:text=going%20on%20here%3F-,When,-I%20put%20my">pessimist</a>
-        answer is that alignment is really, really difficult, and if you
-        can’t understand complicated math, you can’t contribute.</p>
-    </li>
-    <li>
-      <p>The <a
-          href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/im-not-getting-in-that-van?s=w#:~:text=It%27s%20driving%20a%20fire%20engine%20through%20the%20desert%20and%20rejoicing">optimist</a>
-        take is that math is fun, and (a certain type of) person gets nerd
-        sniped by this kind of thing.</p>
-    </li>
-    <li>
-      <p>The realist take naturally falls somewhere in between.
-        Complicated math can be important <em>and</em> enjoyable. It’s okay
-        to have fun with it.</p>
-    </li>
-  </ul>
-  <p>But being complicated is (in itself) not a mark of quality. <a
-      href="https://en.wikiquote.org/wiki/Richard_Feynman#:~:text=You%20know%2C%20I%20couldn%27t%20do%20it.%20I%20couldn%27t%20reduce%20it%20to%20the%20freshman%20level.%20That%20means%20we%20really%20don%27t%20understand%20it.">If
-      you can’t explain it, you don’t understand it</a>. So here goes my
+    href="https://www.alignmentforum.org/posts/Zi7nmuSmBFbQWgFBa/infra-bayesianism-unwrapped">of</a>
+    <a
+    href="https://www.alignmentforum.org/posts/beLgLr6edbZw4koh2/an-143-how-to-make-embedded-agents-that-reason">passage</a>
+    in the AI Safety space. Why is that?</p>
+    <ul class="incremental">
+    <li><p>The <a
+    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/pop-culture-alignment-research-and?s=w#:~:text=going%20on%20here%3F-,When,-I%20put%20my">pessimist</a>
+    answer is that alignment is really, really difficult, and if you
+    can’t understand complicated math, you can’t contribute.</p></li>
+    <li><p>The <a
+    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/im-not-getting-in-that-van?s=w#:~:text=It%27s%20driving%20a%20fire%20engine%20through%20the%20desert%20and%20rejoicing">optimist</a>
+    take is that math is fun, and (a certain type of) person gets nerd
+    sniped by this kind of thing.</p></li>
+    <li><p>The realist take naturally falls somewhere in between.
+    Complicated math can be important <em>and</em> enjoyable. It’s okay
+    to have fun with it.</p></li>
+    </ul>
+    <p>But being complicated is (in itself) not a mark of quality. <a
+    href="https://en.wikiquote.org/wiki/Richard_Feynman#:~:text=You%20know%2C%20I%20couldn%27t%20do%20it.%20I%20couldn%27t%20reduce%20it%20to%20the%20freshman%20level.%20That%20means%20we%20really%20don%27t%20understand%20it.">If
+    you can’t explain it, you don’t understand it</a>. So here goes my
     attempt at “Elementary Infrabayesianism”, where I motivate a portion
     of Infrabayesianism using pretty pictures and high school
     mathematic<sup>[1]</sup>.</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[1] </p>
     <p><a
-        href="https://www.quora.com/Why-do-the-French-love-mathematics-or-consider-it-of-such-import-and-therefore-teach-it-with-such-rigor-to-such-an-extent">French
-        high school</a>, though, not <a
-        href="https://www.businessinsider.com/exchange-students-american-high-schools-easier-2017-3">American
-        high school</a>.</p>
-  </div>
-  <h2 id="uncertain-updates"><strong>Uncertain updates</strong></h2>
-  <p>Imagine it’s late in the night, the lights are off, and you are
+    href="https://www.quora.com/Why-do-the-French-love-mathematics-or-consider-it-of-such-import-and-therefore-teach-it-with-such-rigor-to-such-an-extent">French
+    high school</a>, though, not <a
+    href="https://www.businessinsider.com/exchange-students-american-high-schools-easier-2017-3">American
+    high school</a>.</p>
+    </div>
+    <h2 id="uncertain-updates"><strong>Uncertain updates</strong></h2>
+    <p>Imagine it’s late in the night, the lights are off, and you are
     trying to find your smartphone. You cannot turn on the lights, and
     you are having a bit of trouble seeing properly<sup>[2]</sup>. You
     have a vague sense about where your smartphone should be (your
     prior, panel <strong>a</strong> ). Then you see a red blinking light
     from your smartphone (sensory evidence, panel <strong>b</strong> ).
-    Since your brain is <a href="https://www.sciencedirect.com/science/article/abs/pii/S0928425704000841">really
-      good at this type of thing</a>, you integrate the sensory evidence
+    Since your brain is <a
+    href="https://www.sciencedirect.com/science/article/abs/pii/S0928425704000841">really
+    good at this type of thing</a>, you integrate the sensory evidence
     with your prior optimally<sup>[3]</sup> to obtain an improved sense
     of where your smartphone might be (posterior, panel
-    <strong>c</strong> ).
-  </p>
-  <div class="sidenote">
+    <strong>c</strong> ).</p>
+    <div class="sidenote">
     <p>[2] </p>
     <p>If there’s been alcohol involved, I want to know nothing of
-      it.</p>
-  </div>
-  <div class="sidenote">
+    it.</p>
+    </div>
+    <div class="sidenote">
     <p>[3] </p>
     <p>despite your alledged disinhibited state</p>
-  </div>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_201.png" />That’s
+    </div>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_201.png" />That’s
     boring old Bayes, nothing to see here; move along.</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_202.png" /></p>
-  <p>Now let’s say you are even more uncertain about where you put
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_202.png" /></p>
+    <p>Now let’s say you are even more uncertain about where you put
     your smartphone.<sup>[4]</sup> It might be one end of the room or
     the other (bimodal prior, panel <strong>a</strong> ). You see a
     blinking light further to the right (sensory evidence, panel
@@ -153,251 +154,257 @@
     (bimodal posterior, panel <strong>c</strong> ). Importantly, by
     conserving probability mass, your belief that the phone might be on
     the left end of the room is reduced. <a
-      href="https://www.alignmentforum.org/posts/mnS2WYLCGJP2kQkRn/absence-of-evidence-is-evidence-of-absence">The
-      absence of evidence is evidence of absence</a>.
-  </p>
-  <div class="sidenote">
+    href="https://www.alignmentforum.org/posts/mnS2WYLCGJP2kQkRn/absence-of-evidence-is-evidence-of-absence">The
+    absence of evidence is evidence of absence</a>.</p>
+    <div class="sidenote">
     <p>[4] </p>
     <p>The idea that alcohol might have been involved in navigating you
-      into this situation is harder to deny.</p>
-  </div>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_203.png" />This
+    into this situation is harder to deny.</p>
+    </div>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_203.png" />This
     is <em>still</em> only boring old Bayes. To go Infra, we have to go
     weird.</p>
-  <h2 id="fundamentally-uncertain-updates"><strong>Fundamentally
-      uncertain updates</strong></h2>
-  <p>Let’s say you are <em>really, fundamentally</em> unsure about
+    <h2 id="fundamentally-uncertain-updates"><strong>Fundamentally
+    uncertain updates</strong></h2>
+    <p>Let’s say you are <em>really, fundamentally</em> unsure about
     where you put your phone. If someone were to <del>put a gun to your
-      head</del> threaten to <a
-      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/the-tale-of-gandhi-and-the-devil?s=w#:~:text=sweaters%20for%20kittens">sign
-      you up for sweaters for kittens</a> unless you give them your best
+    head</del> threaten to <a
+    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/the-tale-of-gandhi-and-the-devil?s=w#:~:text=sweaters%20for%20kittens">sign
+    you up for sweaters for kittens</a> unless you give them your best
     guess, you could not<sup>[5]</sup>.</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[5] </p>
     <p>Is this ever a reasonable assumption? I don’t know. It seems to
-      me you can always pick an <a
-        href="https://en.wikipedia.org/wiki/Prior_probability#Uninformative_priors">uninformative
-        prior</a>. But perhaps the point is that sometimes you
-      <em>should</em> acknowledge your <a
-        href="https://forum.effectivealtruism.org/posts/LdZcit8zX89rofZf3/evidence-cluelessness-and-the-long-term-hilary-greaves">cluelessness</a>.
-      Otherwise, you expose yourself to <a href="https://en.wikipedia.org/wiki/Black_swan_theory">severe
-        downside risks</a>? But I’m not convinced.
-    </p>
-  </div>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_204.png" /></p>
-  <p>This is the situation Vanessa Kosoy finds herself
+    me you can always pick an <a
+    href="https://en.wikipedia.org/wiki/Prior_probability#Uninformative_priors">uninformative
+    prior</a>. But perhaps the point is that sometimes you
+    <em>should</em> acknowledge your <a
+    href="https://forum.effectivealtruism.org/posts/LdZcit8zX89rofZf3/evidence-cluelessness-and-the-long-term-hilary-greaves">cluelessness</a>.
+    Otherwise, you expose yourself to <a
+    href="https://en.wikipedia.org/wiki/Black_swan_theory">severe
+    downside risks</a>? But I’m not convinced.</p>
+    </div>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_204.png" /></p>
+    <p>This is the situation Vanessa Kosoy finds herself
     in<sup>[6]</sup><sup>[7]</sup>. With Infra-Bayesianism, she proposes
     a theoretical framework for thinking in situations where you can’t
     (or don’t want to) specify a prior over your hypotheses.</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[6] </p>
     <p>Not the coming home drunk situation, only the fundamental
-      confusing part. Oh no, that came out wrong. What I mean is that she
-      is trying to become <em>less</em> fundamentally confused. Urgh. I’ll
-      stop digging now.</p>
-  </div>
-  <div class="sidenote">
+    confusing part. Oh no, that came out wrong. What I mean is that she
+    is trying to become <em>less</em> fundamentally confused. Urgh. I’ll
+    stop digging now.</p>
+    </div>
+    <div class="sidenote">
     <p>[7] </p>
     <p>A proper infradistribution would have to be a convex set of
-      distributions and upper complete and everything. Also, the support
-      of the Gaussians would have to be compact. But for the example I’m
-      constructing, this won’t become relevant. The edge points (the two
-      Gaussians) of the convex set fully characterize how the entire
-      convex set changes.</p>
-  </div>
-  <p>Because she is a mathematician, she is using the proper
+    distributions and upper complete and everything. Also, the support
+    of the Gaussians would have to be compact. But for the example I’m
+    constructing, this won’t become relevant. The edge points (the two
+    Gaussians) of the convex set fully characterize how the entire
+    convex set changes.</p>
+    </div>
+    <p>Because she is a mathematician, she is using the proper
     terminology while I’m using the handwavy language of Bayesian
     sensory integration:</p>
-  <ul class="incremental">
-    <li>
-      <p>a <em>signed measure</em> is a generalization of probability
-        distributions,</p>
-    </li>
-    <li>
-      <p>an <em>indicator function for a fuzzy set</em> is a
-        generalization of your observation/sensory evidence,</p>
-    </li>
-    <li>
-      <p>a continuous function g∈C(X,[0,1]) is… wait, what is
-        g?</p>
-    </li>
-  </ul>
-  <p>g tells you how much you care about stuff that happens in regions
+    <ul class="incremental">
+    <li><p>a <em>signed measure</em> is a generalization of probability
+    distributions,</p></li>
+    <li><p>an <em>indicator function for a fuzzy set</em> is a
+    generalization of your observation/sensory evidence,</p></li>
+    <li><p>a continuous function g∈C(X,[0,1]) is… wait, what is
+    g?</p></li>
+    </ul>
+    <p>g tells you how much you care about stuff that happens in regions
     that become very unlikely/impossible given the sensory evidence you
     obtain. Why should you care about that, you ask? Great question;
     let’s not care about it for now. Let’s set it equal to zero,
     g=0.</p>
-  <p>When g=0, the updating equation for our two priors, P1 and P2,
+    <p>When g=0, the updating equation for our two priors, P1 and P2,
     becomes very familiar indeed:</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_205.png" /></p>
-  <p>This is basically Bayes’ theorem applied to each prior
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_205.png" /></p>
+    <p>This is basically Bayes’ theorem applied to each prior
     separately. Still, the evidence term (the denominator) is computed
     in a wonky way<sup>[8]</sup>, but this doesn’t make much difference
     since it’s a shared scaling factor. Consistently, things also look
     very normal when using this updating rule to integrate sensory
     information. We shift our two priors towards the evidence and scale
     them proportional to how unlikely they said the evidence is.</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[8] </p>
-    <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_210.png" />caption…</p>
-  </div>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_206.png" />While
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_210.png" />caption…</p>
+    </div>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_206.png" />While
     this picture looks almost identical to the previous section, notice
     that the posterior is still split in two! Thus, we can still tell
     which one of our initial guesses turned out to be “more
     accurate”.</p>
-  <h2 id="fundamentally-_-dangerous_-updates"><strong>Fundamentally</strong>
+    <h2
+    id="fundamentally-_-dangerous_-updates"><strong>Fundamentally</strong>
     _ <strong>dangerous</strong>_ <strong>updates</strong></h2>
-  <p>Alright, you know where this is going. We will have to start
+    <p>Alright, you know where this is going. We will have to start
     caring about things that become less likely after observing the
     evidence. Why we have to care is a bit hard to motivate; Vanessa
     Kossoy and Diffractor motivate in <a
-      href="https://www.alignmentforum.org/s/CmrW8fCmSLK7E25sa/p/YAa4qcMyoucRS2Ykr#:~:text=will%20confuse%20you.-,First,-%2C%20what%20sorts%20of">three
-      parts</a> where I don’t even get the first
+    href="https://www.alignmentforum.org/s/CmrW8fCmSLK7E25sa/p/YAa4qcMyoucRS2Ykr#:~:text=will%20confuse%20you.-,First,-%2C%20what%20sorts%20of">three
+    parts</a> where I don’t even get the first
     part<sup>[9]</sup><sup>[10]</sup>.</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[9] </p>
     <p>Despite having read it at least twice!</p>
-  </div>
-  <div class="sidenote">
+    </div>
+    <div class="sidenote">
     <p>[10] </p>
     <p>A more “natural” way to motivate it might be to talk about
-      possible worlds and <a href="https://www.alignmentforum.org/tag/updateless-decision-theory">updateless
-        decision theory</a>, but this is something that you apparently get
-      <em>out</em> of Infrabayesianism, so we don’t want to use it to
-      motivate it.
-    </p>
-  </div>
-  <p>Instead, I will motivate why you might care about things that
+    possible worlds and <a
+    href="https://www.alignmentforum.org/tag/updateless-decision-theory">updateless
+    decision theory</a>, but this is something that you apparently get
+    <em>out</em> of Infrabayesianism, so we don’t want to use it to
+    motivate it.</p>
+    </div>
+    <p>Instead, I will motivate why you might care about things that
     seem very unlikely given your evidence by revealing more information
     about the thought experiment:</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_207.png" /></p>
-  <p>It’s not so much that you <em>can’t</em> give your best guess
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_207.png" /></p>
+    <p>It’s not so much that you <em>can’t</em> give your best guess
     estimate about where you put your smartphone. Rather, you
     <em>dare</em> not. Getting this wrong would be, like, <em>really
-      bad</em>. You might be unsure whether it’s even your phone that’s
+    bad</em>. You might be unsure whether it’s even your phone that’s
     blinking or if it’s the phone of the other person sleeping in the
     room<sup>[11]</sup>. Or perhaps the bright red light you see is the
     <a
-      href="https://astralcodexten.substack.com/p/deceptively-aligned-mesa-optimizers?s=r#:~:text=prime%20minister.-,So,-%3A%20suppose%20we%20train">bulbous
-      red nose</a> of somebody else sleeping in the room. Getting the
+    href="https://astralcodexten.substack.com/p/deceptively-aligned-mesa-optimizers?s=r#:~:text=prime%20minister.-,So,-%3A%20suppose%20we%20train">bulbous
+    red nose</a> of somebody else sleeping in the room. Getting the
     location of your smartphone wrong would be messy. Better not risk
-    it. We’ll set g=1.
-  </p>
-  <div class="sidenote">
+    it. We’ll set g=1.</p>
+    <div class="sidenote">
     <p>[11] </p>
     <p>The story is coming together. This is why you can’t turn on the
-      light, btw.</p>
-  </div>
-  <p>The update rule doesn’t change too much at first
+    light, btw.</p>
+    </div>
+    <p>The update rule doesn’t change too much at first
     glance<sup>[12]</sup>:</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[12] </p>
     <p>Actually, in this particular example, it turns out that</p>
-  </div>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_208.png" />Again,
+    </div>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_208.png" />Again,
     the denominator changes from one wonky thing (P+) to another (P−);
     but that still doesn’t matter since it’s the same for both
     equations.</p>
-  <p>But there is a ϰ that showed up out of nowhere! ϰ is a variable
+    <p>But there is a ϰ that showed up out of nowhere! ϰ is a variable
     that tells us how good our distribution is at <em>explaining things
-      we did not get any evidence for</em><sup>[13]</sup>. Intuitively,
+    we did not get any evidence for</em><sup>[13]</sup>. Intuitively,
     you can tell that this will favor the prior distribution that was
     previously punished for not explaining the observation. And indeed,
     when we run the simulation:</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[13] </p>
     <p>You can’t find any ϰ in Vanessa Kosoy’s paper because she is
-      thinking more generally about Banach spaces and a situation where
-      there is no <a
-        href="https://en.wikipedia.org/wiki/Radon%E2%80%93Nikodym_theorem#Radon%E2%80%93Nikodym_derivative">Radon-Nikodyn
-        derivative</a>. But if we have a density for our measures, we can
-      write ϰ as</p>
-  </div>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_209.png" /></p>
-  <p>One of the two “distributions”<sup>[14]</sup> is taking off! Even
+    thinking more generally about Banach spaces and a situation where
+    there is no <a
+    href="https://en.wikipedia.org/wiki/Radon%E2%80%93Nikodym_theorem#Radon%E2%80%93Nikodym_derivative">Radon-Nikodyn
+    derivative</a>. But if we have a density for our measures, we can
+    write ϰ as</p>
+    </div>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_209.png" /></p>
+    <p>One of the two “distributions”<sup>[14]</sup> is taking off! Even
     though the corresponding prior was bad at explaining the
     observation, the updating still <em>strongly</em> increases the mass
     associated with that hypothesis.</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[14] </p>
     <p>I’m still calling them distributions, although we’ve left that
-      territory already in the last section. More appropriate would be
-      something like “density function of the signed measure” or
-      “Radon-Nikodym derivative”.</p>
-  </div>
-  <p>Intuitively this translates into something like:</p>
-  <blockquote>
+    territory already in the last section. More appropriate would be
+    something like “density function of the signed measure” or
+    “Radon-Nikodym derivative”.</p>
+    </div>
+    <p>Intuitively this translates into something like:</p>
+    <blockquote>
     <p>You are unsure about the location of your smartphone (and
-      mortally afraid to get it wrong). You follow the red blinking light,
-      but you never discard your alternative hypothesis that the
-      smartphone might be at the other end of the room. At the slightest
-      indication that something is off you’ll discard all the information
-      you have collected and start the search from scratch.</p>
-  </blockquote>
-  <p>This is a <em>very</em> cautious strategy, and it might be
+    mortally afraid to get it wrong). You follow the red blinking light,
+    but you never discard your alternative hypothesis that the
+    smartphone might be at the other end of the room. At the slightest
+    indication that something is off you’ll discard all the information
+    you have collected and start the search from scratch.</p>
+    </blockquote>
+    <p>This is a <em>very</em> cautious strategy, and it might be
     appropriate when you’re in dangerous domains with the potential for
     catastrophic outliers, basically what Nassim Taleb calls <a
-      href="https://en.wikipedia.org/wiki/The_Black_Swan:_The_Impact_of_the_Highly_Improbable">Black
-      Swan</a> events. I’m not sure how <em>productive</em> this strategy
+    href="https://en.wikipedia.org/wiki/The_Black_Swan:_The_Impact_of_the_Highly_Improbable">Black
+    Swan</a> events. I’m not sure how <em>productive</em> this strategy
     is, though; noise might dramatically mess up your updates at some
     point.</p>
-  <h2 id="closing-thoughts"><strong>Closing thoughts</strong></h2>
-  <p>This concludes the introduction to Elementary Infrabayesianism. I
+    <h2 id="closing-thoughts"><strong>Closing thoughts</strong></h2>
+    <p>This concludes the introduction to Elementary Infrabayesianism. I
     realize that I have only scratched the surface of what’s in <a
-      href="https://www.lesswrong.com/s/CmrW8fCmSLK7E25sa">the
-      sequence</a>, and there is <a
-      href="https://www.alignmentforum.org/posts/gHgs2e2J5azvGFatb/infra-bayesian-physicalism-a-formal-theory-of-naturalized">more</a>
-    coming <a href="https://www.alignmentforum.org/posts/PrYbdKcj89f8swCkr/infra-topology">out</a>
+    href="https://www.lesswrong.com/s/CmrW8fCmSLK7E25sa">the
+    sequence</a>, and there is <a
+    href="https://www.alignmentforum.org/posts/gHgs2e2J5azvGFatb/infra-bayesian-physicalism-a-formal-theory-of-naturalized">more</a>
+    coming <a
+    href="https://www.alignmentforum.org/posts/PrYbdKcj89f8swCkr/infra-topology">out</a>
     every other month, but letting yourself get nerd-sniped is just
     about as important as being able to <a
-      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/via-productiva?s=w#:~:text=Don%27t%20fight%20the%20Hydra.">stop
-      working on something and publish</a>. I hope what I wrote here is
+    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/via-productiva?s=w#:~:text=Don%27t%20fight%20the%20Hydra.">stop
+    working on something and publish</a>. I hope what I wrote here is
     helpful to some, particularly in conjunction with the other
     explanations on the topic
     (<sup>[15]</sup>(https://www.alignmentforum.org/posts/SzrmsbkqydpZyPuEh/my-take-on-vanessa-kosoy-s-take-on-agi-safety)
     <sup>[16]</sup>(https://www.alignmentforum.org/posts/Zi7nmuSmBFbQWgFBa/infra-bayesianism-unwrapped)
     <sup>[17]</sup>(https://www.alignmentforum.org/posts/beLgLr6edbZw4koh2/an-143-how-to-make-embedded-agents-that-reason)),
-    which also go beyond the introduction.
-  </p>
-  <div class="sidenote">
+    which also go beyond the introduction.</p>
+    <div class="sidenote">
     <p>[15] </p>
     <p><a
-        href="https://www.quora.com/Why-do-the-French-love-mathematics-or-consider-it-of-such-import-and-therefore-teach-it-with-such-rigor-to-such-an-extent">French
-        high school</a>, though, not <a
-        href="https://www.businessinsider.com/exchange-students-american-high-schools-easier-2017-3">American
-        high school</a>.</p>
-  </div>
-  <div class="sidenote">
+    href="https://www.quora.com/Why-do-the-French-love-mathematics-or-consider-it-of-such-import-and-therefore-teach-it-with-such-rigor-to-such-an-extent">French
+    high school</a>, though, not <a
+    href="https://www.businessinsider.com/exchange-students-american-high-schools-easier-2017-3">American
+    high school</a>.</p>
+    </div>
+    <div class="sidenote">
     <p>[16] </p>
     <p>If there’s been alcohol involved, I want to know nothing of
-      it.</p>
-  </div>
-  <div class="sidenote">
+    it.</p>
+    </div>
+    <div class="sidenote">
     <p>[17] </p>
     <p>despite your alledged disinhibited state</p>
-  </div>
-  <p>I’m afraid at this point I’m obliged to add a hot take on what
+    </div>
+    <p>I’m afraid at this point I’m obliged to add a hot take on what
     all of this means for AI Safety. I’m not sure. I can tell myself a
     story about how being <em>very careful</em> about how quickly you
     discard alternative hypotheses/narrow down the hypothesis space is
     important. I can also see the outline of how this framework ties in
-    with <a href="https://www.lesswrong.com/tag/updateless-decision-theory">fancy
-      decision theory</a>. But I still feel like I only scratched the
+    with <a
+    href="https://www.lesswrong.com/tag/updateless-decision-theory">fancy
+    decision theory</a>. But I still feel like I only scratched the
     surface of what’s there. I’d really like to get a better grasp of
     that <a
-      href="https://www.lesswrong.com/s/CmrW8fCmSLK7E25sa/p/zB4f7QqKhBHa5b37a#:~:text=to%20formalize%20the%20%22-,Nirvana,-trick%22%20(elaborated%20below">Nirvana
-      trick</a>, but timelines are short and there is a lot out there to
+    href="https://www.lesswrong.com/s/CmrW8fCmSLK7E25sa/p/zB4f7QqKhBHa5b37a#:~:text=to%20formalize%20the%20%22-,Nirvana,-trick%22%20(elaborated%20below">Nirvana
+    trick</a>, but timelines are short and there is a lot out there to
     explore.</p>
-  <p>rather than</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_211.png" />caption…</p>
-  <p>for an uninformative prior.</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_212.png" /></p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_213.png" /></p>
-  <p>, since we’ve got two normalized probability distributions.</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_214.png" /></p>
-  <p>for an inframeasure (m,b).</p>
-  <div class="debug-grid"></div>
+    <p>rather than</p>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_211.png" />caption…</p>
+    <p>for an uninformative prior.</p>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_212.png" /></p>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_213.png" /></p>
+    <p>, since we’ve got two normalized probability distributions.</p>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_214.png" /></p>
+    <p>for an inframeasure (m,b).</p>
+    <div class="debug-grid"></div>
   <script src="../../index.js"></script>
 </body>
 

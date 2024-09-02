@@ -7,7 +7,7 @@ date: 2021-11-22
 ---
 
 
-_Hello and welcome to everyone who joined from Hacker News or Marginal Revolution after last week’s post[^1]! I'm Jan and I'm trying to have something interesting to say on this Substack every week. Quality and mass appeal can vary. Hope you enjoy <3_
+_Hello and welcome to everyone who joined from Hacker News or Marginal Revolution after last week’s post_[^1]_! I'm Jan and I'm trying to have something interesting to say on this Substack every week. Quality and mass appeal can vary. Hope you enjoy <3_
 
 * * *
 

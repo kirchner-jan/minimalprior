@@ -11,9 +11,9 @@ _Meta: After a fun little motivating section, this post goes pretty deep into th
 
 ####  **TL;DR:**
 
-  1. When we invest the appropriate effort, the probability of random catastrophic events tends to decrease exponentially with a rate given by the[^1] rate function.
-  1. One way of estimating the rate function is to solve an optimal control problem, where we have to determine the "least surprising" way that the catastrophic event comes about. The rate function then equals the catastrophic event's surprise (in [nats](https://en.wikipedia.org/wiki/Nat_\(unit\))).
-  1. Thus, intuitively, as we invest the effort to decrease the probability of random catastrophic events, the "difficulty" of performing an adversarial attack only increases linearly.
+1. When we invest the appropriate effort, the probability of random catastrophic events tends to decrease exponentially with a rate given by the[^1] rate function.
+1. One way of estimating the rate function is to solve an optimal control problem, where we have to determine the "least surprising" way that the catastrophic event comes about. The rate function then equals the catastrophic event's surprise (in [nats](https://en.wikipedia.org/wiki/Nat_\(unit\))).
+1. Thus, intuitively, as we invest the effort to decrease the probability of random catastrophic events, the "difficulty" of performing an adversarial attack only increases linearly.
 
 
 

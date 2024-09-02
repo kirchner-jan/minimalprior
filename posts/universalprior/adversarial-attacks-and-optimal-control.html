@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="" >
 
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="Jan Kirchner" />
-  <meta name="dcterms.date" content="2022-05-22" />
-  <title>Adversarial attacks and optimal control</title>
-  <link rel="stylesheet" href="../../reset.css" />
-  <link rel="stylesheet" href="../../index.css" />
-</head>
+    <meta name="author" content="Jan Kirchner" />
+      <meta name="dcterms.date" content="2022-05-22" />
+        <title>Adversarial attacks and optimal control</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../index.css" />
+      </head>
 
 <body>
-  <table class="header">
+    <table class="header">
     <tr>
       <td colspan="2" rowspan="2" class="width-auto">
         <h1 class="title"><a href="https://kirchner-jan.github.io/minimalprior/"
             style="text-decoration: none; color: inherit;">Adversarial
-            attacks and optimal control</a></h1>
+attacks and optimal control</a></h1>
         <span class="subtitle">TL;DR Inspired by Zillow’s recent snafu I
-          dig into the mathematics of adversarial attacks and recap some extreme
-          value theory and optimal control. TW…</span>
+dig into the mathematics of adversarial attacks and recap some extreme
+value theory and optimal control. TW…</span>
       </td>
       <th>Updated</th>
       <td class="width-min"><time style="white-space: pre;">2022-05-22</time></td>
@@ -29,353 +29,400 @@
     <tr>
       <th class="width-min">Author</th>
       <td class="width-auto"><a href="https://kirchner-jan.github.io/minimalprior/">Jan
-          Kirchner</a></td>
+Kirchner</a></td>
     </tr>
   </table>
-  <nav id="TOC" role="doc-toc">
-    <ul class="incremental">
-      <li><a href="#real-talk-and-real-estate" id="toc-real-talk-and-real-estate"><strong>Real talk and real
-            estate</strong></a></li>
-      <li><a href="#a-random-environment" id="toc-a-random-environment"><strong>A random
-            environment</strong></a></li>
-      <li><a href="#average-surprise-and-optimal-control" id="toc-average-surprise-and-optimal-control"><strong>Average
-            surprise and optimal control</strong></a></li>
-      <li><a href="#an-adversarial-environment" id="toc-an-adversarial-environment"><strong>An adversarial
-            environment</strong></a></li>
-    </ul>
+      <nav id="TOC" role="doc-toc">
+        <ul class="incremental">
+        <li><a href="#real-talk-and-real-estate"
+        id="toc-real-talk-and-real-estate"><strong>Real talk and real
+        estate</strong></a></li>
+        <li><a href="#a-random-environment"
+        id="toc-a-random-environment"><strong>A random
+        environment</strong></a></li>
+        <li><a href="#average-surprise-and-optimal-control"
+        id="toc-average-surprise-and-optimal-control"><strong>Average
+        surprise and optimal control</strong></a></li>
+        <li><a href="#an-adversarial-environment"
+        id="toc-an-adversarial-environment"><strong>An adversarial
+        environment</strong></a></li>
+        </ul>
   </nav>
-  <p><em>Meta: After a fun little motivating section, this post goes
-      pretty deep into the mathematical weeds - you might prefer to read
-      it on<a
-        href="https://www.lesswrong.com/posts/KtCJNw93KHg7MSSvw/adversarial-attacks-and-optimal-control">LessWrong</a>
-      with proper typesetting instead of my creative use of
-      Unicode.</em></p>
-  <h4 id="tldr"><strong>TL;DR:</strong></h4>
-  <ol class="incremental" type="1">
+    <p><em>Meta: After a fun little motivating section, this post goes
+    pretty deep into the mathematical weeds - you might prefer to read
+    it on<a
+    href="https://www.lesswrong.com/posts/KtCJNw93KHg7MSSvw/adversarial-attacks-and-optimal-control">LessWrong</a>
+    with proper typesetting instead of my creative use of
+    Unicode.</em></p>
+    <h4 id="tldr"><strong>TL;DR:</strong></h4>
+    <ol class="incremental" type="1">
     <li>When we invest the appropriate effort, the probability of random
-      catastrophic events tends to decrease exponentially with a rate
-      given by the<sup>[1]</sup> rate function.</li>
+    catastrophic events tends to decrease exponentially with a rate
+    given by the<sup>[1]</sup> rate function.
+    <div class="sidenote">
+    <p>[1] </p>
+    <p>(appropriately named)</p>
+    </div></li>
     <li>One way of estimating the rate function is to solve an optimal
-      control problem, where we have to determine the “least surprising”
-      way that the catastrophic event comes about. The rate function then
-      equals the catastrophic event’s surprise (in <a href="https://en.wikipedia.org/wiki/Nat_(unit)">nats</a>).</li>
+    control problem, where we have to determine the “least surprising”
+    way that the catastrophic event comes about. The rate function then
+    equals the catastrophic event’s surprise (in <a
+    href="https://en.wikipedia.org/wiki/Nat_(unit)">nats</a>).</li>
     <li>Thus, intuitively, as we invest the effort to decrease the
-      probability of random catastrophic events, the “difficulty” of
-      performing an adversarial attack only increases linearly.</li>
-  </ol>
-  <h2 id="real-talk-and-real-estate"><strong>Real talk and real
-      estate</strong></h2>
-  <p>Zillow is an American tech real-estate marketplace company that
-    recently had (what the experts call) a small <a href="https://en.wikipedia.org/wiki/SNAFU">snafu</a>. They decided
+    probability of random catastrophic events, the “difficulty” of
+    performing an adversarial attack only increases linearly.</li>
+    </ol>
+    <h2 id="real-talk-and-real-estate"><strong>Real talk and real
+    estate</strong></h2>
+    <p>Zillow is an American tech real-estate marketplace company that
+    recently had (what the experts call) a small <a
+    href="https://en.wikipedia.org/wiki/SNAFU">snafu</a>. They decided
     they were done <em>just</em> being a marketplace and started <a
-      href="https://www.businessinsider.com/ibuyer-defunct-why-did-zillow-stop-buying-houses-2021-11">buying
-      up homes, completing light renovations, and then selling them with a
-      profit</a>. The whole thing went poorly; they bought houses too
+    href="https://www.businessinsider.com/ibuyer-defunct-why-did-zillow-stop-buying-houses-2021-11">buying
+    up homes, completing light renovations, and then selling them with a
+    profit</a>. The whole thing went poorly; they bought houses too
     expensive and had to sell at a loss, <a
-      href="https://www.nytimes.com/2021/11/02/business/zillow-q3-earnings-home-flipping-ibuying.html">costing
-      the company $420 million and leading to large lay-offs</a>.</p>
-  <p>This story is not very interesting<sup>[2]</sup> for anyone who’s
+    href="https://www.nytimes.com/2021/11/02/business/zillow-q3-earnings-home-flipping-ibuying.html">costing
+    the company $420 million and leading to large lay-offs</a>.</p>
+    <p>This story is not very interesting<sup>[2]</sup> for anyone who’s
     not directly involved. The reason I remember the whole affair is a
-    <a href="https://twitter.com/ESYudkowsky/status/1456279486840721414?s=20&amp;t=kqTdW87iwMg3f9zhqYKQ_w">Twitter
-      thread</a> that also caught the attention of Eliezer:
-  </p>
-  <div class="sidenote">
+    <a
+    href="https://twitter.com/ESYudkowsky/status/1456279486840721414?s=20&amp;t=kqTdW87iwMg3f9zhqYKQ_w">Twitter
+    thread</a> that also caught the attention of Eliezer:</p>
+    <div class="sidenote">
     <p>[2] </p>
     <p>How much is $420 million again? My gut feeling is that this type
-      of snafu happens somewhere in the world every other week.</p>
-  </div>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_158.png" /></p>
-  <p>The thread lays out how Zillow relied too much on their <a
-      href="https://en.wikipedia.org/wiki/Zillow#Zestimate">automatic
-      estimates</a>, which (<a
-      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/slightly-advanced-decision-theory?s=w#:~:text=is%20coming%20from.-,Diverse%20detours.,-On%20the%20topic">ex-ante</a>)
+    of snafu happens somewhere in the world every other week.</p>
+    </div>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_158.png" /></p>
+    <p>The thread lays out how Zillow relied too much on their <a
+    href="https://en.wikipedia.org/wiki/Zillow#Zestimate">automatic
+    estimates</a>, which (<a
+    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/slightly-advanced-decision-theory?s=w#:~:text=is%20coming%20from.-,Diverse%20detours.,-On%20the%20topic">ex-ante</a>)
     looked good on average, but (ex-post) manifested in the worst
     possible way<sup>[3]</sup>. Or, in the words of the OP:</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[3] </p>
     <p>In the same way that the maximum of a set of random variables <a
-        href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/slightly-advanced-decision-theory?s=w#:~:text=is%20coming%20from.-,Diverse%20detours.,-On%20the%20topic">can
-        be overwhelmingly good in expectation</a>, the minimum of the same
-      set is terrible (in expectation). That’s the power of choice.</p>
-  </div>
-  <blockquote>
+    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/slightly-advanced-decision-theory?s=w#:~:text=is%20coming%20from.-,Diverse%20detours.,-On%20the%20topic">can
+    be overwhelmingly good in expectation</a>, the minimum of the same
+    set is terrible (in expectation). That’s the power of choice.</p>
+    </div>
+    <blockquote>
     <p>“[They mistook] an adversarial environment for a random one.”</p>
-  </blockquote>
-  <p>I have approximately zero knowledge about Zillow or the real
+    </blockquote>
+    <p>I have approximately zero knowledge about Zillow or the real
     estate business, so I can’t comment on whether this actually is what
     went wrong. But the distinction between a <strong>random</strong>
     and an <strong>adversarial</strong> environment applies beyond the
     Zillow example and is relevant for research in AI Safety: from <a
-      href="https://en.wikipedia.org/wiki/Adversarial_machine_learning">adversarial
-      examples</a>, via <a
-      href="https://www.alignmentforum.org/posts/A9tJFJY7DsGTFKKkh/high-stakes-alignment-via-adversarial-training-redwood">adversarial
-      training</a>, all the way to conceivable <a href="https://en.wikipedia.org/wiki/AI_box">existential risk
-      scenarios</a>. It is the distinction between a world where it’s fine
-    to go outside because <a href="https://www.cdc.gov/disasters/lightning/victimdata.html">getting
-      struck by lightning is sufficiently unlikely</a> and a world where
+    href="https://en.wikipedia.org/wiki/Adversarial_machine_learning">adversarial
+    examples</a>, via <a
+    href="https://www.alignmentforum.org/posts/A9tJFJY7DsGTFKKkh/high-stakes-alignment-via-adversarial-training-redwood">adversarial
+    training</a>, all the way to conceivable <a
+    href="https://en.wikipedia.org/wiki/AI_box">existential risk
+    scenarios</a>. It is the distinction between a world where it’s fine
+    to go outside because <a
+    href="https://www.cdc.gov/disasters/lightning/victimdata.html">getting
+    struck by lightning is sufficiently unlikely</a> and a world where
     <a
-      href="https://unsongbook.com/chapter-3-on-a-cloud-i-saw-a-child/#:~:text=ACROSS%20ALL%20SEPHIROT.-,I%20THINK%20SOMEBODY%20BOILED%20A%20GOAT%20IN%20ITS%20MOTHER%E2%80%99S%20MILK.%20IT%20IS%20ALWAYS%20THAT.%20I%20KEEP%20TELLING%20PEOPLE%20NOT%20TO%20DO%20IT%2C%20BUT%20NOBODY%20LISTENS,-.%E2%80%9D">somebody
-      is trying to smite you</a>.
-  </p>
-  <p>This post works towards achieving a mathematical understanding of
-    what distinguishes <a href="https://people.wou.edu/~shawd/mediocristan--extremistan.html">these
-      two worlds</a>. Perhaps other people are not as confused about this
+    href="https://unsongbook.com/chapter-3-on-a-cloud-i-saw-a-child/#:~:text=ACROSS%20ALL%20SEPHIROT.-,I%20THINK%20SOMEBODY%20BOILED%20A%20GOAT%20IN%20ITS%20MOTHER%E2%80%99S%20MILK.%20IT%20IS%20ALWAYS%20THAT.%20I%20KEEP%20TELLING%20PEOPLE%20NOT%20TO%20DO%20IT%2C%20BUT%20NOBODY%20LISTENS,-.%E2%80%9D">somebody
+    is trying to smite you</a>.</p>
+    <p>This post works towards achieving a mathematical understanding of
+    what distinguishes <a
+    href="https://people.wou.edu/~shawd/mediocristan--extremistan.html">these
+    two worlds</a>. Perhaps other people are not as confused about this
     point as I was, but hopefully, the arguments are still useful and/or
-    interesting to some. I’ll introduce a bit of <a href="https://en.wikipedia.org/wiki/Extreme_value_theory">extreme
-      value theory.</a> Then I’ll demonstrate a neat connection to <a
-      href="https://en.wikipedia.org/wiki/Control_theory">control
-      theory</a> via <a href="https://en.wikipedia.org/wiki/Large_deviations_theory">large
-      deviation theory</a>, which shows that an exponentially decreasing
+    interesting to some. I’ll introduce a bit of <a
+    href="https://en.wikipedia.org/wiki/Extreme_value_theory">extreme
+    value theory.</a> Then I’ll demonstrate a neat connection to <a
+    href="https://en.wikipedia.org/wiki/Control_theory">control
+    theory</a> via <a
+    href="https://en.wikipedia.org/wiki/Large_deviations_theory">large
+    deviation theory</a>, which shows that an exponentially decreasing
     risk of failure translates into a linearly increasing difficulty of
     adversarial attacks.</p>
-  <h2 id="a-random-environment"><strong>A random
-      environment</strong></h2>
-  <p>I’ll go over the basics quickly: When you (i.e. Zillow) think of
+    <h2 id="a-random-environment"><strong>A random
+    environment</strong></h2>
+    <p>I’ll go over the basics quickly: When you (i.e. Zillow) think of
     your environment as random, each house you buy is essentially a coin
     flip with a biased coin. If you make sure that</p>
-  <ol class="incremental" type="1">
+    <ol class="incremental" type="1">
     <li>the expected value of a deal is positive and</li>
-    <li>that all the deals are (<a href="https://en.wikipedia.org/wiki/Martingale_central_limit_theorem">mostly)</a>
-      independent of each other,</li>
-  </ol>
-  <p>then you’re guaranteed to accrue profits <em>eventually</em>.</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_159.png" />An
+    <li>that all the deals are (<a
+    href="https://en.wikipedia.org/wiki/Martingale_central_limit_theorem">mostly)</a>
+    independent of each other,</li>
+    </ol>
+    <p>then you’re guaranteed to accrue profits <em>eventually</em>.</p>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_159.png" />An
     illustration of how a sequence of house buys will end up net
     positive if repeated sufficiently long.</p>
-  <p>This guarantee is the <a href="https://en.wikipedia.org/wiki/Law_of_large_numbers">law of
-      large numbers</a> from probability theory 101 and probably not too
+    <p>This guarantee is the <a
+    href="https://en.wikipedia.org/wiki/Law_of_large_numbers">law of
+    large numbers</a> from probability theory 101 and probably not too
     revolutionary for you, dear reader. But what is the probability of
     things going very badly? What is the probability of an <a
-      href="https://en.wikipedia.org/wiki/Extreme_value_theory">extreme
-      event</a> or a <a href="https://en.wikipedia.org/wiki/Large_deviations_theory">large
-      deviation</a>? It should decrease (given the law of large numbers),
+    href="https://en.wikipedia.org/wiki/Extreme_value_theory">extreme
+    event</a> or a <a
+    href="https://en.wikipedia.org/wiki/Large_deviations_theory">large
+    deviation</a>? It should decrease (given the law of large numbers),
     but how <em>fast</em> does it decrease?</p>
-  <p>Let’s continue the example of buying and selling houses and say
+    <p>Let’s continue the example of buying and selling houses and say
     that there is a probability p that a given deal ends up profitable.
     The worst-case probability that <em>all</em> your deals go poorly is
     (1−p)ᴺ, which goes to 0 exponentially fast as we increase the number
     of deals N.</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_160.png" /></p>
-  <p>It turns out that this toy example <a
-      href="https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_theorem_%28large_deviations%29">generalizes
-      a lot</a>, and the probability that the sum of independent random
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_160.png" /></p>
+    <p>It turns out that this toy example <a
+    href="https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_theorem_%28large_deviations%29">generalizes
+    a lot</a>, and the probability that the sum of independent random
     variables Xᵢ is less than some fraction ξ times N
     <del>always</del><sup>[4]</sup> goes down exponentially fast in
-    N:
-  </p>
-  <div class="sidenote">
+    N:</p>
+    <div class="sidenote">
     <p>[4] </p>
     <p>Well, not always. That’s the point of this post.</p>
-  </div>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_161.png" /></p>
-  <p>The function J(ξ) is called the “<a href="https://en.wikipedia.org/wiki/Rate_function">rate
-      function,</a>” and it determines the speed with which extreme events
+    </div>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_161.png" /></p>
+    <p>The function J(ξ) is called the “<a
+    href="https://en.wikipedia.org/wiki/Rate_function">rate
+    function,</a>” and it determines the speed with which extreme events
     get unlikely.</p>
-  <p>How to compute the rate function<sup>[5]</sup>? That is what
+    <p>How to compute the rate function<sup>[5]</sup>? That is what
     we’ll explore in the next section. There is a “<a
-      href="https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_theorem_(large_deviations)">standard</a>”
+    href="https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_theorem_(large_deviations)">standard</a>”
     way of calculating J(ξ), which is a bit involved and
     opaque<sup>[6]</sup> for my taste; I prefer a slightly non-standard
     derivation<sup>[7]</sup> of arriving at the rate function, which
     gives deeper insight into how adversarial attacks and extreme events
     relate.</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[5] </p>
     <p>you ask, presumably on the edge of your seat.</p>
-  </div>
-  <div class="sidenote">
+    </div>
+    <div class="sidenote">
     <p>[6] </p>
-    <p>(you need the logarithm of the <a href="https://en.wikipedia.org/wiki/Moment-generating_function">moment
-        generating function</a> of your random variable, λ(θ)=lnE(exp(θXi)),
-      and then you need to compute the Legendre-Fenchel transformation,
-      J(ξ)=supθ&gt;0[θξ−λ(θ)].)</p>
-  </div>
-  <div class="sidenote">
+    <p>(you need the logarithm of the <a
+    href="https://en.wikipedia.org/wiki/Moment-generating_function">moment
+    generating function</a> of your random variable, λ(θ)=lnE(exp(θXi)),
+    and then you need to compute the Legendre-Fenchel transformation,
+    J(ξ)=supθ&gt;0[θξ−λ(θ)].)</p>
+    </div>
+    <div class="sidenote">
     <p>[7] </p>
     <p>I don’t have a reference that follows the same path I choose, but
-      I enjoy the texts by <a href="https://arxiv.org/abs/1106.4146">Touchette 2011</a> and <a
-        href="https://www.google.com/search?q=paninski+large+deviation+optimal+control+leaky+integrate&amp;oq=paninski+large+deviation+optimal+control+leaky+integrate&amp;aqs=chrome..69i57j0i512l2j46i512j0i10i30j0i30j0i5i30l4.11018j0j4&amp;sourceid=chrome&amp;ie=UTF-8#:~:text=The%20most%20likely%20voltage%20path%20and%20large%20deviations,stat.columbia.edu%20%E2%80%BA%20pubs%20%E2%80%BA%20ml%2Dpath%2Djcns">Paninski
-        2006</a>.</p>
-  </div>
-  <h2 id="average-surprise-and-optimal-control"><strong>Average
-      surprise and optimal control</strong></h2>
-  <p>As I like to say: <a href="https://youtu.be/1bSPNboKCzM?t=966">there is, of course,
-      another way of looking at this.</a> We can think of the sequence of
+    I enjoy the texts by <a
+    href="https://arxiv.org/abs/1106.4146">Touchette 2011</a> and <a
+    href="https://www.google.com/search?q=paninski+large+deviation+optimal+control+leaky+integrate&amp;oq=paninski+large+deviation+optimal+control+leaky+integrate&amp;aqs=chrome..69i57j0i512l2j46i512j0i10i30j0i30j0i5i30l4.11018j0j4&amp;sourceid=chrome&amp;ie=UTF-8#:~:text=The%20most%20likely%20voltage%20path%20and%20large%20deviations,stat.columbia.edu%20%E2%80%BA%20pubs%20%E2%80%BA%20ml%2Dpath%2Djcns">Paninski
+    2006</a>.</p>
+    </div>
+    <h2 id="average-surprise-and-optimal-control"><strong>Average
+    surprise and optimal control</strong></h2>
+    <p>As I like to say: <a
+    href="https://youtu.be/1bSPNboKCzM?t=966">there is, of course,
+    another way of looking at this.</a> We can think of the sequence of
     house deals as a sequence of random events that fluctuate around the
     probability of failure 1−p. </p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_162.png" /></p>
-  <p>For a truly random sequence of events, we can compute the
-    <strong><a href="https://en.wikipedia.org/wiki/Entropy_(information_theory)">average
-        surprise</a></strong> by averaging the information content of all
-    events:
-  </p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_163.png" /></p>
-  <p>where the <strong><a href="https://en.wikipedia.org/wiki/Information_content">information
-        content</a></strong> of an individual event is given as</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_164.png" /></p>
-  <p>and the probability measure Pₚ(x) is a Bernoulli measure, Pₚ(x) =
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_162.png" /></p>
+    <p>For a truly random sequence of events, we can compute the
+    <strong><a
+    href="https://en.wikipedia.org/wiki/Entropy_(information_theory)">average
+    surprise</a></strong> by averaging the information content of all
+    events:</p>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_163.png" /></p>
+    <p>where the <strong><a
+    href="https://en.wikipedia.org/wiki/Information_content">information
+    content</a></strong> of an individual event is given as</p>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_164.png" /></p>
+    <p>and the probability measure Pₚ(x) is a Bernoulli measure, Pₚ(x) =
     p when x is 1 and 1-p when x is 0. In the picture, the probability
     of a random Bernoulli event is the distance from the dashed line,
     Pₚ(ξ)=|ξ−(1−p)|. Consequently, the information content is
     Iₚ(ξ)=−ln|ξ−(1−p)|, and the average information content of the
     sequence is<sup>[8]</sup></p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[8] </p>
     <p>Absolute values are a bit icky, but we can be sneaky since we
-      have the logarithm and write</p>
-  </div>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_165.png" /></p>
-  <p>Why am I bringing this up? <a href="https://en.wikipedia.org/wiki/Sanov%27s_theorem">It turns
-      out</a> that the rate function J(ξ) is the solution to <a
-      href="https://en.wikipedia.org/wiki/Freidlin%E2%80%93Wentzell_theorem">an
-      optimal control problem</a> that involves the <strong>average excess
-      surprise</strong>. In particular<sup>[9]</sup>,</p>
-  <div class="sidenote">
+    have the logarithm and write</p>
+    </div>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_165.png" /></p>
+    <p>Why am I bringing this up? <a
+    href="https://en.wikipedia.org/wiki/Sanov%27s_theorem">It turns
+    out</a> that the rate function J(ξ) is the solution to <a
+    href="https://en.wikipedia.org/wiki/Freidlin%E2%80%93Wentzell_theorem">an
+    optimal control problem</a> that involves the <strong>average excess
+    surprise</strong>. In particular<sup>[9]</sup>,</p>
+    <div class="sidenote">
     <p>[9] </p>
     <p>(I recommend staring at that for a while.)</p>
-  </div>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_166.png" /></p>
-  <p>The intuition behind this equation is: If we want to know the
+    </div>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_166.png" /></p>
+    <p>The intuition behind this equation is: If we want to know the
     rate function for an extreme event, [x₁,…,xₙ], we get to pick how
     the extreme event comes about (that’s the inf). The only thing we
     have to respect is that the extreme event <em>does,</em> in fact,
     come about</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_167.png" /></p>
-  <p>And then we try to make it so that the <a
-      href="https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence">average
-      excess surprise</a></p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_168.png" /></p>
-  <p>is as small as possible.</p>
-  <p>Let’s see how this plays out in our house deal example. We want
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_167.png" /></p>
+    <p>And then we try to make it so that the <a
+    href="https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence">average
+    excess surprise</a></p>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_168.png" /></p>
+    <p>is as small as possible.</p>
+    <p>Let’s see how this plays out in our house deal example. We want
     to determine the probability that the sum of independent random
     variables ξ is less than some success fraction ξ times N,</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_169.png" /></p>
-  <p>i.e. that a certain fraction 1−ξ of our N house deals go
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_169.png" /></p>
+    <p>i.e. that a certain fraction 1−ξ of our N house deals go
     badly.</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_170.png" /></p>
-  <p>Now <em>we</em> pick how the extreme event, [x1,…,xₙ], comes
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_170.png" /></p>
+    <p>Now <em>we</em> pick how the extreme event, [x1,…,xₙ], comes
     about. I went ahead and already did that in the illustration. I
     picked it so that the first (1−ξ)N deals go wrong, and only the
     remaining ξN deals go fine. This satisfies the constraint that</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_171.png" /></p>
-  <p>and (thanks to commutativity<sup>[10]</sup>) the average excess
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_171.png" /></p>
+    <p>and (thanks to commutativity<sup>[10]</sup>) the average excess
     surprise of this configuration is identical to all possible
     permutations. Therefore, this configuration’s average excess
     surprise is already the infimum of all possible configurations that
     satisfy the constraint. Given the expression we wrote above for the
     average information content of a Bernoulli sequence, we can write
     the average excess surprise as</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[10] </p>
     <p>When the control problem gets more involved and the individual
-      time points are not interchangeable, this step gets a bit trickier,
-      and we have to recruit some <a href="https://en.wikipedia.org/wiki/Euler%E2%80%93Lagrange_equation">mathematical
-        machinery</a>.</p>
-  </div>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_172.png" /></p>
-  <p>Since we know that the first ξN many xᵢ are equal to 1 and that
+    time points are not interchangeable, this step gets a bit trickier,
+    and we have to recruit some <a
+    href="https://en.wikipedia.org/wiki/Euler%E2%80%93Lagrange_equation">mathematical
+    machinery</a>.</p>
+    </div>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_172.png" /></p>
+    <p>Since we know that the first ξN many xᵢ are equal to 1 and that
     the remaining (1-ξ)xᵢ are equal to 0, we can simplify the expression
     for J(ξ) by splitting up the sums and regrouping,</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_173.png" /></p>
-  <p>You might recognize this as the KL-divergence between two
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_173.png" /></p>
+    <p>You might recognize this as the KL-divergence between two
     Bernoulli random variables, DKL(Ξ||X)=E(ΞlnΞX), one with success
     probability p, the other with success probability ξ. When we plug in
     the extreme event that <em>all</em> the deals go poorly, ξ=0, the
     rate function reduces to J(ξ)=−ln(1−p), and the probability of this
     extreme event is</p>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_174.png" /></p>
-  <p>as it should be.</p>
-  <h2 id="an-adversarial-environment"><strong>An adversarial
-      environment</strong></h2>
-  <p>Quick recap:</p>
-  <ol class="incremental" type="1">
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_174.png" /></p>
+    <p>as it should be.</p>
+    <h2 id="an-adversarial-environment"><strong>An adversarial
+    environment</strong></h2>
+    <p>Quick recap:</p>
+    <ol class="incremental" type="1">
     <li>When we find ourselves in a random environment, we can leverage
-      the law of large numbers to push the probability of failure close to
-      zero by trying sufficiently many times<sup>[11]</sup>, N.</li>
+    the law of large numbers to push the probability of failure close to
+    zero by trying sufficiently many times<sup>[11]</sup>, N.
+    <div class="sidenote">
+    <p>[11] </p>
+    <p>Given that the expected value is positive, ofc.</p>
+    </div></li>
     <li>If we want to determine <em>how fast</em> the probability of
-      failure goes to zero, we can find that out by solving an optimal
-      control problem where we need to determine the least surprising way
-      failure might come about, J(ξ).</li>
+    failure goes to zero, we can find that out by solving an optimal
+    control problem where we need to determine the least surprising way
+    failure might come about, J(ξ).</li>
     <li>The probability of failure goes to zero exponentially fast,
-      proportional to how surprised we would be and the number of tries,
-      exp(−NJ(ξ)).</li>
-  </ol>
-  <p>So far, so good, but… what is that sound in the
+    proportional to how surprised we would be and the number of tries,
+    exp(−NJ(ξ)).</li>
+    </ol>
+    <p>So far, so good, but… what is that sound in the
     distance<sup>[12]</sup>?</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[12] </p>
-    <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_7.jpeg" /><a
-        href="http://www.blackswanman.com/#lg=1&amp;slide=0">source</a></p>
-  </div>
-  <p>As general as the theorems mentioned above are in terms of the
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_7.jpeg" /><a
+    href="http://www.blackswanman.com/#lg=1&amp;slide=0">source</a></p>
+    </div>
+    <p>As general as the theorems mentioned above are in terms of the
     underlying distributions<sup>[13]</sup>, they <strong>centrally rely
-      on the assumption that the environment is</strong> _
+    on the assumption that the environment is</strong> _
     <strong>random</strong>_. This was not the case for Zillow, where
     homeowners and real estate agencies selling houses had <a
-      href="https://en.wikipedia.org/wiki/Caveat_emptor">additional
-      information</a> to systematically select bad deals for Zillow.
+    href="https://en.wikipedia.org/wiki/Caveat_emptor">additional
+    information</a> to systematically select bad deals for Zillow.
     Instead of pushing the risk of total failure strongly toward zero,
     Zillow only increasingly exposed itself to an adversary with more
-    insight into the situation.
-  </p>
-  <div class="sidenote">
+    insight into the situation.</p>
+    <div class="sidenote">
     <p>[13] </p>
     <p>and any additional structure you might want to slap on</p>
-  </div>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_175.png" /></p>
-  <p>While the <strong>probability of complete failure,</strong>
+    </div>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_175.png" /></p>
+    <p>While the <strong>probability of complete failure,</strong>
     exp(−NJ(ξ)), <strong>falls exponentially</strong> , the
     <strong>amount of surprise required to bring it about</strong> ,
-    NJ(ξ), <strong>scales linearly!</strong> A few things of note:
-  </p>
-  <ol class="incremental" type="1">
-    <li>The unit of “surprise” is <a href="https://en.wikipedia.org/wiki/Nat_(unit)">nats</a>, a measure
-      of information. This interpretation maps only weakly onto the house
-      buying example (where one <a
-        href="https://rdrr.io/cran/infotheo/man/natstobits.html#:~:text=Details,log2(e)%20%3D%201.442695.">bit</a>
-      of information might indicate whether a given deal is bad for
-      Zillow). Still, it has a much more straightforward interpretation
-      when we think about set-ups where <a href="https://en.wikipedia.org/wiki/AI_box">information passes
-        through a single channel and can be arbitrarily
-        constrained</a>.</li>
+    NJ(ξ), <strong>scales linearly!</strong> A few things of note:</p>
+    <ol class="incremental" type="1">
+    <li>The unit of “surprise” is <a
+    href="https://en.wikipedia.org/wiki/Nat_(unit)">nats</a>, a measure
+    of information. This interpretation maps only weakly onto the house
+    buying example (where one <a
+    href="https://rdrr.io/cran/infotheo/man/natstobits.html#:~:text=Details,log2(e)%20%3D%201.442695.">bit</a>
+    of information might indicate whether a given deal is bad for
+    Zillow). Still, it has a much more straightforward interpretation
+    when we think about set-ups where <a
+    href="https://en.wikipedia.org/wiki/AI_box">information passes
+    through a single channel and can be arbitrarily
+    constrained</a>.</li>
     <li>Similarly, we can interpret the expected excess surprise, <img
-        src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_176.png" /></li>
-  </ol>
-  <p>, as a functional on a state space spanned by [x₁,…,xₙ]. The fact
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_176.png" /></li>
+    </ol>
+    <p>, as a functional on a state space spanned by [x₁,…,xₙ]. The fact
     that we compute the infimum over this functional turns the problem
-    into an instance of <a href="https://en.wikipedia.org/wiki/Hamilton%27s_principle">Hamilton’s
-      principle</a> - the “true” evolution of the sequence of states is
+    into an instance of <a
+    href="https://en.wikipedia.org/wiki/Hamilton%27s_principle">Hamilton’s
+    principle</a> - the “true” evolution of the sequence of states is
     stationary w.r.t. the “action” given by the excess surprise. Through
     this lens, we’re close to “<a
-      href="https://www.alignmentforum.org/tag/really-powerful-optimization-process">intelligence
-      as optimization power</a>”, which characterizes intelligence as the
+    href="https://www.alignmentforum.org/tag/really-powerful-optimization-process">intelligence
+    as optimization power</a>”, which characterizes intelligence as the
     ability to steer reality into a small subset of possible states. But
     I can’t quite put the pieces in the right place to make the
     connection click.</p>
-  <ol class="incremental" type="1">
+    <ol class="incremental" type="1">
     <li>Since we compute NJ(ξ) as the solution to an optimal control
-      problem that minimizes excess surprise, <strong>it is the lower
-        bound on the amount of surprise required</strong>. Catastrophe can
-      also come about in more surprising ways, but <a
-        href="https://www.stat.cmu.edu/~cshalizi/754/2006/notes/lecture-30.pdf">highly
-        improbable events tend to happen in the least improbable way</a>. On
-      the plus side, catastrophe <em>cannot</em> come about with less
-      surprise, which might have applications for the <a href="https://en.wikipedia.org/wiki/AI_box">set-ups with
-        constrained
-        communication</a> mentioned in point 1.</li>
+    problem that minimizes excess surprise, <strong>it is the lower
+    bound on the amount of surprise required</strong>. Catastrophe can
+    also come about in more surprising ways, but <a
+    href="https://www.stat.cmu.edu/~cshalizi/754/2006/notes/lecture-30.pdf">highly
+    improbable events tend to happen in the least improbable way</a>. On
+    the plus side, catastrophe <em>cannot</em> come about with less
+    surprise, which might have applications for the <a
+    href="https://en.wikipedia.org/wiki/AI_box">set-ups with constrained
+    communication</a> mentioned in point 1.</li>
     <li>The team at Redwood Research recently <a
-        href="https://www.alignmentforum.org/posts/A9tJFJY7DsGTFKKkh/high-stakes-alignment-via-adversarial-training-redwood#:~:text=With%20a%20conservative,rate%20of%20injuriousness).">released
-        their report on their research on high-stakes alignment</a>, where
-      they trained a filter to reduce the probability of harmful output
-      from 2.5% in the training set to 0.003% after applying the filter to
-      0.002% after adversarial training. While OOM reduction in failure
-      probability <em>feels</em> comforting, this only helps when the
-      adversary is not actively trying to trick the filter (from 3.6 nats
-      to 10.8 nats of information). This is consistent with their finding
-      that their tool-assisted search for adversarial examples was 1000x
-      more effective than naive sampling.</li>
-  </ol>
-  <p>These factors combined make me excited about exploring this
+    href="https://www.alignmentforum.org/posts/A9tJFJY7DsGTFKKkh/high-stakes-alignment-via-adversarial-training-redwood#:~:text=With%20a%20conservative,rate%20of%20injuriousness).">released
+    their report on their research on high-stakes alignment</a>, where
+    they trained a filter to reduce the probability of harmful output
+    from 2.5% in the training set to 0.003% after applying the filter to
+    0.002% after adversarial training. While OOM reduction in failure
+    probability <em>feels</em> comforting, this only helps when the
+    adversary is not actively trying to trick the filter (from 3.6 nats
+    to 10.8 nats of information). This is consistent with their finding
+    that their tool-assisted search for adversarial examples was 1000x
+    more effective than naive sampling.</li>
+    </ol>
+    <p>These factors combined make me excited about exploring this
     direction further to find reliable estimates of the lower bound of
     input required to bring about catastrophe<sup>[14]</sup>. I’m also
     curious if there is more structure to the similarity between the
@@ -383,23 +430,16 @@
     characterization of intelligence in terms of optimization processes.
     If you know more about this or can point me to some literature on
     the topic, please let me know!</p>
-  <div class="sidenote">
+    <div class="sidenote">
     <p>[14] </p>
     <p>Perhaps we can manage to stay below that bound reliably?</p>
-  </div>
-  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_177.png" /></p>
-  <p>instead. This expression now has an uncanny similarity to the <a
-      href="https://en.wikipedia.org/wiki/Freidlin%E2%80%93Wentzell_theorem">Freidlin-Wentzell</a>
+    </div>
+    <p><img
+    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_177.png" /></p>
+    <p>instead. This expression now has an uncanny similarity to the <a
+    href="https://en.wikipedia.org/wiki/Freidlin%E2%80%93Wentzell_theorem">Freidlin-Wentzell</a>
     rate function, which can’t be a coincidence.</p>
-  <div class="sidenote">
-    <p>[1] </p>
-    <p>(appropriately named)</p>
-  </div>
-  <div class="sidenote">
-    <p>[11] </p>
-    <p>Given that the expected value is positive, ofc.</p>
-  </div>
-  <div class="debug-grid"></div>
+    <div class="debug-grid"></div>
   <script src="../../index.js"></script>
 </body>
 

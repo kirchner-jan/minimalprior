@@ -18,7 +18,7 @@ Meta: This week here is something different! The following story was written for
 
 * * *
 
- _It just annoys me, that’s all. Every century or so, one of the squishy ones thinks they are so great and that everybody should love them. A millennia ago, I was able to strike a deal with the big guy and have him send some plagues on a poor soul call Job[^1], murder his family, ravage his land and body... But recently He has not been very cooperative. No, He would not help. Getting rid of the little squishy “saint” would be my own yoke to carry. And I know that’s just what He wanted in the first place. Puffing sulfur from my nostrils, I acquiesce. The squishy thing would suffer for this, oh he would suffer long. But I had to be devious about it, there was my reputation at stake. And I knew just the trick that I could pull on this one…_
+ _It just annoys me, that’s all. Every century or so, one of the squishy ones thinks they are so great and that everybody should love them. A millennia ago, I was able to strike a deal with the big guy and have him send some plagues on a poor soul call Job_[^1]_, murder his family, ravage his land and body... But recently He has not been very cooperative. No, He would not help. Getting rid of the little squishy “saint” would be my own yoke to carry. And I know that’s just what He wanted in the first place. Puffing sulfur from my nostrils, I acquiesce. The squishy thing would suffer for this, oh he would suffer long. But I had to be devious about it, there was my reputation at stake. And I knew just the trick that I could pull on this one…_
 
 * * *
 

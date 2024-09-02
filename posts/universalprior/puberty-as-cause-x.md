@@ -7,7 +7,7 @@ date: 2022-01-23
 ---
 
 
-**Epistemic status** _: I wrote this to understand how a GiveWell-type analysis feels from the inside[^1]. I expect this would require a couple hundred hours of additional research to get to the point where I'd be confident in the conclusions. But I still think the resulting analysis is interesting, so read it like you'd read the Feuilleton. Any feedback is highly appreciated._
+**Epistemic status** _: I wrote this to understand how a GiveWell-type analysis feels from the inside_[^1] _. I expect this would require a couple hundred hours of additional research to get to the point where I'd be confident in the conclusions. But I still think the resulting analysis is interesting, so read it like you'd read the Feuilleton. Any feedback is highly appreciated._
 
  **Reading Guide** _: If you're familiar with the "Cause X" concept, you can skip the "Searching for Cause X" section. You can jump to "Conclusions & FAQ" if you want my conclusions._
 
