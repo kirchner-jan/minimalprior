@@ -7,6 +7,10 @@ MD_FILES := $(wildcard $(SRC_DIR)/*.md)
 # Generate the list of target HTML files
 HTML_FILES := $(patsubst $(SRC_DIR)/%.md,$(SRC_DIR)/%.html,$(MD_FILES))
 
+# Define the script path
+SCRIPT_PATH := index.js
+RELATIVESCRIPT_PATH := ../../index.js
+
 # Default target
 all: index.html $(HTML_FILES)
 
@@ -16,11 +20,15 @@ clean:
 
 # Rule for index.html
 index.html: index.md template.html Makefile
-	pandoc --toc -s --css reset.css --css index.css -i $< -o $@ --template=template.html
+	sed 's|\$$script-path\$$|$(SCRIPT_PATH)|g' template.html > temp_template.html
+	pandoc --toc -s --css reset.css --css index.css -i $< -o $@ --template=temp_template.html
+	rm temp_template.html
 
 # Rule for other HTML files
 $(SRC_DIR)/%.html: $(SRC_DIR)/%.md template.html Makefile
-	pandoc --toc -s --css ../../reset.css --css ../../index.css -i $< -o $@ --template=template.html --filter=./sidenote_filter.py
+	sed 's|\$$script-path\$$|$(RELATIVESCRIPT_PATH)|g' template.html > temp_template.html
+	pandoc --toc -s --css ../../reset.css --css ../../index.css -i $< -o $@ --template=temp_template.html --filter=./sidenote_filter.py
+	rm temp_template.html
 
 # Declare phony targets
 .PHONY: all clean

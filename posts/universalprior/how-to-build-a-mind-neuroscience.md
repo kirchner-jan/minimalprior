@@ -175,7 +175,3 @@ Condensed into a neat list of three points, what is my take on the development o
     
 
 As mentioned above, point 3 is conjecture. But I’m very excited about that conjecture and if anyone has some leads or ideas (or questions), feel free to send me an email or to book some time for a chat with me :) Looking forward to talk!
-
-### Subscribe to On Brains, Minds, And Their Possible Uses
-
-Welcome to my little corner of mindspace

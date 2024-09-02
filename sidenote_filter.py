@@ -1,17 +1,26 @@
 #!/usr/bin/env python3
 
 import panflute as pf
+import logging
+
+logging.basicConfig(level=logging.DEBUG, filename="sidenote_filter.log", filemode="w")
 
 
 def prepare(doc):
     doc.sidenotes = {}
     doc.current_sidenote_index = 1
+    doc.processed_superscripts = set()
+    doc.missing_references = set()
 
 
 def finalize(doc):
     if hasattr(doc, "sidenotes"):
-        for sidenote in doc.sidenotes.values():
-            doc.content.append(sidenote)
+        for index in doc.missing_references:
+            if index in doc.sidenotes:
+                logging.warning(
+                    f"Sidenote {index} was created but its reference was not found in the text. Adding to end of document."
+                )
+                doc.content.append(doc.sidenotes[index])
 
 
 def create_sidenote_ref(index):
@@ -33,36 +42,73 @@ def sidenote(elem, doc):
         ref = create_sidenote_ref(index)
         note = create_sidenote(index, elem.content)
         doc.sidenotes[index] = note
+        doc.missing_references.add(index)  # Assume missing until found
+        logging.debug(f"Created sidenote with index {index}")
         return ref
     elif isinstance(elem, pf.Div) and "footnotes" in elem.classes:
-        # Remove the footnotes div as we're handling footnotes as sidenotes
+        logging.debug("Removed footnotes div")
         return []
     elif isinstance(elem, pf.Para):
-        new_content = []
-        for child in elem.content:
-            if (
-                isinstance(child, pf.Superscript)
-                and len(child.content) == 1
-                and isinstance(child.content[0], pf.Str)
-            ):
-                text = child.content[0].text
-                if text.startswith("[") and text.endswith("]"):
-                    try:
-                        index = int(text[1:-1])
-                        if index in doc.sidenotes:
-                            new_content.append(child)
-                            if elem.parent:
-                                elem.parent.content.insert(
-                                    elem.parent.content.index(elem) + 1,
-                                    doc.sidenotes[index],
-                                )
-                            del doc.sidenotes[index]
-                            continue
-                    except ValueError:
-                        pass
-            new_content.append(child)
-        elem.content = pf.ListContainer(*new_content)
+        return process_paragraph(elem, doc)
     return elem
+
+
+def process_paragraph(elem, doc):
+    new_content = []
+    sidenotes_to_insert = []
+    logging.debug(f"Processing paragraph: {pf.stringify(elem)}")
+    for child in elem.content:
+        logging.debug(f"Checking element: {type(child).__name__}")
+        if isinstance(child, pf.Link):
+            logging.debug(f"Found link: {pf.stringify(child)}")
+        if is_sidenote_reference(child):
+            processed = process_sidenote_reference(child, doc)
+            new_content.append(processed[0])  # Add the reference
+            if len(processed) > 1:
+                sidenotes_to_insert.append(
+                    processed[1]
+                )  # Store the sidenote for later insertion
+        else:
+            new_content.append(child)
+
+    elem.content = pf.ListContainer(*new_content)
+
+    if sidenotes_to_insert:
+        # Insert sidenotes after the paragraph
+        return [elem] + sidenotes_to_insert
+    return elem
+
+
+def process_sidenote_reference(elem, doc):
+    text = elem.content[0].text
+    logging.debug(f"Processing superscript: {text}")
+    try:
+        index = int(text[1:-1])
+        if index in doc.sidenotes:
+            doc.processed_superscripts.add(index)
+            doc.missing_references.discard(
+                index
+            )  # Reference found, remove from missing set
+            logging.debug(f"Found reference for sidenote {index}")
+            return [elem, doc.sidenotes[index]]
+        else:
+            logging.warning(f"Sidenote {index} not found in doc.sidenotes")
+    except ValueError:
+        logging.warning(f"Invalid sidenote index: {text}")
+    return [elem]
+
+
+def is_sidenote_reference(elem):
+    is_ref = (
+        isinstance(elem, pf.Superscript)
+        and len(elem.content) == 1
+        and isinstance(elem.content[0], pf.Str)
+        and elem.content[0].text.startswith("[")
+        and elem.content[0].text.endswith("]")
+    )
+    if is_ref:
+        logging.debug(f"Found sidenote reference: {pf.stringify(elem)}")
+    return is_ref
 
 
 if __name__ == "__main__":
