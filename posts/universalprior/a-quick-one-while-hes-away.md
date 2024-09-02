@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: A quick one while he's away
+subtitle: TL;DR deep reflections on names and identity, life-changing decisions, and mental renovations. And all of that in ~500 words!
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2022-07-03
 ---
 

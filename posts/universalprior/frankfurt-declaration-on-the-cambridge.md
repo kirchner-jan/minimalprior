@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: Frankfurt Declaration on the Cambridge Declaration on Consciousness
+subtitle: TL;DR I admit that I have no idea what consciousness is. I communicate this in the form of a declaration.
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2021-10-24
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: On (Not) Reading Papers
+subtitle: TL;DR Related to "scaling academia", thoughts on how to engage with academic papers. Examining the standard response to an overwhelming flood of new…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2021-12-20
 ---
 

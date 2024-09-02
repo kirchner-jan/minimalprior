@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: A Brief Excursion Into Molecular Neuroscience
+subtitle: Previously in this series How to build a mind - neuroscience edition. The Emperor's New Ǫ̵͎͊G̶̦̉̇l̶͉͇̝̽͆̚i̷͔̓̏͌c̷̱̙̍̂͜k̷̠͍͌l̷̢̍͗̃n̷̖͇̏̆å̴̤c̵̲̼̫͑̎̆…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2022-04-10
 ---
 

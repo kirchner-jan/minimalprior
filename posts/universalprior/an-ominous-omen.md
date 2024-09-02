@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: An Ominous OMEN
+subtitle: TL;DR A collaboration with my friend Mathieu where we finetune a language model on his YouTube persona.
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2022-01-22
 ---
 

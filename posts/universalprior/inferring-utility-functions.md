@@ -2,7 +2,7 @@
 title: minimalprior
 subtitle: a spinoff
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2022-02-10
 ---
 

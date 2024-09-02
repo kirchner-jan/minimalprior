@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: Pop Culture Alignment Research and Taxes
+subtitle: TL;DR A quick recap of all the AI progress published recently, a shortcoming of the alignment tax definition, and a dynamical systems model of AI…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2022-04-16
 ---
 
@@ -24,7 +24,7 @@ It's been a couple of exciting weeks.
 
 
 
-Through a series of wacky coincidences (TBA), yours truly got access to the beta version of OpenAI’s new image generation technology and has been updating the thumbnails of his Substack (see [here](https://universalprior.substack.com/about) for a disclosure).
+Through a series of wacky coincidences (TBA), yours truly got access to the beta version of OpenAI’s new image generation technology and has been updating the thumbnails of his Substack (see [here](https://kirchner-jan.github.io/minimalprior/about) for a disclosure).
 
 ![](../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_33.png)Three images created by me with OpenAI’s DALL-E 2. The prompts are: "A painting of Leonardo Da Vinci holding a slice of pizza.", "A painting of a chinchilla and a gopher dancing.", "A painting of a painting of a painting of a painting."
 

@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: Researching Alignment Research Unsupervised Analysis
+subtitle: Previously in this series Cognitive Biases in Large Language Models, Drug addicts and deceptively aligned agents - a comparative analysis, Compute…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2022-06-06
 ---
 

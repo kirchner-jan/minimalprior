@@ -1,15 +1,15 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: What are red flags for Neural Network suffering?
+subtitle: TL;DR What would make us worried about NN suffering? Reviewing neuroscience literature + high-level considerations produce factors that (neither…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2021-11-08
 ---
 
 
 Epistemic status: High uncertainty; This is exploratory work; Our goal is to provide possible research directions rather than offering solutions.
 
-This is shared work. Most of the part on neural correlates is by [Jan](https://universalprior.substack.com/). Most of the parts on behavior and high-level considerations are by [Marius](https://www.mariushobbhahn.com/aboutme/). You can also find the post [here](https://www.lesswrong.com/posts/Bpw2HXjMa3GaouDnC/what-are-red-flags-for-neural-network-suffering) on the LessWrong forum.
+This is shared work. Most of the part on neural correlates is by [Jan](https://kirchner-jan.github.io/minimalprior/). Most of the parts on behavior and high-level considerations are by [Marius](https://www.mariushobbhahn.com/aboutme/). You can also find the post [here](https://www.lesswrong.com/posts/Bpw2HXjMa3GaouDnC/what-are-red-flags-for-neural-network-suffering) on the LessWrong forum.
 
  **Background**
 

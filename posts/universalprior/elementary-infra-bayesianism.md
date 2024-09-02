@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: Elementary Infra-Bayesianism
+subtitle: TL;DR I got nerd-sniped into working through some rather technical work in AI Safety. Here's my best guess of what is going on. Imprecise probabilities…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2022-05-08
 ---
 

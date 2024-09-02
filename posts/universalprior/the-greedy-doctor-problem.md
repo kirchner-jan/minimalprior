@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: The Greedy Doctor Problem
+subtitle: TL;DR How to reason about people who are smarter than you. A few proposals, interspersed with reinforcement learning and humorous fiction. Ending on a…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2021-11-15
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: Adversarial attacks and optimal control
+subtitle: TL;DR Inspired by Zillow's recent snafu I dig into the mathematics of adversarial attacks and recap some extreme value theory and optimal control. TW…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2022-05-22
 ---
 

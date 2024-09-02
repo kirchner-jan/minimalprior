@@ -1,169 +1,162 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="" >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-    <meta name="author" content="Jan Kirchner" />
-      <meta name="dcterms.date" content="2022-09-19" />
-        <title>minimalprior</title>
-    <link rel="stylesheet" href="../../reset.css" />
-    <link rel="stylesheet" href="../../index.css" />
-      </head>
+  <meta name="author" content="Jan Kirchner" />
+  <meta name="dcterms.date" content="2022-09-19" />
+  <title>The Inter-Agent Facet of AI Alignment</title>
+  <link rel="stylesheet" href="../../reset.css" />
+  <link rel="stylesheet" href="../../index.css" />
+</head>
 
 <body>
-    <table class="header">
+  <table class="header">
     <tr>
       <td colspan="2" rowspan="2" class="width-auto">
         <h1 class="title"><a href="https://kirchner-jan.github.io/minimalprior/"
-            style="text-decoration: none; color: inherit;">minimalprior</a></h1>
-        <span class="subtitle">a spinoff</span>
+            style="text-decoration: none; color: inherit;">The
+            Inter-Agent Facet of AI Alignment</a></h1>
+        <span class="subtitle">TL;DR Guest post by Michael Oesterle on
+          coordination problems (and more) between advanced artificial
+          agents.</span>
       </td>
       <th>Updated</th>
       <td class="width-min"><time style="white-space: pre;">2022-09-19</time></td>
     </tr>
     <tr>
       <th class="width-min">Author</th>
-      <td class="width-auto"><a href="https://universalprior.substack.com/">Jan
-Kirchner</a></td>
+      <td class="width-auto"><a href="https://kirchner-jan.github.io/minimalprior/">Jan
+          Kirchner</a></td>
     </tr>
   </table>
-      <nav id="TOC" role="doc-toc">
+  <nav id="TOC" role="doc-toc">
+    <ul class="incremental">
+      <li><a href="#motivation" id="toc-motivation">Motivation</a></li>
+      <li><a href="#schema" id="toc-schema">Schema</a>
         <ul class="incremental">
-        <li><a href="#motivation"
-        id="toc-motivation">Motivation</a></li>
-        <li><a href="#schema" id="toc-schema">Schema</a>
-        <ul class="incremental">
-        <li><a href="#inter-agent-alignment"
-        id="toc-inter-agent-alignment">Inter-Agent Alignment</a></li>
-        </ul></li>
-        <li><a href="#challenging-questions"
-        id="toc-challenging-questions">Challenging Questions</a>
-        <ul class="incremental">
-        <li><a
-        href="#why-is-inter-agent-alignment-not-just-a-part-of-intent-alignment"
-        id="toc-why-is-inter-agent-alignment-not-just-a-part-of-intent-alignment">Why
-        is inter-agent alignment not just a part of intent
-        alignment?</a></li>
-        <li><a
-        href="#what-does-it-look-like-if-an-agi-is-intent-aligned-and-capability-robust-but-not-inter-agent-aligned"
-        id="toc-what-does-it-look-like-if-an-agi-is-intent-aligned-and-capability-robust-but-not-inter-agent-aligned">What
-        does it look like if an AGI is intent aligned and capability
-        robust, but not inter-agent aligned?</a></li>
-        <li><a href="#how-can-inter-agent-alignment-be-solved"
-        id="toc-how-can-inter-agent-alignment-be-solved">How can
-        inter-agent alignment be solved?</a></li>
-        <li><a
-        href="#will-an-agi-society-act-in-the-same-way-that-we-expect-from-a-traditional-multi-agent-system"
-        id="toc-will-an-agi-society-act-in-the-same-way-that-we-expect-from-a-traditional-multi-agent-system">Will
-        an AGI society act in the same way that we expect from a
-        traditional Multi-Agent System?</a></li>
-        <li><a
-        href="#what-happens-if-there-is-only-one-agi-but-in-a-world-full-of-other-actors-humansnations"
-        id="toc-what-happens-if-there-is-only-one-agi-but-in-a-world-full-of-other-actors-humansnations">What
-        happens if there is only one AGI, but in a world full of other
-        actors (humans/nations)?</a></li>
-        <li><a href="#why-should-we-prioritize-inter-agent-alignment"
-        id="toc-why-should-we-prioritize-inter-agent-alignment">Why
-        should we prioritize inter-agent alignment?</a></li>
-        </ul></li>
-        <li><a href="#proposed-future-work-next-steps"
-        id="toc-proposed-future-work-next-steps">Proposed Future Work /
-        Next Steps</a></li>
+          <li><a href="#inter-agent-alignment" id="toc-inter-agent-alignment">Inter-Agent Alignment</a></li>
         </ul>
+      </li>
+      <li><a href="#challenging-questions" id="toc-challenging-questions">Challenging Questions</a>
+        <ul class="incremental">
+          <li><a href="#why-is-inter-agent-alignment-not-just-a-part-of-intent-alignment"
+              id="toc-why-is-inter-agent-alignment-not-just-a-part-of-intent-alignment">Why
+              is inter-agent alignment not just a part of intent
+              alignment?</a></li>
+          <li><a
+              href="#what-does-it-look-like-if-an-agi-is-intent-aligned-and-capability-robust-but-not-inter-agent-aligned"
+              id="toc-what-does-it-look-like-if-an-agi-is-intent-aligned-and-capability-robust-but-not-inter-agent-aligned">What
+              does it look like if an AGI is intent aligned and capability
+              robust, but not inter-agent aligned?</a></li>
+          <li><a href="#how-can-inter-agent-alignment-be-solved" id="toc-how-can-inter-agent-alignment-be-solved">How
+              can
+              inter-agent alignment be solved?</a></li>
+          <li><a href="#will-an-agi-society-act-in-the-same-way-that-we-expect-from-a-traditional-multi-agent-system"
+              id="toc-will-an-agi-society-act-in-the-same-way-that-we-expect-from-a-traditional-multi-agent-system">Will
+              an AGI society act in the same way that we expect from a
+              traditional Multi-Agent System?</a></li>
+          <li><a href="#what-happens-if-there-is-only-one-agi-but-in-a-world-full-of-other-actors-humansnations"
+              id="toc-what-happens-if-there-is-only-one-agi-but-in-a-world-full-of-other-actors-humansnations">What
+              happens if there is only one AGI, but in a world full of other
+              actors (humans/nations)?</a></li>
+          <li><a href="#why-should-we-prioritize-inter-agent-alignment"
+              id="toc-why-should-we-prioritize-inter-agent-alignment">Why
+              should we prioritize inter-agent alignment?</a></li>
+        </ul>
+      </li>
+      <li><a href="#proposed-future-work-next-steps" id="toc-proposed-future-work-next-steps">Proposed Future Work /
+          Next Steps</a></li>
+    </ul>
   </nav>
-    <p><em>Meta: I know you miss me, I miss you all too! I’ll be back!
-    In the meantime, here is a little something the fantastic<a
-    href="https://www.linkedin.com/in/michael-oesterle/?originalSubdomain=de">Michael
-    Oesterle</a> came up with and that might be interesting food for
-    thought!</em></p>
-    <p>We argue that <a
-    href="https://www.alignmentforum.org/posts/SzecSPYxqRa5GCaSF/clarifying-inner-alignment-terminology">intent
-    alignment and capability robustness</a> do not capture the full
+  <p><em>Meta: I know you miss me, I miss you all too! I’ll be back!
+      In the meantime, here is a little something the fantastic<a
+        href="https://www.linkedin.com/in/michael-oesterle/?originalSubdomain=de">Michael
+        Oesterle</a> came up with and that might be interesting food for
+      thought!</em></p>
+  <p>We argue that <a
+      href="https://www.alignmentforum.org/posts/SzecSPYxqRa5GCaSF/clarifying-inner-alignment-terminology">intent
+      alignment and capability robustness</a> do not capture the full
     “chain of command” (i.e., “alignment” without any qualifier) from
     the programmer’s intentions to an AI agent’s real-world impact, but
     stops at the stage where the agent performs its actions. We argue
-    that, especially in complex <a
-    href="https://en.wikipedia.org/wiki/Multi-agent_system">Multi-Agent
-    Systems</a> (MAS), this is not sufficient to actually achieve
+    that, especially in complex <a href="https://en.wikipedia.org/wiki/Multi-agent_system">Multi-Agent
+      Systems</a> (MAS), this is not sufficient to actually achieve
     aligned outcomes<sup>[1]</sup>. Therefore, we introduce another
     facet of AI Alignment, which deals with the connection between an
     agent’s intention and its actual impact, due to multi-agent
     interactions (as opposed to capability robustness).</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[1] </p>
     <p>Optimizing an objective in the real world can also be hard if
-    there’s only a single agent, such that intent alignment isn’t
-    sufficient for impact alignment. Nevertheless, multi-agent settings,
-    especially with multiple superhuman AIs, seem like the most
-    challenging case.</p>
-    </div>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_125.png" /></p>
-    <h2 id="motivation">Motivation</h2>
-    <p>Independent of whether the first AGIs will be Tool or Agent AIs,
+      there’s only a single agent, such that intent alignment isn’t
+      sufficient for impact alignment. Nevertheless, multi-agent settings,
+      especially with multiple superhuman AIs, seem like the most
+      challenging case.</p>
+  </div>
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_125.png" /></p>
+  <h2 id="motivation">Motivation</h2>
+  <p>Independent of whether the first AGIs will be Tool or Agent AIs,
     they will most likely not live and act in an empty space. Instead,
     they will interact and communicate with humans and other AGIs in a
     variety of ways, thereby effectively creating a socio-technical
     system or an AI-based society.</p>
-    <p>As a consequence, the effects that an AGI will have on its
+  <p>As a consequence, the effects that an AGI will have on its
     environment, i.e., the world, will not necessarily coincide with the
     effects that the AGI plans to have, since actions in such systems
     commonly interfere and influence/cancel each other.</p>
-    <p>This, in turn, leads to the conclusion that it is not sufficient
+  <p>This, in turn, leads to the conclusion that it is not sufficient
     to build an AGI which satisfies intent alignment and capability
     robustness. Instead, we need one more step to be controlled: The
     step from an AGI’s <em>robust intention</em> to its societal
-    <em>impact</em>.</p>
-    <h2 id="schema">Schema</h2>
-    <p>In Evan Hubinger’s <a
-    href="https://www.alignmentforum.org/posts/SzecSPYxqRa5GCaSF/clarifying-inner-alignment-terminology">alignment
-    terminology</a>, alignment is the result of intent alignment (which
+    <em>impact</em>.
+  </p>
+  <h2 id="schema">Schema</h2>
+  <p>In Evan Hubinger’s <a
+      href="https://www.alignmentforum.org/posts/SzecSPYxqRa5GCaSF/clarifying-inner-alignment-terminology">alignment
+      terminology</a>, alignment is the result of intent alignment (which
     is, in turn, composed of the well-known concepts of inner and outer
     alignment, among others) and capability robustness. The implicit
     assumption is that the AGI’s model is equivalent to how its actions
     will affect the world.</p>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_126.png" />caption…</p>
-    <h3 id="inter-agent-alignment">Inter-Agent Alignment</h3>
-    <blockquote>
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_126.png" />caption…</p>
+  <h3 id="inter-agent-alignment">Inter-Agent Alignment</h3>
+  <blockquote>
     <p><strong>Inter-Agent Alignment is aligning the (aligned and
-    robust) intentions of an AGI agent with the actual outcome within
-    the multi-agent system of which the agent is a part. Since the
-    impact of the agent’s actions depends on what everyone else in this
-    system is doing (and not just its own actions), inter-agent
-    alignment is a non-trivial task.</strong></p>
-    </blockquote>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_127.png" /></p>
-    <p>Our central argument is that multi-agent interactions add a
+        robust) intentions of an AGI agent with the actual outcome within
+        the multi-agent system of which the agent is a part. Since the
+        impact of the agent’s actions depends on what everyone else in this
+        system is doing (and not just its own actions), inter-agent
+        alignment is a non-trivial task.</strong></p>
+  </blockquote>
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_127.png" /></p>
+  <p>Our central argument is that multi-agent interactions add a
     sufficient amount of complexity to an AI agent’s action policy to
     justify its own type of alignment, separated from the existing
     alignment model. Adding inter-agent alignment to the alignment tree,
     we see that it complements intent alignment and capability
     robustness, resulting in full alignment (i.e., impact
     alignment)<sup>[2]</sup>.</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[2] </p>
     <p>I fact, we suspect there might be other requirements for full
-    alignment (unless we just use one of the existing terms as an
-    umbrella).</p>
-    </div>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_128.png" /></p>
-    <h2 id="challenging-questions">Challenging Questions</h2>
-    <h3
-    id="why-is-inter-agent-alignment-not-just-a-part-of-intent-alignment">Why
+      alignment (unless we just use one of the existing terms as an
+      umbrella).</p>
+  </div>
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_128.png" /></p>
+  <h2 id="challenging-questions">Challenging Questions</h2>
+  <h3 id="why-is-inter-agent-alignment-not-just-a-part-of-intent-alignment">Why
     is inter-agent alignment not just a part of intent alignment?</h3>
-    <p>Intent alignment is a part of a single AGI without any reference
+  <p>Intent alignment is a part of a single AGI without any reference
     to multi-agent systems. Of course, we could expand its meaning, but
     since the steps between the programmer’s intentions and the AGI’s
     impact can be neatly broken down, we argue that it makes sense to
     introduce a new term for this additional dimension.</p>
-    <p>Naturally, one can always argue that <em>a sufficiently advanced
-    AGI will be able to see through this dilemma and resolve
-    it</em><sup>[3]</sup>, but this seems to be a variant of the
+  <p>Naturally, one can always argue that <em>a sufficiently advanced
+      AGI will be able to see through this dilemma and resolve
+      it</em><sup>[3]</sup>, but this seems to be a variant of the
     No-True-Scotsman fallacy: As long as we can imagine an AGI which is
     advanced enough to interact with other agents, but not able to
     successfully coordinate their actions and therefore avoid unintended
@@ -171,36 +164,34 @@ Kirchner</a></td>
     addressed. Independent learners using state-of-the-art RL algorithms
     like DQN or PPO provide evidence that these “medium-level” agents
     do, in fact, exist.</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[3] </p>
     <p>A stronger version of this argument (due to Erik Jenner) would
-    be: <em>Assuming that humans can solve this problem, so could a
-    (super-)human-level AI agent. If the agent is not able to solve this
-    problem, it should hopefully at least figure out that it could ask
-    humans for help. An agent that does so badly in multi-agent settings
-    that it leads to a big catastrophe, and doesn’t check in with humans
-    before acting, is either not intent-aligned, or has some very
-    peculiar capabilities blindspots.</em></p>
-    </div>
-    <h3
-    id="what-does-it-look-like-if-an-agi-is-intent-aligned-and-capability-robust-but-not-inter-agent-aligned">What
+      be: <em>Assuming that humans can solve this problem, so could a
+        (super-)human-level AI agent. If the agent is not able to solve this
+        problem, it should hopefully at least figure out that it could ask
+        humans for help. An agent that does so badly in multi-agent settings
+        that it leads to a big catastrophe, and doesn’t check in with humans
+        before acting, is either not intent-aligned, or has some very
+        peculiar capabilities blindspots.</em></p>
+  </div>
+  <h3 id="what-does-it-look-like-if-an-agi-is-intent-aligned-and-capability-robust-but-not-inter-agent-aligned">What
     does it look like if an AGI is intent aligned and capability robust,
     but not inter-agent aligned?</h3>
-    <p>The <a
-    href="https://en.wikipedia.org/wiki/Tragedy_of_the_commons">Tragedy
-    of the Commons</a> is the most prominent example for the fact that
+  <p>The <a href="https://en.wikipedia.org/wiki/Tragedy_of_the_commons">Tragedy
+      of the Commons</a> is the most prominent example for the fact that
     the result of selfish optimization of multiple agents is not always
     optimal for them. In the more general case of a <a
-    href="https://en.wikipedia.org/wiki/Collective_action_problem">Social
-    Dilemma</a>, “individuals would be better off cooperating but fail
+      href="https://en.wikipedia.org/wiki/Collective_action_problem">Social
+      Dilemma</a>, “individuals would be better off cooperating but fail
     to do so because of conflicting interests between individuals that
     discourage joint action”. In such a setting, each agent may well be
     fully aligned with the goal which it was designed to achieve, but
     still fail to reach this goal due to the incentive to defect from
     the cooperative solution.</p>
-    <h3 id="how-can-inter-agent-alignment-be-solved">How can inter-agent
+  <h3 id="how-can-inter-agent-alignment-be-solved">How can inter-agent
     alignment be solved?</h3>
-    <p>Game Theory and Multi-Agent Systems deal with this challenge (we
+  <p>Game Theory and Multi-Agent Systems deal with this challenge (we
     call the problem <em>multi-agent governance</em> ): If the reward
     function of the AGI(s) can be arbitrarily altered by a designer, we
     can change them in a way that produces a desired system equilibrium
@@ -210,21 +201,20 @@ Kirchner</a></td>
     restricting the AGI’s action space might still enable the designer
     to generate desirable equilibria (or at least prevent undesired
     states from being stable).</p>
-    <p>For both types of governance, it can be doubted whether they are
+  <p>For both types of governance, it can be doubted whether they are
     effective in face of a sufficiently advanced AGI, since both
     represent artificial rules which are not physical boundaries for the
     AGI and can therefore be overthrown.</p>
-    <p>On the other hand, humans <em>have</em> solved social dilemmas
+  <p>On the other hand, humans <em>have</em> solved social dilemmas
     with out-of-the box instruments like contracts, compensation for
     cooperating, or exploiting psychological conditions. These solutions
     (usually classified into motivational, strategic and structural
     solutions) could be used as starting points for equipping AGIs with
     inter-agent alignment capabilities.</p>
-    <h3
-    id="will-an-agi-society-act-in-the-same-way-that-we-expect-from-a-traditional-multi-agent-system">Will
+  <h3 id="will-an-agi-society-act-in-the-same-way-that-we-expect-from-a-traditional-multi-agent-system">Will
     an AGI society act in the same way that we expect from a traditional
     Multi-Agent System?</h3>
-    <p>In general, the MAS model captures any type of participating
+  <p>In general, the MAS model captures any type of participating
     agents, no matter how they are structured internally. However, it
     suffers from many of the limitations that we also find in Markov
     Decision Processes, e.g., action spaces and reward functions are
@@ -237,21 +227,20 @@ Kirchner</a></td>
     that are unexpected from the perspective of the system designer. A
     very simple example of this would be forming an AGI coalition to
     coordinate and seize power.</p>
-    <h3
-    id="what-happens-if-there-is-only-one-agi-but-in-a-world-full-of-other-actors-humansnations">What
+  <h3 id="what-happens-if-there-is-only-one-agi-but-in-a-world-full-of-other-actors-humansnations">What
     happens if there is only one AGI, but in a world full of other
     actors (humans/nations)?</h3>
-    <p>The fundamental challenge that selfish optimization of an action
+  <p>The fundamental challenge that selfish optimization of an action
     policy does not guarantee the intended outcome as soon as other
     actors are present, does not depend on the nature of those other
     actors: As long as the environment is non-stationary from the
     perspective of an individual agent, convergence of its action policy
     cannot be guaranteed.</p>
-    <p>Therefore, the discussion does not rely on a society which
+  <p>Therefore, the discussion does not rely on a society which
     consists exclusively (or even mostly) of AGI agents.</p>
-    <h3 id="why-should-we-prioritize-inter-agent-alignment">Why should
+  <h3 id="why-should-we-prioritize-inter-agent-alignment">Why should
     we prioritize inter-agent alignment?</h3>
-    <p>In our opinion, inter-agent alignment is highly neglected,
+  <p>In our opinion, inter-agent alignment is highly neglected,
     compared to intent alignment. It seems like most research focuses on
     a single AGI agent whose learned policy has exactly the intended
     impact in the world. Our crucial point is that, as soon as multiple
@@ -260,23 +249,33 @@ Kirchner</a></td>
     phenomena cannot simply be explained by analyzing individual humans,
     we argue that interactions of multiple AGIs require a social
     perspective on alignment.</p>
-    <h2 id="proposed-future-work-next-steps">Proposed Future Work / Next
+  <h2 id="proposed-future-work-next-steps">Proposed Future Work / Next
     Steps</h2>
-    <ul class="incremental">
-    <li><p>Challenging all of the above ideas</p></li>
-    <li><p>More formal definition of the inter-agent alignment problem
-    as part of end-to-end AI Alignment (is this necessary?)</p></li>
-    <li><p>Creation of examples, metaphors and intuitive scenarios where
-    inter-agent alignment is crucial</p></li>
-    <li><p>Comparison of existing approaches for (a) impact alignment
-    and (b) multi-agent governance</p></li>
-    <li><p>Derivation of particular challenges for multi-agent
-    governance in the context of an AGI society</p></li>
-    </ul>
-    <p><em>Thanks to Jan Kirchner, Erik Jenner and Logan Smith for
-    providing helpful feedback and shaping some of the ideas in this
-    post.</em></p>
-    <div class="debug-grid"></div>
+  <ul class="incremental">
+    <li>
+      <p>Challenging all of the above ideas</p>
+    </li>
+    <li>
+      <p>More formal definition of the inter-agent alignment problem
+        as part of end-to-end AI Alignment (is this necessary?)</p>
+    </li>
+    <li>
+      <p>Creation of examples, metaphors and intuitive scenarios where
+        inter-agent alignment is crucial</p>
+    </li>
+    <li>
+      <p>Comparison of existing approaches for (a) impact alignment
+        and (b) multi-agent governance</p>
+    </li>
+    <li>
+      <p>Derivation of particular challenges for multi-agent
+        governance in the context of an AGI society</p>
+    </li>
+  </ul>
+  <p><em>Thanks to Jan Kirchner, Erik Jenner and Logan Smith for
+      providing helpful feedback and shaping some of the ideas in this
+      post.</em></p>
+  <div class="debug-grid"></div>
   <script src="../../index.js"></script>
 </body>
 

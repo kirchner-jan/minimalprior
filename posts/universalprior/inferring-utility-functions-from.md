@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: Inferring utility functions from locally non-transitive preferences
+subtitle: TL;DR Fanboying JvN, then a nuts-and-bolts description of the von-Neumann-Morgenstern theorem. A connection to reward modeling, some simulations, and…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2024-08-31
 ---
 

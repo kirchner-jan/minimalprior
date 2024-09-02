@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: Task Decomposition And Scientific Inquiry
+subtitle: TL;DR A curious asymmetry between making and criticizing, the scientific method as an approach to factored cognition, and a less-than-half-baked idea…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2022-01-31
 ---
 

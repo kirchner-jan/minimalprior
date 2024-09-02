@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: Puberty as Cause X?
+subtitle: TL;DR GiveWell-esque analysis of adolescents' suffering. Life satisfaction during puberty, ITN model, developmental neuroscience of the amygdala. A few…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2022-01-23
 ---
 

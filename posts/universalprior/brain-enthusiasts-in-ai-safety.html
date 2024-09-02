@@ -1,62 +1,59 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="" >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-    <meta name="author" content="Jan Kirchner" />
-      <meta name="dcterms.date" content="2022-06-15" />
-        <title>minimalprior</title>
-    <link rel="stylesheet" href="../../reset.css" />
-    <link rel="stylesheet" href="../../index.css" />
-      </head>
+  <meta name="author" content="Jan Kirchner" />
+  <meta name="dcterms.date" content="2022-06-15" />
+  <title>Brain enthusiasts in AI Safety</title>
+  <link rel="stylesheet" href="../../reset.css" />
+  <link rel="stylesheet" href="../../index.css" />
+</head>
 
 <body>
-    <table class="header">
+  <table class="header">
     <tr>
       <td colspan="2" rowspan="2" class="width-auto">
         <h1 class="title"><a href="https://kirchner-jan.github.io/minimalprior/"
-            style="text-decoration: none; color: inherit;">minimalprior</a></h1>
-        <span class="subtitle">a spinoff</span>
+            style="text-decoration: none; color: inherit;">Brain
+            enthusiasts in AI Safety</a></h1>
+        <span class="subtitle">TL;DR If you are a student of cognitive
+          science or neuroscience and are wondering whether it can make sense to
+          work in AI Safety, this guide is for you</span>
       </td>
       <th>Updated</th>
       <td class="width-min"><time style="white-space: pre;">2022-06-15</time></td>
     </tr>
     <tr>
       <th class="width-min">Author</th>
-      <td class="width-auto"><a href="https://universalprior.substack.com/">Jan
-Kirchner</a></td>
+      <td class="width-auto"><a href="https://kirchner-jan.github.io/minimalprior/">Jan
+          Kirchner</a></td>
     </tr>
   </table>
-      <nav id="TOC" role="doc-toc">
+  <nav id="TOC" role="doc-toc">
+    <ul class="incremental">
+      <li><a href="#motivation" id="toc-motivation">Motivation</a></li>
+      <li><a href="#a-long-tail-of-number-lovers" id="toc-a-long-tail-of-number-lovers"><strong>A long tail of
+            number-lovers</strong></a></li>
+      <li><a href="#how-did-we-get-here" id="toc-how-did-we-get-here"><strong>How did we get
+            here?</strong></a>
         <ul class="incremental">
-        <li><a href="#motivation"
-        id="toc-motivation">Motivation</a></li>
-        <li><a href="#a-long-tail-of-number-lovers"
-        id="toc-a-long-tail-of-number-lovers"><strong>A long tail of
-        number-lovers</strong></a></li>
-        <li><a href="#how-did-we-get-here"
-        id="toc-how-did-we-get-here"><strong>How did we get
-        here?</strong></a>
-        <ul class="incremental">
-        <li><a href="#recommendations-the-bear-case"
-        id="toc-recommendations-the-bear-case">Recommendations: the bear
-        case</a></li>
-        <li><a href="#recommendations-the-bull-case"
-        id="toc-recommendations-the-bull-case">Recommendations: the bull
-        case</a></li>
-        </ul></li>
-        <li><a href="#what-now-a-call-to-action."
-        id="toc-what-now-a-call-to-action.">What now? A call to
-        action.</a></li>
-        <li><a href="#the-bottom-line"
-        id="toc-the-bottom-line"><strong>The bottom
-        line</strong></a></li>
+          <li><a href="#recommendations-the-bear-case" id="toc-recommendations-the-bear-case">Recommendations: the bear
+              case</a></li>
+          <li><a href="#recommendations-the-bull-case" id="toc-recommendations-the-bull-case">Recommendations: the bull
+              case</a></li>
         </ul>
+      </li>
+      <li><a href="#what-now-a-call-to-action." id="toc-what-now-a-call-to-action.">What now? A call to
+          action.</a></li>
+      <li><a href="#the-bottom-line" id="toc-the-bottom-line"><strong>The bottom
+            line</strong></a></li>
+    </ul>
   </nav>
-    <h2 id="motivation">Motivation</h2>
-    <p>AI Safety is a rapidly growing field of research that is singular
+  <h2 id="motivation">Motivation</h2>
+  <p>AI Safety is a rapidly growing field of research that is singular
     in its goal: to avoid or mitigate negative outcomes from advanced
     AI. At the same time, AI Safety research touches on many aspects of
     human lives: from the philosophy of human values, via the
@@ -65,226 +62,236 @@ Kirchner</a></td>
     with multiple facets makes the problem intrinsically
     interdisciplinary and warrants the application of various tools by
     researchers with diverse backgrounds.</p>
-    <p>Both of us (<a href="https://snellessen.com/">Sam</a> &amp; <a
-    href="https://universalprior.substack.com/">Jan</a>) have
+  <p>Both of us (<a href="https://snellessen.com/">Sam</a> &amp; <a
+      href="https://kirchner-jan.github.io/minimalprior/">Jan</a>) have
     backgrounds in cognitive science and neuroscience (we’ll use the
     blanket term ” <strong>brain enthusiasts</strong> ” from here on).
     Important characteristics of brain enthusiasts are (see if these
     apply to you, dear reader):</p>
-    <ul class="incremental">
-    <li><p>A propensity for empirical data and experiments.</p></li>
-    <li><p>Regarding coding and mathematics as <em>tools</em> rather
-    than as ends in themselves.</p></li>
-    <li><p>Having accumulated semi-random facts about some biological
-    systems.</p></li>
-    </ul>
-    <p>While being brain enthusiasts undoubtedly makes us biased in
+  <ul class="incremental">
+    <li>
+      <p>A propensity for empirical data and experiments.</p>
+    </li>
+    <li>
+      <p>Regarding coding and mathematics as <em>tools</em> rather
+        than as ends in themselves.</p>
+    </li>
+    <li>
+      <p>Having accumulated semi-random facts about some biological
+        systems.</p>
+    </li>
+  </ul>
+  <p>While being brain enthusiasts undoubtedly makes us biased in
     favor of their importance, it also gives us a (hopefully) useful
     inside view of how brain enthusiasts might meaningfully contribute
     to AI Safety<sup>[1]</sup>. In this post, we attempt to shine a
     light on the current representation of brain enthusiasts in AI
     Safety and provide some advice on how brain enthusiasts might enter
     the field.</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[1] </p>
     <p>While we focus on brain enthusiasts, our ideas might also apply
-    to other fields that concern themselves with the study of complex
-    social or biological systems.</p>
-    </div>
-    <h2 id="a-long-tail-of-number-lovers"><strong>A long tail of
-    number-lovers</strong></h2>
-    <p>When you hear terms like “AI Alignment”, “AI Safety,” or “AGI”,
+      to other fields that concern themselves with the study of complex
+      social or biological systems.</p>
+  </div>
+  <h2 id="a-long-tail-of-number-lovers"><strong>A long tail of
+      number-lovers</strong></h2>
+  <p>When you hear terms like “AI Alignment”, “AI Safety,” or “AGI”,
     you probably think of people with a strong technical background,
     e.g. in computer science, mathematics, or physics. This is an
     instance where stereotypes are correct:</p>
-    <p>Using a <a
-    href="https://www.lesswrong.com/posts/FgjcHiWvADgsocE34/a-descriptive-not-prescriptive-overview-of-current-ai">previously
-    published dataset</a>, we determined the number of Alignment Forum
+  <p>Using a <a
+      href="https://www.lesswrong.com/posts/FgjcHiWvADgsocE34/a-descriptive-not-prescriptive-overview-of-current-ai">previously
+      published dataset</a>, we determined the number of Alignment Forum
     posts per researcher and sorted the resulting table. We then added a
     “Background” column, where we noted the field in which the
     researcher obtained their most recent degree<sup>[2]</sup>. As
     observed <a
-    href="https://www.lesswrong.com/posts/FgjcHiWvADgsocE34/a-descriptive-not-prescriptive-overview-of-current-ai">previously</a>,
+      href="https://www.lesswrong.com/posts/FgjcHiWvADgsocE34/a-descriptive-not-prescriptive-overview-of-current-ai">previously</a>,
     the number of published posts is a long-tailed
     distribution<sup>[3]</sup>, with Stuart Armstrong dominating over
     everyone.</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[2] </p>
     <p>We almost certainly got some of these wrong. If you notice a
-    mistake, please reach out to us in the comments or via DM.</p>
-    </div>
-    <div class="sidenote">
+      mistake, please reach out to us in the comments or via DM.</p>
+  </div>
+  <div class="sidenote">
     <p>[3] </p>
     <p>we need a long-tail distribution journal, similar to the
-    Fibonacci Quarterly, seriously.</p>
-    </div>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_186.png" /></p>
-    <p>Almost everyone on the list has a computer science, physics, or
+      Fibonacci Quarterly, seriously.</p>
+  </div>
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_186.png" /></p>
+  <p>Almost everyone on the list has a computer science, physics, or
     mathematics background. Notable exceptions are three researchers
     with an “officially different” formal education (Abram Demski,
     Richard Ngo, and Daniel Kokotajlo) and those researchers who now
     work on brain-enthusiasm topics:</p>
-    <ol class="incremental" type="1">
+  <ol class="incremental" type="1">
     <li><a href="http://sjbyrnes.com/">Steven Byrnes</a> <a
-    href="https://www.alignmentforum.org/s/HzcM2dkCq7fwXBej8">Intro to
-    Brain-like AGI Safety</a> post series<br />
+        href="https://www.alignmentforum.org/s/HzcM2dkCq7fwXBej8">Intro to
+        Brain-like AGI Safety</a> post series<br />
     </li>
     <li><a
-    href="https://axrp.net/episode/2022/05/23/episode-15-natural-abstractions-john-wentworth.html#e-coli-agency">John
-    Wentworth and his background in molecular and cellular
-    biology</a></li>
-    <li>People not included in the list above, like <a
-    href="https://leesharkey.github.io/about/">Lee Sharkey</a> or <a
-    href="https://www.fhi.ox.ac.uk/team/carla-zoe-cremer/">Carla Zoe
-    Cremer</a>, have a computational neuroscience background.</li>
-    </ol>
-    <p>We’d wager the bet that most people on the list don’t identify
+        href="https://axrp.net/episode/2022/05/23/episode-15-natural-abstractions-john-wentworth.html#e-coli-agency">John
+        Wentworth and his background in molecular and cellular
+        biology</a></li>
+    <li>People not included in the list above, like <a href="https://leesharkey.github.io/about/">Lee Sharkey</a> or <a
+        href="https://www.fhi.ox.ac.uk/team/carla-zoe-cremer/">Carla Zoe
+        Cremer</a>, have a computational neuroscience background.</li>
+  </ol>
+  <p>We’d wager the bet that most people on the list don’t identify
     with their “formal education” too much and regard themselves
     primarily as AI Safety researchers - but still, the uniformity of
     backgrounds is striking. For someone at the beginning of their
     career who doesn’t have the option to major in “AI Safety”, is a
     major in mathematics the next best thing? Is a strong technical
     background <a
-    href="https://www.txstate.edu/philosophy/resources/fallacy-definitions/Confusion-of-Necessary.html">necessary
-    or merely sufficient</a>?</p>
-    <h2 id="how-did-we-get-here"><strong>How did we get
-    here?</strong></h2>
-    <p>There are (at least) two<sup>[4]</sup> possible explanations for
+      href="https://www.txstate.edu/philosophy/resources/fallacy-definitions/Confusion-of-Necessary.html">necessary
+      or merely sufficient</a>?</p>
+  <h2 id="how-did-we-get-here"><strong>How did we get
+      here?</strong></h2>
+  <p>There are (at least) two<sup>[4]</sup> possible explanations for
     why the composition of the field is biased in favor of researchers
     with technical backgrounds:</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[4] </p>
     <p>Other, minor, reasons include:</p>
-    </div>
-    <ul class="incremental">
-    <li><p>Either, there is an “efficient market” dynamic whereby only
-    people with a technical background make progress and stay in the
-    field,</p></li>
-    <li><p>Or there is a “<a
-    href="https://en.wikipedia.org/wiki/Founder_effect">founder
-    effect”</a> dynamic whereby the first people entering the field had
-    an outsized effect on the composition of the field later
-    on.</p></li>
-    </ul>
-    <p>Between these two poles, there is an entire spectrum of what
+  </div>
+  <ul class="incremental">
+    <li>
+      <p>Either, there is an “efficient market” dynamic whereby only
+        people with a technical background make progress and stay in the
+        field,</p>
+    </li>
+    <li>
+      <p>Or there is a “<a href="https://en.wikipedia.org/wiki/Founder_effect">founder
+          effect”</a> dynamic whereby the first people entering the field had
+        an outsized effect on the composition of the field later
+        on.</p>
+    </li>
+  </ul>
+  <p>Between these two poles, there is an entire spectrum of what
     “solving” AI Safety might require:</p>
-    <ul class="incremental">
-    <li><p><strong>AI Safety</strong> _ <strong>almost
-    exclusively</strong>_ <strong>requires theoretical
-    research.</strong> Answers to “foundational questions” (like agent
-    foundations research) tend to require a lot of mathematical and
-    technical knowledge about different theories (<a
-    href="https://intelligence.org/research-guide/">see MIRI research
-    guide</a>). This research direction is <strong>monolithically
-    important</strong> , so a strong technical background is strictly
-    necessary. Brain enthusiasts with <a
-    href="https://my.clevelandclinic.org/health/diseases/22545-arithmophobia-fear-of-numbers">arithmophobia</a>
-    might never have a place in AI Safety.</p></li>
-    <li><p><strong>AI Safety</strong> _ <strong>mostly</strong>_
-    <strong>requires theoretical research but also</strong> _
-    <strong>some</strong>_ <strong>empirical research.</strong>
-    “Foundational questions” are the <strong>most urgent</strong> issue,
-    but we anticipate that the situation might change soon-ish. If
-    alignment foundations are established (or look promising), engineers
-    will have a day in the sun, as someone needs to <a
-    href="https://www.lesswrong.com/posts/YDF7XhMThhNfHfim9/ai-safety-needs-great-engineers">implement
-    these foundations in SOTA AI systems</a>. Brain enthusiasts who
-    picked up solid coding skills “somewhere” (or switched career paths
-    to obtain these skills) might be able to help if there’s a shortage
-    of software engineers.</p></li>
-    <li><p><strong>AI Safety requires</strong> _ <strong>some</strong>_
-    <strong>theoretical research and</strong> _ <strong>some</strong>_
-    <strong>empirical research.</strong> Beyond “foundational
-    questions”, which might still be <strong>very important</strong> ,
-    there are also empirical questions about the properties of current
-    &amp; future AI. Answers to these empirical questions are critical
-    for making progress in AI Safety at large. Brain enthusiasts might
-    be well-positioned to investigate empirical questions about future
-    AI (moderate additional training required) and current AI (solid
-    coding skills required).</p></li>
-    <li><p><strong>AI Safety</strong> _ <strong>almost
-    exclusively</strong>_ <strong>requires empirical research.</strong>
-    We are deeply confused about what AGI <em>is</em> and what its
-    existence would imply. We also won’t be able to answer these
-    questions with theoretical constructs; <a
-    href="https://www.azquotes.com/quote/702191">the ultimate arbiter of
-    truth is experiment</a>, so we have to (figuratively) “go out there
-    and observe”. <a
-    href="https://twitter.com/ESYudkowsky/status/1525285902628446208">The
-    empty string</a> is not sufficient input. Brain enthusiasts are
-    well-positioned (no additional training required) to study AGI as it
-    emerges and to describe how it might be dangerous.</p></li>
-    </ul>
-    <p>The poles of this spectrum appear highly unlikely - pure theory
+  <ul class="incremental">
+    <li>
+      <p><strong>AI Safety</strong> _ <strong>almost
+          exclusively</strong>_ <strong>requires theoretical
+          research.</strong> Answers to “foundational questions” (like agent
+        foundations research) tend to require a lot of mathematical and
+        technical knowledge about different theories (<a href="https://intelligence.org/research-guide/">see MIRI
+          research
+          guide</a>). This research direction is <strong>monolithically
+          important</strong> , so a strong technical background is strictly
+        necessary. Brain enthusiasts with <a
+          href="https://my.clevelandclinic.org/health/diseases/22545-arithmophobia-fear-of-numbers">arithmophobia</a>
+        might never have a place in AI Safety.</p>
+    </li>
+    <li>
+      <p><strong>AI Safety</strong> _ <strong>mostly</strong>_
+        <strong>requires theoretical research but also</strong> _
+        <strong>some</strong>_ <strong>empirical research.</strong>
+        “Foundational questions” are the <strong>most urgent</strong> issue,
+        but we anticipate that the situation might change soon-ish. If
+        alignment foundations are established (or look promising), engineers
+        will have a day in the sun, as someone needs to <a
+          href="https://www.lesswrong.com/posts/YDF7XhMThhNfHfim9/ai-safety-needs-great-engineers">implement
+          these foundations in SOTA AI systems</a>. Brain enthusiasts who
+        picked up solid coding skills “somewhere” (or switched career paths
+        to obtain these skills) might be able to help if there’s a shortage
+        of software engineers.
+      </p>
+    </li>
+    <li>
+      <p><strong>AI Safety requires</strong> _ <strong>some</strong>_
+        <strong>theoretical research and</strong> _ <strong>some</strong>_
+        <strong>empirical research.</strong> Beyond “foundational
+        questions”, which might still be <strong>very important</strong> ,
+        there are also empirical questions about the properties of current
+        &amp; future AI. Answers to these empirical questions are critical
+        for making progress in AI Safety at large. Brain enthusiasts might
+        be well-positioned to investigate empirical questions about future
+        AI (moderate additional training required) and current AI (solid
+        coding skills required).
+      </p>
+    </li>
+    <li>
+      <p><strong>AI Safety</strong> _ <strong>almost
+          exclusively</strong>_ <strong>requires empirical research.</strong>
+        We are deeply confused about what AGI <em>is</em> and what its
+        existence would imply. We also won’t be able to answer these
+        questions with theoretical constructs; <a href="https://www.azquotes.com/quote/702191">the ultimate arbiter of
+          truth is experiment</a>, so we have to (figuratively) “go out there
+        and observe”. <a href="https://twitter.com/ESYudkowsky/status/1525285902628446208">The
+          empty string</a> is not sufficient input. Brain enthusiasts are
+        well-positioned (no additional training required) to study AGI as it
+        emerges and to describe how it might be dangerous.</p>
+    </li>
+  </ul>
+  <p>The poles of this spectrum appear highly unlikely - pure theory
     without implementation is as useless as pure observation without
     foresight<sup>[5]</sup>. But the intermediate scenarios appear
     plausible, and we’ll dive into them more in the next two
     sections.</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[5] </p>
     <p>By the time we have an AGI to experiment on we might not have
-    researchers to do the experimenting.</p>
-    </div>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_187.png" />On
+      researchers to do the experimenting.</p>
+  </div>
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_187.png" />On
     the spectrum from empirical to logical, brain enthusiasts tend more
     to the empirical pole than the typical AI Safety researcher. The
     bull &amp; bear case describe two plausible ranges in which
     researchers could be able work productively on AI Safety.</p>
-    <h3 id="recommendations-the-bear-case">Recommendations: the bear
+  <h3 id="recommendations-the-bear-case">Recommendations: the bear
     case</h3>
-    <p><em>AI Safety <strong>mostly</strong> requires theoretical
-    research but also <strong>some</strong> empirical research.</em></p>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_188.png" />
+  <p><em>AI Safety <strong>mostly</strong> requires theoretical
+      research but also <strong>some</strong> empirical research.</em></p>
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_188.png" />
     <em>A bear furiously writing computer code while drinking coffee in
-    a room crammed full of books and papers stacked to the ceiling.</em>
-    <a
-    href="https://labs.openai.com/s/5vFdz3KmxaLOwQ0YhJv9R3JK">#dalle</a></p>
-    <p>In this scenario, AI Safety is mostly a technical problem, and
+      a room crammed full of books and papers stacked to the ceiling.</em>
+    <a href="https://labs.openai.com/s/5vFdz3KmxaLOwQ0YhJv9R3JK">#dalle</a>
+  </p>
+  <p>In this scenario, AI Safety is mostly a technical problem, and
     the current distribution of backgrounds is near-optimal. To
     contribute, you want to have <strong>solid</strong> coding and at
     least rudimentary math skills. You might start by applying for the
     <a href="https://aisafety.camp/">AI Safety camp</a> and then for the
     <a
-    href="https://forum.effectivealtruism.org/posts/iwTr8S8QkutyYroGy/apply-to-the-ml-for-alignment-bootcamp-mlab-in-berkeley-jan">ML
-    for Alignment Bootcamp</a>. Do some <a
-    href="https://www.coursera.org/specializations/deep-learning">Coursera
-    courses</a> on Deep Learning, and maybe study some <a
-    href="https://ocw.mit.edu/courses/6-034-artificial-intelligence-fall-2010/">good
-    old-fashioned AI</a>. Follow the steps outlined by CharlieRS <a
-    href="https://forum.effectivealtruism.org/posts/7WXPkpqKGKewAymJf/how-to-pursue-a-career-in-technical-ai-alignment">here</a>.
+      href="https://forum.effectivealtruism.org/posts/iwTr8S8QkutyYroGy/apply-to-the-ml-for-alignment-bootcamp-mlab-in-berkeley-jan">ML
+      for Alignment Bootcamp</a>. Do some <a href="https://www.coursera.org/specializations/deep-learning">Coursera
+      courses</a> on Deep Learning, and maybe study some <a
+      href="https://ocw.mit.edu/courses/6-034-artificial-intelligence-fall-2010/">good
+      old-fashioned AI</a>. Follow the steps outlined by CharlieRS <a
+      href="https://forum.effectivealtruism.org/posts/7WXPkpqKGKewAymJf/how-to-pursue-a-career-in-technical-ai-alignment">here</a>.
     Don’t feel like you have to figure everything out before you can
     “get started properly” (you’ll pick up things along the way), but
     realize that technical skills are crucial to contribute to the
-    problem meaningfully.</p>
-    <p>Your brain enthusiasm background won’t be sufficient to
-    contribute to the field. Cognitive science is <a
-    href="https://www.nature.com/articles/s41562-019-0626-2">kind of a
-    mess</a>, the study of neuroscience generates insights with <a
-    href="https://www.theatlantic.com/science/archive/2019/07/ten-years-human-brain-project-simulation-markram-ted-talk/594493/">endless
-    caveats</a> that have little hope of generalizing to superhuman
+    problem meaningfully.
+  </p>
+  <p>Your brain enthusiasm background won’t be sufficient to
+    contribute to the field. Cognitive science is <a href="https://www.nature.com/articles/s41562-019-0626-2">kind of a
+      mess</a>, the study of neuroscience generates insights with <a
+      href="https://www.theatlantic.com/science/archive/2019/07/ten-years-human-brain-project-simulation-markram-ted-talk/594493/">endless
+      caveats</a> that have little hope of generalizing to superhuman
     minds, and mainstream philosophy of mind is… <a
-    href="https://www.lesswrong.com/posts/oTX2LXHqXqYg2u4g6/less-wrong-rationality-and-mainstream-philosophy">still
-    stuck</a> on <a
-    href="https://www.lesswrong.com/posts/fdEWWr8St59bXLbQr/zombies-zombies">that
-    zombie thing</a>. <a
-    href="https://www.lesswrong.com/posts/4basF9w9jaPZpoC8R/intro-to-brain-like-agi-safety-1-what-s-the-problem-and-why">Brain-like
-    AGI</a> is not on the table. People have no incentive to follow a
+      href="https://www.lesswrong.com/posts/oTX2LXHqXqYg2u4g6/less-wrong-rationality-and-mainstream-philosophy">still
+      stuck</a> on <a href="https://www.lesswrong.com/posts/fdEWWr8St59bXLbQr/zombies-zombies">that
+      zombie thing</a>. <a
+      href="https://www.lesswrong.com/posts/4basF9w9jaPZpoC8R/intro-to-brain-like-agi-safety-1-what-s-the-problem-and-why">Brain-like
+      AGI</a> is not on the table. People have no incentive to follow a
     blueprint for making AGI more “brain-like”, and they might be
     correct not to follow it. Our confusion about how the brain works is
     even deeper than our confusion about AI Safety. <em>Trying</em> to
     build brain-like AGI is in the same category as “<a
-    href="https://www.lesswrong.com/posts/6i3zToomS86oj9bS6/mysterious-answers-to-mysterious-questions">mysterious
-    answers to mysterious questions”</a>.</p>
-    <p>However, your brain enthusiasm background is not something to be
+      href="https://www.lesswrong.com/posts/6i3zToomS86oj9bS6/mysterious-answers-to-mysterious-questions">mysterious
+      answers to mysterious questions”</a>.</p>
+  <p>However, your brain enthusiasm background is not something to be
     ashamed of either. Realize that you might know more about your field
     of study (the amygdala? meerkat’s mating rituals? the extended mind
     hypothesis?) than the median researcher you encounter. Sometimes
-    this is a problem (“<a
-    href="https://en.wikipedia.org/wiki/Law_of_the_instrument">law of
-    the instrument”</a>, when all you have is a hammer…), but sometimes
+    this is a problem (“<a href="https://en.wikipedia.org/wiki/Law_of_the_instrument">law of
+      the instrument”</a>, when all you have is a hammer…), but sometimes
     the correct response to”my area of expertise seems relevant here;
     why hasn’t anyone mentioned meerkats yet?” actually is “I should
     mention meerkats and explain why they are relevant”. Some reasonably
@@ -292,59 +299,57 @@ Kirchner</a></td>
     artificial intelligence. As long as you’re able to explain yourself
     in the common (technical) vocabulary, your contribution will be
     valuable<sup>[6]</sup>.</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[6] </p>
     <p>in expected value</p>
-    </div>
-    <h3 id="recommendations-the-bull-case">Recommendations: the bull
+  </div>
+  <h3 id="recommendations-the-bull-case">Recommendations: the bull
     case</h3>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_189.png" />
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_189.png" />
     <em>A bull furiously writing computer code while drinking coffee in
-    a room crammed full of books and papers stacked to the
-    ceiling.</em><a
-    href="https://labs.openai.com/s/rsrRDoqZo2oXqYuapVan8MoC">#dalle</a></p>
-    <p><em>AI Safety requires <strong>some</strong> theoretical research
-    and <strong>some</strong> empirical research.</em></p>
-    <p>In this scenario, AI Safety could benefit from more empirical
+      a room crammed full of books and papers stacked to the
+      ceiling.</em><a href="https://labs.openai.com/s/rsrRDoqZo2oXqYuapVan8MoC">#dalle</a>
+  </p>
+  <p><em>AI Safety requires <strong>some</strong> theoretical research
+      and <strong>some</strong> empirical research.</em></p>
+  <p>In this scenario, AI Safety could benefit from more empirical
     input and the current distribution of backgrounds is an artifact
-    produced by something like the <a
-    href="https://en.wikipedia.org/wiki/Founder_effect">founder
-    effect</a>. To contribute, you might have to learn some basic coding
+    produced by something like the <a href="https://en.wikipedia.org/wiki/Founder_effect">founder
+      effect</a>. To contribute, you might have to learn some basic coding
     skills and technical vocabulary. But don’t spend too much time on
     this. Your comparative advantage lies elsewhere. Consider applying
     for the <a href="https://www.pibbss.ai/fellowship">PIBBSS
-    fellowship</a>, but also consider “just start experimenting”. <a
-    href="https://share.hsforms.com/1b-BEAq_qQpKcfFGKwwuhxA4sk30">Request
-    research access to the GPT API</a> and ask the model <a
-    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/cognitive-biases-in-large-language">some
-    pointed questions</a>, grab <a
-    href="https://www.lesswrong.com/posts/FgjcHiWvADgsocE34/a-descriptive-not-prescriptive-overview-of-current-ai">a
-    dataset</a> and investigate the eye color of the prominent
+      fellowship</a>, but also consider “just start experimenting”. <a
+      href="https://share.hsforms.com/1b-BEAq_qQpKcfFGKwwuhxA4sk30">Request
+      research access to the GPT API</a> and ask the model <a
+      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/cognitive-biases-in-large-language">some
+      pointed questions</a>, grab <a
+      href="https://www.lesswrong.com/posts/FgjcHiWvADgsocE34/a-descriptive-not-prescriptive-overview-of-current-ai">a
+      dataset</a> and investigate the eye color of the prominent
     researchers in the field<sup>[7]</sup>, or see what you can learn
     about <a href="https://www.lesswrong.com/tag/myopia">myopia</a> by
     looking at people with anterograde/retrograde amnesia.</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[7] </p>
     <p>we already called dibs on the formal education, sorry not
-    sorry.</p>
-    </div>
-    <p>Your brain enthusiasm background is your great strength, and it
+      sorry.</p>
+  </div>
+  <p>Your brain enthusiasm background is your great strength, and it
     might appear counterintuitive how many <a
-    href="https://www.theseedsofscience.org/2022-on-scaling-academia">low-hanging
-    fruits are for you to pick</a>. <em>Usually,</em> low-hanging fruits
+      href="https://www.theseedsofscience.org/2022-on-scaling-academia">low-hanging
+      fruits are for you to pick</a>. <em>Usually,</em> low-hanging fruits
     are bad (or someone else would have picked them) - but AI Safety
     might <em>genuinely</em> be in a non-equilibrium state, and some
     very impactful projects might require little effort. Simply writing
     a post about what AI Safety looks like <a
-    href="https://www.lesswrong.com/posts/KtCJNw93KHg7MSSvw/adversarial-attacks-and-optimal-control">through
-    the lens of something you know well</a> could be valuable. It is
+      href="https://www.lesswrong.com/posts/KtCJNw93KHg7MSSvw/adversarial-attacks-and-optimal-control">through
+      the lens of something you know well</a> could be valuable. It is
     corny beyond all reasonableness - but you should adopt the <a
-    href="https://www.clydebankmedia.com/definitions/business/abundance-mindset">abundance
-    mindset</a>.</p>
-    <p>However, even though your brain enthusiasm background is <a
-    href="http://onlineslangdictionary.com/meaning-definition-of/da-shit">da
-    shit</a>, please don’t start spamming the Alignment Forum. You might
+      href="https://www.clydebankmedia.com/definitions/business/abundance-mindset">abundance
+      mindset</a>.</p>
+  <p>However, even though your brain enthusiasm background is <a
+      href="http://onlineslangdictionary.com/meaning-definition-of/da-shit">da
+      shit</a>, please don’t start spamming the Alignment Forum. You might
     genuinely have important insights, but the ability to communicate
     them is now more important than ever. Without a shared vocabulary,
     you will want to invest much effort into expressing yourself well.
@@ -353,136 +358,129 @@ Kirchner</a></td>
     for a long time. Even though, as per the assumption of this
     subsection, your brain enthusiast background is useful, the onus is
     still on you to demonstrate <em>in what way</em> this is true.</p>
-    <h2 id="what-now-a-call-to-action.">What now? A call to action.</h2>
-    <p>In this section, we want to give you different options and
+  <h2 id="what-now-a-call-to-action.">What now? A call to action.</h2>
+  <p>In this section, we want to give you different options and
     recommendations for projects and topics you could contribute to,
     depending on whether you are more of a bear or a bull<sup>[8]</sup>.
     Consider these “mini-project proposals”. If you’d like to work on
     one of those, feel free to reach out! Perhaps we can help!</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[8] </p>
     <p>We suspect that people from fields that are a) not cognitive
-    science/neuroscience (or a more technical background) and b)
-    nevertheless interested in AI Safety also read this post. In our
-    research, we also found many interesting resources for those people.
-    In this footnote, we want to compile these resources.<br />
-    See <a
-    href="https://metabstract.squarespace.com/blog/compilation-of-thoguhts-on-high-impact-interdisciplinary-research">here</a>
-    for a great collection of topics categorized by unusual backgrounds
-    (compiled by Nora Ammann, Project Lead for pibbss.ai -&gt; check
-    this out as well).</p>
-    </div>
-    <p><strong>Forecasting AI capabilities and analyzing AI takeoff
-    scenarios.</strong> One approach for forecasting timelines until the
+      science/neuroscience (or a more technical background) and b)
+      nevertheless interested in AI Safety also read this post. In our
+      research, we also found many interesting resources for those people.
+      In this footnote, we want to compile these resources.<br />
+      See <a
+        href="https://metabstract.squarespace.com/blog/compilation-of-thoguhts-on-high-impact-interdisciplinary-research">here</a>
+      for a great collection of topics categorized by unusual backgrounds
+      (compiled by Nora Ammann, Project Lead for pibbss.ai -&gt; check
+      this out as well).</p>
+  </div>
+  <p><strong>Forecasting AI capabilities and analyzing AI takeoff
+      scenarios.</strong> One approach for forecasting timelines until the
     emergence of AGI is to <a
-    href="https://astralcodexten.substack.com/p/biological-anchors-a-trick-that-might?s=r">anchor</a>
+      href="https://astralcodexten.substack.com/p/biological-anchors-a-trick-that-might?s=r">anchor</a>
     the analysis with what we know about the <a
-    href="https://www.lesswrong.com/posts/pgQ3m73kpjGDgKuRM/how-much-computational-power-does-it-take-to-match-the-human">computational
-    capacity of the human brain</a>. This “<a
-    href="https://www.lesswrong.com/posts/nfoYnASKHczH4G5pT/Possible%20further%20investigations">Possible
-    further investigation</a>” section might be a great starting
+      href="https://www.lesswrong.com/posts/pgQ3m73kpjGDgKuRM/how-much-computational-power-does-it-take-to-match-the-human">computational
+      capacity of the human brain</a>. This “<a
+      href="https://www.lesswrong.com/posts/nfoYnASKHczH4G5pT/Possible%20further%20investigations">Possible
+      further investigation</a>” section might be a great starting
     point.</p>
-    <p><strong>Neuroscience could play a big role in deciphering human
-    values.</strong> Standard paradigms of reward learning attempt to <a
-    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/inferring-utility-functions?s=w">infer
-    human values by looking at their choices</a>. This probably doesn’t
+  <p><strong>Neuroscience could play a big role in deciphering human
+      values.</strong> Standard paradigms of reward learning attempt to <a
+      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/inferring-utility-functions?s=w">infer
+      human values by looking at their choices</a>. This probably doesn’t
     capture everything there is to capture. Cognitive Science and
     Neuroscience have a rich literature of experiments and frameworks on
     this topic. Existing reports by <a
-    href="https://www.lesswrong.com/posts/hN2aRnu798yas5b2k/a-crash-course-in-the-neuroscience-of-human-motivation">Luke
-    Muehlhauser</a> or <a
-    href="https://intelligence.org/files/DefiningValuesForValueLearners.pdf">Kaj
-    Solata</a> are great starting points, but there is a lot more that
+      href="https://www.lesswrong.com/posts/hN2aRnu798yas5b2k/a-crash-course-in-the-neuroscience-of-human-motivation">Luke
+      Muehlhauser</a> or <a href="https://intelligence.org/files/DefiningValuesForValueLearners.pdf">Kaj
+      Solata</a> are great starting points, but there is a lot more that
     can be extracted from the literature.</p>
-    <p><strong><a
-    href="https://www.lesswrong.com/posts/rSMbGFfsLMB3GWZtX/what-is-interpretability">Interpretability</a></strong>
+  <p><strong><a
+        href="https://www.lesswrong.com/posts/rSMbGFfsLMB3GWZtX/what-is-interpretability">Interpretability</a></strong>
     _ <strong>(or Transparency and Explainability research).</strong>
     <em><a
-    href="https://www.lesswrong.com/posts/AyfDnnAdjG7HHeD3d/miri-comments-on-cotra-s-case-for-aligning-narrowly">Some
-    AI Researchers</a> believe that Interpretability is the </em>”most
+        href="https://www.lesswrong.com/posts/AyfDnnAdjG7HHeD3d/miri-comments-on-cotra-s-case-for-aligning-narrowly">Some
+        AI Researchers</a> believe that Interpretability is the </em>”most
     valuable current research direction within the class of standard ML
     research”_. According to Olah, if you have been trying to interpret
-    neural systems up until now, you might find this <a
-    href="http://colah.github.io/notes/interp-v-neuro/">work
-    considerably easier</a>. A lot of data analysis techniques from
+    neural systems up until now, you might find this <a href="http://colah.github.io/notes/interp-v-neuro/">work
+      considerably easier</a>. A lot of data analysis techniques from
     computational neuroscience or cognitive science might translate
     straightforwardly to artificial neural networks. <a
-    href="https://en.wikipedia.org/wiki/Non-negative_matrix_factorization">Nonnegative
-    matrix factorization</a>, <a
-    href="https://en.wikipedia.org/wiki/Granger_causality">Granger
-    causality</a>, and <a
-    href="https://ir.vanderbilt.edu/handle/1803/11792">seedpoint
-    correlation analysis</a> might all be worth a shot.</p>
-    <p><strong>Brain-Like AGI Safety.</strong> Steven Byrnes, whom we
-    have already mentioned earlier, has written a <a
-    href="https://www.alignmentforum.org/s/HzcM2dkCq7fwXBej8">sequence
-    on brain-like AGI Safety”</a>. He believes that there are two paths
+      href="https://en.wikipedia.org/wiki/Non-negative_matrix_factorization">Nonnegative
+      matrix factorization</a>, <a href="https://en.wikipedia.org/wiki/Granger_causality">Granger
+      causality</a>, and <a href="https://ir.vanderbilt.edu/handle/1803/11792">seedpoint
+      correlation analysis</a> might all be worth a shot.
+  </p>
+  <p><strong>Brain-Like AGI Safety.</strong> Steven Byrnes, whom we
+    have already mentioned earlier, has written a <a href="https://www.alignmentforum.org/s/HzcM2dkCq7fwXBej8">sequence
+      on brain-like AGI Safety”</a>. He believes that there are two paths
     towards aligned AI where a brain enthusiast’s perspective could
     help: “controlled AGIs” (carefully designed and monitored AGI goals
     and motivations) and “social-instincts AGIs” (reverse-engineered
     human social instincts) (see <a
-    href="https://www.lesswrong.com/posts/Sd4QvG4ZyjynZuHGt/intro-to-brain-like-agi-safety-12-two-paths-forward#12_3_My_proposal__At_this_stage__we_should_be_digging_into_both">post
-    12</a> for more info on this). Engaging with his articles (even if
-    only through <a
-    href="https://www.lesswrong.com/posts/zo9zKcz47JxDErFzQ/call-for-distillers">distillation</a>)
+      href="https://www.lesswrong.com/posts/Sd4QvG4ZyjynZuHGt/intro-to-brain-like-agi-safety-12-two-paths-forward#12_3_My_proposal__At_this_stage__we_should_be_digging_into_both">post
+      12</a> for more info on this). Engaging with his articles (even if
+    only through <a href="https://www.lesswrong.com/posts/zo9zKcz47JxDErFzQ/call-for-distillers">distillation</a>)
     appears potentially very high impact.</p>
-    <p><strong>Human-Computer Interaction.</strong><a
-    href="https://www.lesswrong.com/posts/xF7gBJYsy6qenmmCS/don-t-die-with-dignity-instead-play-to-your-outs">Assuming</a>
+  <p><strong>Human-Computer Interaction.</strong><a
+      href="https://www.lesswrong.com/posts/xF7gBJYsy6qenmmCS/don-t-die-with-dignity-instead-play-to-your-outs">Assuming</a>
     AGI doesn’t immediately <a
-    href="https://wiki.lesswrong.com/wiki/The_Hanson-Yudkowsky_AI-Foom_Debate?_ga=2.115203591.10725987.1654946975-1319048119.1649575990">foom</a>,
+      href="https://wiki.lesswrong.com/wiki/The_Hanson-Yudkowsky_AI-Foom_Debate?_ga=2.115203591.10725987.1654946975-1319048119.1649575990">foom</a>,
     the way humanity interacts with AGI might become critical. Studying
     human susceptibility to manipulation could provide hints at what
     bounded AI-assisted warfare might look like. Studying historical
     changes in values might help anticipate what <a
-    href="https://www.lesswrong.com/posts/HTgakSs6JpnogD6c2/two-neglected-problems-in-human-ai-safety?_ga=2.66222953.693505013.1654946995-662448457.1649576736">intentional
-    and unintentional value corruption</a> might look like. Thinking
+      href="https://www.lesswrong.com/posts/HTgakSs6JpnogD6c2/two-neglected-problems-in-human-ai-safety?_ga=2.66222953.693505013.1654946995-662448457.1649576736">intentional
+      and unintentional value corruption</a> might look like. Thinking
     about how humans can <a
-    href="https://www.lesswrong.com/posts/A9tJFJY7DsGTFKKkh/high-stakes-alignment-via-adversarial-training-redwood">leverage
-    existing AI tools</a> might provide a critical headstart for
+      href="https://www.lesswrong.com/posts/A9tJFJY7DsGTFKKkh/high-stakes-alignment-via-adversarial-training-redwood">leverage
+      existing AI tools</a> might provide a critical headstart for
     optimally designing future safety technology.</p>
-    <p><strong>Playing with fire.</strong> Some people used to think it
-    was plausible that AGI can be <a
-    href="https://www.youtube.com/watch?v=Qgd3OK5DZWI&amp;ab_channel=DeepMind">achieved
-    by copying the brain</a> (although the approach is falling out of
+  <p><strong>Playing with fire.</strong> Some people used to think it
+    was plausible that AGI can be <a href="https://www.youtube.com/watch?v=Qgd3OK5DZWI&amp;ab_channel=DeepMind">achieved
+      by copying the brain</a> (although the approach is falling out of
     favor<sup>[9]</sup>). But even if the secret to AGI is not buried in
     your neuroanatomy textbook, through some type of convergent
     evolution AGI <em>might</em> share some features of the human brain.
-    <a
-    href="https://www.lesswrong.com/posts/XKwKJCXgSKhSr9bZY/project-intro-selection-theorems-for-modularity">Modularity
-    appears like a plausible candidate</a>. Perhaps there are
-    others?</p>
-    <div class="sidenote">
+    <a href="https://www.lesswrong.com/posts/XKwKJCXgSKhSr9bZY/project-intro-selection-theorems-for-modularity">Modularity
+      appears like a plausible candidate</a>. Perhaps there are
+    others?
+  </p>
+  <div class="sidenote">
     <p>[9] </p>
     <p>The new approach is the much less dignified “GPUs go
-    brrrrrr”.</p>
-    </div>
-    <p><strong>Exploring directions we haven’t thought of.</strong>
+      brrrrrr”.</p>
+  </div>
+  <p><strong>Exploring directions we haven’t thought of.</strong>
     Maybe you already had ideas when you began reading this article.
     Great! The above list isn’t intended to constrain your creativity;
     don’t be afraid to try out things. In fact, we believe that the most
     impact of a brain-enthusiast AI safety project could be exactly
     this: contributing an unusual perspective to AI Safety
     research<sup>[10]</sup>.</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[10] </p>
     <p>Even if you fail - we believe this is what the EA community is
-    for. The necessary consequence of 80000hours saying that we have to
-    focus on technical AI Safety research (with a technical background)
-    is not that this is the path everybody has to take. We want to have
-    the highest expected value as a community, not necessarily as an
-    individual. Thus, <a
-    href="https://80000hours.org/articles/be-more-ambitious/">be
-    ambitious and do things that have great upside scenarios</a> - the
-    community is covering you!</p>
-    </div>
-    <p>If you are still not convinced, consider the <a
-    href="https://funds.effectivealtruism.org/grantmaking-approach">information
-    value gained through failing</a>. High-variability projects are
+      for. The necessary consequence of 80000hours saying that we have to
+      focus on technical AI Safety research (with a technical background)
+      is not that this is the path everybody has to take. We want to have
+      the highest expected value as a community, not necessarily as an
+      individual. Thus, <a href="https://80000hours.org/articles/be-more-ambitious/">be
+        ambitious and do things that have great upside scenarios</a> - the
+      community is covering you!</p>
+  </div>
+  <p>If you are still not convinced, consider the <a
+      href="https://funds.effectivealtruism.org/grantmaking-approach">information
+      value gained through failing</a>. High-variability projects are
     lucrative for grantmakers (more information value gained for future
     grantmaking), giving you a good shot at getting funding (there is a
     small probability that the projects mentioned above work out).</p>
-    <h2 id="the-bottom-line"><strong>The bottom line</strong></h2>
-    <p>We were torn between two extremes when composing this post: “the
+  <h2 id="the-bottom-line"><strong>The bottom line</strong></h2>
+  <p>We were torn between two extremes when composing this post: “the
     brain is useless” and “the brain is all you need”. Between these
     extremes, we found a spectrum of research with varying technical and
     empirical components. Eventually, we decided to present both a
@@ -490,52 +488,62 @@ Kirchner</a></td>
     enthusiasts might fit into AI Safety research. What became clear in
     both scenarios is that there is value in variability, and a
     nonstandard background can be an advantage more often than not.</p>
-    <p>While we wrote in an authoritative voice in some places, please
+  <p>While we wrote in an authoritative voice in some places, please
     read all of this with an appropriate (spoonful or more) amount of
     salt. While we feel somewhat good about the conclusion that
     variability can be beneficial, the exact route for brain enthusiasts
     to contribute to AI Safety is fuzzy. Going down this path will
     require careful attention to the environment - few have walked it
     before. Be careful not to trample into a <a
-    href="https://www.lesswrong.com/posts/tscc3e5eujrsEeFN4/well-kept-gardens-die-by-pacifism">well-kept
-    garden</a>.</p>
-    <p>We look forward to any questions and/or comments below, or via
-    mail to either of us (you can find our contact info on our blogs: <a
-    href="https://snellessen.com/">Sam</a> &amp; <a
-    href="https://universalprior.substack.com/">Jan</a>).</p>
-    <ul class="incremental">
-    <li><p>Brain enthusiasts aren’t even getting the idea that they
-    could contribute, because of multiple reasons:</p>
-    <ul class="incremental">
-    <li><p>We’re missing a good onramp for them.</p></li>
-    <li><p>Path dependencies - people with a CS inside model are biassed
-    towards their own kin or people with a Neuroscience/CogSci
-    background perceive the field as being too departmentalized because
-    of this</p></li>
-    </ul></li>
-    <li><p>Academia is strongly incentivized for narrow departments -
-    the field is young and people who want to bring AI Safety thoughts
-    into Neuroscience and vice versa have to fight an uphill
-    battle.</p></li>
-    <li><p>Interdisciplinary research seems to be harder and more costly
-    than disciplinary research, because of 1) the difficulty of
-    <em>epistemic translation</em> (creating a common vocabulary to
-    communicate between fields, understanding the relevance of certain
-    insights from an outside field for your own field, and translating
-    knowledge from your field to a target domain), 2) the <a
-    href="https://www.nature.com/articles/nature18315">probability of
-    getting funded for interdisciplinary research seems to be
-    substantially lower in general</a>.</p></li>
-    </ul>
-    <p>If you have a philosophy background, <a
-    href="https://www.lesswrong.com/posts/rASeoR7iZ9Fokzh7L/problems-in-ai-alignment-that-philosophers-could-potentially">check
-    this out</a>.</p>
-    <p>Debating as a method to align agents could be interesting for you
+      href="https://www.lesswrong.com/posts/tscc3e5eujrsEeFN4/well-kept-gardens-die-by-pacifism">well-kept
+      garden</a>.</p>
+  <p>We look forward to any questions and/or comments below, or via
+    mail to either of us (you can find our contact info on our blogs: <a href="https://snellessen.com/">Sam</a> &amp; <a
+      href="https://kirchner-jan.github.io/minimalprior/">Jan</a>).</p>
+  <ul class="incremental">
+    <li>
+      <p>Brain enthusiasts aren’t even getting the idea that they
+        could contribute, because of multiple reasons:</p>
+      <ul class="incremental">
+        <li>
+          <p>We’re missing a good onramp for them.</p>
+        </li>
+        <li>
+          <p>Path dependencies - people with a CS inside model are biassed
+            towards their own kin or people with a Neuroscience/CogSci
+            background perceive the field as being too departmentalized because
+            of this</p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>Academia is strongly incentivized for narrow departments -
+        the field is young and people who want to bring AI Safety thoughts
+        into Neuroscience and vice versa have to fight an uphill
+        battle.</p>
+    </li>
+    <li>
+      <p>Interdisciplinary research seems to be harder and more costly
+        than disciplinary research, because of 1) the difficulty of
+        <em>epistemic translation</em> (creating a common vocabulary to
+        communicate between fields, understanding the relevance of certain
+        insights from an outside field for your own field, and translating
+        knowledge from your field to a target domain), 2) the <a
+          href="https://www.nature.com/articles/nature18315">probability of
+          getting funded for interdisciplinary research seems to be
+          substantially lower in general</a>.
+      </p>
+    </li>
+  </ul>
+  <p>If you have a philosophy background, <a
+      href="https://www.lesswrong.com/posts/rASeoR7iZ9Fokzh7L/problems-in-ai-alignment-that-philosophers-could-potentially">check
+      this out</a>.</p>
+  <p>Debating as a method to align agents could be interesting for you
     if your background is in social sciences (See <a
-    href="https://distill.pub/2019/safety-needs-social-scientists/">here</a>
+      href="https://distill.pub/2019/safety-needs-social-scientists/">here</a>
     and <a href="https://arxiv.org/pdf/1805.00899.pdf">here</a> for more
     info)</p>
-    <div class="debug-grid"></div>
+  <div class="debug-grid"></div>
   <script src="../../index.js"></script>
 </body>
 

@@ -1,92 +1,57 @@
-INFO:root:Processing document: minimalprior
-WARNING:root:Sidenote 35 was created but its reference was not found in the text. Adding to end of document.
-WARNING:root:Sidenote 36 was created but its reference was not found in the text. Adding to end of document.
-WARNING:root:Sidenote 37 was created but its reference was not found in the text. Adding to end of document.
-WARNING:root:Sidenote 38 was created but its reference was not found in the text. Adding to end of document.
-WARNING:root:Sidenote 39 was created but its reference was not found in the text. Adding to end of document.
-WARNING:root:Sidenote 26 was created but its reference was not found in the text. Adding to end of document.
-WARNING:root:Sidenote 27 was created but its reference was not found in the text. Adding to end of document.
-WARNING:root:Sidenote 29 was created but its reference was not found in the text. Adding to end of document.
-WARNING:root:Sidenote 30 was created but its reference was not found in the text. Adding to end of document.
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-WARNING:root:Sidenote 1 was created but its reference was not found in the text. Adding to end of document.
-WARNING:root:Sidenote 11 was created but its reference was not found in the text. Adding to end of document.
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-WARNING:root:Sidenote 3 was created but its reference was not found in the text. Adding to end of document.
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
+INFO:root:Processing document: Brain enthusiasts in AI Safety
+INFO:root:Processing document: Chat with Anna Riedl - On Drug Addiction in AI, Language Models, and Scaling Academia
+INFO:root:Processing document: Cognitive Biases in Large Language Models
+INFO:root:Processing document: Compute Governance The Role of Commodity Hardware
+INFO:root:Processing document: Continental Philosophy as Undergraduate Mathematics
+INFO:root:Processing document: Drug addicts and deceptively aligned agents - a comparative analysis
 WARNING:root:Sidenote 1 was created but its reference was not found in the text. Adding to end of document.
 WARNING:root:Sidenote 16 was created but its reference was not found in the text. Adding to end of document.
 WARNING:root:Sidenote 17 was created but its reference was not found in the text. Adding to end of document.
 WARNING:root:Sidenote 18 was created but its reference was not found in the text. Adding to end of document.
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-WARNING:root:Sidenote 6 was created but its reference was not found in the text. Adding to end of document.
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
+INFO:root:Processing document: Elementary Infra-Bayesianism
+INFO:root:Processing document: Frankfurt Declaration on the Cambridge Declaration on Consciousness
+INFO:root:Processing document: Hello DALL-E!
+INFO:root:Processing document: How to build a mind - neuroscience edition
+INFO:root:Processing document: I’m not getting in that van
+INFO:root:Processing document: Inferring utility functions from locally non-transitive preferences
+INFO:root:Processing document: Introduction to Hebbian Natural Abstractions
+INFO:root:Processing document: Making of
 WARNING:root:Sidenote 1 was created but its reference was not found in the text. Adding to end of document.
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
+INFO:root:Processing document: On Automatic Ideas
 WARNING:root:Sidenote 13 was created but its reference was not found in the text. Adding to end of document.
 WARNING:root:Sidenote 14 was created but its reference was not found in the text. Adding to end of document.
 WARNING:root:Sidenote 15 was created but its reference was not found in the text. Adding to end of document.
-INFO:root:Processing document: minimalprior
+INFO:root:Processing document: On Context And People
 WARNING:root:Sidenote 2 was created but its reference was not found in the text. Adding to end of document.
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
+INFO:root:Processing document: On (Not) Reading Papers
+INFO:root:Processing document: On Scaling Academia - Seeds Of Science version
+INFO:root:Processing document: On Scaling Academia
+INFO:root:Processing document: Pop Culture Alignment Research and Taxes
+INFO:root:Processing document: Puberty as Cause X?
 WARNING:root:Sidenote 1 was created but its reference was not found in the text. Adding to end of document.
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
+INFO:root:Processing document: Researching Alignment Research Unsupervised Analysis
+INFO:root:Processing document: Serendipitous connections applying explanations from AI to the brain
 WARNING:root:Sidenote 2 was created but its reference was not found in the text. Adding to end of document.
 WARNING:root:Sidenote 20 was created but its reference was not found in the text. Adding to end of document.
 WARNING:root:Sidenote 21 was created but its reference was not found in the text. Adding to end of document.
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
+INFO:root:Processing document: Simulator Musings
+INFO:root:Processing document: Slightly advanced decision theory 102 Four reasons not to be a (naive) utility maximizer
 WARNING:root:Sidenote 1 was created but its reference was not found in the text. Adding to end of document.
 WARNING:root:Sidenote 8 was created but its reference was not found in the text. Adding to end of document.
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
+INFO:root:Processing document: Soldiers, Scouts, and Albatrosses.
+INFO:root:Processing document: Task Decomposition And Scientific Inquiry
+INFO:root:Processing document: The Brain That Builds Itself
 WARNING:root:Sidenote 1 was created but its reference was not found in the text. Adding to end of document.
 WARNING:root:Sidenote 4 was created but its reference was not found in the text. Adding to end of document.
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
+INFO:root:Processing document: The Greedy Doctor Problem
+INFO:root:Processing document: The Inter-Agent Facet of AI Alignment
+INFO:root:Processing document: The Tale Of Gandhi And The Devil
 WARNING:root:Sidenote 1 was created but its reference was not found in the text. Adding to end of document.
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
-INFO:root:Processing document: minimalprior
+INFO:root:Processing document: The Unreasonable Feasibility Of Playing Chess Under The Influence
+INFO:root:Processing document: This week in fashion
+INFO:root:Processing document: Trust-maximizing AGI
+INFO:root:Processing document: TSPSIs and How I Write
+INFO:root:Processing document: Via productiva
 WARNING:root:Sidenote 8 was created but its reference was not found in the text. Adding to end of document.
 WARNING:root:Sidenote 20 was created but its reference was not found in the text. Adding to end of document.
-INFO:root:Processing document: minimalprior
+INFO:root:Processing document: What are red flags for Neural Network suffering?

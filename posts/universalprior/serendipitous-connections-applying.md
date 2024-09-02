@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: Serendipitous connections applying explanations from AI to the brain
+subtitle: TL;DR A small shift in perspective helps interpret the ventral stream in the biological brain as the residual stream from ResNets. Experimental…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2022-01-04
 ---
 

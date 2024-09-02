@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: Via productiva
+subtitle: Be careful whose advice you buy, but be patient with those who supply it. Advice is a form of nostalgia, dispensing it is a way of fishing the past from…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2022-03-06
 ---
 
@@ -33,7 +33,7 @@ Consequently, a lot of advice floating around online and offline tends to be [pr
 
 ## The negative way
 
-Considering all these arguments, I try to limit my advice-giving to an absolute minimum. This, as you can imagine, is becoming increasingly difficult as I continue [this experiment](https://universalprior.substack.com/) of broadcasting my thoughts on a near-weekly basis. There are so many things I _want_ to write about because I think I’ve figured out a truly brilliant way of doing them, but I stop myself so as not to embarrass my future self. Most things that work well for me might be Jan-specific strategies that don’t generalize[^3].
+Considering all these arguments, I try to limit my advice-giving to an absolute minimum. This, as you can imagine, is becoming increasingly difficult as I continue [this experiment](https://kirchner-jan.github.io/minimalprior/) of broadcasting my thoughts on a near-weekly basis. There are so many things I _want_ to write about because I think I’ve figured out a truly brilliant way of doing them, but I stop myself so as not to embarrass my future self. Most things that work well for me might be Jan-specific strategies that don’t generalize[^3].
 
 There might be a way out, however. The great Nassim Taleb declared in 2019[^4]
 

@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: The Inter-Agent Facet of AI Alignment
+subtitle: TL;DR Guest post by Michael Oesterle on coordination problems (and more) between advanced artificial agents.
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2022-09-19
 ---
 

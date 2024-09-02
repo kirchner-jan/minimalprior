@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: Drug addicts and deceptively aligned agents - a comparative analysis
+subtitle: A young man, let's call him Dave, starts consuming different kinds of illegal drugs (mostly heroin) as early as age 14, as a reaction to the divorce of…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2024-08-31
 ---
 

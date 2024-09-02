@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: Introduction to Hebbian Natural Abstractions
+subtitle: A neuroscientific-perspective on translating concepts between world-models as a way of solving value-learning.
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2022-11-22
 ---
 

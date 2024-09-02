@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: Hello DALL-E!
+subtitle: TL;DR I let my friend Ava (who actually knows a thing or two about art!) experiment with DALL-E 2 for a bit. She allowed me to share her reflections…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2022-07-18
 ---
 

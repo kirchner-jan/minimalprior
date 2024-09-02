@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: TSPSIs and How I Write
+subtitle: TL;DR Writing about writing and having written, and self-referentiality. Complementary musings on AI.
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2022-12-28
 ---
 

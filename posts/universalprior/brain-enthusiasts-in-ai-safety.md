@@ -1,9 +1,9 @@
 ---
-title: minimalprior
-subtitle: a spinoff
-author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
-date: 2022-06-15
+title: 'Brain enthusiasts in AI Safety'
+subtitle: 'TL;DR If you are a student of cognitive science or neuroscience and are wondering whether it can make sense to work in AI Safety, this guide is for you'
+author: 'Jan Kirchner'
+author-url: 'https://kirchner-jan.github.io/minimalprior/'
+date: '2022-06-15'
 ---
 
 
@@ -11,7 +11,7 @@ date: 2022-06-15
 
 AI Safety is a rapidly growing field of research that is singular in its goal: to avoid or mitigate negative outcomes from advanced AI. At the same time, AI Safety research touches on many aspects of human lives: from the philosophy of human values, via the neuroscience of human cognition, to the intricacies of human politics and coordination. This interplay between a singular goal with multiple facets makes the problem intrinsically interdisciplinary and warrants the application of various tools by researchers with diverse backgrounds.
 
-Both of us ([Sam](https://snellessen.com/) & [Jan](https://universalprior.substack.com/)) have backgrounds in cognitive science and neuroscience (we'll use the blanket term " **brain enthusiasts** " from here on). Important characteristics of brain enthusiasts are (see if these apply to you, dear reader):
+Both of us ([Sam](https://snellessen.com/) & [Jan](https://kirchner-jan.github.io/minimalprior/)) have backgrounds in cognitive science and neuroscience (we'll use the blanket term " **brain enthusiasts** " from here on). Important characteristics of brain enthusiasts are (see if these apply to you, dear reader):
 
   * A propensity for empirical data and experiments.
 
@@ -120,7 +120,7 @@ We were torn between two extremes when composing this post: "the brain is useles
 
 While we wrote in an authoritative voice in some places, please read all of this with an appropriate (spoonful or more) amount of salt. While we feel somewhat good about the conclusion that variability can be beneficial, the exact route for brain enthusiasts to contribute to AI Safety is fuzzy. Going down this path will require careful attention to the environment - few have walked it before. Be careful not to trample into a [well-kept garden](https://www.lesswrong.com/posts/tscc3e5eujrsEeFN4/well-kept-gardens-die-by-pacifism).
 
-We look forward to any questions and/or comments below, or via mail to either of us (you can find our contact info on our blogs: [Sam](https://snellessen.com/) & [Jan](https://universalprior.substack.com/)).
+We look forward to any questions and/or comments below, or via mail to either of us (you can find our contact info on our blogs: [Sam](https://snellessen.com/) & [Jan](https://kirchner-jan.github.io/minimalprior/)).
 
 [^1]:While we focus on brain enthusiasts, our ideas might also apply to other fields that concern themselves with the study of complex social or biological systems.
 

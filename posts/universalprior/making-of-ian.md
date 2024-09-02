@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: Making of #IAN
+subtitle: TL;DR I fine-tuned a large language model on my personal notes and embedded the resulting model in my everyday workflow. Personal experience, Roam…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2021-08-29
 ---
 

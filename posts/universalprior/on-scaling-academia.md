@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: On Scaling Academia
+subtitle: TL;DR Current model of academia does not scale. Systematizing and quantifying might improve scalability. Most importantly, it enables automation.
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2021-09-20
 ---
 

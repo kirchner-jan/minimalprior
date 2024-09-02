@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: The Brain That Builds Itself
+subtitle: TL;DR Shameless advertisement for a paper some colleagues and I wrote. But also some pretty pictures of brain development, and some first principle…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2022-05-30
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: Slightly advanced decision theory 102 Four reasons not to be a (naive) utility maximizer
+subtitle: TL;DR Introduction to decision theory with examples from effective altruism. Resulting optimal strategies differ from "naive" utility maximisation, but…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2021-11-22
 ---
 

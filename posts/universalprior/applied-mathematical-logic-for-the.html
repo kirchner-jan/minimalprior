@@ -1,267 +1,254 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="" >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-    <meta name="author" content="Jan Kirchner" />
-      <meta name="dcterms.date" content="2021-10-17" />
-        <title>minimalprior</title>
-    <link rel="stylesheet" href="../../reset.css" />
-    <link rel="stylesheet" href="../../index.css" />
-      </head>
+  <meta name="author" content="Jan Kirchner" />
+  <meta name="dcterms.date" content="2021-10-17" />
+  <title>Applied Mathematical Logic For The Practicing Researcher</title>
+  <link rel="stylesheet" href="../../reset.css" />
+  <link rel="stylesheet" href="../../index.css" />
+</head>
 
 <body>
-    <table class="header">
+  <table class="header">
     <tr>
       <td colspan="2" rowspan="2" class="width-auto">
         <h1 class="title"><a href="https://kirchner-jan.github.io/minimalprior/"
-            style="text-decoration: none; color: inherit;">minimalprior</a></h1>
-        <span class="subtitle">a spinoff</span>
+            style="text-decoration: none; color: inherit;">Applied
+            Mathematical Logic For The Practicing Researcher</a></h1>
+        <span class="subtitle">TL;DR Using the language of model theory
+          to engineer a definition of “computational model”.</span>
       </td>
       <th>Updated</th>
       <td class="width-min"><time style="white-space: pre;">2021-10-17</time></td>
     </tr>
     <tr>
       <th class="width-min">Author</th>
-      <td class="width-auto"><a href="https://universalprior.substack.com/">Jan
-Kirchner</a></td>
+      <td class="width-auto"><a href="https://kirchner-jan.github.io/minimalprior/">Jan
+          Kirchner</a></td>
     </tr>
   </table>
-      <nav id="TOC" role="doc-toc">
-        <ul class="incremental">
-        <li><a href="#technically-i-am-modeling-for-a-living"
-        id="toc-technically-i-am-modeling-for-a-living">Technically, I
-        <em>am</em> modeling for a living</a></li>
-        <li><a href="#in-search-of-tighter-concepts"
-        id="toc-in-search-of-tighter-concepts">In search of tighter
-        concepts</a></li>
-        <li><a href="#mathematical-logic-to-the-rescue"
-        id="toc-mathematical-logic-to-the-rescue">Mathematical logic to
-        the rescue</a></li>
-        <li><a href="#good-models-bad-models"
-        id="toc-good-models-bad-models">Good models, bad models</a></li>
-        <li><a href="#models-with-benefits"
-        id="toc-models-with-benefits">Models with benefits</a></li>
-        <li><a href="#cliffhanger"
-        id="toc-cliffhanger">Cliffhanger!</a></li>
-        </ul>
+  <nav id="TOC" role="doc-toc">
+    <ul class="incremental">
+      <li><a href="#technically-i-am-modeling-for-a-living" id="toc-technically-i-am-modeling-for-a-living">Technically,
+          I
+          <em>am</em> modeling for a living</a></li>
+      <li><a href="#in-search-of-tighter-concepts" id="toc-in-search-of-tighter-concepts">In search of tighter
+          concepts</a></li>
+      <li><a href="#mathematical-logic-to-the-rescue" id="toc-mathematical-logic-to-the-rescue">Mathematical logic to
+          the rescue</a></li>
+      <li><a href="#good-models-bad-models" id="toc-good-models-bad-models">Good models, bad models</a></li>
+      <li><a href="#models-with-benefits" id="toc-models-with-benefits">Models with benefits</a></li>
+      <li><a href="#cliffhanger" id="toc-cliffhanger">Cliffhanger!</a></li>
+    </ul>
   </nav>
-    <p>Asking for a friend<sup>[1]</sup>: what happened to Richard
+  <p>Asking for a friend<sup>[1]</sup>: what happened to Richard
     Hamming’s social status after he started asking <a
-    href="https://www.cs.virginia.edu/~robins/YouAndYourResearch.html">those
-    pointed questions</a> about the importance of research questions and
+      href="https://www.cs.virginia.edu/~robins/YouAndYourResearch.html">those
+      pointed questions</a> about the importance of research questions and
     individual career decisions? Was he, like, <em>actually</em>
     banished from the lunch table?</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[1] </p>
     <p>Okay, okay, I can’t lie to you. That friend is me. I’m worried
-    about getting banished from the lunch table.</p>
-    </div>
-    <hr />
-    <h2 id="technically-i-am-modeling-for-a-living">Technically, I
-    <em>am</em> modeling for a living</h2>
-    <p>A couple of months ago I’ve started asking my colleagues during
+      about getting banished from the lunch table.</p>
+  </div>
+  <hr />
+  <h2 id="technically-i-am-modeling-for-a-living">Technically, I
+    <em>am</em> modeling for a living
+  </h2>
+  <p>A couple of months ago I’ve started asking my colleagues during
     lunch what their definition of a “model” is. This question is
     important: our job consists of building, evaluating, and comparing
     models. I am not hoping for an Aristotelean list of necessary &amp;
     sufficient conditions, but it still appears like a good idea to
     “survey the land”. Also, admittedly, lunch can get a bit boring
     without challenging questions.</p>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_82.png" />An
-    abstract drawing of a computational model. <a
-    href="https://huggingface.co/spaces/akhaliq/clip-guided-diffusion">CGD
-    generated</a>.</p>
-    <p>I got a range of responses:</p>
-    <blockquote>
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_82.png" />An
+    abstract drawing of a computational model. <a href="https://huggingface.co/spaces/akhaliq/clip-guided-diffusion">CGD
+      generated</a>.</p>
+  <p>I got a range of responses:</p>
+  <blockquote>
     <p>” <em>a description of a phenomenon from which you can reason (=
-    a description you can manipulate to tell more about the phenomenon
-    than you would have been able to tell without it)</em> ”</p>
+        a description you can manipulate to tell more about the phenomenon
+        than you would have been able to tell without it)</em> ”</p>
     <p>” <em>It should be something like a representation of the
-    modelled system without representing it completely. Perhaps most
-    importantly that it preserves the causal relationships between the
-    system elements without completely mapping these elements?</em>
-    ”</p>
+        modelled system without representing it completely. Perhaps most
+        importantly that it preserves the causal relationships between the
+        system elements without completely mapping these elements?</em>
+      ”</p>
     <p>” <em>an abstraction of reality</em> ”</p>
-    </blockquote>
-    <p>I also ran into this adage again and again (attributed to a
+  </blockquote>
+  <p>I also ran into this adage again and again (attributed to a
     different person every time):</p>
-    <blockquote>
+  <blockquote>
     <p>” <em>All models are false, but some are useful.</em> ”</p>
-    </blockquote>
-    <p>Along similar lines, there is a <a
-    href="https://pubmed.ncbi.nlm.nih.gov/18995824/">quote</a> from the
-    influential computational neuroscientist <a
-    href="https://en.wikipedia.org/wiki/Larry_Abbott">Larry
-    Abbott</a>:</p>
-    <blockquote>
+  </blockquote>
+  <p>Along similar lines, there is a <a href="https://pubmed.ncbi.nlm.nih.gov/18995824/">quote</a> from the
+    influential computational neuroscientist <a href="https://en.wikipedia.org/wiki/Larry_Abbott">Larry
+      Abbott</a>:</p>
+  <blockquote>
     <p>” <em>the term ‘realistic’ model is a sociological rather than a
-    scientific term.</em> ”</p>
-    </blockquote>
-    <p>Alright, survey done, lunch is over. Back to…</p>
-    <hr />
-    <h2 id="in-search-of-tighter-concepts">In search of tighter
+        scientific term.</em> ”</p>
+  </blockquote>
+  <p>Alright, survey done, lunch is over. Back to…</p>
+  <hr />
+  <h2 id="in-search-of-tighter-concepts">In search of tighter
     concepts</h2>
-    <p>No! I’m not satisfied. What do you mean it’s a
+  <p>No! I’m not satisfied. What do you mean it’s a
     <em>sociological</em> term? What do you mean they are
     <em>false</em>? Can a model have a truth value? If a model is a
     “representation” / “abstraction” / “description” then what
     <em>exactly</em> is a “representation” / “abstraction” /
     “description”? This is not some <a
-    href="https://www.lesswrong.com/posts/FwiPfF8Woe5JrzqEu/philosophy-a-diseased-discipline">idle
-    philosophical nitpicking</a>, this question is <em>immediately</em>
+      href="https://www.lesswrong.com/posts/FwiPfF8Woe5JrzqEu/philosophy-a-diseased-discipline">idle
+      philosophical nitpicking</a>, this question is <em>immediately</em>
     important. As a reviewer, I have to judge whether a model is
     <em>good</em> (enough). As a researcher, I want to build a
     <em>good</em> model. I’m not going to devote my career to building
     models if I don’t have a <em>really good</em> idea of what a model
-    <em>is</em>.</p>
-    <p>I hope you can tell from my extensive use of italicized words
+    <em>is</em>.
+  </p>
+  <p>I hope you can tell from my extensive use of italicized words
     that this is a topic I am rather passionate about. If the question
     of a good model is a sociological question then it’s subject to
     trends and fads<sup>[2]</sup>. And if the term “model” is broad
     enough to fit “<a href="https://neuron.yale.edu/neuron/">detailed
-    biophysical models</a>”, “<a
-    href="https://www.nature.com/articles/s43586-020-00001-2">abstract
-    phenomenological models</a>”, “<a
-    href="https://www.biorxiv.org/content/10.1101/2021.04.02.438248v1.full">linear
-    regression</a>” and “<a
-    href="https://www.jneurosci.org/content/37/21/5250#F8">a cartoon in
-    Figure 8</a>” under its umbrella, then it’s inevitable that our
+      biophysical models</a>”, “<a href="https://www.nature.com/articles/s43586-020-00001-2">abstract
+      phenomenological models</a>”, “<a href="https://www.biorxiv.org/content/10.1101/2021.04.02.438248v1.full">linear
+      regression</a>” and “<a href="https://www.jneurosci.org/content/37/21/5250#F8">a cartoon in
+      Figure 8</a>” under its umbrella, then it’s inevitable that our
     intuitive understanding of what constitutes a good model deviates.
     Heck, the term is so broad, technically even this should
     qualify:</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[2] </p>
     <p>And it’s usually up to an influential “ingroup” to decide what
-    fits in and what doesn’t.</p>
-    </div>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_83.png" />An
+      fits in and what doesn’t.</p>
+  </div>
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_83.png" />An
     abstract painting of a very attractive <a
-    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/soldiers-scouts-and-albatrosses">albatross</a>
-    that could totally be a fashion model. <a
-    href="https://huggingface.co/spaces/akhaliq/clip-guided-diffusion">CGD
-    generated</a>.</p>
-    <p>So in the spirit of <a
-    href="https://www.lesswrong.com/posts/9iA87EfNKnREgdTJN/conceptual-engineering-the-revolution-in-philosophy-you-ve">conceptual
-    engineering</a> and <a
-    href="https://www.lesswrong.com/posts/Mc6QcrsbH5NRXbCRX/dissolving-the-question">dissolving
-    questions</a>, here goes my attempt of laying out what I think of
+      href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/soldiers-scouts-and-albatrosses">albatross</a>
+    that could totally be a fashion model. <a href="https://huggingface.co/spaces/akhaliq/clip-guided-diffusion">CGD
+      generated</a>.</p>
+  <p>So in the spirit of <a
+      href="https://www.lesswrong.com/posts/9iA87EfNKnREgdTJN/conceptual-engineering-the-revolution-in-philosophy-you-ve">conceptual
+      engineering</a> and <a href="https://www.lesswrong.com/posts/Mc6QcrsbH5NRXbCRX/dissolving-the-question">dissolving
+      questions</a>, here goes my attempt of laying out what I think of
     when I think of models. This is obviously not authoritative and it’s
     far from rigorous. This is just my “working definition” which I
     wrote down to force myself to tighten my terminology.</p>
-    <hr />
-    <h2 id="mathematical-logic-to-the-rescue">Mathematical logic to the
+  <hr />
+  <h2 id="mathematical-logic-to-the-rescue">Mathematical logic to the
     rescue</h2>
-    <p>Since we mean so many different things by the term “model” it
+  <p>Since we mean so many different things by the term “model” it
     makes sense to start very general, i.e. mathematical. There is
-    indeed a subfield of mathematics called “<a
-    href="https://en.wikipedia.org/wiki/Model_theory">model theory</a>”
+    indeed a subfield of mathematics called “<a href="https://en.wikipedia.org/wiki/Model_theory">model theory</a>”
     that makes some very useful distinctions! I’ll trample over all
     subtleties to get to the core quickly, but consider checking out <a
-    href="https://www.lesswrong.com/posts/MG8Yhsxqu9JY4xRPr/mental-context-for-model-theory">this</a>
-    or <a
-    href="https://www.lesswrong.com/s/SqFbMbtxGybdS2gRs/p/Z2CuyKtkCmWGQtAEh">this</a>
+      href="https://www.lesswrong.com/posts/MG8Yhsxqu9JY4xRPr/mental-context-for-model-theory">this</a>
+    or <a href="https://www.lesswrong.com/s/SqFbMbtxGybdS2gRs/p/Z2CuyKtkCmWGQtAEh">this</a>
     for accessible introductory reading.</p>
-    <p>Here goes the central definition:</p>
-    <blockquote>
+  <p>Here goes the central definition:</p>
+  <blockquote>
     <p>A model is a (mathematical) object that satisfies all the
-    sentences of a theory.</p>
-    </blockquote>
-    <p>To make this useful, we have to further define the used
+      sentences of a theory.</p>
+  </blockquote>
+  <p>To make this useful, we have to further define the used
     terms.</p>
-    <p>What is a <em>theory</em>? It’s a set of sentences. What is a
+  <p>What is a <em>theory</em>? It’s a set of sentences. What is a
     <em>sentence</em>? Well, it’s pretty much what you would expect -
     it’s a string of symbols constructed from an alphabet according to
     some fixed rules. A famous example of a theory is <a
-    href="https://en.wikipedia.org/wiki/Peano_axioms#First-order_theory_of_arithmetic">Peano
-    arithmetic</a>, but really the definition is much more general:</p>
-    <ol class="incremental" type="1">
+      href="https://en.wikipedia.org/wiki/Peano_axioms#First-order_theory_of_arithmetic">Peano
+      arithmetic</a>, but really the definition is much more general:
+  </p>
+  <ol class="incremental" type="1">
     <li>A dynamical system, given as a set of differential
-    equations<sup>[3]</sup>, is a theory.</li>
+      equations<sup>[3]</sup>, is a theory.</li>
     <li>A cellular automaton, given as a set of transition rules, is a
-    theory.</li>
+      theory.</li>
     <li>Any recursively enumerable set of sentences of a formal
-    language, given as a set of production rules, is a theory.</li>
-    </ol>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_84.png" />An
-    abstract drawing of a cellular automaton. <a
-    href="https://huggingface.co/spaces/akhaliq/clip-guided-diffusion">CGD
-    generated</a>.</p>
-    <p>Now to the other part of the definition. What is a mathematical
+      language, given as a set of production rules, is a theory.</li>
+  </ol>
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_84.png" />An
+    abstract drawing of a cellular automaton. <a href="https://huggingface.co/spaces/akhaliq/clip-guided-diffusion">CGD
+      generated</a>.</p>
+  <p>Now to the other part of the definition. What is a mathematical
     object? <em>Phew</em> , you are opening a <a
-    href="https://en.wikipedia.org/wiki/Philosophy_of_mathematics#Contemporary_schools_of_thought">can
-    of worms</a>… But I’m pretty sure you’ll recognize a mathematical
-    object when you see it. <strong><a
-    href="https://www.dcode.fr/number-sets">R</a></strong><a
-    href="https://www.dcode.fr/number-sets">,</a><strong><a
-    href="https://www.dcode.fr/number-sets">Q</a></strong><a
-    href="https://www.dcode.fr/number-sets">,</a><strong><a
-    href="https://www.dcode.fr/number-sets">Z,</a></strong><a
-    href="https://www.dcode.fr/number-sets"></a><strong><a
-    href="https://www.dcode.fr/number-sets">N</a></strong> , and all the
+      href="https://en.wikipedia.org/wiki/Philosophy_of_mathematics#Contemporary_schools_of_thought">can
+      of worms</a>… But I’m pretty sure you’ll recognize a mathematical
+    object when you see it. <strong><a href="https://www.dcode.fr/number-sets">R</a></strong><a
+      href="https://www.dcode.fr/number-sets">,</a><strong><a href="https://www.dcode.fr/number-sets">Q</a></strong><a
+      href="https://www.dcode.fr/number-sets">,</a><strong><a href="https://www.dcode.fr/number-sets">Z,</a></strong><a
+      href="https://www.dcode.fr/number-sets"></a><strong><a href="https://www.dcode.fr/number-sets">N</a></strong> ,
+    and all the
     cool stuff you can build from those sets, those are mathematical
     objects. <strong>N</strong> satisfies the theory of (and is,
     therefore, a model of) Peano arithmetic. For the three theories
     mentioned above, the mathematical objects that satisfy them are:</p>
-    <ol class="incremental" type="1">
+  <ol class="incremental" type="1">
     <li>A particular trajectory through state space, f.e. specified
-    through initial conditions.</li>
+      through initial conditions.</li>
     <li>A particular evolution of the cellular automaton, again
-    specified through the initial conditions.</li>
+      specified through the initial conditions.</li>
     <li>A particular Turing machine that implements the production
-    rules, specified through… (you get the idea).</li>
-    </ol>
-    <p>If we are allowed to be even more hand-wavy, then we can also
-    incorporate models à la <a
-    href="https://marginalrevolution.com/marginalrevolution/2020/10/model-this-5.html">Tyler
-    Cowen</a>: To “model this [headline]” we have to come up with a
+      rules, specified through… (you get the idea).</li>
+  </ol>
+  <p>If we are allowed to be even more hand-wavy, then we can also
+    incorporate models à la <a href="https://marginalrevolution.com/marginalrevolution/2020/10/model-this-5.html">Tyler
+      Cowen</a>: To “model this [headline]” we have to come up with a
     theory (a set of sentences) from which the headline follows.</p>
-    <p>One important thing to note here is that every model “inherits”
+  <p>One important thing to note here is that every model “inherits”
     every property that follows from the theory. But the inverse does
     not hold<sup>[4]</sup>: just because a model has a certain property,
     this property does not necessarily follow from the theory. In
     general, there will always be multiple models that satisfy a theory,
     each with different “additional properties” that go beyond what is
     prescribed by the theory<sup>[5]</sup>.</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[4] </p>
     <p>This inverse only holds when the model uniquely and completely
-    specifies the model, which is pretty hard to achieve in principle.
-    See <a
-    href="https://www.lesswrong.com/posts/3FoMuCLqZggTxoC3S/logical-pinpointing">Logical
-    Pinpointing</a>.</p>
-    </div>
-    <div class="sidenote">
+      specifies the model, which is pretty hard to achieve in principle.
+      See <a href="https://www.lesswrong.com/posts/3FoMuCLqZggTxoC3S/logical-pinpointing">Logical
+        Pinpointing</a>.</p>
+  </div>
+  <div class="sidenote">
     <p>[5] </p>
     <p>One might be tempted to argue that if many different models
-    satisfy the same theory, this is evidence that the property actually
-    does follow from the theory. This isn’t guaranteed, but it might
-    work in some cases. In Computational Neuroscience, this is the
-    practice of demonstrating that the desired result holds even when
-    the parameter is slightly perturbed.</p>
-    </div>
-    <p>All fine and well. What does this added complexity buy us?</p>
-    <hr />
-    <h2 id="good-models-bad-models">Good models, bad models</h2>
-    <p>Defining a model as an object satisfying a theory is broad enough
+      satisfy the same theory, this is evidence that the property actually
+      does follow from the theory. This isn’t guaranteed, but it might
+      work in some cases. In Computational Neuroscience, this is the
+      practice of demonstrating that the desired result holds even when
+      the parameter is slightly perturbed.</p>
+  </div>
+  <p>All fine and well. What does this added complexity buy us?</p>
+  <hr />
+  <h2 id="good-models-bad-models">Good models, bad models</h2>
+  <p>Defining a model as an object satisfying a theory is broad enough
     to cover all the ways in which the term is used:</p>
-    <ul class="incremental">
-    <li><p>the entire spectrum of mathematical models, from detailed
-    biophysical to normative Bayesian, is specified by a set of
-    equations (a theory) and instantiated with parameter
-    choices.</p></li>
-    <li><p>the “cartoon in Figure 8” is one particular (rather
-    toothless) object that satisfies an implicit theory (consisting of a
-    set of conjectured sentences).</p></li>
-    <li><p>the albatross fashion model… doesn’t fit. But <a
-    href="https://open.spotify.com/track/5f5r2N4Lp9WoULWPH9zp2W?si=b2d7dec6f9da4884">you
-    can’t have everything, I’m told</a>.</p></li>
-    </ul>
-    <p>It also includes an interesting pathological case: to model a
+  <ul class="incremental">
+    <li>
+      <p>the entire spectrum of mathematical models, from detailed
+        biophysical to normative Bayesian, is specified by a set of
+        equations (a theory) and instantiated with parameter
+        choices.</p>
+    </li>
+    <li>
+      <p>the “cartoon in Figure 8” is one particular (rather
+        toothless) object that satisfies an implicit theory (consisting of a
+        set of conjectured sentences).</p>
+    </li>
+    <li>
+      <p>the albatross fashion model… doesn’t fit. But <a
+          href="https://open.spotify.com/track/5f5r2N4Lp9WoULWPH9zp2W?si=b2d7dec6f9da4884">you
+          can’t have everything, I’m told</a>.</p>
+    </li>
+  </ul>
+  <p>It also includes an interesting pathological case: to model a
     particular set of observations, we could just come up with a theory
     that contains all the observations as axioms, but no production
     rules. Then the observations themselves trivially satisfy the
@@ -269,126 +256,121 @@ Kirchner</a></td>
     dataset shouldn’t be a model?) - but looking deeper into why it’s
     useless reveals something about what constitutes a <em>good</em>
     model - or, by extension, a <em>good</em> theory.</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[6] </p>
-    <p>This has some overlap with Chomsky’s <a
-    href="https://en.wikipedia.org/wiki/Levels_of_adequacy">levels of
-    adequacy</a>: a theory that includes only the observations as axioms
-    has observational adequacy, but neither descriptive nor explanatory
-    adequacy.</p>
-    </div>
-    <p>Here is my definition:</p>
-    <blockquote>
+    <p>This has some overlap with Chomsky’s <a href="https://en.wikipedia.org/wiki/Levels_of_adequacy">levels of
+        adequacy</a>: a theory that includes only the observations as axioms
+      has observational adequacy, but neither descriptive nor explanatory
+      adequacy.</p>
+  </div>
+  <p>Here is my definition:</p>
+  <blockquote>
     <p>A <em>good</em> model of a phenomenon is one that allows us to
-    <em>understand</em> something about the phenomenon. If all the
-    models of a theory are good models, the theory is a <em>good</em>
-    theory.</p>
-    </blockquote>
-    <p>Again, we need to define our terms for this to make sense. What
+      <em>understand</em> something about the phenomenon. If all the
+      models of a theory are good models, the theory is a <em>good</em>
+      theory.
+    </p>
+  </blockquote>
+  <p>Again, we need to define our terms for this to make sense. What
     is a <em>phenomenon</em>? A phenomenon is some (conjunction of)
     physical process(es). It’s something <a
-    href="https://www.lesswrong.com/posts/KJ9MFBPwXGwNpadf2/skill-the-map-is-not-the-territory">out
-    there in the territory</a>. What does <em>understand</em> mean?
+      href="https://www.lesswrong.com/posts/KJ9MFBPwXGwNpadf2/skill-the-map-is-not-the-territory">out
+      there in the territory</a>. What does <em>understand</em> mean?
     Understanding a phenomenon means predicting (better than chance
     level) the state of the phenomenon at time <strong>t+1</strong>
     given the state at time <strong>t</strong>.</p>
-    <p>Why does it make sense to set up things like this?</p>
-    <hr />
-    <h2 id="models-with-benefits">Models with benefits</h2>
-    <p>First, it establishes a neat hierarchy. Understanding is gradual:
+  <p>Why does it make sense to set up things like this?</p>
+  <hr />
+  <h2 id="models-with-benefits">Models with benefits</h2>
+  <p>First, it establishes a neat hierarchy. Understanding is gradual:
     It goes from non-existing (chance level) to poor (consistently above
     chance<sup>[7]</sup>) to great (almost perfect prediction) to
     complete (100% prediction accuracy).</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[7] </p>
     <p>Or below, of course! If you’re consistently worse than chance
-    that is very useful information.</p>
-    </div>
-    <p>With this definition, a “black box” deep learning model that is
-    able to <a
-    href="https://www.biorxiv.org/content/10.1101/133504v1.full">predict
-    a percentage of brain activity</a> does provide <em>some</em>
+      that is very useful information.</p>
+  </div>
+  <p>With this definition, a “black box” deep learning model that is
+    able to <a href="https://www.biorxiv.org/content/10.1101/133504v1.full">predict
+      a percentage of brain activity</a> does provide <em>some</em>
     understanding about a part of the brain. Similarly, a <a
-    href="https://en.wikipedia.org/wiki/Mean-field_theory">mean-field
-    model</a> that has “lost” some conversion factor in its units can
+      href="https://en.wikipedia.org/wiki/Mean-field_theory">mean-field
+      model</a> that has “lost” some conversion factor in its units can
     also still be a good model, as long as it is able to get the
-    <em>direction</em> of the evolution of the state correct.</p>
-    <p>Second, by making “predictions” the central criterion for the
+    <em>direction</em> of the evolution of the state correct.
+  </p>
+  <p>Second, by making “predictions” the central criterion for the
     model quality we avoid unproductive <a
-    href="https://www.lesswrong.com/posts/7X2j8HAkWdmMoS8PE/disputing-definitions">disputes
-    resulting from mismatched terms</a>. The usual example here is “If a
+      href="https://www.lesswrong.com/posts/7X2j8HAkWdmMoS8PE/disputing-definitions">disputes
+      resulting from mismatched terms</a>. The usual example here is “If a
     tree falls in the forest, does it make a sound?”, which can lead to
     a highly unproductive discussion if asked at the lunch table. But
     when explanations are evaluated according to their predictive power,
     misunderstandings are resolved quickly: Either a tape recorder will
     or won’t record airwaves. Either there is or there isn’t activation
     in some auditory cortex.</p>
-    <p>Third, to have a good theory, you need to demonstrate that all
+  <p>Third, to have a good theory, you need to demonstrate that all
     its models are good (according to the definition above). This gets
     naturally easier if there are fewer models that satisfy the theory,
     thus incentivizing you to remove as many free parameters from the
     theory as possible<sup>[8]</sup>. Ideally, you’ll want a unique
     characterization of a good model from your theory.</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[8] </p>
     <p>Thus we arrive at an interesting version of Occam’s razor.</p>
-    </div>
-    <p>Finally, this definition formalizes the “all models are wrong,
+  </div>
+  <p>Finally, this definition formalizes the “all models are wrong,
     but some are useful” adage. To get 100% prediction accuracy for a
     physical process you have to go down to the level of particles. F.e.
     having a fluid dynamics model of water motion will get you very far
     in terms of predictive power. In that sense, it’s a very good model.
-    But to get even close to 100%, you’ll want an <a
-    href="https://www.feynmanlectures.caltech.edu/I_01.html">atomic
-    model of water</a>. And eventually, if you are pushing for ever more
+    But to get even close to 100%, you’ll want an <a href="https://www.feynmanlectures.caltech.edu/I_01.html">atomic
+      model of water</a>. And eventually, if you are pushing for ever more
     predictive power, you’ll have to decompose your problem further and
     further, and eventually, you will get into very weird
     territory<sup>[9]</sup>.</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[9] </p>
     <p>Let’s not talk about quantum stuff on this Substack, okay?</p>
-    </div>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_85.png" />An
-    abstract drawing of the solar system. <a
-    href="https://huggingface.co/spaces/akhaliq/clip-guided-diffusion">CGD
-    generated</a>.</p>
-    <p>Thus, to determine whether a model is good or bad, you have to
+  </div>
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_85.png" />An
+    abstract drawing of the solar system. <a href="https://huggingface.co/spaces/akhaliq/clip-guided-diffusion">CGD
+      generated</a>.</p>
+  <p>Thus, to determine whether a model is good or bad, you have to
     figure out which phenomenon it is trying to explain and then
     determine if the model allows you to predict the time-evolution of
     the phenomenon better than chance level. This is a relatively low
     bar, but in my experience, it’s still not easy to clear. Actually
     demonstrating that your performance is different from chance
     requires explicit performance metrics, which are not usually
-    adapted. But that’s <a
-    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-scaling-academia">a
-    different story</a>.</p>
-    <hr />
-    <h2 id="cliffhanger">Cliffhanger!</h2>
-    <p>This is almost all I wanted to say on the topic. But I glossed
+    adapted. But that’s <a href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/on-scaling-academia">a
+      different story</a>.</p>
+  <hr />
+  <h2 id="cliffhanger">Cliffhanger!</h2>
+  <p>This is almost all I wanted to say on the topic. But I glossed
     over an important point in that exposition: If a model is a
     mathematical object, why might we expect that it can predict
     physical processes <em>out there in the territory</em>? In fact, why
-    should there be <em>any</em> similarity between the <a
-    href="https://en.wikipedia.org/wiki/Bohr_model">solar system and the
-    atom</a><sup>[10]</sup>? Why does <a
-    href="https://plato.stanford.edu/entries/reasoning-analogy/">analogical
-    reasoning</a> work?</p>
-    <div class="sidenote">
+    should there be <em>any</em> similarity between the <a href="https://en.wikipedia.org/wiki/Bohr_model">solar system
+      and the
+      atom</a><sup>[10]</sup>? Why does <a href="https://plato.stanford.edu/entries/reasoning-analogy/">analogical
+      reasoning</a> work?</p>
+  <div class="sidenote">
     <p>[10] </p>
     <p>Yes, I know that the Bohr model is not the end of the story. But
-    it is still able to explain basically all of chemistry. And also ”
-    <em>let’s not talk about quantum physics on this Substack</em>
-    “!</p>
-    </div>
-    <p>I’m glad you ask. Stay tuned - I’ll dig into that next time.</p>
-    <div class="sidenote">
+      it is still able to explain basically all of chemistry. And also ”
+      <em>let’s not talk about quantum physics on this Substack</em>
+      “!
+    </p>
+  </div>
+  <p>I’m glad you ask. Stay tuned - I’ll dig into that next time.</p>
+  <div class="sidenote">
     <p>[3] </p>
-    <p>Plus <a
-    href="https://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory">ZFC</a>,
-    I guess.</p>
-    </div>
-    <div class="debug-grid"></div>
+    <p>Plus <a href="https://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory">ZFC</a>,
+      I guess.</p>
+  </div>
+  <div class="debug-grid"></div>
   <script src="../../index.js"></script>
 </body>
 

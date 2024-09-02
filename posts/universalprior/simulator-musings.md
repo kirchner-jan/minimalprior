@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: Simulator Musings
+subtitle: TL;DR a seminar series on simulator theory; a toy model, the semiotic coin flip, unpacks the strange physics of language models a tiny bit.
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2023-01-03
 ---
 
@@ -13,7 +13,7 @@ date: 2023-01-03
 
 A few months ago, the [enigmatic](https://twitter.com/repligate/status/1609712964705157123?s=20&t=nd8IRj_AuWyqZ4NsToSQTQ) [janus](https://generative.ink/prophecies/) published a write-up on what they call "[simulator theory](https://www.alignmentforum.org/posts/vJFdjigzmcXMhNTsx/simulators)" on the Alignment Forum. The post spurred a lot of discussions and changed a bunch of minds. This outcome was not completely clear from the onset - janus has been a fixture in the alignment community and [on Discord](https://www.eleuther.ai/), and their thought has been [in the water](https://astralcodexten.substack.com/p/janus-gpt-wrangling) for a while. And the message of the simulator post is comparatively simple - “large language models can/should be viewed as simulators”. But the post ended up being a big success; it turns out that having janus’ philosophy laid out in writing enabled a lot more structured discussion than what would have been possible otherwise.
 
-One of the structured discussions that were enabled by the post was a seminar series that I got to participate in over the last few months. [Our motivation](https://www.alignmentforum.org/posts/nmMorGE4MS4txzr8q/simulators-seminar-sequence-1-background-and-shared) for having the seminar was that simulator theory (in its current form) is still in its infancy. To me, the prototypical example of a successful theory is decision theory, which went through the [full stack](https://universalprior.substack.com/i/46914010/how-to-solve-chess):
+One of the structured discussions that were enabled by the post was a seminar series that I got to participate in over the last few months. [Our motivation](https://www.alignmentforum.org/posts/nmMorGE4MS4txzr8q/simulators-seminar-sequence-1-background-and-shared) for having the seminar was that simulator theory (in its current form) is still in its infancy. To me, the prototypical example of a successful theory is decision theory, which went through the [full stack](https://kirchner-jan.github.io/minimalprior/i/46914010/how-to-solve-chess):
 
   * from philosophy (moral philosophy, utilitarianism, "what should I do?"),
 

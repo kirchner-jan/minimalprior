@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: Soldiers, Scouts, and Albatrosses.
+subtitle: TL;DR Soldier and Scout as modes of thought. Soldiers "assume the conclusion", which is unreasonably effective. Search algorithms as synthesis of…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2024-08-31
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: The Tale Of Gandhi And The Devil
+subtitle: TL;DR This week here is something different - effective altruism fiction!
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2024-08-31
 ---
 

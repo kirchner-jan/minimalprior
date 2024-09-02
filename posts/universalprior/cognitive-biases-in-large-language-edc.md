@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: Cognitive Biases in Large Language Models
+subtitle: TL;DR LMs exhibit some cognitive biases. Additionally, explain how cognitive biases can come about in humans. Raising questions about how universal…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2024-08-31
 ---
 

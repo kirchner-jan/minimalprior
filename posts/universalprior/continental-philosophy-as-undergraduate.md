@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: Continental Philosophy as Undergraduate Mathematics
+subtitle: Previously in this series Frankfurt Declaration on the Cambridge Declaration on Consciousness. Not another declaration. Looking back, I feel bad about…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2022-04-25
 ---
 

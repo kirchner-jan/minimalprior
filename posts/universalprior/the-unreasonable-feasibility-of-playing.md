@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: The Unreasonable Feasibility Of Playing Chess Under The Influence
+subtitle: TL;DR The wonderful tradition of playing chess drunk, Marr's levels of analysis, AlphaZero, and Iterated Amplification and Distillation.
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2022-01-12
 ---
 

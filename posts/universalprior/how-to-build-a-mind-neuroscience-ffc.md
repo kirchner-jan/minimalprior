@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: How to build a mind - neuroscience edition
+subtitle: TL;DR The early development of the brain, from molecular biology via dynamical systems to the theory of computation. Some speculation about how…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2024-08-31
 ---
 

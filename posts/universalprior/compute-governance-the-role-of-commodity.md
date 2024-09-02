@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: Compute Governance The Role of Commodity Hardware
+subtitle: TL;DR Thoughts on whether CPUs can make a comeback and become carriers of the next wave of machine learning progress (spoiler they probably won't…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2022-03-26
 ---
 

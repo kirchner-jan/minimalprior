@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: Trust-maximizing AGI
+subtitle: TL;DR In the context of the AI Safety camp, Karl and I developed the idea of the "trust-maximizer". This write-up makes the case for "trust" as a…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2022-02-25
 ---
 

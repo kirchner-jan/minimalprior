@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: Belief-conditional things - things that only exist when you believe in them
+subtitle: TL;DR A little winter story about making beliefs come true. Epistemic status this is >90% written to amuse. Not 100% though.
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2021-12-25
 ---
 

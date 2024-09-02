@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: On Automatic Ideas
+subtitle: TL;DR As part of my "scaling academia" project, I tackle automated idea generation. Finetuned large language model, online machine learning, and…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2021-12-09
 ---
 

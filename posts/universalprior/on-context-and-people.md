@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: On Context And People
+subtitle: TL;DR Contrasting views of the research landscape, a prototype for automating scientific debate, and searching the importance of authorship. And an…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2022-03-19
 ---
 

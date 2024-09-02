@@ -1,71 +1,68 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="" >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-    <meta name="author" content="Jan Kirchner" />
-      <meta name="dcterms.date" content="2022-03-26" />
-        <title>minimalprior</title>
-    <link rel="stylesheet" href="../../reset.css" />
-    <link rel="stylesheet" href="../../index.css" />
-      </head>
+  <meta name="author" content="Jan Kirchner" />
+  <meta name="dcterms.date" content="2022-03-26" />
+  <title>Compute Governance The Role of Commodity Hardware</title>
+  <link rel="stylesheet" href="../../reset.css" />
+  <link rel="stylesheet" href="../../index.css" />
+</head>
 
 <body>
-    <table class="header">
+  <table class="header">
     <tr>
       <td colspan="2" rowspan="2" class="width-auto">
         <h1 class="title"><a href="https://kirchner-jan.github.io/minimalprior/"
-            style="text-decoration: none; color: inherit;">minimalprior</a></h1>
-        <span class="subtitle">a spinoff</span>
+            style="text-decoration: none; color: inherit;">Compute
+            Governance The Role of Commodity Hardware</a></h1>
+        <span class="subtitle">TL;DR Thoughts on whether CPUs can make a
+          comeback and become carriers of the next wave of machine learning
+          progress (spoiler they probably won’t…</span>
       </td>
       <th>Updated</th>
       <td class="width-min"><time style="white-space: pre;">2022-03-26</time></td>
     </tr>
     <tr>
       <th class="width-min">Author</th>
-      <td class="width-auto"><a href="https://universalprior.substack.com/">Jan
-Kirchner</a></td>
+      <td class="width-auto"><a href="https://kirchner-jan.github.io/minimalprior/">Jan
+          Kirchner</a></td>
     </tr>
   </table>
-      <nav id="TOC" role="doc-toc">
-        <ul class="incremental">
-        <li><a
-        href="#state-of-compute-governance-ai-specialized-and-commodity-hardware"
-        id="toc-state-of-compute-governance-ai-specialized-and-commodity-hardware"><strong>State
-        of Compute Governance, “AI-specialized” and “commodity”
-        hardware</strong></a></li>
-        <li><a
-        href="#commodity-hardware-might-outperform-ai-specialized-hardware"
-        id="toc-commodity-hardware-might-outperform-ai-specialized-hardware"><strong>Commodity
-        hardware might outperform AI-specialized
-        hardware</strong></a></li>
-        <li><a
-        href="#implications-of-efficient-commodity-hardware-on-compute-governance"
-        id="toc-implications-of-efficient-commodity-hardware-on-compute-governance"><strong>Implications
-        of Efficient Commodity Hardware on Compute
-        Governance</strong></a></li>
-        <li><a href="#limiting-factors-and-open-questions"
-        id="toc-limiting-factors-and-open-questions"><strong>Limiting
-        factors and open questions</strong></a></li>
-        <li><a href="#conclusions-and-outlook"
-        id="toc-conclusions-and-outlook"><strong>Conclusions and
-        Outlook</strong></a></li>
-        </ul>
+  <nav id="TOC" role="doc-toc">
+    <ul class="incremental">
+      <li><a href="#state-of-compute-governance-ai-specialized-and-commodity-hardware"
+          id="toc-state-of-compute-governance-ai-specialized-and-commodity-hardware"><strong>State
+            of Compute Governance, “AI-specialized” and “commodity”
+            hardware</strong></a></li>
+      <li><a href="#commodity-hardware-might-outperform-ai-specialized-hardware"
+          id="toc-commodity-hardware-might-outperform-ai-specialized-hardware"><strong>Commodity
+            hardware might outperform AI-specialized
+            hardware</strong></a></li>
+      <li><a href="#implications-of-efficient-commodity-hardware-on-compute-governance"
+          id="toc-implications-of-efficient-commodity-hardware-on-compute-governance"><strong>Implications
+            of Efficient Commodity Hardware on Compute
+            Governance</strong></a></li>
+      <li><a href="#limiting-factors-and-open-questions" id="toc-limiting-factors-and-open-questions"><strong>Limiting
+            factors and open questions</strong></a></li>
+      <li><a href="#conclusions-and-outlook" id="toc-conclusions-and-outlook"><strong>Conclusions and
+            Outlook</strong></a></li>
+    </ul>
   </nav>
-    <p><em>Meta: As long-term readers know,<a
-    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/cognitive-biases-in-large-language?s=w">sometimes</a>
-    <a
-    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/drug-addicts-and-deceptively-aligned?s=w">I</a>
-    <a
-    href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/puberty-as-cause-x?s=w">switch</a>
-    into my academic mode and write semi-formal posts analyzing a topic.
-    This is such a post, summarizing some of the things I learned after
-    doing a deep dive into a subfield of AI Safety.</em></p>
-    <p>Over the coming decades, <a
-    href="https://www.lesswrong.com/posts/KrJfoZzpSDpnrv9va/draft-report-on-ai-timelines">we
-    might see</a> machines that are as smart or smarter than humans. It
+  <p><em>Meta: As long-term readers know,<a
+        href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/cognitive-biases-in-large-language?s=w">sometimes</a>
+      <a
+        href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/drug-addicts-and-deceptively-aligned?s=w">I</a>
+      <a href="https://kirchner-jan.github.io/minimalprior/posts/universalprior/puberty-as-cause-x?s=w">switch</a>
+      into my academic mode and write semi-formal posts analyzing a topic.
+      This is such a post, summarizing some of the things I learned after
+      doing a deep dive into a subfield of AI Safety.</em></p>
+  <p>Over the coming decades, <a
+      href="https://www.lesswrong.com/posts/KrJfoZzpSDpnrv9va/draft-report-on-ai-timelines">we
+      might see</a> machines that are as smart or smarter than humans. It
     is possible that these smarter-than-human machines will be built to
     work on our behalf and to greatly increase human welfare, such as by
     curing diseases and expanding economic opportunity. But
@@ -73,257 +70,243 @@ Kirchner</a></td>
     goals that are too narrow and that don’t represent our broader
     values. The field concerned with working towards positively shaping
     artificial intelligence (AI) is called AI Safety (<a
-    href="https://80000hours.org/problem-profiles/positively-shaping-artificial-intelligence/">Wiblin,
-    2017</a>).</p>
-    <p>There are two complementary avenues for ensuring that humanity
+      href="https://80000hours.org/problem-profiles/positively-shaping-artificial-intelligence/">Wiblin,
+      2017</a>).</p>
+  <p>There are two complementary avenues for ensuring that humanity
     successfully navigates the transition into a world with advanced AI
-    systems: <a
-    href="https://80000hours.org/topic/priority-paths/technical-ai-safety/">Technical
-    AI Safety</a> and <a
-    href="https://80000hours.org/articles/ai-policy-guide/">AI
-    Governance</a>. While Technical AI Safety is concerned with
+    systems: <a href="https://80000hours.org/topic/priority-paths/technical-ai-safety/">Technical
+      AI Safety</a> and <a href="https://80000hours.org/articles/ai-policy-guide/">AI
+      Governance</a>. While Technical AI Safety is concerned with
     developing algorithms and frameworks for making safe AI
     <em>possible</em> , AI governance is concerned with how institutions
     make decisions about AI and with ensuring that AI is deployed safely
     (<a href="https://www.allandafoe.com/opportunity">Dafoe
-    2020</a>).</p>
-    <p><strong>Compute Governance</strong> is the subfield of AI
+      2020</a>).
+  </p>
+  <p><strong>Compute Governance</strong> is the subfield of AI
     Governance concerned with controlling and governing access to
     computational resources (<a
-    href="https://forum.effectivealtruism.org/posts/g6cwjcKMZba4RimJk/compute-governance-and-conclusions-transformative-ai-and">Heim
-    2021</a>; <a
-    href="https://forum.effectivealtruism.org/posts/kvkv6779jk6edygug/some-ai-governance-research-ideas">Anderljung
-    and Carlier 2021</a>). Among different candidates for effective AI
+      href="https://forum.effectivealtruism.org/posts/g6cwjcKMZba4RimJk/compute-governance-and-conclusions-transformative-ai-and">Heim
+      2021</a>; <a
+      href="https://forum.effectivealtruism.org/posts/kvkv6779jk6edygug/some-ai-governance-research-ideas">Anderljung
+      and Carlier 2021</a>). Among different candidates for effective AI
     governance, Compute Governance stands out as particularly promising
     due to two factors:</p>
-    <ol class="incremental" type="1">
+  <ol class="incremental" type="1">
     <li>We can monitor possession and usage of large-scale computing
-    resources comparatively well. Large-scale computing requires
-    physical space for the computing hardware and substantial supporting
-    infrastructure.</li>
+      resources comparatively well. Large-scale computing requires
+      physical space for the computing hardware and substantial supporting
+      infrastructure.</li>
     <li>Access to large-scale computing resources can be monitored and
-    governed as the supply chain for advanced semiconductor production
-    is concentrated on a few key producers.</li>
-    </ol>
-    <p>In this post, I will explore possible implications on Compute
+      governed as the supply chain for advanced semiconductor production
+      is concentrated on a few key producers.</li>
+  </ol>
+  <p>In this post, I will explore possible implications on Compute
     Governance of a recently proposed technique for accelerating
-    progress in AI research (<a
-    href="https://arxiv.org/abs/1903.03129">Chen et al. 2019</a>).</p>
-    <h2
-    id="state-of-compute-governance-ai-specialized-and-commodity-hardware"><strong>State
-    of Compute Governance, “AI-specialized” and “commodity”
-    hardware</strong></h2>
-    <p>To properly contextualize the proposed technique, I will briefly
+    progress in AI research (<a href="https://arxiv.org/abs/1903.03129">Chen et al. 2019</a>).</p>
+  <h2 id="state-of-compute-governance-ai-specialized-and-commodity-hardware"><strong>State
+      of Compute Governance, “AI-specialized” and “commodity”
+      hardware</strong></h2>
+  <p>To properly contextualize the proposed technique, I will briefly
     summarize the state of Compute Governance. A series of reports from
-    the Center for Security and Emerging Technology (<a
-    href="https://cset.georgetown.edu/">CSET</a>) examines the supply
+    the Center for Security and Emerging Technology (<a href="https://cset.georgetown.edu/">CSET</a>) examines the
+    supply
     chain for computing resources (<a
-    href="https://cset.georgetown.edu/publication/the-semiconductor-supply-chain/">Khan
-    et al.,2021</a>). In particular, the reports</p>
-    <ul class="incremental">
-    <li><p>highlight governable hardware chokepoints (<a
-    href="https://cset.georgetown.edu/publication/multilateral-controls-on-hardware-chokepoints/">Flynn
-    and Khan, 2020</a>),</p></li>
-    <li><p>explore international differences in production capabilities
-    (<a
-    href="https://cset.georgetown.edu/publication/maintaining-the-ai-chip-competitive-advantage-of-the-united-states-and-its-allies/">Khan
-    2019</a>;<a
-    href="https://cset.georgetown.edu/publication/chinas-progress-in-semiconductor-manufacturing-equipment/">Hunt,
-    Khna, Peterson, 2021</a>),</p></li>
-    <li><p>and outline concrete policy interventions for avoiding
-    dangerous multipolar race dynamics (<a
-    href="https://cset.georgetown.edu/publication/u-s-semiconductor-exports-to-china-current-policies-and-trends/">Khan,
-    2020</a>;<a
-    href="https://cset.georgetown.edu/publication/securing-semiconductor-supply-chains/">Khan,
-    2021</a>).</p></li>
-    </ul>
-    <p>Results from this research have been presented before the U.S.
+      href="https://cset.georgetown.edu/publication/the-semiconductor-supply-chain/">Khan
+      et al.,2021</a>). In particular, the reports</p>
+  <ul class="incremental">
+    <li>
+      <p>highlight governable hardware chokepoints (<a
+          href="https://cset.georgetown.edu/publication/multilateral-controls-on-hardware-chokepoints/">Flynn
+          and Khan, 2020</a>),</p>
+    </li>
+    <li>
+      <p>explore international differences in production capabilities
+        (<a
+          href="https://cset.georgetown.edu/publication/maintaining-the-ai-chip-competitive-advantage-of-the-united-states-and-its-allies/">Khan
+          2019</a>;<a
+          href="https://cset.georgetown.edu/publication/chinas-progress-in-semiconductor-manufacturing-equipment/">Hunt,
+          Khna, Peterson, 2021</a>),</p>
+    </li>
+    <li>
+      <p>and outline concrete policy interventions for avoiding
+        dangerous multipolar race dynamics (<a
+          href="https://cset.georgetown.edu/publication/u-s-semiconductor-exports-to-china-current-policies-and-trends/">Khan,
+          2020</a>;<a href="https://cset.georgetown.edu/publication/securing-semiconductor-supply-chains/">Khan,
+          2021</a>).</p>
+    </li>
+  </ul>
+  <p>Results from this research have been presented before the U.S.
     Senate Foreign Relations Committee (<a
-    href="https://cset.georgetown.edu/publication/testimony-before-senate-foreign-relations-committee/">Khan
-    March 2021</a>) and have received substantial media attention (<a
-    href="https://cset.georgetown.edu/article/cset-experts-in-the-news">PR1</a>-<a
-    href="https://cset.georgetown.edu/article/cset-experts-in-the-news-10/">PR10</a>).</p>
-    <p>However, existing proposals for effective Compute Governance
+      href="https://cset.georgetown.edu/publication/testimony-before-senate-foreign-relations-committee/">Khan
+      March 2021</a>) and have received substantial media attention (<a
+      href="https://cset.georgetown.edu/article/cset-experts-in-the-news">PR1</a>-<a
+      href="https://cset.georgetown.edu/article/cset-experts-in-the-news-10/">PR10</a>).</p>
+  <p>However, existing proposals for effective Compute Governance
     consistently make one central, simplifying argument: that research
     in advanced AI <em>requires</em> leading-edge,
     <strong>AI-specialized hardware</strong>. AI-specialized hardware is
     “computer chips that not only pack the maximum number of transistors
     […] but also are tailor-made to efficiently perform specific
     calculations required by AI systems” (<a
-    href="https://cset.georgetown.edu/publication/ai-chips-what-they-are-and-why-they-matter/">Khan
-    April 2020</a>). This AI-specialized hardware is up to a thousand
+      href="https://cset.georgetown.edu/publication/ai-chips-what-they-are-and-why-they-matter/">Khan
+      April 2020</a>). This AI-specialized hardware is up to a thousand
     times more efficient than traditional <strong>commodity
-    hardware</strong> , translating into a technological advantage
-    equivalent to ~20 years of <a
-    href="https://en.wikipedia.org/wiki/Moore%27s_law">Moore’s
-    Law</a>-driven improvements over CPUs. Consequently, commodity
+      hardware</strong> , translating into a technological advantage
+    equivalent to ~20 years of <a href="https://en.wikipedia.org/wiki/Moore%27s_law">Moore’s
+      Law</a>-driven improvements over CPUs. Consequently, commodity
     hardware is typically not the focus of analyses of the supply chain
-    and proposed policy interventions.</p>
-    <p>While most cutting-edge research occurs on AI-specialized
+    and proposed policy interventions.
+  </p>
+  <p>While most cutting-edge research occurs on AI-specialized
     hardware (<a href="https://openai.com/blog/ai-and-compute/">Amodei
-    and Hernandez 2018</a>), it is unclear whether this is necessary or
+      and Hernandez 2018</a>), it is unclear whether this is necessary or
     merely convenient. Furthermore, recent progress in algorithmic
     efficiency (<a href="https://arxiv.org/abs/2111.00210">Ye et
-    al. 2021</a>; <a
-    href="https://openai.com/blog/ai-and-efficiency/">Hernandez and
-    Brown 2020</a>) casts doubt on whether access to AI-specialized
+      al. 2021</a>; <a href="https://openai.com/blog/ai-and-efficiency/">Hernandez and
+      Brown 2020</a>) casts doubt on whether access to AI-specialized
     hardware will continue to be the main factor driving performance
     gains.</p>
-    <h2
-    id="commodity-hardware-might-outperform-ai-specialized-hardware"><strong>Commodity
-    hardware might outperform AI-specialized hardware</strong></h2>
-    <p>Much of the performance advantage of AI-specialized hardware
+  <h2 id="commodity-hardware-might-outperform-ai-specialized-hardware"><strong>Commodity
+      hardware might outperform AI-specialized hardware</strong></h2>
+  <p>Much of the performance advantage of AI-specialized hardware
     comes from sacrificing flexibility for efficiency (<a
-    href="https://forum.effectivealtruism.org/s/4yLbeJ33fYrwnfDev/p/YNB39RyJ7iAQKGJvq#Chip_Architectures__From_Flexibility_to_Efficiency">Heim
-    2021</a>). In particular, as the pivotal operations of learning in
-    deep networks are <a
-    href="https://www.wikiwand.com/en/Embarrassingly_parallel">“embarrassingly
-    parallel”</a> operations (dense matrix multiplication),
+      href="https://forum.effectivealtruism.org/s/4yLbeJ33fYrwnfDev/p/YNB39RyJ7iAQKGJvq#Chip_Architectures__From_Flexibility_to_Efficiency">Heim
+      2021</a>). In particular, as the pivotal operations of learning in
+    deep networks are <a href="https://www.wikiwand.com/en/Embarrassingly_parallel">“embarrassingly
+      parallel”</a> operations (dense matrix multiplication),
     AI-specialized hardware sacrifices sequential processing speed for
     increased parallel processing bandwidth (<a
-    href="https://developer.nvidia.com/blog/cuda-refresher-reviewing-the-origins-of-gpu-computing/">Gupta
-    2020</a>). Embracing this trade-off has been the primary driver
+      href="https://developer.nvidia.com/blog/cuda-refresher-reviewing-the-origins-of-gpu-computing/">Gupta
+      2020</a>). Embracing this trade-off has been the primary driver
     behind the impressive increase in computational capabilities of
     AI-specialized hardware (<a
-    href="https://cloud.google.com/blog/products/ai-machine-learning/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu">Sato
-    et al. 2017</a>).</p>
-    <p>But what if this is <a
-    href="https://youtu.be/l4RrGRxkgYI?t=1872">wasteful</a>?
+      href="https://cloud.google.com/blog/products/ai-machine-learning/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu">Sato
+      et al. 2017</a>).</p>
+  <p>But what if this is <a href="https://youtu.be/l4RrGRxkgYI?t=1872">wasteful</a>?
     Intuitively, each input into an artificial neural network should
     only activate a tiny fraction of all units. The <a
-    href="https://machinelearningmastery.com/rectified-linear-activation-function-for-deep-learning-neural-networks/">nonlinear
-    activation function</a> of individual units guarantees that a
+      href="https://machinelearningmastery.com/rectified-linear-activation-function-for-deep-learning-neural-networks/">nonlinear
+      activation function</a> of individual units guarantees that a
     substantial portion of units in each layer will not be activated at
     all. Techniques that adaptively silence a large portion of all units
-    (<a
-    href="https://papers.nips.cc/paper/2013/hash/7b5b23f4aadf9513306bcd59afb6e4c9-Abstract.html">Ba
-    and Frey, 2013</a>) or promote winner-takes-all dynamics (<a
-    href="https://papers.nips.cc/paper/2015/hash/5129a5ddcd0dcd755232baa04c231698-Abstract.html">Makhzani
-    and Frey</a>) can improve network performance. Interestingly, neural
+    (<a href="https://papers.nips.cc/paper/2013/hash/7b5b23f4aadf9513306bcd59afb6e4c9-Abstract.html">Ba
+      and Frey, 2013</a>) or promote winner-takes-all dynamics (<a
+      href="https://papers.nips.cc/paper/2015/hash/5129a5ddcd0dcd755232baa04c231698-Abstract.html">Makhzani
+      and Frey</a>) can improve network performance. Interestingly, neural
     activity in the biological brain across different species and brain
     areas is sparse because only a handful of neurons activate in
     response to each stimulus (<a
-    href="https://www.sciencedirect.com/science/article/abs/pii/S0959438804001035">Olshausen
-    and Field, 2004</a>). We might thus expect that a substantial
+      href="https://www.sciencedirect.com/science/article/abs/pii/S0959438804001035">Olshausen
+      and Field, 2004</a>). We might thus expect that a substantial
     fraction of computations performed to determine the activation of
     units does not affect the network’s output.</p>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_255.png" />An
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_255.png" />An
     illustration of sparse network activation. Due to the choice of <a
-    href="https://machinelearningmastery.com/rectified-linear-activation-function-for-deep-learning-neural-networks/">ReLu
-    activation function</a>, a substantial number of units will be
+      href="https://machinelearningmastery.com/rectified-linear-activation-function-for-deep-learning-neural-networks/">ReLu
+      activation function</a>, a substantial number of units will be
     “silent” during a typical forward pass.</p>
-    <p>The traditional formulation of a deep network’s inference and
+  <p>The traditional formulation of a deep network’s inference and
     learning operations does not take this sparsity into account. Even
     though only a small portion of units might activate for each input,
     the connections between <em>all</em> units of an artificial network
     update in response. Especially in the case of large <a
-    href="https://huggingface.co/blog/large-language-models">networks
-    with 100s of millions, billions, or even trillions of
-    parameters</a>, disregarding sparsity can be extremely costly.</p>
-    <p>Researchers from the <a
-    href="https://www.cs.rice.edu/~as143/">Shrivastava lab</a> present a
+      href="https://huggingface.co/blog/large-language-models">networks
+      with 100s of millions, billions, or even trillions of
+      parameters</a>, disregarding sparsity can be extremely costly.</p>
+  <p>Researchers from the <a href="https://www.cs.rice.edu/~as143/">Shrivastava lab</a> present a
     novel approach (<a href="https://arxiv.org/abs/1903.03129">Chen et
-    al. 2019</a>). Rather than computing activation and weight changes
+      al. 2019</a>). Rather than computing activation and weight changes
     for all units in the network, they employ a technique called <a
-    href="https://en.wikipedia.org/wiki/Locality-sensitive_hashing">Locality
-    Sensitive Hashing</a> to identify only those units likely to
+      href="https://en.wikipedia.org/wiki/Locality-sensitive_hashing">Locality
+      Sensitive Hashing</a> to identify only those units likely to
     activate. While Locality Sensitive Hashing was conceived initially
-    as a method for efficient search (<a
-    href="https://dl.acm.org/doi/10.1145/276698.276876">Indyk and
-    Motwani 1998</a>), previous research from the Shrivastava lab
+    as a method for efficient search (<a href="https://dl.acm.org/doi/10.1145/276698.276876">Indyk and
+      Motwani 1998</a>), previous research from the Shrivastava lab
     demonstrates that we can also use it for computationally efficient
-    <em>sampling</em> of candidates likely active units (<a
-    href="https://arxiv.org/abs/1703.05160">Spring and Shrivastava</a>).
+    <em>sampling</em> of candidates likely active units (<a href="https://arxiv.org/abs/1703.05160">Spring and
+      Shrivastava</a>).
     Importantly, <strong>reformulating the inference and learning
-    operations of a deep network as a sampling problem allows them to
-    sidestep the requirement for AI-specialized hardware and instead
-    exploit the strengths of commodity hardware.</strong></p>
-    <p><img
-    src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_256.png" />Accuracy
-    on the Amazon 670k dataset from the <a
-    href="http://manikvarma.org/downloads/XC/XMLRepository.html">extreme
-    classification repository</a> as a function of training time
+      operations of a deep network as a sampling problem allows them to
+      sidestep the requirement for AI-specialized hardware and instead
+      exploit the strengths of commodity hardware.</strong>
+  </p>
+  <p><img src="../../images/https3A2F2Fbucketeer-e05bbc84-baa3-437e-9518-adb32_256.png" />Accuracy
+    on the Amazon 670k dataset from the <a href="http://manikvarma.org/downloads/XC/XMLRepository.html">extreme
+      classification repository</a> as a function of training time
     (log-scale) for three methods (red being the new method introduced
     by Chen et al.). Adapted from Chen et. al.</p>
-    <p>Indeed, their proposed implementation on commodity hardware,
+  <p>Indeed, their proposed implementation on commodity hardware,
     called “Sub-LInear Deep learning Engine” (SLIDE), outperforms
     AI-specialized hardware. Using SLIDE, Chen and colleagues can
     achieve 3.5 times faster training on commodity hardware (44 cores
     CPU) than AI-specialized hardware (Tesla V100). In collaboration
     with researchers from Intel, they were able to improve performance
     even further to a speedup of up to 7 times by exploiting advanced
-    features of commodity hardware (<a
-    href="https://arxiv.org/abs/2103.10891">Daghaghi et al., 2021</a>).
-    With the venture-funded startup <a
-    href="https://www.thirdai.com/team/">ThirdAI</a>, Shrivastava and
+    features of commodity hardware (<a href="https://arxiv.org/abs/2103.10891">Daghaghi et al., 2021</a>).
+    With the venture-funded startup <a href="https://www.thirdai.com/team/">ThirdAI</a>, Shrivastava and
     colleagues are now developing an “algorithmic accelerator for
     training deep learning models that can achieve or even surpass
-    GPU-level performance on commodity CPU hardware” (<a
-    href="https://www.thirdai.com/bolt-overview/">Bolt 2021</a>). While
-    the software is still closed alpha, a recent blog post <a
-    href="https://www.thirdai.com/cpu-or-gpu/">announced</a> the
+    GPU-level performance on commodity CPU hardware” (<a href="https://www.thirdai.com/bolt-overview/">Bolt 2021</a>).
+    While
+    the software is still closed alpha, a recent blog post <a href="https://www.thirdai.com/cpu-or-gpu/">announced</a>
+    the
     successful training of a 1.6 billion parameter model on CPUs. This
     research suggests that AI researchers’ heavy reliance on
     AI-specialized hardware might not be necessary and that commodity
     hardware can achieve equal or greater performance.</p>
-    <h2
-    id="implications-of-efficient-commodity-hardware-on-compute-governance"><strong>Implications
-    of Efficient Commodity Hardware on Compute Governance</strong></h2>
-    <p>Before analyzing some of the caveats and weaknesses of the
+  <h2 id="implications-of-efficient-commodity-hardware-on-compute-governance"><strong>Implications
+      of Efficient Commodity Hardware on Compute Governance</strong></h2>
+  <p>Before analyzing some of the caveats and weaknesses of the
     proposed approach, I want to take the published results at face
     value and mention implications. If broadly adopted, a shift away
     from AI-specialized hardware to commodity hardware would have
     significant implications for AI Safety in general and Compute
     Governance in particular.</p>
-    <p><strong>Timeline speedup.</strong> A speedup of training by a
-    factor of 7 (as suggested by <a
-    href="https://arxiv.org/abs/2103.10891">Daghaghi et al. 2021</a>)
+  <p><strong>Timeline speedup.</strong> A speedup of training by a
+    factor of 7 (as suggested by <a href="https://arxiv.org/abs/2103.10891">Daghaghi et al. 2021</a>)
     would translate into a shortening of AI timelines by at least 6-7
-    years (<a
-    href="https://www.alignmentforum.org/posts/KrJfoZzpSDpnrv9va/draft-report-on-ai-timelines">Cotra
-    2020</a>). While commodity hardware is somewhat less affected by the
-    current chip shortage, the proposed hardware configuration by <a
-    href="https://arxiv.org/abs/1903.03129">Chen et al. (2019)</a> is
+    years (<a href="https://www.alignmentforum.org/posts/KrJfoZzpSDpnrv9va/draft-report-on-ai-timelines">Cotra
+      2020</a>). While commodity hardware is somewhat less affected by the
+    current chip shortage, the proposed hardware configuration by <a href="https://arxiv.org/abs/1903.03129">Chen et
+      al. (2019)</a> is
     (surprisingly) not cheaper<sup>[1]</sup>. Beyond the training
     speedup, we should not expect sustained additional speedup of
     timelines due to price and availability.</p>
-    <div class="sidenote">
+  <div class="sidenote">
     <p>[1] </p>
     <p>They use a top-of-the-range CPU machine and compare it with a
-    mid-range GPU machine.</p>
-    </div>
-    <p><strong>Leveraging existing hardware.</strong><a
-    href="https://en.wikipedia.org/wiki/Fugaku_(supercomputer)">Existing
-    supercomputers</a> run on “commodity hardware that we might leverage
+      mid-range GPU machine.</p>
+  </div>
+  <p><strong>Leveraging existing hardware.</strong><a
+      href="https://en.wikipedia.org/wiki/Fugaku_(supercomputer)">Existing
+      supercomputers</a> run on “commodity hardware that we might leverage
     for AI applications. Making the strong assumption that the software
     architecture carries over without a problem, the Fugaku
-    supercomputer could replicate <a
-    href="https://openai.com/blog/ai-and-compute/">AlphaGo Zero</a> in
+    supercomputer could replicate <a href="https://openai.com/blog/ai-and-compute/">AlphaGo Zero</a> in
     under a week.</p>
-    <p><strong>Commodity hardware designers.</strong> While Nvidia and
+  <p><strong>Commodity hardware designers.</strong> While Nvidia and
     AMD dominate the design for AI-specialized hardware, designs for
     leading commodity hardware are instead dominated by Intel and AMD
-    (<a
-    href="https://cset.georgetown.edu/publication/securing-semiconductor-supply-chains/">Khan
-    January 2021</a>). As every system using AI-specialized hardware
+    (<a href="https://cset.georgetown.edu/publication/securing-semiconductor-supply-chains/">Khan
+      January 2021</a>). As every system using AI-specialized hardware
     also contains commodity hardware, and as Intel is one of three
     remaining companies operating state-of-the-art fabs, Intel is a
     central actor in Compute Governance either way. Intel’s role might
     become central depending on the importance of commodity hardware as
     a driver for progress in AI research.</p>
-    <p><strong>Secondary markets.</strong> There exists a much larger
+  <p><strong>Secondary markets.</strong> There exists a much larger
     secondary market for used commodity hardware than for AI-specialized
     hardware. It is conceivable that bad actors can bypass existing
     policies restricting access to AI-specialized hardware by buying
     commodity hardware on the second market.</p>
-    <h2 id="limiting-factors-and-open-questions"><strong>Limiting
-    factors and open questions</strong></h2>
-    <p>After presenting the argument for the use of commodity hardware
+  <h2 id="limiting-factors-and-open-questions"><strong>Limiting
+      factors and open questions</strong></h2>
+  <p>After presenting the argument for the use of commodity hardware
     in accelerating AI research, I now want to highlight that there are
     considerable limitations and reasons for doubting this outcome.</p>
-    <p><strong>Outside view.</strong> Suppose the results by <a
-    href="https://arxiv.org/abs/1903.03129">Chen et al. (2019)</a> hold
+  <p><strong>Outside view.</strong> Suppose the results by <a href="https://arxiv.org/abs/1903.03129">Chen et
+      al. (2019)</a> hold
     in full generality. In that case, they might represent a paradigm
     shift for AI research by making both classical gradient descent and
     AI-specialized hardware obsolete. While such paradigm shifts are not
@@ -331,67 +314,65 @@ Kirchner</a></td>
     probability for success to any proposal with seemingly radical
     implications. Furthermore, while deep learning in research and
     industry already extensively uses CPUs in their usual function, the
-    proposed method has not found widespread adoption (<a
-    href="https://ieeexplore.ieee.org/document/9410437">Mittal et al.,
-    2021</a>). The rapid adoption of f.e. the transformer in almost all
-    areas of AI within three years (<a
-    href="https://arxiv.org/pdf/2105.03928.pdf">Wies et al. 2021</a>)
+    proposed method has not found widespread adoption (<a href="https://ieeexplore.ieee.org/document/9410437">Mittal et
+      al.,
+      2021</a>). The rapid adoption of f.e. the transformer in almost all
+    areas of AI within three years (<a href="https://arxiv.org/pdf/2105.03928.pdf">Wies et al. 2021</a>)
     stands in stark contrast, and further decreases the likelihood that
     commodity hardware represents a paradigm shift for AI research.</p>
-    <p><strong>Technical limitations</strong>. In the framework proposed
+  <p><strong>Technical limitations</strong>. In the framework proposed
     by <a href="https://arxiv.org/abs/1903.03129">Chen et
-    al. (2019)</a>, the choice of the exact Locality Sensitive Hashing
+      al. (2019)</a>, the choice of the exact Locality Sensitive Hashing
     function is left open and depends on the type of modeled data.
-    Follow-up work (<a
-    href="https://openreview.net/forum?id=wWK7yXkULyh">Chen et
-    al. 2020</a>) salvages this shortcoming while further complicating
+    Follow-up work (<a href="https://openreview.net/forum?id=wWK7yXkULyh">Chen et
+      al. 2020</a>) salvages this shortcoming while further complicating
     the method. Furthermore, the proposed technique requires that
     activity in the deep network is sparse, i.e. each input only
     activates a small number of units. However, different machine
     learning architectures exhibit differing degrees of sparsity (<a
-    href="https://www.arxiv-vanity.com/papers/1808.08784/">Loroch et
-    al. 2018</a>), so that this assumption does not hold in general.</p>
-    <p><strong>Scalability.</strong> As discussed in the previous
+      href="https://www.arxiv-vanity.com/papers/1808.08784/">Loroch et
+      al. 2018</a>), so that this assumption does not hold in general.</p>
+  <p><strong>Scalability.</strong> As discussed in the previous
     section, it is unclear whether the proposed technique would scale up
     naturally to extremely large computing systems like the <a
-    href="https://en.wikipedia.org/wiki/Fugaku_(supercomputer)">Fugaku
-    supercomputer</a>. Avoiding diminishing (or even disappearing)
+      href="https://en.wikipedia.org/wiki/Fugaku_(supercomputer)">Fugaku
+      supercomputer</a>. Avoiding diminishing (or even disappearing)
     returns when scaling up AI-specialized hardware to trillion
-    parameter models is an active area of research (<a
-    href="https://arxiv.org/abs/1910.02054">Rajbhandari et al. 2019</a>;
+    parameter models is an active area of research (<a href="https://arxiv.org/abs/1910.02054">Rajbhandari et
+      al. 2019</a>;
     <a href="https://arxiv.org/abs/1909.08053">Shoeybi et al. 2020</a>).
     Thus, while commodity hardware might be able to replace
     AI-specialized hardware in smaller computing systems, this
     translation might well break down once we attempt to scale up the
-    systems.</p>
-    <h2 id="conclusions-and-outlook"><strong>Conclusions and
-    Outlook</strong></h2>
-    <p>Despite the limitations of the approach highlighted in the
+    systems.
+  </p>
+  <h2 id="conclusions-and-outlook"><strong>Conclusions and
+      Outlook</strong></h2>
+  <p>Despite the limitations of the approach highlighted in the
     previous section, this analysis has uncovered a number of insights
     relevant to Compute Governance that apply more broadly.</p>
-    <p><strong>Algorithmic and Hardware efficiency.</strong> As hardware
+  <p><strong>Algorithmic and Hardware efficiency.</strong> As hardware
     appears much more governable than software, it is tempting to focus
     exclusively on controlling hardware and neglecting software. But as
     progress in AI results from <em>both</em> algorithmic and hardware
-    efficiency increases (<a
-    href="https://openai.com/blog/ai-and-efficiency/">Hernandez and
-    Brown 2020</a>), any policy proposal for Compute Governance should
+    efficiency increases (<a href="https://openai.com/blog/ai-and-efficiency/">Hernandez and
+      Brown 2020</a>), any policy proposal for Compute Governance should
     carefully consider current developments in algorithmic efficiency
     and possible interactions between hardware and software.</p>
-    <p><strong>Changes in hardware.</strong> It is not clear that future
+  <p><strong>Changes in hardware.</strong> It is not clear that future
     AI systems will rely on the AI-specialized hardware of the present.
     Policies seeking to govern the deployment and impact of AI in the
     mid- to long-term will have to take this possibility into account
-    and monitor new developments in computer architectures (<a
-    href="https://dl.acm.org/doi/10.1145/3282307">Hennessy and Patterson
-    2019</a>).</p>
-    <p><strong>Importance of commodity hardware.</strong> Even though
+    and monitor new developments in computer architectures (<a href="https://dl.acm.org/doi/10.1145/3282307">Hennessy
+      and Patterson
+      2019</a>).</p>
+  <p><strong>Importance of commodity hardware.</strong> Even though
     leading AI research usually requires AI-specialized hardware,
     commodity hardware still plays a central supporting role (<a
-    href="https://ieeexplore.ieee.org/document/9410437">Mittal et al.,
-    2021</a>). Commodity hardware thus represents a potentially powerful
+      href="https://ieeexplore.ieee.org/document/9410437">Mittal et al.,
+      2021</a>). Commodity hardware thus represents a potentially powerful
     additional lever for executing Compute Governance policies.</p>
-    <div class="debug-grid"></div>
+  <div class="debug-grid"></div>
   <script src="../../index.js"></script>
 </body>
 

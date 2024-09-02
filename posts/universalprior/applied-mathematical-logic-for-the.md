@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: Applied Mathematical Logic For The Practicing Researcher
+subtitle: TL;DR Using the language of model theory to engineer a definition of "computational model".
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2021-10-17
 ---
 

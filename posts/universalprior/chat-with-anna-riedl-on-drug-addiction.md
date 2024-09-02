@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: Chat with Anna Riedl - On Drug Addiction in AI, Language Models, and Scaling Academia
+subtitle: TL;DR I did an interview with Anna Riedl ( riedlanna.com ) where we talk about a lot of the things that I've written about in the last few months
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2021-11-08
 ---
 

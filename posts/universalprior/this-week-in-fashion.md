@@ -1,8 +1,8 @@
 ---
-title: minimalprior
-subtitle: a spinoff
+title: This week in fashion
+subtitle: TL;DR A holiday obsession turns into a deep meditation on all things pretty. Albatrosses and reward \*models\* included. Also, check out…
 author: Jan Kirchner
-author-url: "https://universalprior.substack.com/"
+author-url: "https://kirchner-jan.github.io/minimalprior/"
 date: 2023-01-23
 ---
 
